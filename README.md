@@ -1,4 +1,4 @@
 moldeas2
 ========
 
-New version of MOLDEAS project
+New version of the MOLDEAS project
