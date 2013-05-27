@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<!DOCTYPE urlrewrite   PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+"webapps/moldeas/WEB-INF/urlrewrite2.6.dtd">
+<urlrewrite>
+
+
+<rule>
+    <from>^/ontology[(\s)|(\/)]*$</from>
+    <to type="redirect">/datasets/moldeas/moldeas-onto.ttl</to>
+</rule>
+        
+
+<rule>
+    <from>^/pscs[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/resource/ds</to>
+</rule>
+
+<rule>
+    <from>^/cpv[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/cpv/2008/resource/ds</to>
+</rule>
+
+<rule>
+    <from>^/cpc[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/cpc/2008/resource/ds</to>
+</rule>
+
+
+
+<rule>
+    <from>^/cpa[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/cpa/2008/resource/ds</to>
+</rule>
+
+
+
+<rule>
+    <from>^/cn[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/cn/2012/resource/ds</to>
+</rule>
+
+<rule>
+    <from>^/naics[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/naics/2012/resource/ds</to>
+</rule>
+
+<rule>
+    <from>^/isic[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/isic/v4/resource/ds</to>
+</rule>
+
+
+<rule>
+    <from>^/sitc[(\s)|(\/)]*$</from>
+    <to type="redirect">/pscs/sitc/v4/resource/ds</to>
+</rule>
+
+
+
+</urlrewrite>
