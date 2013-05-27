@@ -1,0 +1,87 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix moldeas:      <http://localhost/moldeas/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix moldeas-area:  <http://localhost/moldeas/area/area/> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+
+moldeas-people:ds
+      a       void:Dataset ;
+      rdfs:label "10ders Project | MOLDEAS | People "@en ;
+      dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+      dcterms:publisher  moldeas-org:WESO;
+      dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2013-05-16"^^xsd:date ;
+      void:dataDump <http://localhost/static/moldeas/datasets/people.ttl> ;
+      void:dataDump <http://localhost/static/moldeas/datasets/people.rdf> ;
+      void:exampleResource moldeas-people:Chema, moldeas-people:Labra;
+      void:uriRegexPattern
+              "http://localhost/moldeas/people/people/.+" ;
+      void:vocabulary  rdfs: , foaf: ;
+      foaf:homepage <http://data.webfoundation.org>.
+
+
+moldeas-people:JLmarin a foaf:Person;
+	foaf:depiction <http://www.congresociudadaniadigital.com/es/ponentes/fotos/250x/jose-luis-marin.jpg>;
+	foaf:family_name "Marín";
+	foaf:givenname "Jose Luis";
+	foaf:title "Mr.";
+	org:memberOf moldeas-org:Euroalert;
+	foaf:workInfoHomepage <http://www.euroalert.net>;
+	foaf:workplaceHomepage <http://www.euroalert.net>.
+
+moldeas-people:Anmarin a foaf:Person;
+	foaf:family_name "Marín";
+	foaf:givenname "Ángel";
+	foaf:title "Mr.";
+	org:memberOf moldeas-org:Euroalert;
+	foaf:workInfoHomepage <http://www.euroalert.net>;
+	foaf:workplaceHomepage <http://www.euroalert.net>.
+
+
+moldeas-people:Labra a foaf:Person;
+	foaf:depiction <http://www.weso.es/img/labraGayo.jpg>;
+	foaf:family_name "Labra";
+	foaf:givenname "José Emilio";
+	foaf:homepage <http://www.di.uniovi.es/~labra/>;
+	foaf:name "José Emilio";
+	foaf:nick "jelabra";
+	foaf:title "Dr.";
+        org:memberOf moldeas-org:WESO;
+	org:headOf moldeas-org:WESO;
+	rdfs:seeAlso <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me>;
+	foaf:workInfoHomepage <http://www.weso.es/Contents/about>;
+	foaf:workplaceHomepage <http://www.weso.es/>.
+
+
+moldeas-people:Chema a foaf:Person;
+	foaf:depiction <http://www.weso.es/img/joseMaria.jpg>;
+	foaf:family_name "Alvarez Rodríguez";
+	foaf:givenname "Jose María";
+	foaf:homepage <http://www.josemalvarez.es>;
+	foaf:name "Jose María";
+	foaf:nick "chema";
+	foaf:title "Dr.";
+	org:memberOf moldeas-org:WESO;
+	foaf:workInfoHomepage <http://www.weso.es/Contents/about>;
+	foaf:workplaceHomepage <http://www.weso.es/>;
+	rdfs:seeAlso <http://www.josemalvarez.es/foaf.rdf#me>.
+
+
+
+
+
+
+

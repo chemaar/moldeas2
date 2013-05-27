@@ -1,0 +1,44 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+ 		   
+<http://purl.org/weso/pscs/cpv/ontology/Division> skosprefLabel "División"@es ;
+	rdfs:subClassOf <http://purl.org/weso/pscs/ontology/PSCConcept> ;
+	skos:example <http://purl.org/weso/pscs/cpv/2008/resource/03000000> ;
+	skosprefLabel "Division"@en ;
+	rdfs:label "Division"@en ;
+	rdfs:label "División"@es .
+	
+<http://purl.org/weso/pscs/cpv/ontology/Group> skosprefLabel "Grupo"@es ;
+	rdfs:subClassOf <http://purl.org/weso/pscs/ontology/PSCConcept> ;
+	skos:broaderTransitive <http://purl.org/weso/pscs/cpv/ontology/Division> ;
+	skos:example <http://purl.org/weso/pscs/cpv/2008/resource/03100000> ;
+	skosprefLabel "Grupo"@en ;
+	rdfs:label "Grupo"@en ;
+	rdfs:label "Group"@es .
+
+<http://purl.org/weso/pscs/cpv/ontology/Class> skosprefLabel "Clase"@es ;
+	rdfs:subClassOf <http://purl.org/weso/pscs/ontology/PSCConcept> ;
+	skos:broaderTransitive <http://purl.org/weso/pscs/cpv/ontology/Group> ;
+	skos:example <http://purl.org/weso/pscs/cpv/2008/resource/03110000> ;
+	skosprefLabel "Class"@en ;
+	rdfs:label "Class"@en ;
+	rdfs:label "Clase"@es .
+	
+<http://purl.org/weso/pscs/cpv/ontology/Category> skosprefLabel "Categoría"@es ;
+	rdfs:subClassOf <http://purl.org/weso/pscs/ontology/PSCConcept> ;
+	skos:broaderTransitive <http://purl.org/weso/pscs/cpv/ontology/Class> ;
+	skos:example <http://purl.org/weso/pscs/cpv/2008/resource/03111000> ;
+	skosprefLabel "Category"@en ;
+	rdfs:label "Category"@en ;
+	rdfs:label "Categoría"@es .
+	
+	
+	

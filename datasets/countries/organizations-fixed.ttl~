@@ -1,0 +1,86 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix v:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix moldeas:      <http://localhost/moldeas/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+
+
+
+moldeas-org:ds
+      a       void:Dataset ;
+      rdfs:label "10ders Project | MOLDEAS | Organizations "@en ;
+      rdfs:comment "Dataset of organizations providing public procurmeent notices."@en ;
+      dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+      dcterms:publisher  moldeas-org:WESO;
+      dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2013-05-16"^^xsd:date ;          
+      void:dataDump <http://localhost/static/moldeas/datasets/organizations.ttl> ;
+      void:dataDump <http://localhost/static/moldeas/datasets/organizations.rdf> ;
+      void:exampleResource moldeas-org:WESO;
+      void:uriRegexPattern "http://localhost/moldeas/organization/.+" ;
+      void:vocabulary  rdfs: ,  dcterms: , org: , v: ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+moldeas-org:Euroalert a org:Organization;
+ rdfs:label "Euroalert.net"@en;
+ org:identifier "Euroalert";
+ foaf:homepage <http://euroalert.net/>;
+.
+
+moldeas-org:Exis a org:Organization;
+ rdfs:label "Exis TI"@en;
+ org:identifier "Exis TI";
+ foaf:homepage <http://www.exis-ti.org/>;
+.
+
+moldeas-org:WESO a  org:Organization ;
+  moldeas-onto:ref-dbpedia <http://dbpedia.org/resource/University_of_Oviedo>; 
+  rdfs:label "Web Semantics Oviedo"@en ;
+  rdfs:comment "Research Group at the University of Oviedo about Semantic Web"@en ;            
+  org:identifier "WESO"@en;
+  foaf:homepage <http://www.weso.es>;
+  org:hasSite [
+ 	rdfs:label "Web Semantics Oviedo-Research Group"@en ;
+ 	org:siteAddress [
+		  v:fn "University of Oviedo" ;
+		  v:org [ v:organisation-name "University of Oviedo"@en  ;
+			  v:organisation-unit "WESO Research Group"@en  ] ;
+		  v:adr [ rdf:type v:Work ;
+			  v:country-name "Spain"@en  ;
+			  v:locality "Oviedo"@en  ;
+			  v:postal-code "33007" ;
+			  v:street-address "C/Calvo Sotelo, S/N" ] ;
+		  v:geo [ v:latitude "43,35762" ;
+			  v:longitude "-5,85331" ] ;
+		  v:tel [ rdf:type v:Fax, v:Work ;
+			  rdf:value "+34  985 10 33 97"] ; 
+		  v:email <mailto:info@weso.es> ;
+		  v:logo <http://www.weso.es/img/logo_small2.png> .		
+ 		];
+
+   ].
+
+ 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix moldeas:      <http://localhost/moldeas/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix moldeas-area:  <http://localhost/moldeas/area/> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+
+moldeas-area:ls   a       void:Linkset ;
+      rdfs:label "10ders Project | MOLDEAS | Areas "@en ;
+      rdfs:comment "Linkset of regions and countries used in public procurement notices."@en ;
+      dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+      dcterms:publisher  moldeas-org:WESO;
+      dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2013-05-16"^^xsd:date ;
+      void:target moldeas-country:ds ;
+      void:target moldeas-region:ds ;
+   .

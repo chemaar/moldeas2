@@ -1,0 +1,122 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+
+
+<http://purl.org/weso/pscs/resource/ds> a void:Linkset ; 
+	rdf:type skos:ConceptScheme ; 
+	void:target <http://purl.org/weso/pscs/cpv/2008/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/cpv/2003/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/cpc/2008/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/cpa/2008/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/cn/2012/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/isic/v4/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/naics/2007/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/naics/2012/resource/ds> ;
+	void:target <http://purl.org/weso/pscs/sitc/v4/resource/ds> ;	
+	dcterms:title "Product Scheme Classifications" ; 
+	rdfs:label "Product Scheme Classifications"@en ; 
+	dcterms:description "Some Product Scheme Classifications available in RDF" ; 
+	foaf:homepage <http://purl.org/weso> ; 
+	dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;	
+	dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ; 			 
+	dcterms:author <http://www.josemalvarez.es/foaf.rdf#me> ; 	
+	dcterms:author <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> ; 
+	dcterms:contributor <http://rdfohloh.wikier.org/project/moldeas/rdf> ;
+	dcterms:contributor <http://purl.org/weso/pscs/resource/10ders> ; 
+	dcterms:contributor <http://purl.org/weso/pscs/resource/Euroalert> ; 
+	dcterms:contributor <http://purl.org/weso/pscs/resource/Weso> ;
+	dcterms:modified "2011-11-10"^^xsd:date ;	
+	.
+	
+<http://purl.org/weso/pscs/ontology/PSCConcept> rdfs:subClassOf skos:Concept ;
+	skos:prefLabel "Product Scheme Classification concept"@en ;
+	rdfs:label "Product Scheme Classification concept"@en  ;
+	.	
+	
+<http://purl.org/weso/pscs/ontology/level> rdfs:label "Level in a taxonomy"@en ;
+	a owl:ObjectProperty;
+	rdfs:comment "If the extraction of the hierarchy level is not easy using codes we use this property to indicate the hierarchy level"@en ;
+	rdfs:domain <http://purl.org/weso/pscs/ontology/PSCConcept>;
+	rdfs:range <xsd:integer>;
+	.
+	
+<http://purl.org/weso/pscs/ontology/relatedMatch> rdfs:label "Related match in other dataset"@en ;
+	a owl:ObjectProperty;
+	rdfs:comment "Mapping property between a PSC Concept and an external resource."@en ;
+	rdfs:domain <http://purl.org/weso/pscs/ontology/PSCConcept>;
+	.
+
+
+<http://purl.org/weso/pscs/resource/10ders> dct:updated "2011-11-14T08:13:31Z";
+	doap:created "2011-10-14T09:19:11Z";
+	doap:description "10ders Information Services is a research project partially funded by the Spanish Ministry of Industry, Tourism and Trade with code TSI-020100-2010-919 and the European Regional Development Fund (EFDR) according to the National Plan of Scientific Research, Development and Technological Innovation 2008-2011, leaded by Gateway Strategic Consultancy Services and developed in cooperation with Exis-TI and WESO Research Group.";
+	doap:homepage <http://rd.10ders.net/wiki/Main_Page>;
+	doap:name "10ders Information Serv ices";
+	doap:programming-language "Java";
+	a doap:Project;
+	skos:subject <http://dbpedia.org/resource/Java>.
+
+
+ <http://purl.org/weso/pscs/resource/Weso> a v:VCard ;
+     v:fn "WESO Research Group" ;
+     v:org
+         [   v:organisation-name "University of Oviedo" ;
+             v:organisation-unit "Department of Computer Science"
+         ] ;
+     v:adr
+         [ a v:Work ;
+             v:country-name "Spain" ;
+             v:locality "Asturias" ;
+             v:postal-code "33007" ;
+             v:street-address "C/Calvo Sotelo, S/N"
+         ] ;
+     v:geo
+         [ v:latitude "43.35834" ;
+             v:longitude "-5.853181"
+         ] ;
+     v:tel
+         [ a v:Fax, v:Work ;
+             rdf:value "+34 985 10 33 97"
+         ] ; 
+     v:email <mailto:jelabra@gmail.com> ;
+     v:logo <http://a2.twimg.com/profile_images/1219182173/logo_fondo_transparente_bigger.png> 
+	.
+
+  <http://purl.org/weso/pscs/resource/Euroalert> a v:VCard ;
+     v:fn "Euroalert.net" ;
+     v:org
+         [   v:organisation-name "Gateway S.C.S" ;
+         ] ;
+     v:adr
+         [ a v:Work ;
+             v:country-name "Spain" ;
+             v:locality "Valladolid" ;
+             v:postal-code "47007" ;
+             v:street-address "Paseo Zorrilla 89 - 1A"
+         ] ;
+     v:geo
+         [ v:latitude "41.652906" ;
+             v:longitude "-4.72824"
+         ] ;
+     v:tel
+         [ a v:Fax, v:Work ;
+             rdf:value "+34 983 137188"
+         ] ; 
+     v:email <mailto:info@euroalert.net> ;
+     v:logo <http://euroalert.net/img/euroalert.png> 
+	.
+
+
+

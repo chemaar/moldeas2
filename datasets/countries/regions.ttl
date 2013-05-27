@@ -1,0 +1,144 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix moldeas:      <http://localhost/moldeas/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix moldeas-area:  <http://localhost/moldeas/area/> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+
+moldeas-region:ds
+      a       void:Dataset ;
+      rdfs:label "10ders Project | MOLDEAS | Regions "@en ;
+      dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+      dcterms:publisher  moldeas-org:WESO;
+      dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2013-05-16"^^xsd:date ;
+      void:dataDump <http://localhost/static/moldeas/datasets/regions.ttl> ;
+      void:dataDump <http://localhost/static/moldeas/datasets/regions.rdf> ;
+      void:exampleResource moldeas-region:Americas, moldeas-region:Africa, moldeas-region:Asia_Pacific;
+      void:uriRegexPattern "http://data.webfoundation.org/area/region/.+" ;
+      void:vocabulary  rdfs: ,  dc: ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+moldeas-region:Other_Asia a moldeas-onto:Region;
+ rdfs:label "Other Asia"@en;
+.
+
+moldeas-region:Chinese_Taipei a moldeas-onto:Region;
+ rdfs:label "Chinese Taipei"@en;
+.
+
+moldeas-region:Middle_East  a moldeas-onto:Region;
+ rdfs:label "Middle East"@en;
+.
+
+moldeas-region:Developing_Asia  a moldeas-onto:Region;
+ rdfs:label "Developing Asia"@en;
+.
+
+moldeas-region:Africa  a moldeas-onto:Region;
+ rdfs:label "Africa"@en;
+ moldeas-onto:ref-dbpedia <http://dbpedia.org/resource/Africa>;
+ moldeas-onto:has-country moldeas-country:BEN;
+ moldeas-onto:has-country moldeas-country:BFA;
+ moldeas-onto:has-country moldeas-country:CMR;
+ moldeas-onto:has-country moldeas-country:EGY;
+ moldeas-onto:has-country moldeas-country:ETH;
+ moldeas-onto:has-country moldeas-country:KEN;
+ moldeas-onto:has-country moldeas-country:GHA;
+ moldeas-onto:has-country moldeas-country:MLI;
+ moldeas-onto:has-country moldeas-country:MUS;
+ moldeas-onto:has-country moldeas-country:MAR;
+ moldeas-onto:has-country moldeas-country:NAM;
+ moldeas-onto:has-country moldeas-country:NGA;
+ moldeas-onto:has-country moldeas-country:SEN;
+ moldeas-onto:has-country moldeas-country:ZAF;
+ moldeas-onto:has-country moldeas-country:TZA;
+ moldeas-onto:has-country moldeas-country:TUN;
+ moldeas-onto:has-country moldeas-country:ZWE;
+ moldeas-onto:has-country moldeas-country:UGA;
+
+.
+
+moldeas-region:Americas  a moldeas-onto:Region;
+ rdfs:label "Americas"@en;
+ moldeas-onto:ref-dbpedia <http://dbpedia.org/resource/Americas>;
+ moldeas-onto:has-country moldeas-country:ARG;
+ moldeas-onto:has-country moldeas-country:MEX;
+ moldeas-onto:has-country moldeas-country:COL;
+ moldeas-onto:has-country moldeas-country:ECU;
+ moldeas-onto:has-country moldeas-country:BRA;
+ moldeas-onto:has-country moldeas-country:CAN;
+ moldeas-onto:has-country moldeas-country:CHL;
+ moldeas-onto:has-country moldeas-country:USA;
+ moldeas-onto:has-country moldeas-country:VEN;
+.
+
+
+moldeas-region:Asia_Pacific  a moldeas-onto:Region;
+ moldeas-onto:ref-dbpedia <http://live.dbpedia.org/resource/Asia-Pacific>;
+ moldeas-onto:has-country moldeas-country:BGD;
+ moldeas-onto:has-country moldeas-country:IND;
+ moldeas-onto:has-country moldeas-country:KOR;
+ moldeas-onto:has-country moldeas-country:IDN;
+ moldeas-onto:has-country moldeas-country:PHL;
+ moldeas-onto:has-country moldeas-country:PAK;
+ moldeas-onto:has-country moldeas-country:SGP;
+ moldeas-onto:has-country moldeas-country:CHN;
+ moldeas-onto:has-country moldeas-country:JPN;
+ moldeas-onto:has-country moldeas-country:THA;
+ moldeas-onto:has-country moldeas-country:AUS;
+ moldeas-onto:has-country moldeas-country:VNM;
+ moldeas-onto:has-country moldeas-country:NPL;
+ moldeas-onto:has-country moldeas-country:NZL;
+ rdfs:label "Asia Pacific"@en;
+.
+
+moldeas-region:Europe  a moldeas-onto:Region;
+ moldeas-onto:ref-dbpedia <http://dbpedia.org/resource/Europe>;
+ moldeas-onto:has-country moldeas-country:FIN;
+ moldeas-onto:has-country moldeas-country:FRA;
+ moldeas-onto:has-country moldeas-country:ITA;
+ moldeas-onto:has-country moldeas-country:ISL;
+ moldeas-onto:has-country moldeas-country:TUR;
+ moldeas-onto:has-country moldeas-country:POL;
+ moldeas-onto:has-country moldeas-country:PRT;
+ moldeas-onto:has-country moldeas-country:IRL;
+ moldeas-onto:has-country moldeas-country:NOR;
+ moldeas-onto:has-country moldeas-country:RUS;
+ moldeas-onto:has-country moldeas-country:ESP;
+ moldeas-onto:has-country moldeas-country:SWE;
+ moldeas-onto:has-country moldeas-country:GBR;
+ moldeas-onto:has-country moldeas-country:DEU;
+ moldeas-onto:has-country moldeas-country:CHE;
+ rdfs:label "Europe"@en;
+.
+
+moldeas-region:Middle_East_and_Central_Asia  a moldeas-onto:Region;
+ rdfs:label "Middle East and Central Asia"@en;
+ moldeas-onto:has-country moldeas-country:ISR;
+ moldeas-onto:has-country moldeas-country:JOR;
+ moldeas-onto:has-country moldeas-country:QAT;
+ moldeas-onto:has-country moldeas-country:YEM;
+ moldeas-onto:has-country moldeas-country:KAZ;
+.
+
+
+
+
+
+
+
+
