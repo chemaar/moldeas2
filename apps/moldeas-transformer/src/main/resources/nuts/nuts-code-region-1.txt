@@ -1,0 +1,90 @@
+BE;BELGIQUE-BELGIË
+BE1;RÉGION DE BRUXELLES-CAPITALE / BRUSSELS HOOFDSTEDELIJK GEWEST
+BE10;Région de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewest
+BE100;Bruxelles-Capitale
+BE2;VLAAMS GEWEST
+BE21;Antwerpen
+BE211;Antwerpen
+BE212;Mechelen
+BE213;Turnhout
+BE22;Limburg
+BE221;Hasselt
+BE222;Maaseik
+BE223;Tongeren
+BE23;Oost-Vlaanderen
+BE231;Aalst
+BE232;Dendermonde
+BE233;Eeklo
+BE234;Gent
+BE235;Oudenaarde
+BE236;Sint-Niklaas
+BE24;Vlaams-Brabant
+BE241;Halle-Vilvoorde
+BE242;Leuven
+BE25;West-Vlaanderen
+BE251;Brugge
+BE252;Diksmuide
+BE253;Ieper
+BE254;Kortrijk
+BE255;Oostende
+BE256;Roeselare
+BE257;Tielt
+BE258;Veurne
+BE3;RÉGION WALLONNE
+BE31;Brabant Wallon
+BE310;Nivelles
+BE32;Hainaut
+BE321;Ath
+BE322;Charleroi
+BE323;Mons
+BE324;Mouscron
+BE325;Soignies
+BE326;Thuin
+BE327;Tournai
+BE33;Liège
+BE331;Huy
+BE332;Liège
+BE334;Waremme
+BE335;Verviers
+BE336;Bezirk Verviers
+BE34;Luxembourg
+BE341;Arlon
+BE342;Bastogne
+BE343;Marche-en-Famenne
+BE344;Neufchâteau
+BE345;Virton
+BE35;Namur
+BE351;Dinant
+BE352;Namur
+BE353;Philippeville
+BEZ;EXTRA-REGIO
+BEZZ;Extra-Regio
+BEZZZ;Extra-Regio
+BG;BULGARIA
+BG3;SEVERNA I IZTOCHNA BULGARIA
+BG31;Severozapaden
+BG311;Vidin
+BG312;Montana
+BG313;Vratsa
+BG314;Pleven
+BG315;Lovech
+BG32;Severen tsentralen
+BG321;Veliko Tarnovo
+BG322;Gabrovo
+BG323;Ruse
+BG324;Razgrad
+BG325;Silistra
+BG33;Severoiztochen
+BG331;Varna
+BG332;Dobrich
+BG333;Shumen
+BG334;Targovishte
+BG34;Yugoiztochen
+BG341;Burgas
+BG342;Sliven
+BG343;Yambol
+BG344;Stara Zagora
+BG4;YUGOZAPADNA I YUZHNA TSENTRALNA BULGARIA
+BG41;Yugozapaden
+BG411;Sofia (stolitsa)
+BG412;Sofia

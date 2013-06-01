@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://purl.org/weso/pscs/cpa/2008> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ; 
+	dcterms:title "CPA 2008" ; 
+	dcterms:description "Statistical classification of products by activity (CPA)" ; 
+	dcterms:source <http://epp.eurostat.ec.europa.eu/statistics_explained/index.php/Glossary:Statistical_classification_of_products_by_activity_%28CPA%29>;
+	foaf:homepage <http://purl.org/weso> ; 
+	void:exampleResource <http://purl.org/weso/pscs/cpa/2008/resource/A> ; 
+	void:exampleResource <http://purl.org/weso/pscs/cpa/2008/resource/01> ; 
+	void:exampleResource <http://purl.org/weso/pscs/cpa/2008/resource/011> ; 
+	void:uriRegexPattern "http://purl.org/weso/pscs/cpa/2008/resource/.+" ;  
+    dcterms:license <http://opendatacommons.org/licenses/by/1.0/> .
+	dcterms:publisher <http://josemalvarez.es> ; 			 
+	dcterms:author <http://josemalvarez.es> ; 
+	dcterms:author <http://www.di.uniovi.es/~labra> ; 
+	dcterms:contributor <http://rd.10ders.net/wiki/Main_Page> ; 
+	dcterms:contributor <http://euroalert.net/> ; 
+	dcterms:contributor <http://purl.org/weso> ; 
+	dcterms:modified "2011-11-10"^^xsd:date 
+	skos:hasTopConcept	  <http://purl.org/weso/nomenclator/asturias/2010/01/00/00> ,
+		<http://purl.org/weso/nomenclator/asturias/2010/02/00/00> ,
+		.

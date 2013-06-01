@@ -1,0 +1,90 @@
+DE131;Freiburg im Breisgau, Stadtkreis
+DE132;Breisgau-Hochschwarzwald
+DE133;Emmendingen
+DE134;Ortenaukreis
+DE135;Rottweil
+DE136;Schwarzwald-Baar-Kreis
+DE137;Tuttlingen
+DE138;Konstanz
+DE139;Lörrach
+DE13A;Waldshut
+DE14;Tübingen
+DE141;Reutlingen
+DE142;Tübingen, Landkreis
+DE143;Zollernalbkreis
+DE144;Ulm, Stadtkreis
+DE145;Alb-Donau-Kreis
+DE146;Biberach
+DE147;Bodenseekreis
+DE148;Ravensburg
+DE149;Sigmaringen
+DE2;BAYERN
+DE21;Oberbayern
+DE211;Ingolstadt, Kreisfreie Stadt
+DE212;München, Kreisfreie Stadt
+DE213;Rosenheim, Kreisfreie Stadt
+DE214;Altötting
+DE215;Berchtesgadener Land
+DE216;Bad Tölz-Wolfratshausen
+DE217;Dachau
+DE218;Ebersberg
+DE219;Eichstätt
+DE21A;Erding
+DE21B;Freising
+DE21C;Fürstenfeldbruck
+DE21D;Garmisch-Partenkirchen
+DE21E;Landsberg a. Lech
+DE21F;Miesbach
+DE21G;Mühldorf a. Inn
+DE21H;München, Landkreis
+DE21I;Neuburg-Schrobenhausen
+DE21J;Pfaffenhofen a. d. Ilm
+DE21K;Rosenheim, Landkreis
+DE21L;Starnberg
+DE21M;Traunstein
+DE21N;Weilheim-Schongau
+DE22;Niederbayern
+DE221;Landshut, Kreisfreie Stadt
+DE222;Passau, Kreisfreie Stadt
+DE223;Straubing, Kreisfreie Stadt
+DE224;Deggendorf
+DE225;Freyung-Grafenau
+DE226;Kelheim
+DE227;Landshut, Landkreis
+DE228;Passau, Landkreis
+DE229;Regen
+DE22A;Rottal-Inn
+DE22B;Straubing-Bogen
+DE22C;Dingolfing-Landau
+DE23;Oberpfalz
+DE231;Amberg, Kreisfreie Stadt
+DE232;Regensburg, Kreisfreie Stadt
+DE233;Weiden i. d. Opf, Kreisfreie Stadt
+DE234;Amberg-Sulzbach
+DE235;Cham
+DE236;Neumarkt i. d. OPf.
+DE237;Neustadt a. d. Waldnaab
+DE238;Regensburg, Landkreis
+DE239;Schwandorf
+DE23A;Tirschenreuth
+DE24;Oberfranken
+DE241;Bamberg, Kreisfreie Stadt
+DE242;Bayreuth, Kreisfreie Stadt
+DE243;Coburg, Kreisfreie Stadt
+DE244;Hof, Kreisfreie Stadt
+DE245;Bamberg, Landkreis
+DE246;Bayreuth, Landkreis
+DE247;Coburg, Landkreis
+DE248;Forchheim
+DE249;Hof, Landkreis
+DE24A;Kronach
+DE24B;Kulmbach
+DE24C;Lichtenfels
+DE24D;Wunsiedel i. Fichtelgebirge
+DE25;Mittelfranken
+DE251;Ansbach, Kreisfreie Stadt
+DE252;Erlangen, Kreisfreie Stadt
+DE253;Fürth, Kreisfreie Stadt
+DE254;Nürnberg, Kreisfreie Stadt
+DE255;Schwabach, Kreisfreie Stadt
+DE256;Ansbach, Landkreis

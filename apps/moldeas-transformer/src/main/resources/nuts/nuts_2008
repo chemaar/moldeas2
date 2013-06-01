@@ -1,0 +1,1817 @@
+"Code";"Name";"Level";"country order";"original sorting order";"change 2006";"sorting order 2003";;"NUTS 2003 version >>>";;"Code 2003";"Name";"Level";"country order";"original sorting order"
+"BE";"BELGIQUE-BELGIË";0;1;1;;1;;;;"BE";"BELGIQUE-BELGIË";0;1;52
+"BE1";"RÉGION DE BRUXELLES-CAPITALE / BRUSSELS HOOFDSTEDELIJK GEWEST";1;1;2;;2;;;;"BE1";"RÉGION DE BRUXELLES-CAPITALE / BRUSSELS HOOFDSTEDELIJK GEWEST";1;1;53
+"BE10";"Région de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewest";2;1;3;;3;;;;"BE10";"Région de Bruxelles-Capitale / Brussels Hoofdstedelijk Gewest";2;1;54
+"BE100";"Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad";3;1;4;;4;;;;"BE100";"Arr. de Bruxelles-Capitale / Arr. van Brussel-Hoofdstad";3;1;55
+"BE2";"VLAAMS GEWEST";1;1;5;;5;;;;"BE2";"VLAAMS GEWEST";1;1;56
+"BE21";"Prov. Antwerpen";2;1;6;;6;;;;"BE21";"Prov. Antwerpen";2;1;57
+"BE211";"Arr. Antwerpen";3;1;7;;7;;;;"BE211";"Arr. Antwerpen";3;1;58
+"BE212";"Arr. Mechelen";3;1;8;;8;;;;"BE212";"Arr. Mechelen";3;1;59
+"BE213";"Arr. Turnhout";3;1;9;;9;;;;"BE213";"Arr. Turnhout";3;1;60
+"BE22";"Prov. Limburg (B)";2;1;10;;10;;;;"BE22";"Prov. Limburg (B)";2;1;61
+"BE221";"Arr. Hasselt";3;1;11;;11;;;;"BE221";"Arr. Hasselt";3;1;62
+"BE222";"Arr. Maaseik";3;1;12;;12;;;;"BE222";"Arr. Maaseik";3;1;63
+"BE223";"Arr. Tongeren";3;1;13;;13;;;;"BE223";"Arr. Tongeren";3;1;64
+"BE23";"Prov. Oost-Vlaanderen";2;1;14;;14;;;;"BE23";"Prov. Oost-Vlaanderen";2;1;65
+"BE231";"Arr. Aalst";3;1;15;;15;;;;"BE231";"Arr. Aalst";3;1;66
+"BE232";"Arr. Dendermonde";3;1;16;;16;;;;"BE232";"Arr. Dendermonde";3;1;67
+"BE233";"Arr. Eeklo";3;1;17;;17;;;;"BE233";"Arr. Eeklo";3;1;68
+"BE234";"Arr. Gent";3;1;18;;18;;;;"BE234";"Arr. Gent";3;1;69
+"BE235";"Arr. Oudenaarde";3;1;19;;19;;;;"BE235";"Arr. Oudenaarde";3;1;70
+"BE236";"Arr. Sint-Niklaas";3;1;20;;20;;;;"BE236";"Arr. Sint-Niklaas";3;1;71
+"BE24";"Prov. Vlaams-Brabant";2;1;21;;21;;;;"BE24";"Prov. Vlaams-Brabant";2;1;72
+"BE241";"Arr. Halle-Vilvoorde";3;1;22;;22;;;;"BE241";"Arr. Halle-Vilvoorde";3;1;73
+"BE242";"Arr. Leuven";3;1;23;;23;;;;"BE242";"Arr. Leuven";3;1;74
+"BE25";"Prov. West-Vlaanderen";2;1;24;;24;;;;"BE25";"Prov. West-Vlaanderen";2;1;75
+"BE251";"Arr. Brugge";3;1;25;;25;;;;"BE251";"Arr. Brugge";3;1;76
+"BE252";"Arr. Diksmuide";3;1;26;;26;;;;"BE252";"Arr. Diksmuide";3;1;77
+"BE253";"Arr. Ieper";3;1;27;;27;;;;"BE253";"Arr. Ieper";3;1;78
+"BE254";"Arr. Kortrijk";3;1;28;;28;;;;"BE254";"Arr. Kortrijk";3;1;79
+"BE255";"Arr. Oostende";3;1;29;;29;;;;"BE255";"Arr. Oostende";3;1;80
+"BE256";"Arr. Roeselare";3;1;30;;30;;;;"BE256";"Arr. Roeselare";3;1;81
+"BE257";"Arr. Tielt";3;1;31;;31;;;;"BE257";"Arr. Tielt";3;1;82
+"BE258";"Arr. Veurne";3;1;32;;32;;;;"BE258";"Arr. Veurne";3;1;83
+"BE3";"RÉGION WALLONNE";1;1;33;;33;;;;"BE3";"RÉGION WALLONNE";1;1;84
+"BE31";"Prov. Brabant Wallon";2;1;34;;34;;;;"BE31";"Prov. Brabant Wallon";2;1;85
+"BE310";"Arr. Nivelles";3;1;35;;35;;;;"BE310";"Arr. Nivelles";3;1;86
+"BE32";"Prov. Hainaut";2;1;36;;36;;;;"BE32";"Prov. Hainaut";2;1;87
+"BE321";"Arr. Ath";3;1;37;;37;;;;"BE321";"Arr. Ath";3;1;88
+"BE322";"Arr. Charleroi";3;1;38;;38;;;;"BE322";"Arr. Charleroi";3;1;89
+"BE323";"Arr. Mons";3;1;39;;39;;;;"BE323";"Arr. Mons";3;1;90
+"BE324";"Arr. Mouscron";3;1;40;;40;;;;"BE324";"Arr. Mouscron";3;1;91
+"BE325";"Arr. Soignies";3;1;41;;41;;;;"BE325";"Arr. Soignies";3;1;92
+"BE326";"Arr. Thuin";3;1;42;;42;;;;"BE326";"Arr. Thuin";3;1;93
+"BE327";"Arr. Tournai";3;1;43;;43;;;;"BE327";"Arr. Tournai";3;1;94
+"BE33";"Prov. Liège";2;1;44;;44;;;;"BE33";"Prov. Liège";2;1;95
+"BE331";"Arr. Huy";3;1;45;;45;;;;"BE331";"Arr. Huy";3;1;96
+"BE332";"Arr. Liège";3;1;46;;46;;;;"BE332";"Arr. Liège";3;1;97
+"BE334";"Arr. Waremme";3;1;47;;47;;;;"BE333";"Arr. Verviers";3;1;98
+"BE335";"Arr. Verviers - communes francophones";3;1;48;"New region";48;;;;;;;;
+"BE336";"Bezirk Verviers - Deutschsprachige Gemeinschaft";3;1;49;"New region";49;;;;"BE334";"Arr. Waremme";3;1;99
+"BE34";"Prov. Luxembourg (B)";2;1;50;;50;;;;"BE34";"Prov. Luxembourg (B)";2;1;100
+"BE341";"Arr. Arlon";3;1;51;;51;;;;"BE341";"Arr. Arlon";3;1;101
+"BE342";"Arr. Bastogne";3;1;52;;52;;;;"BE342";"Arr. Bastogne";3;1;102
+"BE343";"Arr. Marche-en-Famenne";3;1;53;;53;;;;"BE343";"Arr. Marche-en-Famenne";3;1;103
+"BE344";"Arr. Neufchâteau";3;1;54;;54;;;;"BE344";"Arr. Neufchâteau";3;1;104
+"BE345";"Arr. Virton";3;1;55;;55;;;;"BE345";"Arr. Virton";3;1;105
+"BE35";"Prov. Namur";2;1;56;;56;;;;"BE35";"Prov. Namur";2;1;106
+"BE351";"Arr. Dinant";3;1;57;;57;;;;"BE351";"Arr. Dinant";3;1;107
+"BE352";"Arr. Namur";3;1;58;;58;;;;"BE352";"Arr. Namur";3;1;108
+"BE353";"Arr. Philippeville";3;1;59;;59;;;;"BE353";"Arr. Philippeville";3;1;109
+"BEZ";"EXTRA-REGIO";1;1;60;;60;;;;"BEZ";"EXTRA-REGIO";1;1;110
+"BEZZ";"Extra-Regio";2;1;61;;61;;;;"BEZZ";"Extra-Regio";2;1;111
+"BEZZZ";"Extra-Regio";3;1;62;;62;;;;"BEZZZ";"Extra-Regio";3;1;112
+
+"BG";"BULGARIA";0;2;;;;;"BG";;"BG";"Bulgaria";0;2;1660
+"BG3";"SEVERNA I IZTOCHNA BULGARIA";1;2;;;;;;;"BG3";"Severna i iztochna Bulgaria";1;2;1661
+"BG31";"Severozapaden";2;2;;;;;;;"BG31";"Severozapaden";2;2;1662
+"BG311";"Vidin";3;2;;;;;"BG111";;"BG311";"Vidin";3;2;1663
+"BG312";"Montana";3;2;;;;;"BG112";;"BG312";"Montana";3;2;1664
+"BG313";"Vratsa";3;2;;;;;"BG113";;"BG313";"Vratsa";3;2;1665
+"BG314";"Pleven";3;2;;;;;"BG121";;"BG314";"Pleven";3;2;1666
+"BG315";"Lovech";3;2;;;;;"BG122";;"BG315";"Lovech";3;2;1667
+"BG32";"Severen tsentralen";2;2;;;;;;;"BG32";"Severen tsentralen";2;2;1668
+"BG321";"Veliko Tarnovo";3;2;;;;;"BG123";;"BG321";"Veliko Tarnovo";3;2;1669
+"BG322";"Gabrovo";3;2;;;;;"BG124";;"BG322";"Gabrovo";3;2;1670
+"BG323";"Ruse";3;2;;;;;"BG125";;"BG323";"Ruse";3;2;1671
+"BG324";"Razgrad";3;2;;;;;"BG135";;"BG324";"Razgrad";3;2;1672
+"BG325";"Silistra";3;2;;;;;"BG136";;"BG325";"Silistra";3;2;1673
+"BG33";"Severoiztochen";2;2;;;;;;;"BG33";"Severoiztochen";2;2;1674
+"BG331";"Varna";3;2;;;;;"BG131";;"BG331";"Varna";3;2;1675
+"BG332";"Dobrich";3;2;;;;;"BG132";;"BG332";"Dobrich";3;2;1676
+"BG333";"Shumen";3;2;;;;;"BG133";;"BG333";"Shumen";3;2;1677
+"BG334";"Targovishte";3;2;;;;;"BG134";;"BG334";"Targovishte";3;2;1678
+"BG34";"Yugoiztochen";2;2;;;;;;;"BG34";"Yugoiztochen";2;2;1679
+"BG341";"Burgas";3;2;;;;;"BG231";;"BG341";"Burgas";3;2;1680
+"BG342";"Sliven";3;2;;;;;"BG232";;"BG342";"Sliven";3;2;1681
+"BG343";"Yambol";3;2;;;;;"BG233";;"BG343";"Yambol";3;2;1682
+"BG344";"Stara Zagora";3;2;;;;;"BG222";;"BG344";"Stara Zagora";3;2;1683
+"BG4";"YUGOZAPADNA I YUZHNA TSENTRALNA BULGARIA";1;2;;;;;;;"BG4";"Yugozapadna i yuzhna centralna Bulgaria";1;2;1684
+"BG41";"Yugozapaden";2;2;;;;;"BG21";;"BG41";"Yugozapaden";2;2;1685
+"BG411";"Sofia (stolitsa)";3;2;;;;;"BG211";;"BG411";"Sofia (stolitsa)";3;2;1686
+"BG412";"Sofia";3;2;;;;;"BG212";;"BG412";"Sofia";3;2;1687
+"BG413";"Blagoevgrad";3;2;;;;;"BG213";;"BG413";"Blagoevgrad";3;2;1688
+"BG414";"Pernik";3;2;;;;;"BG214";;"BG414";"Pernik";3;2;1689
+"BG415";"Kyustendil";3;2;;;;;"BG215";;"BG415";"Kyustendil";3;2;1690
+"BG42";"Yuzhen tsentralen";2;2;;;;;;;"BG42";"Yuzhen tsentralen";2;2;1691
+"BG421";"Plovdiv";3;2;;;;;"BG221";;"BG421";"Plovdiv";3;2;1692
+"BG422";"Haskovo";3;2;;;;;"BG223";;"BG422";"Haskovo";3;2;1693
+"BG423";"Pazardzhik";3;2;;;;;"BG224";;"BG423";"Pazardzhik";3;2;1694
+"BG424";"Smolyan";3;2;;;;;"BG225";;"BG424";"Smolyan";3;2;1695
+"BG425";"Kardzhali";3;2;;;;;"BG226";;"BG425";"Kardzhali";3;2;1696
+"BGZ";"EXTRA-REGIO";1;2;;;;;;;"BGZ";"Extra-Regio";1;2;1697
+"BGZZ";"Extra-Regio";2;2;;;;;;;"BGZZ";"Extra-Regio";2;2;1698
+"BGZZZ";"Extra-Regio";3;2;;;;;;;"BGZZZ";"Extra-Regio";3;2;1699
+
+"CZ";"ČESKÁ REPUBLIKA";0;3;63;;63;;;;"CZ";"CESKA REPUBLIKA";0;3;1446
+"CZ0";"ČESKÁ REPUBLIKA";1;3;64;;64;;;;"CZ0";"CESKA REPUBLIKA";1;3;1447
+"CZ01";"Praha";2;3;65;;65;;;;"CZ01";"Praha";2;3;1448
+"CZ010";"Hlavní město Praha";3;3;66;;66;;;;"CZ010";"Hlavni mesto Praha";3;3;1449
+"CZ02";"Střední Čechy";2;3;67;;67;;;;"CZ02";"Stredni Cechy";2;3;1450
+"CZ020";"Středočeský kraj";3;3;68;;68;;;;"CZ020";"Stredocesky kraj";3;3;1451
+"CZ03";"Jihozápad";2;3;69;;69;;;;"CZ03";"Jihozapad";2;3;1452
+"CZ031";"Jihočeský kraj";3;3;70;;70;;;;"CZ031";"Jihocesky kraj";3;3;1453
+"CZ032";"Plzeňský kraj";3;3;71;;71;;;;"CZ032";"Plzensky kraj";3;3;1454
+"CZ04";"Severozápad";2;3;72;;72;;;;"CZ04";"Severozapad";2;3;1455
+"CZ041";"Karlovarský kraj";3;3;73;;73;;;;"CZ041";"Karlovarsky kraj";3;3;1456
+"CZ042";"Ústecký kraj";3;3;74;;74;;;;"CZ042";"Ustecky kraj";3;3;1457
+"CZ05";"Severovýchod";2;3;75;;75;;;;"CZ05";"Severovychod";2;3;1458
+"CZ051";"Liberecký kraj";3;3;76;;76;;;;"CZ051";"Liberecky kraj";3;3;1459
+"CZ052";"Královéhradecký kraj";3;3;77;;77;;;;"CZ052";"Kralovehradecky kraj";3;3;1460
+"CZ053";"Pardubický kraj";3;3;78;;78;;;;"CZ053";"Pardubicky kraj";3;3;1461
+"CZ06";"Jihovýchod";2;3;79;;79;;;;"CZ06";"Jihovychod";2;3;1462
+"CZ063";"Vysočina";3;3;80;"Boundary shift";80;;;;"CZ061";"Vysocina";3;3;1463
+"CZ064";"Jihomoravský kraj";3;3;81;"Boundary shift";81;;;;"CZ062";"Jihomoravsky kraj";3;3;1464
+"CZ07";"Střední Morava";2;3;82;;82;;;;"CZ07";"Stredni Morava";2;3;1465
+"CZ071";"Olomoucký kraj";3;3;83;;83;;;;"CZ071";"Olomoucky kraj";3;3;1466
+"CZ072";"Zlínský kraj";3;3;84;;84;;;;"CZ072";"Zlinsky kraj";3;3;1467
+"CZ08";"Moravskoslezsko";2;3;85;;85;;;;"CZ08";"Moravskoslezsko";2;3;1468
+"CZ080";"Moravskoslezský kraj";3;3;86;;86;;;;"CZ080";"Moravskoslezsky kraj";3;3;1469
+"CZZ";"EXTRA-REGIO";1;3;87;;87;;;;"CZZ";"EXTRA-REGIO";1;3;1470
+"CZZZ";"Extra-Regio";2;3;88;;88;;;;"CZZZ";"Extra-Regio";2;3;1471
+"CZZZZ";"Extra-Regio";3;3;89;;89;;;;"CZZZZ";"Extra-Regio";3;3;1472
+
+"DK";"DANMARK";0;4;90;;90;;;;"DK";"DANMARK";0;4;613
+"DK0";"DANMARK";1;4;91;;91;;;;"DK0";"DANMARK";1;4;614
+"DK01";"Hovedstaden";2;4;92;"New region";108;;;;"DK00";"Danmark";2;4;615
+"DK011";"Byen København";3;4;93;"New region";109;;;;"DK001";"København og Frederiksberg kommuner";3;4;616
+"DK012";"Københavns omegn";3;4;94;"New region";110;;;;"DK002";"Københavns amt";3;4;617
+"DK013";"Nordsjælland";3;4;95;"New region";111;;;;"DK003";"Frederiksborg amt";3;4;618
+"DK014";"Bornholm";3;4;96;"Code change";112;;;;"DK004";"Roskilde amt";3;4;619
+"DK02";"Sjælland";2;4;97;"New region";113;;;;"DK005";"Vestsjællands amt";3;4;620
+"DK021";"Østsjælland";3;4;98;"New region";114;;;;"DK006";"Storstrøms amt";3;4;621
+"DK022";"Vest- og Sydsjælland";3;4;99;"New region";115;;;;"DK007";"Bornholms amt";3;4;622
+"DK03";"Syddanmark";2;4;100;"New region";116;;;;"DK008";"Fyns amt";3;4;623
+"DK031";"Fyn";3;4;101;"Code change";117;;;;"DK009";"Sønderjyllands amt";3;4;624
+"DK032";"Sydjylland";3;4;102;"New region";118;;;;"DK00A";"Ribe amt";3;4;625
+"DK04";"Midtjylland";2;4;103;"New region";119;;;;"DK00B";"Vejle amt";3;4;626
+"DK041";"Vestjylland";3;4;104;"New region";120;;;;"DK00C";"Ringkøbing amt";3;4;627
+"DK042";"Østjylland";3;4;105;"New region";121;;;;"DK00D";"Århus amt";3;4;628
+"DK05";"Nordjylland";2;4;106;"New region";122;;;;"DK00E";"Viborg amt";3;4;629
+"DK050";"Nordjylland";3;4;107;"New region";123;;;;"DK00F";"Nordjyllands amt";3;4;630
+"DKZ";"EXTRA-REGIO";1;4;108;;124;;;;"DKZ";"EXTRA-REGIO";1;4;631
+"DKZZ";"Extra-Regio";2;4;109;;125;;;;"DKZZ";"Extra-Regio";2;4;632
+"DKZZZ";"Extra-Regio";3;4;110;;126;;;;"DKZZZ";"Extra-Regio";3;4;633
+
+"DE";"DEUTSCHLAND";0;5;111;;127;;;;"DE";"DEUTSCHLAND";0;5;113
+"DE1";"BADEN-WÜRTTEMBERG";1;5;112;;128;;;;"DE1";"BADEN-WÜRTTEMBERG";1;5;114
+"DE11";"Stuttgart";2;5;113;;129;;;;"DE11";"Stuttgart";2;5;115
+"DE111";"Stuttgart, Stadtkreis";3;5;114;;130;;;;"DE111";"Stuttgart, Stadtkreis";3;5;116
+"DE112";"Böblingen";3;5;115;;131;;;;"DE112";"Böblingen";3;5;117
+"DE113";"Esslingen";3;5;116;;132;;;;"DE113";"Esslingen";3;5;118
+"DE114";"Göppingen";3;5;117;;133;;;;"DE114";"Göppingen";3;5;119
+"DE115";"Ludwigsburg";3;5;118;;134;;;;"DE115";"Ludwigsburg";3;5;120
+"DE116";"Rems-Murr-Kreis";3;5;119;;135;;;;"DE116";"Rems-Murr-Kreis";3;5;121
+"DE117";"Heilbronn, Stadtkreis";3;5;120;;136;;;;"DE117";"Heilbronn, Stadtkreis";3;5;122
+"DE118";"Heilbronn, Landkreis";3;5;121;;137;;;;"DE118";"Heilbronn, Landkreis";3;5;123
+"DE119";"Hohenlohekreis";3;5;122;;138;;;;"DE119";"Hohenlohekreis";3;5;124
+"DE11A";"Schwäbisch Hall";3;5;123;;139;;;;"DE11A";"Schwäbisch Hall";3;5;125
+"DE11B";"Main-Tauber-Kreis";3;5;124;;140;;;;"DE11B";"Main-Tauber-Kreis";3;5;126
+"DE11C";"Heidenheim";3;5;125;;141;;;;"DE11C";"Heidenheim";3;5;127
+"DE11D";"Ostalbkreis";3;5;126;;142;;;;"DE11D";"Ostalbkreis";3;5;128
+"DE12";"Karlsruhe";2;5;127;;143;;;;"DE12";"Karlsruhe";2;5;129
+"DE121";"Baden-Baden, Stadtkreis";3;5;128;;144;;;;"DE121";"Baden-Baden, Stadtkreis";3;5;130
+"DE122";"Karlsruhe, Stadtkreis";3;5;129;;145;;;;"DE122";"Karlsruhe, Stadtkreis";3;5;131
+"DE123";"Karlsruhe, Landkreis";3;5;130;;146;;;;"DE123";"Karlsruhe, Landkreis";3;5;132
+"DE124";"Rastatt";3;5;131;;147;;;;"DE124";"Rastatt";3;5;133
+"DE125";"Heidelberg, Stadtkreis";3;5;132;;148;;;;"DE125";"Heidelberg, Stadtkreis";3;5;134
+"DE126";"Mannheim, Stadtkreis";3;5;133;;149;;;;"DE126";"Mannheim, Stadtkreis";3;5;135
+"DE127";"Neckar-Odenwald-Kreis";3;5;134;;150;;;;"DE127";"Neckar-Odenwald-Kreis";3;5;136
+"DE128";"Rhein-Neckar-Kreis";3;5;135;;151;;;;"DE128";"Rhein-Neckar-Kreis";3;5;137
+"DE129";"Pforzheim, Stadtkreis";3;5;136;;152;;;;"DE129";"Pforzheim, Stadtkreis";3;5;138
+"DE12A";"Calw";3;5;137;;153;;;;"DE12A";"Calw";3;5;139
+"DE12B";"Enzkreis";3;5;138;;154;;;;"DE12B";"Enzkreis";3;5;140
+"DE12C";"Freudenstadt";3;5;139;;155;;;;"DE12C";"Freudenstadt";3;5;141
+"DE13";"Freiburg";2;5;140;;156;;;;"DE13";"Freiburg";2;5;142
+"DE131";"Freiburg im Breisgau, Stadtkreis";3;5;141;;157;;;;"DE131";"Freiburg im Breisgau, Stadtkreis";3;5;143
+"DE132";"Breisgau-Hochschwarzwald";3;5;142;;158;;;;"DE132";"Breisgau-Hochschwarzwald";3;5;144
+"DE133";"Emmendingen";3;5;143;;159;;;;"DE133";"Emmendingen";3;5;145
+"DE134";"Ortenaukreis";3;5;144;;160;;;;"DE134";"Ortenaukreis";3;5;146
+"DE135";"Rottweil";3;5;145;;161;;;;"DE135";"Rottweil";3;5;147
+"DE136";"Schwarzwald-Baar-Kreis";3;5;146;;162;;;;"DE136";"Schwarzwald-Baar-Kreis";3;5;148
+"DE137";"Tuttlingen";3;5;147;;163;;;;"DE137";"Tuttlingen";3;5;149
+"DE138";"Konstanz";3;5;148;;164;;;;"DE138";"Konstanz";3;5;150
+"DE139";"Lörrach";3;5;149;;165;;;;"DE139";"Lörrach";3;5;151
+"DE13A";"Waldshut";3;5;150;;166;;;;"DE13A";"Waldshut";3;5;152
+"DE14";"Tübingen";2;5;151;;167;;;;"DE14";"Tübingen";2;5;153
+"DE141";"Reutlingen";3;5;152;;168;;;;"DE141";"Reutlingen";3;5;154
+"DE142";"Tübingen, Landkreis";3;5;153;;169;;;;"DE142";"Tübingen, Landkreis";3;5;155
+"DE143";"Zollernalbkreis";3;5;154;;170;;;;"DE143";"Zollernalbkreis";3;5;156
+"DE144";"Ulm, Stadtkreis";3;5;155;;171;;;;"DE144";"Ulm, Stadtkreis";3;5;157
+"DE145";"Alb-Donau-Kreis";3;5;156;;172;;;;"DE145";"Alb-Donau-Kreis";3;5;158
+"DE146";"Biberach";3;5;157;;173;;;;"DE146";"Biberach";3;5;159
+"DE147";"Bodenseekreis";3;5;158;;174;;;;"DE147";"Bodenseekreis";3;5;160
+"DE148";"Ravensburg";3;5;159;;175;;;;"DE148";"Ravensburg";3;5;161
+"DE149";"Sigmaringen";3;5;160;;176;;;;"DE149";"Sigmaringen";3;5;162
+"DE2";"BAYERN";1;5;161;;177;;;;"DE2";"BAYERN";1;5;163
+"DE21";"Oberbayern";2;5;162;;178;;;;"DE21";"Oberbayern";2;5;164
+"DE211";"Ingolstadt, Kreisfreie Stadt";3;5;163;;179;;;;"DE211";"Ingolstadt, Kreisfreie Stadt";3;5;165
+"DE212";"München, Kreisfreie Stadt";3;5;164;;180;;;;"DE212";"München, Kreisfreie Stadt";3;5;166
+"DE213";"Rosenheim, Kreisfreie Stadt";3;5;165;;181;;;;"DE213";"Rosenheim, Kreisfreie Stadt";3;5;167
+"DE214";"Altötting";3;5;166;;182;;;;"DE214";"Altötting";3;5;168
+"DE215";"Berchtesgadener Land";3;5;167;;183;;;;"DE215";"Berchtesgadener Land";3;5;169
+"DE216";"Bad Tölz-Wolfratshausen";3;5;168;;184;;;;"DE216";"Bad Tölz-Wolfratshausen";3;5;170
+"DE217";"Dachau";3;5;169;;185;;;;"DE217";"Dachau";3;5;171
+"DE218";"Ebersberg";3;5;170;;186;;;;"DE218";"Ebersberg";3;5;172
+"DE219";"Eichstätt";3;5;171;;187;;;;"DE219";"Eichstätt";3;5;173
+"DE21A";"Erding";3;5;172;;188;;;;"DE21A";"Erding";3;5;174
+"DE21B";"Freising";3;5;173;;189;;;;"DE21B";"Freising";3;5;175
+"DE21C";"Fürstenfeldbruck";3;5;174;;190;;;;"DE21C";"Fürstenfeldbruck";3;5;176
+"DE21D";"Garmisch-Partenkirchen";3;5;175;;191;;;;"DE21D";"Garmisch-Partenkirchen";3;5;177
+"DE21E";"Landsberg a. Lech";3;5;176;;192;;;;"DE21E";"Landsberg a. Lech";3;5;178
+"DE21F";"Miesbach";3;5;177;;193;;;;"DE21F";"Miesbach";3;5;179
+"DE21G";"Mühldorf a. Inn";3;5;178;;194;;;;"DE21G";"Mühldorf a. Inn";3;5;180
+"DE21H";"München, Landkreis";3;5;179;;195;;;;"DE21H";"München, Landkreis";3;5;181
+"DE21I";"Neuburg-Schrobenhausen";3;5;180;;196;;;;"DE21I";"Neuburg-Schrobenhausen";3;5;182
+"DE21J";"Pfaffenhofen a. d. Ilm";3;5;181;;197;;;;"DE21J";"Pfaffenhofen a. d. Ilm";3;5;183
+"DE21K";"Rosenheim, Landkreis";3;5;182;;198;;;;"DE21K";"Rosenheim, Landkreis";3;5;184
+"DE21L";"Starnberg";3;5;183;;199;;;;"DE21L";"Starnberg";3;5;185
+"DE21M";"Traunstein";3;5;184;;200;;;;"DE21M";"Traunstein";3;5;186
+"DE21N";"Weilheim-Schongau";3;5;185;;201;;;;"DE21N";"Weilheim-Schongau";3;5;187
+"DE22";"Niederbayern";2;5;186;;202;;;;"DE22";"Niederbayern";2;5;188
+"DE221";"Landshut, Kreisfreie Stadt";3;5;187;;203;;;;"DE221";"Landshut, Kreisfreie Stadt";3;5;189
+"DE222";"Passau, Kreisfreie Stadt";3;5;188;;204;;;;"DE222";"Passau, Kreisfreie Stadt";3;5;190
+"DE223";"Straubing, Kreisfreie Stadt";3;5;189;;205;;;;"DE223";"Straubing, Kreisfreie Stadt";3;5;191
+"DE224";"Deggendorf";3;5;190;;206;;;;"DE224";"Deggendorf";3;5;192
+"DE225";"Freyung-Grafenau";3;5;191;;207;;;;"DE225";"Freyung-Grafenau";3;5;193
+"DE226";"Kelheim";3;5;192;;208;;;;"DE226";"Kelheim";3;5;194
+"DE227";"Landshut, Landkreis";3;5;193;;209;;;;"DE227";"Landshut, Landkreis";3;5;195
+"DE228";"Passau, Landkreis";3;5;194;;210;;;;"DE228";"Passau, Landkreis";3;5;196
+"DE229";"Regen";3;5;195;;211;;;;"DE229";"Regen";3;5;197
+"DE22A";"Rottal-Inn";3;5;196;;212;;;;"DE22A";"Rottal-Inn";3;5;198
+"DE22B";"Straubing-Bogen";3;5;197;;213;;;;"DE22B";"Straubing-Bogen";3;5;199
+"DE22C";"Dingolfing-Landau";3;5;198;;214;;;;"DE22C";"Dingolfing-Landau";3;5;200
+"DE23";"Oberpfalz";2;5;199;;215;;;;"DE23";"Oberpfalz";2;5;201
+"DE231";"Amberg, Kreisfreie Stadt";3;5;200;;216;;;;"DE231";"Amberg, Kreisfreie Stadt";3;5;202
+"DE232";"Regensburg, Kreisfreie Stadt";3;5;201;;217;;;;"DE232";"Regensburg, Kreisfreie Stadt";3;5;203
+"DE233";"Weiden i. d. Opf, Kreisfreie Stadt";3;5;202;"Name correction";218;;;;"DE233";"Weiden i. d. OPf.,Kreisfreie Stadt";3;5;204
+"DE234";"Amberg-Sulzbach";3;5;203;;219;;;;"DE234";"Amberg-Sulzbach";3;5;205
+"DE235";"Cham";3;5;204;;220;;;;"DE235";"Cham";3;5;206
+"DE236";"Neumarkt i. d. OPf.";3;5;205;;221;;;;"DE236";"Neumarkt i. d. OPf.";3;5;207
+"DE237";"Neustadt a. d. Waldnaab";3;5;206;;222;;;;"DE237";"Neustadt a. d. Waldnaab";3;5;208
+"DE238";"Regensburg, Landkreis";3;5;207;;223;;;;"DE238";"Regensburg, Landkreis";3;5;209
+"DE239";"Schwandorf";3;5;208;;224;;;;"DE239";"Schwandorf";3;5;210
+"DE23A";"Tirschenreuth";3;5;209;;225;;;;"DE23A";"Tirschenreuth";3;5;211
+"DE24";"Oberfranken";2;5;210;;226;;;;"DE24";"Oberfranken";2;5;212
+"DE241";"Bamberg, Kreisfreie Stadt";3;5;211;;227;;;;"DE241";"Bamberg, Kreisfreie Stadt";3;5;213
+"DE242";"Bayreuth, Kreisfreie Stadt";3;5;212;;228;;;;"DE242";"Bayreuth, Kreisfreie Stadt";3;5;214
+"DE243";"Coburg, Kreisfreie Stadt";3;5;213;;229;;;;"DE243";"Coburg, Kreisfreie Stadt";3;5;215
+"DE244";"Hof, Kreisfreie Stadt";3;5;214;;230;;;;"DE244";"Hof, Kreisfreie Stadt";3;5;216
+"DE245";"Bamberg, Landkreis";3;5;215;;231;;;;"DE245";"Bamberg, Landkreis";3;5;217
+"DE246";"Bayreuth, Landkreis";3;5;216;;232;;;;"DE246";"Bayreuth, Landkreis";3;5;218
+"DE247";"Coburg, Landkreis";3;5;217;;233;;;;"DE247";"Coburg, Landkreis";3;5;219
+"DE248";"Forchheim";3;5;218;;234;;;;"DE248";"Forchheim";3;5;220
+"DE249";"Hof, Landkreis";3;5;219;;235;;;;"DE249";"Hof, Landkreis";3;5;221
+"DE24A";"Kronach";3;5;220;;236;;;;"DE24A";"Kronach";3;5;222
+"DE24B";"Kulmbach";3;5;221;;237;;;;"DE24B";"Kulmbach";3;5;223
+"DE24C";"Lichtenfels";3;5;222;;238;;;;"DE24C";"Lichtenfels";3;5;224
+"DE24D";"Wunsiedel i. Fichtelgebirge";3;5;223;;239;;;;"DE24D";"Wunsiedel i. Fichtelgebirge";3;5;225
+"DE25";"Mittelfranken";2;5;224;;240;;;;"DE25";"Mittelfranken";2;5;226
+"DE251";"Ansbach, Kreisfreie Stadt";3;5;225;;241;;;;"DE251";"Ansbach, Kreisfreie Stadt";3;5;227
+"DE252";"Erlangen, Kreisfreie Stadt";3;5;226;;242;;;;"DE252";"Erlangen, Kreisfreie Stadt";3;5;228
+"DE253";"Fürth, Kreisfreie Stadt";3;5;227;;243;;;;"DE253";"Fürth, Kreisfreie Stadt";3;5;229
+"DE254";"Nürnberg, Kreisfreie Stadt";3;5;228;;244;;;;"DE254";"Nürnberg, Kreisfreie Stadt";3;5;230
+"DE255";"Schwabach, Kreisfreie Stadt";3;5;229;;245;;;;"DE255";"Schwabach, Kreisfreie Stadt";3;5;231
+"DE256";"Ansbach, Landkreis";3;5;230;;246;;;;"DE256";"Ansbach, Landkreis";3;5;232
+"DE257";"Erlangen-Höchstadt";3;5;231;;247;;;;"DE257";"Erlangen-Höchstadt";3;5;233
+"DE258";"Fürth, Landkreis";3;5;232;;248;;;;"DE258";"Fürth, Landkreis";3;5;234
+"DE259";"Nürnberger Land";3;5;233;;249;;;;"DE259";"Nürnberger Land";3;5;235
+"DE25A";"Neustadt a. d. Aisch-Bad Windsheim";3;5;234;;250;;;;"DE25A";"Neustadt a. d. Aisch-Bad Windsheim";3;5;236
+"DE25B";"Roth";3;5;235;;251;;;;"DE25B";"Roth";3;5;237
+"DE25C";"Weißenburg-Gunzenhausen";3;5;236;;252;;;;"DE25C";"Weißenburg-Gunzenhausen";3;5;238
+"DE26";"Unterfranken";2;5;237;;253;;;;"DE26";"Unterfranken";2;5;239
+"DE261";"Aschaffenburg, Kreisfreie Stadt";3;5;238;;254;;;;"DE261";"Aschaffenburg, Kreisfreie Stadt";3;5;240
+"DE262";"Schweinfurt, Kreisfreie Stadt";3;5;239;;255;;;;"DE262";"Schweinfurt, Kreisfreie Stadt";3;5;241
+"DE263";"Würzburg, Kreisfreie Stadt";3;5;240;;256;;;;"DE263";"Würzburg, Kreisfreie Stadt";3;5;242
+"DE264";"Aschaffenburg, Landkreis";3;5;241;;257;;;;"DE264";"Aschaffenburg, Landkreis";3;5;243
+"DE265";"Bad Kissingen";3;5;242;;258;;;;"DE265";"Bad Kissingen";3;5;244
+"DE266";"Rhön-Grabfeld";3;5;243;;259;;;;"DE266";"Rhön-Grabfeld";3;5;245
+"DE267";"Haßberge";3;5;244;;260;;;;"DE267";"Haßberge";3;5;246
+"DE268";"Kitzingen";3;5;245;;261;;;;"DE268";"Kitzingen";3;5;247
+"DE269";"Miltenberg";3;5;246;;262;;;;"DE269";"Miltenberg";3;5;248
+"DE26A";"Main-Spessart";3;5;247;;263;;;;"DE26A";"Main-Spessart";3;5;249
+"DE26B";"Schweinfurt, Landkreis";3;5;248;;264;;;;"DE26B";"Schweinfurt, Landkreis";3;5;250
+"DE26C";"Würzburg, Landkreis";3;5;249;;265;;;;"DE26C";"Würzburg, Landkreis";3;5;251
+"DE27";"Schwaben";2;5;250;;266;;;;"DE27";"Schwaben";2;5;252
+"DE271";"Augsburg, Kreisfreie Stadt";3;5;251;;267;;;;"DE271";"Augsburg, Kreisfreie Stadt";3;5;253
+"DE272";"Kaufbeuren, Kreisfreie Stadt";3;5;252;;268;;;;"DE272";"Kaufbeuren, Kreisfreie Stadt";3;5;254
+"DE273";"Kempten (Allgäu), Kreisfreie Stadt";3;5;253;;269;;;;"DE273";"Kempten (Allgäu), Kreisfreie Stadt";3;5;255
+"DE274";"Memmingen, Kreisfreie Stadt";3;5;254;;270;;;;"DE274";"Memmingen, Kreisfreie Stadt";3;5;256
+"DE275";"Aichach-Friedberg";3;5;255;;271;;;;"DE275";"Aichach-Friedberg";3;5;257
+"DE276";"Augsburg, Landkreis";3;5;256;;272;;;;"DE276";"Augsburg, Landkreis";3;5;258
+"DE277";"Dillingen a.d. Donau";3;5;257;;273;;;;"DE277";"Dillingen a.d. Donau";3;5;259
+"DE278";"Günzburg";3;5;258;;274;;;;"DE278";"Günzburg";3;5;260
+"DE279";"Neu-Ulm";3;5;259;;275;;;;"DE279";"Neu-Ulm";3;5;261
+"DE27A";"Lindau (Bodensee)";3;5;260;;276;;;;"DE27A";"Lindau (Bodensee)";3;5;262
+"DE27B";"Ostallgäu";3;5;261;;277;;;;"DE27B";"Ostallgäu";3;5;263
+"DE27C";"Unterallgäu";3;5;262;;278;;;;"DE27C";"Unterallgäu";3;5;264
+"DE27D";"Donau-Ries";3;5;263;;279;;;;"DE27D";"Donau-Ries";3;5;265
+"DE27E";"Oberallgäu";3;5;264;;280;;;;"DE27E";"Oberallgäu";3;5;266
+"DE3";"BERLIN";1;5;265;;281;;;;"DE3";"BERLIN";1;5;267
+"DE30";"Berlin";2;5;266;;282;;;;"DE30";"Berlin";2;5;268
+"DE300";"Berlin";3;5;267;;283;;;;"DE300";"Berlin";3;5;269
+"DE4";"BRANDENBURG";1;5;268;;284;;;;"DE4";"BRANDENBURG";1;5;270
+"DE41";"Brandenburg - Nordost";2;5;269;;285;;;;"DE41";"Brandenburg - Nordost";2;5;271
+"DE411";"Frankfurt (Oder), Kreisfreie Stadt";3;5;270;;286;;;;"DE411";"Frankfurt (Oder), Kreisfreie Stadt";3;5;272
+"DE412";"Barnim";3;5;271;;287;;;;"DE412";"Barnim";3;5;273
+"DE413";"Märkisch-Oderland";3;5;272;;288;;;;"DE413";"Märkisch-Oderland";3;5;274
+"DE414";"Oberhavel";3;5;273;;289;;;;"DE414";"Oberhavel";3;5;275
+"DE415";"Oder-Spree";3;5;274;;290;;;;"DE415";"Oder-Spree";3;5;276
+"DE416";"Ostprignitz-Ruppin";3;5;275;;291;;;;"DE416";"Ostprignitz-Ruppin";3;5;277
+"DE417";"Prignitz";3;5;276;;292;;;;"DE417";"Prignitz";3;5;278
+"DE418";"Uckermark";3;5;277;;293;;;;"DE418";"Uckermark";3;5;279
+"DE42";"Brandenburg - Südwest";2;5;278;;294;;;;"DE42";"Brandenburg - Südwest";2;5;280
+"DE421";"Brandenburg an der Havel, Kreisfreie Stadt";3;5;279;;295;;;;"DE421";"Brandenburg an der Havel, Kreisfreie Stadt";3;5;281
+"DE422";"Cottbus, Kreisfreie Stadt";3;5;280;;296;;;;"DE422";"Cottbus, Kreisfreie Stadt";3;5;282
+"DE423";"Potsdam, Kreisfreie Stadt";3;5;281;;297;;;;"DE423";"Potsdam, Kreisfreie Stadt";3;5;283
+"DE424";"Dahme-Spreewald";3;5;282;;298;;;;"DE424";"Dahme-Spreewald";3;5;284
+"DE425";"Elbe-Elster";3;5;283;;299;;;;"DE425";"Elbe-Elster";3;5;285
+"DE426";"Havelland";3;5;284;;300;;;;"DE426";"Havelland";3;5;286
+"DE427";"Oberspreewald-Lausitz";3;5;285;;301;;;;"DE427";"Oberspreewald-Lausitz";3;5;287
+"DE428";"Potsdam-Mittelmark";3;5;286;;302;;;;"DE428";"Potsdam-Mittelmark";3;5;288
+"DE429";"Spree-Neiße";3;5;287;;303;;;;"DE429";"Spree-Neiße";3;5;289
+"DE42A";"Teltow-Fläming";3;5;288;;304;;;;"DE42A";"Teltow-Fläming";3;5;290
+"DE5";"BREMEN";1;5;289;;305;;;;"DE5";"BREMEN";1;5;291
+"DE50";"Bremen";2;5;290;;306;;;;"DE50";"Bremen";2;5;292
+"DE501";"Bremen, Kreisfreie Stadt";3;5;291;;307;;;;"DE501";"Bremen, Kreisfreie Stadt";3;5;293
+"DE502";"Bremerhaven, Kreisfreie Stadt";3;5;292;;308;;;;"DE502";"Bremerhaven, Kreisfreie Stadt";3;5;294
+"DE6";"HAMBURG";1;5;293;;309;;;;"DE6";"HAMBURG";1;5;295
+"DE60";"Hamburg";2;5;294;;310;;;;"DE60";"Hamburg";2;5;296
+"DE600";"Hamburg";3;5;295;;311;;;;"DE600";"Hamburg";3;5;297
+"DE7";"HESSEN";1;5;296;;312;;;;"DE7";"HESSEN";1;5;298
+"DE71";"Darmstadt";2;5;297;;313;;;;"DE71";"Darmstadt";2;5;299
+"DE711";"Darmstadt, Kreisfreie Stadt";3;5;298;;314;;;;"DE711";"Darmstadt, Kreisfreie Stadt";3;5;300
+"DE712";"Frankfurt am Main, Kreisfreie Stadt";3;5;299;;315;;;;"DE712";"Frankfurt am Main, Kreisfreie Stadt";3;5;301
+"DE713";"Offenbach am Main, Kreisfreie Stadt";3;5;300;;316;;;;"DE713";"Offenbach am Main, Kreisfreie Stadt";3;5;302
+"DE714";"Wiesbaden, Kreisfreie Stadt";3;5;301;;317;;;;"DE714";"Wiesbaden, Kreisfreie Stadt";3;5;303
+"DE715";"Bergstraße";3;5;302;;318;;;;"DE715";"Bergstraße";3;5;304
+"DE716";"Darmstadt-Dieburg";3;5;303;;319;;;;"DE716";"Darmstadt-Dieburg";3;5;305
+"DE717";"Groß-Gerau";3;5;304;;320;;;;"DE717";"Groß-Gerau";3;5;306
+"DE718";"Hochtaunuskreis";3;5;305;;321;;;;"DE718";"Hochtaunuskreis";3;5;307
+"DE719";"Main-Kinzig-Kreis";3;5;306;;322;;;;"DE719";"Main-Kinzig-Kreis";3;5;308
+"DE71A";"Main-Taunus-Kreis";3;5;307;;323;;;;"DE71A";"Main-Taunus-Kreis";3;5;309
+"DE71B";"Odenwaldkreis";3;5;308;;324;;;;"DE71B";"Odenwaldkreis";3;5;310
+"DE71C";"Offenbach, Landkreis";3;5;309;;325;;;;"DE71C";"Offenbach, Landkreis";3;5;311
+"DE71D";"Rheingau-Taunus-Kreis";3;5;310;;326;;;;"DE71D";"Rheingau-Taunus-Kreis";3;5;312
+"DE71E";"Wetteraukreis";3;5;311;;327;;;;"DE71E";"Wetteraukreis";3;5;313
+"DE72";"Gießen";2;5;312;;328;;;;"DE72";"Gießen";2;5;314
+"DE721";"Gießen, Landkreis";3;5;313;;329;;;;"DE721";"Gießen, Landkreis";3;5;315
+"DE722";"Lahn-Dill-Kreis";3;5;314;;330;;;;"DE722";"Lahn-Dill-Kreis";3;5;316
+"DE723";"Limburg-Weilburg";3;5;315;;331;;;;"DE723";"Limburg-Weilburg";3;5;317
+"DE724";"Marburg-Biedenkopf";3;5;316;;332;;;;"DE724";"Marburg-Biedenkopf";3;5;318
+"DE725";"Vogelsbergkreis";3;5;317;;333;;;;"DE725";"Vogelsbergkreis";3;5;319
+"DE73";"Kassel";2;5;318;;334;;;;"DE73";"Kassel";2;5;320
+"DE731";"Kassel, Kreisfreie Stadt";3;5;319;;335;;;;"DE731";"Kassel, Kreisfreie Stadt";3;5;321
+"DE732";"Fulda";3;5;320;;336;;;;"DE732";"Fulda";3;5;322
+"DE733";"Hersfeld-Rotenburg";3;5;321;;337;;;;"DE733";"Hersfeld-Rotenburg";3;5;323
+"DE734";"Kassel, Landkreis";3;5;322;;338;;;;"DE734";"Kassel, Landkreis";3;5;324
+"DE735";"Schwalm-Eder-Kreis";3;5;323;;339;;;;"DE735";"Schwalm-Eder-Kreis";3;5;325
+"DE736";"Waldeck-Frankenberg";3;5;324;;340;;;;"DE736";"Waldeck-Frankenberg";3;5;326
+"DE737";"Werra-Meißner-Kreis";3;5;325;;341;;;;"DE737";"Werra-Meißner-Kreis";3;5;327
+"DE8";"MECKLENBURG-VORPOMMERN";1;5;326;;342;;;;"DE8";"MECKLENBURG-VORPOMMERN";1;5;328
+"DE80";"Mecklenburg-Vorpommern";2;5;327;;343;;;;"DE80";"Mecklenburg-Vorpommern";2;5;329
+"DE801";"Greifswald, Kreisfreie Stadt";3;5;328;;344;;;;"DE801";"Greifswald, Kreisfreie Stadt";3;5;330
+"DE802";"Neubrandenburg, Kreisfreie Stadt";3;5;329;;345;;;;"DE802";"Neubrandenburg, Kreisfreie Stadt";3;5;331
+"DE803";"Rostock, Kreisfreie Stadt";3;5;330;;346;;;;"DE803";"Rostock, Kreisfreie Stadt";3;5;332
+"DE804";"Schwerin, Kreisfreie Stadt";3;5;331;;347;;;;"DE804";"Schwerin, Kreisfreie Stadt";3;5;333
+"DE805";"Stralsund, Kreisfreie Stadt";3;5;332;;348;;;;"DE805";"Stralsund, Kreisfreie Stadt";3;5;334
+"DE806";"Wismar, Kreisfreie Stadt";3;5;333;;349;;;;"DE806";"Wismar, Kreisfreie Stadt";3;5;335
+"DE807";"Bad Doberan";3;5;334;;350;;;;"DE807";"Bad Doberan";3;5;336
+"DE808";"Demmin";3;5;335;;351;;;;"DE808";"Demmin";3;5;337
+"DE809";"Güstrow";3;5;336;;352;;;;"DE809";"Güstrow";3;5;338
+"DE80A";"Ludwigslust";3;5;337;;353;;;;"DE80A";"Ludwigslust";3;5;339
+"DE80B";"Mecklenburg-Strelitz";3;5;338;;354;;;;"DE80B";"Mecklenburg-Strelitz";3;5;340
+"DE80C";"Müritz";3;5;339;;355;;;;"DE80C";"Müritz";3;5;341
+"DE80D";"Nordvorpommern";3;5;340;;356;;;;"DE80D";"Nordvorpommern";3;5;342
+"DE80E";"Nordwestmecklenburg";3;5;341;;357;;;;"DE80E";"Nordwestmecklenburg";3;5;343
+"DE80F";"Ostvorpommern";3;5;342;;358;;;;"DE80F";"Ostvorpommern";3;5;344
+"DE80G";"Parchim";3;5;343;;359;;;;"DE80G";"Parchim";3;5;345
+"DE80H";"Rügen";3;5;344;;360;;;;"DE80H";"Rügen";3;5;346
+"DE80I";"Uecker-Randow";3;5;345;;361;;;;"DE80I";"Uecker-Randow";3;5;347
+"DE9";"NIEDERSACHSEN";1;5;346;;362;;;;"DE9";"NIEDERSACHSEN";1;5;348
+"DE91";"Braunschweig";2;5;347;;363;;;;"DE91";"Braunschweig";2;5;349
+"DE911";"Braunschweig, Kreisfreie Stadt";3;5;348;;364;;;;"DE911";"Braunschweig, Kreisfreie Stadt";3;5;350
+"DE912";"Salzgitter, Kreisfreie Stadt";3;5;349;;365;;;;"DE912";"Salzgitter, Kreisfreie Stadt";3;5;351
+"DE913";"Wolfsburg, Kreisfreie Stadt";3;5;350;;366;;;;"DE913";"Wolfsburg, Kreisfreie Stadt";3;5;352
+"DE914";"Gifhorn";3;5;351;;367;;;;"DE914";"Gifhorn";3;5;353
+"DE915";"Göttingen";3;5;352;;368;;;;"DE915";"Göttingen";3;5;354
+"DE916";"Goslar";3;5;353;;369;;;;"DE916";"Goslar";3;5;355
+"DE917";"Helmstedt";3;5;354;;370;;;;"DE917";"Helmstedt";3;5;356
+"DE918";"Northeim";3;5;355;;371;;;;"DE918";"Northeim";3;5;357
+"DE919";"Osterode am Harz";3;5;356;;372;;;;"DE919";"Osterode am Harz";3;5;358
+"DE91A";"Peine";3;5;357;;373;;;;"DE91A";"Peine";3;5;359
+"DE91B";"Wolfenbüttel";3;5;358;;374;;;;"DE91B";"Wolfenbüttel";3;5;360
+"DE92";"Hannover";2;5;359;;375;;;;"DE92";"Hannover";2;5;361
+"DE922";"Diepholz";3;5;360;;376;;;;"DE922";"Diepholz";3;5;362
+"DE923";"Hameln-Pyrmont";3;5;361;;377;;;;"DE923";"Hameln-Pyrmont";3;5;363
+"DE925";"Hildesheim";3;5;362;;378;;;;"DE925";"Hildesheim";3;5;364
+"DE926";"Holzminden";3;5;363;;379;;;;"DE926";"Holzminden";3;5;365
+"DE927";"Nienburg (Weser)";3;5;364;;380;;;;"DE927";"Nienburg (Weser)";3;5;366
+"DE928";"Schaumburg";3;5;365;;381;;;;"DE928";"Schaumburg";3;5;367
+"DE929";"Region Hannover";3;5;366;;382;;;;"DE929";"Region Hannover";3;5;368
+"DE93";"Lüneburg";2;5;367;;383;;;;"DE93";"Lüneburg";2;5;369
+"DE931";"Celle";3;5;368;;384;;;;"DE931";"Celle";3;5;370
+"DE932";"Cuxhaven";3;5;369;;385;;;;"DE932";"Cuxhaven";3;5;371
+"DE933";"Harburg";3;5;370;;386;;;;"DE933";"Harburg";3;5;372
+"DE934";"Lüchow-Dannenberg";3;5;371;;387;;;;"DE934";"Lüchow-Dannenberg";3;5;373
+"DE935";"Lüneburg, Landkreis";3;5;372;;388;;;;"DE935";"Lüneburg, Landkreis";3;5;374
+"DE936";"Osterholz";3;5;373;;389;;;;"DE936";"Osterholz";3;5;375
+"DE937";"Rotenburg (Wümme)";3;5;374;;390;;;;"DE937";"Rotenburg (Wümme)";3;5;376
+"DE938";"Soltau-Fallingbostel";3;5;375;;391;;;;"DE938";"Soltau-Fallingbostel";3;5;377
+"DE939";"Stade";3;5;376;;392;;;;"DE939";"Stade";3;5;378
+"DE93A";"Uelzen";3;5;377;;393;;;;"DE93A";"Uelzen";3;5;379
+"DE93B";"Verden";3;5;378;;394;;;;"DE93B";"Verden";3;5;380
+"DE94";"Weser-Ems";2;5;379;;395;;;;"DE94";"Weser-Ems";2;5;381
+"DE941";"Delmenhorst, Kreisfreie Stadt";3;5;380;;396;;;;"DE941";"Delmenhorst, Kreisfreie Stadt";3;5;382
+"DE942";"Emden, Kreisfreie Stadt";3;5;381;;397;;;;"DE942";"Emden, Kreisfreie Stadt";3;5;383
+"DE943";"Oldenburg (Oldenburg), Kreisfreie Stadt";3;5;382;;398;;;;"DE943";"Oldenburg (Oldenburg), Kreisfreie Stadt";3;5;384
+"DE944";"Osnabrück, Kreisfreie Stadt";3;5;383;;399;;;;"DE944";"Osnabrück, Kreisfreie Stadt";3;5;385
+"DE945";"Wilhelmshaven, Kreisfreie Stadt";3;5;384;;400;;;;"DE945";"Wilhelmshaven, Kreisfreie Stadt";3;5;386
+"DE946";"Ammerland";3;5;385;;401;;;;"DE946";"Ammerland";3;5;387
+"DE947";"Aurich";3;5;386;;402;;;;"DE947";"Aurich";3;5;388
+"DE948";"Cloppenburg";3;5;387;;403;;;;"DE948";"Cloppenburg";3;5;389
+"DE949";"Emsland";3;5;388;;404;;;;"DE949";"Emsland";3;5;390
+"DE94A";"Friesland (D)";3;5;389;;405;;;;"DE94A";"Friesland";3;5;391
+"DE94B";"Grafschaft Bentheim";3;5;390;;406;;;;"DE94B";"Grafschaft Bentheim";3;5;392
+"DE94C";"Leer";3;5;391;;407;;;;"DE94C";"Leer";3;5;393
+"DE94D";"Oldenburg, Landkreis";3;5;392;;408;;;;"DE94D";"Oldenburg, Landkreis";3;5;394
+"DE94E";"Osnabrück, Landkreis";3;5;393;;409;;;;"DE94E";"Osnabrück, Landkreis";3;5;395
+"DE94F";"Vechta";3;5;394;;410;;;;"DE94F";"Vechta";3;5;396
+"DE94G";"Wesermarsch";3;5;395;;411;;;;"DE94G";"Wesermarsch";3;5;397
+"DE94H";"Wittmund";3;5;396;;412;;;;"DE94H";"Wittmund";3;5;398
+"DEA";"NORDRHEIN-WESTFALEN";1;5;397;;413;;;;"DEA";"NORDRHEIN-WESTFALEN";1;5;399
+"DEA1";"Düsseldorf";2;5;398;;414;;;;"DEA1";"Düsseldorf";2;5;400
+"DEA11";"Düsseldorf, Kreisfreie Stadt";3;5;399;;415;;;;"DEA11";"Düsseldorf, Kreisfreie Stadt";3;5;401
+"DEA12";"Duisburg, Kreisfreie Stadt";3;5;400;;416;;;;"DEA12";"Duisburg, Kreisfreie Stadt";3;5;402
+"DEA13";"Essen, Kreisfreie Stadt";3;5;401;;417;;;;"DEA13";"Essen, Kreisfreie Stadt";3;5;403
+"DEA14";"Krefeld, Kreisfreie Stadt";3;5;402;;418;;;;"DEA14";"Krefeld, Kreisfreie Stadt";3;5;404
+"DEA15";"Mönchengladbach, Kreisfreie Stadt";3;5;403;;419;;;;"DEA15";"Mönchengladbach, Kreisfreie Stadt";3;5;405
+"DEA16";"Mülheim an der Ruhr,Kreisfreie Stadt";3;5;404;;420;;;;"DEA16";"Mülheim an der Ruhr,Kreisfreie Stadt";3;5;406
+"DEA17";"Oberhausen, Kreisfreie Stadt";3;5;405;;421;;;;"DEA17";"Oberhausen, Kreisfreie Stadt";3;5;407
+"DEA18";"Remscheid, Kreisfreie Stadt";3;5;406;;422;;;;"DEA18";"Remscheid, Kreisfreie Stadt";3;5;408
+"DEA19";"Solingen, Kreisfreie Stadt";3;5;407;;423;;;;"DEA19";"Solingen, Kreisfreie Stadt";3;5;409
+"DEA1A";"Wuppertal, Kreisfreie Stadt";3;5;408;;424;;;;"DEA1A";"Wuppertal, Kreisfreie Stadt";3;5;410
+"DEA1B";"Kleve";3;5;409;;425;;;;"DEA1B";"Kleve";3;5;411
+"DEA1C";"Mettmann";3;5;410;;426;;;;"DEA1C";"Mettmann";3;5;412
+"DEA1D";"Rhein-Kreis Neuss";3;5;411;"Name change";427;;;;"DEA1D";"Neuss";3;5;413
+"DEA1E";"Viersen";3;5;412;;428;;;;"DEA1E";"Viersen";3;5;414
+"DEA1F";"Wesel";3;5;413;;429;;;;"DEA1F";"Wesel";3;5;415
+"DEA2";"Köln";2;5;414;;430;;;;"DEA2";"Köln";2;5;416
+"DEA21";"Aachen, Kreisfreie Stadt";3;5;415;;431;;;;"DEA21";"Aachen, Kreisfreie Stadt";3;5;417
+"DEA22";"Bonn, Kreisfreie Stadt";3;5;416;;432;;;;"DEA22";"Bonn, Kreisfreie Stadt";3;5;418
+"DEA23";"Köln, Kreisfreie Stadt";3;5;417;;433;;;;"DEA23";"Köln, Kreisfreie Stadt";3;5;419
+"DEA24";"Leverkusen, Kreisfreie Stadt";3;5;418;;434;;;;"DEA24";"Leverkusen, Kreisfreie Stadt";3;5;420
+"DEA25";"Aachen, Kreis";3;5;419;;435;;;;"DEA25";"Aachen, Kreis";3;5;421
+"DEA26";"Düren";3;5;420;;436;;;;"DEA26";"Düren";3;5;422
+"DEA27";"Rhein-Erft-Kreis";3;5;421;"Name change";437;;;;"DEA27";"Erftkreis";3;5;423
+"DEA28";"Euskirchen";3;5;422;;438;;;;"DEA28";"Euskirchen";3;5;424
+"DEA29";"Heinsberg";3;5;423;;439;;;;"DEA29";"Heinsberg";3;5;425
+"DEA2A";"Oberbergischer Kreis";3;5;424;;440;;;;"DEA2A";"Oberbergischer Kreis";3;5;426
+"DEA2B";"Rheinisch-Bergischer Kreis";3;5;425;;441;;;;"DEA2B";"Rheinisch-Bergischer Kreis";3;5;427
+"DEA2C";"Rhein-Sieg-Kreis";3;5;426;;442;;;;"DEA2C";"Rhein-Sieg-Kreis";3;5;428
+"DEA3";"Münster";2;5;427;;443;;;;"DEA3";"Münster";2;5;429
+"DEA31";"Bottrop, Kreisfreie Stadt";3;5;428;;444;;;;"DEA31";"Bottrop, Kreisfreie Stadt";3;5;430
+"DEA32";"Gelsenkirchen, Kreisfreie Stadt";3;5;429;;445;;;;"DEA32";"Gelsenkirchen, Kreisfreie Stadt";3;5;431
+"DEA33";"Münster, Kreisfreie Stadt";3;5;430;;446;;;;"DEA33";"Münster, Kreisfreie Stadt";3;5;432
+"DEA34";"Borken";3;5;431;;447;;;;"DEA34";"Borken";3;5;433
+"DEA35";"Coesfeld";3;5;432;;448;;;;"DEA35";"Coesfeld";3;5;434
+"DEA36";"Recklinghausen";3;5;433;;449;;;;"DEA36";"Recklinghausen";3;5;435
+"DEA37";"Steinfurt";3;5;434;;450;;;;"DEA37";"Steinfurt";3;5;436
+"DEA38";"Warendorf";3;5;435;;451;;;;"DEA38";"Warendorf";3;5;437
+"DEA4";"Detmold";2;5;436;;452;;;;"DEA4";"Detmold";2;5;438
+"DEA41";"Bielefeld, Kreisfreie Stadt";3;5;437;;453;;;;"DEA41";"Bielefeld, Kreisfreie Stadt";3;5;439
+"DEA42";"Gütersloh";3;5;438;;454;;;;"DEA42";"Gütersloh";3;5;440
+"DEA43";"Herford";3;5;439;;455;;;;"DEA43";"Herford";3;5;441
+"DEA44";"Höxter";3;5;440;;456;;;;"DEA44";"Höxter";3;5;442
+"DEA45";"Lippe";3;5;441;;457;;;;"DEA45";"Lippe";3;5;443
+"DEA46";"Minden-Lübbecke";3;5;442;;458;;;;"DEA46";"Minden-Lübbecke";3;5;444
+"DEA47";"Paderborn";3;5;443;;459;;;;"DEA47";"Paderborn";3;5;445
+"DEA5";"Arnsberg";2;5;444;;460;;;;"DEA5";"Arnsberg";2;5;446
+"DEA51";"Bochum, Kreisfreie Stadt";3;5;445;;461;;;;"DEA51";"Bochum, Kreisfreie Stadt";3;5;447
+"DEA52";"Dortmund, Kreisfreie Stadt";3;5;446;;462;;;;"DEA52";"Dortmund, Kreisfreie Stadt";3;5;448
+"DEA53";"Hagen, Kreisfreie Stadt";3;5;447;;463;;;;"DEA53";"Hagen, Kreisfreie Stadt";3;5;449
+"DEA54";"Hamm, Kreisfreie Stadt";3;5;448;;464;;;;"DEA54";"Hamm, Kreisfreie Stadt";3;5;450
+"DEA55";"Herne, Kreisfreie Stadt";3;5;449;;465;;;;"DEA55";"Herne, Kreisfreie Stadt";3;5;451
+"DEA56";"Ennepe-Ruhr-Kreis";3;5;450;;466;;;;"DEA56";"Ennepe-Ruhr-Kreis";3;5;452
+"DEA57";"Hochsauerlandkreis";3;5;451;;467;;;;"DEA57";"Hochsauerlandkreis";3;5;453
+"DEA58";"Märkischer Kreis";3;5;452;;468;;;;"DEA58";"Märkischer Kreis";3;5;454
+"DEA59";"Olpe";3;5;453;;469;;;;"DEA59";"Olpe";3;5;455
+"DEA5A";"Siegen-Wittgenstein";3;5;454;;470;;;;"DEA5A";"Siegen-Wittgenstein";3;5;456
+"DEA5B";"Soest";3;5;455;;471;;;;"DEA5B";"Soest";3;5;457
+"DEA5C";"Unna";3;5;456;;472;;;;"DEA5C";"Unna";3;5;458
+"DEB";"RHEINLAND-PFALZ";1;5;457;;473;;;;"DEB";"RHEINLAND-PFALZ";1;5;459
+"DEB1";"Koblenz";2;5;458;;474;;;;"DEB1";"Koblenz";2;5;460
+"DEB11";"Koblenz, Kreisfreie Stadt";3;5;459;;475;;;;"DEB11";"Koblenz, Kreisfreie Stadt";3;5;461
+"DEB12";"Ahrweiler";3;5;460;;476;;;;"DEB12";"Ahrweiler";3;5;462
+"DEB13";"Altenkirchen (Westerwald)";3;5;461;;477;;;;"DEB13";"Altenkirchen (Westerwald)";3;5;463
+"DEB14";"Bad Kreuznach";3;5;462;;478;;;;"DEB14";"Bad Kreuznach";3;5;464
+"DEB15";"Birkenfeld";3;5;463;;479;;;;"DEB15";"Birkenfeld";3;5;465
+"DEB16";"Cochem-Zell";3;5;464;;480;;;;"DEB16";"Cochem-Zell";3;5;466
+"DEB17";"Mayen-Koblenz";3;5;465;;481;;;;"DEB17";"Mayen-Koblenz";3;5;467
+"DEB18";"Neuwied";3;5;466;;482;;;;"DEB18";"Neuwied";3;5;468
+"DEB19";"Rhein-Hunsrück-Kreis";3;5;467;;483;;;;"DEB19";"Rhein-Hunsrück-Kreis";3;5;469
+"DEB1A";"Rhein-Lahn-Kreis";3;5;468;;484;;;;"DEB1A";"Rhein-Lahn-Kreis";3;5;470
+"DEB1B";"Westerwaldkreis";3;5;469;;485;;;;"DEB1B";"Westerwaldkreis";3;5;471
+"DEB2";"Trier";2;5;470;;486;;;;"DEB2";"Trier";2;5;472
+"DEB21";"Trier, Kreisfreie Stadt";3;5;471;;487;;;;"DEB21";"Trier, Kreisfreie Stadt";3;5;473
+"DEB22";"Bernkastel-Wittlich";3;5;472;;488;;;;"DEB22";"Bernkastel-Wittlich";3;5;474
+"DEB23";"Bitburg-Prüm";3;5;473;;489;;;;"DEB23";"Bitburg-Prüm";3;5;475
+"DEB24";"Daun";3;5;474;;490;;;;"DEB24";"Daun";3;5;476
+"DEB25";"Trier-Saarburg";3;5;475;;491;;;;"DEB25";"Trier-Saarburg";3;5;477
+"DEB3";"Rheinhessen-Pfalz";2;5;476;;492;;;;"DEB3";"Rheinhessen-Pfalz";2;5;478
+"DEB31";"Frankenthal (Pfalz), Kreisfreie Stadt";3;5;477;;493;;;;"DEB31";"Frankenthal (Pfalz), Kreisfreie Stadt";3;5;479
+"DEB32";"Kaiserslautern, Kreisfreie Stadt";3;5;478;;494;;;;"DEB32";"Kaiserslautern, Kreisfreie Stadt";3;5;480
+"DEB33";"Landau in der Pfalz, Kreisfreie Stadt";3;5;479;;495;;;;"DEB33";"Landau in der Pfalz, Kreisfreie Stadt";3;5;481
+"DEB34";"Ludwigshafen am Rhein, Kreisfreie Stadt";3;5;480;;496;;;;"DEB34";"Ludwigshafen am Rhein, Kreisfreie Stadt";3;5;482
+"DEB35";"Mainz, Kreisfreie Stadt";3;5;481;;497;;;;"DEB35";"Mainz, Kreisfreie Stadt";3;5;483
+"DEB36";"Neustadt an der Weinstraße, Kreisfreie Stadt";3;5;482;;498;;;;"DEB36";"Neustadt an der Weinstraße, Kreisfreie Stadt";3;5;484
+"DEB37";"Pirmasens, Kreisfreie Stadt";3;5;483;;499;;;;"DEB37";"Pirmasens, Kreisfreie Stadt";3;5;485
+"DEB38";"Speyer, Kreisfreie Stadt";3;5;484;;500;;;;"DEB38";"Speyer, Kreisfreie Stadt";3;5;486
+"DEB39";"Worms, Kreisfreie Stadt";3;5;485;;501;;;;"DEB39";"Worms, Kreisfreie Stadt";3;5;487
+"DEB3A";"Zweibrücken, Kreisfreie Stadt";3;5;486;;502;;;;"DEB3A";"Zweibrücken, Kreisfreie Stadt";3;5;488
+"DEB3B";"Alzey-Worms";3;5;487;;503;;;;"DEB3B";"Alzey-Worms";3;5;489
+"DEB3C";"Bad Dürkheim";3;5;488;;504;;;;"DEB3C";"Bad Dürkheim";3;5;490
+"DEB3D";"Donnersbergkreis";3;5;489;;505;;;;"DEB3D";"Donnersbergkreis";3;5;491
+"DEB3E";"Germersheim";3;5;490;;506;;;;"DEB3E";"Germersheim";3;5;492
+"DEB3F";"Kaiserslautern, Landkreis";3;5;491;;507;;;;"DEB3F";"Kaiserslautern, Landkreis";3;5;493
+"DEB3G";"Kusel";3;5;492;;508;;;;"DEB3G";"Kusel";3;5;494
+"DEB3H";"Südliche Weinstraße";3;5;493;;509;;;;"DEB3H";"Südliche Weinstraße";3;5;495
+"DEB3I";"Rhein-Pfalz-Kreis";3;5;494;"Name change";510;;;;"DEB3I";"Ludwigshafen, Landkreis";3;5;496
+"DEB3J";"Mainz-Bingen";3;5;495;;511;;;;"DEB3J";"Mainz-Bingen";3;5;497
+"DEB3K";"Südwestpfalz";3;5;496;;512;;;;"DEB3K";"Südwestpfalz";3;5;498
+"DEC";"SAARLAND";1;5;497;;513;;;;"DEC";"SAARLAND";1;5;499
+"DEC0";"Saarland";2;5;498;;514;;;;"DEC0";"Saarland";2;5;500
+"DEC01";"Stadtverband Saarbrücken";3;5;499;;515;;;;"DEC01";"Stadtverband Saarbrücken";3;5;501
+"DEC02";"Merzig-Wadern";3;5;500;;516;;;;"DEC02";"Merzig-Wadern";3;5;502
+"DEC03";"Neunkirchen";3;5;501;;517;;;;"DEC03";"Neunkirchen";3;5;503
+"DEC04";"Saarlouis";3;5;502;;518;;;;"DEC04";"Saarlouis";3;5;504
+"DEC05";"Saarpfalz-Kreis";3;5;503;;519;;;;"DEC05";"Saarpfalz-Kreis";3;5;505
+"DEC06";"St. Wendel";3;5;504;;520;;;;"DEC06";"St. Wendel";3;5;506
+"DED";"SACHSEN";1;5;505;;521;;;;"DED";"SACHSEN";1;5;507
+"DED1";"Chemnitz";2;5;506;;522;;;;"DED1";"Chemnitz";2;5;508
+"DED11";"Chemnitz, Kreisfreie Stadt";3;5;507;;523;;;;"DED11";"Chemnitz, Kreisfreie Stadt";3;5;509
+"DED12";"Plauen, Kreisfreie Stadt";3;5;508;;524;;;;"DED12";"Plauen, Kreisfreie Stadt";3;5;510
+"DED13";"Zwickau, Kreisfreie Stadt";3;5;509;;525;;;;"DED13";"Zwickau, Kreisfreie Stadt";3;5;511
+"DED14";"Annaberg";3;5;510;;526;;;;"DED14";"Annaberg";3;5;512
+"DED15";"Chemnitzer Land";3;5;511;;527;;;;"DED15";"Chemnitzer Land";3;5;513
+"DED16";"Freiberg";3;5;512;;528;;;;"DED16";"Freiberg";3;5;514
+"DED17";"Vogtlandkreis";3;5;513;;529;;;;"DED17";"Vogtlandkreis";3;5;515
+"DED18";"Mittlerer Erzgebirgskreis";3;5;514;;530;;;;"DED18";"Mittlerer Erzgebirgskreis";3;5;516
+"DED19";"Mittweida";3;5;515;;531;;;;"DED19";"Mittweida";3;5;517
+"DED1A";"Stollberg";3;5;516;;532;;;;"DED1A";"Stollberg";3;5;518
+"DED1B";"Aue-Schwarzenberg";3;5;517;;533;;;;"DED1B";"Aue-Schwarzenberg";3;5;519
+"DED1C";"Zwickauer Land";3;5;518;;534;;;;"DED1C";"Zwickauer Land";3;5;520
+"DED2";"Dresden";2;5;519;;535;;;;"DED2";"Dresden";2;5;521
+"DED21";"Dresden, Kreisfreie Stadt";3;5;520;;536;;;;"DED21";"Dresden, Kreisfreie Stadt";3;5;522
+"DED22";"Görlitz, Kreisfreie Stadt";3;5;521;;537;;;;"DED22";"Görlitz, Kreisfreie Stadt";3;5;523
+"DED23";"Hoyerswerda, Kreisfreie Stadt";3;5;522;;538;;;;"DED23";"Hoyerswerda, Kreisfreie Stadt";3;5;524
+"DED24";"Bautzen";3;5;523;;539;;;;"DED24";"Bautzen";3;5;525
+"DED25";"Meißen";3;5;524;;540;;;;"DED25";"Meißen";3;5;526
+"DED26";"Niederschlesischer Oberlausitzkreis";3;5;525;;541;;;;"DED26";"Niederschlesischer Oberlausitzkreis";3;5;527
+"DED27";"Riesa-Großenhain";3;5;526;;542;;;;"DED27";"Riesa-Großenhain";3;5;528
+"DED28";"Löbau-Zittau";3;5;527;;543;;;;"DED28";"Löbau-Zittau";3;5;529
+"DED29";"Sächsische Schweiz";3;5;528;;544;;;;"DED29";"Sächsische Schweiz";3;5;530
+"DED2A";"Weißeritzkreis";3;5;529;;545;;;;"DED2A";"Weißeritzkreis";3;5;531
+"DED2B";"Kamenz";3;5;530;;546;;;;"DED2B";"Kamenz";3;5;532
+"DED3";"Leipzig";2;5;531;;547;;;;"DED3";"Leipzig";2;5;533
+"DED31";"Leipzig, Kreisfreie Stadt";3;5;532;;548;;;;"DED31";"Leipzig, Kreisfreie Stadt";3;5;534
+"DED32";"Delitzsch";3;5;533;;549;;;;"DED32";"Delitzsch";3;5;535
+"DED33";"Döbeln";3;5;534;;550;;;;"DED33";"Döbeln";3;5;536
+"DED34";"Leipziger Land";3;5;535;;551;;;;"DED34";"Leipziger Land";3;5;537
+"DED35";"Muldentalkreis";3;5;536;;552;;;;"DED35";"Muldentalkreis";3;5;538
+"DED36";"Torgau-Oschatz";3;5;537;;553;;;;"DED36";"Torgau-Oschatz";3;5;539
+"DEE";"SACHSEN-ANHALT";1;5;538;;554;;;;"DEE";"SACHSEN-ANHALT";1;5;540
+"DEE0";"Sachsen-Anhalt";2;5;539;"New region";582;;;;"DEE1";"Dessau";2;5;541
+"DEE01";"Dessau-Roßlau, Kreisfreie Stadt";3;5;540;"New region";583;;;;"DEE11";"Dessau, Kreisfreie Stadt";3;5;542
+"DEE02";"Halle (Saale), Kreisfreie Stadt";3;5;541;"Code change";584;;;;"DEE12";"Anhalt-Zerbst";3;5;543
+"DEE03";"Magdeburg, Kreisfreie Stadt";3;5;542;"Code change";585;;;;"DEE13";"Bernburg";3;5;544
+"DEE04";"Altmarkkreis Salzwedel";3;5;543;"Code change";586;;;;"DEE14";"Bitterfeld";3;5;545
+"DEE05";"Anhalt-Bitterfeld";3;5;544;"New region";587;;;;"DEE15";"Köthen";3;5;546
+"DEE06";"Jerichower Land";3;5;545;"New region";588;;;;"DEE16";"Wittenberg";3;5;547
+"DEE07";"Börde";3;5;546;"New region";589;;;;"DEE2";"Halle";2;5;548
+"DEE08";"Burgenland (D)";3;5;547;"New region";590;;;;"DEE21";"Halle (Saale), Kreisfreie Stadt";3;5;549
+"DEE09";"Harz";3;5;548;"New region";591;;;;"DEE22";"Burgenlandkreis";3;5;550
+"DEE0A";"Mansfeld-Südharz";3;5;549;"New region";592;;;;"DEE23";"Mansfelder Land";3;5;551
+"DEE0B";"Saalekreis";3;5;550;"New region";593;;;;"DEE24";"Merseburg-Querfurt";3;5;552
+"DEE0C";"Salzland";3;5;551;"New region";594;;;;"DEE25";"Saalkreis";3;5;553
+"DEE0D";"Stendal";3;5;552;"Code change";595;;;;"DEE26";"Sangerhausen";3;5;554
+"DEE0E";"Wittenberg";3;5;553;"New region";596;;;;"DEE27";"Weißenfels";3;5;555
+;;;;;;;;;;"DEE3";"Magdeburg";2;5;556
+;;;;;;;;;;"DEE31";"Magdeburg, Kreisfreie Stadt";3;5;557
+;;;;;;;;;;"DEE32";"Aschersleben-Staßfurt";3;5;558
+;;;;;;;;;;"DEE33";"Bördekreis";3;5;559
+;;;;;;;;;;"DEE34";"Halberstadt";3;5;560
+;;;;;;;;;;"DEE35";"Jerichower Land";3;5;561
+;;;;;;;;;;"DEE36";"Ohrekreis";3;5;562
+;;;;;;;;;;"DEE37";"Stendal";3;5;563
+;;;;;;;;;;"DEE38";"Quedlinburg";3;5;564
+;;;;;;;;;;"DEE39";"Schönebeck";3;5;565
+;;;;;;;;;;"DEE3A";"Wernigerode";3;5;566
+;;;;;;;;;;"DEE3B";"Altmarkkreis Salzwedel";3;5;567
+"DEF";"SCHLESWIG-HOLSTEIN";1;5;554;;597;;;;"DEF";"SCHLESWIG-HOLSTEIN";1;5;568
+"DEF0";"Schleswig-Holstein";2;5;555;;598;;;;"DEF0";"Schleswig-Holstein";2;5;569
+"DEF01";"Flensburg, Kreisfreie Stadt";3;5;556;;599;;;;"DEF01";"Flensburg, Kreisfreie Stadt";3;5;570
+"DEF02";"Kiel, Kreisfreie Stadt";3;5;557;;600;;;;"DEF02";"Kiel, Kreisfreie Stadt";3;5;571
+"DEF03";"Lübeck, Kreisfreie Stadt";3;5;558;;601;;;;"DEF03";"Lübeck, Kreisfreie Stadt";3;5;572
+"DEF04";"Neumünster, Kreisfreie Stadt";3;5;559;;602;;;;"DEF04";"Neumünster, Kreisfreie Stadt";3;5;573
+"DEF05";"Dithmarschen";3;5;560;;603;;;;"DEF05";"Dithmarschen";3;5;574
+"DEF06";"Herzogtum Lauenburg";3;5;561;;604;;;;"DEF06";"Herzogtum Lauenburg";3;5;575
+"DEF07";"Nordfriesland";3;5;562;;605;;;;"DEF07";"Nordfriesland";3;5;576
+"DEF08";"Ostholstein";3;5;563;;606;;;;"DEF08";"Ostholstein";3;5;577
+"DEF09";"Pinneberg";3;5;564;;607;;;;"DEF09";"Pinneberg";3;5;578
+"DEF0A";"Plön";3;5;565;;608;;;;"DEF0A";"Plön";3;5;579
+"DEF0B";"Rendsburg-Eckernförde";3;5;566;;609;;;;"DEF0B";"Rendsburg-Eckernförde";3;5;580
+"DEF0C";"Schleswig-Flensburg";3;5;567;;610;;;;"DEF0C";"Schleswig-Flensburg";3;5;581
+"DEF0D";"Segeberg";3;5;568;;611;;;;"DEF0D";"Segeberg";3;5;582
+"DEF0E";"Steinburg";3;5;569;;612;;;;"DEF0E";"Steinburg";3;5;583
+"DEF0F";"Stormarn";3;5;570;;613;;;;"DEF0F";"Stormarn";3;5;584
+"DEG";"THÜRINGEN";1;5;571;;614;;;;"DEG";"THÜRINGEN";1;5;585
+"DEG0";"Thüringen";2;5;572;;615;;;;"DEG0";"Thüringen";2;5;586
+"DEG01";"Erfurt, Kreisfreie Stadt";3;5;573;;616;;;;"DEG01";"Erfurt, Kreisfreie Stadt";3;5;587
+"DEG02";"Gera, Kreisfreie Stadt";3;5;574;;617;;;;"DEG02";"Gera, Kreisfreie Stadt";3;5;588
+"DEG03";"Jena, Kreisfreie Stadt";3;5;575;;618;;;;"DEG03";"Jena, Kreisfreie Stadt";3;5;589
+"DEG04";"Suhl, Kreisfreie Stadt";3;5;576;;619;;;;"DEG04";"Suhl, Kreisfreie Stadt";3;5;590
+"DEG05";"Weimar, Kreisfreie Stadt";3;5;577;;620;;;;"DEG05";"Weimar, Kreisfreie Stadt";3;5;591
+"DEG06";"Eichsfeld";3;5;578;;621;;;;"DEG06";"Eichsfeld";3;5;592
+"DEG07";"Nordhausen";3;5;579;;622;;;;"DEG07";"Nordhausen";3;5;593
+"DEG09";"Unstrut-Hainich-Kreis";3;5;580;;623;;;;"DEG09";"Unstrut-Hainich-Kreis";3;5;594
+"DEG0A";"Kyffhäuserkreis";3;5;581;;624;;;;"DEG0A";"Kyffhäuserkreis";3;5;595
+"DEG0B";"Schmalkalden-Meiningen";3;5;582;;625;;;;"DEG0B";"Schmalkalden-Meiningen";3;5;596
+"DEG0C";"Gotha";3;5;583;;626;;;;"DEG0C";"Gotha";3;5;597
+"DEG0D";"Sömmerda";3;5;584;;627;;;;"DEG0D";"Sömmerda";3;5;598
+"DEG0E";"Hildburghausen";3;5;585;;628;;;;"DEG0E";"Hildburghausen";3;5;599
+"DEG0F";"Ilm-Kreis";3;5;586;;629;;;;"DEG0F";"Ilm-Kreis";3;5;600
+"DEG0G";"Weimarer Land";3;5;587;;630;;;;"DEG0G";"Weimarer Land";3;5;601
+"DEG0H";"Sonneberg";3;5;588;;631;;;;"DEG0H";"Sonneberg";3;5;602
+"DEG0I";"Saalfeld-Rudolstadt";3;5;589;;632;;;;"DEG0I";"Saalfeld-Rudolstadt";3;5;603
+"DEG0J";"Saale-Holzland-Kreis";3;5;590;;633;;;;"DEG0J";"Saale-Holzland-Kreis";3;5;604
+"DEG0K";"Saale-Orla-Kreis";3;5;591;;634;;;;"DEG0K";"Saale-Orla-Kreis";3;5;605
+"DEG0L";"Greiz";3;5;592;;635;;;;"DEG0L";"Greiz";3;5;606
+"DEG0M";"Altenburger Land";3;5;593;;636;;;;"DEG0M";"Altenburger Land";3;5;607
+"DEG0N";"Eisenach, Kreisfreie Stadt";3;5;594;;637;;;;"DEG0N";"Eisenach, Kreisfreie Stadt";3;5;608
+"DEG0P";"Wartburgkreis";3;5;595;;638;;;;"DEG0P";"Wartburgkreis";3;5;609
+"DEZ";"EXTRA-REGIO";1;5;596;;639;;;;"DEZ";"EXTRA-REGIO";1;5;610
+"DEZZ";"Extra-Regio";2;5;597;;640;;;;"DEZZ";"Extra-Regio";2;5;611
+"DEZZZ";"Extra-Regio";3;5;598;;641;;;;"DEZZZ";"Extra-Regio";3;5;612
+
+"EE";"EESTI";0;6;599;;642;;;;"EE";"EESTI";0;6;1473
+"EE0";"EESTI";1;6;600;;643;;;;"EE0";"EESTI";1;6;1474
+"EE00";"Eesti";2;6;601;;644;;;;"EE00";"Eesti";2;6;1475
+"EE001";"Põhja-Eesti";3;6;602;;645;;;;"EE001";"Põhja-Eesti";3;6;1476
+"EE004";"Lääne-Eesti";3;6;603;;646;;;;"EE004";"Lääne-Eesti";3;6;1477
+"EE006";"Kesk-Eesti";3;6;604;;647;;;;"EE006";"Kesk-Eesti";3;6;1478
+"EE007";"Kirde-Eesti";3;6;605;;648;;;;"EE007";"Kirde-Eesti";3;6;1479
+"EE008";"Lõuna-Eesti";3;6;606;;649;;;;"EE008";"Lõuna-Eesti";3;6;1480
+"EEZ";"EXTRA-REGIO";1;6;607;;650;;;;"EEZ";"EXTRA-REGIO";1;6;1481
+"EEZZ";"Extra-Regio";2;6;608;;651;;;;"EEZZ";"Extra-Regio";2;6;1482
+"EEZZZ";"Extra-Regio";3;6;609;;652;;;;"EEZZZ";"Extra-Regio";3;6;1483
+
+"GR";"ELLADA";0;7;610;;653;;;;"GR";"ELLADA";0;7;886
+"GR1";"VOREIA ELLADA";1;7;611;;654;;;;"GR1";"VOREIA ELLADA";1;7;887
+"GR11";"Anatoliki Makedonia, Thraki";2;7;612;;655;;;;"GR11";"Anatoliki Makedonia, Thraki";2;7;888
+"GR111";"Evros";3;7;613;;656;;;;"GR111";"Evros";3;7;889
+"GR112";"Xanthi";3;7;614;;657;;;;"GR112";"Xanthi";3;7;890
+"GR113";"Rodopi";3;7;615;;658;;;;"GR113";"Rodopi";3;7;891
+"GR114";"Drama";3;7;616;;659;;;;"GR114";"Drama";3;7;892
+"GR115";"Kavala";3;7;617;;660;;;;"GR115";"Kavala";3;7;893
+"GR12";"Kentriki Makedonia";2;7;618;;661;;;;"GR12";"Kentriki Makedonia";2;7;894
+"GR121";"Imathia";3;7;619;;662;;;;"GR121";"Imathia";3;7;895
+"GR122";"Thessaloniki";3;7;620;;663;;;;"GR122";"Thessaloniki";3;7;896
+"GR123";"Kilkis";3;7;621;;664;;;;"GR123";"Kilkis";3;7;897
+"GR124";"Pella";3;7;622;;665;;;;"GR124";"Pella";3;7;898
+"GR125";"Pieria";3;7;623;;666;;;;"GR125";"Pieria";3;7;899
+"GR126";"Serres";3;7;624;;667;;;;"GR126";"Serres";3;7;900
+"GR127";"Chalkidiki";3;7;625;;668;;;;"GR127";"Chalkidiki";3;7;901
+"GR13";"Dytiki Makedonia";2;7;626;;669;;;;"GR13";"Dytiki Makedonia";2;7;902
+"GR131";"Grevena";3;7;627;;670;;;;"GR131";"Grevena";3;7;903
+"GR132";"Kastoria";3;7;628;;671;;;;"GR132";"Kastoria";3;7;904
+"GR133";"Kozani";3;7;629;;672;;;;"GR133";"Kozani";3;7;905
+"GR134";"Florina";3;7;630;;673;;;;"GR134";"Florina";3;7;906
+"GR14";"Thessalia";2;7;631;;674;;;;"GR14";"Thessalia";2;7;907
+"GR141";"Karditsa";3;7;632;;675;;;;"GR141";"Karditsa";3;7;908
+"GR142";"Larisa";3;7;633;;676;;;;"GR142";"Larisa";3;7;909
+"GR143";"Magnisia";3;7;634;;677;;;;"GR143";"Magnisia";3;7;910
+"GR144";"Trikala";3;7;635;;678;;;;"GR144";"Trikala";3;7;911
+"GR2";"KENTRIKI ELLADA";1;7;636;;679;;;;"GR2";"KENTRIKI ELLADA";1;7;912
+"GR21";"Ipeiros";2;7;637;;680;;;;"GR21";"Ipeiros";2;7;913
+"GR211";"Arta";3;7;638;;681;;;;"GR211";"Arta";3;7;914
+"GR212";"Thesprotia";3;7;639;;682;;;;"GR212";"Thesprotia";3;7;915
+"GR213";"Ioannina";3;7;640;;683;;;;"GR213";"Ioannina";3;7;916
+"GR214";"Preveza";3;7;641;;684;;;;"GR214";"Preveza";3;7;917
+"GR22";"Ionia Nisia";2;7;642;;685;;;;"GR22";"Ionia Nisia";2;7;918
+"GR221";"Zakynthos";3;7;643;;686;;;;"GR221";"Zakynthos";3;7;919
+"GR222";"Kerkyra";3;7;644;;687;;;;"GR222";"Kerkyra";3;7;920
+"GR223";"Kefallinia";3;7;645;;688;;;;"GR223";"Kefallinia";3;7;921
+"GR224";"Lefkada";3;7;646;;689;;;;"GR224";"Lefkada";3;7;922
+"GR23";"Dytiki Ellada";2;7;647;;690;;;;"GR23";"Dytiki Ellada";2;7;923
+"GR231";"Aitoloakarnania";3;7;648;;691;;;;"GR231";"Aitoloakarnania";3;7;924
+"GR232";"Achaia";3;7;649;;692;;;;"GR232";"Achaia";3;7;925
+"GR233";"Ileia";3;7;650;;693;;;;"GR233";"Ileia";3;7;926
+"GR24";"Sterea Ellada";2;7;651;;694;;;;"GR24";"Sterea Ellada";2;7;927
+"GR241";"Voiotia";3;7;652;;695;;;;"GR241";"Voiotia";3;7;928
+"GR242";"Evvoia";3;7;653;;696;;;;"GR242";"Evvoia";3;7;929
+"GR243";"Evrytania";3;7;654;;697;;;;"GR243";"Evrytania";3;7;930
+"GR244";"Fthiotida";3;7;655;;698;;;;"GR244";"Fthiotida";3;7;931
+"GR245";"Fokida";3;7;656;;699;;;;"GR245";"Fokida";3;7;932
+"GR25";"Peloponnisos";2;7;657;;700;;;;"GR25";"Peloponnisos";2;7;933
+"GR251";"Argolida";3;7;658;;701;;;;"GR251";"Argolida";3;7;934
+"GR252";"Arkadia";3;7;659;;702;;;;"GR252";"Arkadia";3;7;935
+"GR253";"Korinthia";3;7;660;;703;;;;"GR253";"Korinthia";3;7;936
+"GR254";"Lakonia";3;7;661;;704;;;;"GR254";"Lakonia";3;7;937
+"GR255";"Messinia";3;7;662;;705;;;;"GR255";"Messinia";3;7;938
+"GR3";"ATTIKI";1;7;663;;706;;;;"GR3";"ATTIKI";1;7;939
+"GR30";"Attiki";2;7;664;;707;;;;"GR30";"Attiki";2;7;940
+"GR300";"Attiki";3;7;665;;708;;;;"GR300";"Attiki";3;7;941
+"GR4";"NISIA AIGAIOU, KRITI";1;7;666;;709;;;;"GR4";"NISIA AIGAIOU, KRITI";1;7;942
+"GR41";"Voreio Aigaio";2;7;667;;710;;;;"GR41";"Voreio Aigaio";2;7;943
+"GR411";"Lesvos";3;7;668;;711;;;;"GR411";"Lesvos";3;7;944
+"GR412";"Samos";3;7;669;;712;;;;"GR412";"Samos";3;7;945
+"GR413";"Chios";3;7;670;;713;;;;"GR413";"Chios";3;7;946
+"GR42";"Notio Aigaio";2;7;671;;714;;;;"GR42";"Notio Aigaio";2;7;947
+"GR421";"Dodekanisos";3;7;672;;715;;;;"GR421";"Dodekanisos";3;7;948
+"GR422";"Kyklades";3;7;673;;716;;;;"GR422";"Kyklades";3;7;949
+"GR43";"Kriti";2;7;674;;717;;;;"GR43";"Kriti";2;7;950
+"GR431";"Irakleio";3;7;675;;718;;;;"GR431";"Irakleio";3;7;951
+"GR432";"Lasithi";3;7;676;;719;;;;"GR432";"Lasithi";3;7;952
+"GR433";"Rethymni";3;7;677;;720;;;;"GR433";"Rethymni";3;7;953
+"GR434";"Chania";3;7;678;;721;;;;"GR434";"Chania";3;7;954
+"GRZ";"EXTRA-REGIO";1;7;679;;722;;;;"GRZ";"EXTRA-REGIO";1;7;955
+"GRZZ";"Extra-Regio";2;7;680;;723;;;;"GRZZ";"Extra-Regio";2;7;956
+"GRZZZ";"Extra-Regio";3;7;681;;724;;;;"GRZZZ";"Extra-Regio";3;7;957
+
+"ES";"ESPAÑA";0;8;682;;725;;;;"ES";"ESPAÑA";0;8;634
+"ES1";"NOROESTE";1;8;683;;726;;;;"ES1";"NOROESTE";1;8;635
+"ES11";"Galicia";2;8;684;;727;;;;"ES11";"Galicia";2;8;636
+"ES111";"A Coruña";3;8;685;;728;;;;"ES111";"A Coruña";3;8;637
+"ES112";"Lugo";3;8;686;;729;;;;"ES112";"Lugo";3;8;638
+"ES113";"Ourense";3;8;687;;730;;;;"ES113";"Ourense";3;8;639
+"ES114";"Pontevedra";3;8;688;;731;;;;"ES114";"Pontevedra";3;8;640
+"ES12";"Principado de Asturias";2;8;689;;732;;;;"ES12";"Principado de Asturias";2;8;641
+"ES120";"Asturias";3;8;690;;733;;;;"ES120";"Asturias";3;8;642
+"ES13";"Cantabria";2;8;691;;734;;;;"ES13";"Cantabria";2;8;643
+"ES130";"Cantabria";3;8;692;;735;;;;"ES130";"Cantabria";3;8;644
+"ES2";"NORESTE";1;8;693;;736;;;;"ES2";"NORESTE";1;8;645
+"ES21";"País Vasco";2;8;694;;737;;;;"ES21";"País Vasco";2;8;646
+"ES211";"Álava";3;8;695;;738;;;;"ES211";"Álava";3;8;647
+"ES212";"Guipúzcoa";3;8;696;;739;;;;"ES212";"Guipúzcoa";3;8;648
+"ES213";"Vizcaya";3;8;697;;740;;;;"ES213";"Vizcaya";3;8;649
+"ES22";"Comunidad Foral de Navarra";2;8;698;;741;;;;"ES22";"Comunidad Foral de Navarra";2;8;650
+"ES220";"Navarra";3;8;699;;742;;;;"ES220";"Navarra";3;8;651
+"ES23";"La Rioja";2;8;700;;743;;;;"ES23";"La Rioja";2;8;652
+"ES230";"La Rioja";3;8;701;;744;;;;"ES230";"La Rioja";3;8;653
+"ES24";"Aragón";2;8;702;;745;;;;"ES24";"Aragón";2;8;654
+"ES241";"Huesca";3;8;703;;746;;;;"ES241";"Huesca";3;8;655
+"ES242";"Teruel";3;8;704;;747;;;;"ES242";"Teruel";3;8;656
+"ES243";"Zaragoza";3;8;705;;748;;;;"ES243";"Zaragoza";3;8;657
+"ES3";"COMUNIDAD DE MADRID";1;8;706;;749;;;;"ES3";"COMUNIDAD DE MADRID";1;8;658
+"ES30";"Comunidad de Madrid";2;8;707;;750;;;;"ES30";"Comunidad de Madrid";2;8;659
+"ES300";"Madrid";3;8;708;;751;;;;"ES300";"Madrid";3;8;660
+"ES4";"CENTRO (E)";1;8;709;;752;;;;"ES4";"CENTRO (E)";1;8;661
+"ES41";"Castilla y León";2;8;710;;753;;;;"ES41";"Castilla y León";2;8;662
+"ES411";"Ávila";3;8;711;;754;;;;"ES411";"Ávila";3;8;663
+"ES412";"Burgos";3;8;712;;755;;;;"ES412";"Burgos";3;8;664
+"ES413";"León";3;8;713;;756;;;;"ES413";"León";3;8;665
+"ES414";"Palencia";3;8;714;;757;;;;"ES414";"Palencia";3;8;666
+"ES415";"Salamanca";3;8;715;;758;;;;"ES415";"Salamanca";3;8;667
+"ES416";"Segovia";3;8;716;;759;;;;"ES416";"Segovia";3;8;668
+"ES417";"Soria";3;8;717;;760;;;;"ES417";"Soria";3;8;669
+"ES418";"Valladolid";3;8;718;;761;;;;"ES418";"Valladolid";3;8;670
+"ES419";"Zamora";3;8;719;;762;;;;"ES419";"Zamora";3;8;671
+"ES42";"Castilla-La Mancha";2;8;720;;763;;;;"ES42";"Castilla-La Mancha";2;8;672
+"ES421";"Albacete";3;8;721;;764;;;;"ES421";"Albacete";3;8;673
+"ES422";"Ciudad Real";3;8;722;;765;;;;"ES422";"Ciudad Real";3;8;674
+"ES423";"Cuenca";3;8;723;;766;;;;"ES423";"Cuenca";3;8;675
+"ES424";"Guadalajara";3;8;724;;767;;;;"ES424";"Guadalajara";3;8;676
+"ES425";"Toledo";3;8;725;;768;;;;"ES425";"Toledo";3;8;677
+"ES43";"Extremadura";2;8;726;;769;;;;"ES43";"Extremadura";2;8;678
+"ES431";"Badajoz";3;8;727;;770;;;;"ES431";"Badajoz";3;8;679
+"ES432";"Cáceres";3;8;728;;771;;;;"ES432";"Cáceres";3;8;680
+"ES5";"ESTE";1;8;729;;772;;;;"ES5";"ESTE";1;8;681
+"ES51";"Cataluña";2;8;730;;773;;;;"ES51";"Cataluña";2;8;682
+"ES511";"Barcelona";3;8;731;;774;;;;"ES511";"Barcelona";3;8;683
+"ES512";"Girona";3;8;732;;775;;;;"ES512";"Girona";3;8;684
+"ES513";"Lleida";3;8;733;;776;;;;"ES513";"Lleida";3;8;685
+"ES514";"Tarragona";3;8;734;;777;;;;"ES514";"Tarragona";3;8;686
+"ES52";"Comunidad Valenciana";2;8;735;;778;;;;"ES52";"Comunidad Valenciana";2;8;687
+"ES521";"Alicante / Alacant";3;8;736;;779;;;;"ES521";"Alicante / Alacant";3;8;688
+"ES522";"Castellón / Castelló";3;8;737;;780;;;;"ES522";"Castellón / Castelló";3;8;689
+"ES523";"Valencia / València";3;8;738;;781;;;;"ES523";"Valencia / València";3;8;690
+"ES53";"Illes Balears";2;8;739;;782;;;;"ES53";"Illes Balears";2;8;691
+"ES531";"Eivissa y Formentera";3;8;740;"New region";784;;;;"ES530";"Illes Balears";3;8;692
+"ES532";"Mallorca";3;8;741;"New region";785;;;;;;;;
+"ES533";"Menorca";3;8;742;"New region";786;;;;;;;;
+"ES6";"SUR";1;8;743;;787;;;;"ES6";"SUR";1;8;693
+"ES61";"Andalucía";2;8;744;;788;;;;"ES61";"Andalucía";2;8;694
+"ES611";"Almería";3;8;745;;789;;;;"ES611";"Almería";3;8;695
+"ES612";"Cádiz";3;8;746;;790;;;;"ES612";"Cádiz";3;8;696
+"ES613";"Córdoba";3;8;747;;791;;;;"ES613";"Córdoba";3;8;697
+"ES614";"Granada";3;8;748;;792;;;;"ES614";"Granada";3;8;698
+"ES615";"Huelva";3;8;749;;793;;;;"ES615";"Huelva";3;8;699
+"ES616";"Jaén";3;8;750;;794;;;;"ES616";"Jaén";3;8;700
+"ES617";"Málaga";3;8;751;;795;;;;"ES617";"Málaga";3;8;701
+"ES618";"Sevilla";3;8;752;;796;;;;"ES618";"Sevilla";3;8;702
+"ES62";"Región de Murcia";2;8;753;;797;;;;"ES62";"Región de Murcia";2;8;703
+"ES620";"Murcia";3;8;754;;798;;;;"ES620";"Murcia";3;8;704
+"ES63";"Ciudad Autónoma de Ceuta";2;8;755;;799;;;;"ES63";"Ciudad Autónoma de Ceuta";2;8;705
+"ES630";"Ceuta";3;8;756;;800;;;;"ES630";"Ceuta";3;8;706
+"ES64";"Ciudad Autónoma de Melilla";2;8;757;;801;;;;"ES64";"Ciudad Autónoma de Melilla";2;8;707
+"ES640";"Melilla";3;8;758;;802;;;;"ES640";"Melilla";3;8;708
+"ES7";"CANARIAS";1;8;759;;803;;;;"ES7";"CANARIAS";1;8;709
+"ES70";"Canarias";2;8;760;;804;;;;"ES70";"Canarias";2;8;710
+"ES703";"El Hierro";3;8;761;"New region";807;;;;"ES701";"Las Palmas";3;8;711
+"ES704";"Fuerteventura";3;8;762;"New region";808;;;;"ES702";"Santa Cruz de Tenerife";3;8;712
+"ES705";"Gran Canaria";3;8;763;"New region";809;;;;;;;;
+"ES706";"La Gomera";3;8;764;"New region";810;;;;;;;;
+"ES707";"La Palma";3;8;765;"New region";811;;;;;;;;
+"ES708";"Lanzarote";3;8;766;"New region";812;;;;;;;;
+"ES709";"Tenerife";3;8;767;"New region";813;;;;;;;;
+"ESZ";"EXTRA-REGIO";1;8;768;;814;;;;"ESZ";"EXTRA-REGIO";1;8;713
+"ESZZ";"Extra-Regio";2;8;769;;815;;;;"ESZZ";"Extra-Regio";2;8;714
+"ESZZZ";"Extra-Regio";3;8;770;;816;;;;"ESZZZ";"Extra-Regio";3;8;715
+
+"FR";"FRANCE";0;9;771;;817;;;;"FR";"FRANCE";0;9;747
+"FR1";"ÎLE DE FRANCE";1;9;772;;818;;;;"FR1";"ÎLE DE FRANCE";1;9;748
+"FR10";"Île de France";2;9;773;;819;;;;"FR10";"Île de France";2;9;749
+"FR101";"Paris";3;9;774;;820;;;;"FR101";"Paris";3;9;750
+"FR102";"Seine-et-Marne";3;9;775;;821;;;;"FR102";"Seine-et-Marne";3;9;751
+"FR103";"Yvelines";3;9;776;;822;;;;"FR103";"Yvelines";3;9;752
+"FR104";"Essonne";3;9;777;;823;;;;"FR104";"Essonne";3;9;753
+"FR105";"Hauts-de-Seine";3;9;778;;824;;;;"FR105";"Hauts-de-Seine";3;9;754
+"FR106";"Seine-Saint-Denis";3;9;779;;825;;;;"FR106";"Seine-Saint-Denis";3;9;755
+"FR107";"Val-de-Marne";3;9;780;;826;;;;"FR107";"Val-de-Marne";3;9;756
+"FR108";"Val-d'Oise";3;9;781;;827;;;;"FR108";"Val-d'Oise";3;9;757
+"FR2";"BASSIN PARISIEN";1;9;782;;828;;;;"FR2";"BASSIN PARISIEN";1;9;758
+"FR21";"Champagne-Ardenne";2;9;783;;829;;;;"FR21";"Champagne-Ardenne";2;9;759
+"FR211";"Ardennes";3;9;784;;830;;;;"FR211";"Ardennes";3;9;760
+"FR212";"Aube";3;9;785;;831;;;;"FR212";"Aube";3;9;761
+"FR213";"Marne";3;9;786;;832;;;;"FR213";"Marne";3;9;762
+"FR214";"Haute-Marne";3;9;787;;833;;;;"FR214";"Haute-Marne";3;9;763
+"FR22";"Picardie";2;9;788;;834;;;;"FR22";"Picardie";2;9;764
+"FR221";"Aisne";3;9;789;;835;;;;"FR221";"Aisne";3;9;765
+"FR222";"Oise";3;9;790;;836;;;;"FR222";"Oise";3;9;766
+"FR223";"Somme";3;9;791;;837;;;;"FR223";"Somme";3;9;767
+"FR23";"Haute-Normandie";2;9;792;;838;;;;"FR23";"Haute-Normandie";2;9;768
+"FR231";"Eure";3;9;793;;839;;;;"FR231";"Eure";3;9;769
+"FR232";"Seine-Maritime";3;9;794;;840;;;;"FR232";"Seine-Maritime";3;9;770
+"FR24";"Centre";2;9;795;;841;;;;"FR24";"Centre";2;9;771
+"FR241";"Cher";3;9;796;;842;;;;"FR241";"Cher";3;9;772
+"FR242";"Eure-et-Loir";3;9;797;;843;;;;"FR242";"Eure-et-Loir";3;9;773
+"FR243";"Indre";3;9;798;;844;;;;"FR243";"Indre";3;9;774
+"FR244";"Indre-et-Loire";3;9;799;;845;;;;"FR244";"Indre-et-Loire";3;9;775
+"FR245";"Loir-et-Cher";3;9;800;;846;;;;"FR245";"Loir-et-Cher";3;9;776
+"FR246";"Loiret";3;9;801;;847;;;;"FR246";"Loiret";3;9;777
+"FR25";"Basse-Normandie";2;9;802;;848;;;;"FR25";"Basse-Normandie";2;9;778
+"FR251";"Calvados";3;9;803;;849;;;;"FR251";"Calvados";3;9;779
+"FR252";"Manche";3;9;804;;850;;;;"FR252";"Manche";3;9;780
+"FR253";"Orne";3;9;805;;851;;;;"FR253";"Orne";3;9;781
+"FR26";"Bourgogne";2;9;806;;852;;;;"FR26";"Bourgogne";2;9;782
+"FR261";"Côte-d'Or";3;9;807;;853;;;;"FR261";"Côte-d'Or";3;9;783
+"FR262";"Nièvre";3;9;808;;854;;;;"FR262";"Nièvre";3;9;784
+"FR263";"Saône-et-Loire";3;9;809;;855;;;;"FR263";"Saône-et-Loire";3;9;785
+"FR264";"Yonne";3;9;810;;856;;;;"FR264";"Yonne";3;9;786
+"FR3";"NORD - PAS-DE-CALAIS";1;9;811;;857;;;;"FR3";"NORD - PAS-DE-CALAIS";1;9;787
+"FR30";"Nord - Pas-de-Calais";2;9;812;;858;;;;"FR30";"Nord - Pas-de-Calais";2;9;788
+"FR301";"Nord";3;9;813;;859;;;;"FR301";"Nord";3;9;789
+"FR302";"Pas-de-Calais";3;9;814;;860;;;;"FR302";"Pas-de-Calais";3;9;790
+"FR4";"EST";1;9;815;;861;;;;"FR4";"EST";1;9;791
+"FR41";"Lorraine";2;9;816;;862;;;;"FR41";"Lorraine";2;9;792
+"FR411";"Meurthe-et-Moselle";3;9;817;;863;;;;"FR411";"Meurthe-et-Moselle";3;9;793
+"FR412";"Meuse";3;9;818;;864;;;;"FR412";"Meuse";3;9;794
+"FR413";"Moselle";3;9;819;;865;;;;"FR413";"Moselle";3;9;795
+"FR414";"Vosges";3;9;820;;866;;;;"FR414";"Vosges";3;9;796
+"FR42";"Alsace";2;9;821;;867;;;;"FR42";"Alsace";2;9;797
+"FR421";"Bas-Rhin";3;9;822;;868;;;;"FR421";"Bas-Rhin";3;9;798
+"FR422";"Haut-Rhin";3;9;823;;869;;;;"FR422";"Haut-Rhin";3;9;799
+"FR43";"Franche-Comté";2;9;824;;870;;;;"FR43";"Franche-Comté";2;9;800
+"FR431";"Doubs";3;9;825;;871;;;;"FR431";"Doubs";3;9;801
+"FR432";"Jura";3;9;826;;872;;;;"FR432";"Jura";3;9;802
+"FR433";"Haute-Saône";3;9;827;;873;;;;"FR433";"Haute-Saône";3;9;803
+"FR434";"Territoire de Belfort";3;9;828;;874;;;;"FR434";"Territoire de Belfort";3;9;804
+"FR5";"OUEST";1;9;829;;875;;;;"FR5";"OUEST";1;9;805
+"FR51";"Pays de la Loire";2;9;830;;876;;;;"FR51";"Pays de la Loire";2;9;806
+"FR511";"Loire-Atlantique";3;9;831;;877;;;;"FR511";"Loire-Atlantique";3;9;807
+"FR512";"Maine-et-Loire";3;9;832;;878;;;;"FR512";"Maine-et-Loire";3;9;808
+"FR513";"Mayenne";3;9;833;;879;;;;"FR513";"Mayenne";3;9;809
+"FR514";"Sarthe";3;9;834;;880;;;;"FR514";"Sarthe";3;9;810
+"FR515";"Vendée";3;9;835;;881;;;;"FR515";"Vendée";3;9;811
+"FR52";"Bretagne";2;9;836;;882;;;;"FR52";"Bretagne";2;9;812
+"FR521";"Côtes-d'Armor";3;9;837;;883;;;;"FR521";"Côtes-d'Armor";3;9;813
+"FR522";"Finistère";3;9;838;;884;;;;"FR522";"Finistère";3;9;814
+"FR523";"Ille-et-Vilaine";3;9;839;;885;;;;"FR523";"Ille-et-Vilaine";3;9;815
+"FR524";"Morbihan";3;9;840;;886;;;;"FR524";"Morbihan";3;9;816
+"FR53";"Poitou-Charentes";2;9;841;;887;;;;"FR53";"Poitou-Charentes";2;9;817
+"FR531";"Charente";3;9;842;;888;;;;"FR531";"Charente";3;9;818
+"FR532";"Charente-Maritime";3;9;843;;889;;;;"FR532";"Charente-Maritime";3;9;819
+"FR533";"Deux-Sèvres";3;9;844;;890;;;;"FR533";"Deux-Sèvres";3;9;820
+"FR534";"Vienne";3;9;845;;891;;;;"FR534";"Vienne";3;9;821
+"FR6";"SUD-OUEST";1;9;846;;892;;;;"FR6";"SUD-OUEST";1;9;822
+"FR61";"Aquitaine";2;9;847;;893;;;;"FR61";"Aquitaine";2;9;823
+"FR611";"Dordogne";3;9;848;;894;;;;"FR611";"Dordogne";3;9;824
+"FR612";"Gironde";3;9;849;;895;;;;"FR612";"Gironde";3;9;825
+"FR613";"Landes";3;9;850;;896;;;;"FR613";"Landes";3;9;826
+"FR614";"Lot-et-Garonne";3;9;851;;897;;;;"FR614";"Lot-et-Garonne";3;9;827
+"FR615";"Pyrénées-Atlantiques";3;9;852;;898;;;;"FR615";"Pyrénées-Atlantiques";3;9;828
+"FR62";"Midi-Pyrénées";2;9;853;;899;;;;"FR62";"Midi-Pyrénées";2;9;829
+"FR621";"Ariège";3;9;854;;900;;;;"FR621";"Ariège";3;9;830
+"FR622";"Aveyron";3;9;855;;901;;;;"FR622";"Aveyron";3;9;831
+"FR623";"Haute-Garonne";3;9;856;;902;;;;"FR623";"Haute-Garonne";3;9;832
+"FR624";"Gers";3;9;857;;903;;;;"FR624";"Gers";3;9;833
+"FR625";"Lot";3;9;858;;904;;;;"FR625";"Lot";3;9;834
+"FR626";"Hautes-Pyrénées";3;9;859;;905;;;;"FR626";"Hautes-Pyrénées";3;9;835
+"FR627";"Tarn";3;9;860;;906;;;;"FR627";"Tarn";3;9;836
+"FR628";"Tarn-et-Garonne";3;9;861;;907;;;;"FR628";"Tarn-et-Garonne";3;9;837
+"FR63";"Limousin";2;9;862;;908;;;;"FR63";"Limousin";2;9;838
+"FR631";"Corrèze";3;9;863;;909;;;;"FR631";"Corrèze";3;9;839
+"FR632";"Creuse";3;9;864;;910;;;;"FR632";"Creuse";3;9;840
+"FR633";"Haute-Vienne";3;9;865;;911;;;;"FR633";"Haute-Vienne";3;9;841
+"FR7";"CENTRE-EST";1;9;866;;912;;;;"FR7";"CENTRE-EST";1;9;842
+"FR71";"Rhône-Alpes";2;9;867;;913;;;;"FR71";"Rhône-Alpes";2;9;843
+"FR711";"Ain";3;9;868;;914;;;;"FR711";"Ain";3;9;844
+"FR712";"Ardèche";3;9;869;;915;;;;"FR712";"Ardèche";3;9;845
+"FR713";"Drôme";3;9;870;;916;;;;"FR713";"Drôme";3;9;846
+"FR714";"Isère";3;9;871;;917;;;;"FR714";"Isère";3;9;847
+"FR715";"Loire";3;9;872;;918;;;;"FR715";"Loire";3;9;848
+"FR716";"Rhône";3;9;873;;919;;;;"FR716";"Rhône";3;9;849
+"FR717";"Savoie";3;9;874;;920;;;;"FR717";"Savoie";3;9;850
+"FR718";"Haute-Savoie";3;9;875;;921;;;;"FR718";"Haute-Savoie";3;9;851
+"FR72";"Auvergne";2;9;876;;922;;;;"FR72";"Auvergne";2;9;852
+"FR721";"Allier";3;9;877;;923;;;;"FR721";"Allier";3;9;853
+"FR722";"Cantal";3;9;878;;924;;;;"FR722";"Cantal";3;9;854
+"FR723";"Haute-Loire";3;9;879;;925;;;;"FR723";"Haute-Loire";3;9;855
+"FR724";"Puy-de-Dôme";3;9;880;;926;;;;"FR724";"Puy-de-Dôme";3;9;856
+"FR8";"MÉDITERRANÉE";1;9;881;;927;;;;"FR8";"MÉDITERRANÉE";1;9;857
+"FR81";"Languedoc-Roussillon";2;9;882;;928;;;;"FR81";"Languedoc-Roussillon";2;9;858
+"FR811";"Aude";3;9;883;;929;;;;"FR811";"Aude";3;9;859
+"FR812";"Gard";3;9;884;;930;;;;"FR812";"Gard";3;9;860
+"FR813";"Hérault";3;9;885;;931;;;;"FR813";"Hérault";3;9;861
+"FR814";"Lozère";3;9;886;;932;;;;"FR814";"Lozère";3;9;862
+"FR815";"Pyrénées-Orientales";3;9;887;;933;;;;"FR815";"Pyrénées-Orientales";3;9;863
+"FR82";"Provence-Alpes-Côte d'Azur";2;9;888;;934;;;;"FR82";"Provence-Alpes-Côte d'Azur";2;9;864
+"FR821";"Alpes-de-Haute-Provence";3;9;889;;935;;;;"FR821";"Alpes-de-Haute-Provence";3;9;865
+"FR822";"Hautes-Alpes";3;9;890;;936;;;;"FR822";"Hautes-Alpes";3;9;866
+"FR823";"Alpes-Maritimes";3;9;891;;937;;;;"FR823";"Alpes-Maritimes";3;9;867
+"FR824";"Bouches-du-Rhône";3;9;892;;938;;;;"FR824";"Bouches-du-Rhône";3;9;868
+"FR825";"Var";3;9;893;;939;;;;"FR825";"Var";3;9;869
+"FR826";"Vaucluse";3;9;894;;940;;;;"FR826";"Vaucluse";3;9;870
+"FR83";"Corse";2;9;895;;941;;;;"FR83";"Corse";2;9;871
+"FR831";"Corse-du-Sud";3;9;896;;942;;;;"FR831";"Corse-du-Sud";3;9;872
+"FR832";"Haute-Corse";3;9;897;;943;;;;"FR832";"Haute-Corse";3;9;873
+"FR9";"DÉPARTEMENTS D'OUTRE-MER";1;9;898;;944;;;;"FR9";"DÉPARTEMENTS D'OUTRE-MER";1;9;874
+"FR91";"Guadeloupe";2;9;899;;945;;;;"FR91";"Guadeloupe";2;9;875
+"FR910";"Guadeloupe";3;9;900;;946;;;;"FR910";"Guadeloupe";3;9;876
+"FR92";"Martinique";2;9;901;;947;;;;"FR92";"Martinique";2;9;877
+"FR920";"Martinique";3;9;902;;948;;;;"FR920";"Martinique";3;9;878
+"FR93";"Guyane";2;9;903;;949;;;;"FR93";"Guyane";2;9;879
+"FR930";"Guyane";3;9;904;;950;;;;"FR930";"Guyane";3;9;880
+"FR94";"Réunion";2;9;905;;951;;;;"FR94";"Réunion";2;9;881
+"FR940";"Réunion";3;9;906;;952;;;;"FR940";"Réunion";3;9;882
+"FRZ";"EXTRA-REGIO";1;9;907;;953;;;;"FRZ";"EXTRA-REGIO";1;9;883
+"FRZZ";"Extra-Regio";2;9;908;;954;;;;"FRZZ";"Extra-Regio";2;9;884
+"FRZZZ";"Extra-Regio";3;9;909;;955;;;;"FRZZZ";"Extra-Regio";3;9;885
+
+"IE";"IRELAND";0;6,5;910;;956;;;;"IE";"IRELAND";0;10;958
+"IE0";"IRELAND";1;6,5;911;;957;;;;"IE0";"IRELAND";1;10;959
+"IE01";"Border, Midland and Western";2;6,5;912;;958;;;;"IE01";"Border, Midland and Western";2;10;960
+"IE011";"Border";3;6,5;913;;959;;;;"IE011";"Border";3;10;961
+"IE012";"Midland";3;6,5;914;;960;;;;"IE012";"Midland";3;10;962
+"IE013";"West";3;6,5;915;;961;;;;"IE013";"West";3;10;963
+"IE02";"Southern and Eastern";2;6,5;916;;962;;;;"IE02";"Southern and Eastern";2;10;964
+"IE021";"Dublin";3;6,5;917;;963;;;;"IE021";"Dublin";3;10;965
+"IE022";"Mid-East";3;6,5;918;;964;;;;"IE022";"Mid-East";3;10;966
+"IE023";"Mid-West";3;6,5;919;;965;;;;"IE023";"Mid-West";3;10;967
+"IE024";"South-East (IRL)";3;6,5;920;;966;;;;"IE024";"South-East (IRL)";3;10;968
+"IE025";"South-West (IRL)";3;6,5;921;;967;;;;"IE025";"South-West (IRL)";3;10;969
+"IEZ";"EXTRA-REGIO";1;6,5;922;;968;;;;"IEZ";"EXTRA-REGIO";1;10;970
+"IEZZ";"Extra-Regio";2;6,5;923;;969;;;;"IEZZ";"Extra-Regio";2;10;971
+"IEZZZ";"Extra-Regio";3;6,5;924;;970;;;;"IEZZZ";"Extra-Regio";3;10;972
+
+"IT";"ITALIA";0;11;925;;971;;;;"IT";"ITALIA";0;11;973
+"ITC";"NORD-OVEST";1;11;926;;972;;;;"ITC";"NORD-OVEST";1;11;974
+"ITC1";"Piemonte";2;11;927;;973;;;;"ITC1";"Piemonte";2;11;975
+"ITC11";"Torino";3;11;928;;974;;;;"ITC11";"Torino";3;11;976
+"ITC12";"Vercelli";3;11;929;;975;;;;"ITC12";"Vercelli";3;11;977
+"ITC13";"Biella";3;11;930;;976;;;;"ITC13";"Biella";3;11;978
+"ITC14";"Verbano-Cusio-Ossola";3;11;931;;977;;;;"ITC14";"Verbano-Cusio-Ossola";3;11;979
+"ITC15";"Novara";3;11;932;;978;;;;"ITC15";"Novara";3;11;980
+"ITC16";"Cuneo";3;11;933;;979;;;;"ITC16";"Cuneo";3;11;981
+"ITC17";"Asti";3;11;934;;980;;;;"ITC17";"Asti";3;11;982
+"ITC18";"Alessandria";3;11;935;;981;;;;"ITC18";"Alessandria";3;11;983
+"ITC2";"Valle d'Aosta/Vallée d'Aoste";2;11;936;;982;;;;"ITC2";"Valle d'Aosta/Vallée d'Aoste";2;11;984
+"ITC20";"Valle d'Aosta/Vallée d'Aoste";3;11;937;;983;;;;"ITC20";"Valle d'Aosta/Vallée d'Aoste";3;11;985
+"ITC3";"Liguria";2;11;938;;984;;;;"ITC3";"Liguria";2;11;986
+"ITC31";"Imperia";3;11;939;;985;;;;"ITC31";"Imperia";3;11;987
+"ITC32";"Savona";3;11;940;;986;;;;"ITC32";"Savona";3;11;988
+"ITC33";"Genova";3;11;941;;987;;;;"ITC33";"Genova";3;11;989
+"ITC34";"La Spezia";3;11;942;;988;;;;"ITC34";"La Spezia";3;11;990
+"ITC4";"Lombardia";2;11;943;;989;;;;"ITC4";"Lombardia";2;11;991
+"ITC41";"Varese";3;11;944;;990;;;;"ITC41";"Varese";3;11;992
+"ITC42";"Como";3;11;945;;991;;;;"ITC42";"Como";3;11;993
+"ITC43";"Lecco";3;11;946;;992;;;;"ITC43";"Lecco";3;11;994
+"ITC44";"Sondrio";3;11;947;;993;;;;"ITC44";"Sondrio";3;11;995
+"ITC45";"Milano";3;11;948;;994;;;;"ITC45";"Milano";3;11;996
+"ITC46";"Bergamo";3;11;949;;995;;;;"ITC46";"Bergamo";3;11;997
+"ITC47";"Brescia";3;11;950;;996;;;;"ITC47";"Brescia";3;11;998
+"ITC48";"Pavia";3;11;951;;997;;;;"ITC48";"Pavia";3;11;999
+"ITC49";"Lodi";3;11;952;;998;;;;"ITC49";"Lodi";3;11;1000
+"ITC4A";"Cremona";3;11;953;;999;;;;"ITC4A";"Cremona";3;11;1001
+"ITC4B";"Mantova";3;11;954;;1000;;;;"ITC4B";"Mantova";3;11;1002
+"ITD";"NORD-EST";1;11;955;;1001;;;;"ITD";"NORD-EST";1;11;1003
+"ITD1";"Provincia Autonoma Bolzano/Bozen";2;11;956;;1002;;;;"ITD1";"Provincia Autonoma Bolzano/Bozen";2;11;1004
+"ITD10";"Bolzano-Bozen";3;11;957;;1003;;;;"ITD10";"Bolzano-Bozen";3;11;1005
+"ITD2";"Provincia Autonoma Trento";2;11;958;;1004;;;;"ITD2";"Provincia Autonoma Trento";2;11;1006
+"ITD20";"Trento";3;11;959;;1005;;;;"ITD20";"Trento";3;11;1007
+"ITD3";"Veneto";2;11;960;;1006;;;;"ITD3";"Veneto";2;11;1008
+"ITD31";"Verona";3;11;961;;1007;;;;"ITD31";"Verona";3;11;1009
+"ITD32";"Vicenza";3;11;962;;1008;;;;"ITD32";"Vicenza";3;11;1010
+"ITD33";"Belluno";3;11;963;;1009;;;;"ITD33";"Belluno";3;11;1011
+"ITD34";"Treviso";3;11;964;;1010;;;;"ITD34";"Treviso";3;11;1012
+"ITD35";"Venezia";3;11;965;;1011;;;;"ITD35";"Venezia";3;11;1013
+"ITD36";"Padova";3;11;966;;1012;;;;"ITD36";"Padova";3;11;1014
+"ITD37";"Rovigo";3;11;967;;1013;;;;"ITD37";"Rovigo";3;11;1015
+"ITD4";"Friuli-Venezia Giulia";2;11;968;;1014;;;;"ITD4";"Friuli-Venezia Giulia";2;11;1016
+"ITD41";"Pordenone";3;11;969;;1015;;;;"ITD41";"Pordenone";3;11;1017
+"ITD42";"Udine";3;11;970;;1016;;;;"ITD42";"Udine";3;11;1018
+"ITD43";"Gorizia";3;11;971;;1017;;;;"ITD43";"Gorizia";3;11;1019
+"ITD44";"Trieste";3;11;972;;1018;;;;"ITD44";"Trieste";3;11;1020
+"ITD5";"Emilia-Romagna";2;11;973;;1019;;;;"ITD5";"Emilia-Romagna";2;11;1021
+"ITD51";"Piacenza";3;11;974;;1020;;;;"ITD51";"Piacenza";3;11;1022
+"ITD52";"Parma";3;11;975;;1021;;;;"ITD52";"Parma";3;11;1023
+"ITD53";"Reggio nell'Emilia";3;11;976;;1022;;;;"ITD53";"Reggio nell'Emilia";3;11;1024
+"ITD54";"Modena";3;11;977;;1023;;;;"ITD54";"Modena";3;11;1025
+"ITD55";"Bologna";3;11;978;;1024;;;;"ITD55";"Bologna";3;11;1026
+"ITD56";"Ferrara";3;11;979;;1025;;;;"ITD56";"Ferrara";3;11;1027
+"ITD57";"Ravenna";3;11;980;;1026;;;;"ITD57";"Ravenna";3;11;1028
+"ITD58";"Forlì-Cesena";3;11;981;;1027;;;;"ITD58";"Forlì-Cesena";3;11;1029
+"ITD59";"Rimini";3;11;982;;1028;;;;"ITD59";"Rimini";3;11;1030
+"ITE";"CENTRO (I)";1;11;983;;1029;;;;"ITE";"CENTRO (I)";1;11;1031
+"ITE1";"Toscana";2;11;984;;1030;;;;"ITE1";"Toscana";2;11;1032
+"ITE11";"Massa-Carrara";3;11;985;;1031;;;;"ITE11";"Massa-Carrara";3;11;1033
+"ITE12";"Lucca";3;11;986;;1032;;;;"ITE12";"Lucca";3;11;1034
+"ITE13";"Pistoia";3;11;987;;1033;;;;"ITE13";"Pistoia";3;11;1035
+"ITE14";"Firenze";3;11;988;;1034;;;;"ITE14";"Firenze";3;11;1036
+"ITE15";"Prato";3;11;989;;1035;;;;"ITE15";"Prato";3;11;1037
+"ITE16";"Livorno";3;11;990;;1036;;;;"ITE16";"Livorno";3;11;1038
+"ITE17";"Pisa";3;11;991;;1037;;;;"ITE17";"Pisa";3;11;1039
+"ITE18";"Arezzo";3;11;992;;1038;;;;"ITE18";"Arezzo";3;11;1040
+"ITE19";"Siena";3;11;993;;1039;;;;"ITE19";"Siena";3;11;1041
+"ITE1A";"Grosseto";3;11;994;;1040;;;;"ITE1A";"Grosseto";3;11;1042
+"ITE2";"Umbria";2;11;995;;1041;;;;"ITE2";"Umbria";2;11;1043
+"ITE21";"Perugia";3;11;996;;1042;;;;"ITE21";"Perugia";3;11;1044
+"ITE22";"Terni";3;11;997;;1043;;;;"ITE22";"Terni";3;11;1045
+"ITE3";"Marche";2;11;998;;1044;;;;"ITE3";"Marche";2;11;1046
+"ITE31";"Pesaro e Urbino";3;11;999;;1045;;;;"ITE31";"Pesaro e Urbino";3;11;1047
+"ITE32";"Ancona";3;11;1000;;1046;;;;"ITE32";"Ancona";3;11;1048
+"ITE33";"Macerata";3;11;1001;;1047;;;;"ITE33";"Macerata";3;11;1049
+"ITE34";"Ascoli Piceno";3;11;1002;;1048;;;;"ITE34";"Ascoli Piceno";3;11;1050
+"ITE4";"Lazio";2;11;1003;;1049;;;;"ITE4";"Lazio";2;11;1051
+"ITE41";"Viterbo";3;11;1004;;1050;;;;"ITE41";"Viterbo";3;11;1052
+"ITE42";"Rieti";3;11;1005;;1051;;;;"ITE42";"Rieti";3;11;1053
+"ITE43";"Roma";3;11;1006;;1052;;;;"ITE43";"Roma";3;11;1054
+"ITE44";"Latina";3;11;1007;;1053;;;;"ITE44";"Latina";3;11;1055
+"ITE45";"Frosinone";3;11;1008;;1054;;;;"ITE45";"Frosinone";3;11;1056
+"ITF";"SUD";1;11;1009;;1055;;;;"ITF";"SUD";1;11;1057
+"ITF1";"Abruzzo";2;11;1010;;1056;;;;"ITF1";"Abruzzo";2;11;1058
+"ITF11";"L'Aquila";3;11;1011;;1057;;;;"ITF11";"L'Aquila";3;11;1059
+"ITF12";"Teramo";3;11;1012;;1058;;;;"ITF12";"Teramo";3;11;1060
+"ITF13";"Pescara";3;11;1013;;1059;;;;"ITF13";"Pescara";3;11;1061
+"ITF14";"Chieti";3;11;1014;;1060;;;;"ITF14";"Chieti";3;11;1062
+"ITF2";"Molise";2;11;1015;;1061;;;;"ITF2";"Molise";2;11;1063
+"ITF21";"Isernia";3;11;1016;;1062;;;;"ITF21";"Isernia";3;11;1064
+"ITF22";"Campobasso";3;11;1017;;1063;;;;"ITF22";"Campobasso";3;11;1065
+"ITF3";"Campania";2;11;1018;;1064;;;;"ITF3";"Campania";2;11;1066
+"ITF31";"Caserta";3;11;1019;;1065;;;;"ITF31";"Caserta";3;11;1067
+"ITF32";"Benevento";3;11;1020;;1066;;;;"ITF32";"Benevento";3;11;1068
+"ITF33";"Napoli";3;11;1021;;1067;;;;"ITF33";"Napoli";3;11;1069
+"ITF34";"Avellino";3;11;1022;;1068;;;;"ITF34";"Avellino";3;11;1070
+"ITF35";"Salerno";3;11;1023;;1069;;;;"ITF35";"Salerno";3;11;1071
+"ITF4";"Puglia";2;11;1024;;1070;;;;"ITF4";"Puglia";2;11;1072
+"ITF41";"Foggia";3;11;1025;;1071;;;;"ITF41";"Foggia";3;11;1073
+"ITF42";"Bari";3;11;1026;;1072;;;;"ITF42";"Bari";3;11;1074
+"ITF43";"Taranto";3;11;1027;;1073;;;;"ITF43";"Taranto";3;11;1075
+"ITF44";"Brindisi";3;11;1028;;1074;;;;"ITF44";"Brindisi";3;11;1076
+"ITF45";"Lecce";3;11;1029;;1075;;;;"ITF45";"Lecce";3;11;1077
+"ITF5";"Basilicata";2;11;1030;;1076;;;;"ITF5";"Basilicata";2;11;1078
+"ITF51";"Potenza";3;11;1031;;1077;;;;"ITF51";"Potenza";3;11;1079
+"ITF52";"Matera";3;11;1032;;1078;;;;"ITF52";"Matera";3;11;1080
+"ITF6";"Calabria";2;11;1033;;1079;;;;"ITF6";"Calabria";2;11;1081
+"ITF61";"Cosenza";3;11;1034;;1080;;;;"ITF61";"Cosenza";3;11;1082
+"ITF62";"Crotone";3;11;1035;;1081;;;;"ITF62";"Crotone";3;11;1083
+"ITF63";"Catanzaro";3;11;1036;;1082;;;;"ITF63";"Catanzaro";3;11;1084
+"ITF64";"Vibo Valentia";3;11;1037;;1083;;;;"ITF64";"Vibo Valentia";3;11;1085
+"ITF65";"Reggio di Calabria";3;11;1038;;1084;;;;"ITF65";"Reggio di Calabria";3;11;1086
+"ITG";"ISOLE";1;11;1039;;1085;;;;"ITG";"ISOLE";1;11;1087
+"ITG1";"Sicilia";2;11;1040;;1086;;;;"ITG1";"Sicilia";2;11;1088
+"ITG11";"Trapani";3;11;1041;;1087;;;;"ITG11";"Trapani";3;11;1089
+"ITG12";"Palermo";3;11;1042;;1088;;;;"ITG12";"Palermo";3;11;1090
+"ITG13";"Messina";3;11;1043;;1089;;;;"ITG13";"Messina";3;11;1091
+"ITG14";"Agrigento";3;11;1044;;1090;;;;"ITG14";"Agrigento";3;11;1092
+"ITG15";"Caltanissetta";3;11;1045;;1091;;;;"ITG15";"Caltanissetta";3;11;1093
+"ITG16";"Enna";3;11;1046;;1092;;;;"ITG16";"Enna";3;11;1094
+"ITG17";"Catania";3;11;1047;;1093;;;;"ITG17";"Catania";3;11;1095
+"ITG18";"Ragusa";3;11;1048;;1094;;;;"ITG18";"Ragusa";3;11;1096
+"ITG19";"Siracusa";3;11;1049;;1095;;;;"ITG19";"Siracusa";3;11;1097
+"ITG2";"Sardegna";2;11;1050;;1096;;;;"ITG2";"Sardegna";2;11;1098
+"ITG25";"Sassari";3;11;1051;"New region";1101;;;;"ITG21";"Sassari";3;11;1099
+"ITG26";"Nuoro";3;11;1052;"New region";1102;;;;"ITG22";"Nuoro";3;11;1100
+"ITG27";"Cagliari";3;11;1053;"New region";1103;;;;"ITG23";"Oristano";3;11;1101
+"ITG28";"Oristano";3;11;1054;"New region";1104;;;;"ITG24";"Cagliari";3;11;1102
+"ITG29";"Olbia-Tempio";3;11;1055;"New region";1105;;;;;;;;
+"ITG2A";"Ogliastra";3;11;1056;"New region";1106;;;;;;;;
+"ITG2B";"Medio Campidano";3;11;1057;"New region";1107;;;;;;;;
+"ITG2C";"Carbonia-Iglesias";3;11;1058;"New region";1108;;;;;;;;
+"ITZ";"EXTRA-REGIO";1;11;1059;;1109;;;;"ITZ";"EXTRA-REGIO";1;11;1103
+"ITZZ";"Extra-Regio";2;11;1060;;1110;;;;"ITZZ";"Extra-Regio";2;11;1104
+"ITZZZ";"Extra-Regio";3;11;1061;;1111;;;;"ITZZZ";"Extra-Regio";3;11;1105
+
+"CY";"ΚΥΠΡΟΣ / KIBRIS";0;12;1062;;1112;;;;"CY";"KYPROS / KIBRIS";0;12;1439
+"CY0";"ΚΥΠΡΟΣ / KIBRIS";1;12;1063;;1113;;;;"CY0";"KYPROS / KIBRIS";1;12;1440
+"CY00";"Κύπρος / Kıbrıs";2;12;1064;;1114;;;;"CY00";"Kypros / Kibris";2;12;1441
+"CY000";"Κύπρος / Kıbrıs";3;12;1065;;1115;;;;"CY000";"Kypros / Kibris";3;12;1442
+"CYZ";"EXTRA-REGIO";1;12;1066;;1116;;;;"CYZ";"EXTRA-REGIO";1;12;1443
+"CYZZ";"Extra-Regio";2;12;1067;;1117;;;;"CYZZ";"Extra-Regio";2;12;1444
+"CYZZZ";"Extra-Regio";3;12;1068;;1118;;;;"CYZZZ";"Extra-Regio";3;12;1445
+
+"LV";"LATVIJA";0;13;1069;;1119;;;;"LV";"LATVIJA";0;13;1534
+"LV0";"LATVIJA";1;13;1070;;1120;;;;"LV0";"LATVIJA";1;13;1535
+"LV00";"Latvija";2;13;1071;;1121;;;;"LV00";"Latvija";2;13;1536
+"LV003";"Kurzeme";3;13;1072;;1122;;;;"LV003";"Kurzeme";3;13;1539
+"LV005";"Latgale";3;13;1073;;1123;;;;"LV005";"Latgale";3;13;1541
+"LV006";"Rīga";3;13;1074;;1124;;;;"LV006";"Riga";3;13;1537
+"LV007";"Pierīga";3;13;1075;;1125;;;;"LV007";"Pieriga";3;13;
+"LV008";"Vidzeme";3;13;1076;;1126;;;;"LV008";"Vidzeme";3;13;1538
+"LV009";"Zemgale";3;13;1077;;1127;;;;"LV009";"Zemgale";3;13;1540
+"LVZ";"EXTRA-REGIO";1;13;1078;;1128;;;;"LVZ";"EXTRA-REGIO";1;13;1542
+"LVZZ";"Extra-Regio";2;13;1079;;1129;;;;"LVZZ";"Extra-Regio";2;13;1543
+"LVZZZ";"Extra-Regio";3;13;1080;;1130;;;;"LVZZZ";"Extra-Regio";3;13;1544
+
+"LT";"LIETUVA";0;14;1081;;1131;;;;"LT";"LIETUVA";0;14;1518
+"LT0";"LIETUVA";1;14;1082;;1132;;;;"LT0";"LIETUVA";1;14;1519
+"LT00";"Lietuva";2;14;1083;;1133;;;;"LT00";"Lietuva";2;14;1520
+"LT001";"Alytaus apskritis";3;14;1084;;1134;;;;"LT001";"Alytaus apskritis";3;14;1521
+"LT002";"Kauno apskritis";3;14;1085;;1135;;;;"LT002";"Kauno apskritis";3;14;1522
+"LT003";"Klaipėdos apskritis";3;14;1086;;1136;;;;"LT003";"Klaipedos apskritis";3;14;1523
+"LT004";"Marijampolės apskritis";3;14;1087;;1137;;;;"LT004";"Marijampoles apskritis";3;14;1524
+"LT005";"Panevėžio apskritis";3;14;1088;;1138;;;;"LT005";"Panevezio apskritis";3;14;1525
+"LT006";"Šiaulių apskritis";3;14;1089;;1139;;;;"LT006";"Siauliu apskritis";3;14;1526
+"LT007";"Tauragės apskritis";3;14;1090;;1140;;;;"LT007";"Taurages apskritis";3;14;1527
+"LT008";"Telšių apskritis";3;14;1091;;1141;;;;"LT008";"Telsiu apskritis";3;14;1528
+"LT009";"Utenos apskritis";3;14;1092;;1142;;;;"LT009";"Utenos apskritis";3;14;1529
+"LT00A";"Vilniaus apskritis";3;14;1093;;1143;;;;"LT00A";"Vilniaus apskritis";3;14;1530
+"LTZ";"EXTRA-REGIO";1;14;1094;;1144;;;;"LTZ";"EXTRA-REGIO";1;14;1531
+"LTZZ";"Extra-Regio";2;14;1095;;1145;;;;"LTZZ";"Extra-Regio";2;14;1532
+"LTZZZ";"Extra-Regio";3;14;1096;;1146;;;;"LTZZZ";"Extra-Regio";3;14;1533
+
+"LU";"LUXEMBOURG (GRAND-DUCHÉ)";0;15;1097;;1147;;;;"LU";"LUXEMBOURG (GRAND-DUCHÉ)";0;15;1106
+"LU0";"LUXEMBOURG (GRAND-DUCHÉ)";1;15;1098;;1148;;;;"LU0";"LUXEMBOURG (GRAND-DUCHÉ)";1;15;1107
+"LU00";"Luxembourg (Grand-Duché)";2;15;1099;;1149;;;;"LU00";"Luxembourg (Grand-Duché)";2;15;1108
+"LU000";"Luxembourg (Grand-Duché)";3;15;1100;;1150;;;;"LU000";"Luxembourg (Grand-Duché)";3;15;1109
+"LUZ";"EXTRA-REGIO";1;15;1101;;1151;;;;"LUZ";"EXTRA-REGIO";1;15;1110
+"LUZZ";"Extra-Regio";2;15;1102;;1152;;;;"LUZZ";"Extra-Regio";2;15;1111
+"LUZZZ";"Extra-Regio";3;15;1103;;1153;;;;"LUZZZ";"Extra-Regio";3;15;1112
+
+"HU";"MAGYARORSZÁG";0;16;1104;;1154;;;;"HU";"MAGYARORSZAG";0;16;1484
+"HU1";"KÖZÉP-MAGYARORSZÁG";1;16;1105;;1155;;;;"HU1";"KOZEP-MAGYARORSZAG";1;16;1485
+"HU10";"Közép-Magyarország";2;16;1106;;1156;;;;"HU10";"Kozep-Magyarorszag";2;16;1486
+"HU101";"Budapest";3;16;1107;;1157;;;;"HU101";"Budapest";3;16;1487
+"HU102";"Pest";3;16;1108;;1158;;;;"HU102";"Pest";3;16;1488
+"HU2";"DUNÁNTÚL";1;16;1109;;1159;;;;"HU2";"DUNANTUL";1;16;1489
+"HU21";"Közép-Dunántúl";2;16;1110;;1160;;;;"HU21";"Kozep-Dunantul";2;16;1490
+"HU211";"Fejér";3;16;1111;;1161;;;;"HU211";"Fejer";3;16;1491
+"HU212";"Komárom-Esztergom";3;16;1112;;1162;;;;"HU212";"Komarom-Esztergom";3;16;1492
+"HU213";"Veszprém";3;16;1113;;1163;;;;"HU213";"Veszprem";3;16;1493
+"HU22";"Nyugat-Dunántúl";2;16;1114;;1164;;;;"HU22";"Nyugat-Dunantul";2;16;1494
+"HU221";"Győr-Moson-Sopron";3;16;1115;;1165;;;;"HU221";"Gyor-Moson-Sopron";3;16;1495
+"HU222";"Vas";3;16;1116;;1166;;;;"HU222";"Vas";3;16;1496
+"HU223";"Zala";3;16;1117;;1167;;;;"HU223";"Zala";3;16;1497
+"HU23";"Dél-Dunántúl";2;16;1118;;1168;;;;"HU23";"Del-Dunantul";2;16;1498
+"HU231";"Baranya";3;16;1119;;1169;;;;"HU231";"Baranya";3;16;1499
+"HU232";"Somogy";3;16;1120;;1170;;;;"HU232";"Somogy";3;16;1500
+"HU233";"Tolna";3;16;1121;;1171;;;;"HU233";"Tolna";3;16;1501
+"HU3";"ALFÖLD ÉS ÉSZAK";1;16;1122;;1172;;;;"HU3";"ALFOLD ES ESZAK";1;16;1502
+"HU31";"Észak-Magyarország";2;16;1123;;1173;;;;"HU31";"Eszak-Magyarorszag";2;16;1503
+"HU311";"Borsod-Abaúj-Zemplén";3;16;1124;;1174;;;;"HU311";"Borsod-Abauj-Zemplen";3;16;1504
+"HU312";"Heves";3;16;1125;;1175;;;;"HU312";"Heves";3;16;1505
+"HU313";"Nógrád";3;16;1126;;1176;;;;"HU313";"Nograd";3;16;1506
+"HU32";"Észak-Alföld";2;16;1127;;1177;;;;"HU32";"Eszak-Alfold";2;16;1507
+"HU321";"Hajdú-Bihar";3;16;1128;;1178;;;;"HU321";"Hajdu-Bihar";3;16;1508
+"HU322";"Jász-Nagykun-Szolnok";3;16;1129;;1179;;;;"HU322";"Jasz-Nagykun-Szolnok";3;16;1509
+"HU323";"Szabolcs-Szatmár-Bereg";3;16;1130;;1180;;;;"HU323";"Szabolcs-Szatmar-Bereg";3;16;1510
+"HU33";"Dél-Alföld";2;16;1131;;1181;;;;"HU33";"Del-Alfold";2;16;1511
+"HU331";"Bács-Kiskun";3;16;1132;;1182;;;;"HU331";"Bacs-Kiskun";3;16;1512
+"HU332";"Békés";3;16;1133;;1183;;;;"HU332";"Bekes";3;16;1513
+"HU333";"Csongrád";3;16;1134;;1184;;;;"HU333";"Csongrad";3;16;1514
+"HUZ";"EXTRA-REGIO";1;16;1135;;1185;;;;"HUZ";"EXTRA-REGIO";1;16;1515
+"HUZZ";"Extra-Regio";2;16;1136;;1186;;;;"HUZZ";"Extra-Regio";2;16;1516
+"HUZZZ";"Extra-Regio";3;16;1137;;1187;;;;"HUZZZ";"Extra-Regio";3;16;1517
+
+"MT";"MALTA";0;17;1138;;1188;;;;"MT";"MALTA";0;17;1545
+"MT0";"MALTA";1;17;1139;;1189;;;;"MT0";"MALTA";1;17;1546
+"MT00";"Malta";2;17;1140;;1190;;;;"MT00";"Malta";2;17;1547
+"MT001";"Malta";3;17;1141;;1191;;;;"MT001";"Malta";3;17;1548
+"MT002";"Gozo and Comino / Għawdex u Kemmuna";3;17;1142;;1192;;;;"MT002";"Gozo and Comino/Ghawdex u Kemmuna";3;17;1549
+"MTZ";"EXTRA-REGIO";1;17;1143;;1193;;;;"MTZ";"EXTRA-REGIO";1;17;1550
+"MTZZ";"Extra-Regio";2;17;1144;;1194;;;;"MTZZ";"Extra-Regio";2;17;1551
+"MTZZZ";"Extra-Regio";3;17;1145;;1195;;;;"MTZZZ";"Extra-Regio";3;17;1552
+
+"NL";"NEDERLAND";0;18;1146;;1196;;;;"NL";"NEDERLAND";0;18;1113
+"NL1";"NOORD-NEDERLAND";1;18;1147;;1197;;;;"NL1";"NOORD-NEDERLAND";1;18;1114
+"NL11";"Groningen";2;18;1148;;1198;;;;"NL11";"Groningen";2;18;1115
+"NL111";"Oost-Groningen";3;18;1149;;1199;;;;"NL111";"Oost-Groningen";3;18;1116
+"NL112";"Delfzijl en omgeving";3;18;1150;;1200;;;;"NL112";"Delfzijl en omgeving";3;18;1117
+"NL113";"Overig Groningen";3;18;1151;;1201;;;;"NL113";"Overig Groningen";3;18;1118
+"NL12";"Friesland (NL)";2;18;1152;"Label";1202;;;;"NL12";"Friesland";2;18;1119
+"NL121";"Noord-Friesland";3;18;1153;;1203;;;;"NL121";"Noord-Friesland";3;18;1120
+"NL122";"Zuidwest-Friesland";3;18;1154;;1204;;;;"NL122";"Zuidwest-Friesland";3;18;1121
+"NL123";"Zuidoost-Friesland";3;18;1155;;1205;;;;"NL123";"Zuidoost-Friesland";3;18;1122
+"NL13";"Drenthe";2;18;1156;;1206;;;;"NL13";"Drenthe";2;18;1123
+"NL131";"Noord-Drenthe";3;18;1157;;1207;;;;"NL131";"Noord-Drenthe";3;18;1124
+"NL132";"Zuidoost-Drenthe";3;18;1158;;1208;;;;"NL132";"Zuidoost-Drenthe";3;18;1125
+"NL133";"Zuidwest-Drenthe";3;18;1159;;1209;;;;"NL133";"Zuidwest-Drenthe";3;18;1126
+"NL2";"OOST-NEDERLAND";1;18;1160;;1210;;;;"NL2";"OOST-NEDERLAND";1;18;1127
+"NL21";"Overijssel";2;18;1161;;1211;;;;"NL21";"Overijssel";2;18;1128
+"NL211";"Noord-Overijssel";3;18;1162;;1212;;;;"NL211";"Noord-Overijssel";3;18;1129
+"NL212";"Zuidwest-Overijssel";3;18;1163;;1213;;;;"NL212";"Zuidwest-Overijssel";3;18;1130
+"NL213";"Twente";3;18;1164;;1214;;;;"NL213";"Twente";3;18;1131
+"NL22";"Gelderland";2;18;1165;;1215;;;;"NL22";"Gelderland";2;18;1132
+"NL221";"Veluwe";3;18;1166;;1216;;;;"NL221";"Veluwe";3;18;1133
+"NL224";"Zuidwest-Gelderland";3;18;1167;;1217;;;;"NL222";"Achterhoek";3;18;1134
+"NL225";"Achterhoek";3;18;1168;"Boundary shift";1218;;;;"NL223";"Arnhem/Nijmegen";3;18;1135
+"NL226";"Arnhem/Nijmegen";3;18;1169;"Boundary shift";1219;;;;"NL224";"Zuidwest-Gelderland";3;18;1136
+"NL23";"Flevoland";2;18;1170;;1220;;;;"NL23";"Flevoland";2;18;1137
+"NL230";"Flevoland";3;18;1171;;1221;;;;"NL230";"Flevoland";3;18;1138
+"NL3";"WEST-NEDERLAND";1;18;1172;;1222;;;;"NL3";"WEST-NEDERLAND";1;18;1139
+"NL31";"Utrecht";2;18;1173;;1223;;;;"NL31";"Utrecht";2;18;1140
+"NL310";"Utrecht";3;18;1174;;1224;;;;"NL310";"Utrecht";3;18;1141
+"NL32";"Noord-Holland";2;18;1175;;1225;;;;"NL32";"Noord-Holland";2;18;1142
+"NL321";"Kop van Noord-Holland";3;18;1176;;1226;;;;"NL321";"Kop van Noord-Holland";3;18;1143
+"NL322";"Alkmaar en omgeving";3;18;1177;;1227;;;;"NL322";"Alkmaar en omgeving";3;18;1144
+"NL323";"IJmond";3;18;1178;;1228;;;;"NL323";"IJmond";3;18;1145
+"NL324";"Agglomeratie Haarlem";3;18;1179;;1229;;;;"NL324";"Agglomeratie Haarlem";3;18;1146
+"NL325";"Zaanstreek";3;18;1180;;1230;;;;"NL325";"Zaanstreek";3;18;1147
+"NL326";"Groot-Amsterdam";3;18;1181;;1231;;;;"NL326";"Groot-Amsterdam";3;18;1148
+"NL327";"Het Gooi en Vechtstreek";3;18;1182;;1232;;;;"NL327";"Het Gooi en Vechtstreek";3;18;1149
+"NL33";"Zuid-Holland";2;18;1183;;1233;;;;"NL33";"Zuid-Holland";2;18;1150
+"NL331";"Agglomeratie Leiden en Bollenstreek";3;18;1184;;1234;;;;"NL331";"Agglomeratie Leiden en Bollenstreek";3;18;1151
+"NL332";"Agglomeratie 's-Gravenhage";3;18;1185;;1235;;;;"NL332";"Agglomeratie 's-Gravenhage";3;18;1152
+"NL333";"Delft en Westland";3;18;1186;;1236;;;;"NL333";"Delft en Westland";3;18;1153
+"NL334";"Oost-Zuid-Holland";3;18;1187;;1237;;;;"NL334";"Oost-Zuid-Holland";3;18;1154
+"NL335";"Groot-Rijnmond";3;18;1188;;1238;;;;"NL335";"Groot-Rijnmond";3;18;1155
+"NL336";"Zuidoost-Zuid-Holland";3;18;1189;;1239;;;;"NL336";"Zuidoost-Zuid-Holland";3;18;1156
+"NL34";"Zeeland";2;18;1190;;1240;;;;"NL34";"Zeeland";2;18;1157
+"NL341";"Zeeuwsch-Vlaanderen";3;18;1191;;1241;;;;"NL341";"Zeeuwsch-Vlaanderen";3;18;1158
+"NL342";"Overig Zeeland";3;18;1192;;1242;;;;"NL342";"Overig Zeeland";3;18;1159
+"NL4";"ZUID-NEDERLAND";1;18;1193;;1243;;;;"NL4";"ZUID-NEDERLAND";1;18;1160
+"NL41";"Noord-Brabant";2;18;1194;;1244;;;;"NL41";"Noord-Brabant";2;18;1161
+"NL411";"West-Noord-Brabant";3;18;1195;;1245;;;;"NL411";"West-Noord-Brabant";3;18;1162
+"NL412";"Midden-Noord-Brabant";3;18;1196;;1246;;;;"NL412";"Midden-Noord-Brabant";3;18;1163
+"NL413";"Noordoost-Noord-Brabant";3;18;1197;;1247;;;;"NL413";"Noordoost-Noord-Brabant";3;18;1164
+"NL414";"Zuidoost-Noord-Brabant";3;18;1198;;1248;;;;"NL414";"Zuidoost-Noord-Brabant";3;18;1165
+"NL42";"Limburg (NL)";2;18;1199;;1249;;;;"NL42";"Limburg (NL)";2;18;1166
+"NL421";"Noord-Limburg";3;18;1200;;1250;;;;"NL421";"Noord-Limburg";3;18;1167
+"NL422";"Midden-Limburg";3;18;1201;;1251;;;;"NL422";"Midden-Limburg";3;18;1168
+"NL423";"Zuid-Limburg";3;18;1202;;1252;;;;"NL423";"Zuid-Limburg";3;18;1169
+"NLZ";"EXTRA-REGIO";1;18;1203;;1253;;;;"NLZ";"EXTRA-REGIO";1;18;1170
+"NLZZ";"Extra-Regio";2;18;1204;;1254;;;;"NLZZ";"Extra-Regio";2;18;1171
+"NLZZZ";"Extra-Regio";3;18;1205;;1255;;;;"NLZZZ";"Extra-Regio";3;18;1172
+
+"AT";"ÖSTERREICH";0;19;1206;;1256;;;;"AT";"ÖSTERREICH";0;19;1
+"AT1";"OSTÖSTERREICH";1;19;1207;;1257;;;;"AT1";"OSTÖSTERREICH";1;19;2
+"AT11";"Burgenland (A)";2;19;1208;"Label";1258;;;;"AT11";"Burgenland";2;19;3
+"AT111";"Mittelburgenland";3;19;1209;;1259;;;;"AT111";"Mittelburgenland";3;19;4
+"AT112";"Nordburgenland";3;19;1210;;1260;;;;"AT112";"Nordburgenland";3;19;5
+"AT113";"Südburgenland";3;19;1211;;1261;;;;"AT113";"Südburgenland";3;19;6
+"AT12";"Niederösterreich";2;19;1212;;1262;;;;"AT12";"Niederösterreich";2;19;7
+"AT121";"Mostviertel-Eisenwurzen";3;19;1213;;1263;;;;"AT121";"Mostviertel-Eisenwurzen";3;19;8
+"AT122";"Niederösterreich-Süd";3;19;1214;;1264;;;;"AT122";"Niederösterreich-Süd";3;19;9
+"AT123";"Sankt Pölten";3;19;1215;;1265;;;;"AT123";"Sankt Pölten";3;19;10
+"AT124";"Waldviertel";3;19;1216;;1266;;;;"AT124";"Waldviertel";3;19;11
+"AT125";"Weinviertel";3;19;1217;;1267;;;;"AT125";"Weinviertel";3;19;12
+"AT126";"Wiener Umland/Nordteil";3;19;1218;;1268;;;;"AT126";"Wiener Umland/Nordteil";3;19;13
+"AT127";"Wiener Umland/Südteil";3;19;1219;;1269;;;;"AT127";"Wiener Umland/Südteil";3;19;14
+"AT13";"Wien";2;19;1220;;1270;;;;"AT13";"Wien";2;19;15
+"AT130";"Wien";3;19;1221;;1271;;;;"AT130";"Wien";3;19;16
+"AT2";"SÜDÖSTERREICH";1;19;1222;;1272;;;;"AT2";"SÜDÖSTERREICH";1;19;17
+"AT21";"Kärnten";2;19;1223;;1273;;;;"AT21";"Kärnten";2;19;18
+"AT211";"Klagenfurt-Villach";3;19;1224;;1274;;;;"AT211";"Klagenfurt-Villach";3;19;19
+"AT212";"Oberkärnten";3;19;1225;;1275;;;;"AT212";"Oberkärnten";3;19;20
+"AT213";"Unterkärnten";3;19;1226;;1276;;;;"AT213";"Unterkärnten";3;19;21
+"AT22";"Steiermark";2;19;1227;;1277;;;;"AT22";"Steiermark";2;19;22
+"AT221";"Graz";3;19;1228;;1278;;;;"AT221";"Graz";3;19;23
+"AT222";"Liezen";3;19;1229;;1279;;;;"AT222";"Liezen";3;19;24
+"AT223";"Östliche Obersteiermark";3;19;1230;;1280;;;;"AT223";"Östliche Obersteiermark";3;19;25
+"AT224";"Oststeiermark";3;19;1231;;1281;;;;"AT224";"Oststeiermark";3;19;26
+"AT225";"West- und Südsteiermark";3;19;1232;;1282;;;;"AT225";"West- und Südsteiermark";3;19;27
+"AT226";"Westliche Obersteiermark";3;19;1233;;1283;;;;"AT226";"Westliche Obersteiermark";3;19;28
+"AT3";"WESTÖSTERREICH";1;19;1234;;1284;;;;"AT3";"WESTÖSTERREICH";1;19;29
+"AT31";"Oberösterreich";2;19;1235;;1285;;;;"AT31";"Oberösterreich";2;19;30
+"AT311";"Innviertel";3;19;1236;;1286;;;;"AT311";"Innviertel";3;19;31
+"AT312";"Linz-Wels";3;19;1237;;1287;;;;"AT312";"Linz-Wels";3;19;32
+"AT313";"Mühlviertel";3;19;1238;;1288;;;;"AT313";"Mühlviertel";3;19;33
+"AT314";"Steyr-Kirchdorf";3;19;1239;;1289;;;;"AT314";"Steyr-Kirchdorf";3;19;34
+"AT315";"Traunviertel";3;19;1240;;1290;;;;"AT315";"Traunviertel";3;19;35
+"AT32";"Salzburg";2;19;1241;;1291;;;;"AT32";"Salzburg";2;19;36
+"AT321";"Lungau";3;19;1242;;1292;;;;"AT321";"Lungau";3;19;37
+"AT322";"Pinzgau-Pongau";3;19;1243;;1293;;;;"AT322";"Pinzgau-Pongau";3;19;38
+"AT323";"Salzburg und Umgebung";3;19;1244;;1294;;;;"AT323";"Salzburg und Umgebung";3;19;39
+"AT33";"Tirol";2;19;1245;;1295;;;;"AT33";"Tirol";2;19;40
+"AT331";"Außerfern";3;19;1246;;1296;;;;"AT331";"Außerfern";3;19;41
+"AT332";"Innsbruck";3;19;1247;;1297;;;;"AT332";"Innsbruck";3;19;42
+"AT333";"Osttirol";3;19;1248;;1298;;;;"AT333";"Osttirol";3;19;43
+"AT334";"Tiroler Oberland";3;19;1249;;1299;;;;"AT334";"Tiroler Oberland";3;19;44
+"AT335";"Tiroler Unterland";3;19;1250;;1300;;;;"AT335";"Tiroler Unterland";3;19;45
+"AT34";"Vorarlberg";2;19;1251;;1301;;;;"AT34";"Vorarlberg";2;19;46
+"AT341";"Bludenz-Bregenzer Wald";3;19;1252;;1302;;;;"AT341";"Bludenz-Bregenzer Wald";3;19;47
+"AT342";"Rheintal-Bodenseegebiet";3;19;1253;;1303;;;;"AT342";"Rheintal-Bodenseegebiet";3;19;48
+"ATZ";"EXTRA-REGIO";1;19;1254;;1304;;;;"ATZ";"EXTRA-REGIO";1;19;49
+"ATZZ";"Extra-Regio";2;19;1255;;1305;;;;"ATZZ";"Extra-Regio";2;19;50
+"ATZZZ";"Extra-Regio";3;19;1256;;1306;;;;"ATZZZ";"Extra-Regio";3;19;51
+
+"PL";"POLSKA";0;20;1257;;1307;;;;"PL";"POLSKA";0;20;1553
+"PL1";"REGION CENTRALNY";1;20;1258;;1308;;;;"PL1";"CENTRALNY";1;20;1554
+"PL11";"Łódzkie";2;20;1259;;1309;;;;"PL11";"Lodzkie";2;20;1570
+"PL113";"Miasto Łódź";3;20;1260;"Label";1312;;;;"PL111";"Lodzki";3;20;1571
+"PL114";"Łódzki";3;20;1261;"New region";1313;;;;"PL112";"Piotrkowsko-skierniewicki";3;20;1572
+"PL115";"Piotrkowski";3;20;1262;"New region";1314;;;;"PL113";"Miasto Lodz";3;20;1573
+"PL116";"Sieradzki";3;20;1263;"New region";1315;;;;"PL12";"Mazowieckie";2;20;1578
+"PL117";"Skierniewicki";3;20;1264;"New region";1316;;;;"PL121";"Ciechanowsko-plocki";3;20;1579
+"PL12";"Mazowieckie";2;20;1265;;1317;;;;"PL122";"Ostrolecko-siedlecki";3;20;1580
+"PL121";"Ciechanowsko-płocki";3;20;1266;;1318;;;;"PL124";"Radomski";3;20;1581
+"PL122";"Ostrołęcko-siedlecki";3;20;1267;;1319;;;;"PL126";"Warszawski";3;20;1582
+"PL127";"Miasto Warszawa";3;20;1268;"Label";1322;;;;"PL127";"Miasto Warszawa";3;20;1583
+"PL128";"Radomski";3;20;1269;"New region";1323;;;;"PL2";"POLUDNIOWY";1;20;
+"PL129";"Warszawski-wschodni";3;20;1270;"New region";1324;;;;"PL21";"Malopolskie";2;20;1574
+"PL12A";"Warszawski-zachodni";3;20;1271;"New region";1325;;;;"PL211";"Krakowsko-tarnowski";3;20;1575
+"PL2";"REGION POŁUDNIOWY";1;20;1272;;1326;;;;"PL212";"Nowosadecki";3;20;1576
+"PL21";"Małopolskie";2;20;1273;;1327;;;;"PL213";"Miasto Krakow";3;20;1577
+"PL213";"Miasto Kraków";3;20;1274;"Label";1330;;;;"PL22";"Slaskie";2;20;1596
+"PL214";"Krakowski";3;20;1275;"New region";1331;;;;"PL224";"Czestochowski";3;20;1597
+"PL215";"Nowosądecki";3;20;1276;"New region";1332;;;;"PL225";"Bielsko-bialski";3;20;1598
+"PL216";"Oświęcimski";3;20;1277;"New region";1333;;;;"PL226";"Centralny slaski";3;20;1599
+"PL217";"Tarnowski";3;20;1278;"New region";1334;;;;"PL227";"Rybnicko-jastrzebski";3;20;1600
+"PL22";"Śląskie";2;20;1279;;1335;;;;"PL3";"WSCHODNI";1;20;
+"PL224";"Częstochowski";3;20;1280;;1336;;;;"PL31";"Lubelskie";2;20;1563
+"PL225";"Bielski";3;20;1281;"Name change";1337;;;;"PL311";"Bialskopodlaski";3;20;1564
+"PL227";"Rybnicki";3;20;1282;"Name change";1339;;;;"PL312";"Chelmsko-zamojski";3;20;1565
+"PL228";"Bytomski";3;20;1283;"New region";1340;;;;"PL313";"Lubelski";3;20;1566
+"PL229";"Gliwicki";3;20;1284;"New region";1341;;;;"PL32";"Podkarpackie";2;20;1586
+"PL22A";"Katowicki";3;20;1285;"New region";1342;;;;"PL321";"Rzeszowsko-tarnobrzeski";3;20;1587
+"PL22B";"Sosnowiecki";3;20;1286;"New region";1343;;;;"PL322";"Krosniensko-przemyski";3;20;1588
+"PL22C";"Tyski";3;20;1287;"New region";1344;;;;"PL33";"Swietokrzyskie";2;20;1601
+"PL3";"REGION WSCHODNI";1;20;1288;;1345;;;;"PL330";"Swietokrzyski";3;20;1602
+"PL31";"Lubelskie";2;20;1289;;1346;;;;"PL34";"Podlaskie";2;20;1589
+"PL311";"Bialski";3;20;1290;"Name change";1347;;;;"PL341";"Bialostocko-suwalski";3;20;1590
+"PL312";"Chełmsko-zamojski";3;20;1291;;1348;;;;"PL342";"Lomzynski";3;20;1591
+"PL314";"Lubelski";3;20;1292;"New region";1350;;;;"PL4";"POLNOCNO-ZACHODNI";1;20;
+"PL315";"Puławski";3;20;1293;"New region";1351;;;;"PL41";"Wielkopolskie";2;20;1607
+"PL32";"Podkarpackie";2;20;1294;;1352;;;;"PL411";"Pilski";3;20;1608
+"PL323";"Krośnieński";3;20;1295;"New region";1355;;;;"PL412";"Poznanski";3;20;1609
+"PL324";"Przemyski";3;20;1296;"New region";1356;;;;"PL413";"Kaliski";3;20;1610
+"PL325";"Rzeszowski";3;20;1297;"New region";1357;;;;"PL414";"Koninski";3;20;1611
+"PL326";"Tarnobrzeski";3;20;1298;"New region";1358;;;;"PL415";"Miasto Poznan";3;20;1612
+"PL33";"Świętokrzyskie";2;20;1299;;1359;;;;"PL42";"Zachodniopomorskie";2;20;1613
+"PL331";"Kielecki";3;20;1300;"New region";1361;;;;"PL421";"Szczecinski";3;20;1614
+"PL332";"Sandomiersko-jędrzejowski";3;20;1301;"New region";1362;;;;"PL422";"Koszalinski";3;20;1615
+"PL34";"Podlaskie";2;20;1302;;1363;;;;"PL43";"Lubuskie";2;20;1567
+"PL343";"Białostocki";3;20;1303;"New region";1366;;;;"PL431";"Gorzowski";3;20;1568
+"PL344";"Łomżyński";3;20;1304;"New region";1367;;;;"PL432";"Zielonogorski";3;20;1569
+"PL345";"Suwalski";3;20;1305;"New region";1368;;;;"PL5";"POLUDNIOWO-ZACHODNI";1;20;
+"PL4";"REGION PÓŁNOCNO-ZACHODNI";1;20;1306;;1369;;;;"PL51";"Dolnoslaskie";2;20;1555
+"PL41";"Wielkopolskie";2;20;1307;;1370;;;;"PL511";"Jeleniogorsko-walbrzyski";3;20;1556
+"PL411";"Pilski";3;20;1308;;1371;;;;"PL512";"Legnicki";3;20;1557
+"PL414";"Koniński";3;20;1309;;1374;;;;"PL513";"Wroclawski";3;20;1558
+"PL415";"Miasto Poznań";3;20;1310;"Label";1375;;;;"PL514";"Miasto Wroclaw";3;20;1559
+"PL416";"Kaliski";3;20;1311;"New region";1376;;;;"PL52";"Opolskie";2;20;1584
+"PL417";"Leszczyński";3;20;1312;"New region";1377;;;;"PL520";"Opolski";3;20;1585
+"PL418";"Poznański";3;20;1313;"New region";1378;;;;"PL6";"POLNOCNY";1;20;
+"PL42";"Zachodniopomorskie";2;20;1314;;1379;;;;"PL61";"Kujawsko-Pomorskie";2;20;1560
+"PL422";"Koszaliński";3;20;1315;;1381;;;;"PL611";"Bydgoski";3;20;1561
+"PL423";"Stargardzki";3;20;1316;"New region";1382;;;;"PL612";"Torunsko-wloclawski";3;20;1562
+"PL424";"Miasto Szczecin";3;20;1317;"New region";1383;;;;"PL62";"Warminsko-Mazurskie";2;20;1603
+"PL425";"Szczeciński";3;20;1318;"New region";1384;;;;"PL621";"Elblaski";3;20;1604
+"PL43";"Lubuskie";2;20;1319;;1385;;;;"PL622";"Olsztynski";3;20;1605
+"PL431";"Gorzowski";3;20;1320;;1386;;;;"PL623";"Elcki";3;20;1606
+"PL432";"Zielonogórski";3;20;1321;;1387;;;;"PL63";"Pomorskie";2;20;1592
+"PL5";"REGION POŁUDNIOWO-ZACHODNI";1;20;1322;;1388;;;;"PL631";"Slupski";3;20;1593
+"PL51";"Dolnośląskie";2;20;1323;;1389;;;;"PL632";"Gdanski";3;20;1594
+"PL514";"Miasto Wrocław";3;20;1324;"Label";1393;;;;"PL633";"Gdansk-Gdynia-Sopot";3;20;1595
+"PL515";"Jeleniogórski";3;20;1325;"New region";1394;;;;"PLZ";"EXTRA-REGIO";1;20;1616
+"PL516";"Legnicko-Głogowski";3;20;1326;"New region";1395;;;;"PLZZ";"Extra-Regio";2;20;1617
+"PL517";"Wałbrzyski";3;20;1327;"New region";1396;;;;"PLZZZ";"Extra-Regio";3;20;1618
+"PL518";"Wrocławski";3;20;1328;"New region";1397;;;;;;;;
+"PL52";"Opolskie";2;20;1329;;1398;;;;;;;;
+"PL521";"Nyski";3;20;1330;"New region";1400;;;;;;;;
+"PL522";"Opolski";3;20;1331;"New region";1401;;;;;;;;
+"PL6";"REGION PÓŁNOCNY";1;20;1332;;1402;;;;;;;;
+"PL61";"Kujawsko-Pomorskie";2;20;1333;;1403;;;;;;;;
+"PL613";"Bydgosko-Toruński";3;20;1334;"New region";1406;;;;;;;;
+"PL614";"Grudziądzki";3;20;1335;"New region";1407;;;;;;;;
+"PL615";"Włocławski";3;20;1336;"New region";1408;;;;;;;;
+"PL62";"Warmińsko-Mazurskie";2;20;1337;;1409;;;;;;;;
+"PL621";"Elbląski";3;20;1338;;1410;;;;;;;;
+"PL622";"Olsztyński";3;20;1339;;1411;;;;;;;;
+"PL623";"Ełcki";3;20;1340;;1412;;;;;;;;
+"PL63";"Pomorskie";2;20;1341;;1413;;;;;;;;
+"PL631";"Słupski";3;20;1342;;1414;;;;;;;;
+"PL633";"Trójmiejski";3;20;1343;"Name change";1416;;;;;;;;
+"PL634";"Gdański";3;20;1344;"New region";1417;;;;;;;;
+"PL635";"Starogardzki";3;20;1345;"New region";1418;;;;;;;;
+"PLZ";"EXTRA-REGIO";1;20;1346;;1419;;;;;;;;
+"PLZZ";"Extra-Regio";2;20;1347;;1420;;;;;;;;
+"PLZZZ";"Extra-Regio";3;20;1348;;1421;;;;;;;;
+
+"PT";"PORTUGAL";0;21;1349;;1422;;;;"PT";"PORTUGAL";0;21;1173
+"PT1";"CONTINENTE";1;21;1350;;1423;;;;"PT1";"CONTINENTE";1;21;1174
+"PT11";"Norte";2;21;1351;;1424;;;;"PT11";"Norte";2;21;1175
+"PT111";"Minho-Lima";3;21;1352;;1425;;;;"PT111";"Minho-Lima";3;21;1176
+"PT112";"Cávado";3;21;1353;;1426;;;;"PT112";"Cávado";3;21;1177
+"PT113";"Ave";3;21;1354;;1427;;;;"PT113";"Ave";3;21;1178
+"PT114";"Grande Porto";3;21;1355;;1428;;;;"PT114";"Grande Porto";3;21;1179
+"PT115";"Tâmega";3;21;1356;;1429;;;;"PT115";"Tâmega";3;21;1180
+"PT116";"Entre Douro e Vouga";3;21;1357;;1430;;;;"PT116";"Entre Douro e Vouga";3;21;1181
+"PT117";"Douro";3;21;1358;;1431;;;;"PT117";"Douro";3;21;1182
+"PT118";"Alto Trás-os-Montes";3;21;1359;;1432;;;;"PT118";"Alto Trás-os-Montes";3;21;1183
+"PT15";"Algarve";2;21;1360;;1433;;;;"PT15";"Algarve";2;21;1184
+"PT150";"Algarve";3;21;1361;;1434;;;;"PT150";"Algarve";3;21;1185
+"PT16";"Centro (P)";2;21;1362;;1435;;;;"PT16";"Centro (P)";2;21;1186
+"PT161";"Baixo Vouga";3;21;1363;;1436;;;;"PT161";"Baixo Vouga";3;21;1187
+"PT162";"Baixo Mondego";3;21;1364;;1437;;;;"PT162";"Baixo Mondego";3;21;1188
+"PT163";"Pinhal Litoral";3;21;1365;;1438;;;;"PT163";"Pinhal Litoral";3;21;1189
+"PT164";"Pinhal Interior Norte";3;21;1366;;1439;;;;"PT164";"Pinhal Interior Norte";3;21;1190
+"PT165";"Dâo-Lafôes";3;21;1367;;1440;;;;"PT165";"Dâo-Lafôes";3;21;1191
+"PT166";"Pinhal Interior Sul";3;21;1368;;1441;;;;"PT166";"Pinhal Interior Sul";3;21;1192
+"PT167";"Serra da Estrela";3;21;1369;;1442;;;;"PT167";"Serra da Estrela";3;21;1193
+"PT168";"Beira Interior Norte";3;21;1370;;1443;;;;"PT168";"Beira Interior Norte";3;21;1194
+"PT169";"Beira Interior Sul";3;21;1371;;1444;;;;"PT169";"Beira Interior Sul";3;21;1195
+"PT16A";"Cova da Beira";3;21;1372;;1445;;;;"PT16A";"Cova da Beira";3;21;1196
+"PT16B";"Oeste";3;21;1373;;1446;;;;"PT16B";"Oeste";3;21;1197
+"PT16C";"Médio Tejo";3;21;1374;;1447;;;;"PT16C";"Médio Tejo";3;21;1198
+"PT17";"Lisboa";2;21;1375;;1448;;;;"PT17";"Lisboa";2;21;1199
+"PT171";"Grande Lisboa";3;21;1376;;1449;;;;"PT171";"Grande Lisboa";3;21;1200
+"PT172";"Península de Setúbal";3;21;1377;;1450;;;;"PT172";"Península de Setúbal";3;21;1201
+"PT18";"Alentejo";2;21;1378;;1451;;;;"PT18";"Alentejo";2;21;1202
+"PT181";"Alentejo Litoral";3;21;1379;;1452;;;;"PT181";"Alentejo Litoral";3;21;1203
+"PT182";"Alto Alentejo";3;21;1380;;1453;;;;"PT182";"Alto Alentejo";3;21;1204
+"PT183";"Alentejo Central";3;21;1381;;1454;;;;"PT183";"Alentejo Central";3;21;1205
+"PT184";"Baixo Alentejo";3;21;1382;;1455;;;;"PT184";"Baixo Alentejo";3;21;1206
+"PT185";"Lezíria do Tejo";3;21;1383;;1456;;;;"PT185";"Leziria do Tejo";3;21;1207
+"PT2";"Região Autónoma dos AÇORES";1;21;1384;;1457;;;;"PT2";"Região Autónoma dos AÇORES";1;21;1208
+"PT20";"Região Autónoma dos Açores";2;21;1385;;1458;;;;"PT20";"Região Autónoma dos Açores";2;21;1209
+"PT200";"Região Autónoma dos Açores";3;21;1386;;1459;;;;"PT200";"Região Autónoma dos Açores";3;21;1210
+"PT3";"Região Autónoma da MADEIRA";1;21;1387;;1460;;;;"PT3";"Região Autónoma da MADEIRA";1;21;1211
+"PT30";"Região Autónoma da Madeira";2;21;1388;;1461;;;;"PT30";"Região Autónoma da Madeira";2;21;1212
+"PT300";"Região Autónoma da Madeira";3;21;1389;;1462;;;;"PT300";"Região Autónoma da Madeira";3;21;1213
+"PTZ";"EXTRA-REGIO";1;21;1390;;1463;;;;"PTZ";"EXTRA-REGIO";1;21;1214
+"PTZZ";"Extra-Regio";2;21;1391;;1464;;;;"PTZZ";"Extra-Regio";2;21;1215
+"PTZZZ";"Extra-Regio";3;21;1392;;1465;;;;"PTZZZ";"Extra-Regio";3;21;1216
+
+"RO";"ROMANIA";0;22;;;;;"RO";;"RO";"Romania";0;22;1700
+"RO1";"Macroregiunea unu";1;22;;;;;;;"RO1";"Macroregiunea unu";1;22;1701
+"RO11";"Nord-Vest";2;22;;;;;"RO06";;"RO11";"Nord-Vest";2;22;1702
+"RO111";"Bihor";3;22;;;;;"RO061";;"RO111";"Bihor";3;22;1703
+"RO112";"Bistriţa-Năsăud";3;22;;;;;"RO062";;"RO112";"Bistrita-Nasaud";3;22;1704
+"RO113";"Cluj";3;22;;;;;"RO063";;"RO113";"Cluj";3;22;1705
+"RO114";"Maramureş";3;22;;;;;"RO064";;"RO114";"Maramures";3;22;1706
+"RO115";"Satu Mare";3;22;;;;;"RO065";;"RO115";"Satu Mare";3;22;1707
+"RO116";"Sălaj";3;22;;;;;"RO066";;"RO116";"Salaj";3;22;1708
+"RO12";"Centru";2;22;;;;;"RO07";;"RO12";"Centru";2;22;1709
+"RO121";"Alba";3;22;;;;;"RO071";;"RO121";"Alba";3;22;1710
+"RO122";"Braşov";3;22;;;;;"RO072";;"RO122";"Brasov";3;22;1711
+"RO123";"Covasna";3;22;;;;;"RO073";;"RO123";"Covasna";3;22;1712
+"RO124";"Harghita";3;22;;;;;"RO074";;"RO124";"Harghita";3;22;1713
+"RO125";"Mureş";3;22;;;;;"RO075";;"RO125";"Mures";3;22;1714
+"RO126";"Sibiu";3;22;;;;;"RO076";;"RO126";"Sibiu";3;22;1715
+"RO2";"Macroregiunea doi";1;22;;;;;;;"RO2";"Macroregiunea doi";1;22;1716
+"RO21";"Nord-Est";2;22;;;;;"RO01";;"RO21";"Nord-Est";2;22;1717
+"RO211";"Bacău";3;22;;;;;"RO011";;"RO211";"Bacau";3;22;1718
+"RO212";"Botoşani";3;22;;;;;"RO012";;"RO212";"Botosani";3;22;1719
+"RO213";"Iaşi";3;22;;;;;"RO013";;"RO213";"Iasi";3;22;1720
+"RO214";"Neamţ";3;22;;;;;"RO014";;"RO214";"Neamt";3;22;1721
+"RO215";"Suceava";3;22;;;;;"RO015";;"RO215";"Suceava";3;22;1722
+"RO216";"Vaslui";3;22;;;;;"RO016";;"RO216";"Vaslui";3;22;1723
+"RO22";"Sud-Est";2;22;;;;;"RO02";;"RO22";"Sud-Est";2;22;1724
+"RO221";"Brăila";3;22;;;;;"RO021";;"RO221";"Braila";3;22;1725
+"RO222";"Buzău";3;22;;;;;"RO022";;"RO222";"Buzau";3;22;1726
+"RO223";"Constanţa";3;22;;;;;"RO023";;"RO223";"Constanta";3;22;1727
+"RO224";"Galaţi";3;22;;;;;"RO024";;"RO224";"Galati";3;22;1728
+"RO225";"Tulcea";3;22;;;;;"RO025";;"RO225";"Tulcea";3;22;1729
+"RO226";"Vrancea";3;22;;;;;"RO026";;"RO226";"Vrancea";3;22;1730
+"RO3";"Macroregiunea trei";1;22;;;;;;;"RO3";"Macroregiunea trei";1;22;1731
+"RO31";"Sud - Muntenia";2;22;;;;;"RO03";;"RO31";"Sud - Muntenia";2;22;1732
+"RO311";"Argeş";3;22;;;;;"RO031";;"RO311";"Arges";3;22;1733
+"RO312";"Călăraşi";3;22;;;;;"RO032";;"RO312";"Calarasi";3;22;1734
+"RO313";"Dâmboviţa";3;22;;;;;"RO033";;"RO313";"Dambovita";3;22;1735
+"RO314";"Giurgiu";3;22;;;;;"RO034";;"RO314";"Giurgiu";3;22;1736
+"RO315";"Ialomiţa";3;22;;;;;"RO035";;"RO315";"Ialomita";3;22;1737
+"RO316";"Prahova";3;22;;;;;"RO036";;"RO316";"Prahova";3;22;1738
+"RO317";"Teleorman";3;22;;;;;"RO037";;"RO317";"Teleorman";3;22;1739
+"RO32";"Bucureşti - Ilfov";2;22;;;;;"RO08";;"RO32";"Bucuresti - Ilfov";2;22;1740
+"RO321";"Bucureşti";3;22;;;;;"RO081";;"RO321";"Bucuresti";3;22;1741
+"RO322";"Ilfov";3;22;;;;;"RO082";;"RO322";"Ilfov";3;22;1742
+"RO4";"Macroregiunea patru";1;22;;;;;;;"RO4";"Macroregiunea patru";1;22;1743
+"RO41";"Sud-Vest Oltenia";2;22;;;;;"RO04";;"RO41";"Sud-Vest Oltenia";2;22;1744
+"RO411";"Dolj";3;22;;;;;"RO041";;"RO411";"Dolj";3;22;1745
+"RO412";"Gorj";3;22;;;;;"RO042";;"RO412";"Gorj";3;22;1746
+"RO413";"Mehedinţi";3;22;;;;;"RO043";;"RO413";"Mehedinti";3;22;1747
+"RO414";"Olt";3;22;;;;;"RO044";;"RO414";"Olt";3;22;1748
+"RO415";"Vâlcea";3;22;;;;;"RO045";;"RO415";"Valcea";3;22;1749
+"RO42";"Vest";2;22;;;;;"RO05";;"RO42";"Vest";2;22;1750
+"RO421";"Arad";3;22;;;;;"RO051";;"RO421";"Arad";3;22;1751
+"RO422";"Caraş-Severin";3;22;;;;;"RO052";;"RO422";"Caras-Severin";3;22;1752
+"RO423";"Hunedoara";3;22;;;;;"RO053";;"RO423";"Hunedoara";3;22;1753
+"RO424";"Timiş";3;22;;;;;"RO054";;"RO424";"Timis";3;22;1754
+"ROZ";"EXTRA-REGIO";1;22;;;;;;;"ROZ";"Extra-Regio";1;22;1755
+"ROZZ";"Extra-Regio";2;22;;;;;;;"ROZZ";"Extra-Regio";2;22;1756
+"ROZZZ";"Extra-Regio";3;22;;;;;;;"ROZZZ";"Extra-Regio";3;22;1757
+
+"SI";"SLOVENIJA";0;23;1393;;1466;;;;"SI";"SLOVENIJA";0;23;1619
+"SI0";"SLOVENIJA";1;23;1394;;1467;;;;"SI0";"SLOVENIJA";1;23;1620
+"SI01";"Vzhodna Slovenija";2;23;1395;"New region";1468,5;;;;"SI00";"Slovenija";2;23;1621
+"SI011";"Pomurska";3;23;1396;"Code change";1469;;;;"SI001";"Pomurska";3;23;1622
+"SI012";"Podravska";3;23;1397;"Code change";1470;;;;"SI002";"Podravska";3;23;1623
+"SI013";"Koroška";3;23;1398;"Code change";1471;;;;"SI003";"Koroska";3;23;1624
+"SI014";"Savinjska";3;23;1399;"Code change";1472;;;;"SI004";"Savinjska";3;23;1625
+"SI015";"Zasavska";3;23;1400;"Code change";1473;;;;"SI005";"Zasavska";3;23;1626
+"SI016";"Spodnjeposavska";3;23;1401;"Code change";1474;;;;"SI006";"Spodnjeposavska";3;23;1627
+"SI017";"Jugovzhodna Slovenija";3;23;1402;"Code change";1475;;;;"SI009";"Gorenjska";3;23;1628
+"SI018";"Notranjsko-kraška";3;23;1403;"Code change";1476;;;;"SI00A";"Notranjsko-kraska";3;23;1629
+"SI02";"Zahodna Slovenija";2;23;1404;"New region";1476,5;;;;"SI00B";"Goriska";3;23;1630
+"SI021";"Osrednjeslovenska";3;23;1405;"Code change";1477;;;;"SI00C";"Obalno-kraska";3;23;1631
+"SI022";"Gorenjska";3;23;1406;"Code change";1478;;;;"SI00D";"Jugovzhodna Slovenija";3;23;1632
+"SI023";"Goriška";3;23;1407;"Code change";1479;;;;"SI00E";"Osrednjeslovenska";3;23;1633
+"SI024";"Obalno-kraška";3;23;1408;"Code change";1480;;;;"SIZ";"EXTRA-REGIO";1;23;1634
+"SIZ";"EXTRA-REGIO";1;23;1409;;1481;;;;"SIZZ";"Extra-Regio";2;23;1635
+"SIZZ";"Extra-Regio";2;23;1410;;1482;;;;"SIZZZ";"Extra-Regio";3;23;1636
+"SIZZZ";"Extra-Regio";3;23;1411;;1483;;;;;;;;
+
+"SK";"SLOVENSKÁ REPUBLIKA";0;24;1412;;1484;;;;"SK";"SLOVENSKA REPUBLIKA";0;24;1637
+"SK0";"SLOVENSKÁ REPUBLIKA";1;24;1413;;1485;;;;"SK0";"SLOVENSKA REPUBLIKA";1;24;1638
+"SK01";"Bratislavský kraj";2;24;1414;;1486;;;;"SK01";"Bratislavsky kraj";2;24;1639
+"SK010";"Bratislavský kraj";3;24;1415;;1487;;;;"SK010";"Bratislavsky kraj";3;24;1640
+"SK02";"Západné Slovensko";2;24;1416;;1488;;;;"SK02";"Zapadne Slovensko";2;24;1641
+"SK021";"Trnavský kraj";3;24;1417;;1489;;;;"SK021";"Trnavsky kraj";3;24;1642
+"SK022";"Trenčiansky kraj";3;24;1418;;1490;;;;"SK022";"Trenciansky kraj";3;24;1643
+"SK023";"Nitriansky kraj";3;24;1419;;1491;;;;"SK023";"Nitriansky kraj";3;24;1644
+"SK03";"Stredné Slovensko";2;24;1420;;1492;;;;"SK03";"Stredne Slovensko";2;24;1645
+"SK031";"Žilinský kraj";3;24;1421;;1493;;;;"SK031";"Zilinsky kraj";3;24;1646
+"SK032";"Banskobystrický kraj";3;24;1422;;1494;;;;"SK032";"Banskobystricky kraj";3;24;1647
+"SK04";"Východné Slovensko";2;24;1423;;1495;;;;"SK04";"Vychodne Slovensko";2;24;1648
+"SK041";"Prešovský kraj";3;24;1424;;1496;;;;"SK041";"Presovsky kraj";3;24;1649
+"SK042";"Košický kraj";3;24;1425;;1497;;;;"SK042";"Kosicky kraj";3;24;1650
+"SKZ";"EXTRA-REGIO";1;24;1426;;1498;;;;"SKZ";"EXTRA-REGIO";1;24;1651
+"SKZZ";"Extra-Regio";2;24;1427;;1499;;;;"SKZZ";"Extra-Regio";2;24;1652
+"SKZZZ";"Extra-Regio";3;24;1428;;1500;;;;"SKZZZ";"Extra-Regio";3;24;1653
+
+"FI";"SUOMI / FINLAND";0;25;1429;;1501;;;;"FI";"SUOMI / FINLAND";0;25;716
+"FI1";"MANNER-SUOMI";1;25;1430;;1502;;;;"FI1";"MANNER-SUOMI";1;25;717
+"FI13";"Itä-Suomi";2;25;1431;;1503;;;;"FI13";"Itä-Suomi";2;25;718
+"FI131";"Etelä-Savo";3;25;1432;;1504;;;;"FI131";"Etelä-Savo";3;25;719
+"FI132";"Pohjois-Savo";3;25;1433;;1505;;;;"FI132";"Pohjois-Savo";3;25;720
+"FI133";"Pohjois-Karjala";3;25;1434;;1506;;;;"FI133";"Pohjois-Karjala";3;25;721
+"FI134";"Kainuu";3;25;1435;;1507;;;;"FI134";"Kainuu";3;25;722
+"FI18";"Etelä-Suomi";2;25;1436;;1508;;;;"FI18";"Etelä-Suomi";2;25;723
+"FI181";"Uusimaa";3;25;1437;;1509;;;;"FI181";"Uusimaa";3;25;724
+"FI182";"Itä-Uusimaa";3;25;1438;;1510;;;;"FI182";"Itä-Uusimaa";3;25;725
+"FI183";"Varsinais-Suomi";3;25;1439;;1511;;;;"FI183";"Varsinais-Suomi";3;25;726
+"FI184";"Kanta-Häme";3;25;1440;;1512;;;;"FI184";"Kanta-Häme";3;25;727
+"FI185";"Päijät-Häme";3;25;1441;;1513;;;;"FI185";"Päijät-Häme";3;25;728
+"FI186";"Kymenlaakso";3;25;1442;;1514;;;;"FI186";"Kymenlaakso";3;25;729
+"FI187";"Etelä-Karjala";3;25;1443;;1515;;;;"FI187";"Etelä-Karjala";3;25;730
+"FI19";"Länsi-Suomi";2;25;1444;;1516;;;;"FI19";"Länsi-Suomi";2;25;731
+"FI193";"Keski-Suomi";3;25;1445;;1517;;;;"FI191";"Satakunta";3;25;732
+"FI194";"Etelä-Pohjanmaa";3;25;1446;;1518;;;;"FI192";"Pirkanmaa";3;25;733
+"FI195";"Pohjanmaa";3;25;1447;;1519;;;;"FI193";"Keski-Suomi";3;25;734
+"FI196";"Satakunta";3;25;1448;"Boundary shift";1520;;;;"FI194";"Etelä-Pohjanmaa";3;25;735
+"FI197";"Pirkanmaa";3;25;1449;"Boundary shift";1521;;;;"FI195";"Pohjanmaa";3;25;736
+"FI1A";"Pohjois-Suomi";2;25;1450;;1522;;;;"FI1A";"Pohjois-Suomi";2;25;737
+"FI1A1";"Keski-Pohjanmaa";3;25;1451;;1523;;;;"FI1A1";"Keski-Pohjanmaa";3;25;738
+"FI1A2";"Pohjois-Pohjanmaa";3;25;1452;;1524;;;;"FI1A2";"Pohjois-Pohjanmaa";3;25;739
+"FI1A3";"Lappi";3;25;1453;;1525;;;;"FI1A3";"Lappi";3;25;740
+"FI2";"ÅLAND";1;25;1454;;1526;;;;"FI2";"ÅLAND";1;25;741
+"FI20";"Åland";2;25;1455;;1527;;;;"FI20";"Åland";2;25;742
+"FI200";"Åland";3;25;1456;;1528;;;;"FI200";"Åland";3;25;743
+"FIZ";"EXTRA-REGIO";1;25;1457;;1529;;;;"FIZ";"EXTRA-REGIO";1;25;744
+"FIZZ";"Extra-Regio";2;25;1458;;1530;;;;"FIZZ";"Extra-Regio";2;25;745
+"FIZZZ";"Extra-Regio";3;25;1459;;1531;;;;"FIZZZ";"Extra-Regio";3;25;746
+
+"SE";"SVERIGE";0;26;1460;;1532;;;;"SE";"SVERIGE";0;26;1217
+"SE1";"Östra Sverige";1;26;1461;"New region";1534;;;;"SE0";"SVERIGE";1;26;1218
+"SE11";"Stockholm";2;26;1462;"Code change";1535;;;;"SE01";"Stockholm";2;26;1219
+"SE110";"Stockholms län";3;26;1463;"Code change";1536;;;;"SE010";"Stockholms län";3;26;1220
+"SE12";"Östra Mellansverige";2;26;1464;"Code change";1537;;;;"SE02";"Östra Mellansverige";2;26;1221
+"SE121";"Uppsala län";3;26;1465;"Boundary shift";1538;;;;"SE021";"Uppsala län";3;26;1222
+"SE122";"Södermanlands län";3;26;1466;"Code change";1539;;;;"SE022";"Södermanlands län";3;26;1223
+"SE123";"Östergötlands län";3;26;1467;"Code change";1540;;;;"SE023";"Östergötlands län";3;26;1224
+"SE124";"Örebro län";3;26;1468;"Code change";1541;;;;"SE024";"Örebro län";3;26;1225
+"SE125";"Västmanlands län";3;26;1469;"Boundary shift";1542;;;;"SE025";"Västmanlands län";3;26;1226
+"SE2";"Södra Sverige";1;26;1470;"New region";1543;;;;"SE04";"Sydsverige";2;26;1227
+"SE21";"Småland med öarna";2;26;1471;"Code change";1544;;;;"SE041";"Blekinge län";3;26;1228
+"SE211";"Jönköpings län";3;26;1472;"Code change";1545;;;;"SE044";"Skåne län";3;26;1229
+"SE212";"Kronobergs län";3;26;1473;"Code change";1546;;;;"SE06";"Norra Mellansverige";2;26;1230
+"SE213";"Kalmar län";3;26;1474;"Code change";1547;;;;"SE061";"Värmlands län";3;26;1231
+"SE214";"Gotlands län";3;26;1475;"Code change";1548;;;;"SE062";"Dalarnas län";3;26;1232
+"SE22";"Sydsverige";2;26;1476;"Code change";1549;;;;"SE063";"Gävleborgs län";3;26;1233
+"SE221";"Blekinge län";3;26;1477;"Code change";1550;;;;"SE07";"Mellersta Norrland";2;26;1234
+"SE224";"Skåne län";3;26;1478;"Code change";1551;;;;"SE071";"Västernorrlands län";3;26;1235
+"SE23";"Västsverige";2;26;1479;"Code change";1552;;;;"SE072";"Jämtlands län";3;26;1236
+"SE231";"Hallands län";3;26;1480;"Code change";1553;;;;"SE08";"Övre Norrland";2;26;1237
+"SE232";"Västra Götalands län";3;26;1481;"Code change";1554;;;;"SE081";"Västerbottens län";3;26;1238
+"SE3";"Norra Sverige";1;26;1482;"New region";1555;;;;"SE082";"Norrbottens län";3;26;1239
+"SE31";"Norra Mellansverige";2;26;1483;"Code change";1556;;;;"SE09";"Småland med öarna";2;26;1240
+"SE311";"Värmlands län";3;26;1484;"Code change";1557;;;;"SE091";"Jönköpings län";3;26;1241
+"SE312";"Dalarnas län";3;26;1485;"Code change";1558;;;;"SE092";"Kronobergs län";3;26;1242
+"SE313";"Gävleborgs län";3;26;1486;"Code change";1559;;;;"SE093";"Kalmar län";3;26;1243
+"SE32";"Mellersta Norrland";2;26;1487;"Code change";1560;;;;"SE094";"Gotlands län";3;26;1244
+"SE321";"Västernorrlands län";3;26;1488;"Code change";1561;;;;"SE0A";"Västsverige";2;26;1245
+"SE322";"Jämtlands län";3;26;1489;"Code change";1562;;;;"SE0A1";"Hallands län";3;26;1246
+"SE33";"Övre Norrland";2;26;1490;"Code change";1563;;;;"SE0A2";"Västra Götalands län";3;26;1247
+"SE331";"Västerbottens län";3;26;1491;"Code change";1564;;;;"SEZ";"EXTRA-REGIO";1;26;1248
+"SE332";"Norrbottens län";3;26;1492;"Code change";1565;;;;"SEZZ";"Extra-Regio";2;26;1249
+"SEZ";"EXTRA-REGIO";1;26;1493;;1566;;;;"SEZZZ";"Extra-Regio";3;26;1250
+"SEZZ";"Extra-Regio";2;26;1494;;1567;;;;;;;;
+"SEZZZ";"Extra-Regio";3;26;1495;;1568;;;;;;;;
+"UK";"UNITED KINGDOM";0;27;1496;;1569;;;;"UK";"UNITED KINGDOM";0;27;1251
+"UKC";"NORTH EAST (ENGLAND)";1;27;1497;"Label";1570;;;;"UKC";"NORTH EAST";1;27;1252
+"UKC1";"Tees Valley and Durham";2;27;1498;;1571;;;;"UKC1";"Tees Valley and Durham";2;27;1253
+"UKC11";"Hartlepool and Stockton-on-Tees";3;27;1499;;1572;;;;"UKC11";"Hartlepool and Stockton-on-Tees";3;27;1254
+"UKC12";"South Teesside";3;27;1500;;1573;;;;"UKC12";"South Teesside";3;27;1255
+"UKC13";"Darlington";3;27;1501;;1574;;;;"UKC13";"Darlington";3;27;1256
+"UKC14";"Durham CC";3;27;1502;;1575;;;;"UKC14";"Durham CC";3;27;1257
+"UKC2";"Northumberland and Tyne and Wear";2;27;1503;;1576;;;;"UKC2";"Northumberland and Tyne and Wear";2;27;1258
+"UKC21";"Northumberland";3;27;1504;;1577;;;;"UKC21";"Northumberland";3;27;1259
+"UKC22";"Tyneside";3;27;1505;;1578;;;;"UKC22";"Tyneside";3;27;1260
+"UKC23";"Sunderland";3;27;1506;;1579;;;;"UKC23";"Sunderland";3;27;1261
+"UKD";"NORTH WEST (ENGLAND)";1;27;1507;"Label";1580;;;;"UKD";"NORTH WEST";1;27;1262
+"UKD1";"Cumbria";2;27;1508;;1581;;;;"UKD1";"Cumbria";2;27;1263
+"UKD11";"West Cumbria";3;27;1509;;1582;;;;"UKD11";"West Cumbria";3;27;1264
+"UKD12";"East Cumbria";3;27;1510;;1583;;;;"UKD12";"East Cumbria";3;27;1265
+"UKD2";"Cheshire";2;27;1511;;1584;;;;"UKD2";"Cheshire";2;27;1266
+"UKD21";"Halton and Warrington";3;27;1512;;1585;;;;"UKD21";"Halton and Warrington";3;27;1267
+"UKD22";"Cheshire CC";3;27;1513;;1586;;;;"UKD22";"Cheshire CC";3;27;1268
+"UKD3";"Greater Manchester";2;27;1514;;1587;;;;"UKD3";"Greater Manchester";2;27;1269
+"UKD31";"Greater Manchester South";3;27;1515;;1588;;;;"UKD31";"Greater Manchester South";3;27;1270
+"UKD32";"Greater Manchester North";3;27;1516;;1589;;;;"UKD32";"Greater Manchester North";3;27;1271
+"UKD4";"Lancashire";2;27;1517;;1590;;;;"UKD4";"Lancashire";2;27;1272
+"UKD41";"Blackburn with Darwen";3;27;1518;;1591;;;;"UKD41";"Blackburn with Darwen";3;27;1273
+"UKD42";"Blackpool";3;27;1519;;1592;;;;"UKD42";"Blackpool";3;27;1274
+"UKD43";"Lancashire CC";3;27;1520;;1593;;;;"UKD43";"Lancashire CC";3;27;1275
+"UKD5";"Merseyside";2;27;1521;;1594;;;;"UKD5";"Merseyside";2;27;1276
+"UKD51";"East Merseyside";3;27;1522;;1595;;;;"UKD51";"East Merseyside";3;27;1277
+"UKD52";"Liverpool";3;27;1523;;1596;;;;"UKD52";"Liverpool";3;27;1278
+"UKD53";"Sefton";3;27;1524;;1597;;;;"UKD53";"Sefton";3;27;1279
+"UKD54";"Wirral";3;27;1525;;1598;;;;"UKD54";"Wirral";3;27;1280
+"UKE";"YORKSHIRE AND THE HUMBER";1;27;1526;;1599;;;;"UKE";"YORKSHIRE AND THE HUMBER";1;27;1281
+"UKE1";"East Yorkshire and Northern Lincolnshire";2;27;1527;"Name change";1600;;;;"UKE1";"East Riding and North Lincolnshire";2;27;1282
+"UKE11";"Kingston upon Hull, City of";3;27;1528;;1601;;;;"UKE11";"Kingston upon Hull, City of";3;27;1283
+"UKE12";"East Riding of Yorkshire";3;27;1529;;1602;;;;"UKE12";"East Riding of Yorkshire";3;27;1284
+"UKE13";"North and North East Lincolnshire";3;27;1530;;1603;;;;"UKE13";"North and North East Lincolnshire";3;27;1285
+"UKE2";"North Yorkshire";2;27;1531;;1604;;;;"UKE2";"North Yorkshire";2;27;1286
+"UKE21";"York";3;27;1532;;1605;;;;"UKE21";"York";3;27;1287
+"UKE22";"North Yorkshire CC";3;27;1533;;1606;;;;"UKE22";"North Yorkshire CC";3;27;1288
+"UKE3";"South Yorkshire";2;27;1534;;1607;;;;"UKE3";"South Yorkshire";2;27;1289
+"UKE31";"Barnsley, Doncaster and Rotherham";3;27;1535;;1608;;;;"UKE31";"Barnsley, Doncaster and Rotherham";3;27;1290
+"UKE32";"Sheffield";3;27;1536;;1609;;;;"UKE32";"Sheffield";3;27;1291
+"UKE4";"West Yorkshire";2;27;1537;;1610;;;;"UKE4";"West Yorkshire";2;27;1292
+"UKE41";"Bradford";3;27;1538;;1611;;;;"UKE41";"Bradford";3;27;1293
+"UKE42";"Leeds";3;27;1539;;1612;;;;"UKE42";"Leeds";3;27;1294
+"UKE43";"Calderdale, Kirklees and Wakefield";3;27;1540;;1613;;;;"UKE43";"Calderdale, Kirklees and Wakefield";3;27;1295
+"UKF";"EAST MIDLANDS (ENGLAND)";1;27;1541;"Label";1614;;;;"UKF";"EAST MIDLANDS";1;27;1296
+"UKF1";"Derbyshire and Nottinghamshire";2;27;1542;;1615;;;;"UKF1";"Derbyshire and Nottinghamshire";2;27;1297
+"UKF11";"Derby";3;27;1543;;1616;;;;"UKF11";"Derby";3;27;1298
+"UKF12";"East Derbyshire";3;27;1544;;1617;;;;"UKF12";"East Derbyshire";3;27;1299
+"UKF13";"South and West Derbyshire";3;27;1545;;1618;;;;"UKF13";"South and West Derbyshire";3;27;1300
+"UKF14";"Nottingham";3;27;1546;;1619;;;;"UKF14";"Nottingham";3;27;1301
+"UKF15";"North Nottinghamshire";3;27;1547;;1620;;;;"UKF15";"North Nottinghamshire";3;27;1302
+"UKF16";"South Nottinghamshire";3;27;1548;;1621;;;;"UKF16";"South Nottinghamshire";3;27;1303
+"UKF2";"Leicestershire, Rutland and Northamptonshire";2;27;1549;;1622;;;;"UKF2";"Leicestershire, Rutland and Northamptonshire";2;27;1304
+"UKF21";"Leicester";3;27;1550;;1623;;;;"UKF21";"Leicester";3;27;1305
+"UKF22";"Leicestershire CC and Rutland";3;27;1551;;1624;;;;"UKF22";"Leicestershire CC and Rutland";3;27;1306
+"UKF23";"Northamptonshire";3;27;1552;;1625;;;;"UKF23";"Northamptonshire";3;27;1307
+"UKF3";"Lincolnshire";2;27;1553;;1626;;;;"UKF3";"Lincolnshire";2;27;1308
+"UKF30";"Lincolnshire";3;27;1554;;1627;;;;"UKF30";"Lincolnshire";3;27;1309
+"UKG";"WEST MIDLANDS (ENGLAND)";1;27;1555;"Label";1628;;;;"UKG";"WEST MIDLANDS";1;27;1310
+"UKG1";"Herefordshire, Worcestershire and Warwickshire";2;27;1556;;1629;;;;"UKG1";"Herefordshire, Worcestershire and Warwickshire";2;27;1311
+"UKG11";"Herefordshire, County of";3;27;1557;;1630;;;;"UKG11";"Herefordshire, County of";3;27;1312
+"UKG12";"Worcestershire";3;27;1558;;1631;;;;"UKG12";"Worcestershire";3;27;1313
+"UKG13";"Warwickshire";3;27;1559;;1632;;;;"UKG13";"Warwickshire";3;27;1314
+"UKG2";"Shropshire and Staffordshire";2;27;1560;;1633;;;;"UKG2";"Shropshire and Staffordshire";2;27;1315
+"UKG21";"Telford and Wrekin";3;27;1561;;1634;;;;"UKG21";"Telford and Wrekin";3;27;1316
+"UKG22";"Shropshire CC";3;27;1562;;1635;;;;"UKG22";"Shropshire CC";3;27;1317
+"UKG23";"Stoke-on-Trent";3;27;1563;;1636;;;;"UKG23";"Stoke-on-Trent";3;27;1318
+"UKG24";"Staffordshire CC";3;27;1564;;1637;;;;"UKG24";"Staffordshire CC";3;27;1319
+"UKG3";"West Midlands";2;27;1565;;1638;;;;"UKG3";"West Midlands";2;27;1320
+"UKG31";"Birmingham";3;27;1566;;1639;;;;"UKG31";"Birmingham";3;27;1321
+"UKG32";"Solihull";3;27;1567;;1640;;;;"UKG32";"Solihull";3;27;1322
+"UKG33";"Coventry";3;27;1568;;1641;;;;"UKG33";"Coventry";3;27;1323
+"UKG34";"Dudley and Sandwell";3;27;1569;;1642;;;;"UKG34";"Dudley and Sandwell";3;27;1324
+"UKG35";"Walsall and Wolverhampton";3;27;1570;;1643;;;;"UKG35";"Walsall and Wolverhampton";3;27;1325
+"UKH";"EAST OF ENGLAND";1;27;1571;;1644;;;;"UKH";"EAST OF ENGLAND";1;27;1326
+"UKH1";"East Anglia";2;27;1572;;1645;;;;"UKH1";"East Anglia";2;27;1327
+"UKH11";"Peterborough";3;27;1573;;1646;;;;"UKH11";"Peterborough";3;27;1328
+"UKH12";"Cambridgeshire CC";3;27;1574;;1647;;;;"UKH12";"Cambridgeshire CC";3;27;1329
+"UKH13";"Norfolk";3;27;1575;;1648;;;;"UKH13";"Norfolk";3;27;1330
+"UKH14";"Suffolk";3;27;1576;;1649;;;;"UKH14";"Suffolk";3;27;1331
+"UKH2";"Bedfordshire and Hertfordshire";2;27;1577;;1650;;;;"UKH2";"Bedfordshire and Hertfordshire";2;27;1332
+"UKH21";"Luton";3;27;1578;;1651;;;;"UKH21";"Luton";3;27;1333
+"UKH22";"Bedfordshire CC";3;27;1579;;1652;;;;"UKH22";"Bedfordshire CC";3;27;1334
+"UKH23";"Hertfordshire";3;27;1580;;1653;;;;"UKH23";"Hertfordshire";3;27;1335
+"UKH3";"Essex";2;27;1581;;1654;;;;"UKH3";"Essex";2;27;1336
+"UKH31";"Southend-on-Sea";3;27;1582;;1655;;;;"UKH31";"Southend-on-Sea";3;27;1337
+"UKH32";"Thurrock";3;27;1583;;1656;;;;"UKH32";"Thurrock";3;27;1338
+"UKH33";"Essex CC";3;27;1584;;1657;;;;"UKH33";"Essex CC";3;27;1339
+"UKI";"LONDON";1;27;1585;;1658;;;;"UKI";"LONDON";1;27;1340
+"UKI1";"Inner London";2;27;1586;;1659;;;;"UKI1";"Inner London";2;27;1341
+"UKI11";"Inner London - West";3;27;1587;;1660;;;;"UKI11";"Inner London - West";3;27;1342
+"UKI12";"Inner London - East";3;27;1588;;1661;;;;"UKI12";"Inner London - East";3;27;1343
+"UKI2";"Outer London";2;27;1589;;1662;;;;"UKI2";"Outer London";2;27;1344
+"UKI21";"Outer London - East and North East";3;27;1590;;1663;;;;"UKI21";"Outer London - East and North East";3;27;1345
+"UKI22";"Outer London - South";3;27;1591;;1664;;;;"UKI22";"Outer London - South";3;27;1346
+"UKI23";"Outer London - West and North West";3;27;1592;;1665;;;;"UKI23";"Outer London - West and North West";3;27;1347
+"UKJ";"SOUTH EAST (ENGLAND)";1;27;1593;"Label";1666;;;;"UKJ";"SOUTH EAST";1;27;1348
+"UKJ1";"Berkshire, Buckinghamshire and Oxfordshire";2;27;1594;;1667;;;;"UKJ1";"Berkshire, Buckinghamshire and Oxfordshire";2;27;1349
+"UKJ11";"Berkshire";3;27;1595;;1668;;;;"UKJ11";"Berkshire";3;27;1350
+"UKJ12";"Milton Keynes";3;27;1596;;1669;;;;"UKJ12";"Milton Keynes";3;27;1351
+"UKJ13";"Buckinghamshire CC";3;27;1597;;1670;;;;"UKJ13";"Buckinghamshire CC";3;27;1352
+"UKJ14";"Oxfordshire";3;27;1598;;1671;;;;"UKJ14";"Oxfordshire";3;27;1353
+"UKJ2";"Surrey, East and West Sussex";2;27;1599;;1672;;;;"UKJ2";"Surrey, East and West Sussex";2;27;1354
+"UKJ21";"Brighton and Hove";3;27;1600;;1673;;;;"UKJ21";"Brighton and Hove";3;27;1355
+"UKJ22";"East Sussex CC";3;27;1601;;1674;;;;"UKJ22";"East Sussex CC";3;27;1356
+"UKJ23";"Surrey";3;27;1602;;1675;;;;"UKJ23";"Surrey";3;27;1357
+"UKJ24";"West Sussex";3;27;1603;;1676;;;;"UKJ24";"West Sussex";3;27;1358
+"UKJ3";"Hampshire and Isle of Wight";2;27;1604;;1677;;;;"UKJ3";"Hampshire and Isle of Wight";2;27;1359
+"UKJ31";"Portsmouth";3;27;1605;;1678;;;;"UKJ31";"Portsmouth";3;27;1360
+"UKJ32";"Southampton";3;27;1606;;1679;;;;"UKJ32";"Southampton";3;27;1361
+"UKJ33";"Hampshire CC";3;27;1607;;1680;;;;"UKJ33";"Hampshire CC";3;27;1362
+"UKJ34";"Isle of Wight";3;27;1608;;1681;;;;"UKJ34";"Isle of Wight";3;27;1363
+"UKJ4";"Kent";2;27;1609;;1682;;;;"UKJ4";"Kent";2;27;1364
+"UKJ41";"Medway";3;27;1610;;1683;;;;"UKJ41";"Medway";3;27;1365
+"UKJ42";"Kent CC";3;27;1611;;1684;;;;"UKJ42";"Kent CC";3;27;1366
+"UKK";"SOUTH WEST (ENGLAND)";1;27;1612;"Label";1685;;;;"UKK";"SOUTH WEST";1;27;1367
+"UKK1";"Gloucestershire, Wiltshire and Bristol/Bath area";2;27;1613;"Name change";1686;;;;"UKK1";"Gloucestershire, Wiltshire and North Somerset";2;27;1368
+"UKK11";"Bristol, City of";3;27;1614;;1687;;;;"UKK11";"Bristol, City of";3;27;1369
+"UKK12";"Bath and North East Somerset, North Somerset and South Gloucestershire";3;27;1615;"Name change";1688;;;;"UKK12";"North and North East Somerset, South Gloucestershire";3;27;1370
+"UKK13";"Gloucestershire";3;27;1616;;1689;;;;"UKK13";"Gloucestershire";3;27;1371
+"UKK14";"Swindon";3;27;1617;;1690;;;;"UKK14";"Swindon";3;27;1372
+"UKK15";"Wiltshire CC";3;27;1618;;1691;;;;"UKK15";"Wiltshire CC";3;27;1373
+"UKK2";"Dorset and Somerset";2;27;1619;;1692;;;;"UKK2";"Dorset and Somerset";2;27;1374
+"UKK21";"Bournemouth and Poole";3;27;1620;;1693;;;;"UKK21";"Bournemouth and Poole";3;27;1375
+"UKK22";"Dorset CC";3;27;1621;;1694;;;;"UKK22";"Dorset CC";3;27;1376
+"UKK23";"Somerset";3;27;1622;;1695;;;;"UKK23";"Somerset";3;27;1377
+"UKK3";"Cornwall and Isles of Scilly";2;27;1623;;1696;;;;"UKK3";"Cornwall and Isles of Scilly";2;27;1378
+"UKK30";"Cornwall and Isles of Scilly";3;27;1624;;1697;;;;"UKK30";"Cornwall and Isles of Scilly";3;27;1379
+"UKK4";"Devon";2;27;1625;;1698;;;;"UKK4";"Devon";2;27;1380
+"UKK41";"Plymouth";3;27;1626;;1699;;;;"UKK41";"Plymouth";3;27;1381
+"UKK42";"Torbay";3;27;1627;;1700;;;;"UKK42";"Torbay";3;27;1382
+"UKK43";"Devon CC";3;27;1628;;1701;;;;"UKK43";"Devon CC";3;27;1383
+"UKL";"WALES";1;27;1629;;1702;;;;"UKL";"WALES";1;27;1384
+"UKL1";"West Wales and The Valleys";2;27;1630;;1703;;;;"UKL1";"West Wales and The Valleys";2;27;1385
+"UKL11";"Isle of Anglesey";3;27;1631;;1704;;;;"UKL11";"Isle of Anglesey";3;27;1386
+"UKL12";"Gwynedd";3;27;1632;;1705;;;;"UKL12";"Gwynedd";3;27;1387
+"UKL13";"Conwy and Denbighshire";3;27;1633;;1706;;;;"UKL13";"Conwy and Denbighshire";3;27;1388
+"UKL14";"South West Wales";3;27;1634;;1707;;;;"UKL14";"South West Wales";3;27;1389
+"UKL15";"Central Valleys";3;27;1635;;1708;;;;"UKL15";"Central Valleys";3;27;1390
+"UKL16";"Gwent Valleys";3;27;1636;;1709;;;;"UKL16";"Gwent Valleys";3;27;1391
+"UKL17";"Bridgend and Neath Port Talbot";3;27;1637;;1710;;;;"UKL17";"Bridgend and Neath Port Talbot";3;27;1392
+"UKL18";"Swansea";3;27;1638;;1711;;;;"UKL18";"Swansea";3;27;1393
+"UKL2";"East Wales";2;27;1639;;1712;;;;"UKL2";"East Wales";2;27;1394
+"UKL21";"Monmouthshire and Newport";3;27;1640;;1713;;;;"UKL21";"Monmouthshire and Newport";3;27;1395
+"UKL22";"Cardiff and Vale of Glamorgan";3;27;1641;;1714;;;;"UKL22";"Cardiff and Vale of Glamorgan";3;27;1396
+"UKL23";"Flintshire and Wrexham";3;27;1642;;1715;;;;"UKL23";"Flintshire and Wrexham";3;27;1397
+"UKL24";"Powys";3;27;1643;;1716;;;;"UKL24";"Powys";3;27;1398
+"UKM";"SCOTLAND";1;27;1644;;1717;;;;"UKM";"SCOTLAND";1;27;1399
+"UKM2";"Eastern Scotland";2;27;1645;;1718;;;;"UKM1";"North Eastern Scotland";2;27;1400
+"UKM21";"Angus and Dundee City";3;27;1646;;1719;;;;"UKM10";"Aberdeen City, Aberdeenshire and North East Moray";3;27;1401
+"UKM22";"Clackmannanshire and Fife";3;27;1647;;1720;;;;"UKM2";"Eastern Scotland";2;27;1402
+"UKM23";"East Lothian and Midlothian";3;27;1648;;1721;;;;"UKM21";"Angus and Dundee City";3;27;1403
+"UKM24";"Scottish Borders";3;27;1649;"Name correction";1722;;;;"UKM22";"Clackmannanshire and Fife";3;27;1404
+"UKM25";"Edinburgh, City of";3;27;1650;;1723;;;;"UKM23";"East Lothian and Midlothian";3;27;1405
+"UKM26";"Falkirk";3;27;1651;;1724;;;;"UKM24";"Scottish Borders, The";3;27;1406
+"UKM27";"Perth & Kinross and Stirling";3;27;1652;"Name correction";1725;;;;"UKM25";"Edinburgh, City of";3;27;1407
+"UKM28";"West Lothian";3;27;1653;;1726;;;;"UKM26";"Falkirk";3;27;1408
+"UKM3";"South Western Scotland";2;27;1654;;1727;;;;"UKM27";"Perth and Kinross and Stirling";3;27;1409
+"UKM31";"East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond";3;27;1655;"Name correction";1728;;;;"UKM28";"West Lothian";3;27;1410
+"UKM32";"Dumfries & Galloway";3;27;1656;"Name correction";1729;;;;"UKM3";"South Western Scotland";2;27;1411
+"UKM33";"East Ayrshire and North Ayrshire mainland";3;27;1657;"Name correction";1730;;;;"UKM31";"East and West Dunbartonshire, Helensburgh and Lomond";3;27;1412
+"UKM34";"Glasgow City";3;27;1658;;1731;;;;"UKM32";"Dumfries and Galloway";3;27;1413
+"UKM35";"Inverclyde, East Renfrewshire and Renfrewshire";3;27;1659;;1732;;;;"UKM33";"East Ayrshire and North Ayrshire Mainland";3;27;1414
+"UKM36";"North Lanarkshire";3;27;1660;;1733;;;;"UKM34";"Glasgow City";3;27;1415
+"UKM37";"South Ayrshire";3;27;1661;;1734;;;;"UKM35";"Inverclyde, East Renfrewshire and Renfrewshire";3;27;1416
+"UKM38";"South Lanarkshire";3;27;1662;;1735;;;;"UKM36";"North Lanarkshire";3;27;1417
+"UKM5";"North Eastern Scotland";2;27;1663;"Boundary shift";1736;;;;"UKM37";"South Ayrshire";3;27;1418
+"UKM50";"Aberdeen City and Aberdeenshire";3;27;1664;"Boundary shift, name change";1737;;;;"UKM38";"South Lanarkshire";3;27;1419
+"UKM6";"Highlands and Islands";2;27;1665;"Boundary shift";1738;;;;"UKM4";"Highlands and Islands";2;27;1420
+"UKM61";"Caithness & Sutherland and Ross & Cromarty";3;27;1666;"Code change, name correction";1739;;;;"UKM41";"Caithness and Sutherland and Ross and Cromarty";3;27;1421
+"UKM62";"Inverness & Nairn and Moray, Badenoch & Strathspey";3;27;1667;"Boundary shift, name change";1740;;;;"UKM42";"Inverness and Nairn and Moray, Badenoch and Strathspey";3;27;1422
+"UKM63";"Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute";3;27;1668;"Code change, name correction";1741;;;;"UKM43";"Lochaber, Skye and Lochalsh and Argyll and the Islands";3;27;1423
+"UKM64";"Eilean Siar (Western Isles)";3;27;1669;"Code change";1742;;;;"UKM44";"Eilean Siar (Western Isles)";3;27;1424
+"UKM65";"Orkney Islands";3;27;1670;"Code change";1743;;;;"UKM45";"Orkney Islands";3;27;1425
+"UKM66";"Shetland Islands";3;27;1671;"Code change";1744;;;;"UKM46";"Shetland Islands";3;27;1426
+"UKN";"NORTHERN IRELAND";1;27;1672;;1745;;;;"UKN";"NORTHERN IRELAND";1;27;1427
+"UKN0";"Northern Ireland";2;27;1673;;1746;;;;"UKN0";"Northern Ireland";2;27;1428
+"UKN01";"Belfast";3;27;1674;;1747;;;;"UKN01";"Belfast";3;27;1429
+"UKN02";"Outer Belfast";3;27;1675;;1748;;;;"UKN02";"Outer Belfast";3;27;1430
+"UKN03";"East of Northern Ireland";3;27;1676;;1749;;;;"UKN03";"East of Northern Ireland";3;27;1431
+"UKN04";"North of Northern Ireland";3;27;1677;;1750;;;;"UKN04";"North of Northern Ireland";3;27;1432
+"UKN05";"West and South of Northern Ireland";3;27;1678;;1751;;;;"UKN05";"West and South of Northern Ireland";3;27;1433
+"UKZ";"EXTRA-REGIO";1;27;1679;;1752;;;;"UKZ";"EXTRA-REGIO";1;27;1434
+"UKZZ";"Extra-Regio";2;27;1680;;1753;;;;"UKZZ";"Extra-Regio";2;27;1435
+"UKZZZ";"Extra-Regio";3;27;1681;;1754;;;;"UKZZZ";"Extra-Regio";3;27;1436
