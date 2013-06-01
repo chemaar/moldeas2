@@ -7,6 +7,7 @@ import org.weso.moldeas.loader.JenaRDFModelWrapper;
 import org.weso.moldeas.loader.resources.ExternalizeFilesResourceLoader;
 import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
+import org.weso.moldeas.utils.TransformerConstants;
 import org.weso.pscs.utils.PSCConstants;
 
 import com.hp.hpl.jena.rdf.model.Literal;
@@ -20,11 +21,15 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
 
+@SuppressWarnings("unused")
 public class FixRDFSLabel {
 
+	
 	public static void main(String []args) throws FileNotFoundException{
-		ResourceLoader loader = new ExternalizeFilesResourceLoader(new String[]{"full-generation-2/cpa/2008/cpa-2008.ttl",});
-		JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,"TURTLE");
+		String outputFilename = "cpa-2008.ttl";
+		String inputFilename = "full-generation-2/cpa/2008/cpa-2008.ttl";
+		ResourceLoader loader = new ExternalizeFilesResourceLoader(new String[]{inputFilename,});
+		JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,TransformerConstants.TURTLE_SYNTAX);
 		Model model = (Model) rdfModel.getModel();		
 		ResIterator it = model.listResourcesWithProperty(model.getProperty(PSCConstants.SKOS_prefLabel));
 		while(it.hasNext()){
@@ -42,8 +47,7 @@ public class FixRDFSLabel {
 				Literal prefLabel = model.createLiteral(label,"en");
 				r.addLiteral(RDFS.label,prefLabel);
 			}	
-
 		}
-		model.write(new PrintWriter("cpa-2008.ttl"),"TURTLE");
+		model.write(new PrintWriter(outputFilename),TransformerConstants.TURTLE_SYNTAX);
 	}
 }

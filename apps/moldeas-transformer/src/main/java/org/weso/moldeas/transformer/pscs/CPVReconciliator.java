@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -23,6 +24,7 @@ import org.apache.lucene.store.RAMDirectory;
 import org.weso.moldeas.loader.JenaRDFModelWrapper;
 import org.weso.moldeas.loader.resources.ExternalizeFilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
+import org.weso.moldeas.utils.TransformerConstants;
 import org.weso.pscs.utils.PSCConstants;
 import org.weso.transformer.filters.PSCAnalyzer;
 
@@ -36,6 +38,8 @@ import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 public class CPVReconciliator {
 
+	protected static Logger logger = Logger.getLogger(CPVMapper.class);
+	
 	public static void main(String []args) throws IOException, ParseException{
 		String  source = "full-generation-1/cpv/2008/cpv-2008.ttl";
 		String [] targetFiles = new String []{
@@ -71,7 +75,7 @@ public class CPVReconciliator {
 
 		//Load labels in lucene index
 		ResourceLoader loader = new ExternalizeFilesResourceLoader(new String[]{source});		
-		JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,"TURTLE");
+		JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,TransformerConstants.TURTLE_SYNTAX);
 		Model model = (Model) rdfModel.getModel();		
 		ResIterator it = model.listResourcesWithProperty(model.getProperty(PSCConstants.SKOS_prefLabel));
 		while (it.hasNext()){
@@ -84,9 +88,9 @@ public class CPVReconciliator {
 			while (iter.hasNext()){
 				//Index Documents
 				Field uriField =
-					new Field("uri",r.getURI(),Field.Store.YES,Field.Index.NOT_ANALYZED);
+					new Field(TransformerConstants.URI_FIELD,r.getURI(),Field.Store.YES,Field.Index.NOT_ANALYZED);
 				Field subjectField = 
-					new Field("prefLabel",iter.next().getString(),Field.Store.YES,Field.Index.ANALYZED);
+					new Field(TransformerConstants.PREF_LABEL_FIELD,iter.next().getString(),Field.Store.YES,Field.Index.ANALYZED);
 				Document doc = new Document();
 				doc.add(uriField);
 				doc.add(subjectField);
@@ -101,9 +105,9 @@ public class CPVReconciliator {
 		IndexSearcher indexSearcher = new IndexSearcher(idx);		
 		//		//4-Create maps: skos:closeMatch
 		for(int i = 0; i<outputFiles.length;i++){
-			System.out.println("Processing "+targetFiles[i]);
+			logger.info("Processing "+targetFiles[i]);
 			ResourceLoader targetLoader = new ExternalizeFilesResourceLoader(new String[]{targetFiles[i]});		
-			JenaRDFModelWrapper targetModel = new JenaRDFModelWrapper(targetLoader,"TURTLE");
+			JenaRDFModelWrapper targetModel = new JenaRDFModelWrapper(targetLoader,TransformerConstants.TURTLE_SYNTAX);
 			Model targetRdfModel = (Model) targetModel.getModel();
 			targetRdfModel.createProperty(PSCConstants.SKOS_CLOSE_MATCH);
 			ResIterator itTarget = targetRdfModel.listResourcesWithProperty(targetRdfModel.getProperty(PSCConstants.SKOS_prefLabel));
@@ -125,13 +129,13 @@ public class CPVReconciliator {
 					Document doc = indexSearcher.doc(scoredoc.doc);
 					r.addProperty(
 							targetRdfModel.getProperty(PSCConstants.SKOS_CLOSE_MATCH),
-									targetRdfModel.createResource(doc.getField("uri").stringValue()));
+									targetRdfModel.createResource(doc.getField(TransformerConstants.URI_FIELD).stringValue()));
 				}
 				mappings.clear();
 				mappings = null;
 			}
 			targetRdfModel.write(new PrintWriter(outputFiles[i]),"TURTLE");	
-			System.out.println("End Processing "+targetFiles[i]);
+			logger.info("End Processing "+targetFiles[i]);
 		}
 
 
@@ -140,7 +144,7 @@ public class CPVReconciliator {
 
 
 	public static Query createQueryFromString(String q) throws ParseException {		
-		QueryParser parser = new QueryParser("prefLabel",
+		QueryParser parser = new QueryParser(TransformerConstants.PREF_LABEL_FIELD,
 				new PSCAnalyzer());
 		parser.setDefaultOperator(QueryParser.Operator.OR);
 		return parser.parse(q);

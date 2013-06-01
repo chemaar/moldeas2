@@ -7,14 +7,14 @@ import java.io.StringReader;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.Token;
 import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.util.Version;
 import org.weso.moldeas.loader.JenaRDFModelWrapper;
 import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
+import org.weso.moldeas.utils.TransformerConstants;
 import org.weso.pscs.utils.PSCConstants;
 import org.weso.transformer.filters.PSCAnalyzer;
 
@@ -27,6 +27,8 @@ import com.hp.hpl.jena.rdf.model.Statement;
 import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 public class CPVMapper {
+	protected static Logger logger = Logger.getLogger(CPVMapper.class);
+
 
 	public static void main(String []args) throws IOException{
 		String [] pscFiles = new String []{				
@@ -51,77 +53,78 @@ public class CPVMapper {
 				"cpv/2003/cpv-2003.ttl",
 				"cpv/2008/cpv-2008.ttl"
 		};
-	
-		
+
+
 		for(int i = 0; i<outputFiles.length;i++){
 			ResourceLoader loader = new FilesResourceLoader(new String[]{pscFiles[i]});
-			System.out.println("Processing "+pscFiles[i]);
-			JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,"TURTLE");
+			logger.info("Processing "+pscFiles[i]);
+			JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,TransformerConstants.TURTLE_SYNTAX);
 			Model model = (Model) rdfModel.getModel();		
 			ResIterator it = model.listResourcesWithProperty(model.getProperty(PSCConstants.SKOS_prefLabel));
 			while (it.hasNext()){
 				Resource r = it.next();
 				List<String> tokens = new LinkedList<String>();
 				StmtIterator iter = model.listStatements(
-					    new SimpleSelector(r, model.getProperty(PSCConstants.SKOS_prefLabel), (RDFNode) null) {
-					        public boolean selects(Statement s)
-					            {return s.getLiteral().getLanguage().equalsIgnoreCase("en");}
-					    });	
+						new SimpleSelector(r, model.getProperty(PSCConstants.SKOS_prefLabel), (RDFNode) null) {
+							public boolean selects(Statement s)
+							{return s.getLiteral().getLanguage().equalsIgnoreCase("en");}
+						});	
 				while (iter.hasNext()){
 					String value = iter.next().getString();
 					tokens.addAll(analyze(cleanPrefLabel(value), System.out));					
 				} //Labels
-				
+
 				for (String token : tokens) {
 					r.addProperty(model.createProperty(PSCConstants.HTTP_PURL_ORG_WESO_PSCS_DEF_RELATED_MATCH), 
-					model.createResource("http://www.productontology.org/id/"+token));
+							model.createResource(TransformerConstants.HTTP_WWW_PRODUCTONTOLOGY_ORG_ID+token));
 				}
 				tokens.clear(); 
 				tokens = null;
 			}//Resource
-			model.write(new PrintWriter("full-generation-1/"+outputFiles[i]),"TURTLE");	
+			String outputDir = "full-generation-1/";
+			model.write(new PrintWriter(outputDir+outputFiles[i]),TransformerConstants.TURTLE_SYNTAX);	
 		}
-		
+
 	}
-	
-	   private static final Analyzer[] analyzers = new Analyzer[]{
-	        //new WhitespaceAnalyzer(),
-	       // new SimpleAnalyzer(),
-	       // new StopAnalyzer(),
-		   // new  ClassicAnalyzer()
-	       //new StandardAnalyzer(Version.LUCENE_29)
-		   new PSCAnalyzer()
-		   
-	      //  new SnowballAnalyzer("English")
-	    };
 
-	
-	  private static List<String> analyze(String line, PrintStream out) throws IOException {
-	       //out.println("Analzying \"" + line + "\"");
-	       List <String> tokens = new LinkedList<String>();
-	        for (int i = 0; i < analyzers.length; i++) {
-	            Analyzer analyzer = analyzers[i];
-	          //  pw.println("\t" + analyzer.getClass().getName() + ":");
-	           // pw.print("\t\t");	            
-	            TokenStream stream = analyzer.tokenStream("contents", new StringReader(line));
-	            while (true) {
-	                Token token = stream.next();
-	                if (token == null) break;
-	                tokens.add(token.term().replaceAll("\"", ""));
-	              // out.println(analyzer.getClass().getSimpleName()+";" + token.term());
-	            }
+	private static final Analyzer[] analyzers = new Analyzer[]{
+		//new WhitespaceAnalyzer(),
+		// new SimpleAnalyzer(),
+		// new StopAnalyzer(),
+		// new  ClassicAnalyzer()
+		//new StandardAnalyzer(Version.LUCENE_29)
+		new PSCAnalyzer()
 
-	        }
-	        return tokens;
-	  }
-	  public static String cleanPrefLabel(String q){
-		  String value = q.replaceAll("-", "");
-			value = value.replaceAll("á", "a");
-			value = value.replaceAll("é", "e");
-			value = value.replaceAll("í", "i");
-			value = value.replaceAll("ó", "o");
-			value = value.replaceAll("ú", "u");
-			value = value.replaceAll("\\W", " ").replaceAll("\\d", "");
+		//  new SnowballAnalyzer("English")
+	};
+
+
+	private static List<String> analyze(String line, PrintStream out) throws IOException {
+		//out.println("Analzying \"" + line + "\"");
+		List <String> tokens = new LinkedList<String>();
+		for (int i = 0; i < analyzers.length; i++) {
+			Analyzer analyzer = analyzers[i];
+			//  pw.println("\t" + analyzer.getClass().getName() + ":");
+			// pw.print("\t\t");	            
+			TokenStream stream = analyzer.tokenStream("contents", new StringReader(line));
+			while (true) {
+				Token token = stream.next();
+				if (token == null) break;
+				tokens.add(token.term().replaceAll("\"", ""));
+				// out.println(analyzer.getClass().getSimpleName()+";" + token.term());
+			}
+
+		}
+		return tokens;
+	}
+	public static String cleanPrefLabel(String q){
+		String value = q.replaceAll("-", "");
+		value = value.replaceAll("á", "a");
+		value = value.replaceAll("é", "e");
+		value = value.replaceAll("í", "i");
+		value = value.replaceAll("ó", "o");
+		value = value.replaceAll("ú", "u");
+		value = value.replaceAll("\\W", " ").replaceAll("\\d", "");
 		return value;
-	  }
+	}
 }

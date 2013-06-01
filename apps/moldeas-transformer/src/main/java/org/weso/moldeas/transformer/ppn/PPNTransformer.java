@@ -42,6 +42,7 @@ import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
 import org.weso.moldeas.transformer.pscs.cpv.CPVTransformerInit;
+import org.weso.moldeas.utils.TransformerConstants;
 import org.weso.pscs.utils.PSCConstants;
 
 import au.com.bytecode.opencsv.CSVReader;
@@ -56,6 +57,8 @@ public class PPNTransformer extends ChainTransformerAdapter {
 
 
 	
+
+
 	private static final int MAX_RESOURCES = 100000;
 	
 	protected static Logger logger = Logger.getLogger(PPNTransformer.class);
@@ -111,7 +114,7 @@ public class PPNTransformer extends ChainTransformerAdapter {
 	private void serialize(Model resourceModel, int i, String year) throws FileNotFoundException {
 		logger.debug("Serialize "+("tmp/"+year+"/ppn-"+i+".n3"));
 		PrintWriter pw = new PrintWriter("tmp/"+year+"/ppn-"+i+".n3"); //FIXME
-		resourceModel.write(pw,"N3");
+		resourceModel.write(pw,TransformerConstants.N3_SYNTAX);
 		pw.close();		
 	}
 
