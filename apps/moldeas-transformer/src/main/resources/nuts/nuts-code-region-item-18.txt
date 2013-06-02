@@ -1,0 +1,90 @@
+UKD4;Lancashire
+UKD41;Blackburn with Darwen
+UKD42;Blackpool
+UKD43;Lancashire CC
+UKD5;Merseyside
+UKD51;East Merseyside
+UKD52;Liverpool
+UKD53;Sefton
+UKD54;Wirral
+UKE;YORKSHIRE AND THE HUMBER
+UKE1;East Yorkshire and Northern Lincolnshire
+UKE11;Kingston upon Hull, City of
+UKE12;East Riding of Yorkshire
+UKE13;North and North East Lincolnshire
+UKE2;North Yorkshire
+UKE21;York
+UKE22;North Yorkshire CC
+UKE3;South Yorkshire
+UKE31;Barnsley, Doncaster and Rotherham
+UKE32;Sheffield
+UKE4;West Yorkshire
+UKE41;Bradford
+UKE42;Leeds
+UKE43;Calderdale, Kirklees and Wakefield
+UKF;EAST MIDLANDS (ENGLAND)
+UKF1;Derbyshire and Nottinghamshire
+UKF11;Derby
+UKF12;East Derbyshire
+UKF13;South and West Derbyshire
+UKF14;Nottingham
+UKF15;North Nottinghamshire
+UKF16;South Nottinghamshire
+UKF2;Leicestershire, Rutland and Northamptonshire
+UKF21;Leicester
+UKF22;Leicestershire CC and Rutland
+UKF23;Northamptonshire
+UKF3;Lincolnshire
+UKF30;Lincolnshire
+UKG;WEST MIDLANDS (ENGLAND)
+UKG1;Herefordshire, Worcestershire and Warwickshire
+UKG11;Herefordshire, County of
+UKG12;Worcestershire
+UKG13;Warwickshire
+UKG2;Shropshire and Staffordshire
+UKG21;Telford and Wrekin
+UKG22;Shropshire CC
+UKG23;Stoke-on-Trent
+UKG24;Staffordshire CC
+UKG3;West Midlands
+UKG31;Birmingham
+UKG32;Solihull
+UKG33;Coventry
+UKG34;Dudley and Sandwell
+UKG35;Walsall and Wolverhampton
+UKH;EAST OF ENGLAND
+UKH1;East Anglia
+UKH11;Peterborough
+UKH12;Cambridgeshire CC
+UKH13;Norfolk
+UKH14;Suffolk
+UKH2;Bedfordshire and Hertfordshire
+UKH21;Luton
+UKH22;Bedfordshire CC
+UKH23;Hertfordshire
+UKH3;Essex
+UKH31;Southend-on-Sea
+UKH32;Thurrock
+UKH33;Essex CC
+UKI;LONDON
+UKI1;Inner London
+UKI11;Inner London - West
+UKI12;Inner London - East
+UKI2;Outer London
+UKI21;Outer London - East and North East
+UKI22;Outer London - South
+UKI23;Outer London - West and North West
+UKJ;SOUTH EAST (ENGLAND)
+UKJ1;Berkshire, Buckinghamshire and Oxfordshire
+UKJ11;Berkshire
+UKJ12;Milton Keynes
+UKJ13;Buckinghamshire CC
+UKJ14;Oxfordshire
+UKJ2;Surrey, East and West Sussex
+UKJ21;Brighton and Hove
+UKJ22;East Sussex CC
+UKJ23;Surrey
+UKJ24;West Sussex
+UKJ3;Hampshire and Isle of Wight
+UKJ31;Portsmouth
+UKJ32;Southampton

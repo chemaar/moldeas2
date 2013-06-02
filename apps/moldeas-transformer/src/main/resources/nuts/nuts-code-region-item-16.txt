@@ -1,0 +1,90 @@
+RO11;Nord-Vest
+RO111;Bihor
+RO112;Bistriţa-Năsăud
+RO113;Cluj
+RO114;Maramureş
+RO115;Satu Mare
+RO116;Sălaj
+RO12;Centru
+RO121;Alba
+RO122;Braşov
+RO123;Covasna
+RO124;Harghita
+RO125;Mureş
+RO126;Sibiu
+RO2;Macroregiunea doi
+RO21;Nord-Est
+RO211;Bacău
+RO212;Botoşani
+RO213;Iaşi
+RO214;Neamţ
+RO215;Suceava
+RO216;Vaslui
+RO22;Sud-Est
+RO221;Brăila
+RO222;Buzău
+RO223;Constanţa
+RO224;Galaţi
+RO225;Tulcea
+RO226;Vrancea
+RO3;Macroregiunea trei
+RO31;Sud - Muntenia
+RO311;Argeş
+RO312;Călăraşi
+RO313;Dâmboviţa
+RO314;Giurgiu
+RO315;Ialomiţa
+RO316;Prahova
+RO317;Teleorman
+RO32;Bucureşti - Ilfov
+RO321;Bucureşti
+RO322;Ilfov
+RO4;Macroregiunea patru
+RO41;Sud-Vest Oltenia
+RO411;Dolj
+RO412;Gorj
+RO413;Mehedinţi
+RO414;Olt
+RO415;Vâlcea
+RO42;Vest
+RO421;Arad
+RO422;Caraş-Severin
+RO423;Hunedoara
+RO424;Timiş
+ROZ;EXTRA-REGIO
+ROZZ;Extra-Regio
+ROZZZ;Extra-Regio
+SI;SLOVENIJA
+SI0;SLOVENIJA
+SI01;Vzhodna Slovenija
+SI011;Pomurska
+SI012;Podravska
+SI013;Koroška
+SI014;Savinjska
+SI015;Zasavska
+SI016;Spodnjeposavska
+SI017;Jugovzhodna Slovenija
+SI018;Notranjsko-kraška
+SI02;Zahodna Slovenija
+SI021;Osrednjeslovenska
+SI022;Gorenjska
+SI023;Goriška
+SI024;Obalno-kraška
+SIZ;EXTRA-REGIO
+SIZZ;Extra-Regio
+SIZZZ;Extra-Regio
+SK;SLOVENSKÁ REPUBLIKA
+SK0;SLOVENSKÁ REPUBLIKA
+SK01;Bratislavský kraj
+SK010;Bratislavský kraj
+SK02;Západné Slovensko
+SK021;Trnavský kraj
+SK022;Trenčiansky kraj
+SK023;Nitriansky kraj
+SK03;Stredné Slovensko
+SK031;Žilinský kraj
+SK032;Banskobystrický kraj
+SK04;Východné Slovensko
+SK041;Prešovský kraj
+SK042;Košický kraj
+SKZ;EXTRA-REGIO

@@ -1,0 +1,90 @@
+FR622;Aveyron
+FR623;Haute-Garonne
+FR624;Gers
+FR625;Lot
+FR626;Hautes-Pyrénées
+FR627;Tarn
+FR628;Tarn-et-Garonne
+FR63;Limousin
+FR631;Corrèze
+FR632;Creuse
+FR633;Haute-Vienne
+FR7;CENTRE-EST
+FR71;Rhône-Alpes
+FR711;Ain
+FR712;Ardèche
+FR713;Drôme
+FR714;Isère
+FR715;Loire
+FR716;Rhône
+FR717;Savoie
+FR718;Haute-Savoie
+FR72;Auvergne
+FR721;Allier
+FR722;Cantal
+FR723;Haute-Loire
+FR724;Puy-de-Dôme
+FR8;MÉDITERRANÉE
+FR81;Languedoc-Roussillon
+FR811;Aude
+FR812;Gard
+FR813;Hérault
+FR814;Lozère
+FR815;Pyrénées-Orientales
+FR82;Provence-Alpes-Côte d'Azur
+FR821;Alpes-de-Haute-Provence
+FR822;Hautes-Alpes
+FR823;Alpes-Maritimes
+FR824;Bouches-du-Rhône
+FR825;Var
+FR826;Vaucluse
+FR83;Corse
+FR831;Corse-du-Sud
+FR832;Haute-Corse
+FR9;DÉPARTEMENTS D'OUTRE-MER
+FR91;Guadeloupe
+FR910;Guadeloupe
+FR92;Martinique
+FR920;Martinique
+FR93;Guyane
+FR930;Guyane
+FR94;Réunion
+FR940;Réunion
+FRZ;EXTRA-REGIO
+FRZZ;Extra-Regio
+FRZZZ;Extra-Regio
+IE;IRELAND
+IE0;IRELAND
+IE01;Border, Midland and Western
+IE011;Border
+IE012;Midland
+IE013;West
+IE02;Southern and Eastern
+IE021;Dublin
+IE022;Mid-East
+IE023;Mid-West
+IE024;South-East (IRL)
+IE025;South-West (IRL)
+IEZ;EXTRA-REGIO
+IEZZ;Extra-Regio
+IEZZZ;Extra-Regio
+IT;ITALIA
+ITC;NORD-OVEST
+ITC1;Piemonte
+ITC11;Torino
+ITC12;Vercelli
+ITC13;Biella
+ITC14;Verbano-Cusio-Ossola
+ITC15;Novara
+ITC16;Cuneo
+ITC17;Asti
+ITC18;Alessandria
+ITC2;Valle d'Aosta/Vallée d'Aoste
+ITC20;Valle d'Aosta/Vallée d'Aoste
+ITC3;Liguria
+ITC31;Imperia
+ITC32;Savona
+ITC33;Genova
+ITC34;La Spezia
+ITC4;Lombardia
+ITC41;Varese

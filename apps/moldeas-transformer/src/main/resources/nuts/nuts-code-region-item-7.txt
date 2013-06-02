@@ -1,0 +1,90 @@
+DEG0E;Hildburghausen
+DEG0F;Ilm-Kreis
+DEG0G;Weimarer Land
+DEG0H;Sonneberg
+DEG0I;Saalfeld-Rudolstadt
+DEG0J;Saale-Holzland-Kreis
+DEG0K;Saale-Orla-Kreis
+DEG0L;Greiz
+DEG0M;Altenburger Land
+DEG0N;Eisenach, Kreisfreie Stadt
+DEG0P;Wartburgkreis
+DEZ;EXTRA-REGIO
+DEZZ;Extra-Regio
+DEZZZ;Extra-Regio
+EE;EESTI
+EE0;EESTI
+EE00;Eesti
+EE001;Põhja-Eesti
+EE004;Lääne-Eesti
+EE006;Kesk-Eesti
+EE007;Kirde-Eesti
+EE008;Lõuna-Eesti
+EEZ;EXTRA-REGIO
+EEZZ;Extra-Regio
+EEZZZ;Extra-Regio
+GR;ELLADA
+GR1;VOREIA ELLADA
+GR11;Anatoliki Makedonia, Thraki
+GR111;Evros
+GR112;Xanthi
+GR113;Rodopi
+GR114;Drama
+GR115;Kavala
+GR12;Kentriki Makedonia
+GR121;Imathia
+GR122;Thessaloniki
+GR123;Kilkis
+GR124;Pella
+GR125;Pieria
+GR126;Serres
+GR127;Chalkidiki
+GR13;Dytiki Makedonia
+GR131;Grevena
+GR132;Kastoria
+GR133;Kozani
+GR134;Florina
+GR14;Thessalia
+GR141;Karditsa
+GR142;Larisa
+GR143;Magnisia
+GR144;Trikala
+GR2;KENTRIKI ELLADA
+GR21;Ipeiros
+GR211;Arta
+GR212;Thesprotia
+GR213;Ioannina
+GR214;Preveza
+GR22;Ionia Nisia
+GR221;Zakynthos
+GR222;Kerkyra
+GR223;Kefallinia
+GR224;Lefkada
+GR23;Dytiki Ellada
+GR231;Aitoloakarnania
+GR232;Achaia
+GR233;Ileia
+GR24;Sterea Ellada
+GR241;Voiotia
+GR242;Evvoia
+GR243;Evrytania
+GR244;Fthiotida
+GR245;Fokida
+GR25;Peloponnisos
+GR251;Argolida
+GR252;Arkadia
+GR253;Korinthia
+GR254;Lakonia
+GR255;Messinia
+GR3;ATTIKI
+GR30;Attiki
+GR300;Attiki
+GR4;NISIA AIGAIOU, KRITI
+GR41;Voreio Aigaio
+GR411;Lesvos
+GR412;Samos
+GR413;Chios
+GR42;Notio Aigaio
+GR421;Dodekanisos
+GR422;Kyklades
+GR43;Kriti

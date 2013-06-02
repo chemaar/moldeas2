@@ -1,0 +1,90 @@
+DE257;Erlangen-Höchstadt
+DE258;Fürth, Landkreis
+DE259;Nürnberger Land
+DE25A;Neustadt a. d. Aisch-Bad Windsheim
+DE25B;Roth
+DE25C;Weißenburg-Gunzenhausen
+DE26;Unterfranken
+DE261;Aschaffenburg, Kreisfreie Stadt
+DE262;Schweinfurt, Kreisfreie Stadt
+DE263;Würzburg, Kreisfreie Stadt
+DE264;Aschaffenburg, Landkreis
+DE265;Bad Kissingen
+DE266;Rhön-Grabfeld
+DE267;Haßberge
+DE268;Kitzingen
+DE269;Miltenberg
+DE26A;Main-Spessart
+DE26B;Schweinfurt, Landkreis
+DE26C;Würzburg, Landkreis
+DE27;Schwaben
+DE271;Augsburg, Kreisfreie Stadt
+DE272;Kaufbeuren, Kreisfreie Stadt
+DE273;Kempten (Allgäu), Kreisfreie Stadt
+DE274;Memmingen, Kreisfreie Stadt
+DE275;Aichach-Friedberg
+DE276;Augsburg, Landkreis
+DE277;Dillingen a.d. Donau
+DE278;Günzburg
+DE279;Neu-Ulm
+DE27A;Lindau (Bodensee)
+DE27B;Ostallgäu
+DE27C;Unterallgäu
+DE27D;Donau-Ries
+DE27E;Oberallgäu
+DE3;BERLIN
+DE30;Berlin
+DE300;Berlin
+DE4;BRANDENBURG
+DE41;Brandenburg - Nordost
+DE411;Frankfurt (Oder), Kreisfreie Stadt
+DE412;Barnim
+DE413;Märkisch-Oderland
+DE414;Oberhavel
+DE415;Oder-Spree
+DE416;Ostprignitz-Ruppin
+DE417;Prignitz
+DE418;Uckermark
+DE42;Brandenburg - Südwest
+DE421;Brandenburg an der Havel, Kreisfreie Stadt
+DE422;Cottbus, Kreisfreie Stadt
+DE423;Potsdam, Kreisfreie Stadt
+DE424;Dahme-Spreewald
+DE425;Elbe-Elster
+DE426;Havelland
+DE427;Oberspreewald-Lausitz
+DE428;Potsdam-Mittelmark
+DE429;Spree-Neiße
+DE42A;Teltow-Fläming
+DE5;BREMEN
+DE50;Bremen
+DE501;Bremen, Kreisfreie Stadt
+DE502;Bremerhaven, Kreisfreie Stadt
+DE6;HAMBURG
+DE60;Hamburg
+DE600;Hamburg
+DE7;HESSEN
+DE71;Darmstadt
+DE711;Darmstadt, Kreisfreie Stadt
+DE712;Frankfurt am Main, Kreisfreie Stadt
+DE713;Offenbach am Main, Kreisfreie Stadt
+DE714;Wiesbaden, Kreisfreie Stadt
+DE715;Bergstraße
+DE716;Darmstadt-Dieburg
+DE717;Groß-Gerau
+DE718;Hochtaunuskreis
+DE719;Main-Kinzig-Kreis
+DE71A;Main-Taunus-Kreis
+DE71B;Odenwaldkreis
+DE71C;Offenbach, Landkreis
+DE71D;Rheingau-Taunus-Kreis
+DE71E;Wetteraukreis
+DE72;Gießen
+DE721;Gießen, Landkreis
+DE722;Lahn-Dill-Kreis
+DE723;Limburg-Weilburg
+DE724;Marburg-Biedenkopf
+DE725;Vogelsbergkreis
+DE73;Kassel
+DE731;Kassel, Kreisfreie Stadt
+DE732;Fulda

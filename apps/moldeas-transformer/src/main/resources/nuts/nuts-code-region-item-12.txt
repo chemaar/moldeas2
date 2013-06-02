@@ -1,0 +1,90 @@
+ITF62;Crotone
+ITF63;Catanzaro
+ITF64;Vibo Valentia
+ITF65;Reggio di Calabria
+ITG;ISOLE
+ITG1;Sicilia
+ITG11;Trapani
+ITG12;Palermo
+ITG13;Messina
+ITG14;Agrigento
+ITG15;Caltanissetta
+ITG16;Enna
+ITG17;Catania
+ITG18;Ragusa
+ITG19;Siracusa
+ITG2;Sardegna
+ITG25;Sassari
+ITG26;Nuoro
+ITG27;Cagliari
+ITG28;Oristano
+ITG29;Olbia-Tempio
+ITG2A;Ogliastra
+ITG2B;Medio Campidano
+ITG2C;Carbonia-Iglesias
+ITZ;EXTRA-REGIO
+ITZZ;Extra-Regio
+ITZZZ;Extra-Regio
+CY;ΚΥΠΡΟΣ / KIBRIS
+CY0;ΚΥΠΡΟΣ / KIBRIS
+CY00;Κύπρος / Kıbrıs
+CY000;Κύπρος / Kıbrıs
+CYZ;EXTRA-REGIO
+CYZZ;Extra-Regio
+CYZZZ;Extra-Regio
+LV;LATVIJA
+LV0;LATVIJA
+LV00;Latvija
+LV003;Kurzeme
+LV005;Latgale
+LV006;Rīga
+LV007;Pierīga
+LV008;Vidzeme
+LV009;Zemgale
+LVZ;EXTRA-REGIO
+LVZZ;Extra-Regio
+LVZZZ;Extra-Regio
+LT;LIETUVA
+LT0;LIETUVA
+LT00;Lietuva
+LT001;Alytaus apskritis
+LT002;Kauno apskritis
+LT003;Klaipėdos apskritis
+LT004;Marijampolės apskritis
+LT005;Panevėžio apskritis
+LT006;Šiaulių apskritis
+LT007;Tauragės apskritis
+LT008;Telšių apskritis
+LT009;Utenos apskritis
+LT00A;Vilniaus apskritis
+LTZ;EXTRA-REGIO
+LTZZ;Extra-Regio
+LTZZZ;Extra-Regio
+LU;LUXEMBOURG (GRAND-DUCHÉ)
+LU0;LUXEMBOURG (GRAND-DUCHÉ)
+LU00;Luxembourg (Grand-Duché)
+LU000;Luxembourg (Grand-Duché)
+LUZ;EXTRA-REGIO
+LUZZ;Extra-Regio
+LUZZZ;Extra-Regio
+HU;MAGYARORSZÁG
+HU1;KÖZÉP-MAGYARORSZÁG
+HU10;Közép-Magyarország
+HU101;Budapest
+HU102;Pest
+HU2;DUNÁNTÚL
+HU21;Közép-Dunántúl
+HU211;Fejér
+HU212;Komárom-Esztergom
+HU213;Veszprém
+HU22;Nyugat-Dunántúl
+HU221;Győr-Moson-Sopron
+HU222;Vas
+HU223;Zala
+HU23;Dél-Dunántúl
+HU231;Baranya
+HU232;Somogy
+HU233;Tolna
+HU3;ALFÖLD ÉS ÉSZAK
+HU31;Észak-Magyarország
+HU311;Borsod-Abaúj-Zemplén

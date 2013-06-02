@@ -1,0 +1,90 @@
+SKZZ;Extra-Regio
+SKZZZ;Extra-Regio
+FI;SUOMI / FINLAND
+FI1;MANNER-SUOMI
+FI13;Itä-Suomi
+FI131;Etelä-Savo
+FI132;Pohjois-Savo
+FI133;Pohjois-Karjala
+FI134;Kainuu
+FI18;Etelä-Suomi
+FI181;Uusimaa
+FI182;Itä-Uusimaa
+FI183;Varsinais-Suomi
+FI184;Kanta-Häme
+FI185;Päijät-Häme
+FI186;Kymenlaakso
+FI187;Etelä-Karjala
+FI19;Länsi-Suomi
+FI193;Keski-Suomi
+FI194;Etelä-Pohjanmaa
+FI195;Pohjanmaa
+FI196;Satakunta
+FI197;Pirkanmaa
+FI1A;Pohjois-Suomi
+FI1A1;Keski-Pohjanmaa
+FI1A2;Pohjois-Pohjanmaa
+FI1A3;Lappi
+FI2;ÅLAND
+FI20;Åland
+FI200;Åland
+FIZ;EXTRA-REGIO
+FIZZ;Extra-Regio
+FIZZZ;Extra-Regio
+SE;SVERIGE
+SE1;Östra Sverige
+SE11;Stockholm
+SE110;Stockholms län
+SE12;Östra Mellansverige
+SE121;Uppsala län
+SE122;Södermanlands län
+SE123;Östergötlands län
+SE124;Örebro län
+SE125;Västmanlands län
+SE2;Södra Sverige
+SE21;Småland med öarna
+SE211;Jönköpings län
+SE212;Kronobergs län
+SE213;Kalmar län
+SE214;Gotlands län
+SE22;Sydsverige
+SE221;Blekinge län
+SE224;Skåne län
+SE23;Västsverige
+SE231;Hallands län
+SE232;Västra Götalands län
+SE3;Norra Sverige
+SE31;Norra Mellansverige
+SE311;Värmlands län
+SE312;Dalarnas län
+SE313;Gävleborgs län
+SE32;Mellersta Norrland
+SE321;Västernorrlands län
+SE322;Jämtlands län
+SE33;Övre Norrland
+SE331;Västerbottens län
+SE332;Norrbottens län
+SEZ;EXTRA-REGIO
+SEZZ;Extra-Regio
+SEZZZ;Extra-Regio
+UK;UNITED KINGDOM
+UKC;NORTH EAST (ENGLAND)
+UKC1;Tees Valley and Durham
+UKC11;Hartlepool and Stockton-on-Tees
+UKC12;South Teesside
+UKC13;Darlington
+UKC14;Durham CC
+UKC2;Northumberland and Tyne and Wear
+UKC21;Northumberland
+UKC22;Tyneside
+UKC23;Sunderland
+UKD;NORTH WEST (ENGLAND)
+UKD1;Cumbria
+UKD11;West Cumbria
+UKD12;East Cumbria
+UKD2;Cheshire
+UKD21;Halton and Warrington
+UKD22;Cheshire CC
+UKD3;Greater Manchester
+UKD31;Greater Manchester South
+UKD32;Greater Manchester North

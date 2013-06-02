@@ -1,0 +1,90 @@
+HU312;Heves
+HU313;Nógrád
+HU32;Észak-Alföld
+HU321;Hajdú-Bihar
+HU322;Jász-Nagykun-Szolnok
+HU323;Szabolcs-Szatmár-Bereg
+HU33;Dél-Alföld
+HU331;Bács-Kiskun
+HU332;Békés
+HU333;Csongrád
+HUZ;EXTRA-REGIO
+HUZZ;Extra-Regio
+HUZZZ;Extra-Regio
+MT;MALTA
+MT0;MALTA
+MT00;Malta
+MT001;Malta
+MT002;Gozo and Comino / Għawdex u Kemmuna
+MTZ;EXTRA-REGIO
+MTZZ;Extra-Regio
+MTZZZ;Extra-Regio
+NL;NEDERLAND
+NL1;NOORD-NEDERLAND
+NL11;Groningen
+NL111;Oost-Groningen
+NL112;Delfzijl en omgeving
+NL113;Overig Groningen
+NL12;Friesland (NL)
+NL121;Noord-Friesland
+NL122;Zuidwest-Friesland
+NL123;Zuidoost-Friesland
+NL13;Drenthe
+NL131;Noord-Drenthe
+NL132;Zuidoost-Drenthe
+NL133;Zuidwest-Drenthe
+NL2;OOST-NEDERLAND
+NL21;Overijssel
+NL211;Noord-Overijssel
+NL212;Zuidwest-Overijssel
+NL213;Twente
+NL22;Gelderland
+NL221;Veluwe
+NL224;Zuidwest-Gelderland
+NL225;Achterhoek
+NL226;Arnhem/Nijmegen
+NL23;Flevoland
+NL230;Flevoland
+NL3;WEST-NEDERLAND
+NL31;Utrecht
+NL310;Utrecht
+NL32;Noord-Holland
+NL321;Kop van Noord-Holland
+NL322;Alkmaar en omgeving
+NL323;IJmond
+NL324;Agglomeratie Haarlem
+NL325;Zaanstreek
+NL326;Groot-Amsterdam
+NL327;Het Gooi en Vechtstreek
+NL33;Zuid-Holland
+NL331;Agglomeratie Leiden en Bollenstreek
+NL332;Agglomeratie 's-Gravenhage
+NL333;Delft en Westland
+NL334;Oost-Zuid-Holland
+NL335;Groot-Rijnmond
+NL336;Zuidoost-Zuid-Holland
+NL34;Zeeland
+NL341;Zeeuwsch-Vlaanderen
+NL342;Overig Zeeland
+NL4;ZUID-NEDERLAND
+NL41;Noord-Brabant
+NL411;West-Noord-Brabant
+NL412;Midden-Noord-Brabant
+NL413;Noordoost-Noord-Brabant
+NL414;Zuidoost-Noord-Brabant
+NL42;Limburg (NL)
+NL421;Noord-Limburg
+NL422;Midden-Limburg
+NL423;Zuid-Limburg
+NLZ;EXTRA-REGIO
+NLZZ;Extra-Regio
+NLZZZ;Extra-Regio
+AT;ÖSTERREICH
+AT1;OSTÖSTERREICH
+AT11;Burgenland (A)
+AT111;Mittelburgenland
+AT112;Nordburgenland
+AT113;Südburgenland
+AT12;Niederösterreich
+AT121;Mostviertel-Eisenwurzen
+AT122;Niederösterreich-Süd

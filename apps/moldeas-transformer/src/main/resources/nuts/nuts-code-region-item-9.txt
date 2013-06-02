@@ -1,0 +1,90 @@
+ES707;La Palma
+ES708;Lanzarote
+ES709;Tenerife
+ESZ;EXTRA-REGIO
+ESZZ;Extra-Regio
+ESZZZ;Extra-Regio
+FR;FRANCE
+FR1;ÎLE DE FRANCE
+FR10;Île de France
+FR101;Paris
+FR102;Seine-et-Marne
+FR103;Yvelines
+FR104;Essonne
+FR105;Hauts-de-Seine
+FR106;Seine-Saint-Denis
+FR107;Val-de-Marne
+FR108;Val-d'Oise
+FR2;BASSIN PARISIEN
+FR21;Champagne-Ardenne
+FR211;Ardennes
+FR212;Aube
+FR213;Marne
+FR214;Haute-Marne
+FR22;Picardie
+FR221;Aisne
+FR222;Oise
+FR223;Somme
+FR23;Haute-Normandie
+FR231;Eure
+FR232;Seine-Maritime
+FR24;Centre
+FR241;Cher
+FR242;Eure-et-Loir
+FR243;Indre
+FR244;Indre-et-Loire
+FR245;Loir-et-Cher
+FR246;Loiret
+FR25;Basse-Normandie
+FR251;Calvados
+FR252;Manche
+FR253;Orne
+FR26;Bourgogne
+FR261;Côte-d'Or
+FR262;Nièvre
+FR263;Saône-et-Loire
+FR264;Yonne
+FR3;NORD - PAS-DE-CALAIS
+FR30;Nord - Pas-de-Calais
+FR301;Nord
+FR302;Pas-de-Calais
+FR4;EST
+FR41;Lorraine
+FR411;Meurthe-et-Moselle
+FR412;Meuse
+FR413;Moselle
+FR414;Vosges
+FR42;Alsace
+FR421;Bas-Rhin
+FR422;Haut-Rhin
+FR43;Franche-Comté
+FR431;Doubs
+FR432;Jura
+FR433;Haute-Saône
+FR434;Territoire de Belfort
+FR5;OUEST
+FR51;Pays de la Loire
+FR511;Loire-Atlantique
+FR512;Maine-et-Loire
+FR513;Mayenne
+FR514;Sarthe
+FR515;Vendée
+FR52;Bretagne
+FR521;Côtes-d'Armor
+FR522;Finistère
+FR523;Ille-et-Vilaine
+FR524;Morbihan
+FR53;Poitou-Charentes
+FR531;Charente
+FR532;Charente-Maritime
+FR533;Deux-Sèvres
+FR534;Vienne
+FR6;SUD-OUEST
+FR61;Aquitaine
+FR611;Dordogne
+FR612;Gironde
+FR613;Landes
+FR614;Lot-et-Garonne
+FR615;Pyrénées-Atlantiques
+FR62;Midi-Pyrénées
+FR621;Ariège

@@ -1,0 +1,90 @@
+DEC03;Neunkirchen
+DEC04;Saarlouis
+DEC05;Saarpfalz-Kreis
+DEC06;St. Wendel
+DED;SACHSEN
+DED1;Chemnitz
+DED11;Chemnitz, Kreisfreie Stadt
+DED12;Plauen, Kreisfreie Stadt
+DED13;Zwickau, Kreisfreie Stadt
+DED14;Annaberg
+DED15;Chemnitzer Land
+DED16;Freiberg
+DED17;Vogtlandkreis
+DED18;Mittlerer Erzgebirgskreis
+DED19;Mittweida
+DED1A;Stollberg
+DED1B;Aue-Schwarzenberg
+DED1C;Zwickauer Land
+DED2;Dresden
+DED21;Dresden, Kreisfreie Stadt
+DED22;Görlitz, Kreisfreie Stadt
+DED23;Hoyerswerda, Kreisfreie Stadt
+DED24;Bautzen
+DED25;Meißen
+DED26;Niederschlesischer Oberlausitzkreis
+DED27;Riesa-Großenhain
+DED28;Löbau-Zittau
+DED29;Sächsische Schweiz
+DED2A;Weißeritzkreis
+DED2B;Kamenz
+DED3;Leipzig
+DED31;Leipzig, Kreisfreie Stadt
+DED32;Delitzsch
+DED33;Döbeln
+DED34;Leipziger Land
+DED35;Muldentalkreis
+DED36;Torgau-Oschatz
+DEE;SACHSEN-ANHALT
+DEE0;Sachsen-Anhalt
+DEE01;Dessau-Roßlau, Kreisfreie Stadt
+DEE02;Halle (Saale), Kreisfreie Stadt
+DEE03;Magdeburg, Kreisfreie Stadt
+DEE04;Altmarkkreis Salzwedel
+DEE05;Anhalt-Bitterfeld
+DEE06;Jerichower Land
+DEE07;Börde
+DEE08;Burgenland (D)
+DEE09;Harz
+DEE0A;Mansfeld-Südharz
+DEE0B;Saalekreis
+DEE0C;Salzland
+DEE0D;Stendal
+DEE0E;Wittenberg
+;
+;
+;
+;
+;
+;
+DEF;SCHLESWIG-HOLSTEIN
+DEF0;Schleswig-Holstein
+DEF01;Flensburg, Kreisfreie Stadt
+DEF02;Kiel, Kreisfreie Stadt
+DEF03;Lübeck, Kreisfreie Stadt
+DEF04;Neumünster, Kreisfreie Stadt
+DEF05;Dithmarschen
+DEF06;Herzogtum Lauenburg
+DEF07;Nordfriesland
+DEF08;Ostholstein
+DEF09;Pinneberg
+DEF0A;Plön
+DEF0B;Rendsburg-Eckernförde
+DEF0C;Schleswig-Flensburg
+DEF0D;Segeberg
+DEF0E;Steinburg
+DEF0F;Stormarn
+DEG;THÜRINGEN
+DEG0;Thüringen
+DEG01;Erfurt, Kreisfreie Stadt
+DEG02;Gera, Kreisfreie Stadt
+DEG03;Jena, Kreisfreie Stadt
+DEG04;Suhl, Kreisfreie Stadt
+DEG05;Weimar, Kreisfreie Stadt
+DEG06;Eichsfeld
+DEG07;Nordhausen
+DEG09;Unstrut-Hainich-Kreis
+DEG0A;Kyffhäuserkreis
+DEG0B;Schmalkalden-Meiningen
+DEG0C;Gotha
+DEG0D;Sömmerda

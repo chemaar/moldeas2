@@ -1,0 +1,90 @@
+DE733;Hersfeld-Rotenburg
+DE734;Kassel, Landkreis
+DE735;Schwalm-Eder-Kreis
+DE736;Waldeck-Frankenberg
+DE737;Werra-Meißner-Kreis
+DE8;MECKLENBURG-VORPOMMERN
+DE80;Mecklenburg-Vorpommern
+DE801;Greifswald, Kreisfreie Stadt
+DE802;Neubrandenburg, Kreisfreie Stadt
+DE803;Rostock, Kreisfreie Stadt
+DE804;Schwerin, Kreisfreie Stadt
+DE805;Stralsund, Kreisfreie Stadt
+DE806;Wismar, Kreisfreie Stadt
+DE807;Bad Doberan
+DE808;Demmin
+DE809;Güstrow
+DE80A;Ludwigslust
+DE80B;Mecklenburg-Strelitz
+DE80C;Müritz
+DE80D;Nordvorpommern
+DE80E;Nordwestmecklenburg
+DE80F;Ostvorpommern
+DE80G;Parchim
+DE80H;Rügen
+DE80I;Uecker-Randow
+DE9;NIEDERSACHSEN
+DE91;Braunschweig
+DE911;Braunschweig, Kreisfreie Stadt
+DE912;Salzgitter, Kreisfreie Stadt
+DE913;Wolfsburg, Kreisfreie Stadt
+DE914;Gifhorn
+DE915;Göttingen
+DE916;Goslar
+DE917;Helmstedt
+DE918;Northeim
+DE919;Osterode am Harz
+DE91A;Peine
+DE91B;Wolfenbüttel
+DE92;Hannover
+DE922;Diepholz
+DE923;Hameln-Pyrmont
+DE925;Hildesheim
+DE926;Holzminden
+DE927;Nienburg (Weser)
+DE928;Schaumburg
+DE929;Region Hannover
+DE93;Lüneburg
+DE931;Celle
+DE932;Cuxhaven
+DE933;Harburg
+DE934;Lüchow-Dannenberg
+DE935;Lüneburg, Landkreis
+DE936;Osterholz
+DE937;Rotenburg (Wümme)
+DE938;Soltau-Fallingbostel
+DE939;Stade
+DE93A;Uelzen
+DE93B;Verden
+DE94;Weser-Ems
+DE941;Delmenhorst, Kreisfreie Stadt
+DE942;Emden, Kreisfreie Stadt
+DE943;Oldenburg (Oldenburg), Kreisfreie Stadt
+DE944;Osnabrück, Kreisfreie Stadt
+DE945;Wilhelmshaven, Kreisfreie Stadt
+DE946;Ammerland
+DE947;Aurich
+DE948;Cloppenburg
+DE949;Emsland
+DE94A;Friesland (D)
+DE94B;Grafschaft Bentheim
+DE94C;Leer
+DE94D;Oldenburg, Landkreis
+DE94E;Osnabrück, Landkreis
+DE94F;Vechta
+DE94G;Wesermarsch
+DE94H;Wittmund
+DEA;NORDRHEIN-WESTFALEN
+DEA1;Düsseldorf
+DEA11;Düsseldorf, Kreisfreie Stadt
+DEA12;Duisburg, Kreisfreie Stadt
+DEA13;Essen, Kreisfreie Stadt
+DEA14;Krefeld, Kreisfreie Stadt
+DEA15;Mönchengladbach, Kreisfreie Stadt
+DEA16;Mülheim an der Ruhr,Kreisfreie Stadt
+DEA17;Oberhausen, Kreisfreie Stadt
+DEA18;Remscheid, Kreisfreie Stadt
+DEA19;Solingen, Kreisfreie Stadt
+DEA1A;Wuppertal, Kreisfreie Stadt
+DEA1B;Kleve
+DEA1C;Mettmann

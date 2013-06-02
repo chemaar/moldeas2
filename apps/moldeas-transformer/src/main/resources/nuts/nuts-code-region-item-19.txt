@@ -1,0 +1,75 @@
+UKJ33;Hampshire CC
+UKJ34;Isle of Wight
+UKJ4;Kent
+UKJ41;Medway
+UKJ42;Kent CC
+UKK;SOUTH WEST (ENGLAND)
+UKK1;Gloucestershire, Wiltshire and Bristol/Bath area
+UKK11;Bristol, City of
+UKK12;Bath and North East Somerset, North Somerset and South Gloucestershire
+UKK13;Gloucestershire
+UKK14;Swindon
+UKK15;Wiltshire CC
+UKK2;Dorset and Somerset
+UKK21;Bournemouth and Poole
+UKK22;Dorset CC
+UKK23;Somerset
+UKK3;Cornwall and Isles of Scilly
+UKK30;Cornwall and Isles of Scilly
+UKK4;Devon
+UKK41;Plymouth
+UKK42;Torbay
+UKK43;Devon CC
+UKL;WALES
+UKL1;West Wales and The Valleys
+UKL11;Isle of Anglesey
+UKL12;Gwynedd
+UKL13;Conwy and Denbighshire
+UKL14;South West Wales
+UKL15;Central Valleys
+UKL16;Gwent Valleys
+UKL17;Bridgend and Neath Port Talbot
+UKL18;Swansea
+UKL2;East Wales
+UKL21;Monmouthshire and Newport
+UKL22;Cardiff and Vale of Glamorgan
+UKL23;Flintshire and Wrexham
+UKL24;Powys
+UKM;SCOTLAND
+UKM2;Eastern Scotland
+UKM21;Angus and Dundee City
+UKM22;Clackmannanshire and Fife
+UKM23;East Lothian and Midlothian
+UKM24;Scottish Borders
+UKM25;Edinburgh, City of
+UKM26;Falkirk
+UKM27;Perth & Kinross and Stirling
+UKM28;West Lothian
+UKM3;South Western Scotland
+UKM31;East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond
+UKM32;Dumfries & Galloway
+UKM33;East Ayrshire and North Ayrshire mainland
+UKM34;Glasgow City
+UKM35;Inverclyde, East Renfrewshire and Renfrewshire
+UKM36;North Lanarkshire
+UKM37;South Ayrshire
+UKM38;South Lanarkshire
+UKM5;North Eastern Scotland
+UKM50;Aberdeen City and Aberdeenshire
+UKM6;Highlands and Islands
+UKM61;Caithness & Sutherland and Ross & Cromarty
+UKM62;Inverness & Nairn and Moray, Badenoch & Strathspey
+UKM63;Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute
+UKM64;Eilean Siar (Western Isles)
+UKM65;Orkney Islands
+UKM66;Shetland Islands
+UKN;NORTHERN IRELAND
+UKN0;Northern Ireland
+UKN01;Belfast
+UKN02;Outer Belfast
+UKN03;East of Northern Ireland
+UKN04;North of Northern Ireland
+UKN05;West and South of Northern Ireland
+UKZ;EXTRA-REGIO
+UKZZ;Extra-Regio
+UKZZZ;Extra-Regio

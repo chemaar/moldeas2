@@ -1,0 +1,90 @@
+PL345;Suwalski
+PL4;REGION PÓŁNOCNO-ZACHODNI
+PL41;Wielkopolskie
+PL411;Pilski
+PL414;Koniński
+PL415;Miasto Poznań
+PL416;Kaliski
+PL417;Leszczyński
+PL418;Poznański
+PL42;Zachodniopomorskie
+PL422;Koszaliński
+PL423;Stargardzki
+PL424;Miasto Szczecin
+PL425;Szczeciński
+PL43;Lubuskie
+PL431;Gorzowski
+PL432;Zielonogórski
+PL5;REGION POŁUDNIOWO-ZACHODNI
+PL51;Dolnośląskie
+PL514;Miasto Wrocław
+PL515;Jeleniogórski
+PL516;Legnicko-Głogowski
+PL517;Wałbrzyski
+PL518;Wrocławski
+PL52;Opolskie
+PL521;Nyski
+PL522;Opolski
+PL6;REGION PÓŁNOCNY
+PL61;Kujawsko-Pomorskie
+PL613;Bydgosko-Toruński
+PL614;Grudziądzki
+PL615;Włocławski
+PL62;Warmińsko-Mazurskie
+PL621;Elbląski
+PL622;Olsztyński
+PL623;Ełcki
+PL63;Pomorskie
+PL631;Słupski
+PL633;Trójmiejski
+PL634;Gdański
+PL635;Starogardzki
+PLZ;EXTRA-REGIO
+PLZZ;Extra-Regio
+PLZZZ;Extra-Regio
+PT;PORTUGAL
+PT1;CONTINENTE
+PT11;Norte
+PT111;Minho-Lima
+PT112;Cávado
+PT113;Ave
+PT114;Grande Porto
+PT115;Tâmega
+PT116;Entre Douro e Vouga
+PT117;Douro
+PT118;Alto Trás-os-Montes
+PT15;Algarve
+PT150;Algarve
+PT16;Centro (P)
+PT161;Baixo Vouga
+PT162;Baixo Mondego
+PT163;Pinhal Litoral
+PT164;Pinhal Interior Norte
+PT165;Dâo-Lafôes
+PT166;Pinhal Interior Sul
+PT167;Serra da Estrela
+PT168;Beira Interior Norte
+PT169;Beira Interior Sul
+PT16A;Cova da Beira
+PT16B;Oeste
+PT16C;Médio Tejo
+PT17;Lisboa
+PT171;Grande Lisboa
+PT172;Península de Setúbal
+PT18;Alentejo
+PT181;Alentejo Litoral
+PT182;Alto Alentejo
+PT183;Alentejo Central
+PT184;Baixo Alentejo
+PT185;Lezíria do Tejo
+PT2;Região Autónoma dos AÇORES
+PT20;Região Autónoma dos Açores
+PT200;Região Autónoma dos Açores
+PT3;Região Autónoma da MADEIRA
+PT30;Região Autónoma da Madeira
+PT300;Região Autónoma da Madeira
+PTZ;EXTRA-REGIO
+PTZZ;Extra-Regio
+PTZZZ;Extra-Regio
+RO;ROMANIA
+RO1;Macroregiunea unu

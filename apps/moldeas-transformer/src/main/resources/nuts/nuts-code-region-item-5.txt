@@ -1,0 +1,90 @@
+DEA1D;Rhein-Kreis Neuss
+DEA1E;Viersen
+DEA1F;Wesel
+DEA2;Köln
+DEA21;Aachen, Kreisfreie Stadt
+DEA22;Bonn, Kreisfreie Stadt
+DEA23;Köln, Kreisfreie Stadt
+DEA24;Leverkusen, Kreisfreie Stadt
+DEA25;Aachen, Kreis
+DEA26;Düren
+DEA27;Rhein-Erft-Kreis
+DEA28;Euskirchen
+DEA29;Heinsberg
+DEA2A;Oberbergischer Kreis
+DEA2B;Rheinisch-Bergischer Kreis
+DEA2C;Rhein-Sieg-Kreis
+DEA3;Münster
+DEA31;Bottrop, Kreisfreie Stadt
+DEA32;Gelsenkirchen, Kreisfreie Stadt
+DEA33;Münster, Kreisfreie Stadt
+DEA34;Borken
+DEA35;Coesfeld
+DEA36;Recklinghausen
+DEA37;Steinfurt
+DEA38;Warendorf
+DEA4;Detmold
+DEA41;Bielefeld, Kreisfreie Stadt
+DEA42;Gütersloh
+DEA43;Herford
+DEA44;Höxter
+DEA45;Lippe
+DEA46;Minden-Lübbecke
+DEA47;Paderborn
+DEA5;Arnsberg
+DEA51;Bochum, Kreisfreie Stadt
+DEA52;Dortmund, Kreisfreie Stadt
+DEA53;Hagen, Kreisfreie Stadt
+DEA54;Hamm, Kreisfreie Stadt
+DEA55;Herne, Kreisfreie Stadt
+DEA56;Ennepe-Ruhr-Kreis
+DEA57;Hochsauerlandkreis
+DEA58;Märkischer Kreis
+DEA59;Olpe
+DEA5A;Siegen-Wittgenstein
+DEA5B;Soest
+DEA5C;Unna
+DEB;RHEINLAND-PFALZ
+DEB1;Koblenz
+DEB11;Koblenz, Kreisfreie Stadt
+DEB12;Ahrweiler
+DEB13;Altenkirchen (Westerwald)
+DEB14;Bad Kreuznach
+DEB15;Birkenfeld
+DEB16;Cochem-Zell
+DEB17;Mayen-Koblenz
+DEB18;Neuwied
+DEB19;Rhein-Hunsrück-Kreis
+DEB1A;Rhein-Lahn-Kreis
+DEB1B;Westerwaldkreis
+DEB2;Trier
+DEB21;Trier, Kreisfreie Stadt
+DEB22;Bernkastel-Wittlich
+DEB23;Bitburg-Prüm
+DEB24;Daun
+DEB25;Trier-Saarburg
+DEB3;Rheinhessen-Pfalz
+DEB31;Frankenthal (Pfalz), Kreisfreie Stadt
+DEB32;Kaiserslautern, Kreisfreie Stadt
+DEB33;Landau in der Pfalz, Kreisfreie Stadt
+DEB34;Ludwigshafen am Rhein, Kreisfreie Stadt
+DEB35;Mainz, Kreisfreie Stadt
+DEB36;Neustadt an der Weinstraße, Kreisfreie Stadt
+DEB37;Pirmasens, Kreisfreie Stadt
+DEB38;Speyer, Kreisfreie Stadt
+DEB39;Worms, Kreisfreie Stadt
+DEB3A;Zweibrücken, Kreisfreie Stadt
+DEB3B;Alzey-Worms
+DEB3C;Bad Dürkheim
+DEB3D;Donnersbergkreis
+DEB3E;Germersheim
+DEB3F;Kaiserslautern, Landkreis
+DEB3G;Kusel
+DEB3H;Südliche Weinstraße
+DEB3I;Rhein-Pfalz-Kreis
+DEB3J;Mainz-Bingen
+DEB3K;Südwestpfalz
+DEC;SAARLAND
+DEC0;Saarland
+DEC01;Stadtverband Saarbrücken
+DEC02;Merzig-Wadern

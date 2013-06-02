@@ -1,0 +1,90 @@
+AT123;Sankt Pölten
+AT124;Waldviertel
+AT125;Weinviertel
+AT126;Wiener Umland/Nordteil
+AT127;Wiener Umland/Südteil
+AT13;Wien
+AT130;Wien
+AT2;SÜDÖSTERREICH
+AT21;Kärnten
+AT211;Klagenfurt-Villach
+AT212;Oberkärnten
+AT213;Unterkärnten
+AT22;Steiermark
+AT221;Graz
+AT222;Liezen
+AT223;Östliche Obersteiermark
+AT224;Oststeiermark
+AT225;West- und Südsteiermark
+AT226;Westliche Obersteiermark
+AT3;WESTÖSTERREICH
+AT31;Oberösterreich
+AT311;Innviertel
+AT312;Linz-Wels
+AT313;Mühlviertel
+AT314;Steyr-Kirchdorf
+AT315;Traunviertel
+AT32;Salzburg
+AT321;Lungau
+AT322;Pinzgau-Pongau
+AT323;Salzburg und Umgebung
+AT33;Tirol
+AT331;Außerfern
+AT332;Innsbruck
+AT333;Osttirol
+AT334;Tiroler Oberland
+AT335;Tiroler Unterland
+AT34;Vorarlberg
+AT341;Bludenz-Bregenzer Wald
+AT342;Rheintal-Bodenseegebiet
+ATZ;EXTRA-REGIO
+ATZZ;Extra-Regio
+ATZZZ;Extra-Regio
+PL;POLSKA
+PL1;REGION CENTRALNY
+PL11;Łódzkie
+PL113;Miasto Łódź
+PL114;Łódzki
+PL115;Piotrkowski
+PL116;Sieradzki
+PL117;Skierniewicki
+PL12;Mazowieckie
+PL121;Ciechanowsko-płocki
+PL122;Ostrołęcko-siedlecki
+PL127;Miasto Warszawa
+PL128;Radomski
+PL129;Warszawski-wschodni
+PL12A;Warszawski-zachodni
+PL2;REGION POŁUDNIOWY
+PL21;Małopolskie
+PL213;Miasto Kraków
+PL214;Krakowski
+PL215;Nowosądecki
+PL216;Oświęcimski
+PL217;Tarnowski
+PL22;Śląskie
+PL224;Częstochowski
+PL225;Bielski
+PL227;Rybnicki
+PL228;Bytomski
+PL229;Gliwicki
+PL22A;Katowicki
+PL22B;Sosnowiecki
+PL22C;Tyski
+PL3;REGION WSCHODNI
+PL31;Lubelskie
+PL311;Bialski
+PL312;Chełmsko-zamojski
+PL314;Lubelski
+PL315;Puławski
+PL32;Podkarpackie
+PL323;Krośnieński
+PL324;Przemyski
+PL325;Rzeszowski
+PL326;Tarnobrzeski
+PL33;Świętokrzyskie
+PL331;Kielecki
+PL332;Sandomiersko-jędrzejowski
+PL34;Podlaskie
+PL343;Białostocki
+PL344;Łomżyński
