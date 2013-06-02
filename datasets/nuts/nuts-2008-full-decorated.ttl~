@@ -20,7 +20,24 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
 @prefix moldeas:  <http://localhost/moldeas/> .
-@prefix org:  <http://www.w3.org/ns/org#> .
+
+<http://nuts.psi.enakting.org/resource/ds>
+      a       void:Dataset ;
+      rdfs:label "10ders Project | MOLDEAS | NUTS codes "@en ;
+      rdfs:comment "Enriched dataset of NITS Codes."@en ;
+      dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+      dcterms:publisher  moldeas-org:WESO;
+      dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2013-05-16"^^xsd:date ;          
+      void:dataDump <http://localhost/static/moldeas/datasets/nuts-2008.ttl> ;
+      void:dataDump <http://localhost/static/moldeas/datasets/nuts-2008.rdf> ;
+      void:exampleResource moldeas-org:WESO;
+      void:uriRegexPattern "http://localhost/moldeas/organization/.+" ;
+      void:vocabulary  rdfs: ,  dcterms: , org: , v: ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
 
 <http://statistics.data.gov.uk/id/electoral-ward/00NSPJ>
       spatialrelations:containedBy
