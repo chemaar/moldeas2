@@ -33,6 +33,7 @@ import java.io.InputStreamReader;
 import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
+import org.weso.moldeas.utils.TransformerConstants;
 
 import au.com.bytecode.opencsv.CSVReader;
 
@@ -65,7 +66,7 @@ public class NUTSTransformer extends ChainTransformerAdapter {
 	}
 
 	private Model loadRDF(String id) {
-		String url = "http://nuts.psi.enakting.org/id/"+id+"/rdf";
+		String url = TransformerConstants.HTTP_NUTS_PSI_ENAKTING_ORG_ID+id+"/rdf";
 		Model rmodel = ModelFactory.createDefaultModel();
 		System.out.println("Loading from "+url);
 		rmodel.read(url);

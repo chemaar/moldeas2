@@ -41,6 +41,6 @@ public class NUTSTransformerMain {
 		ChainTransformer init = new NUTSGeoNamesTransformer();
 			//new NUTSTransformer(); //only for retrieval
 		Model model = init.transform(ModelFactory.createDefaultModel());
-		model.write(new PrintWriter("nuts-2008-full-decorated.txt"));
+		model.write(new PrintWriter("nuts-2008-full-decorated.rdf"));
 		}
 }

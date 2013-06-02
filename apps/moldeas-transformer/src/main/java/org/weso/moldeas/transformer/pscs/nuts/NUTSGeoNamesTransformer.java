@@ -44,6 +44,8 @@ import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
 import org.weso.moldeas.loader.resources.URLFilesResourceLoader;
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
+import org.weso.moldeas.utils.PrefixManager;
+import org.weso.moldeas.utils.TransformerConstants;
 
 import au.com.bytecode.opencsv.CSVReader;
 
@@ -53,29 +55,26 @@ import com.hp.hpl.jena.rdf.model.Resource;
 
 public class NUTSGeoNamesTransformer extends ChainTransformerAdapter {
 
-	private static final String HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS = "http://www.w3.org/2003/01/geo/wgs84_pos#";
-	private static final String HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LONG = HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS+"long";
-	private static final String HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LAT = HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS+"lat";
 	private static final int NUMBER_OF_PROCESSING_FILES = 19;
-	
+
 	protected static Logger logger = Logger.getLogger(NUTSGeoNamesTransformer.class);
 	private Map<String,String[]> countryInfo = new HashMap<String, String[]>();
-	
-	
+
+
 	@Override
 	protected void execute() throws Exception {
-		ResourceLoader loaderRdf = new FilesResourceLoader(new String[]{"nuts/nuts-2008-full.txt"});
+		ResourceLoader loaderRdf = new FilesResourceLoader(new String[]{"nuts/nuts-full-2008.txt"});
 		JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loaderRdf);
 		this.model = (Model) rdfModel.getModel();
 		//Init model
-		this.model.setNsPrefix("geo", HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS);
-		this.model.setNsPrefix("nuts", "http://nuts.psi.enakting.org/def/");
-		this.model.setNsPrefix("spatialrelations", "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/");
-		this.model.createProperty(HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LAT);
-		this.model.createProperty(HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LONG);		
+		this.model.setNsPrefix(TransformerConstants.GEO_PREFIX, PrefixManager.getURIPrefix(TransformerConstants.GEO_PREFIX));
+		this.model.setNsPrefix(TransformerConstants.NUTS_PREFIX, PrefixManager.getURIPrefix(TransformerConstants.NUTS_PREFIX));
+		this.model.setNsPrefix(TransformerConstants.SPATIALRELATIONS_PREFIX, PrefixManager.getURIPrefix(TransformerConstants.SPATIALRELATIONS_PREFIX));
+		this.model.createProperty(TransformerConstants.HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LAT);
+		this.model.createProperty(TransformerConstants.HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LONG);		
 		//Init search
 		ToponymSearchCriteria searchCriteria = new ToponymSearchCriteria();
-	
+
 		for(int i = 0; i<NUMBER_OF_PROCESSING_FILES; i++){
 			String fileName = "nuts/nuts-code-region-item-"+i+".txt";
 			logger.debug("Processing file: "+fileName);
@@ -89,28 +88,33 @@ public class NUTSGeoNamesTransformer extends ChainTransformerAdapter {
 				String place = (nextLine.length>1?nextLine[1]:"WARNING "+nextLine[0]);
 				if(!place.equalsIgnoreCase("EXTRA-REGIO") && 
 						!place.equalsIgnoreCase("Extra-Regio")){
-					//Get country info
-					addCountryInfo(countryCode);
-					//Common criteria
-					searchCriteria.setQ(place);
-					searchCriteria.setCountryCode(countryCode);
-					searchCriteria.setMaxRows(5);
-					logger.debug("Searching for: "+place+" in "+countryCode);
-					//Search
-					ToponymSearchResult searchResult = WebService.search(searchCriteria);
-					List<Toponym> toponyms = searchResult.getToponyms();
-					if(toponyms.size() == 0){					
-						String[] codeInfo = this.countryInfo.get(countryCode);
-						searchCriteria.setQ(codeInfo[4]+" "+codeInfo[5]);
-						logger.debug("Second try with "+codeInfo[4]+" "+codeInfo[5]);
-						searchResult = WebService.search(searchCriteria);		
-						toponyms = searchResult.getToponyms();
+					try{
+
+						//Get country info
+						addCountryInfo(countryCode);
+						//Common criteria
+						searchCriteria.setQ(place);
+						searchCriteria.setCountryCode(countryCode);
+						searchCriteria.setMaxRows(5);
+						logger.debug("Searching for: "+place+" in "+countryCode);
+						//Search
+						ToponymSearchResult searchResult = WebService.search(searchCriteria);
+						List<Toponym> toponyms = searchResult.getToponyms();
+						if(toponyms.size() == 0){					
+							String[] codeInfo = this.countryInfo.get(countryCode);
+							searchCriteria.setQ(codeInfo[4]+" "+codeInfo[5]);
+							logger.debug("Second try with "+codeInfo[4]+" "+codeInfo[5]);
+							searchResult = WebService.search(searchCriteria);		
+							toponyms = searchResult.getToponyms();
+						}
+						//Showing results
+						addCoordinates(toponyms, countryCode, id);
+					}catch(org.geonames.InvalidParameterException e){
+						logger.debug("Skipping coordinates due to: "+e.getMessage()+" place: "+place+" in "+countryCode);
 					}
-					//Showing results
-					addCoordinates(toponyms, countryCode, id);
 				}
-				}
-			
+			}
+
 		}
 
 	}
@@ -155,12 +159,12 @@ public class NUTSGeoNamesTransformer extends ChainTransformerAdapter {
 		}//else
 		//addLanguages to region
 		addValues(lat, longitude, id);
-}
+	}
 
 	private void addValues(Double lat, Double longitude, String id){
 		if (Double.compare(lat, 0)!=0 && Double.compare(longitude, 0)!=0){
 			//Get Resource from RDF Model
-			String url = "http://nuts.psi.enakting.org/id/"+id;
+			String url = TransformerConstants.HTTP_NUTS_PSI_ENAKTING_ORG_ID+id;
 			//FIXME: for testing we create the resource					
 			//Resource r = this.model.createResource(url);
 			//Get Resource
@@ -169,8 +173,8 @@ public class NUTSGeoNamesTransformer extends ChainTransformerAdapter {
 				Literal latValue = model.createTypedLiteral(lat) ;
 				Literal longValue = model.createTypedLiteral(longitude) ;
 				//Add coordinates
-				r.addProperty(this.model.getProperty(HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LAT), latValue);
-				r.addProperty(this.model.getProperty(HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LONG), longValue);
+				r.addProperty(this.model.getProperty(TransformerConstants.HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LAT), latValue);
+				r.addProperty(this.model.getProperty(TransformerConstants.HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LONG), longValue);
 				logger.debug("Adding coordinates lat= "+lat+" long= "+longitude+" to "+r.getURI());
 			}		
 		}
