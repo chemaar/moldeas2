@@ -1,0 +1,96 @@
+@book{Heath_Bizer_2011, 
+ title={{Linked Data: Evolving the Web into a Global Data Space}},
+ volume={1}, 
+ url={http://www.morganclaypool.com/doi/abs/10.2200/S00334ED1V01Y201102WBE001}, 
+ number={1}, 
+ journal={Synthesis Lectures on the Semantic Web Theory and Technology}, 
+ publisher={Morgan \& Claypool}, 
+ author={Heath, Tom and Bizer, Christian}, 
+ editor={Van Harmelen, Frank and Hendler, JamesEditors}, 
+ year={2011}, 
+ pages={1--136}
+}
+
+@Misc{linked-data-patterns,
+author = {Leigh Dodds and Ian Davis},
+title = {{Linked Data Patterns. A pattern catalogue for modelling, publishing, and consuming Linked Data}},
+month = aug,
+year = {2011},
+note = {\url{http://patterns.dataincubator.org/book/}}
+}
+  
+@TechReport{best-gld,
+  author =       {W3C Members},
+  title =        {{Best Practices Discussion Summary}},
+  institution =  {W3C},
+  year =         {2011},
+  type = {{W3C} Government Linked Data Working Group First F2F},
+  note = {\url{http://www.w3.org/2011/gld/wiki/Best_Practices_Discussion_Summary}}
+}
+
+
+
+@TechReport{Berr08,
+	author = "Berrueta, Diego and Phipps, Jon and Miles, Alistair and Baker, Thomas and Swick, Ralph",
+	keywords = "linked-data, rdf, semantic-web",
+	month = {aug},
+	posted-at = "2009-12-21 15:21:28",
+	title = "{Best Practice Recipes for Publishing RDF Vocabularies}",
+	url = "http://www.w3.org/TR/swbp-vocab-pub/",
+	year = "2008",
+	type="W3C Working Group Note"
+}
+
+
+@TechReport{linked-data-cookbook,
+  author =       {Bernadette Hyland and  Boris Villazón Terrazas and Sarven Capadisli},
+  title =        {{Cookbook for Open Government Linked Data }},
+  institution =  {W3C},
+  year =         {2011},
+  type = {{W3C} Task Force-Government Linked Data Group},
+  note = {\url{http://www.w3.org/2011/gld/wiki/Linked_Data_Cookbook}}
+}
+
+@TechReport{gld-lifecycle,
+  author =       {Michael Hausenblas and Boris Villazón-Terrazas and Bernadette Hyland},
+  title =        {{GLD Life cycle}},
+  institution =  {W3C},
+  year =         {2011},
+  type = {{W3C} Government Linked Data Group},
+  note = {\url{http://www.w3.org/2011/gld/wiki/GLD_Life_cycle}}
+}
+@TechReport{publishing-ogd,
+  author =       {Bennett, Daniel and Harvey, Adam},
+  title =        {{Publishing Open Government Data}},
+  institution =  {W3C},
+  year =         {2009},
+  type = {{W3C} Working Draft},
+  note = {\url{http://www.w3.org/TR/gov-data/}}
+}
+
+@techreport{lod2-stack,
+  author = {TenForce},
+  title = {{D1.4 – Early LOD2 Stack prototype}},
+  institution = {LOD2 Project},
+  year = {2011},
+  type = {{Deliverable of European Project}},
+  note = {\url{http://static.lod2.eu/Deliverables/LOD2_D1.4_Early_Stack_Prototype.pdf}},
+}
+
+@TechReport{basic-profile-w3c,
+  author =       {Martin Nally and Steve Speicher and John Arwe and Arnaud Le Hors},
+  title =        {{Linked Data Basic Profile 1.0}},
+  institution =  {W3C},
+  year =         {2012},
+  type = {{W3C Member Submission}},
+  note = {\url{http://www.w3.org/Submission/2012/02/}}
+}
+
+
+@inproceedings{DBLP:conf/i-semantics/Cifuentes-SilvaSG11,
+  author    = {Francisco Adolfo Cifuentes-Silva and Christian Sifaqui and Jos{\'e} Emilio Labra Gayo},
+  title     = {{Towards an architecture and adoption process for linked data technologies in open government contexts: a case study for the Library of Congress of Chile}},
+  booktitle = {I-SEMANTICS},
+  year      = {2011},
+  pages     = {79--86} 
+}

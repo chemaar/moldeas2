@@ -1,0 +1,275 @@
+\frame{
+  \frametitle{Experimentación}
+
+FIXME: Diagrama de los tres experimentos
+
+{\tiny Ver la descripción completa de los experimentos en el Capítulo~7 de la memoria.}
+}
+
+\frame{
+  \frametitle{Metodología}
+
+\begin{block}{Pasos de ejecución}
+ \begin{enumerate}
+ \item Definición de los objetivos del experimento. 
+\item Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio. 
+ \begin{itemize}
+ \item Cualitativos: tipo de entorno hardware y software, etc.
+   \item Cuantitativos: tamaño de la muestra, de la memoria y número de posibilidades de expresar una consulta.
+\end{itemize}
+ \item Especificación de las medidas de trabajo en cuanto a la respuesta.
+ \item Ejecución de un experimento piloto. 
+ \item Especificación de un modelo.
+ \item Esquematización de los pasos a seguir. 
+ \item Determinación del tamaño muestral.
+ \item Revisión de las decisiones anteriores.
+\end{enumerate}
+\end{block}
+}
+
+\subsection{Expresividad y Cumplimiento de Criterios}
+\frame{
+  \frametitle{Visión del experimento}
+
+\begin{block}{Punto de Vista Cuantitativo}<1->
+ ¿Cuál es la posibilidad de uso de datos enlazados para facilitar el \textbf{acceso} a un 
+mayor número de recursos relacionados con los anuncios de licitación?
+\end{block}
+
+\begin{exampleblock}{Punto de Vista Cualitativo}<2->
+Evaluación, grado de cumplimiento y comparación con otros enfoques de:
+\begin{itemize}
+ \item Principios de \opendata y \linkeddata.
+ \item Buenas prácticas.
+ \item Patrones de diseño.
+ \item Características de pertenencia a la nube de datos enlazados y registro CKAN.
+\end{itemize}
+\end{exampleblock}
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+
+\begin{block}{1-Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio}
+\begin{enumerate}
+ \item ¿Cuál es la expresividad actual, en términos de número de conceptos para realizar consultas, para el acceso a la información de anuncios de licitación?
+ \item ¿Cuál es la ventaja de uso de un modelo RDF para la expresión y recuperación de la información de los anuncios de licitación?
+ \item ¿Cómo favorecen los datos enlazados el aumento de expresividad en la ejecución de consultas y por tanto facilitan la recuperación de los 
+anuncios de licitación? 
+ \item ¿Cuál es el beneficio real del uso de datos enlazados para representar la información? 
+ \item ¿Se incurre en algún error al aumentar la expresividad?
+\end{enumerate}
+
+\end{block}
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+
+\begin{block}{2-Definición de los objetivos del experimento}
+\begin{enumerate}
+ \item ¿Cuál es la expresividad actual, en términos de número de conceptos para realizar consultas, para el acceso a la información de anuncios de licitación?
+ \item ¿Cuál es la ventaja de uso de un modelo RDF para la expresión y recuperación de la información de los anuncios de licitación?
+ \item ¿Cómo favorecen los datos enlazados el aumento de expresividad en la ejecución de consultas y por tanto facilitan la recuperación de los 
+anuncios de licitación? 
+ \item ¿Cuál es el beneficio real del uso de datos enlazados para representar la información? 
+ \item ¿Se incurre en algún error al aumentar la expresividad?
+\end{enumerate}
+
+\end{block}
+
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+
+\begin{block}{Premisas y Ganancia}
+\begin{itemize}
+\item Base documental $\mathcal{D}$ constituida por $1$ millón de anuncios de licitación.
+\item Vocabulario controlado, $\mathcal{V}$, del CPV 2008, formado por $\#\mathcal{V} = 10357$ códigos/términos distintos.
+\item Cada documento $d \in \mathcal{D}$, etiquetado con al menos un código $v \in \mathcal{V}$.
+\item El nuevo vocabulario controlado $\mathcal{V'}_{psc}$, enlazado con $\mathcal{V}_{psc}$, dispone de $\#\mathcal{V'}_{psc}$ términos.
+\item La ganancia se calcula como: \begin{align}
+\% =  \{ \langle (\#\mathcal{V'}_{psc}+\#\mathcal{V}) / \#\mathcal{V} \rangle - 1 \} * 100
+\end{align}
+\end{itemize}
+\end{block}
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+\begin{exampleblock}{Ejemplo}
+\begin{itemize}
+ \item Sea $\mathcal{V} = \{ 1, 2, 3 \}$  y  $\mathcal{V}_{psc} = \{A, B, C, D, E\}$.
+ \item El conjunto de pares enlaces es: $\{ (A,1), (B,2), (C,1) (C,2) \}$.
+ \item Por tanto, el conjunto $\mathcal{V'}_{psc} = \{A, B, C\}$ y el porcentaje de ganancia en expresividad será:
+\begin{align}
+\% =  \{ \langle (3+3) / 3 \rangle -1 \} * 100  = 200 - 100 = 100 
+\end{align}
+\item El número de términos final es el doble que el inicial, aumentando así la expresividad en un $100\%$.
+\end{itemize}
+\end{exampleblock}
+}
+
+
+\frame{
+    \frametitle{Punto de Vista Cuantitativo-Resultados Parciales}
+
+\begin{longtable}[c]{|l|l|l|l|l|p{1cm}|p{1cm}|} 
+\hline
+  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real \textit{PO}  &  $\%$ máx.   \\\hline
+\endhead
+CPV 2003 	& $8323$  	& $462$		& $8312$ 	& $4.46$ 	& $80.25$	& $80.36$  \\ \hline
+CN 2012  	& $14552$	& $2390$	& $2390$ 	& $23.07$	& $23.07$	& $140.50$  \\ \hline
+CPC 2008 	& $4408$	& $4402$   	& $4403$	& $42.50$	& $42.51$ 	& $42.56$  \\ \hline
+CPA 2008 	& $5429$	& $5399$   	& $5410$	& $52.12$	& $52.23$	& $52.41$  \\ \hline
+ISIC v4  	& $766$		& $765$   	& $765$ 	& $7.38$ 	& $7.38$	& $7.39$    \\ \hline
+NAICS 2007 	& $2328$	& $2300$ 	& $2300$	& $22.20$	& $22.20$	& $22.47$  \\ \hline
+NAICS 2012 	& $2212$	& $2186$ 	& $2186$	& $21.10$	& $21.10$	& $21.35$  \\ \hline
+SITC v4 	& $4017$	& $3811$   	& $3820$	& $36.79$	& $36.88$	& $38.78$  \\ \hline
+\multicolumn{7}{|c|}{\textbf{...}} \\ \hline
+\hline
+\end{longtable}
+
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados Totales}
+
+\begin{longtable}[c]{|l|l|l|l|l|l|p{1cm}|} 
+\hline
+  \multicolumn{7}{|c|}{\textbf{Total}} \\ \hline
+  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real \textit{PO}  &  $\%$ máx.   \\\hline
+\endhead
+$\star$ & $42035$ 		& $21715$   	& $29586$	& $209.66$ 	& $285.66$	& $405.86$ \\ \hline
+\multicolumn{7}{|c|}{\textbf{Añadiendo enlaces entre CPV 2008 y \textit{Product Ontology-PO}}} \\ \hline
+\textit{PO}& $\infty$	& $10000$   	& N/A	& $96.55$	& $96.55$ 	& $\infty$  \\ \hline
+\multicolumn{7}{|c|}{\textbf{Total con vocabulario de \textit{Product Ontology}}} \\ \hline
+$\star$	 & $\infty$	& $31715$   	& 39586	& $306.21$	& $382.21$	& $\infty$ \\ \hline
+\hline
+\end{longtable}
+
+}
+
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados Totales}
+
+% \begin{figure}[!htb]
+% \centering
+% 	\includegraphics[width=14cm]{./images/phd/experimentation/pscs-enlaces}
+% \caption{Gráfica de Número de Elementos y Enlaces entre las PSCs y el CPV 2008.}
+% \label{fig:pscs-enlaces}
+% \end{figure}
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados Totales}
+
+% \begin{figure}[!htb]
+% \centering
+% 	\includegraphics[width=14cm]{./images/phd/experimentation/pscs-ganancia}
+% \caption{Gráfica de Ganancia en expresividad.}
+% \label{fig:pscs-ganancia}
+% \end{figure}
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados}
+
+\begin{block}{Valoración}
+ \begin{enumerate}
+  \item Extensión del CPV 2008, $10357$ términos, hasta:
+ \begin{itemize}
+  \item $21715$ términos, con enlaces entre las PSCs y el CPV 2008.
+  \item $29586$ términos, con enlaces entre las PSCs y el CPV 2008 a través de \textit{PO}.
+ \end{itemize}
+  \item Se establece un:
+   \begin{itemize}
+    \item \textbf{$8.65\%$} y \textbf{$6.64\%$} (PO) de enlaces exactos.
+    \item \textbf{$91.35\%$} y \textbf{$93.36\%$} (PO) de enlaces automáticos.
+   \end{itemize}
+ \item Cifras de ganancia:
+  \begin{itemize}
+  \item Real: $209.66\%$.
+  \item Real con \textit{PO}: $285.66\%$
+  \item Máximo: $405.86\%$.
+ \end{itemize}
+  \item Los enlaces y la reconciliación de entidades se realiza bajo un umbral $\mu$ ($n$ primeros resultados normalizados).
+ \end{enumerate}
+\end{block}
+
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Conclusiones}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item Aumento del vocabulario de entrada del CPV 2008 con \linkeddata.
+ \item Mejora de la expresividad para la realización de consultas en SPARQL.
+ \item Incremento del número de anuncios de licitación a los que se puede acceder.
+ \item Establecimiento de una fórmula para el cálculo de la ganancia del enlazado de datos.
+\end{itemize}
+\end{exampleblock}
+}
+
+%%%%%%%%%
+%%%%%%%%	punto de vista cualitativo
+%%%%%%%%
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+
+\begin{block}{Preguntas}
+\begin{enumerate}
+ \item ¿El ciclo de vida seguido y los datos generados certifican la aplicación de buenas prácticas y principios de \linkeddata?
+ \item ¿Qué nivel del modelo de 5 $\star$ se puede establecer?
+ \item ¿Qué porcentaje de patrones de diseño se han aplicado en los datos generados?
+ \item ¿Los datos generados pueden pertenecer a la nube de datos enlazados abiertos?
+ \item ¿Los datos generados pueden pertenecer a un registro CKAN? 
+ \item ¿Se certifica el cumplimiento de los principios de \opendata?
+ \item ¿Se puede asegurar que los datos son enlazados y abiertos?
+ \item ¿Qué beneficios se obtienen del cumplimiento de estos objetivos?
+\end{enumerate}
+
+\end{block}
+
+}
+
+
+
+\frame{
+  \frametitle{Punto de Vista Cualitativo-Resultados}
+
+\begin{block}{Valoración}
+
+\end{block}
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cualitativo-Conclusiones}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item Aumento del vocabulario de entrada del CPV 2008 con \linkeddata.
+ \item Mejora de la expresividad para la realización de consultas en SPARQL.
+ \item Incremento del número de anuncios de licitación a los que se puede acceder.
+ \item Establecimiento de una fórmula para el cálculo de la ganancia del enlazado de datos.
+\end{itemize}
+\end{exampleblock}
+}
+
+\subsection{Sistema MOLDEAS}
+
+\subsection{Rendimiento del Sistema MOLDEAS}
+
