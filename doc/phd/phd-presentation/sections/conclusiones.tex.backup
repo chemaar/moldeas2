@@ -1,0 +1,272 @@
+\frame{
+\large
+\begin{enumerate}
+\setcounter{enumi}{4}
+ \item Conclusiones.
+  \begin{itemize}
+  \item Grado de Cumplimiento de Objetivos.
+  \item Consecución Hipótesis de Investigación.
+  \item Principales Aportaciones.
+  \item Visión Científica.
+  \item Visión Tecnológica.
+  \item Impacto y Difusión.
+  \item Trabajo Futuro.
+ \end{itemize}
+
+\end{enumerate}
+
+}
+
+\frame{
+  \frametitle{Grado de Cumplimiento de Objetivos}
+\begin{block}{Objetivo General}<1->
+ Aplicación de la tecnología y métodos semánticos al dominio de la 
+contratación pública electrónica para dar soporte a los principios de las 
+iniciativas de \linkeddata y \opendata.
+\end{block}
+\begin{exampleblock}{Se cumple}<2->
+\begin{itemize}
+ \item \textbf{Definición} de un \textbf{ciclo de vida} para los datos enlazados abiertos.
+ \item \textbf{Aplicación} del ciclo de vida al dominio de \textbf{e-Procurement}, componentes de \textbf{MOLDEAS}.
+ \item \textbf{Experimentación} y \textbf{validación} de los principios de \linkeddata y \opendata.
+\end{itemize}
+
+\end{exampleblock}
+
+}
+
+\frame{
+  \frametitle{Grado de Cumplimiento de Objetivos}
+\scriptsize
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{8cm}|p{2cm}|}
+\hline
+  \textbf{Objetivo}& \textbf{Capítulo} \\ \hline
+  \textbf{Estudiar, analizar y valorar}: Contratación Pública y \eproc & 2\\ \hline
+  \ldots Web Semántica, \linkeddata y \opendata &  3\\ \hline
+  \textbf{Definir métodos} basados en \textbf{semántica} para producir, publicar, consumir y validar información de los anuncios de licitación. & 4\\ \hline
+  \textbf{Definir} los \textbf{algoritmos} y \textbf{procesos} para dar soporte a los métodos anteriores. & 5-6\\ \hline
+  \textbf{Implementar} y \textbf{reutilizar} los componentes software. & 6 \\ \hline
+  \textbf{Promover}: uso de \textbf{estándares}, \textbf{reutilización de información} y modelos de \textbf{conocimiento} \textbf{compartido}. &  $\star$ \\ \hline
+  \textbf{Aplicar} los \textbf{métodos} semánticos definidos al contexto de \textbf{e-Procurement}. & 5 \\ \hline
+  \textbf{Establecer} un conjunto de \textbf{prueba} y \textbf{validación}. &  7\\ \hline
+  \textbf{Difundir}, formar y transferir la tecnología y conocimiento. & A-B \\ \hline
+  \hline
+  \end{tabular}
+  \end{center}
+\end{table} 
+
+}
+
+
+\frame{
+  \frametitle{Consecución Hipótesis de Investigación}
+\begin{block}{Hipótesis de Investigación}<1->
+Es posible \textbf{mejorar el acceso} a la \textbf{información} contenida en los \textbf{anuncios de licitación} de 
+las distintas instituciones públicas europeas, tanto en términos \textbf{cuantitativos} como \textbf{cualitativos}, mediante \textbf{métodos semánticos} basados 
+en \textbf{aplicar} y \textbf{cumplir} los \textbf{principios} de la iniciativa \textbf{\linkeddata} y de la misma forma \textbf{mantener} y \textbf{favorecer}
+los principios de la corriente \textbf{Open Data}.
+\end{block}
+
+\begin{exampleblock}{Se cumple}<2->
+\begin{itemize}
+ \item Resultados del \textbf{experimento} desde un punto de vista \textbf{cuantitativo}.
+ \item Resultados del \textbf{experimento} desde un punto de vista \textbf{cualitativo}.
+\end{itemize}
+
+\end{exampleblock}
+
+}
+
+
+
+
+\frame{
+  \frametitle{Principales Aportaciones}
+\begin{enumerate}
+ \item \textbf{Repaso} del estado actual de \textbf{\eproc} y aplicación de \textbf{tecnologías} \textbf{semánticas}.
+ \item \textbf{Ciclo de vida} para \linkeddata.
+ \item Sistema \textbf{MOLDEAS}.
+  \begin{itemize}
+  \item \textbf{Modelo} de \textbf{información} y \textbf{datos} en \eproc: anuncios, catálogo de clasificaciones, organizaciones, etc.
+  \item \textbf{Reconciliación} de entidades.
+  \item \textbf{Implementación} de un conjunto de \textbf{componentes} para el \textbf{consumo} y \textbf{explotación} de datos.
+  \item Diseño de \textbf{criterios} de \textbf{validación} de los datos generados.
+  \item \textbf{Demostración} de la \textbf{mejora} cuantitativa y cualitativa en el \textbf{acceso} a la información y datos.
+  \end{itemize}
+ \item Generación de \textit{know-how}.
+\end{enumerate}
+
+}
+
+\frame{
+  \frametitle{Principales Problemas en \eproc}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item \textbf{Mitigación} de la \textbf{dispersión} de información.
+ \item \textbf{Identificación} \textbf{única} de la información y datos.
+ \item \textbf{Estandarización} de los modelos y formatos de representación de la información y datos.
+ \item \textbf{Soporte} intrínseco al \textbf{multiling\"{u}ismo/multiculturalidad}.
+ \item Enfoque \textbf{no intrusivo e integrador} de soluciones existentes.
+\end{itemize}
+\end{exampleblock}
+
+}
+
+
+\frame{
+  \frametitle{Visión Científica}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item El uso de estándares (RDF, SPARQL, HTTP) facilita la gestión de información y datos.
+ \item El modelo $5\star$ es la máxima expresión para la reutilización, en algunos casos $3\star$ supone un gran avance.
+ \item El enlazado de datos mejora la expresividad en la realización de consultas.
+ \item La reconciliación de entidades puede ser: exacta (realizada por un experto) o automática (herramientas bajo un umbral).
+ \item La reutilización de información enriquece los conjuntos de datos a promocionar. 
+ \item \ldots
+\end{itemize}
+
+\end{exampleblock}
+
+
+}
+
+\frame{
+  \frametitle{Visión Científica}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item La optimización de consultas en SPARQL es clave para la consulta de grandes \datasets.
+ \item La semántica colabora enormemente en la creación de sistemas expertos en un dominio determinado.
+ \item La aplicación práctica de semántica pone de manifiesto nuevas necesidades: SPARQL 1.1, OWL2, etc.
+ \item La información de carácter público facilitar la creación de oportunidades de negocio.
+ \item La contratación pública electrónica es un proceso clave en las AAPP.
+\end{itemize}
+
+\end{exampleblock}
+
+
+}
+
+
+
+\frame{
+  \frametitle{Visión Tecnológica}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item La tecnología semántica ya no es sinónimo de depuración. Madurez de las herramientas.
+ \item Existen plataformas genéricas para \lod de gran calado pero con procesos manuales.
+ \item La tecnología actual debe mejorar su integración con los datos enlazados. Ej: JSON-LD
+\end{itemize}
+
+\end{exampleblock}
+
+}
+
+\frame{
+  \frametitle{Impacto y Difusión}
+
+\begin{exampleblock}{Revistas con índice de impacto-5}
+\begin{itemize}
+ \item 1 (IJSEKE-$0.262$) y 1 (COMIND-$1.620$), directos del trabajo de esta tesis.
+ \item 1 (JUCS-$0.788$) y 2 (ESWA-$1.926$), relacionados con semántica.
+\end{itemize}
+\end{exampleblock}
+
+\begin{alertblock}{Editor invitado, revisor y miembro PC}
+\begin{itemize}
+ \item 1 (COMIND-$1.620$).
+ \item +10.
+\end{itemize}
+\end{alertblock}
+
+\begin{block}{Revistas internacionales-5}
+\begin{itemize}
+ \item 4, directos del trabajo de esta tesis.
+ \item 1, relacionado con semántica.
+\end{itemize}
+\end{block}
+
+}
+
+
+\frame{
+  \frametitle{Impacto y Difusión}
+
+\begin{exampleblock}{Capítulos de libros-3}
+\begin{itemize}
+ \item 2, directos del trabajo de esta tesis.
+ \item 1, relacionado con semántica.
+\end{itemize}
+\end{exampleblock}
+
+\begin{block}{Otros-15}
+\begin{itemize}
+ \item 5, Conferencias Internacionales.
+ \item 6, \textit{Worshops} Internacionales.
+ \item 4, \textit{Worshops} Nacionales.
+\end{itemize}
+\end{block}
+
+}
+
+
+
+
+\subsection*{Trabajo Futuro}
+
+
+\frame{
+  \frametitle{Líneas de Investigación}
+
+\begin{block}{Semántica + \linkeddata+ \opendata}
+\begin{itemize}
+ \item Catalogación de vocabularios y conjuntos de datos de forma precisa.
+ \item Mejora de los algoritmos de reconciliación de entidades.
+ \item Establecimiento de métricas de calidad.
+ \item Mejora del rendimiento de las consultas. Creación de un \textit{benchmark} con datos reales.
+ \item Estudio de la aplicación de \lod a otras etapas de \eproc, otros procesos administrativos, etc.
+ \item Mejora del sistema de recuperación de información (operadores de agregación).
+ \item \ldots
+\end{itemize}
+
+\end{block}
+}
+
+\frame{
+  \frametitle{Líneas de Investigación}
+
+\begin{block}{Semántica + \linkeddata+ \opendata}
+\begin{itemize}
+ \item Procesamiento de consultas federadas de forma eficiente.
+ \item Búsqueda sobre fuentes de datos heterogéneas.
+ \item Descubrimiento automático de \datasets.
+ \item Gestión de \datasets dinámicos como los provenientes de sensores, sistemas reactivos, etc.
+ \item Calidad de los datos: procedencia, valores, etc.
+ \item Usabilidad en la interacción con datos enlazados.
+\end{itemize}
+
+\end{block}
+}
+
+\frame{
+  \frametitle{Líneas de Tecnología}
+
+\begin{exampleblock}{Campos de Mejora}
+\begin{itemize}
+ \item Mejora del sistema de consumo de datos enlazados de MOLDEAS, personalización y prueba intensiva de los algoritmos disponibles.
+ \item Mejora del sistema de visualización y consumo de datos enlazados desde el punto de vista del usuario final.
+ \item Continuación del desarrollo del sistema de validación de datos enlazados.
+ \item Contribución con nuevas herramientas a la comunidad de \linkeddata.
+ \item Capitalización del conocimiento y de la propiedad industrial e intelectual. Nuevas oportunidades de negocio y servicios.
+  \item \ldots
+\end{itemize}
+\end{exampleblock}
+}
+
+

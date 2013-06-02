@@ -1,0 +1,183 @@
+\frame{
+\begin{exampleblock}{Sistema MOLDEAS}
+Consumo de Datos Enlazados Abiertos. 
+\end{exampleblock}
+}
+
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos}
+
+\begin{exampleblock}{Objetivos Generales}<1->
+ \begin{itemize}
+ \item Consumir los datos enlazados desde un lenguaje de programación.
+ \item Crear un sistema de recuperación de información.
+\end{itemize}
+\end{exampleblock}
+
+
+\begin{block}{1-Definición de los objetivos del experimento}<2->
+\begin{enumerate}
+ \item ¿Es posible implementar un sistema de recuperación de información utilizando datos enlazados?
+ \item ¿Es posible explotar las relaciones semánticas establecidas para mejorar la recuperación de información?
+ \item ¿Cuál es el mejor enfoque para la recuperación de información en los anuncios de licitación? 
+ \item ¿Cómo afectan los resultados en la implementación actual del sistema MOLDEAS?
+\end{enumerate}
+
+\end{block}
+
+}
+
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos}
+
+\begin{block}{2-Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio}
+\begin{enumerate}
+ \item Unidad experimental de este estudio será un repositorio RDF.
+\item Base documental $\mathcal{D}$ constituida por $1$ millón de anuncios de licitación.
+\item Vocabulario controlado, $\mathcal{V}$, del CPV 2008, formado por 10357 códigos/términos distintos.
+\item Cada documento $d \in \mathcal{D}$, etiquetado con al menos un código $v \in \mathcal{V}$.
+\item $11$ consultas, $Q_{str}$, proporcionadas por Euroalert.net.
+\item Las medidas de evaluación dependen del nº de códigos CPV generados por MOLDEAS.
+\end{enumerate}
+\end{block}
+
+}
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos}
+\small
+\begin{longtable}[c]{|l|p{6cm}|p{3cm}|} 
+\hline
+\textbf{$Q_{i}$} &  \textbf{Consulta de Usuario-$Q_{str}$} &  \textbf{Nº de Códigos CPV relevantes-$\#Q^{i}_{cpv}$} \\\hline
+\endhead
+$Q_1$ & ``Comprehensive overview over all environmental technologies renewable energy products'' & $463$ \\ \hline
+$Q_2$ & ``Tendering of public works: housing, hospitals, roads, housing developments, station drinking water treatment, reforestation'' & $35$ \\ \hline
+$Q_3$ & ``Prefabricated buildings'' & $7$ \\ \hline
+$Q_4$ & ``Games for children (parks swings, slides, land of play equipment in the public sphere'' & $26$ \\ \hline
+$Q_5$ & ``Vital signs monitor'' &  $277$\\ \hline
+\multicolumn{3}{|c|}{\textbf{...}} \\ \hline
+ \hline
+\end{longtable}
+
+}
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos}
+\small
+\begin{longtable}[c]{|l|p{6cm}|p{3cm}|} 
+\hline
+\textbf{$Q_{i}$} &  \textbf{Consulta de Usuario-$Q_{str}$} &  \textbf{Nº de Códigos CPV relevantes-$\#Q^{i}_{cpv}$} \\\hline
+\endhead
+$Q_6$ & ``Museum and exhibition and product launch services'' & $1$ \\ \hline
+$Q_7$ & ``Voltmeters, instruments measuring electrical quantities, Ammeters, Instruments for checking physical characteristics\ldots'' & $117$ \\ \hline
+$Q_8$ & ``Conservation Maintenance of pavements for roads, airfields, bridges, tunnels'' & $13$ \\ \hline
+$Q_9$ & ``Wood poles, Wooden sleepers, Lattice towers'' & $10$ \\ \hline
+$Q_{10}$ & ``Architectural, construction, engineering and inspection services'' &  $173$\\ \hline
+$Q_{11}$ & ``Medical practice and related services'' &  $13$\\ \hline
+ \hline
+\end{longtable}
+
+}
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos}
+\small
+\begin{longtable}[c]{|l|p{5cm}|p{3.5cm}|} 
+\hline
+\textbf{Método} &  \textbf{Descripción} &  \textbf{Tecnología} \\\hline
+\endhead
+$M^1$ & Se indexan las descripciones de los códigos CPV y proceso de búsqueda sintáctica de las consultas $Q_{i}$. & Apache Lucene y Solr \\ \hline
+$M^2$ & Se extraen una serie de códigos CPV candidatos según jerarquía. & $M^1$ + ponderación \textit{broader/ narrower} \\ \hline
+$M^3$ & \ldots según jerarquía con \textit{Spreading Activation}. & $M^1$ + ONTOSPREAD \\ \hline
+$M^4$ & \ldots según histórico de las relaciones entre códigos de los anuncios previos. & $M^1$ + Apache Mahout \\ \hline
+\hline
+\end{longtable}
+
+}
+
+ 
+ 
+ \frame{
+\frametitle{Consumo de Datos Enlazados Abiertos}
+ 
+ \begin{block}{3-Especificación de las medidas de trabajo en cuanto a la respuesta}<1->
+\begin{enumerate}
+\item Para cada consulta se recogen los códigos CPV 2008 generados.
+\item Se comparan con los indicados en las consultas $Q_{i}$.
+\item Se obtienen las medidas Precisión, \textit{Recall}, \textit{Accuracy} y \textit{Specificity} (\textit{PRAS}).
+\end{enumerate}
+
+\end{block}
+
+\begin{exampleblock}{5-Ejecución de un experimento piloto}<2->
+En primer lugar se realiza una consulta para verificar el proceso de búsqueda en cada método 
+y la obtención de medidas.
+\end{exampleblock}
+
+}
+
+ \frame{
+\frametitle{Consumo de Datos Enlazados Abiertos}
+ 
+ \begin{block}{6-Esquematización de los pasos a seguir}<1->
+\begin{enumerate}
+ \item A cada consulta $Q_{str}$, identificada como $Q_{i}$, se le aplica un método $M^{i}$, devuelve al $\#Q^{i}_{cpv}$ elementos.
+ \item Cada conjunto resultado $Q^{M^i}_{cpv}$ se compara con el conjunto esperado $Q^{i}_{cpv}$ con un \textit{script}.
+ \item Se generan los valores \textit{PRAS} para cada método $M^{i}$ y consulta de entrada $Q_{i}$.
+\end{enumerate}
+
+\end{block}
+
+ \begin{alertblock}{Otros}<1->
+\begin{enumerate}
+  \item 4-Especificación de un modelo (N/A).
+  \item 7-Determinación del tamaño muestral (ya indicado en el punto 1).
+  \item 8-Revisión de las decisiones anteriores.
+\end{enumerate}
+
+\end{alertblock}
+
+}
+
+ \frame{
+   \frametitle{Consumo de Datos Enlazados Abiertos-\linebreak Resultados Agregados ($\bar{X}$)}
+ 
+\small
+\begin{longtable}[c]{|l|c|c|c|c|} 
+\hline
+\textbf{Método} &  \textbf{Precisión} & \textbf{Recall} & \textbf{Accuracy} & \textbf{Specificity} \\\hline
+\endhead
+$M^1$ &  $0,28$ & $0,26$ & $0,99$ & $1,00$ \\ \hline
+$M^2$ &  $0,11$ & $0,11$ & $0,98$ & $0,99$   \\ \hline
+$M^3$ &  $0,23$ & $0,23$ & $0,99$ & $1,00$  \\ \hline
+$M^4$ &  $0,03$ & $0,03$ & $0,96$ & $0,98$\\ \hline
+\hline
+\end{longtable}
+
+}
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos-Resultados}
+
+\begin{block}{Valoración}
+ \begin{enumerate}
+\item El tipo y formato de una fuente de datos no es impedimento para la construcción de servicios 
+en un dominio determinado.
+\item Las relaciones semánticas de los datos se pueden explotar para recuperar información.
+\item El enfoque tradicional sintáctico, $M^1$, se comporta más cercano a las expectativas del usuario.
+ \end{enumerate}
+\end{block}
+}
+% 
+
+\frame{
+  \frametitle{Consumo de Datos Enlazados Abiertos-Conclusiones}
+
+\begin{exampleblock}{Principal Punto Clave}
+La \textbf{casuística} de un sistema de soporte a la decisión o de recuperación a la información 
+en \textbf{\eproc} es muy \textbf{compleja}, existen \textbf{muchas} \textbf{variables} de \textbf{información} que se pueden optimizar.
+\end{exampleblock}
+}
+

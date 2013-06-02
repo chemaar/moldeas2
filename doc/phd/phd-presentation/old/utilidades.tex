@@ -1,0 +1,52 @@
+%
+% utilidades.tex
+%
+% Copyright 2003, Diego Berrueta Muñoz
+%
+% Algunos comandos y entornos utilizados
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Para llamadas de atención al margen
+
+\reversemarginpar
+
+\newcommand{\attention}{%
+  \mbox{}\marginpar{\raggedleft \large\bfseries ! $\rightarrow$}%
+}
+
+\newcommand{\InlineFIXME}[1]{%
+  {\bfseries\color{red} FIXME: #1}%
+}
+
+\newcommand{\FIXME}[1]{%
+  \attention{}{\color{red}\bfseries #1}%
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Comandos específicos de este proyecto
+
+\newcommand{\FechaEntregaPFC}{Octubre 2007}
+\newcommand{\TituloPFC}{Activación de conceptos en ontologías mediante el algoritmo de \textit{Spreading Activation}}
+\newcommand{\NumeroPFC}{1072029}
+\newcommand{\AreaPFC}{LENGUAJES Y SISTEMAS INFORMÁTICOS}
+\newcommand{\AutorPFC}{Jose María Álvarez Rodríguez}
+\newcommand{\TutorPFC}{José Emilio Labra Gayo}
+
+\newcommand{\Curry}{Curry}
+\newcommand{\Zinc}{Zinc}
+\newcommand{\Prelude}{Prelude}
+
+\newcommand{\toriginal}[1]{\textit{#1}}
+
+\newcommand{\simbolo}[1]{ %
+  \textbf{\texttt{#1}} %
+}
+
+
+
+
+\input{../portada}
+

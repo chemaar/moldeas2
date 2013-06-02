@@ -1,0 +1,216 @@
+
+\frame{
+  \frametitle{Sistema MOLDEAS-Consumo}
+
+\begin{exampleblock}{Objetivos Generales}<1->
+ \begin{itemize}
+ \item Consumir los datos enlazados desde un lenguaje de programación.
+ \item Crear un sistema de recuperación de información.
+\end{itemize}
+\end{exampleblock}
+
+
+\begin{block}{1-Definición de los objetivos del experimento}<2->
+\begin{enumerate}
+ \item ¿Es posible implementar un sistema de recuperación de información utilizando datos enlazados?
+ \item ¿Es posible explotar las relaciones semánticas establecidas para mejorar la recuperación de información?
+ \item ¿Cuál es el mejor enfoque para la recuperación de información en los anuncios de licitación? 
+ \item ¿Cómo afectan los resultados en la implementación actual del sistema MOLDEAS?
+\end{enumerate}
+
+\end{block}
+
+}
+
+
+\frame{
+  \frametitle{Sistema MOLDEAS-Consumo}
+
+\begin{block}{2-Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio}<1->
+\begin{enumerate}
+\item Base documental $\mathcal{D}$ constituida por $1$ millón de anuncios de licitación.
+\item Vocabulario controlado, $\mathcal{V}$, del CPV 2008, formado por $\#\mathcal{V} = 10357$ códigos/términos distintos.
+\item Cada documento $d \in \mathcal{D}$, etiquetado con al menos un código $v \in \mathcal{V}$.
+\item 9 Clasificaciones Estándar de Productos y Servicios.
+\item Clasificación ``puente'': \textit{ProductOntology} (PO)
+\end{enumerate}
+\end{block}
+
+
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+
+\begin{block}{3-Especificación de las medidas de trabajo en cuanto a la respuesta}<1->
+\begin{enumerate}
+\item Nº de enlaces entre una PSC y el CPV 2008.
+\item Nº de enlaces entre una PSC y el CPV 2008 a través de PO.
+\item Ganancia de expresividad en términos percentuales.
+\end{enumerate}
+
+\end{block}
+
+\begin{exampleblock}{4-Ejecución de un experimento piloto}<2->
+\begin{itemize}
+ \item Sea $\mathcal{V} = \{ 1, 2, 3 \}$  y  $\mathcal{V}_{psc} = \{A, B, C, D, E\}$.
+ \item El conjunto de pares enlaces es: $\{ (A,1), (B,2), (C,1) (C,2) \}$.
+ \item Por tanto, el conjunto $\mathcal{V'}_{psc} = \{A, B, C\}$ y el \% de ganancia en expresividad será:
+\begin{align}
+\% =  \{ \langle (3+3) / 3 \rangle -1 \} * 100  = 200 - 100 = 100 
+\end{align}
+\item Nº de términos final es el doble que el inicial.
+\end{itemize}
+\end{exampleblock}
+
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+
+\begin{block}{5-Especificación de un modelo}<1->
+\begin{itemize}
+\item El nuevo vocabulario controlado $\mathcal{V'}_{psc}$, enlazado con $\mathcal{V}_{psc}$, dispone de $\#\mathcal{V'}_{psc}$ términos.
+\item La ganancia se calcula como: \begin{align}
+\% =  \{ \langle (\#\mathcal{V'}_{psc}+\#\mathcal{V}) / \#\mathcal{V} \rangle - 1 \} * 100
+\end{align}
+\end{itemize}
+\end{block}
+
+\begin{exampleblock}{6-Esquematización de los pasos a seguir}<2->
+\begin{enumerate}
+\item Extracción de consultas en SPARQL para establecer el número de enlaces entre las mismas.
+\item Procesamiento de los resultados mediante un \textit{script} para generar los resultados.
+\end{enumerate}
+\end{exampleblock}
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo}
+\begin{alertblock}{Otros}
+\begin{itemize}
+ \item 7-Determinación del tamaño muestral (ya indicado en el punto 1).
+ \item 8-Revisión de las decisiones anteriores.
+\end{itemize}
+\end{alertblock}
+}
+
+
+
+\frame{
+    \frametitle{Punto de Vista Cuantitativo-Resultados Parciales}
+\small
+\begin{longtable}[c]{|l|l|l|l|l|p{1cm}|p{1cm}|} 
+\hline
+  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real \textit{PO}  &  $\%$ máx.   \\\hline
+\endhead
+CPV 2003 	& $8323$  	& $462$		& $8312$ 	& $4.46$ 	& $80.25$	& $80.36$  \\ \hline
+CN 2012  	& $14552$	& $2390$	& $2390$ 	& $23.07$	& $23.07$	& $140.50$  \\ \hline
+CPC 2008 	& $4408$	& $4402$   	& $4403$	& $42.50$	& $42.51$ 	& $42.56$  \\ \hline
+CPA 2008 	& $5429$	& $5399$   	& $5410$	& $52.12$	& $52.23$	& $52.41$  \\ \hline
+ISIC v4  	& $766$		& $765$   	& $765$ 	& $7.38$ 	& $7.38$	& $7.39$    \\ \hline
+NAICS 2007 	& $2328$	& $2300$ 	& $2300$	& $22.20$	& $22.20$	& $22.47$  \\ \hline
+NAICS 2012 	& $2212$	& $2186$ 	& $2186$	& $21.10$	& $21.10$	& $21.35$  \\ \hline
+SITC v4 	& $4017$	& $3811$   	& $3820$	& $36.79$	& $36.88$	& $38.78$  \\ \hline
+\multicolumn{7}{|c|}{\textbf{...}} \\ \hline
+\hline
+\end{longtable}
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados Totales}
+\small
+\begin{longtable}[c]{|l|l|l|l|l|l|p{1cm}|} 
+\hline
+  \multicolumn{7}{|c|}{\textbf{Total}} \\ \hline
+  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real \textit{PO}  &  $\%$ máx.   \\\hline
+\endhead
+$\star$ & $42035$ 		& $21715$   	& $29586$	& $209.66$ 	& $285.66$	& $405.86$ \\ \hline
+\multicolumn{7}{|c|}{\textbf{Añadiendo enlaces entre CPV 2008 y \textit{Product Ontology-PO}}} \\ \hline
+\textit{PO}& $\infty$	& $10000$   	& N/A	& $96.55$	& $96.55$ 	& $\infty$  \\ \hline
+\multicolumn{7}{|c|}{\textbf{Total con vocabulario de \textit{Product Ontology}}} \\ \hline
+$\star$	 & $\infty$	& $31715$   	& 39586	& $306.21$	& $382.21$	& $\infty$ \\ \hline
+\hline
+\end{longtable}
+
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados}
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=10cm]{./imgs/pscs-enlaces}
+\caption{Gráfica de Número de Elementos y Enlaces entre las PSCs y el CPV 2008.}
+\end{figure}
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados}
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=10cm]{./imgs/pscs-ganancia}
+\caption{Gráfica de Ganancia en expresividad.}
+\end{figure}
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados}
+
+\begin{block}{Valoración}
+ \begin{enumerate}
+  \item Extensión del CPV 2008, $10357$ términos, hasta:
+ \begin{itemize}
+  \item $21715$ términos, con enlaces entre las PSCs y el CPV 2008.
+  \item $29586$ términos, con enlaces entre las PSCs y el CPV 2008 a través de \textit{PO}.
+ \end{itemize}
+  \item Se establece un:
+   \begin{itemize}
+    \item \textbf{$8.65\%$} y \textbf{$6.64\%$} (PO) de enlaces exactos.
+    \item \textbf{$91.35\%$} y \textbf{$93.36\%$} (PO) de enlaces automáticos.
+   \end{itemize}
+ \item Cifras de ganancia:
+  \begin{itemize}
+  \item Real: $209.66\%$.
+  \item Real con \textit{PO}: $285.66\%$
+  \item Máximo: $405.86\%$.
+ \end{itemize}
+  \item Los enlaces y la reconciliación de entidades se realiza bajo un umbral $\mu$ ($n$ primeros resultados normalizados).
+ \end{enumerate}
+\end{block}
+
+
+}
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Resultados}
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=11cm]{./imgs/evo-n-terminos}
+\caption{Evolución Número de Términos.}
+\label{fig:eval-n-terminos}
+\end{figure}
+
+}
+
+
+\frame{
+  \frametitle{Punto de Vista Cuantitativo-Conclusiones}
+
+\begin{exampleblock}{Puntos Clave}
+\begin{itemize}
+ \item \textbf{Aumento} del \textbf{vocabulario de entrada} del CPV 2008 con \linkeddata.
+ \item \textbf{Mejora} de la \textbf{expresividad} para la realización de consultas en SPARQL.
+ \item \textbf{Incremento} del número de \textbf{anuncios} de licitación a los que se puede \textbf{acceder}.
+ \item \textbf{Establecimiento} de una \textbf{fórmula} para el cálculo de la \textbf{ganancia} del enlazado de datos.
+\end{itemize}
+\end{exampleblock}
+}
