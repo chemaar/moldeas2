@@ -1,0 +1,284 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix moldeas:      <http://localhost/moldeas/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix moldeas-area:  <http://localhost/moldeas/area/> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+
+<http://localhost/pscs/cn/2012/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | CN 2012 "@en ;
+	dcterms:title "CN 2012"@en  ; 
+	dcterms:description "The Combined Nomenclature is comprised of the Harmonized System (HS) nomenclature with further Community subdivisions."@en  ; 
+	dcterms:source <http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=CN_2012&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC>;
+	foaf:homepage <http://purl.org/weso> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cn/2012/cn-2012.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cn/2012/cn-2012.rdf> ;
+  	void:exampleResource <http://localhost/pscs/cn/2012/resource/841810200080> ; 
+	void:exampleResource <http://localhost/pscs/cn/2012/resource/081050000080> ; 
+	void:uriRegexPattern "http://localhost/pscs/cn/2012/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+        skos:hasTopConcept <http://localhost/pscs/cn/2012/resource/410011000090> , <http://localhost/pscs/cn/2012/resource/640011000090> , <http://localhost/pscs/cn/2012/resource/860011000090> , <http://localhost/pscs/cn/2012/resource/390011000090> , <http://localhost/pscs/cn/2012/resource/060011000090> , <http://localhost/pscs/cn/2012/resource/010011000090> , <http://localhost/pscs/cn/2012/resource/930011000090> , <http://localhost/pscs/cn/2012/resource/440011000090> , <http://localhost/pscs/cn/2012/resource/940011000090> , <http://localhost/pscs/cn/2012/resource/150011000090> , <http://localhost/pscs/cn/2012/resource/680011000090> , <http://localhost/pscs/cn/2012/resource/160011000090> , <http://localhost/pscs/cn/2012/resource/250011000090> , <http://localhost/pscs/cn/2012/resource/970011000090> , <http://localhost/pscs/cn/2012/resource/710011000090> , <http://localhost/pscs/cn/2012/resource/900011000090> , <http://localhost/pscs/cn/2012/resource/720011000090> , <http://localhost/pscs/cn/2012/resource/470011000090> , <http://localhost/pscs/cn/2012/resource/840011000090> , <http://localhost/pscs/cn/2012/resource/280011000090> , <http://localhost/pscs/cn/2012/resource/500011000090> ;
+            foaf:homepage <http://localhost/moldeas/> .
+
+
+
+<http://localhost/pscs/cpa/2008/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | CPA 2008 "@en ;
+	dcterms:title "CPA 2008"@en ; 
+	dcterms:description "Clasificación de Productos por Actividades 2008."@es ; 
+	dcterms:description "Statistical Classification of Products by Activity in the European Economic Community, 2008 version."@en ; 
+	dcterms:source <http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=CPA_2008&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC>;
+	foaf:homepage <http://purl.org/weso> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpa/2008/cpa-2008.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpa/2008/cpa-2008.rdf> ;
+  	void:exampleResource <http://localhost/pscs/cpa/2008/resource/014722> ; 
+	void:exampleResource <http://localhost/pscs/cpa/2008/resource/24422> ; 
+	void:uriRegexPattern "http://localhost/pscs/cpa/2008/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+        skos:hasTopConcept <http://localhost/pscs/cpa/2008/resource/M> , <http://localhost/pscs/cpa/2008/resource/P> , <http://localhost/pscs/cpa/2008/resource/S> , <http://localhost/pscs/cpa/2008/resource/O> , <http://localhost/pscs/cpa/2008/resource/N> , <http://localhost/pscs/cpa/2008/resource/U> , <http://localhost/pscs/cpa/2008/resource/T> , <http://localhost/pscs/cpa/2008/resource/I> , <http://localhost/pscs/cpa/2008/resource/J> , <http://localhost/pscs/cpa/2008/resource/L> , <http://localhost/pscs/cpa/2008/resource/B> , <http://localhost/pscs/cpa/2008/resource/A> , <http://localhost/pscs/cpa/2008/resource/K> , <http://localhost/pscs/cpa/2008/resource/D> , <http://localhost/pscs/cpa/2008/resource/G> , <http://localhost/pscs/cpa/2008/resource/F> , <http://localhost/pscs/cpa/2008/resource/E> , <http://localhost/pscs/cpa/2008/resource/H> , <http://localhost/pscs/cpa/2008/resource/R> , <http://localhost/pscs/cpa/2008/resource/Q> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+
+
+<http://localhost/pscs/cpc/2008/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | CPC 2008 "@en ;
+	dcterms:title "CPC, version 2 (2008)"@en ; 
+	dcterms:description "Central Product Classification, version 2 (2008)"@en ; 
+	dcterms:source <http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=CPC_2&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpc/2008/cpc-2008.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpc/2008/cpc-2008.rdf> ;
+  	void:exampleResource <http://localhost/pscs/cpc/2008/resource/32136> ; 
+	void:exampleResource <http://localhost/pscs/cpc/2008/resource/2149> ; 
+	void:uriRegexPattern "http://localhost/pscs/cpc/2008/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+      skos:hasTopConcept <http://localhost/pscs/cpc/2008/resource/6> , <http://localhost/pscs/cpc/2008/resource/0> , <http://localhost/pscs/cpc/2008/resource/9> , <http://localhost/pscs/cpc/2008/resource/3> , <http://localhost/pscs/cpc/2008/resource/4> , <http://localhost/pscs/cpc/2008/resource/5> , <http://localhost/pscs/cpc/2008/resource/8> , <http://localhost/pscs/cpc/2008/resource/7> , <http://localhost/pscs/cpc/2008/resource/2> , <http://localhost/pscs/cpc/2008/resource/1> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+<http://localhost/pscs/cpv/2003/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | CPV 2003 "@en ;
+	dcterms:title "CPV 2003"@en ; 
+	dcterms:description "Common Procurement Vocabulary, 2003"@en ; 
+	dcterms:source <http://simap.europa.eu/codes-and-nomenclatures/codes-cpv/codes-cpv_en.htm> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpv/2003/cpv-2003.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpv/2003/cpv-2003.rdf> ;
+  	void:exampleResource <http://localhost/pscs/cpv/2003/resource/24151310> ; 
+	void:exampleResource <http://localhost/pscs/cpv/2003/resource/29100000> ; 
+	void:uriRegexPattern "http://localhost/pscs/cpv/2003/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+        skos:hasTopConcept <http://localhost/pscs/cpv/2003/resource/61000000> , <http://localhost/pscs/cpv/2003/resource/22000000> , <http://localhost/pscs/cpv/2003/resource/73000000> , <http://localhost/pscs/cpv/2003/resource/78000000> , <http://localhost/pscs/cpv/2003/resource/65000000> , <http://localhost/pscs/cpv/2003/resource/14000000> , <http://localhost/pscs/cpv/2003/resource/35000000> , <http://localhost/pscs/cpv/2003/resource/72000000> , <http://localhost/pscs/cpv/2003/resource/70000000> , <http://localhost/pscs/cpv/2003/resource/34000000> , <http://localhost/pscs/cpv/2003/resource/32000000> , <http://localhost/pscs/cpv/2003/resource/76000000> , <http://localhost/pscs/cpv/2003/resource/85000000> , <http://localhost/pscs/cpv/2003/resource/41000000> , <http://localhost/pscs/cpv/2003/resource/80000000> , <http://localhost/pscs/cpv/2003/resource/66000000> , <http://localhost/pscs/cpv/2003/resource/01000000> , <http://localhost/pscs/cpv/2003/resource/20000000> , <http://localhost/pscs/cpv/2003/resource/50000000> , <http://localhost/pscs/cpv/2003/resource/21000000> , <http://localhost/pscs/cpv/2003/resource/55000000> , <http://localhost/pscs/cpv/2003/resource/45000000> , <http://localhost/pscs/cpv/2003/resource/24000000> , <http://localhost/pscs/cpv/2003/resource/90000000> , <http://localhost/pscs/cpv/2003/resource/23000000> , <http://localhost/pscs/cpv/2003/resource/31000000> , <http://localhost/pscs/cpv/2003/resource/37000000> , <http://localhost/pscs/cpv/2003/resource/26000000> , <http://localhost/pscs/cpv/2003/resource/62000000> , <http://localhost/pscs/cpv/2003/resource/25000000> , <http://localhost/pscs/cpv/2003/resource/27000000> , <http://localhost/pscs/cpv/2003/resource/74000000> , <http://localhost/pscs/cpv/2003/resource/11000000> , <http://localhost/pscs/cpv/2003/resource/91000000> , <http://localhost/pscs/cpv/2003/resource/60000000> , <http://localhost/pscs/cpv/2003/resource/95000000> , <http://localhost/pscs/cpv/2003/resource/13000000> , <http://localhost/pscs/cpv/2003/resource/40000000> , <http://localhost/pscs/cpv/2003/resource/99000000> , <http://localhost/pscs/cpv/2003/resource/36000000> , <http://localhost/pscs/cpv/2003/resource/12000000> , <http://localhost/pscs/cpv/2003/resource/29000000> , <http://localhost/pscs/cpv/2003/resource/52000000> , <http://localhost/pscs/cpv/2003/resource/28000000> , <http://localhost/pscs/cpv/2003/resource/63000000> , <http://localhost/pscs/cpv/2003/resource/02000000> , <http://localhost/pscs/cpv/2003/resource/77000000> , <http://localhost/pscs/cpv/2003/resource/10000000> , <http://localhost/pscs/cpv/2003/resource/93000000> , <http://localhost/pscs/cpv/2003/resource/75000000> , <http://localhost/pscs/cpv/2003/resource/15000000> , <http://localhost/pscs/cpv/2003/resource/64000000> , <http://localhost/pscs/cpv/2003/resource/16000000> , <http://localhost/pscs/cpv/2003/resource/30000000> , <http://localhost/pscs/cpv/2003/resource/17000000> , <http://localhost/pscs/cpv/2003/resource/33000000> , <http://localhost/pscs/cpv/2003/resource/18000000> , <http://localhost/pscs/cpv/2003/resource/67000000> , <http://localhost/pscs/cpv/2003/resource/92000000> , <http://localhost/pscs/cpv/2003/resource/05000000> , <http://localhost/pscs/cpv/2003/resource/19000000> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+
+<http://localhost/pscs/cpv/2008/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | CPV 2008 "@en ;
+	dcterms:title "CPV 2008"@en ; 
+	dcterms:description "Common Procurement Vocabulary, 2008"@en ; 
+	dcterms:source <http://simap.europa.eu/news/new-cpv/cpv_2008_xls.zip> ; 
+	dcterms:source <http://simap.europa.eu/codes-and-nomenclatures/codes-cpv/codes-cpv_en.htm> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpv/2008/cpv-2008.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/cpv/2008/cpv-2008.rdf> ;
+  	void:exampleResource <http://localhost/pscs/cpv/2008/resource/42141130> ; 
+	void:exampleResource <http://localhost/pscs/cpv/2008/resource/90921000> ; 
+	void:uriRegexPattern "http://localhost/pscs/cpv/2008/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+        skos:hasTopConcept <http://localhost/pscs/cpv/2008/resource/63000000> , <http://localhost/pscs/cpv/2008/resource/76000000> , <http://localhost/pscs/cpv/2008/resource/19000000> , <http://localhost/pscs/cpv/2008/resource/79000000> , <http://localhost/pscs/cpv/2008/resource/31000000> , <http://localhost/pscs/cpv/2008/resource/16000000> , <http://localhost/pscs/cpv/2008/resource/24000000> , <http://localhost/pscs/cpv/2008/resource/41000000> , <http://localhost/pscs/cpv/2008/resource/77000000> , <http://localhost/pscs/cpv/2008/resource/70000000> , <http://localhost/pscs/cpv/2008/resource/34000000> , <http://localhost/pscs/cpv/2008/resource/39000000> , <http://localhost/pscs/cpv/2008/resource/60000000> , <http://localhost/pscs/cpv/2008/resource/45000000> , <http://localhost/pscs/cpv/2008/resource/71000000> , <http://localhost/pscs/cpv/2008/resource/55000000> , <http://localhost/pscs/cpv/2008/resource/44000000> , <http://localhost/pscs/cpv/2008/resource/38000000> , <http://localhost/pscs/cpv/2008/resource/48000000> , <http://localhost/pscs/cpv/2008/resource/03000000> , <http://localhost/pscs/cpv/2008/resource/90000000> , <http://localhost/pscs/cpv/2008/resource/15000000> , <http://localhost/pscs/cpv/2008/resource/50000000> , <http://localhost/pscs/cpv/2008/resource/92000000> , <http://localhost/pscs/cpv/2008/resource/42000000> , <http://localhost/pscs/cpv/2008/resource/66000000> , <http://localhost/pscs/cpv/2008/resource/30000000> , <http://localhost/pscs/cpv/2008/resource/64000000> , <http://localhost/pscs/cpv/2008/resource/98000000> , <http://localhost/pscs/cpv/2008/resource/22000000> , <http://localhost/pscs/cpv/2008/resource/43000000> , <http://localhost/pscs/cpv/2008/resource/33000000> , <http://localhost/pscs/cpv/2008/resource/35000000> , <http://localhost/pscs/cpv/2008/resource/80000000> , <http://localhost/pscs/cpv/2008/resource/37000000> , <http://localhost/pscs/cpv/2008/resource/14000000> , <http://localhost/pscs/cpv/2008/resource/51000000> , <http://localhost/pscs/cpv/2008/resource/75000000> , <http://localhost/pscs/cpv/2008/resource/09000000> , <http://localhost/pscs/cpv/2008/resource/32000000> , <http://localhost/pscs/cpv/2008/resource/73000000> , <http://localhost/pscs/cpv/2008/resource/65000000> , <http://localhost/pscs/cpv/2008/resource/85000000> , <http://localhost/pscs/cpv/2008/resource/72000000> , <http://localhost/pscs/cpv/2008/resource/18000000> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+
+<http://localhost/pscs/isic/v4/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | ISIC V4 "@en ;
+	dcterms:title "ISIC, Revision 4 (2008)"@en ; 
+	dcterms:description "International Standard Industrial Classification of All Economic Activities, Revision 4 (2008)"@en ; 
+	dcterms:source <http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=ISIC_4&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/isic/v4/isic-v4.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/isic/v4/isic-v4.rdf> ;
+  	void:exampleResource <http://localhost/pscs/isic/v4/resource/0162> ; 
+	void:exampleResource <http://localhost/pscs/isic/v4/resource/1101> ; 
+	void:uriRegexPattern "http://localhost/pscs/isic/v4/resource/.+" ;  
+     	void:vocabulary skos: , skos: , gr: ;
+      skos:hasTopConcept <http://localhost/pscs/isic/v4/resource/R> , <http://localhost/pscs/isic/v4/resource/S> , <http://localhost/pscs/isic/v4/resource/A> , <http://localhost/pscs/isic/v4/resource/T> , <http://localhost/pscs/isic/v4/resource/K> , <http://localhost/pscs/isic/v4/resource/J> , <http://localhost/pscs/isic/v4/resource/L> , <http://localhost/pscs/isic/v4/resource/M> , <http://localhost/pscs/isic/v4/resource/E> , <http://localhost/pscs/isic/v4/resource/F> , <http://localhost/pscs/isic/v4/resource/P> , <http://localhost/pscs/isic/v4/resource/G> , <http://localhost/pscs/isic/v4/resource/D> , <http://localhost/pscs/isic/v4/resource/I> , <http://localhost/pscs/isic/v4/resource/Q> , <http://localhost/pscs/isic/v4/resource/B> , <http://localhost/pscs/isic/v4/resource/O> , <http://localhost/pscs/isic/v4/resource/H> , <http://localhost/pscs/isic/v4/resource/N> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+<http://localhost/pscs/naics/2007/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | NAICS 2007 "@en ;
+	dcterms:title "NAICS 2007"@en ; 
+	dcterms:description "North American Industry Classification System"@en ; 
+	dcterms:source <http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2007> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/naics/2007/naics-2007.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/naics/2007/naics-2007.rdf> ;
+  	void:exampleResource <http://localhost/pscs/naics/2007/resource/331513> ; 
+	void:exampleResource <http://localhost/pscs/naics/2007/resource/53113> ; 
+	void:uriRegexPattern "http://localhost/pscs/naics/2007/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+        skos:hasTopConcept <http://localhost/pscs/naics/2007/resource/71> , <http://localhost/pscs/naics/2007/resource/72> , <http://localhost/pscs/naics/2007/resource/53> , <http://localhost/pscs/naics/2007/resource/52> , <http://localhost/pscs/naics/2007/resource/51> , <http://localhost/pscs/naics/2007/resource/54> , <http://localhost/pscs/naics/2007/resource/56> , <http://localhost/pscs/naics/2007/resource/23> , <http://localhost/pscs/naics/2007/resource/81> , <http://localhost/pscs/naics/2007/resource/55> , <http://localhost/pscs/naics/2007/resource/42> , <http://localhost/pscs/naics/2007/resource/11> , <http://localhost/pscs/naics/2007/resource/92> , <http://localhost/pscs/naics/2007/resource/21> , <http://localhost/pscs/naics/2007/resource/22> , <http://localhost/pscs/naics/2007/resource/61> , <http://localhost/pscs/naics/2007/resource/62> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+<http://localhost/pscs/naics/2012/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | NAICS 2012 "@en ;
+	dcterms:title "NAICS 2012"@en ; 
+	dcterms:description "North American Industry Classification System"@en ; 
+	dcterms:source <http://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2012> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/naics/2012/naics-2012.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/naics/2012/naics-2012.rdf> ;
+  	void:exampleResource <http://localhost/pscs/naics/2012/resource/486110> ; 
+	void:exampleResource <http://localhost/pscs/naics/2012/resource/326111> ; 
+	void:uriRegexPattern "http://localhost/pscs/naics/2012/resource/.+" ;  
+        void:vocabulary skos: , skos: , gr: ;
+      skos:hasTopConcept <http://localhost/pscs/naics/2012/resource/61> , <http://localhost/pscs/naics/2012/resource/22> , <http://localhost/pscs/naics/2012/resource/55> , <http://localhost/pscs/naics/2012/resource/23> , <http://localhost/pscs/naics/2012/resource/53> , <http://localhost/pscs/naics/2012/resource/52> , <http://localhost/pscs/naics/2012/resource/51> , <http://localhost/pscs/naics/2012/resource/42> , <http://localhost/pscs/naics/2012/resource/56> , <http://localhost/pscs/naics/2012/resource/72> , <http://localhost/pscs/naics/2012/resource/54> , <http://localhost/pscs/naics/2012/resource/45> , <http://localhost/pscs/naics/2012/resource/71> , <http://localhost/pscs/naics/2012/resource/44> , <http://localhost/pscs/naics/2012/resource/48> , <http://localhost/pscs/naics/2012/resource/92> , <http://localhost/pscs/naics/2012/resource/49> , <http://localhost/pscs/naics/2012/resource/21> , <http://localhost/pscs/naics/2012/resource/33> , <http://localhost/pscs/naics/2012/resource/81> , <http://localhost/pscs/naics/2012/resource/11> , <http://localhost/pscs/naics/2012/resource/62> , <http://localhost/pscs/naics/2012/resource/31> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+
+<http://localhost/pscs/sitc/v4/resource/ds> a void:Dataset ; 
+    rdf:type skos:ConceptScheme ;
+	rdfs:label "10ders Project | MOLDEAS-PSCS | SITC V4 "@en ;
+	dcterms:title "SITC V4"@en ; 
+	dcterms:description "Standard International Trade Classification, Revision 4"@en ; 
+	dcterms:source <http://unstats.un.org/unsd/trade/sitcrev4.htm> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+        void:dataDump <http://localhost/static/moldeas/datasets/sitc/v4/sitc-v4.ttl> ;
+        void:dataDump <http://localhost/static/moldeas/datasets/sitc/v4/sitc-v4.rdf> ;
+  	void:exampleResource <http://localhost/pscs/sitc/v4/resource/03422> ; 
+	void:exampleResource  <http://localhost/pscs/sitc/v4/resource/64141> ; 
+	void:uriRegexPattern "http://localhost/pscs/sitc/v4/resource/.+" ;  
+	void:vocabulary skos: , skos: , gr: ;
+	skos:hasTopConcept <http://localhost/pscs/sitc/v4/resource/I> , <http://localhost/pscs/sitc/v4/resource/1> , <http://localhost/pscs/sitc/v4/resource/0> , <http://localhost/pscs/sitc/v4/resource/8> , <http://localhost/pscs/sitc/v4/resource/5> , <http://localhost/pscs/sitc/v4/resource/7> , <http://localhost/pscs/sitc/v4/resource/4> , <http://localhost/pscs/sitc/v4/resource/6> , <http://localhost/pscs/sitc/v4/resource/9> , <http://localhost/pscs/sitc/v4/resource/2> , <http://localhost/pscs/sitc/v4/resource/3> ;
+      foaf:homepage <http://localhost/moldeas/> .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
