@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events xmlns="http://156.35.98.119/events" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://156.35.98.119/events events.xsd">
+	<event type="family">
+		<title>Bautizo</title>
+		<date>28/10/2006</date>
+		<start>12:00:00</start>
+		<place>Tapia de Casariego</place>
+		<description>
+			Bautizo de <xhtml:em>Pablo</xhtml:em> en <xhtml:a href="http://maps.google.com/maps" title="Tapia de Casariego">Tapia de Casariego</xhtml:a>. 
+		</description>		
+	</event>
+	<event type="master">
+		<title>Conferencia</title>
+		<date>31/10/2006</date>
+		<start>18:00:00</start>
+		<end>21:00:00</end>
+		<place>Oviedo - Euitio</place>
+		<persons>
+			<person>Fulanito de Tal y Tal</person>
+		</persons>
+		<description>
+			Conferencia inaugural del <xhtml:a href="http://www15.uniovi.es/master/ingenieriaweb/" title="MIW">MIW</xhtml:a> de la <xhtml:strong>EUITIO</xhtml:strong>.
+		</description>
+	</event>	
+</events>

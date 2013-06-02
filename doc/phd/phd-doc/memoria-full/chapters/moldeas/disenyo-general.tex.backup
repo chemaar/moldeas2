@@ -1,0 +1,102 @@
+En un sentido amplio, dado un problema y un dispositivo en el cual resolverlo, es necesario suministrar un método preciso de respuesta a la casuística 
+planteada en el problema de acuerdo al dispositivo objetivo, a tal método se denomina \textit{algoritmo}. El diseño de algoritmos\cite{Vallecillo} 
+tiene dos componentes importantes:
+
+\begin{enumerate}
+  \item El primero se refiere a la búsqueda de métodos o procedimientos, secuencias
+finitas de instrucciones adecuadas al dispositivo del cual se dispone, que permita resolver el problema.  
+\item  El segundo permite medir de alguna forma el coste (en tiempo y recursos) de consumo de un algoritmo con el fin de encontrar la
+solución, ofreciendo la posibilidad de comparar distintos algoritmos que resuelven un mismo problema.
+\end{enumerate}
+
+Una vez que se dispone de un algoritmo que funciona correctamente, es necesario
+definir criterios con el objetivo de medir su rendimiento o comportamiento. Estos criterios se centran principalmente en su 
+simplicidad y en el uso eficiente de los recursos. La sencillez es una característica sensiblemente interesante en el diseño 
+de algoritmos, facilitando su verificación, el estudio de su eficiencia y el mantenimiento. De ahí que muchas veces se priorice la simplicidad y legibilidad 
+del código frente a alternativas más crípticas y eficientes del algoritmo. Por otra parte, el uso eficiente de los recursos suele medirse en función de dos
+parámetros: el \textit{espacio}, es decir, memoria utilizada, y el \textit{tiempo}, unidades de tiempo de ejecución. En ambos casos, 
+se hace referencia a los costes que supone la búsqueda de la solución al problema planteado mediante un algoritmo, además estos dos parámetros 
+son utilizados para una posible comparación ulterior de los algoritmos entre sí.
+
+El tiempo de ejecución de un algoritmo dependerá de diversos factores como los datos de entrada que le suministremos, la calidad del código
+generado por el compilador para crear el programa objeto, la naturaleza y rapidez de las instrucciones máquina del procesador concreto que ejecute el programa, y la
+complejidad intrínseca del algoritmo.  Existen dos tipos posibles de estudio sobre el tiempo:
+
+\begin{enumerate}
+\item  Áquel que proporciona una medida teórica (a priori), consistiendo en la obtención de una función que acote 
+(inferior o superiormente) el tiempo de ejecución del algoritmo para unos valores de entrada determinados.
+\item  El qué ofrece una medida real (a posteriori), consistiendo la medición del tiempo de ejecución del algoritmo para unos valores de entrada determinados 
+y un entorno de ejecución particular.
+\end{enumerate}
+
+Ambas medidas son importantes puesto que si bien la primera nos ofrece estimaciones
+del comportamiento de los algoritmos de forma independiente del ordenador en donde serán implementados y sin necesidad de ejecutarlos, 
+la segunda representa las medidas reales del comportamiento del algoritmo. 
+
+\subsection{Consideraciones Diseño de Programas}\label{consideraciones-diseno}
+El objetivo de implementación del sistema MOLDAEAS consiste en dar soporte 
+a los distintos procesos implicados en el ciclo de vida de datos 
+enlazados, si bien algunas tareas se realizan mediante el uso 
+de ciertas herramientas, existen otras que deben ser parametrizadas e implementadas 
+para suministrar un entorno homogéneo para el manejo de la información y datos 
+provenientes de los anuncios de licitación. La separación de responsabilidades 
+entre los distintos componentes se realiza de acuerdo a su funcionalidad, de esta manera 
+es posible realizar cambios transparentes en los componentes sin que los otros sean 
+involucrados en el proceso de cambio: implementación, prueba y empaquetamiento. Por ello, 
+se han definido los interfaces de comunicación entre los mismos como un API para que 
+cualquier futuro desarrollo se apoye en este \textit{framework} para añadir nuevas 
+funcionalidades. Las claves para un diseño abierto de un API 
+coinciden en muchos sentidos con los de un lenguaje de programación \cite{Interpretes}:
+
+\begin{description}
+\item[Concisión notacional:] el API deberá proporcionar un entorno con un nivel
+de detalle adecuado: interfaces claras, simples, unificadas etc. Las posibles 
+ampliaciones sobre el \textit{framework} de \textit{SA} deben resultar sencillas
+y no suponer un problema para el programador comprender el API diseñado.
+
+\item[Ortogonalidad:] la funcionalidad del API debe proveer el mecanismo
+adecuado para combinar nuevos componentes y rechazar algunos de los ya
+presentes. Por ejemplo la adición de nuevas restricciones no debe suponer una
+recodificación del código del algoritmo.
+\item[Abstracción:] el diseño del API debe basarse en el uso de técnicas como
+los patrones de diseño e interfaces favoreciendo la abstracción del algoritmo.
+\item[Seguridad:] el algoritmo debe tener puntos obligatorios de restricciones
+para verificar por ejemplo que siempre termina aunque se añadan nuevas
+restricciones. 
+\item[Expresividad:] el API debe ser lo suficientemente ``rica'' como para que
+nuevas ampliaciones puedan ser formuladas de forma sencilla de acuerdo a los
+campos de aplicación de las técnicas de \textit{SA} y la estructura general del
+API, sin afectar al núcleo de implementación del algoritmo.
+
+\item[Extensiblidad:] el API debe basarse en técnicas de programación que
+favorezcan la adición de nuevas características y su adaptación para nuevas
+configuraciones del algoritmo
+\item[Portabilidad:] el lenguaje seleccionado para propocionar estas técnicas
+debe poseer esta característica.
+\item[Eficiencia:] en todo algoritmo esta característica es fundamental, y
+aunque el API provisto y atendiendo a las características anteriores pueda
+sobrecargar la ejecución básica del algoritmo su penalización en tiempo no es tan alta
+como para descartar los principios de diseño anteriores.
+\item[Librerías e interacción con el exterior:] la ejecución del algoritmo
+deberá ser independiente del lenguaje de ontologías utilizado, así aislamos el
+conjunto de técnicas de la fuente de conocimiento favoreciendo el uso del
+cualquier lenguaje de formalización.
+\item[Entorno:] para facilitar la depuración de las técnicas de \textit{SA} se
+proveerá un entorno gráfico en el cual poder visualizar la ejecución.
+\end{description}
+
+Además de estas principios generales para el diseño del API, hay que tener en
+cuenta: 
+
+\begin{itemize}
+  \item El entorno de ejecución puede ser una aplicación web, por lo que, se
+  deberá tener en cuenta en el diseño para que pueda fácilmente integrarse con
+  \textit{frameworks} como Spring.
+  \item La mayoría de las aplicaciones utilizando Web Semántica utilizan el
+  lenguaje Java, por lo tanto, este será el lenguaje seleccionado en su versión
+  \textit{5.0}. Es importante para mejorar la eficiencia del API el utilizar las
+  ventajas y características avanzadas de esta versión del lenguaje.
+\end{itemize}
+ 
+ Para aportar los principios de diseño al API se hará uso de los patrones de
+ diseño\cite{citeulike:115158,Alur:2001:CJP:558951} como buena técnica de programación.

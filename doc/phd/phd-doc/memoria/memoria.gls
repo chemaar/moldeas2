@@ -1,0 +1,556 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossaryentryfield{10ders}{\glsnamefont{10ders}}{Proyecto de investigación cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 con código TSI-020100-2010-919}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{A.0}}}\glsgroupskip
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossaryentryfield{A2A}{\glsnamefont{A2A}}{\textit {Administration to Administration}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3}}}%
+\glossaryentryfield{AEAT}{\glsnamefont{AEAT}}{Agencia Estatal de Administración Tributaria}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.1}}}%
+\glossaryentryfield{AIISO}{\glsnamefont{AIISO}}{\textit {Academic Institution Internal Structure Ontology}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{ANT}{\glsnamefont{ANT}}{\textit {Pure Java build tool}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}}}%
+\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.7}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2\delimN 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.3\delimN 6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{ATOM}{\glsnamefont{ATOM}}{\textit {Atom Publishing Protocol}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}\glsgroupskip
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossaryentryfield{B2B}{\glsnamefont{B2B}}{\textit {Business to Business}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3}}}%
+\glossaryentryfield{B2C}{\glsnamefont{B2C}}{\textit {Business to Client}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3}}}%
+\glossaryentryfield{BBDD}{\glsnamefont{BBDD}}{Base de Datos}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{Big Data}{\glsnamefont{Big Data}}{\textit {Data sets that grow so large that they become awkward to work with using on-hand database management tools}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{BOE}{\glsnamefont{BOE}}{BoletínOficial del Estado}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{BOPA}{\glsnamefont{BOPA}}{Boletín Oficial del Principado de Asturias}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}}}%
+\glossaryentryfield{BORME}{\glsnamefont{BORME}}{Boletín Oficial del Registro Mercantil}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{7.1}}}\glsgroupskip
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossaryentryfield{CIIU}{\glsnamefont{CIIU}}{Clasificación Industrial Internacional Uniforme}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{A.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{CN}{\glsnamefont{CN}}{\textit {Combined Nomenclature}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}}}%
+\glossaryentryfield{CODICE}{\glsnamefont{CODICE}}{Componentes y Documentos Interoperables para la Contratación Electrónica}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1}}}%
+\glossaryentryfield{COLD}{\glsnamefont{COLD}}{\textit {Consuming Linking Open Data}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{CPA}{\glsnamefont{CPA}}{Clasificación de Productos por Actividades}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}}}%
+\glossaryentryfield{CPC}{\glsnamefont{CPC}}{Clasificación Central de Productos}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}}}%
+\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1\delimR 7.3}}}%
+\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4\delimN 4.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossaryentryfield{DAML+OIL}{\glsnamefont{DAML+OIL}}{\textit {DAML+OIL Ontology}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{DAO}{\glsnamefont{DAO}}{Patrón de Diseño \textit {Data Access Object}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.4}}}%
+\glossaryentryfield{DARPA}{\glsnamefont{DARPA}}{\textit {Defense Advanced Research Projects Agency}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{DG-INFSO}{\glsnamefont{DG-INFSO}}{\textit {The Information Society and Media Directorate General}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{DG-MARKT}{\glsnamefont{DG-MARKT}}{\textit {The Internal Market and Services Directorate General}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{DG-TAXUD}{\glsnamefont{DG-TAXUD}}{\textit {Taxation and Customs Union}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{DIGIT}{\glsnamefont{DIGIT}}{\textit {Directorate-General for Informatics}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{DL}{\glsnamefont{DL}}{\textit {Description Logics}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{DOAP}{\glsnamefont{DOAP}}{\textit {Description Of A Project RDF vocabulary}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{DOUE}{\glsnamefont{DOUE}}{Diario Oficial de la Unión Europea}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1}}}%
+\glossaryentryfield{DTD}{\glsnamefont{DTD}}{\textit {Document Type Definition}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{0.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.12}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3\delimN 3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.1\delimN 8.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{A.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{B.0}}}%
+\glossaryentryfield{ebXML}{\glsnamefont{ebXML}}{\textit {Electronic Business using eXtensible Markup Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{Eclipse}{\glsnamefont{Eclipse}}{\textit {A universal toolset for development}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}}}%
+\glossaryentryfield{EEE}{\glsnamefont{EEE}}{Islandia, Liechtenstein y Noruega}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{eGovernment}{\glsnamefont{eGovernment}}{Administración Pública Electrónica}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{ePRIOR}{\glsnamefont{ePRIOR}}{\textit {electronic PRocurement Invoicing and ORdering}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{ERP}{\glsnamefont{ERP}}{\textit {Enterprise resource planning}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.3\delimN 2.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.7\delimN 2.8}}}%
+\glossaryentryfield{ETL}{\glsnamefont{ETL}}{\textit {Extract, transform and load}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.4}}}%
+\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0\delimN 1.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.6\delimR 2.8}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.1}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossaryentryfield{F2F}{\glsnamefont{F2F}}{\textit {Face to Face}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{FOAF}{\glsnamefont{FOAF}}{\textit {Friend Of A Friend RDF vocabulary}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.3}}}%
+\glossaryentryfield{FP7}{\glsnamefont{FP7}}{\textit {The Seventh Framework Programme}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{FTP}{\glsnamefont{FTP}}{\textit {File Transfer Protocol}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{5.3}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossaryentryfield{GIS}{\glsnamefont{GIS}}{Sistema de Información Geográfica}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}\glsgroupskip
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{HTTPS}{\glsnamefont{HTTPS}}{\textit {Hypertext Transfer Protocol Secure}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{C.1}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossaryentryfield{IDE}{\glsnamefont{IDE}}{\textit {Integrated Development Environment}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.2}}}%
+\glossaryentryfield{IRI}{\glsnamefont{IRI}}{\textit {Internationalized Resource Identifier}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1}}}%
+\glossaryentryfield{ISIC}{\glsnamefont{ISIC}}{\textit {International Standard Industrial Classification of All Economic Activities}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}}}%
+\glossaryentryfield{ISO}{\glsnamefont{ISO}}{\textit {International Organization for Standardization}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.5}}}\glsgroupskip
+\glsgroupheading{J}\relax \glsresetentrylist %
+\glossaryentryfield{J2EE}{\glsnamefont{J2EE}}{\textit {Java 2 Platform, Enterprise Edition}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.2}}}%
+\glossaryentryfield{JAR}{\glsnamefont{JAR}}{\textit {Java ARchive}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.4}}}%
+\glossaryentryfield{JAXB}{\glsnamefont{JAXB}}{\textit {Java Architecture for XML Binding}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{JSON}{\glsnamefont{JSON}}{\textit {JavaScript Object Notation}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimR 3.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.7}}}\glsgroupskip
+\glsgroupheading{K}\relax \glsresetentrylist %
+\glossaryentryfield{KOS}{\glsnamefont{KOS}}{\textit {Knowledge Organization Systems}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{5.2}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossaryentryfield{LDOW}{\glsnamefont{LDOW}}{\textit {Linked Data On the Web}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{LOD}{\glsnamefont{LOD}}{\textit {Linking Open Data}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{LODQ}{\glsnamefont{LODQ}}{\textit {LOD Data Quality Vocabulary}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{Lucene}{\glsnamefont{Lucene}}{\textit {Ultra-fast Search Library and Server}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{5.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.2}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossaryentryfield{Mahout}{\glsnamefont{Mahout}}{\textit {Scalable machine learning and data mining}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.2}}}%
+\glossaryentryfield{Maven}{\glsnamefont{Maven}}{\textit {Apache build manager for Java projects}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}}}%
+\glossaryentryfield{MIME}{\glsnamefont{MIME}}{\textit {Multipurpose Internet Mail Extensions}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}}}%
+\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2\delimR 6.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1\delimR 7.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.1\delimN 8.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.5}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossaryentryfield{N3}{\glsnamefont{N3}}{\textit {Notation 3 Logic}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}}}%
+\glossaryentryfield{NACE}{\glsnamefont{NACE}}{\textit {Nomenclature générale des activités économiques dans les Communautés européennes}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{NAICS}{\glsnamefont{NAICS}}{\textit {North American Industry Classification System}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}}}%
+\glossaryentryfield{NAPCS}{\glsnamefont{NAPCS}}{\textit {North American Product Classification System}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.3}}}\glsgroupskip
+\glsgroupheading{O}\relax \glsresetentrylist %
+\glossaryentryfield{OASIS}{\glsnamefont{OASIS}}{\textit {Advancing open standards for the information society}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{OG}{\glsnamefont{OG}}{\textit {Open Government}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.5}}}%
+\glossaryentryfield{OGD}{\glsnamefont{OGD}}{\textit {Open Government Data}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}}}%
+\glossaryentryfield{OIL}{\glsnamefont{OIL}}{\textit {Ontology Inference Layer}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{OKFN}{\glsnamefont{OKFN}}{\textit {Open Knowledge Foundation}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{OMG}{\glsnamefont{OMG}}{\textit {Object Management Group}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.3\delimN 3.4}}}%
+\glossaryentryfield{ONU}{\glsnamefont{ONU}}{Organización de las Naciones Unidas}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{opXML}{\glsnamefont{opXML}}{Vocabulario XML de contratos públicos del proyectos ``10ders Information Services''}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{ORM}{\glsnamefont{ORM}}{\textit {Object-Relational Mapping}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.7}}}%
+\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimR 3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossaryentryfield{PDF}{\glsnamefont{PDF}}{\textit {Portable Document Format}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{PEPPOL}{\glsnamefont{PEPPOL}}{\textit {Pan-European Public Procurement Online}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{PIB}{\glsnamefont{PIB}}{Producto Interior Bruto}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.1}}}%
+\glossaryentryfield{PIN}{\glsnamefont{PIN}}{\textit {Prior Information Notice}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.1}}}%
+\glossaryentryfield{POJO}{\glsnamefont{POJO}}{\textit {Plain Old Java Object}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.2}}}%
+\glossaryentryfield{POST}{\glsnamefont{POST}}{Petición sobre HTTP según RFC 2616}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}}}%
+\glossaryentryfield{PRODCOM}{\glsnamefont{PRODCOM}}{\textit {PRODuction COMmunautaire}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{5.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{PSI}{\glsnamefont{PSI}}{Información del Sector Público}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{Pubby}{\glsnamefont{Pubby}}{\textit {A Linked Data Frontend for SPARQL Endpoints}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}}}%
+\glossaryentryfield{PYME}{\glsnamefont{PYME}}{Pequeña y Mediana Empresa}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0\delimN 1.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.7}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossaryentryfield{RAMON}{\glsnamefont{RAMON}}{\textit {Eurostat's Metadata Server}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimR 3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1\delimN 4.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4\delimR 4.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.0\delimR 7.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{RDF Schema}{\glsnamefont{RDF Schema}}{\textit {Resource Description Framework Schema}. RDF(S) ó RDFS}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{RDF/XML}{\glsnamefont{RDF/XML}}{\textit {It is a syntax, defined by the W3C, to express (i.e. serialize) an RDF graph as an XML document}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}}}%
+\glossaryentryfield{RDFa}{\glsnamefont{RDFa}}{\textit {Bridging the Human and Data Webs}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{REEEP}{\glsnamefont{REEEP}}{\textit {Renewable Energy and Energy Efficiency Partnership}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{Refine}{\glsnamefont{Refine}}{\textit {A power tool for working with messy data, cleaning it up, transforming it from one format into another}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2\delimN 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}}}%
+\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}}}%
+\glossaryentryfield{RFC}{\glsnamefont{RFC}}{\textit {Request For Comments}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.1}}}%
+\glossaryentryfield{RIF}{\glsnamefont{RIF}}{\textit {Rule Interchange Format}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3\delimN 3.4}}}%
+\glossaryentryfield{ROLEC}{\glsnamefont{ROLEC}}{Registro Oficial de Licitadores y de Empresas Clasificadas}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.1}}}%
+\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossaryentryfield{SaaS}{\glsnamefont{SaaS}}{\textit {Software as a Service}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3}}}%
+\glossaryentryfield{SBC}{\glsnamefont{SBC}}{Sistema Basado en el Conocimiento}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{SBVR}{\glsnamefont{SBVR}}{\textit {Semantics of Business Vocabulary and Business Rules}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.3\delimN 3.4}}}%
+\glossaryentryfield{SCOR}{\glsnamefont{SCOR}}{\textit {Supply-Chain Operations Reference-Model}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{SDOW}{\glsnamefont{SDOW}}{\textit {Social Data On the Web}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{SGML}{\glsnamefont{SGML}}{\textit {Standard Generalized Markup Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{SIOC}{\glsnamefont{SIOC}}{\textit {Semantically-Interlinked Online Communities}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{SITC}{\glsnamefont{SITC}}{\textit {Standard International Trade Classification}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.2}}}%
+\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{SKOS-XL}{\glsnamefont{SKOS-XL}}{\textit {SKOS eXtension for Labels}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimN 5.2}}}%
+\glossaryentryfield{SNORQL}{\glsnamefont{SNORQL}}{\textit {A SPARQL Explorer}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.6}}}%
+\glossaryentryfield{SOA}{\glsnamefont{SOA}}{\textit {Service Oriented Architecture}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}}}%
+\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}}}%
+\glossaryentryfield{Solr}{\glsnamefont{Solr}}{\textit {Ultra-fast Search Library and Server}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{5.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.2}}}%
+\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimR 3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1\delimN 4.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6\delimN 4.7}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1\delimR 7.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{SPARUL}{\glsnamefont{SPARUL}}{\textit {SPARQL with Updates}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.9}}}%
+\glossaryentryfield{SQL}{\glsnamefont{SQL}}{\textit {Structured Query Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.3}}}%
+\glossaryentryfield{STORK}{\glsnamefont{STORK}}{\textit {Secure idenTity acrOss euRope linKed}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.8}}}%
+\glossaryentryfield{SWRL}{\glsnamefont{SWRL}}{\textit {Semantic Web Rule Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}\glsgroupskip
+\glsgroupheading{T}\relax \glsresetentrylist %
+\glossaryentryfield{TARIC}{\glsnamefont{TARIC}}{\textit {Integrated Tariff of the European Communities}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{TGSS}{\glsnamefont{TGSS}}{Tesorería General de la Seguridad Social}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.1}}}%
+\glossaryentryfield{TRIOO}{\glsnamefont{TRIOO}}{\textit {Keeping the Semantics of Data Safe and Sound into Object-Oriented Software}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.7}}}%
+\glossaryentryfield{Turtle}{\glsnamefont{Turtle}}{\textit {Terse RDF Triple Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}}}\glsgroupskip
+\glsgroupheading{U}\relax \glsresetentrylist %
+\glossaryentryfield{UBL}{\glsnamefont{UBL}}{\textit {Universal Business Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}}}%
+\glossaryentryfield{UNE}{\glsnamefont{UNE}}{Una Norma Española}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.5}}}%
+\glossaryentryfield{UNESCO}{\glsnamefont{UNESCO}}{\textit {United Nations Educational, Scientific and Cultural Organization}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}}}%
+\glossaryentryfield{UNSPSC}{\glsnamefont{UNSPSC}}{\textit {United Nations Standard Products and Services Code}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.6}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}%
+\glossaryentryfield{URL}{\glsnamefont{URL}}{\textit {Uniform Resource Locator}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{A.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{C.1}}}\glsgroupskip
+\glsgroupheading{W}\relax \glsresetentrylist %
+\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1\delimR 3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.10}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimN 5.2}\delimN 
+		\setentrycounter{section}\glsnumberformat{8.2}}}%
+\glossaryentryfield{WADL}{\glsnamefont{WADL}}{\textit {Web Application Description Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.4}}}%
+\glossaryentryfield{WCAG}{\glsnamefont{WCAG}}{\textit {Web Content Accessibility Guidelines}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.2}}}%
+\glossaryentryfield{WESO}{\glsnamefont{WESO}}{Grupo de Investigación de Web Semántica Oviedo}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{1.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{1.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{A.0}\delimN 
+		\setentrycounter{section}\glsnumberformat{B.0}}}%
+\glossaryentryfield{WIQA}{\glsnamefont{WIQA}}{\textit {Web Information Quality Assessment Framework}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{\textit {Web Services Description Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{WSML}{\glsnamefont{WSML}}{\textit {Web Service Modeling Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{WSMO}{\glsnamefont{WSMO}}{\textit {Web Service Modeling Ontology}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}\glsgroupskip
+\glsgroupheading{X}\relax \glsresetentrylist %
+\glossaryentryfield{XBRL}{\glsnamefont{XBRL}}{\textit {eXtensible Business Reporting Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.4}}}%
+\glossaryentryfield{XHTML}{\glsnamefont{XHTML}}{\textit {eXtensible HyperText Markup Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1\delimN 3.2}}}%
+\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.3\delimN 3.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4\delimN 4.5}\delimN 
+		\setentrycounter{section}\glsnumberformat{6.4}}}%
+\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{2.9}\delimN 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.4}\delimN 
+		\setentrycounter{section}\glsnumberformat{5.1\delimR 5.3}\delimN 
+		\setentrycounter{section}\glsnumberformat{7.1}}}%
+\glossaryentryfield{XP}{\glsnamefont{XP}}{\textit {Extreme programming}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{6.5}}}%
+\glossaryentryfield{XPath}{\glsnamefont{XPath}}{\textit {The XML Path Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}\delimN 
+		\setentrycounter{section}\glsnumberformat{4.5}}}%
+\glossaryentryfield{XQuery}{\glsnamefont{XQuery}}{\textit {XQuery is a standardized language for combining documents, databases, Web pages and almost anything else}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{4.5}}}%
+\glossaryentryfield{XSL}{\glsnamefont{XSL}}{\textit {Extensible Stylesheet Language}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\glossaryentryfield{XSLT}{\glsnamefont{XSLT}}{\textit {Extensible Stylesheet Language Transformations}}{\relax }{\glossaryentrynumbers{\relax 
+		\setentrycounter{section}\glsnumberformat{3.1}}}%
+\end{theglossary}\glossarypostamble

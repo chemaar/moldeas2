@@ -1,0 +1,151 @@
+@Misc{gateway,
+author = {Gateway Strategic Consultancy Services, S.L.},
+title = {{Gateway Servicios de Consultoría Estratégica}},
+year = {1998},
+note = {\url{http://gateway-scs.es/}}
+}
+
+@Misc{euroalert,
+author = {Gateway Strategic Consultancy Services, S.L.},
+title = {{Euroalert.Net. Alertas de concursos públicos y subvenciones para PYMES}},
+year = {1998},
+note = {\url{http://euroalert.net/}}
+}
+
+@Misc{exis,
+author = {NETFINGER and NETJUICE and SENDA},
+title = {{EXIS-TI Sistemas de Información y Consultoría}},
+year = {2003},
+note = {\url{http://www.exis-ti.com/}}
+}
+
+@Misc{europeanStrategy,
+author = {José Manuel Barroso and Mario Monti},
+title = {NEW STRATEGY FOR THE SINGLE MARKET. AT THE SERVICE OF EUROPE'S ECONOMY AND SOCIETY},
+month = may,
+year = {2010},
+note = {\url{http://ec.europa.eu/bepa/pdf/monti\_report\_final\_10\_05\_2010\_en.pdf}}
+}
+
+
+@Misc{10ders,
+author = {Ministerio de Industria, Turismo y Comercio and Plan Avanza2},
+title = {{10ders Information Services(código TSI-020100-2010-919)}},
+month = nov,
+year = {2010},
+note = {\url{http://rd.10ders.net/wiki/Main_Page}}
+}
+
+
+@Misc{pravia,
+author = {Plan Regional de Ciencia Tecnología e Innovación 2006-2009 del Principado de Asturias},
+title = {{PRAVIA-Plataforma de Recursos de Acceso Virtual a la Información del Sector Asegurador (código IE05-172)}},
+month = jan,
+year = {2007}
+}
+
+@Misc{prima,
+author = {Ministerio de Industria, Turismo y Comercio and Plan Avanza},
+title = {{PRIMA-Plataforma de Recursos de Información y Movilidad para el sector Asegurador (código TSI-020302-2009-17)}},
+month = aug,
+year = {2009},
+note = {\url{http://prima.morfeo-project.org/}}
+}
+
+@Misc{ezweb,
+author = {Ministerio de Industria, Turismo y Comercio},
+title = {{EzWeb (código FIT-340503-2007-2)}},
+month = aug,
+year = {2009},
+note = {\url{http://ezweb.morfeo-project.org/}}
+}
+
+
+@Misc{mymobileweb,
+author = {Ministerio de Industria, Turismo y Comercio},
+title = {{MyMobileWeb (código TSI-020400-2010-118)}},
+month = jan,
+year = {2008},
+note = {\url{http://mymobileweb.morfeo-project.org/}}
+}
+
+
+
+@Misc{ontorule,
+author = {7º Programa Marco de la Unión Europea},
+title = {{ONTORULE-ONTOlogies meet business RULEs (código 231875)}},
+month = jan,
+year = {2009},
+note = {\url{http://ontorule-project.eu}}
+}
+
+
+
+@Misc{saita,
+author = {Plan Regional de Ciencia Tecnología e Innovación 2006-2009 del Principado de Asturias},
+title = {{SAITA}},
+month = jun,
+year = {2009}
+}
+
+
+@Misc{ctic,
+author = {Fundación CTIC},
+title = {{Centro Tecnológico de las Tecnologías de la Información y Comunicaciones}},
+month = may,
+year = {2005},
+note = {\url{http://www.fundacionctic.org}}
+}
+
+@Misc{bopa-use-case,
+author = {Fundación CTIC and Universidad de Oviedo},
+title = {{Use Case: Enhancing Web Searches within the Principality of Asturias}},
+year = {2007},
+note = {\url{http://www.w3.org/2001/sw/sweo/public/UseCases/CTIC/}}
+}
+
+@TechReport{rif-core,
+  author =       {Harold Boley and Gary Hallmark and Michael Kifer and Adrian Paschke and Axel Polleres and Dave Reynolds},
+  title =        {{RIF Core Dialect}},
+  institution =  {W3C},
+  year =         {2010},
+  type = {{W3C} Recommendation},
+  note = {\url{http://www.w3.org/2005/rules/wiki/Core}}
+}
+
+@book{Hevner:2010:DRI:1859261,
+ author = {Hevner, Alan and Chatterjee, Samir},
+ title = {{Design Research in Information Systems: Theory and Practice}},
+ year = {2010},
+ isbn = {1441956522, 9781441956521},
+ edition = {1st},
+ publisher = {Springer Publishing Company, Incorporated},
+} 
+
+@Article{citeulike:775760,
+	author = "A. R. Hevner and S. T. March and J. Park and S. Ram",
+	journal = "MIS Quarterly",
+	number = "1",
+	pages = "75--105",
+	priority = "2",
+	title = "{Design Science in Information Systems Research}",
+	volume = "28",
+	year = "2004"
+}
+
+%Impacto
+
+@Misc{tweet-impact,
+author = {Gunther Eysenbach},
+title = {{Can Tweets Predict Citations? Metrics of Social Impact Based on Twitter and Correlation with Traditional Metrics of Scientific Impact}},
+year = {2011},
+note = {\url{http://www.jmir.org/2011/4/e123/}}
+}
+
+
+@Misc{tweet-impact,
+author = {Jose María Alvarez Rodríguez},
+title = {{Other research works}},
+year = {2011},
+note = {\url{http://www.josemalvarez.es/web/category/publications/research-works/}}
+}

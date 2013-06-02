@@ -1,0 +1,22 @@
+ <http://purl.org/weso/pscs/isic/v4/resource/479>
+      a       <http://purl.org/weso/pscs/ontology/PSCConcept> , 
+	gr:ProductOrServiceModel ;
+      skosxl:prefLabel
+      gr:description
+      rdfs:label "Retail trade not in stores, stalls or markets"@en , 
+	"Venta al por menor no realizada en comercios, puestos de venta o mercados"@es ;
+      dc:identifier "479" ;
+      dc:subject "479" ;
+       "Retail trade not in stores, stalls or markets"@en , "Venta al por menor no realizada en comercios, puestos de venta o mercados"@es ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/retail> , 
+	<http://www.productontology.org/id/trade> , 
+	<http://www.productontology.org/id/market> , 
+	<http://www.productontology.org/id/stall> , 
+	<http://www.productontology.org/id/store> ;
+      skos:broaderTransitive
+        <http://purl.org/weso/pscs/isic/v4/resource/47> ;
+      skos:closeMatch <http://purl.org/weso/pscs/cpv/2008/resource/55000000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55900000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/45213260> ;
+      skos:inScheme <http://purl.org/weso/pscs/isic/v4/resource/ds> .

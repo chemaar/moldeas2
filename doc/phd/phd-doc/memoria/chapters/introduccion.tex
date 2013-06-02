@@ -1,0 +1,573 @@
+Las Administraciones Públicas son uno de los mayores compradores de la Unión \gls{Europea} (UE), ya que
+sus adquisiciones en conjunto representan un $17$\%~\cite{europeanStrategy} del Producto Interior Bruto (\gls{PIB}). La tendencia se dirige a intentar 
+agilizar este gran mercado de oportunidades, que asciende a unos $2,155$ billones de euros, para 
+facilitar el acceso a las empresas, especialmente a las pequeñas y medianas empresas (\gls{PYME}s), posibilitando 
+el acceso a la información presente en los contratos públicos y permitiendo así la construcción de un entorno de mercado competitivo. Por otra parte, 
+un punto clave reside en el impulso de la transparencia y la eficiencia en los propios procesos administrativos asociados a la contratación pública.
+Esta situación ha supuesto la germinación de una voluntad en las Administraciones Públicas para tratar de simplificar 
+el proceso de contratación pública tanto desde un punto vista legal, como operativo. Las acciones de cambio vienen impulsadas desde la Unión Europea 
+a través de distintas directivas que son transpuestas en los distintos \gls{Estados} Miembros, dando soporte a estos procesos de adquisición de bienes y servicios. 
+No obstante, las oportunidades comerciales que representan estos contratos públicos están fragmentadas en 
+cientos de fuentes, en general de carácter local, representando una dilatada sucesión de anuncios de 
+licitación que no llegan a tener una difusión adecuada, lo cuál es inaudito en la era de las comunicaciones instantáneas 
+y globales. 
+
+Por otra parte, teniendo en cuenta que la información incluida en los anuncios de licitación
+tiene la consideración de Información del Sector Público (\gls{PSI}), se deben proveer los mecanismos
+necesarios de acceso a esta información para facilitar la consulta de los datos contenidos
+en los anuncios de licitación. Actualmente la corriente \opendata dentro del seno de las organizaciones e individuos en general y de las entidades públicas en particular, ha generado un entorno
+de datos abiertos en el cual deben formar parte necesariamente los contratos públicos. 
+Esta sensibilidad emergente respecto a la apertura de datos implica una necesaria relación con la 
+contratación pública debido al valor de la información que contienen, tanto para crear nuevos servicios 
+de valor añadido agregando datos de distintas fuentes, como medio de información para 
+las empresas interesadas en atender a procesos de contratación pública.
+
+%Linked Data y semantic web
+Desde otro punto de vista, el creciente uso de Internet durante los últimos años ha puesto de manifiesto un
+nuevo entorno de ejecución para las aplicaciones, utilizando como nueva
+plataforma la Web, el gran sistema distribuido. Nuevas tecnologías y paradigmas
+están emergiendo para dar soporte al desarrollo y despliegue de aplicaciones y
+servicios, así como para la publicación de datos e información. Los modelos de
+desarrollo están evolucionando hacia un estilo más colaborativo en el cual las empresas
+ofrecen su software como servicios (\textit{Software as a Service}-\gls{SaaS}), materializado a
+través del paradigma de \textit{Cloud Computing}, implementado con tecnología de
+servicios con el objetivo de que terceros puedan utilizar estos nuevos servicios y datos para
+la construcción de aplicaciones agregadas con valor añadido. 
+
+En este sentido, iniciativas como la Web Semántica~\cite{Berners-Lee2001} dentro de la nueva ``Web de Datos'' o \wode a través de modelos y
+formatos de datos de conocimiento compartido unificados, intentan elevar el
+significado de los elementos y recursos que están disponibles en la web con el
+objetivo de mejorar la integración e interoperabilidad entre aplicaciones, impulsando la implantación de este enfoque. Dentro de la iniciativa de Web
+Semántica hay que destacar principalmente dos esfuerzos: 
+\begin{enumerate}
+ \item La iniciativa \linkeddata~\cite{Berners-Lee-2006}, propone la publicación de datos
+enlazados siguiendo el modelo \gls{RDF}~\cite{rdf-syntax} para facilitar la creación de una web de
+datos en la que éstos se puedan mostrar, intercambiar y conectar a través de
+URIs. La tendencia actual de publicación de datos enlazados está marcando una
+evolución en la interoperabilidad de aplicaciones con el consiguiente efecto que
+conlleva para las relaciones \textit{Business to Business} (\gls{B2B}), \textit{Business to
+Client}(\gls{B2C}) o \textit{Administration to Administration} (\gls{A2A}). Entre los casos de éxito
+se podrían destacar: administración electrónica (iniciativa de \textit{Open Government
+Data}~\cite{8-principles}-\gls{OGD}), contratación pública electrónica de bienes y servicios (\textit{\gls{e-Procurement}}), oferta
+formacional, contextualización de aplicaciones, etc. 
+
+\item El desarrollo de lenguajes y formalismos lógicos para representar el
+conocimiento sobre un universo de discurso que permita la inferencia de nuevos
+datos a partir de los datos ya publicados. En este contexto se han reimpulsado
+el uso de técnicas de razonamiento y de sistemas basados en conocimiento, 
+como pueden ser las ontologías y los sistemas basados en reglas lógicas (Ontobroker,
+XSB, etc.) o de producción (Drools, JRules, etc.). La aplicación de estos
+sistemas está ampliamente asentada en la resolución de diversos problemas
+(diagnóstico, planificación, reglas de negocio, etc.) pero siempre utilizando un
+enfoque para la representación del conocimiento y de los datos, en muchos casos
+específico y no estandarizado, pero que con la aplicación de los principios
+de la Web Semántica se ve favorecido por un nuevo contexto de estandarización. 
+\end{enumerate}
+
+Por lo tanto, teniendo en cuenta el contexto estratégico que supone la contratación pública
+para el mercado común y la sostenibilidad económica y considerando iniciativas
+como la Web Semántica, que animan y potencian la reutilización de datos, información
+y modelos de conocimiento compartido, queda patente que la inclusión de la tecnología
+semántica en el contexto de la administración electrónica y en concreto en los
+procesos de contratación pública electrónica, mejora e impulsa este dominio con un 
+nuevo enfoque. El estudio e implantación de la semántica conlleva una mejora
+cualitativa en cuanto a la provisión de un modelo estandarizado, cooperativo y con
+nuevas capacidades, para mejorar e instrumentar este entorno desde un punto
+de vista tecnológico y realizar la visión estratégica que desde la política
+se propugna. Si se aplica el principio de evolución de las especies
+de \textit{Charles Darwin}, se diría que la semántica aplicada a la contratación pública
+supone una evolución natural a la forma de entender este proceso administrativo, favoreciendo
+su supervivencia en el nuevo contexto de la \wode.
+
+\textit{It is not the strongest of the species that survive, nor the most
+intelligent, but the ones most responsive to change.}
+
+\section{Motivación}
+La aplicación de las tecnologías semánticas e iniciativas como \opendata y
+\linkeddata, están de rigurosa actualidad, convirtiéndose en pieza clave
+para el desarrollo de nuevas aplicaciones y servicios de valor añadido,
+reutilizando datos provenientes de distintas fuentes: redes sociales, empresas,
+personas o instituciones públicas. Por otra parte, la investigación desarrollada
+en estas áreas se está materializando a través de múltiples publicaciones de
+alto valor científico, realización de conferencias internacionales, desarrollo
+de herramientas y transferencia tecnológica a empresas de distintos
+dominios, en las cuales se han de integrar fuentes de datos heterogéneas y generar
+servicios inteligentes contextualizados para los usuarios, así, se pueden 
+encontrar soluciones en dominios tan dispares como salud, control de procesos
+industriales, administración electrónica, gestión de recursos humanos, etc.
+
+En concreto, en el caso de la administración electrónica, uno de los procesos
+administrativos más influyentes por su impacto económico en la sociedad es la compra y adquisición
+de bienes y servicios, ya que impulsa la actividad económica de las empresas como proveedores
+de la Administración Pública y permite disponer nuevos servicios a los ciudadanos que, en último término, son los clientes
+y contribuyentes de la Administración. Es por ello, que la aplicación de
+las últimas tendencias de investigación y tecnológicas en este contexto se plantean
+como clave para mantener a la Administración Pública como paradigma de funcionamiento,
+organización y actualización.
+
+\subsection{Motivación Investigadora}
+La investigación en el campo de la Web Semántica se materializa a través de distintas
+líneas de estudio, que van desde la definición de modelos lógicos formales y 
+su combinación con los ya existentes, hasta actividades más orientadas a la innovación para dar un nuevo
+enfoque a la resolución de problemas subyacentes a la informática, como es la integración
+de fuentes de datos heterogéneas o gestión de la información. Este amplio espectro
+de aplicación permite iniciar actividades de investigación en múltiples líneas
+y con distinto carácter: básica, aplicada, innovadora, etc. En el caso objeto de estudio, la investigación
+realizada se centra en aplicar los principios de la Web Semántica y \linkeddata al dominio
+de la contratación pública electrónica, con el objetivo de facilitar el acceso a la información que estos
+documentos contienen. Por lo tanto, la actividad de investigación a realizar, centra su foco
+en cómo puede la semántica facilitar el acceso a la información de los anuncios
+de licitación pública. 
+
+En cualquier actividad de investigación a partir de una serie de hipótesis iniciales se intenta demostrar la validez 
+de ciertos supuestos siguiendo una metodología que permita caracterizar y cuantificar la veracidad de los principios marcados. En este sentido, la aplicación
+de semántica a los contratos públicos provee un escenario extremadamente rico para realizar la 
+experimentación necesaria que evalúe la mejora de la conjunción de la semántica como modelo
+para la gestión de la información y datos contenidos en los anuncios de licitación públicos, en contraposición
+con los actuales procesos tradicionales. En concreto, la investigación a realizar posee un objetivo
+muy específico pero de gran calado para la innovación en el ámbito de la administración pública electrónica
+y de los procesos de contratación pública.
+
+Por otra parte y en cuanto a los resultados esperados, la investigación realizada debe demostrar
+las ventajas de la semántica en este dominio, ya probada en muchos casos para la resolución de problemas en otros contextos, 
+para que de este forma se pueda promocionar el \textit{know-how} tanto verticalmente, abordando otras
+situaciones sensibles en la contratación pública, como horizontalmente en otros procesos
+administrativos. 
+
+En resumen, la investigación realizada debe proveer los resultados y mecanismos
+adecuados para crear concienciación, tanto en la comunidad científica, como en la industrial, de la bondad
+de la aplicación de la semántica al dominio de la contratación pública electrónica.
+
+\subsection{Motivación Técnica}
+Los procesos de contratación pública conllevan una serie de actividades que hacen uso
+de las más avanzadas técnicas para la gestión de la información y de datos, así como para
+el soporte a la decisión. La relevancia de la información que se maneja
+en estos procesos sumada a la trascendencia económica, implica que la tecnología que da
+soporte a todo el proceso debe asegurar la fiabilidad y corrección del mismo, impulsando
+y mejorando la cadena de valor tanto para la propia Administración como para los proveedores.
+
+En general, la Administración Pública suele ser referente tecnológico por la inversión
+en infraestructuras que realiza. Es por ello, que la aplicación de la semántica
+en este dominio debe, no sólo ser capaz de proveer las mismas capacidades para el 
+despliegue de servicios, sino mejorar la calidad de los mismos. Este reto
+tecnológico implica, en muchos casos, el desarrollo de herramientas que faciliten
+la adición de semántica aplicando un enfoque de ingeniería cuantificable. También, y
+desafortunadamente el uso de tecnología semántica implica, más veces de las deseadas, 
+la depuración de la misma, por ello dentro de esta investigación la tecnología semántica juega un papel
+relevante tanto para probar su valía en este dominio, como para mejorar y ampliar sus capacidades.
+
+\subsection{Motivación Personal}
+La carrera en investigación propone desafíos para la resolución de problemas
+de diversos ámbitos aplicando diferentes técnicas. A lo largo de mi trayectoria profesional
+en el campo de la investigación, he tenido la oportunidad de participar
+en diversas actividades en este entorno, tales como proyectos, conferencias, redacción de artículos o formación, en los cuales he podido conocer y relacionarme con personas
+y organizaciones provenientes de distintos ámbitos así, sector privado, público y académico. Cada uno 
+de ellos, con distintos objetivos y perfiles, han contribuido al enriquecimiento de mi propia experiencia, tanto
+a nivel personal, como evidentemente profesional, el cual queda materializado en la realización
+de esta tesis, fiel reflejo de la contribución de la misma, ya que afirmar que se trata de un trabajo personal aislado sería
+entender al individuo como un ente apartado del mundo, lo que implicaría negar el factor
+social inherente al mismo. Por ello, a nivel personal, la realización de la tesis constituye
+un punto de inflexión en mi carrera de investigación, supone no sólo un compendio de mi historia
+personal hasta el momento presente, sino también y con seguridad un elemento clave para mi devenir profesional y personal
+tanto a corto, como a medio y largo plazo. 
+
+Por otra parte, se plantean también dos retos: 1) investigador, que reside en el estudio,
+análisis, aplicación y prueba de la validez de uso de 
+las tecnologías semánticas en el campo de la contratación pública electrónica y 2) tecnológico, al aplicar
+conceptos de ingeniería a la resolución de un problema, mediante una serie de métodos y herramientas
+cuantificables permitiendo así desarrollar tanto la motivación intrínseca (desafío de resolver
+un problema concreto) como extrínseca (difusión del conocimiento y solución generadas).
+
+Finalmente, actúa como incentivo la obtención del propio título de Doctor, que supone
+la mayor distinción a nivel académico y formativo que se puede lograr en el actual sistema
+de educación, que se trasluce igualmente en gran satisfacción y orgullo no sólo a nivel personal, familiar y social sino también 
+profesional. 
+
+\subsection{El proyecto \textit{10ders Information Services}}\label{10ders}
+\textit{\gls{10ders} Information Services}~\cite{10ders} es un proyecto de investigación
+cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 
+con código TSI-020100-2010-919, liderado por Gateway S.C.S.~\cite{gateway} (creadores de la plataforma
+de alertas de anuncios de licitación Euroalert.net~\cite{euroalert}) y desarrollado en colaboración con la empresa Exis TI~\cite{exis} y el equipo
+de investigación \gls{WESO} de la Universidad de Oviedo. 
+
+El objetivo principal de este proyecto es el siguiente:
+
+\textit{Construir una plataforma pan-europea y unificada que agregue todas
+las licitaciones públicas de la Unión \gls{Europea} con el fin de diseñar productos y
+servicios de información baratos y accesibles que ayuden a las \gls{PYME} a
+ser más competitivas en este mercado.}
+
+De la misma forma, este objetivo se desarrolla dentro de un proceso de ingeniería
+y tecnología cuya meta es:
+
+\textit{Diseñar una arquitectura escalable capaz de localizar e interoperar con miles
+de fuentes de información públicas completamente heterogéneas para agregar
+la información de los cientos de miles de anuncios de licitación publicados
+diariamente en la Unión Europea en múltiples idiomas y culturas, con el fin de
+comprender y extraer conocimiento para el diseño de nuevos productos de
+información para PYMES.}
+
+Teniendo en cuenta este objetivo y el entorno tecnológico predefinido, los siguientes
+problemas que atañen a la contratación pública deben ser abordados y resueltos con la
+aplicación de nuevos métodos.
+
+\begin{description}
+ \item  [Dispersión de la información.] Los anuncios de licitación se difunden en multitud de fuentes
+públicas de ámbito europeo, nacional, regional y local. Adicionalmente, las licitaciones de menor
+valor correspondientes a procedimientos con publicidad restringida y que suponen una larga
+serie de oportunidades comerciales, se publican en los perfiles del contratante de cada
+entidad, agencia o autoridad pública. Conseguir el diseño de un sistema eficiente de rastreo y
+monitorización para miles (cifra estimada) de fuentes de información, capaz de detectar las
+nuevas oportunidades publicadas diariamente, y que además pueda agregar nuevas fuentes a
+medida que sean descubiertas, constituye el primer problema tecnológico.
+
+\item [Mismo anuncio en más de una fuente.] Dependiendo de la diferente normativa legal local,
+regional o nacional, el mismo anuncio de licitación se publica en más de una fuente al
+mismo tiempo. Como dificultad adicional, lo más habitual es que no se utilice ningún tipo de
+código o referencia que identifique el anuncio de forma coherente entre las diferentes
+fuentes. En ocasiones, entre los datos suministrados por cada una de las fuentes existirá más
+detalle en determinados aspectos del mismo anuncio de licitación; así por ejemplo, una fuente
+puede disponer de mejores datos sobre la autoridad contratante, mientras que otra puede que los suministre
+más completos sobre el objeto del contrato. En ese contexto, existe un gran interés en poder
+identificar de forma algorítmica qué datos provenientes de distintas fuentes se refieren al
+mismo anuncio, y al mismo tiempo ser capaces de utilizar los de mayor calidad en cada caso,
+no sólo para evitar tener información duplicada, sino para disponer de la calidad más elevada posible
+en los datos a explotar, agregando la mejor información existente en cada publicación.
+
+\item [Heterogeneidad de los formatos de los anuncios.] Aunque los datos deben ser públicos, no
+existe un formato de anuncio de licitación unificado, ni tan siquiera un número limitado de
+posibilidades. Descargar y procesar la información de cada fuente para que sea utilizable de
+forma agregada, supone resolver diversos problemas complejos para interpretar la información
+estructurada o no, de los anuncios y extraer datos que permitan
+homogeneizar todas estas fuentes. Además los datos disponibles y su formato varían a lo largo
+del tiempo, ya que ninguna de las fuentes públicas ofrece una garantía de estabilidad o
+compatibilidad futura de los formatos utilizados para la publicación.
+
+\item [Almacenamiento.] La cantidad de información que deberá procesar el sistema (solo el Diario
+Oficial de la Unión Europea-\gls{DOUE} supone más de $20,000$ documentos cada día) hace que sea necesario resolver la forma en que
+deba almacenarse para que pueda explotarse de forma eficiente. El sistema de
+almacenamiento diseñado, tiene el reto adicional de ser escalable para incluir nuevas
+fuentes de información.
+
+\item [Diversidad de formatos de explotación.] Un almacén de información unificado con los
+anuncios de compras públicas ofrece múltiples posibilidades de explotación en diferentes
+productos, algunos de los cuales surgirán para responder a necesidades identificadas mucho
+después de cerrar el diseño del sistema. El último gran problema tecnológico es diseñar la
+arquitectura, en la que puedan convivir múltiples subconjuntos de información optimizados
+para requisitos de explotación diversos. En el supuesto más extremo, determinados casos de
+minería de datos estarán interesados en explotar aquellos datos que no tienen utilidad al margen de ese
+caso concreto, luego la arquitectura debe reducir la barrera del re-procesado en tiempo real de
+la información disponible, para extraer datos adiciones sin penalizar con ello otros servicios en
+explotación.
+
+\item [Multiling\"{u}ismo y multiculturalidad.] Como reto añadido se advierte que los documentos de
+licitación pueden publicarse en una o varias de las $23$ lenguas oficiales de la Unión Europea.
+Adicionalmente cada país, en ocasiones utiliza otras lenguas también oficiales en sus respectivos territorios. Todos
+los algoritmos y sistemas que se incorporen a la arquitectura, deberán procesar, agregar e
+interpretar información que estará escrita en un número elevado de lenguas, que además
+estará expresada incorporando particularidades culturales que van desde la moneda, hasta el
+sistema impositivo pasando por la forma en que se codifican las direcciones postales.
+Suplementariamente, cuando el mismo anuncio se publica en más de un idioma, no siempre bastará
+con centrarse en uno de los idiomas, sino que en ocasiones habrá que analizar todos y cada uno de ellos
+utilizando las partes con datos de mayor calidad obtenidos entre las distintas versiones del mismo
+documento.
+\end{description}
+
+Una vez contextualizado el proyecto ``10ders Information Services'', las actividades en las que 
+participa la Universidad de Oviedo, se enclavan en la aplicación de las tecnologías semánticas
+e iniciativas como \linkeddata, añadiendo una capa de conocimiento basada en semántica para proporcionar
+una visión de los datos que sea compatible con los principios y directrices de las 
+actuales corrientes de \opendata y \linkeddata. Con ello se pretende dar respuesta a los retos
+que presenta la contratación pública a nivel europeo, y como se ha reseñado en los puntos anteriores las tecnologías
+basadas en semántica, aportan una solución coherente y sostenible a la identificación y gestión de la información 
+(\textbf{Dispersión de la información} y \textbf{Mismo anuncio en más de una fuente}) mediante modelos de datos y formatos
+compartidos y consensuados (\textbf{Heterogeneidad de los formatos de los anuncios} y \textbf{Diversidad de formatos de explotación}) en un entorno
+intrínsecamente para dar soporte a la internacionalización y acceso ubicuo a la información de forma
+contextualizada (\textbf{Multilingüismo y multiculturalidad}).
+
+\section{Planteamiento y Definición Inicial del Problema}
+Una vez que se ha repasado y presentado en las anteriores secciones una introducción a la casuística de la contratación
+pública y tecnología semántica, se han vislumbrado los distintos orígenes de la motivación y activado el contexto
+de ejecución dentro del proyecto ``10ders Information Services'', es el momento adecuado para plantear
+el problema a resolver y definir la hipótesis de partida objeto de estudio en esta tesis y de redacción
+en este documento.
+
+Se parte de un dominio en el cual la publicación de la información de forma accesible, multiformato, multicanal, multiling\"{u}e, etc., 
+resulta clave para facilitar las oportunidades de participación en los procesos de contratación pública y favorecer la publicidad
+de los anuncios de licitación mejorando la eficiencia de la propia Administración al generar un entorno
+competitivo. Por otra parte, la iniciativa de la Web Semántica y una parte de su realización como es el enfoque
+de \linkeddata, proporciona la base para el modelado de datos e información de forma estándar y consensuada. Finalmente, el tercer
+componente a considerar reside en la tendencia actual de apertura de datos por parte de las instituciones públicas, gracias
+a la sensibilización generada por el movimiento de \opendata. A partir de la conjugación de estos tres puntos clave se formula
+la siguiente hipótesis, vertebradora de nuestra investigación.
+
+\begin{Frame}
+\textbf{Es posible mejorar el acceso a la información contenida en los anuncios de licitación de 
+las distintas instituciones públicas europeas, tanto en términos cuantitativos como cualitativos, mediante métodos semánticos basados 
+en aplicar y cumplir los principios de la iniciativa \linkeddata y de la misma forma mantener y favorecer
+los principios de la corriente \opendata.}
+\end{Frame}
+
+
+\section{Objetivos Científico/Técnicos}\label{objetivos}
+La cooperación de las iniciativas basadas en semántica como \linkeddata, unido al movimiento emergente
+de \opendata en el contexto de la licitación pública, presenta una serie de beneficios que permiten
+dar respuesta a problemas de gran calado que dificultan el despegue del mercado económico común. El estudio 
+de la aplicación de la semántica en este contexto, junto con el despliegue tecnológico que soporte
+las capacidades necesarias que se han subrayado dentro del proyecto ``10ders Information Services'', se
+materializa en los siguientes objetivos científico-técnicos:
+
+\begin{enumerate}
+\item Estudiar, analizar y valorar las capacidades actuales del dominio de la contratación pública.  %1
+\item Estudiar, analizar y valorar las corrientes de \opendata y Web Semántica, más en concreto \linkeddata, para su
+aplicación en el dominio de la contratación pública.%2
+ \item Definir los métodos basados en semántica para producir, publicar, consumir y validar 
+la información de los anuncios de licitación siguiendo las directrices de \opendata y \linkeddata. %3
+ \item Definir los algoritmos y procesos para dar soporte a la aplicación de los métodos basados en semántica 
+a la información de los anuncios de licitación. %4
+\item Implementar y reutilizar los componentes software necesarios para dar soporte a los métodos semánticos.%5
+\item Promover el uso de estándares y la reutilización de información y modelos de conocimiento compartido.%6
+\item Aplicar los métodos semánticos definidos al contexto de los anuncios de licitación pública.%7
+\item Establecer un conjunto de prueba y validación de los componentes implementados para verificar la corrección, 
+ validez y rendimiento de los métodos propuestos.%8
+\item Difundir, formar y transferir la tecnología y conocimiento generado tanto a las comunidades científicas como industriales.%9
+\end{enumerate}
+
+Cada uno de estos objetivos se lleva a cabo en el conjunto de tesis y se presentan a lo largo de los capítulos que 
+se desarrollan en este documento, según se desglosa en la Tabla~\ref{tabla:objetivos}.
+
+
+\begin{longtable}[2]{|p{4cm}|p{8cm}|} 
+
+\hline
+
+  \textbf{Objetivo(s) } &  \textbf{Capítulo(s) } \\\hline
+  
+\endhead
+  1 & Estudio, análisis y valoración  de la panorámica de la contratación pública en el Capítulo~\ref{capitulo:eprocurement}. \\ \hline
+  2 & Estudio, análisis y valoración de la panorámica de la Web Semántica y \linkeddata en el Capítulo~\ref{capitulo:semantica}. \\ \hline
+  3 y 4 & Definición de los métodos semánticos necesarios para dar soporte a la contratación pública mediante \linkeddata en los 
+  Capítulos~\ref{capitulo:metodos} y~\ref{capitulo:metodos-separados}. \\ \hline
+  5 y 6 & Implementación y reutilización de los componentes software necesarios para aplicar los puntos anteriores en el Capítulo~\ref{capitulo:moldeas}.\\ \hline
+  7 y 8& Experimentación y validación de los métodos semánticos aplicados al contexto de la licitación pública en los Capítulos~\ref{capitulo:validacion} y~\ref{capitulo:conclusiones}. \\ \hline
+  9 & Difusión y publicaciones realizadas tras el proceso de estudio, investigación y desarrollo en el Apéndice~\ref{capitulo:publicaciones}. \\ \hline
+
+\hline
+
+ \caption{Alineación de Objetivos y Capítulos.}
+  \label{tabla:objetivos}
+\end{longtable}
+
+
+\section{Metodología de la Investigación}
+La realización de la tesis debe plantearse como un proceso de trabajo, evolución y realimentación, en el cual
+a partir de una hipótesis inicial, unos objetivos concretos y un plan de trabajo se puedan alcanzar 
+los objetivos planteados de una forma sistemática. Con el objetivo de facilitar este proceso y asegurar la calidad del trabajo, 
+es conveniente plantear el siguiente esquema para identificar correctamente el ``Problema a Resolver''.
+
+\begin{itemize}
+    \item ¿Por qué no se ha resuelto todavía?
+    \item ¿Cómo se puede resolver?, ¿Resolución total, parcial, etc.?
+    \item ¿Qué enfoques se pueden utilizar para el problema propuesto?, ¿Se puede mejorar alguno?
+    \item ¿Cuáles son los factores críticos de éxito?, ¿Se pueden minimizar riesgos?, ¿Cuál sería el caso peor?
+    \item ¿Es un problema actual?
+    \item ¿Cuál sería el impacto de su resolución?
+    \item ¿Cuáles son los escenarios relevantes para su aplicación posterior? 
+\end{itemize}
+
+Teniendo presentes las posibles respuestas a estas preguntas cabe definir claramente el proyecto de tesis describiendo pormenorizadamente
+el problema o problemas a resolver, por ello es conveniente fijar un enfoque general, repasar el trabajo realizado y proponer
+una planificación para la consecución en tiempo y esfuerzo de los objetivos prefijados. En este sentido, existen 
+métodos~\cite{Hevner:2010:DRI:1859261} para dar soporte a la formulación, evaluación y validación del problema.
+
+\begin{description}
+ \item [\textit{Constructs}.] Proveen lenguaje, terminología y espacio, en la que un problema es definido y explicado.
+ \item [\textit{Models}.] Cubren los hechos y conceptos en un dominio de interés o tipo de situaciones. Usan \textit{Constructs} 
+  como lenguaje de descripción del espacio del problema.
+ \item [\textit{Methods}.] Describen procesos y guían a los usuarios sobre cómo identificar soluciones aplicables a un problema investigación. 
+  Abarcan desde la parte teórica de algoritmos matemáticos a su realización. Desarrollo de una metodología, técnica o algoritmo.
+ \item [\textit{Implementations}.] Implementan los anteriores con el objeto de demostrar su viabilidad. Implementaciones de referencia.
+\end{description}
+
+Como resultado de su aplicación se puede, por ejemplo, generar una nueva área de investigación, desarrollar un \textit{framework} de trabajo, 
+resolver problemas estancados, explorar minuciosamente un área, refutar los resultados actuales, crear nuevas metodologías o 
+algoritmos más genéricos. 
+
+Esta metodología de trabajo sólo pretende ser una pequeña guía para centrar los esfuerzos y 
+economizar el tiempo de desarrollo de la tesis. Las tareas aquí mencionadas serán 
+responsabilidades tanto del Director de la tesis como del Doctorando. El objetivo final, será obtener un 
+resultado relevante para la comunidad científica que pueda ser proyectado posteriormente 
+en un entorno industrial.
+
+\subsection{Plan de Trabajo}
+El plan de trabajo que da soporte a la realización de la investigación, se divide en las siguientes fases:
+\begin{enumerate}
+ \item Trabajo de Investigación, resumen y evaluación de la investigación realizada identificando problemas, métodos y propuesta de tema objeto
+de estudio. El resultado de este trabajo se materializa en:
+  \begin{itemize}
+   \item Entrega del Trabajo de Investigación en el Departamento de Informática y obtención del Diploma de Estudios Avanzados.
+   \item Realización, al menos, de dos publicaciones en congresos. En este sentido, se debe adecuar el lugar de publicación al 
+    avance del trabajo realizado. Se fijan como lugares objetivos: \textit{PhD Symposium}, \textit{workshops} o conferencias internacionales 
+    de un nivel asequible. El objetivo principal será obtener realimentación de la línea de investigación marcada.
+  \item El tiempo para cubrir esta primera etapa será de doce meses.
+  \end{itemize}
+\item Elaboración y evaluación de la solución propuesta. En esta etapa, se deben resolver las cuestiones principales de la tesis. 
+  Encontrar posibles soluciones, formulación, evaluación y validación. El resultado de este trabajo se materializa en:
+ \begin{itemize}
+  \item Documento con la definición formal, evaluación y validación.
+  \item Realización, al menos, de dos publicaciones en congresos o revistas (JCR) de carácter y prestigio internacional. 
+  Retroalimentación de  expertos: colaboración en listas de correos, proyectos, etc.
+  \item El tiempo para cubrir esta segunda etapa será de doce meses.
+ \end{itemize}
+  \item Escritura del documento de tesis. Finalización, redacción de toda la documentación necesaria.
+  El resultado de este trabajo se materializa en:
+  \begin{itemize}
+    \item Documento final de la tesis para la obtención del título de Doctor.
+   \item Realización, al menos, de dos publicaciones en congresos de carácter y prestigio internacional y dos revistas (JCR).  
+   \item Realimentación de expertos: colaboración en listas de correos, proyectos, etc. 
+   \item El tiempo para cubrir esta última etapa será de doce meses.
+  \end{itemize}
+
+\end{enumerate}
+
+Este proceso de elaboración de la tesis es ideal, y ha sido cubierto teniendo en cuenta
+las fluctuaciones habituales procedentes del ejercicio de otras tareas. Para minimizar
+los retrasos, se ha establecido un método de monitorización consistente en revisiones periódicas entre el Director y el Doctorando. 
+
+\subsection{Metodología de Trabajo}
+En esta sección se presenta un resumen de la metodología de trabajo que se ha llevado a cabo durante la duración 
+del trabajo en el proceso para la consecución de la tesis. Para alcanzar los objetivos científico-técnicos planteados, se han definido
+tareas de ``investigación y prototipado'' y otras de carácter transversal que cubren las necesidades generales de la 
+realización de la tesis, como pueden ser la ejecución de pruebas o la redacción de documentación y publicaciones.
+
+El estudio realizado en cuanto a contratación pública, como proceso administrativo y dentro del marco de la administración
+electrónica, así como la panorámica de uso de la Web Semántica, \linkeddata y \opendata afectan de forma crucial
+en las tareas propias de ``investigación y prototipado'', ya que se produce un proceso de realimentación que permite
+acotar las referencias a consultar y focalizar el proceso de investigación. Esto conlleva que aquellas tareas
+propias de la ingeniería, sirvan como retroalimentación para el estudio realizado en las distintas líneas
+de investigación. De esta forma, la validación y las pruebas sirven para definir y realimentar los activos
+experimentales de los componentes de software.
+
+La investigación sigue un modelo diferente a los clásicos modelos de ciclo de vida de ingeniería de software,
+ más orientado al problema científico a resolver. Con ello, se realiza un enfoque de ``investigación y experimentación concurrente'', 
+en el que las tareas de investigación y experimentación se realizan en paralelo obteniendo 
+así un ciclo de vida en ``espiral'', que se adapta mejor al dinamismo de la investigación. De esta forma se sientan las bases para un modelo
+de estudio y desarrollo con realimentación continua de la experimentación, se orienta a la consecución de investigación y prototipos iterativos.
+
+En contraste con las aproximaciones donde los proveedores de software tradicionales evalúan el resultado del proyecto durante la fase final del mismo,
+se realiza una aproximación de ingeniería concurrente dónde la investigación, el prototipado de software, 
+la experimentación y la validación se realizan en paralelo. De esta manera, las actividades de investigación reciben realimentación de su
+relevancia en una fase temprana de la ejecución.
+
+Finalmente, el \textit{software} realizado durante la tesis se desarrolla mediante un modelo basado en comunidad
+de software libre, siendo el que mejor se adapta para obtener una
+colaboración y coordinación eficiente de las diferentes partes involucradas en la ejecución
+del proceso: validación por parte del Director, publicación de resultados, etc.
+ Este modelo es fácil de gestionar y permite incorporar nuevos investigadores y contribuciones 
+externas sin esfuerzo. Para dar soporte a este modelo se usa la infraestructura proporcionada por Google Code, adicionalmente, 
+se emplean otras herramientas de software libre disponibles como:
+\begin{itemize}
+ \item Herramientas de desarrollo software: \gls{Eclipse} IDE y \textit{plugins}, lenguajes de
+programación: Java, Python, etc.
+ \item Herramientas de razonamiento y distribución: razonadores como Pellet, motores de
+inferencia como Drools, Prolog, Apache Hadoop, Apache \gls{Mahout}, etc.
+\item Herramientas de integración de software: \gls{ANT}, \gls{Maven}, Continuum, etc.
+ \item Herramientas de edición de documentos: Open-Office y LaTeX.
+\item Otras herramientas: Google \gls{Refine}, Protégé, \gls{SNORQL}, \gls{Pubby}, etc.
+\end{itemize}
+
+\section{El Camino hacia la Tesis}
+En el verano del año 2002 tras superar el primer curso en la Escuela de Ingeniería Técnica Informática de Oviedo
+y adquirir los primeros conocimientos de programación, algorítmica y matemáticas aplicados a la informática
+decidí, \textit{motu proprio}, introducirme en el mundo de Internet. Recuerdo, el portal de \textit{Geocities} en el 
+cual se proporcionaba una herramienta tipo \textit{Microsoft Front Page}, para la creación de sencillas páginas
+web, incluyendo formularios, encuestas, etc., en aquel momento, aunque no entendía el código \gls{HTML} ni la forma de publicar páginas
+web, cree mi primera página, que incluía con una encuesta con una votación sobre los participantes de un programa
+de talentos, que en ese momento se emitía en televisión. Una vez concluida la edición de la página, cuando pulse el botón ``Publicar'' 
+rápidamente avisé a mi hermana para mostrarle, orgulloso, que mis conocimientos estaban en aumento, 
+sin embargo su reacción no fue ni mucho menos la esperada, con un gesto que denotaba incredulidad y asombro comentó: ``¿qué es esto?''. 
+Esta anécdota que suele recordar cada cierto tiempo, o más bien cuando le muestro algo nuevo que he hecho, me recuerda 
+la evolución que he experimentado en el transcurso de estos últimos años en el campo de la informática y de la tecnología 
+web en concreto.
+
+En el camino hacia la Tesis, existe otro punto de inflexión que tiene lugar en el invierno del año 2004 tras finalizar y 
+obtener el título de Ingeniero Técnico en Informática de Sistemas, cuando surgió la posibilidad
+de formar parte de un nuevo equipo multidisciplinar, en el cual se iba a iniciar actividad de investigación en el área
+de Web Semántica. Este equipo comandado por expertos de la Universidad de Oviedo como José Emilio Labra, Enrique Del Teso (Filología),
+ Guillermo Lorenzo (Filología) o Roger Bosch (Filosofía) y ubicado en la Fundación CTIC bajo la 
+supervisión de Antonio Campos, comenzó su andadura con la tecnología semántica para desarrollar un sistema de búsqueda para
+el Boletín Oficial del Principado de Asturias (\gls{BOPA}). Con aquel equipo, con el cual compartí casi 5 años y formado
+por Diego Berrueta, Luis Polo, Emilio Rubiera, Manuel Cañon e Iván Frade se desarrolló un buscador ``semántico''~\cite{bopaEstonia} para
+las disposiciones que se publicaban en el BOPA. Se basada en la utilización en una técnica de ``Concept Expansion'', utilizando
+ontologías que después se transformaba a una consulta en \textit{Apache Lucene}, los resultados no pudieron ser mejores y fue un gran éxito a nivel
+estratégico, de tal forma que actualmente todavía está en producción (la parte de búsqueda sintáctica) en la Administración del Principado de 
+Asturias y, siendo seleccionado como un caso de uso~\cite{bopa-use-case} por el \gls{W3C}. 
+
+Al presente valorando y analizando el desarrollo de aquel proyecto en el que se abordaron varios problemas, tales como:\textit{screen scrapping} de los datos de las disposiciones, reconciliación de entidades, transformación de clasificaciones de productos o \textit{mapeo} de palabras a conceptos, 
+que atañen hoy al mundo de la Web Semántica y de la iniciativa \linkeddata y también casi accidentalmente, se proporcionaron 
+servicios como suscripción \gls{RSS} a un consulta, navegación gráfica sobre las ontologías de dominio, búsqueda contextualizada por varios criterios
+y múltiples formatos para visualizar la información de las disposiciones (\gls{HTML} y \gls{RDF}). Hoy en día este proyecto estaría
+de actualidad en cualquier Administración, probablemente bajo un nombre tipo: ``Portal multicanal de \opendata y \linkeddata para el acceso a las disposiciones
+del boletín x'', la cuestión reside en que de una manera intuitiva, se desarrolló investigación y tecnología a la cual en nuestros días
+se le designa con un nombre concreto y que además se puede comercializar. Este antecedente simplemente trata de revelar la evolución 
+que en este área se ha producido. 
+
+Durante los siguientes años, seguí mi andadura en CTIC~\cite{ctic} participando en proyectos de investigación relacionados 
+siempre con semántica y sobretodo con servicios web, en los cuales me gustaría destacar la actividad desarrollada 
+en el proyecto PRAVIA~\cite{pravia} y su sucesor a nivel nacional el proyecto PRIMA~\cite{prima}, en ambos casos se trataba de utilizar servicios web semánticos para facilitar la interacción con los proveedores de servicios, en el sector 
+asegurador, si bien se consiguieron realizar distintos prototipos, la gran lección aprendida fue
+la relativa a la notable complejidad de esta iniciativa, que por entonces, y probablemente de momento no se puede resolver de forma
+sencilla. Este trabajo me facilitó la posibilidad de participar en otros proyectos como EzWeb~\cite{ezweb}, en la parte de recomendación
+y descubrimiento de servicios, MyMobileWeb~\cite{mymobileweb}, adición de semántica para gestionar el contexto en 
+aplicaciones móviles, SAITA~\cite{saita}, creación de una pasarela \gls{REST}-\gls{SOAP}, etc. Es en esta época cuando surge mi trabajo de investigación,
+ cuyo tema principal era la interoperabilidad e integración en arquitecturas orientadas a servicios usando tecnologías semánticas. 
+Finalmente, en mi última etapa en CTIC participé en el proyecto europeo ONTORULE~\cite{ontorule}, en el cual realicé actividades 
+relacionadas con la gestión del proyecto y desde el punto de vista de la investigación, con la esfera de las reglas de negocio y ontologías, 
+específicamente en tareas relacionadas con \gls{RIF}~\cite{rif-core}(\textit{Rule Interchange Format}).
+
+\subsection{Elaboración de la Tesis en el contexto del equipo de investigación WESO}
+Desde noviembre del año 2010 y como miembro del equipo de investigación de Web Semántica Oviedo dirigido por José 
+Emilio Labra Gayo se disfruta de un entorno dinámico, colaborativo y flexible para la realización de trabajos 
+de investigación e innovación mediante la realización de tareas y actividades como participación en proyectos, 
+viajes, redacción de artículos, asistencia a conferencias, etc. 
+
+La metodología de trabajo utilizada en este equipo favorece la interacción entre las personas y 
+el impulso de la investigación para conseguir resultados tanto desde punto de vista cualitativo 
+como cuantitativo. 
+
+Mi llegada al equipo \gls{WESO} ha supuesto tanto un nuevo reto como un impulso a mi carrera profesional e investigadora 
+en la cual he podido perfeccionar y aumentar mi conocimiento aplicándolo a nuevos desafíos y trabajos 
+en los cuales he tenido la suerte de participar con excelentes profesionales que de una forma 
+u otra también forman parte de este trabajo.
+
+\section{Convención utilizada en este documento}
+A lo largo de este documento se utilizan distintos tipos de letra y puntuación para señalar partes destacadas
+del mismo y centrar la lectura del lector. La convención seguida en todo el documento es la siguiente:
+\begin{description}
+ \item [Letra en \textit{cursiva}.] Se utiliza para destacar las palabras procedentes de otro idioma, por ejemplo en inglés \linkeddata, o para señalar
+tecnicismos, por ejemplo \textit{cloud computing}.
+ \item [Letra en \textit{cursiva} en un cuadro.] Se utiliza para referenciar partes de texto que han sido tomadas de otros documentos en las que 
+es importante mantener exactamente la definición que realizan. Por ejemplo, algunos textos tomados de directivas de la Unión Europea.
+\item [Letra en negrita.] Se utiliza para destacar palabras o párrafos de alto valor para el correcto entendimiento del documento. Por ejemplo,
+en la formulación de la hipótesis.
+\item [Texto ``entrecomillado''.] Se utiliza para destacar palabras o párrafos en los cuales se cita alguna frase u oración
+de un autor conocido o bien para simular la primera persona en la expresión escrita.
+\item [Figuras.] Sirven para designar: diagramas, imágenes o trozos de ejemplo de código fuente. Por ejemplo, se utilizan para formalizar
+de forma gráfica el diseño del sistema \gls{MOLDEAS}.
+\item [Tablas.] Se utilizan tablas para indicar una serie de características y su evaluación. Por ejemplo, durante la evaluación,
+se usa este formato de presentación para condensar gran cantidad de información facilitando así su lectura.
+\end{description}
+
+El principal objetivo del empleo de esta notación, es amenizar y hacer más atractiva
+la lectura y comprensión del texto.
+
+Igualmente, se utiliza indistintamente el concepto de licitaciones, anuncio de licitación o contrato público, para
+designar al documento que contiene la información y los datos de un contrato público. También se utilizan tecnicismos 
+provenientes del idioma inglés, cuyo uso está perfectamente asentado e integrado en la prosa habitual
+en lo concerniente a temas como Web Semántica, \linkeddata, \opendata, \lod o \wod. Entre ellos, se puede destacar \gls{URI}, \gls{IRI},
+recurso RDF, etc., para evitar la cacofonía y aunque la traducción al español implica el uso del género masculino, en 
+muchos casos se opta por adaptar la expresión escrita a su uso habitual. De esta manera, se habla
+de ``la URI de un recurso RDF'', en lugar de ``el URI de un recurso RDF'' y en general, para ciertas
+traducciones se emplea el género femenino en lugar del masculino con el objetivo de facilitar la lectura
+y adaptar la forma escrita al modo habitual de expresión.
+

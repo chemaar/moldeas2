@@ -1,0 +1,21 @@
+<http://purl.org/weso/pscs/sitc/v4/resource/08195>
+      a      <http://purl.org/weso/pscs/ontology/PSCConcept> , 
+	gr:ProductOrServiceModel;
+      skosxl:prefLabel
+      gr:description
+      rdfs:label "Dog or cat food, put up for retail sale"@en ;
+      dc:identifier "08195" ;
+      dc:subject "081.95" ;
+      gr:description "Dog or cat food, put up for retail sale"@en ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/retail> , 
+	<http://www.productontology.org/id/sale> , 
+	<http://www.productontology.org/id/cat> , 
+	<http://www.productontology.org/id/dog> , 
+	<http://www.productontology.org/id/food> ;
+      skos:broaderTransitive
+        <http://purl.org/weso/pscs/sitc/v4/resource/0819> ;
+      skos:closeMatch <http://purl.org/weso/pscs/cpv/2008/resource/33115200> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55900000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/QB48> ;
+      skos:inScheme <http://purl.org/weso/pscs/sitc/v4/resource/ds> .

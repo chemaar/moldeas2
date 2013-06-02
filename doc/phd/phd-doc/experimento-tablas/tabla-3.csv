@@ -1,0 +1,12 @@
+ID, Pregunta, Cumplimiento, 15 Criterios,
+1,Principios Linked Data
+1.1,Use URIs as names for things ,  , 
+1.2,When someone looks up a URI provide useful information using the standards (RDF* SPARQL) , ,   
+1.3,Include links to other URIs , ,     
+1.4,Use HTTP URIs , ,     
+1,Modelo 5 estrellas
+2.1,*	, ,  
+2.2,**	 , , 
+2.3,***	,  ,  
+2.4,**** , ,  
+2.5,*****, , 

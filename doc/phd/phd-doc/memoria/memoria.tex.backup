@@ -1,0 +1,136 @@
+%\documentclass[b5paper,final,11pt,fleqn,twoside]{book}
+
+\documentclass[a4paper,final,11pt,fleqn]{book}  %% ATENCIÓN: draft|final
+\input{../cabeceras}
+\input{../utilidades}
+\input{../bibliografia-utils}
+
+
+\makeindex
+
+\makeglossaries
+\loadglsentries{glosario}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{\NombrePFC}
+\author{\AutorPFC}
+\date{\FechaEntregaPFC}
+%\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+\PortadaDocumentoPFC{1}{}
+
+%\input{todo.tex}
+
+\input{resumen.tex}
+
+\input{agradecimientos.tex}
+
+\input{historia.tex}
+
+\input{sobre.tex}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\textit{}
+\mainmatter
+
+\chapter{\label{capitulo:introduccion}Introducción} % 10
+\epigraph{¿Por dónde empiezo, Majestad? \\ Empieza por el principio. Y sigue hasta que llegues al final. Entonces te detienes.}
+{\textit{Alicia en el país de las Maravillas}\\ \textsc{Lewis Carrol}}
+\input{chapters/introduccion}
+\chapter{\label{capitulo:eprocurement}Contratación Pública y e-Procurement}% 10-15
+\epigraph{Cuando creíamos que teníamos todas las respuestas, de pronto, cambiaron todas las preguntas.}
+{\textit{Citas Célebres}\\ \textsc{Mario Benedetti}}
+\input{chapters/e-procurement/e-procurement}
+\chapter{\label{capitulo:semantica}Panorámica de uso de la Web Semántica y \linkeddata} 
+\epigraph{¿Por qué esta magnífica tecnología científica, \\ que ahorra trabajo y nos hace la vida mas fácil, \\ nos aporta tan poca felicidad? La repuesta es simplemente: \\ porque aún no hemos aprendido a usarla con tino.}
+{\textit{Citas Célebres}\\ \textsc{Albert Einstein}}
+% 30-50
+\input{chapters/semantica}
+\chapter{\label{capitulo:metodos}Definición de Métodos Semánticos} % 15
+\epigraph{No hemos sido los primeros, pero seremos los mejores.}
+{\textit{Citas Célebres}\\ \textsc{Steve Jobs}}
+\input{chapters/metodos}
+\chapter{\label{capitulo:metodos-separados}Métodos Semánticos en el ámbito de las Licitaciones Públicas} % 30
+\epigraph{Aunque nuestra visión hacia adelante es muy corta, podemos darnos cuenta de que hay mucho por hacer.}
+{\textit{Citas Célebres}\\ \textsc{Alan Turing}}
+\input{chapters/metodos-separados}
+\chapter{\label{capitulo:moldeas}Sistema MOLDEAS} % 50
+\epigraph{La mayoría de la gente no sabe lo que quiere hasta que se lo enseñas.}
+{\textit{Citas Célebres}\\ \textsc{Steve Jobs}}
+\input{chapters/moldeas}
+\chapter{\label{capitulo:validacion}Experimentación y Validación} % 20
+\epigraph{Los errores causados por los datos inadecuados son \\ mucho menores que los que se deben a la total ausencia de datos.}
+{\textit{Citas Célebres}\\ \textsc{Charles Babbage}}
+\input{chapters/experimentacion}
+% \chapter{\label{capitulo:evaluacion}Evaluación} % 5
+% \epigraph{El experimentador que no sabe lo que está buscando no comprenderá lo que encuentra.}
+% {\textit{Citas Célebres}\\ \textsc{Claude Bernard}}
+%\input{chapters/evaluacion}
+\chapter{\label{capitulo:conclusiones}Conclusiones y Trabajo Futuro} % 5-10
+\epigraph{Todo lo que tiene un comienzo, tiene un final...}
+{\textit{Citas Célebres}\\ \textsc{Matrix Revolutions}}
+\input{chapters/conclusiones}
+\appendix
+\chapter{\label{capitulo:impacto}Impacto y Difusión}\label{impacto}
+\epigraph{Se alcanza el éxito convirtiendo cada paso en una meta y cada meta en un paso.}
+{\textit{Citas Célebres}\\ \textsc{C.C. Cortéz}}
+%\input{chapters/impacto}
+\chapter{\label{capitulo:publicaciones}Trabajos publicados}
+\epigraph{Si no quieres perderte en el olvido tan pronto como estés muerto y corrompido, \\ escribe cosas dignas de leerse, o haz cosas dignas de escribirse.}
+{\textit{Citas Célebres}\\ \textsc{Benjamin Franklin}}
+%\input{chapters/trabajos-publicados}
+\chapter{\label{capitulo:tablas}Tablas de Validación}\label{tablas-validacion-apen}
+\epigraph{Si no conozco una cosa, la investigaré.}
+{\textit{Citas Célebres}\\ \textsc{Louis Pasteur}}
+%\input{chapters/tablas-validacion}
+% 
+% \chapter{Plurals and Paragraphs}
+% 
+% Plurals are assumed to have the letter s appended, but if this is
+% not the case, as in \glspl{mtrx}, then you need to specify the
+% plural when you define the entry. If a term may have multiple
+% plurals (for example \glspl{cow}/\glslink{cow}{kine}) then
+% define the entry with the plural form most likely to be used and
+% explicitly specify the alternative form using \verb|\glslink|.
+% \Glspl{seal} and \glspl{sealion} have regular plural forms.
+% 
+% \Gls{bravo} is a homograph, but the plural forms are spelt
+% differently. The plural of \gls{bravo1}, a cry of approval
+% (, is \glspl{bravo1}, whereas the
+% plural of \gls{bravo2}, a hired ruffian or killer
+% (definition is \glspl{bravo2}.
+% 
+% \Glspl{par} can cause a problem in commands, so care is needed
+% when having a paragraph break in a \gls{glossarylist} entry.
+% 
+% \chapter{Ordering}
+% 
+% There are two types of ordering: word ordering (which places
+% ``\gls{sealion}'' before ``\gls{seal}'') and letter ordering
+% (which places ``\gls{seal}'' before ``\gls{sealion}'').
+
+
+%\chapter{\label{capitulo:referencias}Sugerencias y comentarios
+%recibidos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+
+\printindex
+\printglossaries
+
+
+% Bibliografía
+\insertbibliography
+\end{document}

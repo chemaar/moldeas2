@@ -1,0 +1,78 @@
+%
+% resumen.tex
+%
+
+\chapter*{Resumen}
+Las Administraciones Públicas son uno de los mayores compradores de la Unión Europea, ya que
+sus adquisiciones en conjunto representan un $17$\% del Producto Interior Bruto. La tendencia busca 
+la agilización de este gran mercado de oportunidades para facilitar el acceso a las empresas, especialmente a 
+las pequeñas y medianas empresas (PYMEs), posibilitando el acceso a la información presente 
+en los contratos públicos y permitiendo así la construcción de un entorno de mercado competitivo. 
+
+Desde otro punto de vista, el creciente uso de Internet durante los últimos años ha puesto de manifiesto un
+nuevo entorno de ejecución para las aplicaciones, utilizando como nueva plataforma la Web. Nuevas tecnologías y paradigmas
+están emergiendo para dar soporte al desarrollo y despliegue de aplicaciones y servicios, así como para la publicación de datos e información. 
+En este sentido, iniciativas como la Web Semántica, en concreto el esfuerzo de \linkeddata dentro de la nueva ``Web de Datos'',
+ intentan elevar el significado de los elementos y recursos que están disponibles en la web con el objetivo de mejorar 
+la integración e interoperabilidad entre aplicaciones y facilitar el acceso a la información y los datos a 
+través de modelos y formatos de datos de conocimiento compartido unificados.
+
+En el caso particular del proceso de contratación pública electrónica surge la necesidad de abordar problemas de 
+gran calado como la dispersión de la información, la heterogeneidad de los formatos de los anuncios, 
+la diversidad de formatos de explotación o el multiling\"{u}ismo y multiculturalidad. Con la meta de suministrar 
+una solución a estas necesidades mediante la aplicación de la iniciativa de Web Semántica y el esfuerzo 
+propuesto por \linkeddata, se realiza un estudio de una serie de métodos semánticos, materializados a 
+través de un ciclo de vida de datos enlazados de carácter general, y su aplicación 
+específica al dominio de la contratación pública electrónica.
+
+De esta forma se mejora el acceso a la información y a los datos de los anuncios de licitación, como clave para 
+el incremento de las oportunidades de participación en los procesos de contratación pública, favoreciendo la 
+publicidad de los anuncios de licitación e impulsando un entorno de datos abiertos, 
+estratégico para las Administraciones Públicas tanto por su carácter económico 
+como corporativo debido al movimiento \opendata. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Palabras clave}
+
+contratación pública electrónica, \textit{e-Procurement}, \textit{e-Government}, \textit{linked data}, \textit{open data}, 
+\textit{linking open data}, \textit{linking open government data}, Web de Datos, web semántica
+
+\chapter*{Abstract}
+Public administrations are one of the largest sellers of the European Union representing the 
+ $17$\% of the GDP. Current trends try to provide a new agile market of opportunities to 
+ease the access to public procurement notices to companies, more specifically to Small 
+and Medium Companies (SMEs), making the construction of a competitive pan-European market possible.
+
+From other point of view, the emerging use of Internet in the last years has generate a new realm for the 
+execution of applications and the deployment of new services using the Web as platform. New technologies 
+and development models are arising to deal with the requirements of this new context in which new added-value 
+services, the publication of data and information are required. In this sense, initiatives such as Semantic 
+Web, in particular through the \linkeddata effort within the new Web of Data, seeks for raising the meaning 
+of the information resources on the Web with the major objective of improving the integration and interoperability 
+among applications and ease the access to the existing information and data by means of shared common models and formats.
+
+In the e-Procurement context new relevant issues have to be resolved in order to fulfill the needs 
+of existing problems with regards to the information dispersion, diverse publishing and exploitation formats or 
+the multilinguism and multiculturalism. 
+
+En el caso particular del proceso de contratación pública electrónica surge la necesidad de abordar problemas de 
+gran calado como la dispersión de la información, la heterogeneidad de los formatos de los anuncios, 
+la diversidad de formatos de explotación o el multiling\"{u}ismo y multiculturalidad. Con la meta de suministrar 
+una solución a estas necesidades mediante la aplicación de la iniciativa de Web Semántica y el esfuerzo 
+propuesto por \linkeddata, se realiza un estudio de una serie de métodos semánticos, materializados a 
+través de un ciclo de vida de datos enlazados de carácter general, y su aplicación 
+específica al dominio de la contratación pública electrónica.
+
+%What is the problem?
+%Why is the problem hard?
+%How will you be solving this particular problem?
+%What would result with your solution?
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Key-words}
+
+\textit{e-Procurement}, \textit{e-Government}, \textit{linked data}, \textit{open data}, \textit{linking open data}, 
+\textit{linking open government data}, \textit{Web of Data}, \textit{semantic web}

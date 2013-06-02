@@ -1,0 +1,7 @@
+\input{chapters/web-semantica/intro.tex}                                                                     
+\section{Definición}                                                                                              
+\input{chapters/web-semantica/definition.tex}                                                                
+\section{Infraestructura para la Web Semántica}                                                                   
+\input{chapters/web-semantica/infraestructura.tex}                                                           
+\section{Ontolog\'ias}\label{ontologias}
+\input{chapters/web-semantica/ontologias.tex}   

@@ -1,0 +1,72 @@
+\section{Introducción}
+En el caso objeto de estudio de este documento se ha planteado la aplicación de los principios 
+de \linkeddata, para el modelado y explotación de datos e información provenientes de los anuncios de 
+licitación públicos. Para ello, tal y como se ha presentado en los anteriores capítulos, se ha definido 
+un ciclo de vida de datos enlazados que a través de procesos, métodos y tareas suministra una metodología 
+de actuación genérica para proceder en este sentido. Como ejemplo de su validez y aplicación se han utilizado 
+los datos de los contratos públicos para ejemplificar los procesos de producción, publicación, consumo, validación y 
+actualización, ver Figura~\ref{fig:com}. Aunque ciertas tareas se apoyan en el uso de aplicaciones de terceros como Google Refine o bien 
+en la parametrización de bibliotecas ya existentes como Apache Lucene, es necesario suministrar un entorno 
+en el cual los resultados de aplicación de las tareas puedan ser procesados para implementar algunas de las ya 
+especificadas y así ejemplificar transversalmente el uso de datos enlazados en un determinado dominio. Por ello y 
+de acuerdo al análisis y especificación realizado se plantea la necesidad de diseñar los componentes del sistema 
+MOLDEAS como paso final para la cobertura en el uso de datos enlazados en el campo de la contratación pública 
+electrónica y teniendo presentes los siguientes objetivos:
+
+\begin{itemize}
+ \item Facilitar y dar soporte a las tareas del ciclo de vida que no puedan ser desarrolladas completamente 
+por herramientas externas.
+\item Validar los datos generados por otras herramientas.
+\item Enriquecer con procesos \textit{ad-hoc} la información y datos de los anuncios de licitación según el modelo 
+y especificación fijado en el Capítulo~\ref{capitulo:metodos-separados}.
+\item Implementar un demostrador público de consumo de datos enlazados.
+\item Proveer un sistema de búsqueda/recomendación de anuncios de licitación de acuerdo a criterios predefinidos 
+por el cliente.
+\item Establecer un conjunto de prueba que realice la validación parcial de ciertos procesos apoyándose en tecnología 
+pre-existente.
+\item Diseñar un sistema extensible y escalable para su futura ampliación.
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}
+  \path[mindmap,concept color=gray,text=white]
+    node[concept] {MOLDEAS}
+    [clockwise from=0]
+    child[concept color=gray!65!black] {
+      node[concept] {moldeas-api}   
+      [clockwise from=-90]
+      child [concept color=gray!60] { node[concept] {\textbf{Consumo}} }   
+    }  
+    child[concept color=gray!65!black] {
+      node[concept] {moldeas-transformer}
+      [clockwise from=-90]
+      child [concept color=gray!60] { node[concept] {\textbf{Producción}} }
+      child [concept color=gray!60] { node[concept] {\textbf{Publicación}} }           
+    }
+    child[concept color=gray!65!black] { node[concept] {moldeas-test} 
+      [clockwise from=-90]
+      child  [concept color=gray!60] { node[concept] {\textbf{Validación}} }      
+    }
+    child[concept color=gray!65!black] { node[concept] {moldeas-common} } ;
+   
+\end{tikzpicture}
+    \caption{Alineación inicial de componentes de MOLDEAS y procesos del Ciclo de Vida de \linkeddata.}
+ \label{fig:com}
+\end{figure}
+
+Ante estos objetivos de gran envergadura, teniendo en cuenta el ciclo de vida de datos enlazados definido y las tareas 
+especificadas para la información y datos presentes en las licitaciones públicas, cabe especificar el diseño 
+de los componentes del sistema MOLDEAS como elemento vertebrador tanto de los procesos como de la información. De esta forma, 
+a lo largo de este capítulo se realiza una descripción del diseño e implementación realizada en el sistema MOLDEAS haciendo 
+especial hincapié en los detalles más relevantes del mismo.
+\section{Descripción del Sistema MOLDEAS}
+\input{chapters/moldeas/analisis-moldeas}
+\section{Consideraciones Generales de Diseño}
+\input{chapters/moldeas/disenyo-general}
+\section{Diseño de Componentes del Sistema MOLDEAS}
+\input{chapters/moldeas/disenyo-componentes}
+\section{Pruebas del Sistema MOLDEAS}\label{sect:pruebas-moldeas}
+\input{chapters/moldeas/pruebas-componentes}
+\section{Utilizando el Sistema MOLDEAS}
+\input{chapters/moldeas/uso-moldeas}

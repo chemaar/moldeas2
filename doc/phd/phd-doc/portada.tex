@@ -1,0 +1,113 @@
+%
+% portada.tex
+%
+% Copyright (c) 2003 Javier Noval
+% Copyright (c) 2004 Diego Berrueta
+%
+% Macros para hacer la portada del proyecto. Adaptados por Diego
+% Berrueta a partir de los cedidos por Javier Noval
+%
+
+\makeatletter
+
+\newcommand{\PrintNumeroDocumentoPFC}[1]{DOCUMENTO N$^\mathrm{o}$ #1}
+\newcommand{\SpaceAfterNombreDocumentoPFC}{\vspace{2cm}}
+
+\newcommand{\pfctitlepage}[8]{% Parámetros: área, nº, título, proyectante, fecha, tutor, nº doc, título doc
+	\cleardoublepage
+
+	{\bfseries
+		\begin{center}
+                        % Escudo de la universidad
+			{\LARGE UNIVERSIDAD DE OVIEDO}
+			
+			\vspace{0.75cm}
+	    
+			\includegraphics[width=6cm]{../logo_uniovi}
+
+			\vspace{1.25cm}
+		      % Identificación de la escuela, el área
+			{\LARGE SISTEMAS Y SERVICIOS INFORMÁTICOS PARA INTERNET}
+
+			\vspace{1.25cm}
+	      
+			%{\Large ÁREA DE \uppercase{#1}}
+
+			% Número del proyecto y título
+% 			{\Large TRABAJO DE INVESTIGACIÓN N$^\mathrm{o}$ #2}
+			{\Large TESIS DOCTORAL}
+
+			\vspace{1cm}
+
+			{\Large \uppercase{#3}}
+
+			\vspace{1cm}
+
+			{\Large Presentada por \\}
+			\vspace{0.5cm}
+		        {\Large Jose María Álvarez Rodríguez\\}
+			\vspace{0.5cm}
+			{\Large para obtención del título de Doctor por la Universidad de Oviedo\\}
+			\vspace{1cm}
+			%{\Large Oviedo 2012}
+			{\Large Dirigida por el\\}
+			\vspace{0.5cm}
+		        {\Large Profesor Doctor D. José Emilio Labra Gayo\\}
+			\vspace{1cm}
+			{\Large Oviedo, Junio de 2012}
+
+		\end{center}
+
+		    \vspace{1cm}
+
+                % Bloque inferior, con el escudo de la escuela, los
+                % nombres del autor y el tutor, y la fecha
+% 		{\Large \begin{tabular}{@{}l@{}p{10cm}@{}}
+% 			\begin{minipage}{5cm}
+% 				\includegraphics[width=3.5cm]{../escudo2}	
+% 			\end{minipage} &
+% 			\begin{tabular}{@{}p{10cm}@{}}
+% 				\uppercase{#4\\
+% 				#5\\
+% 				#6}
+% 			\end{tabular}
+% 		\end{tabular}}
+
+% 		\vspace{0.5cm}
+% 	{ \begin{tabular}{@{}l@{}p{10cm}@{}}
+% 			\begin{minipage}{5cm}
+% 			
+% 	\begin{tabular}{|@{}p{5cm}@{}|}
+% 				\hline  \\
+% 				 \\
+% 				\\
+% 				\\
+% 				\\
+% 				 \hspace{2.5cm}\small{Vbº del Tutor} \\
+% \hline
+% 			\end{tabular}
+% 		
+% 			\end{minipage} &
+% 		
+% 		\end{tabular}}
+
+
+	}
+
+	\cleardoublepage
+}
+
+\newcommand{\pfctitle}[8]{% Parámetros: área, nº, título, proyectante, fecha, tutor, nº doc, título doc
+        \pagestyle{empty}
+	\pfctitlepage{#1}{#2}{#3}{#4}{#5}{TUTOR: #6}{#7}{#8}
+       % \FDLNotice{}
+        \setcounter{page}{1}
+        \pagestyle{fancy}
+}
+
+\makeatother
+
+\newcommand{\PortadaDocumentoPFC}[2]{% Parámetros: nº doc y título de documento
+   \pfctitle{\AreaPFC}{\NumeroPFC}{\TituloPFC}{\AutorPFC}{\FechaEntregaPFC}{\TutorPFC}{#1}{#2}
+}
+

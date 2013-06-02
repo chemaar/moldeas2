@@ -1,0 +1,333 @@
+\section{Cumplimiento de Objetivos}
+En primer lugar para realizar la validación del estudio realizado en este documento cabe valorar el grado 
+de consecución de los objetivos fijados al inicio de este trabajo y que se han señalado en la 
+Sección~\ref{objetivos}:
+
+\begin{description}
+\item [Panorámica de la contratación pública electrónica.] En concreto el objetivo número $1$ se 
+definía como una tarea en la que se debía ``Estudiar, analizar y valorar las capacidades actuales del dominio de la contratación pública'', 
+en el Capítulo~\ref{capitulo:eprocurement} se ha realizado una síntesis de las actuales tendencias en contratación 
+pública electrónica, específicamente en el ámbito de la Unión Europea, realizando una valoración de las acciones 
+estratégicas y proyectos que se están llevando a cabo a nivel europeo y que en muchos casos se ven reflejadas 
+en las acciones nacionales y regionales. La importancia de la contratación pública electrónica como proceso 
+crítico dentro de las Administraciones Públicas ha quedado patente debido a las posibilidades de generación 
+de servicios de negocio y las cantidades presupuestarias manejadas para la realización de servicios y obras 
+a la ciudadanía y en consecuencia para el impulso del mercado. Por otra parte, es importante prestar atención 
+a la problemática que surge en el momento de facilitar el acceso a la información de las licitaciones a nivel 
+europeo como las características multing\"{u}es, la dispersión de información, la multiplicación de fuentes 
+de información heterogéneas, etc., que provocan un descenso en la competitividad ya que los proveedores de la Administración, 
+dependiendo de la situación, son reducidos a un ámbito concreto. Con todo ello, se pone de manifiesto la necesidad de 
+suministrar un entorno ágil y flexible para la gestión de la información y datos con los objetivos tecnológicos 
+de impulsar la interoperabilidad e integración de servicios dentro de la propia Administración y por otra parte, 
+mejorar la imagen corporativa de la misma en cuanto a transparencia y servicios a los ciudadanos y empresas. El repaso 
+realizado en el capítulo mencionado consolida tanto los problemas como las soluciones y estrategias actuales proporcionando 
+un dominio ampliamente motivado para la investigación y la innovación.
+
+\item [Panorámica de \opendata, \linkeddata y Web Semántica.] Uno de los puntos clave de estudio e innovación en este trabajo 
+consiste en la aplicación de los principios promulgados por la iniciativa de Web Semántica y en concreto de \linkeddata al 
+dominio de la contratación pública electrónica. Además, teniendo en cuenta la tendencia actual de apertura de datos 
+impulsada por el movimiendo \opendata se ha realizado un conveniente repaso de la tecnología, iniciativas, proyectos, etc., 
+relacionados con estos movimientos, a la vez que contrastado los beneficios, ventajas, etc., con el objetivo 
+de adquirir una perspectiva realista de las aspiraciones de estas iniciativas y su impacto en los servicios actuales así 
+como la trascendencia de su aplicación a un sector como la contratación pública electrónica. Esta panorámica permite 
+obtener una visión general de estos enfoques y su posible potencial para la resolución de problemas de gestión e integración 
+de información y datos en un espectro temporal desde la actualidad hasta medio/largo plazo.
+
+\item [Ciclo de vida para \linkeddata.] Atendiendo al objetivo definido como ``Definir los métodos basados en semántica para producir, publicar, consumir y validar 
+la información de los anuncios de licitación siguiendo las directrices de \opendata y \linkeddata'' y trás la revisión de los trabajos 
+en estas áreas de conocimiento, se ha realizado una descripción de un de ciclo de vida de datos enlazados que se alinea con los enfoques 
+existentes definiendo un ciclo de vida basado en la abstracción en 3 niveles de los procesos, métodos y tareas a realizar 
+para la consecución cuantificable de la promoción de datos siguiendo las iniciativas de \linkeddata y \opendata.
+
+\item [Sistema MOLDEAS.] La denominación de MOLDEAS engloba tanto el ciclo de vida como las herramientas que se han desarrollado 
+para dar soporte a los procesos contemplados en el ciclo de vida de datos enlazados. De esta manera se ha implementado un conjunto 
+de componentes como activos experimentales para el cumplimiento del ciclo de vida y la demostración del consumo de datos enlazados. El 
+sistema MOLDEAS se convierte de esta manera en un primer y gran esfuerzo para la provisión de herramientas de carácter genérico 
+en el ámbito de \linkeddata, aunando tecnología ya existente y mejorando las mismas como por ejemplo ONTOSPREAD, y particularizando 
+su aplicación al dominio de la contratación pública electrónica. Con todo ello, se completa el capítulo propio de ingeniería 
+de este estudio y se da respuesta a los objetivos marcado de ``Definir los algoritmos y procesos para dar soporte a la aplicación de los métodos basados en semántica 
+a la información de los anuncios de licitación'' e ``Implementar y reutilizar los componentes software necesarios para dar soporte a los métodos semánticos''.
+
+\item [Aplicación de MOLDEAS a \eproc.] Una vez que se disponen de los datos necesarios sobre anuncios de licitación en general y los relativos 
+a las clasificaciones de productos y organizaciones la aplicación de MOLDEAS se ha reflejado para la promoción de datos con un enfoque 
+cuantitativo y cualitativo, permitiendo contrastar los procesos definidos en el ciclo de vida. De esta manera se da cumplimiento 
+al gran objetivo de ``Aplicar los métodos semánticos definidos al contexto de los anuncios de licitación pública''.  
+
+\item [Experimentación y Validación.] Los experimentos realizados se concretan en 4 acciones diferentes:
+\begin{itemize}
+ \item Elaboración y diseño de tablas de validación de \linkeddata y \opendata de acuerdo a la documentación 
+actual y la propia experiencia del autor y supervisor.
+\item Contraste de la elaboración de un demostrador público con capacidad para el consumo de \linkeddata con el objetivo de 
+verificar que la información y datos pueden ser consumidos por nuevos servicios manteniendo y mejorando el comportamiento 
+actual y sentando la base para un estudio profundo de un posible sistema experto basado en tecnología semántica 
+para el dominio de la contratación públic electrónica.
+\item Demostración del aumento de la expresividad mediante el uso de \linkeddata en sistemas de recuperación 
+de información basados en vocabularios controlados.
+\item Mejora del rendimiento de consultas en SPARQL mediante la aplicación de determinadas características obtenidas 
+tras la valoración de la documentación existente y la experimentación empírica.
+\end{itemize}
+
+Los resultados de los experimentos han sido validados y evaluados con el objetivo de suministrar una demostración 
+científica al estudio realizado en este documento y cumplir con la tarea de ``Establecer un conjunto de prueba y validación de los componentes implementados para verificar la corrección, 
+ validez y rendimiento de los métodos propuestos''.
+
+
+\item [Impacto y difusión.] En cualquier proyecto o trabajo de investigación es absolutamente necesario 
+dar difusión y crear concienciación de los avances realizados tanto a la comunidad científica como 
+industrial. Por ello, esta tarea transversal se ha cubierto satisfactoriamente mediante la realización 
+de distintas publicaciones, realizando la componente de investigación en un proyecto como 
+``10ders Information Services'' en colaboración con empresas de servicios y tecnología y participando 
+activamente en la comunidad investigadora mediante el establecimiento de colaboraciones con personas e 
+instituciones de carácter internacional que ha conllevado la elaboración conjunta de publicaciones y 
+la pertenencia a comités de programas y revisión de artículos en diferentes revistas, conferencias 
+y talleres. La justificación pormenorizada de estas actividades se ha señalado en los Apéndices~\ref{capitulo:impacto} y~\ref{capitulo:publicaciones} 
+cumpliendo así con el objetivo ``Difundir, formar y transferir la tecnología y 
+conocimiento generado tanto a las comunidades científicas como industriales''.
+ 
+\end{description}
+
+Transversalmente a estos objetivos específicos todo el trabajo realizado en las definiciones teóricas, desarrollo de activos experimentales 
+y diseño de experimentos, se ha enmarcado bajo una apuesta fiel y constante por la aplicación y uso de los estándares 
+dando así acogida a la meta de ``Promover el uso de estándares y la reutilización de 
+información y modelos de conocimiento compartido''.
+
+\section{Principales Aportaciones}
+\subsection{Aportaciones Científicas}
+El estudio desarrollado en este trabajo sobre la aplicación los principios de \opendata y las tecnologías semánticas, concretamente 
+mediante la aplicación de la iniciativa \linkeddata al dominio de la contratación pública electrónica, ha servido para la obtención 
+de las siguientes aportaciones desde el punto de vista científico:
+\begin{description}
+ \item [Repaso del estado actual de \eproc y aplicación de tecnologías semánticas.] En múltiples ocasiones la selección de una tecnología 
+para ser aplicada sobre un dominio es un decisión crítica ya que en un entorno de producción no es posible en muchas ocasiones dedicar 
+esfuerzo y tiempo a comprobar iniciativas basadas en la investigación e innovación. Por ello, el estudio realizado conlleva un valor 
+adicional desde un punto de vista estratégico para el campo de la contratación pública electrónica al haber conjugado el repaso 
+de este dominio y enlazarlo con el trabajo relacionado bajo el paradigma de la Web Semántica y \linkeddata. 
+
+\item [Ciclo de vida para \linkeddata.] Actualmente con el éxito y las expectivas generadas en torno a los datos enlazados abiertos, se ha 
+puesto de manifiesto la necesidad de gestionar el ciclo de vida de los datos enlazados y no limitarse únicamente a la exposición de 
+las bases de datos existentes cumplimiendo unas ciertas directrices. Esta situación queda reflejada en las múltiples guías que aparecen 
+a lo largo de la geografía de cómo abrir y enlazar datos, en algunos casos utilizando un enfoque \textit{top-down}, como en el Reino 
+Unido, y en otros casos como España aplicando un sistema \textit{bottom-up}. El objetivo final es disponer de una serie de guías 
+y buenas prácticas para minimizar el esfuerzo en la apertura y enlazado de datos. De la misma, en las distintas acciones de 
+investigación como proyectos, actividad en universidades y centros tecnológicos, etc., se está suministrando un gran cantidad de información 
+sobre cómo abordar esta situación. Sin embargo, la definición de un claro ciclo de vida basada en la abstracción de procesos, métodos 
+y tareas no se ha realizado de forma completa y los enfoques existentes si bien se postulan como recetas o guías prácticas todavía 
+no han alcanzado un nivel de normalización a través de alguna institución como el W3C. Con la meta fijada en gestionar el ciclo de vida 
+de datos enlazados, reaprovechar el conocimiento generado en las propuestas anteriores y la experiencia particular en el desarrollo 
+de estas actividades se ha definido un ciclo de vida que se ha aplicado a la información y datos concernientes a los anuncios 
+de licitación públicos.
+
+\item [Sistema MOLDEAS.] La denominacioń bajo este nombre cubre el desarrollo de activos experimentales y la aplicación de tecnología 
+existente, con mejoras en la misma, para la realización de los procesos del ciclo de vida de datos enlazados en el dominio de los 
+anuncios de contratación pública. De esta manera se han definido modelos e implementado algoritmos con las siguientes capacidades:
+\begin{itemize}
+ \item Modelo de información y datos para los anuncios de licitación pública, el catálogo de clasificaciones de productos y las organizaciones basado 
+en estándares y vocabularios comunes.
+ \item Producción de datos enlazados de acuerdo a los modelos definidos.
+ \item Reconciliación de entidades específica para la información y datos anteriores.
+ \item Establecimiento de un modelo de publicación de datos enlazados abiertos.
+ \item Implementación de un conjunto de componentes para el consumo y explotación de datos 
+desde una aplicación externa aplicando tecnología existente y mejorando la propia como ONTOSPREAD, propagación sobre instancias no 
+sólo sobre clases.
+ \item Diseño de criterios de validación de los datos generados y evaluación semi-automática de los mismos.
+ \item Demostración de la mejora cuantitativa y cualitativa en el acceso a la información y datos concernientes 
+a los anuncios de licitación.
+\end{itemize}
+\item [Generación de \textit{know-how}.] La realización de este trabajo ha permitido la generación de nuevo conocimiento sobre 
+un campo tan relevante como la administración electrónica y en concreto sobre el proceso de contratación pública. De esta forma, 
+es posible abordar problemas similares con el enfoque de MOLDEAS ya que si bien su escenario de aplicación es la contratación 
+se puede extrapolar y aplicar a otros dominios. El modelo de trabajo, investigación e innovación realizado ha permitido 
+la creación de soluciones genéricas que se han demostrado efectivas en un dominio concreto pero sin menoscabar su relevancia 
+y aplicación a otros sectores, esta flexibilidad permite ofrecer información detalle para futuros esfuerzos en otros campos.
+\end{description}
+\subsection{Aportaciones Tecnológicas}
+Desde un punto de vista tecnológico la realización de este trabajo se ha manifestado en la utilización de múltiples herramientas 
+provenientes de distintos proveedores para la implementación de diversas tareas. En concreto, las aportaciones tecnológicas 
+en este ámbito se sintetizan en las siguientes acciones:
+
+\begin{itemize}
+ \item Adaptación de la entrada de biblioteca Apache Mahout para el consumo de datos enlazados.
+ \item Adición de nuevas capacidades a la biblioteca ONTOSPREAD.
+ \item Realización de algoritmos de reconciliación de entidades basados en Apache Lucene y Solr
+ \item Creación de un API para el consumo y explotación de datos enlazados mediante la aplicación de diferentes 
+métodos de expansión de consultas.
+ \item Creación de un sistema de test y validación de datos enlazados semi-automático.
+\end{itemize}
+
+\section{Conclusiones Científicas}
+El estudio de los datos enlazados abiertos en el campo de las licitaciones públicas ha puesto de manifiesto las necesidades 
+de este entorno y la necesidad de realizar una investigación profunda para impulsar la contratación pública electrónica dada 
+su relevancia e impacto en la sociedad. Por ello, el enfoque basado en tecnologías semánticas y datos enlazados abiertos 
+permite la culminación práctica de ciertas necesidades como la mejora de acceso y la reutilización de la información. Sin embargo, 
+la conversión de un entorno tan amplio debe tomarse como una actividad iterativa en la cual con la aplicación de buenas 
+prácticas se consiga dar respuesta y solución a los inconvenientes que presenta. Una vez que la problemática de la contratación 
+pública electrónica está motivada convenientemente para que las tecnologías basadas en semántica puedan influir y mejorar 
+este entorno, surgen nuevas situaciones que se han reflejado a lo largo del trabajo y que a continuación se detallan.
+
+\begin{itemize}
+ \item Todos los procesos implicados en el tratamiento de datos enlazados deben asegurarse suministrando 
+mecanismos para su validación con el objetivo de facilitar su reutilización posterior en condiciones 
+de ausencia de incertidumbre.
+  \item El uso de estándares (BPEL, OWL, RDF, etc.) es clave para minimizar los problemas de integración e interoperabilidad.
+ \item El tratamiento de grandes cantidades de datos conlleva prestar especial atención a los algoritmos diseñados y 
+a la construcción de consultas sobre los mismos.
+ \item La necesidad de modelar la información y datos para su posterior reutilización en un dominio extenso debe realizarse 
+con el suficiente grado de especificidad pero teniendo presenta la posiblidad de extensibilidad, por lo que es conveniente 
+no realizar grandes modelos poco usables y que tan sólo el autor o autores pueden manejar. En este sentido la estrategia 
+a seguir debe basarse en la generación de un marco de trabajo común y la creación sostenible y escalable de conocimiento 
+con el objetivo de impulsar su reutilización.
+ \item Los principios de \linkeddata y \opendata verdaderamente ayudan a favorecer la reutilización de información si siguen 
+unas directrices de producción, publicación y consumo adecuadas. Sin duda, la realización práctica de la Web Semántica 
+se ve reflejada bajo la iniciativa de \linkeddata y su éxito actual, queda patente en general y en el caso objeto de estudio 
+de este documento.
+ \item El maremágnum de tecnología, enfoques, algoritmos, vocabularios, conjuntos de datos, etc., dentro de la iniciativa de 
+\linkeddata convierte la toma de ciertas decisiones y la adopción de soluciones en un trabajo tedioso en el cual la experiencia 
+cobra una especial relevancia. La necesidad de catalogación y valoración de todos estos trabajos y esfuerzos se hace cada 
+vez más patente.
+ \item Existen tareas como la reconciliación de entidades que todavía se hayan en etapa temprana de desarrollo y en las cuales 
+muchas aportaciones son posibles ya que en la actualidad se basan principalmente en técnicas de procesamiento de lenguaje natural.
+ \item El uso de datos enlazados permite mejorar el acceso a la información facilitando una mayor expresividad en la realización 
+de consultas sobre grandes conjuntos de datos.
+ \item El rendimiento, la completitud, el tiempo de ejecución finito y la consulta de grandes bases de datos en un entorno distribuido es una línea de investigación especialmente 
+relevante y abierta en el campo de la \wod.
+ \item Desde un punto de vista de la gestión de la información y datos la Web Semántica se ha convertido en un pieza clave pero 
+la creación de algoritmos explotando las capacidades de un entorno mejor informado todavía no se ha impulsado convenientemente 
+y se reduce a la adaptación a algoritmos y técnicas perfectamente probadas como la minería de datos o el procesamiento de lenguaje 
+natural. La consecuencia principal de esta situación recae en que el esfuerzo realizado para la mejora de la información 
+y datos finalmente no se ve recompensada por algoritmos más avanzados.
+ \item La explotación de la información mediante técnicas de razonamiento no siempre es necesaria y dependiendo del dominio, como en el caso 
+de la publicación de información y datos de los anuncios de licitación, es conveniente centrar los esfuerzos en el modelo de datos 
+para su posterior reutilización que en construir un base lógica muy sólida.
+\item Los procesos administrativos dentro de la administración electrónica deben necesariamente aprovechar las ventajas 
+de las tecnologías de información para ser más eficientes, la tendencia en los últimos años y la planificación estratégica 
+para los próximos años así lo corrobora, más aún teniendo en cuenta el carácter global de las comunicaciones e intercambio 
+de información.
+\end{itemize}
+
+Estos puntos de clave extraídos del trabajo realizado deben unirse necesariamente a los generados tras la realización y evaluación 
+de los experimentos realizados que a continuación se listan:
+\begin{itemize}
+ \item El uso de datos enlazados permite aumentar la expresividad de las consultas facilitando el acceso a la información 
+desde un punto de vista cuantitativo y cualitativo. Esta situación se refleja tanto en entornos utilizando vocabularios 
+controlados, como la contratación pública, como en entornos abiertos, la propia Web de Datos.
+\item El beneficio real de los datos enlazados abiertos reside en la representación de información y datos mediante un modelo estándar (RDF) que permite el uso 
+de lenguajes (SPARQL) y protocolos (HTTP) estándar para su acceso facilitando la recuperación de información.
+\item El enlazado de datos consta de una variable de incertidumbre que si bien es aceptada por la comunidad, debe ser tenida en cuenta 
+para la realización de aplicaciones de carácter crítico.
+\item En la actualidad tanto la información como los datos disponibles son abiertos en su mayor parte e incluso son utilizados 
+para la construcción de servicios comerciales pero el esfuerzo requerido para llevar a cabo estos productos 
+se ve reflejado en el precio de los mismos por lo que el uso de datos enlazados simplifica y favorece la reutilización de información.
+\item En muchos casos no se necesario llegar a un modelo de 5 $\star$ ya que esto provoca la necesidad de adaptación de los 
+desarrolladores a estas prácticas, por lo que la tendencia actual es por un parte generar los datos con el mayor nivel posible 
+de estrellas pero facilitando la labor para su consumo, por ejemplo utilizando como formato de representación JSON.
+\item La aplicación de patrones de diseño en la planificación de los datos a transformar permite dar una respuesta 
+homogénea a problemas recurrentes de representación de información y datos.
+\item La creación de un sistema experto para la recuperación de información de los anuncios de licitación es un dominio 
+en el cual se puede profundizar variando una gran cantidad de parámetros tanto de configuración de los algoritmos como 
+valorando la implicación de introducir nuevas variables de información.
+\item La división de consultas en SPARQL sobre grandes conjuntos de datos en otras más pequeñas y su distribución permite 
+la mejora del rendimiento ya que se simplifican dos factores importantes: 1) el número de tripletas encajadas y 2) el 
+tamaño del conjunto de datos sobre los que la consulta es ejecutada.
+\item El trabajo desarrollado en la nueva especificación de SPARQL da respuesta a algunos de los problemas o ausencias de funcionalidad encontradas 
+en la especificación inicial como es el uso de agregados, \textit{subqueries} o federación de consultas. Claramente la nueva especificación 
+se acerca a lenguajes de consulta ya maduros como SQL, este esfuerzo sin duda es clave para la adopción de datos enlazados.
+\item Existen características en SPARQL deseables como la priorización del encaje de tripletas para la ordenación de resultados 
+que todavía no se han incluido en las especificaciones pero si están presentes en productos como Virtuoso y que resultan 
+de gran valor para la construcción de aplicaciones.
+\end{itemize}
+
+La extracción de estas conclusiones desde un punto de vista científica deja patente la conveniencia de aplicación de los datos enlazados 
+abiertos al dominio de la contratación pública electrónica así como deja abiertas diversas líneas de investigación tanto para la 
+propia administración electrónica como para la investigación a realizar en este campo.
+
+\section{Conclusiones Tecnológicas}
+El desarrollo de activos experimentales para dar soporte a los procesos indicados en el ciclo de vida de datos enlazados 
+ha puesto de manifiesto tanto ventajas como inconvenientes en la tecnología actual para afrontar estas tareas, entre las cuales 
+se destacan:
+
+\begin{itemize}
+
+ \item De la misma forma que el número de vocabularios, cátalogos de datos, etc., constituyen una fuente de reutilización 
+relevant pero cuya clasificación no permite a usuarios no técnicos la selección de los mismos, también queda patente en la tecnología 
+asociada a los datos enlazados, ya que la diversidad de herramientas constituye un amplio abánico de oportunidades en los cuales 
+la incertidumbre sobre cuál usar conlleva simplemente a indagar las aplicadas en los proyectos de éxito sin tener en cuenta 
+más factores. Esto implica un cierto grado de monopolio ya que la selección de tecnología se convierte en una simple consulta 
+sin realizar una verdadera evaluación pero por otro lado la aplicación de este tipo de tecnología y herramientas justifica 
+cualquier juicio posterior por terceros.
+
+\item Durante mucho tiempo el uso de tecnología relacionada con semántica se convertía en un proceso de depuración, esta cuestión 
+ha sido parcialmente solucionada debida a la inversión realizada a través de proyectos de investigación y a la participación de grandes 
+proveedores de \textit{software} en su desarrollo.
+
+\item La proliferación de múltiples utilidades para la realización de diversas tareas conlleva una falta de integración de las mismas 
+por lo que la intervención manual es inevitables. Plataformas integradas como la propuesta en el proyecto LOD2 o bien el 
+\textit{Linked Media Framework} permiten mejorar la adopción de la tecnología.
+
+\item Las actuales herramientas para la gestión y explotación de información no están preparadas para trabajar intrínsecamente 
+con datos enlazados o con semántica, por lo que el esfuerzo para el consumo de datos enlazados y la creación de nuevos 
+servicios y aplicaciones reutilizando soluciones existentes conlleva un esfuerzo adicional en el cual, en la mayoría de los casos, 
+se pierde parcialmente las ventajas de reutilizar información y datos provenientes de modelos compartidos.
+
+\end{itemize}
+
+\section{Futuras Líneas de Investigación y Trabajo}
+Las posibilidades de abrir nuevas líneas de investigación que tomen como semilla el trabajo realizado en este estudio son múltiples 
+y se pueden abordar desde distintos puntos de vista:
+\begin{itemize}
+ \item Las concernientes a la Web Semántica y \linkeddata en general.
+ \item Las referentes a la administración electrónica y en particular al proceso administración de contratación pública electrónica.
+\end{itemize}
+
+\subsection{Visión Científica}
+La posibilidad de acciones en una línea de investigación son múltiples, la selección de las más interesantes no es una tarea sencilla y puede estar
+condicionada por diferentes factores: dificultad, ventaja estratégica o disponer de un escenario de aplicación correcto. Entre las más relevantes 
+surgidas tras la realización de esta trabajo se encuentran:
+
+\begin{itemize}
+ \item Realización de un sistema de catalogación de vocabulario y conjuntos de datos basado en diferentes métricas que permitan 
+tanto a un usuario de dominio como desarrollador seleccionar áquel más conveniente a sus necesidades.
+ \item Mejora de los algoritmos de reconciliación de entidades para llevar a efecto uno de los puntos clave de \linkeddata como es 
+la identificación de recursos iguales tanto para la realización de consultas como para su procesamiento mediante procesos 
+de razonamiento.
+ \item Establecimiento de un conjunto de métricas que permitan establecer y asegurar la calidad de los datos.
+ \item Mejora del rendimiento de las consultas federadas sobre grandes bases de datos en continuo crecimiento y evolución.
+ \item Adaptación y mejora de las técnicas y algoritmos basados en semántica a entornos con características de tiempo real.
+ \item Estudio de la aplicación de la investigación e innovación a otras etapas de la contratación pública electrónica, como la 
+decisión de ofertas, y en general a la administración electrónica.
+ \item Estudio de las posibilidades de realización de un sistema experto específico para la recuperación de información 
+de anuncios de licitación teniendo en cuenta la mayor cantidad de descriptores posibles.
+ \item Estudio de los operadores de agregación que permiten establecer un orden en la recuperación de documentos.
+ \item Mejora de la capitalización del conocimiento experto en el dominio de contratación pública electrónica.
+ \item Estudio de las posibilidades de creación de un sistema predictivo de anuncios de licitación de acuerdo a 
+la información histórica de los anuncios de licitación.
+ \item Investigación en aspectos relativos al consumo de datos como base para el impulso de los datos enlazados:
+\begin{itemize}
+ \item Mejora de la escalabilidad tanto para el indexado como para la extracción de datos a gran escala.
+ \item Procesamiento de consultas federadas de forma eficiente.
+ \item Búsqueda sobre fuentes de datos heterogéneas.
+ \item Descubrimiento automático de \datasets.
+ \item Gestión de \datasets dinámicos como los provenientes de sensores, sistemas reactivos, etc.
+ \item Calidad de los datos: procedencia, valores, etc.
+ \item Usabilidad en la interacción con datos enlazados.
+\end{itemize}
+
+\end{itemize}
+
+\subsection{Visión Tecnológica}
+Desde un punto de vista tecnológico, las mejoras y líneas de actuación futuras se centran en dos grandes grupos: 1) las referentes 
+al sistema MOLDEAS como demostrador público y 2) las concernientes a tecnología de base para la Web Semántica y \linkeddata. Es conveniente, 
+por tanto, destacar las siguientes:
+\begin{itemize}
+ \item Mejora del sistema de consumo de datos enlazados de MOLDEAS, personalización y prueba intensiva de los algoritmos disponibles.
+ \item Mejora del sistema de visualización y consumo de datos enlazados desde el punto de vista del usuario final.
+ \item Continuación del desarollo del sistema de validación de datos enlazados. En este sentido se ha planificado la realización de 
+acciones determinadas como un proyecto fin de carrera para impulsar su desarrollo a corto/medio plazo.
+ \item Contribuir con nuevas herramientas a la comunidad de \linkeddata para la mejora del consumo de datos enlazados desde 
+lenguajes de programación y reutilización sencilla de información y datos. Por ejemplo, facilitando la traslación de los datos 
+provenientes de un repositorio RDF a objetos de un modelo de negocio y viceversa.
+ \item \ldots
+\end{itemize}
+
+Como se ha podido comprobar las líneas de actividad son múltiples tanto desde un punto de vista científico como tecnológico. Evidentemente 
+y como 
+

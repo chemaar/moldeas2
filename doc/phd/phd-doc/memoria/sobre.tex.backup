@@ -1,0 +1,100 @@
+%sobre
+\chapter*{Sobre este documento}
+
+Este documento recoge el estudio realizado sobre la aplicación
+de métodos semánticos para la producción, publicación y consumo 
+de datos enlazados abiertos en el contexto de la administración pública
+electrónica y concretamente en el campo de la contratación pública
+electrónica o \eproc. Esta memoria de investigación titulada como
+``Métodos Semánticos de Reutilización de Datos Abiertos Enlazados en las
+Licitaciones Públicas'' se ha elaborado para la obtención del título
+de Doctor por la Universidad de Oviedo.
+
+El documento se encuentra organizado de la siguiente forma:
+\begin{itemize}
+\item ``Introducción'' (ver Capítulo~\ref{capitulo:introduccion}): se realiza
+una motivación del problema de investigación a resolver identificando el plan
+y la metodología de trabajo seguida durante el proceso de elaboración
+de la tesis doctoral.
+
+\item ``Contratación Pública y \eproc'' (ver Capítulo~\ref{capitulo:eprocurement}): se 
+presenta la casuística del dominio del problema a estudiar así como las soluciones
+actuales más cercanas al enfoque desarrollado durante la investigación en el dominio
+de la administración electrónica centrando los esfuerzos en la valoración
+de los procesos de contratación pública electrónica.
+
+\item ``Panorámica de uso de la Web Semántica y \linkeddata'' (ver Capítulo~\ref{capitulo:semantica}): se
+repasan desde un punto de vista general el estado del arte de estas iniciativas así como
+su aplicación en los distintos dominios.
+
+\item ``Definición de Métodos Semánticos'' (ver Capítulo~\ref{capitulo:metodos}): se realiza
+la definición teórica de una serie de procesos, métodos y tareas a realizar para la promoción
+de datos siguiendo las directrices de \linkeddata y atendiendo a los principios
+de \opendata.
+
+\item ``Métodos Semánticos en el ámbito de las Licitaciones Públicas'' (ver Capítulo~\ref{capitulo:metodos-separados}): se materializa
+los procesos, métodos y tareas definidos en el capítulo anterior para su aplicación en el campo
+de los anuncios de licitación públicos.
+
+
+\item ``Sistema MOLDEAS'' (ver Capítulo~\ref{capitulo:moldeas}): se describe la implementación
+de los componentes realizados para dar soporte a los procesos, métodos y tareas de carácter
+semántica en el dominio de las licitaciones públicas.
+
+
+\item ``Experimentación y Validación'' (ver Capítulo~\ref{capitulo:validacion}): se diseña
+el experimento y se evalúan y valoran los resultados obtenidos de la investigación realizada.
+
+
+% \item ``Evaluación'' (ver Capítulo~\ref{capitulo:evaluacion}): se evalúan los
+% resultados obtenidos durante la experimentación realizada.
+
+\item ``Conclusiones y Trabajo Futuro''(ver Capítulo~\ref{capitulo:conclusiones}): se comentan las conclusiones obtenidas
+tras la realización de esta memoria de investigación. También se marcan las líneas de evolución futura.
+
+\item ``Impacto y Difusión'' (ver Apéndice~\ref{capitulo:impacto}): se detallan las actividades
+de difusión realizadas a través de los distintos canales durante la elaboración de la tesis doctoral valorando su impacto
+en la comunidad científica e industrial.
+
+
+\item ``Trabajos publicados'' (ver Apéndice~\ref{capitulo:publicaciones}): se enumeran
+las publicaciones científicas realizadas que han surgido como parte del trabajo realizado
+durante la elaboración de la investigación.
+
+
+\item ``Tablas de Validación'' (ver Apéndice~\ref{capitulo:tablas}): se presentan
+las tablas de validación pormenorizadas atendiendo a todos los criterios definidos
+en la experimentación de la investigación.
+
+
+\end{itemize}
+
+\chapter*{Sobre el autor}
+
+Jose María Alvarez Rodríguez es Ingeniero en Informática (2007) e Ingeniero Técnico en Informática de Sistemas (2005) por la Universidad de Oviedo. 
+En junio de 2008 recibió el Premio al Mejor Proyecto Fin de Carrera de Ingeniería Informática por su proyecto ``Activación de Conceptos 
+en Ontologías mediante el algoritmo de Spreading Activation'' otorgado por el Colegio Oficial del Principado de Asturias. 
+
+
+Desde abril del 2005 a enero 2010 desempeña su actividad investigadora en el departamento de I+D+i de la Fundación CTIC de Asturias 
+en el área de tecnologías semánticas especializándose en servicios web semánticos, sistemas basados en reglas, sistemas de búsqueda y 
+datos enlazados. Durante esta etapa participa activamente en la redacción y ejecución de proyectos de investigación en distintos ámbitos 
+destacando: regional (proyecto PRAVIA-PCTI Asturias cod. IE05-172), nacional (proyecto PRIMA-Plan Avanza-cod. TSI-020302-2008-32) y 
+europeo (proyecto ONTORULE-FP7 cod. 231875). Como fruto de esta actividad es autor de diversas publicaciones en el área de semántica 
+de carácter internacional en conferencias y \textit{workshops} realizando su trabajo de investigación en 2009 bajo 
+el título de ``Interoperabilidad e Integración en Arquitecturas Orientadas a Servicios basadas en Semántica'' para el Programa de 
+Doctorado 34.1-``Sistemas y servicios informáticos para internet'' del Departamento de Informática de la Universidad de Oviedo. Durante el curso 2008/2009 obtiene una plaza de profesor asociado (ref. Código: F036-75-DL0X041-AL6H. Bopa Nº 181, 4 de Agosto de 2008) 
+impartiendo docencia en el área de Ciencias de la Computación e Inteligencia Artificial del Departamento de Informática de la Universidad de Oviedo. 
+
+
+Actualmente se encuentra contratado por el grupo WESO del Departamento de Informática de la Universidad de Oviedo dirigido por 
+el profesor Dr. José Emilio Labra Gayo para la ejecución de distintos proyectos de investigación a nivel regional y nacional, destacando  
+el proyecto \textit{10ders Information Services} (Plan Avanza-cod. TSI-020100-2010-919) y ``ROCAS-Reasoning On the Cloud Applying Semantics'' 
+(Ministerio de Ciencia e Innovación-TIN2011-27871) lo que le ha habilitado para la consecución de becas de carácter competitivo internacional, 
+como la obtenida en marzo de 2012 a través de la red europea: \textit{HPC-Europa2: Pan-European Research Infrastructure for High Performance Computing}.
+ También ha compaginado su actividad investigadora con una plaza de profesor asociado en el área de Lenguajes y Sistemas Informáticos del Departamento de Informática de la Universidad de Oviedo durante el curso académico 
+2011/2012 participando en la co-dirección de proyectos fin de carrera. Finalmente y como parte esencial de la actividad investigadora 
+es autor y revisor de varias conferencias y revistas de carácter internacional en el área de tecnologías semánticas.
+
+
+

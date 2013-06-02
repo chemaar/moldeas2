@@ -1,0 +1,314 @@
+La metodología de la Programación Extrema~\cite{XP} (\gls{XP}), que ha servido de guía para el desarrollo 
+del sistema MOLDEAS, hace hincapié en la importancia de las pruebas. La realización de ciclos de desarrollo breves
+(incorporando la funcionalidad perseguida en pequeñas versiones totalmente funcionales) habilita la posibilidad de 
+concentrarse en la validación, en cada momento, de un segmento reducido del código o de la funcionalidad, 
+dependiendo del nivel de la prueba. Pero también exige la existencia de un mecanismo que permita 
+realizar los ensayos de forma automática; de lo contrario, la obligación de repetirlos 
+frecuentemente los convertiría en extremadamente tediosos.
+
+\subsection{Pruebas Caja Blanca}
+Son pruebas que se realizan para verificar la validez de las operaciones internas del programa, 
+intentando garantizar que todos los caminos de ejecución del programa han sido probados. Para realizar las pruebas de caja blanca se han 
+seleccionado las pruebas unitarias por su importancia dentro la metodología de Programación Extrema. 
+La descripción de las pruebas unitarias se amplia a través de los siguientes puntos.
+
+\begin{description}
+
+\item [Validación con pruebas unitarias:] representan el nivel más bajo de prueba del \textit{software}, 
+permitiendo al desarrollador obtener retroalimentación instántanea del correcto
+comportamiento (o no) de un componente determinado.
+
+\item [Necesidad de las pruebas unitarias:] como buena práctica de programación
+el desarrollador debería codificar la prueba antes que la propia funcionalidad,
+para así pensar los resultados antes de obtenerlos. Como norma general, un buen
+test siempre debería fallar la primera vez. Por otra parte, facilitan la
+depuración, si un test falla se dispone de un ámbito muy reducido en el cual localizar
+el error, incrementándose la productividad de los desarrolladores. 
+
+Además, desde el punto de vista de la gestión de un proyecto un buen conjunto de
+pruebas unitarias se pueden utilizar como documentación del código fuente, así,
+por ejemplo si se introducen nuevos desarrolladores éstos pueden comprender
+fácilmente la funcionalidad que se está realizando y probando.
+
+\item [Codificación de Pruebas:] las pruebas unitarias deben seguir una serie de
+criterios:
+\begin{itemize}
+  \item Prueban funcionalidad determinada, un método.
+  \item Ejecución rápida, si no fuera así los test sólo se ejecutarían
+  cada cierto tiempo repercutiendo en la integración del código.
+  \item Se debe determinar sobre qué clases se van a generar casos de prueba. No
+  todas las clases y métodos son candidatos a ser probados.
+  \item Son independientes de otras pruebas.
+  \item Deben ser independientes de terceros, por ejemplo de una base de datos.
+\end{itemize}
+
+\item [\textit{Refactoring}:] despues de que un componente haya pasado un test unitario,
+ya pueden aplicarse las técnicas de \textit{refactoring} para mejorar la calidad
+de código. Este proceso, conjunto de prueba y recodificación, ya puede realizarse 
+porque se dispone de una manera de probar la funcionalidad de forma automática. En las
+primeras etapas de desarrollo será cuando se haga más intenso el uso de pruebas
+unitarias ya que se está codificando una nueva funcionalidad en cada momento.
+\end{description}
+
+\subsubsection{Junit}\label{junit}
+Herramienta Java para la realización de pruebas unitarias de
+programas, ejecuta test de pruebas de forma automática realizando un registro de
+los resultados obtenidos. El gran éxito de esta herramienta se debe a su
+facilidad de uso en comparación con el trabajo que realiza.
+
+La realización de las pruebas de los programas normalmente resultan costosas
+temporalmente y muchas veces no se almacenan ni se documentan. Con esta
+herramienta, se consigue que la prueba de programas rebaje su coste, además de
+liberarnos de una parte de la construcción de programas que en muchos casos
+resulta pesada y poco eficiente.
+
+Por tanto, con Junit se aumenta el nivel de calidad en el test de los programas,
+entendiendo por calidad en el test una mejora en la realización de
+las pruebas en cuanto a casos contemplados, número y registro de las mismas y facilidad de uso.
+
+Las ventajas de uso de Junit se pueden resumir en los siguientes puntos:
+\begin{itemize}
+\item Facilidad de uso.
+\item  Creación de conjuntos de pruebas para una clase.
+\item  Combinación con otras herramientas de gestión de proyectos como Maven.
+\item  Código libre.
+\item  Bien documentado.
+\item  Pruebas a diferentes niveles y capas.
+\item  Extensible.
+\end{itemize}
+
+Cabe señalar que existen extensiones de Junit que permiten realizar pruebas en
+distintos ámbitos, siempre y cuando se haya seguido un diseño apropiado. 
+De esta manera existen \textit{frameworks} basados en Junit para probar:
+\begin{itemize}
+\item  XmlUnit, para documentos XML.
+\item  DbUnit, para probar el estado de la base de datos.
+\item  EasyMock, para generar las clases que basadas en las interfaces de
+negocio permitan probar los servicios y funcionalidad de la aplicación.
+\item  HttpUnit, JWebUnit o Cactus para las distintas capas de
+una arquitectura cliente/servidor.
+\end{itemize}
+
+El contexto del sistema \gls{MOLDEAS} se han realizado $140$ \textit{tests} enclavados 
+dentro de $48$ clases Java específicas para Junit.
+
+\subsection{Pruebas de Caja Negra}
+Son pruebas que se centran en los requisitos funcionales del
+\textit{software}. Existen diferentes tipos como, la prueba de los valores
+límites o partición equivalente. Para realizar este tipo de pruebas se utilizan
+posibles entradas al sistema y se verifica que cumple con los resultados
+esperados. Las pruebas realizadas para la validación del sistema de recuperación 
+de anuncios de licitación se pueden considerar incluidas dentro de este tipo de pruebas de caja negra y teniendo en cuenta
+que el sistema \gls{MOLDEAS} trabaja con una configuración externa, su funcionamiento
+dependerá de la misma y no del programa en sí, es decir, desde un punto de vista
+de software la implementación realizada representa un conjunto de 
+configuraciones a través de Spring. Considerando el carácter investigador 
+de este estudio, resultan más relevantes las pruebas de
+validación científica que las propias de caja negra, más apropiadas 
+desde un punto de vista de aplicación de \textit{software}.
+
+
+\subsection{Aportaciones Finales sobre las pruebas}
+La codificación de pruebas unitarias antes de implementar cierta funcionalidad
+puede resultar tediosa e incluso se considera como un retraso en el desarrollo, sin embargo disponer de un 
+método eficaz para realizar pruebas ayuda en
+posteriores etapas a la codificación de determinada función y asegura una cierta
+calidad en el \textit{software}. 
+
+Por ejemplo, se realiza un determinado método para una cierta tarea, para ejecutar la prueba se utiliza 
+un método \textit{main} en la propia clase donde se ha definido y una vez que se comprueba que todo
+funciona correctamente, se elimina ese método \textit{main}, otorgando a esa
+funcionalidad la etiqueta de éxito. Si con posterioridad, nuevas situaciones obligan a 
+modificar el código de esa clase porque no se habían contemplado todos los
+requisitos funcionales, pueden surgir las siguientes cuestiones: ¿quién está dispuesto a recodificar esa función?, ¿cuál era su comportamiento?, 
+¿para qué utilizaba esa variable? y ¿cómo se prueba que mantiene su funcionalidad anterior (necesario para otros módulos) y 
+que además incorpora la nueva funcionalidad?. La respuesta es sencilla, se volverá a codificar un método
+\textit{main}, creando un nuevo caso de prueba y prácticamente se delega en la ``suerte'' la entrega de 
+un comportamiento correcto tanto para la versión anterior como para las nuevas funcionalidades. En 
+conclusión, una prueba unitaria hubiera facilitado el desarrollo, ya que tan sólo se debería generar un
+caso de prueba para la nueva funcionalidad. Pero en cambio, se ha perdido tiempo: codificando métodos que posteriormente 
+serán eliminados, pensando en qué hacía la función, para qué se utiliza cierta variable, etc. 
+
+En definitiva, las pruebas unitarias facilitan el desarrollo de \textit{software} de
+calidad, en contraposición de los engendros (no desarrollos) de \textit{software} creados
+al margen de la realización de pruebas.
+
+\subsection{Métricas de código fuente}
+La calidad del \textit{software}, en cuanto a código fuente, es uno de los requisitos que se
+debe exigir a cualquier aplicación. Normalmente, no se plantea como uno de los
+requisitos no funcionales prioritarios y esto provoca que aunque se haya
+realizado un buen análisis e incluso un buen diseño, el código generado no es lo suficientemente bueno y es el
+origen de todos los posibles errores y en consecuencia no se cumple con los
+requisitos funcionales establecidos. La definición de calidad de \textit{software}, de
+forma genérica, es mucho más extensa:  
+
+\begin{Frame}
+\textit{Concordancia con los requisitos funcionales y de
+rendimiento explícitamente establecidos con los estándares de desarrollo
+explícitamente documentados y con las características implícitas
+que se espera de todo software desarrollado profesionalmente}. R.S. Pressman (1992).
+\end{Frame}
+
+\begin{Frame}
+\textit{El conjunto de características de una entidad que le confieren su
+aptitud para satisfacer las necesidades expresadas y las implícitas}. \gls{ISO} 8402
+(\gls{UNE} 66-001-92).
+\end{Frame}
+
+Estas definiciones de calidad se refieren sobre todo a la metodología utilizada y
+al grado de satisfacción de los requisitos funcionales del producto \textit{software}. 
+
+Las métricas que aquí se presentan constituyen medidas de calidad del código fuente, ya
+que se estima que los requisitos funcionales han sido cubiertos al obtener un
+prototipo experimental que ha sido probado a través de distintos conjuntos de pruebas.
+
+A continuación, se presentan una serie de métricas de calidad de código fuente
+(sólo del componente \texttt{moldes-api}), obtenidas mediante el \textit{plugin} Metrics de Eclipse, que 
+permite generar una serie de medidas, ver Tabla \ref{tabla:metricas}, significativas del código fuente, basadas en 
+las definiciones realizadas en el libro \textit{Object-Oriented Metrics, measures of Complexity} de \textit{Brian Henderson-Sellers}, Prentice Hall, 1996. 
+
+Estas métricas miden, principalmente, valores de cohesión y acoplamiento que permiten establecer si el código está bien estructurado. 
+Sin valorar detalles precisos de los tipos y niveles de cohesión y acoplamiento, estas dos características se pueden definir como:
+
+\begin{Frame}
+\textit{Cohesión, consecuencia del ocultamiento de la información. Un módulo con
+cohesión (Pressman en ``Ingeniería del Software: Un enfoque práctico'')
+realiza solamente una tarea, requiriendo poca
+interacción con el resto de los procedimientos que se realizan en el resto del
+sistema de software}. 
+\end{Frame}
+
+Según \textit{Sommerville} en ``Requirements Engineering. Processes and Techniques'' la cohesión es deseable
+debido a que una unidad (componente) representa una parte
+simple de solución. Si es necesario cambiar el sistema, la parte
+correspondiente está en un solo lugar y lo que se desee hacer con
+el mismo estará encapsulado en él. La meta, según \textit{Lawrence} en ``Ingeniería del \textit{software}: Teoría y práctica'', es lograr 
+que los componentes sean lo más cohesivos posible.
+
+
+\begin{Frame}
+\textit{Acoplamiento, está relacionado con la cohesión. Es un
+indicador de la fuerza de interconexión entre los componentes o
+elementos de la arquitectura }
+\end{Frame}
+
+Los sistemas altamente acoplados tienen una fuerte interconexión, lo que se
+refleja en una gran dependencia entre los componentes. Los
+sistemas poco acoplados, por otro lado, tienen poca relación entre
+sus componentes o elementos. El objetivo, según (\textit{Lawrence}), es mantener el
+acoplamiento en el nivel más bajo posible; la conectividad sencilla entre
+módulos da como resultado un \textit{software} que es más fácil de comprender y menos
+propenso al ``efecto onda'' producido cuando los errores aparecen en una
+posición y se propagan a lo largo del sistema. 
+
+
+   \begin{longtable}{|p{2cm}|p{3cm}|p{8cm}|}
+
+      \hline 
+	    \multicolumn{3}{|c|}{\textbf{Métricas de código fuente}}\\ \hline
+	     \textbf{Tipo} &  \textbf{Descripción (EN)} &  \textbf{Descripción (ES)} \\ \hline
+      \endhead
+			NSM&\textit{Number of Static Methods} & Número total de métodos estáticos.\\ \hline
+			TLOC&\textit{Total Lines of Code}&Número total de líneas de código. No incluye
+			comentarios ni líneas en blanco.\\ \hline 
+			CA&\textit{Afferent Coupling} &Número de clases fuera del paquete que dependen de
+			clases dentro del paquete.\\ \hline 
+			RMD&\textit{Normalized Distance} & $|RMA + RMI - 1 |$, este número debe ser pequeño.
+			Cercano a 0 indica un buen diseño de paquetes.\\ \hline
+			NOC&\textit{Number of Classes}& Número total de clases.\\ \hline
+			SIX&S\textit{pecialization Index} &Indice de especialización :$NORM * DIT / NOM$\\			\hline 
+			RMI&\textit{Instability} & $CE / (CA + CE)$\\ \hline
+			NOF&\textit{Number of Atributtes} &Número de atributos definidos en un ámbito.\\ \hline
+			NOP&\textit{Number of Package}s& Número  total de paquetes.\\ \hline
+			MLOC&\textit{Method Lines of Code} & Número de líneas de código por método. No incluye
+			comentarios ni espacios en blanco.\\ \hline
+			WMC&\textit{Weighted methods per Class}& Suma de las complejidades ciclomáticas de
+			McCabe de todos los métodos de una clase. \\ \hline 
+			NORM&\textit{Number of Overriden Methods}&Número total de métodos sobreescritos. No
+			incluye los de la clase ``Object''. \\ \hline 
+			NSF&\textit{Number of Static Attributes} & Número total de atributos estáticos.\\ \hline
+			NBD&\textit{Nested Block Depth} & Número de bloques anidados.\\ \hline
+			NOM&\textit{Number of Methods} & Número de métodos definidos en un ámbito.\\ \hline
+			LCOM&\textit{Lack of Cohesion of Methods}& Cohesión de una clase. Si $m(A)$ es el
+			número de métodos que acceden a un atributo $A$, se calcula la media de $m(A)$ para
+			 todos los atributos, se resta el número de métodos $m$ y se divide el resultado
+			 entre $(1-m)$. Un valor bajo indica clase con alta cohesión (preferible) y alto, baja
+			 cohesión y se debería dividir en $n$ subclases. (\textit{Henderson-Sellers})\\ \hline
+			VG&M\textit{cCabe Cyclomatic Complexity} &Complejidad ciclomática.\\ \hline
+			PAR&\textit{Number of Parameters} & Número de parámetros.\\ \hline
+			RMA&\textit{Abstractness}& Número de clases e interfaces abstractas en un paquete divido
+			entre el total de tipos en el paquete.\\ \hline 
+			NOI&\textit{Number of Interfaces}&Número de interfaces.\\ \hline
+			CE&\textit{Efferent Coupling}& Número de clases dentro del paquete que dependen de
+			clases fuera del paquete.\\ \hline 
+			NSC&\textit{Number of Children}& Número de hijos de un tipo o clase.\\ \hline
+			DIT&\textit{Depth of Inheritance Tree}&Distancia de una clase en la jerarquía de herencia.\\
+			\hline \hline
+        \caption{Métricas del código fuente} \label{tabla:metricas}
+        \end{longtable}      
+        
+        \newpage
+   \begin{longtable}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1cm}|p{2cm}|p{2.5cm}|}
+
+      \hline 
+	    \multicolumn{7}{|c|}{\textbf{Valores Métricas de código fuente}}\\ \hline
+	    \textit{ID} &  \textit{Total} &  \textit{Media}&  \textit{Desv. est.} & \textit{Max}& \textit{Rango}& \textit{Ámbito} \\ \hline
+      \endhead
+		NSM&103&$0.656$&$1.967$&16& \na &Tipo. \\ \hline
+		TLOC&8090&\na&\na&\na&\na&\na \\ \hline
+		CA&\na&$6.545$&$15.455$&86&\na&Paquete.\\ \hline
+		RMD&\na&$0.331$&$0.33$&1&\na&Paquete. \\ \hline
+		NOC&157&$4.758$&$4.164$&23&\na&Paquete. \\ \hline 
+		SIX&\na&$0.074$&$0.329$&3&\na&Tipo. \\		\hline 
+		RMI&\na&$0.648$&$0.351$&1&\na&Paquete. \\ \hline
+		NOF&158&$1.006$&$1.684$&9&\na&Tipo. \\ \hline
+		NOP&33&\na&\na&\na&\na&\na \\ \hline
+		MLOC&4235&$5.639$&$7.025$&47&\na&Método \\ \hline
+		WMC&1167&$7.433$&$9.055$&52&\na&Tipo. \\ \hline
+		NORM&39&$0.248$&$0.711$&3&\na&Tipo. \\ \hline
+		NSF&91&$0.58$&$1.506$&$15$&\na&Tipo. \\ \hline
+		NBD&\na&$1.304$&$0.723$&7&\na&Método. \\ \hline
+		NOM&648&$4.127$&$4.403$&22&\na&Tipo. \\		\hline 
+		LCOM&\na&$0.129$&$0.26$&1&\na&Tipo. \\ \hline 
+		VG&\na&$1.554$&$1.736$&25&\na&Método autogenerado por Eclipse. \\ \hline
+		PAR&\na&$0.606$&$0.756$&4&5&Método.\\ \hline 
+		RMA&\na&$0.082$&$0.176$&$0.714$&\na&Paquete. \\ \hline
+		NOI&14&$0.424$&$1.016$&5&\na&Paquete. \\ \hline
+		CE&\na&$3.576$&$2.535$&11&\na&Paquete. \\ \hline
+		NSC&20&$0.127$&$1.144$&14&\na&Media y máximo por tipo. \\ \hline
+		DIT&\na&$1.242$&$0.569$&4&\na&Tipo. \\ \hline
+    	 \hline
+        \caption{Valores de Métricas del código fuente de \texttt{moldeas-api}} \label{tabla:metricas-valores}\\
+        \end{longtable}    
+  
+\subsection{Aportaciones Finales sobre Métricas de Código Fuente}
+Todas las medidas obtenidas, ver Tabla \ref{tabla:metricas-valores}, están dentro de
+los rangos fijados por la herramienta, aquellos valores que no son aplicables 
+se señalan con el símbolo \na. Sobre los valores obtenidos hay que destacar 
+los siguientes puntos:
+
+\begin{itemize}
+  \item La complejidad ciclomática de McCabe es siempre aceptable, obteniendo
+  una media de $1.554$ por debajo de 10, y con un máximo de 25 en un método generado 
+por Eclipse (\texttt{equals}).
+
+  \item En LCOM o medida de cohesión de una clase se obtiene una media $0.129$.
+  En esta medida el valor adecuado es cercano a 0, por lo que se puede concluir que
+  las clases tienen una excelente valoración en cohesión. El valor máximo
+  es de $0.26$ que resulta de nuevo un excelente valor.
+
+  \item Las medidas de acoplamiento CA y CE de nuevo proporcionan buenos valores para
+  todas las clases. 
+
+\end{itemize}
+
+Con estas medidas, se ha creado un producto cuyo código fuente posee las
+características deseadas de alta cohesión y bajo acoplamiento. Por otra parte,
+esta situación no es extraordinaria ya que el uso de patrones de diseño y de buenas
+prácticas de programación, como el binomio de pruebas unitarias y
+\textit{refactoring}, aseguran calidad en el código fuente implementado, no obstante, 
+toda aplicación y por extensión su código fuente son siempre candidatos a ser mejorados.
+
+
+
+

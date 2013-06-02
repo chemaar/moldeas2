@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:admin="http://webns.net/mvcb/"
+	xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#"
+	xmlns:air="http://www.daml.org/2001/10/html/airport-ont#"
+	xmlns:wn="http://xmlns.com/wordnet/1.6/"
+	xmlns:uranai="http://kota.s12.xrea.com/vocab/uranai"
+	xmlns:rel="http://purl.org/vocab/relationship/"
+	xmlns:openid="http://xmlns.openid.net/auth#"
+>
+
+  <foaf:PersonalProfileDocument rdf:about="http://petra.euitio.uniovi.es/~i1637566/foaf.rdf">
+    <foaf:maker rdf:resource="http://petra.euitio.uniovi.es/~i1637566/foaf.rdf"/>
+    <foaf:primaryTopic rdf:resource="http://petra.euitio.uniovi.es/~i1637566/foaf.rdf#chema"/>
+    <dc:date>2007-09-24</dc:date>
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Document rdf:about="">
+
+    <rdfs:label>Chema's FOAF document</rdfs:label>
+    <rdfs:comment>Document with Friend-of-a-Friend description of Chema</rdfs:comment>
+  </foaf:Document>
+
+  <foaf:Person rdf:about="http://petra.euitio.uniovi.es/~i1637566/foaf.rdf#chema">
+    <foaf:name xml:lang="es">Jose M. Alvarez</foaf:name>
+    <foaf:title>Mr</foaf:title>
+
+    <foaf:firstName xml:lang="es">Jose M.</foaf:firstName>
+    <foaf:surname xml:lang="es">Alvarez</foaf:surname>
+    <foaf:gender>Male</foaf:gender>
+    <foaf:birthday>1983-01-12</foaf:birthday>
+    <foaf:nick>chema</foaf:nick>
+
+    <foaf:phone>+34 666714721</foaf:phone>
+
+    <foaf:isDescribedIn rdf:resource="http://petra.euitio.uniovi.es/~i1637566/foaf.rdf" />
+
+    <!-- my personal address -->
+    <foaf:mbox_sha1sum>135a617c9e2e37003e1c38be6c21ce7af433552f</foaf:mbox_sha1sum>
+
+    <foaf:jabberID>chema_ar@jabber.org</foaf:jabberID>
+    <foaf:msnChatID>okan20@hotmail.com</foaf:msnChatID>
+
+    <foaf:based_near  geo:lat="43.363897" geo:long="-5.843514" />
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="berrueta">
+        <foaf:name>Diego Berrueta</foaf:name>
+        <foaf:mbox_sha1sum>98a99390f2fe9395041bddc41e933f50e59a5ecb</foaf:mbox_sha1sum>
+        <foaf:nick>berrueta</foaf:nick>
+        <rdfs:seeAlso rdf:resource="http://www.berrueta.net/foaf.rdf#me" />
+        <foaf:homepage rdf:resource="http://www.berrueta.net/" />
+
+      </foaf:Person>
+    </foaf:knows>
+
+    <foaf:knows>
+      <foaf:Person rdf:nodeID="labra">
+        <foaf:name>Jose Emilio Labra</foaf:name>
+        <foaf:mbox_sha1sum>3d0a8f16ce3d560ca75e16d36f6ded63599c60a7</foaf:mbox_sha1sum>
+        <rdfs:seeAlso rdf:resource="http://www.di.uniovi.es/~labra/labraFoaf.rdf" />
+        <foaf:homepage rdf:resource="ttp://www.di.uniovi.es/~labra/"/>
+      </foaf:Person>
+    </foaf:knows>
+  </foaf:Person>
+
+</rdf:RDF>

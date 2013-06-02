@@ -1,0 +1,719 @@
+\subsection{Diseño del experimento sobre el Sistema MOLDEAS}
+Uno de los puntos clave para el triunfo de la iniciativa de \linkeddata consiste 
+en asegurar que las aplicaciones pueden consumir los datos para la construcción de servicios 
+de valor añadido aprovechando el modelo semántico subyacente. En este sentido, 
+en el caso objeto de estudio de este documento y tras el diseño e implementación 
+del sistema MOLDEAS, en concreto del componente \texttt{moldeas-api} y teniendo 
+en cuenta la ejecución del proyecto ``10ders Information Services'' se consideró 
+la necesidad de completar el proceso de consumo mediante una el diseño de 
+una serie de métodos que suministren servicios de recuperación de información 
+sobre las licitaciones.
+
+Inicialmente, este sistema se encuadra dentro de la tecnología existente 
+para la recuperación información, pudiendo así considerarse como un sistema 
+experto o bien un buscador híbrido de licitaciones. En ambos casos, la casuística 
+y la gran cantidad y variedad de información contemplada en los documentos de los anuncios 
+de licitación convierten a un sistema de recuperación de estos documentos en realmente 
+un objeto de estudio de gran profundidad. Por ello, en el desarrollo de esta tesis 
+se ha optado por la realización de un demostrador público que haciendo uso 
+de datos enlazados y de las capacidades de las tecnologías semánticas sea capaz de 
+abordar los siguientes puntos:
+\begin{itemize}
+ \item Consumir los datos enlazados desde un lenguaje de programación.
+ \item Crear un sistema de recuperación de información.
+\end{itemize}
+
+Bajo estos dos grandes objetivos se ha diseñado una primera versión de un 
+prototipo experimental prestando especial interés en su diseño para ser extendido 
+en siguientes iteraciones.
+
+\subsubsection{Recuperación de Información}
+Este término más conocido como \textit{Information Retrieval}~\cite{Manning:2008:IIR:1394399} es el área 
+de conocimiento sobre la tecnología para la adquisición, representación, almacenamiento, 
+organización y acceso a recursos de información. El objetivo de la misma 
+se basa en ofrecer al usuario una serie de métodos para la obtención 
+de documentos de su interés de acuerdo a una consulta. Como ejemplo 
+de este tipo de sistemas se encuentran los motores de búsqueda sintácticos 
+basados en la búsqueda de cadenas de texto coincidentes y que han demostrado 
+en la última década su increíble capacidad para localizar y recuperar 
+información en los contenidos presentes en la web. El uso de algoritmos 
+como \textit{PageRank}~\cite{Page:1998:PCR}, en el caso de Google, para establecer la relevancia 
+de un documento combinado con el refinamiento de las técnicas estadísticas 
+de búsqueda de texto han aumentado la potencia y precisión de la búsqueda 
+en la Web. Por eso, el uso de semántica como potenciador de los sistemas 
+de búsqueda no trata de suplantar la búsqueda tradicional sino ofrecer soluciones 
+en dominios verticales en los cuales el uso de estas técnicas puede ser mejorado.
+
+En general, en un dominio vertical el espacio de búsqueda y la terminología 
+utilizada por un usuario es más complicada por lo que la formulación de las 
+consultas con criterios adecuados se convierte en un problema~\cite{Maslov2009} en el momento 
+de obtener resultados satisfactorios.
+
+En el caso que nos ocupa de recuperación de anuncios de licitación, la aplicación 
+de un algoritmo como \textit{PageRank} es relativamente no aplicable ya que 
+no se dispone de enlaces entra los documentos presentes y las relaciones 
+entre los anuncios son conceptuales, clasificadas de acuerdo un tipo de 
+contrato u otras variables de información como el emisor, la región, etc. La 
+propuesta diseñada se basa en la aplicación de semántica para la recuperación 
+de los anuncios de licitación combinando tanto técnicas semánticas como otras 
+que exploten las capacidades semánticas y los sistemas de recomendación. 
+
+Un anuncio de licitación se puede ver como un documento en el cual existen dos 
+tipos de propiedades:
+\begin{description}
+ \item [Extensionales.] Estas propiedades son independientes del contenido 
+del texto y se refieren propiamente a metadatos del documento como el tipo 
+de anuncio, el contratante o la localización.
+\item [Intensionales.] El contenido propio de un documento, es decir, el  
+discurso, conjunto de oraciones que constituyen una unidad de significado
+\end{description}
+
+La formalización y la explotación de las propiedades de los documentos 
+difiere según el caso. Para el tratamiento de las propiedades extensionales 
+se suelen utilizar herramientas del ámbito de la gestión documental y utilizadas 
+ampliamente en biblioteconomía y archivística utilizando vocabularios 
+controlados para su gestión. En cambio, el caso de las propiedades 
+intensionales cambia radicalmente ya que aunque la teoría del análisis 
+del discurso ha alcanzado una madurez importante en los últimos años 
+todavía su representación semántica es bastante compleja.
+
+En el caso objeto de estudio de este documento y referente a los anuncios 
+de licitación queda de manifiesto que las propiedades extensionales permiten 
+actualmente dar soporte a los sistemas de recuperación de información. A través 
+del concepto de metadato y el uso de un vocabulario controlado como el CPV 
+es posible clasificar los anuncios de licitación de forma facetada 
+de acuerdo a un sistema homogéneo. De esta manera, se obtienen estructuras 
+lógicas basadas en conceptos que permiten la recuperación efectiva 
+de información. De acuerdo al modelo realizado en el Capítulo~\ref{capitulo:metodos-separados} se observa 
+como los metadatos propios de los anuncios de licitación son modelados permitiendo la realización de 
+procesos de clasificación y búsqueda. El uso de este tipo propiedades facilita enormemente 
+la recuperación de información para este dominio ya que se el esfuerzo realizado 
+por facilitar estos procesos compensa y en cierta manera evita el uso de 
+propiedades intensionales que en la mayor parte de los casos inducen 
+a recuperación de elementos de información no deseados.
+
+\subsubsection{Tareas, Modelos y Métodos de Recuperación de Información}
+En general, existen dos grandes tipos de sistemas para el procesamiento 
+de elementos de información: los de recuperación de información 
+y los sistemas gestores de bases de datos orientadas al manejo 
+de datos estructurados~\cite{Chen:1976:EMU:320434.320440}. La diferencia 
+entre ambos enfoques reside en que en el primer de los casos el sistema 
+intenta obtener la mejor relación entre documentos relevantes recuperados 
+y documentos relevantes, mientras que en el segundo caso existe un álgebra 
+definido que devuelve todos los resultados de acuerdo al mismo.
+
+Se pueden establecer una serie de tareas en los sistemas de 
+recuperación de información:
+\begin{itemize}
+ \item Recuperación \textit{ad-hoc}. El paradigma sería un conjunto de
+documentos fijo sobre el cual se ejecutan diferentes consultas.
+\item Categorización o clasificación de documentos. En este caso, 
+se trata de proporcionar propiedades intensionales a los documentos 
+para su recuperación y filtrado.
+\item \textit{Clustering} de documentos. En el caso de que no se puedan 
+agrupar documentos mediante propiedades intensionales o vocabularios 
+controlados se utilizan distintas técnicas para agrupar documentos 
+con características comunes.
+\item Segmentación de documentos. Consiste en la división de un documento 
+en unidades de información coherentes para ser tratado con una mejor 
+eficacia.
+\end{itemize}
+
+Evidentemente las tareas de la recuperación de información 
+guían hacia los distintos de modelos de representación interna, entre los cuales 
+se puede destacar:
+\begin{itemize}
+ \item \textit{Bag-of-Terms}. Cada documento se representa a través 
+de una serie de términos índices, por ejemplo los documentos de una 
+biblioteca. Se basa en el principio de composicionalidad, según la cual 
+un documento está formado por únicamente por los términos índices y en 
+consecuencia se puede asumir que ese documento trata sobre ese tema. 
+
+Este tipo de representación es eficiente pero carece de semántica entre 
+los términos salvo que, como en el caso objeto de estudio, el vocabulario 
+controlado utilizado ya contenga una semántica definida, en este 
+caso una taxonomía con relaciones de especificidad.
+
+\item Términos con pesos. La semántica asociada a un documento 
+con un número determinado de términos no es completa en el sentido 
+de que no todos los términos índices utilizados tienen el mismo peso. Por ello, 
+la evolución natural del modelo anterior consiste en asignar un peso $w_{ij}$ para 
+cada término $i$ en un documento $j$.
+
+Existen dos puntos clave para la asignación de pesos en un documento: su frecuencia 
+de aparición y su distribución dentro del conjunto de todos los documentos, lo que 
+permite realizar dos suposiciones:
+\begin{enumerate}
+ \item Los términos que más se repiten deben ser considerados como representativos, 
+grado de significatividad. En este caso, esta medida se refiere a la frecuencia.
+ \item El número de documentos en los que aparece un determinado término implica una medida 
+del grado de discriminación, por lo que aquellos que aparecen en muchos documentos 
+deberían de alguna forma ser obtener un peso menor. En este segundo caso la medida 
+se refiere a la frecuencia inversa.
+\end{enumerate}
+
+Si $N$ es el número de documentos total y $n_i$ el número de documentos en los que aparece 
+un término $t_i$, se puede definir la frecuencia de un término $t_i$ en un documento 
+$j$ como $tf_{ij}$. La frecuencia inversa de un término se calcula como $idf_{i}=log(N/n_{i})$.
+
+Estas fórmulas deben ser tenidas en cuenta en el momento del cálculo de los pesos y en la mayoría 
+de los casos se asume que los términos no están correlados con el objetivo de 
+que la asignación de pesos sea independiente.
+
+\end{itemize}
+
+Una vez que se ha proporcionado una visión sintética de los modelos 
+de representación cabe especificar los modelos de recuperación más 
+habituales:
+
+\begin{itemize}
+ \item Modelo Booleano. Se trata del modelo de recuperación más sencillo y está basado 
+en teoría de conjuntos y álgebra de Bool. El acceso a la recuperación de la información 
+en este modelo se basa en la ejecución de una consulta con distintos términos estableciendo 
+una operación booleana entre los mismos para la recuperación de los documentos que cumplan 
+dicha expresión. El conjunto total de documentos se divide por tanto en relevantes y 
+no relevantes. 
+
+Este método se ha utilizado inicialmente debido a su sencillez tanto desde un punto 
+de vista formal como de implementación, se ejecuta con una gran eficiencia. El principal 
+problema de la expresión de consultas mediante un conjunto de términos y operadores booleanos 
+recae en que usuarios no expertos encuentran dificultades para la creación de consultas 
+lo que impide rescatar los documentos realmente relevantes para los usuarios. Otra 
+de las desventajas de este modelo reside en que no existe un encaje parcial de la consulta 
+respecto a los documentos al tratarse de un modelo binario, por lo tanto, un documento 
+o cumple con la expresión de la consulta entera o no.
+ 
+\item Modelo Vectorial. Este modelo surge para abordar los problemas encontrados en el modelo 
+anterior para la realización de encajes parciales y la asignación de relevancia de un documento 
+a una consulta. Para ello, se utiliza una representación tanto de las consultas como los 
+documentos mediante un vector en el cual se indican los términos y pesos. Si tanto 
+el vector de la consulta como el del documento están próximos, desde un punto de 
+vista geométrico, se puede asumir que el documento es relevante.
+
+La mejora de este modelo reside en que no sólo se basa en la creación de dos conjuntos 
+como el modelo booleano sino que se basa en la similitud de los términos utilizados 
+en la consulta y la definida en los documentos. Con todo ello, el modelo vectorial 
+ha obtenido buenos resultados tanto desde un punto de vista formal como en la práctica.
+ 
+\item Modelo Probabilístico. Una vez repasados dos de los grandes modelos de recuperación 
+de información basados en conjuntos y en geometría, cabe citar este modelo basado en términos 
+de teoría de probabilidades. La teoría que subyace a este modelo consiste en asignar la probabilidad 
+de que un documento sea relevante para una determinada consulta.
+\end{itemize}
+
+El repaso de los métodos de representación de información y los modelos de recuperación 
+permiten establecer una primera visión de la complejidad de un sistema de recuperación 
+de información con el cual caracterizar el entorno para la búsqueda de anuncios 
+de licitación públicos.
+
+\subsubsection{Búsqueda y Generación de Consultas}
+El proceso de búsqueda de documentos tras la definición del método de representación y el 
+modelo de recuperación debe además acometer determinadas tareas para el procesamiento 
+del lenguaje de natural. 
+
+La principal tarea consiste en la extracción de términos para el indexado. 
+La estrategia habitual para llevar a cabo esta tarea se basa en técnicas de transformación de los términos iniciales 
+mediante procesamiento del lenguaje natural~\cite{Wilcock:2009:ILA:1717999} con el 
+objetivo de eliminar texto superfluo y normalizar los términos realmente interesantes 
+para el indexado. La ejecución básica de esta tarea consiste en la eliminación 
+de las denominadas \textit{stop-words}, normalización de mayúsculas y minúsculas, 
+aplicación de técnicas de \textit{stemming}, etc. La aplicación de estas 
+técnicas puede obtener diferentes términos de indexado conllevando un comportamiento 
+diferente en el sistema de recuperación de información.
+
+Una vez que el índice de búsqueda se ha generado conteniendo para cada documento 
+un conjunto de términos índices obtenidos tras el análisis léxico de los elementos 
+presentes en el documento ya se está en disposición de realizar búsquedas y 
+recuperar información sobre este índice. De forma habitual el proceso a seguir consiste 
+en la introducción de una consulta que es tratada inicialmente mediante el mismo tipo de análisis 
+utilizado para la generación de términos de indexado. Dependiendo del modelo 
+de recuperación utilizado se obtendrán resultados o documentos con una determinada 
+relevancia para la consulta. Como mejora a este proceso se utilizan técnicas de 
+expansión de consultas que de forma automática o semi-automática realizan transformaciones 
+en la consulta inicial para obtener una consulta enriquecida con nuevos términos. Estas 
+técnicas se basan principalmente en el uso de tesauros para la obtención de relaciones de sinonimia, 
+antonimia, hiperonimia e hiponimia, etc. para la construcción de una nueva 
+consulta, también se suele utilizar la realimentación del usuario 
+y el estudio de los registros de las consultas para optimizar la generación 
+de consultas extendidos, en ambos casos tesauros como Wordnet~\cite{Gong:Cheang:U:2006} son relevantes 
+y existen enfoques híbridos~\cite{Lisa2010}. Finalmente, otro tipo de sistemas de búsqueda realizan 
+un enfoque compuesto combinando técnicas de búsqueda sintáctica añadiendo semántica para la expansión 
+de conceptos y generación de consultas avanzadas, este tipo de enfoque es considerado como 
+búsqueda semántica previa alineación de la consulta con conceptos de una ontología.
+
+En este sentido y en los últimos años con la aparición de las ontologías como elemento 
+vertebrador del conocimiento han aparecido técnicas como \textit{Spreading Activation} (implementadas en la biblioteca ONTOSPREAD) 
+para la exploración de conceptos~\cite{Qiu93,Chen95} en redes semánticas, 
+con el objetivo de facilitar dos funciones: 1) la selección de conceptos y 2) la ponderación de términos 
+adicionales de búsqueda de acuerdo a medidas de similaridad~\cite{gouws-vanrooyen-engelbrecht:2010:CCSR}. El objetivo 
+final de aplicación de estos enfoques es la construcción de sistemas de búsqueda 
+híbridos~\cite{bopaEstonia,RochaSA04,conf-sofsem-Suchal08,767402} basados en semántica, en realidad se pueden alinear 
+con los tradicionales enfoques de expansión de consultas comentados anteriormente.
+
+\subsubsection{Medidas de Evaluación}
+El éxito de un sistema de recuperación de información vendrá 
+determinado por la evaluación realizar para la comprobación del ajuste 
+de los documentos recuperados de acuerdo a las expectativas del usuario. En general, 
+se pueden evaluar múltiples aspectos: eficiencia, en cuanto a el coste 
+espacio-temporal; efectividad, cantidad de documentos relevantes recuperados; 
+esfuerzo, en el momento de la construcción de consultas y usabilidad. 
+
+Entre las medidas más importantes se encuentra la efectividad del sistema ya que 
+permite establecer la bondad de la recuperación y comparar distintos modelos 
+de recuperación de información. Entre este tipo de métricas se estable la siguiente 
+Tabla~\ref{tabla:pr}, característica de los documentos recuperados. Este tipo de medidas 
+son ampliamente utilizadas en las clasificaciones binarias en las cuales un individuo 
+pertenece o no a un conjunto
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+  &\multicolumn{2}{|c|}{\textbf{\textit{Actual class (expected)}}} \\ \hline
+   \multirow{2}{*}{\textbf{\textit{Predicted class (observation)}}}&tp (\textit{true positive})&fp (\textit{false positive}) \\ 
+  &fn (\textit{false negative})&tn (\textit{true negative}) \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Clasificación de resultados de la Recuperación de Información.}
+  \label{tabla:pr}
+  \end{center}
+\end{table} 
+
+
+\begin{description}
+ \item [Precisión.] Capacidad del sistema para recuperar sólo los documentos relevantes de acuerdo 
+a una consulta. La intepretación de esta medida será mejor cuanto más cercana a $1$ se encuentre ya 
+que indicará que la proporción de todos los documentos o recursos relevantes extraídos de la consulta 
+respecto al número total de documentos extraídos.
+
+\begin{center}
+$Precision = \frac{tp}{tp+fp} $
+
+$Precision = \frac{D_{relevantes}\cap D_{recuperados}}{D_{recuperados}} $
+\end{center}
+
+
+ \item [\textit{Recall}.] Capacidad del sistema para todos los documentos relevantes 
+de acuerdo a una consulta. Dependiendo del contexto de uso también se denomina \textit{Sensivity}, por ejemplo 
+en clasificación binaria. La interpretación de esta medida es evidente ya que un valor cercano a $1$ indica 
+que se han devuelto todos los documentos relevantes a la consulta por ello se debe combinar con la precisión.
+
+\begin{center}
+$Recall = \frac{tp}{tp+fn} $
+
+$Recall = \frac{D_{relevantes}\cap D_{recuperados}}{D_{relevantes}} $
+ 
+\end{center}
+
+Precisión y \textit{recall} también se pueden combinar para la obtención de la medida $F-measure$, calculada 
+como la media armónica. 
+
+ \item [\textit{Accuracy}.] Es la proporción de resultados positivos (tanto positivos como negativos) de la población 
+observada. Es un valor de medición positivo.
+
+\begin{center}
+$Accuracy = \frac{tp+tn}{tp+fp+fn+tn} $
+
+\end{center}
+
+
+
+ \item [\textit{Specifity}.] Es la capacidad del sistema para detectar resultados negativos. Por ejemplo, en un sistema 
+de diagnóstico médico un valor alto de esta medida implica una alta probabilidad de presencia de la enfermedad 
+diagnosticada.
+
+\begin{center}
+$Specifity = \frac{tn}{tn+fp} $
+ 
+\end{center}
+ 
+\end{description}
+
+Estas medidas permiten valorar y comparar la bondad de un sistema diagnóstico, un sistema de recuperación de información, etc., 
+en los cuales resulta de vital de importancia la mejora constante para cumplir con las expectativas del usuario.
+
+\subsubsection{Caracterización de la Recuperación de Información en Anuncios de Licitación}
+La especificación del experimento sobre la recuperación de información en anuncios de licitación se ha abordado 
+con los dos grandes objetivos previamente mencionados de consumir los datos enlazados producidos e implementar 
+un demostrador público que permita realizar búsquedas sobre la información disponible. La recuperación 
+de documentos de los anuncios de licitación se puede abordar desde diferentes puntos de vista, de acuerdo 
+a los modelos y métodos de representación y de recuperación en la sección anterior se establece que 
+el modelo de representación es similar a \textit{Bag-of-Terms} ya que el contenido completo de los anuncios 
+no está disponible y siempre se disponen de códigos CPV para etiquetar los mismos, el tipo de propiedades 
+utilizadas en este caso serían intensionales y de acuerdo a los metadatos propios de un anuncio de licitación. En cuanto al método de 
+recuperación se encontraría entre un híbrido entre el modelo booleano y el vectorial dependiendo del sistema del tipo 
+de consulta que se pretenda proveer el usuario.
+
+El sistema de recuperación de información diseñado se basa en un repositorio RDF en el cual se almacenan las descripciones 
+RDF de cada uno de los anuncios de licitación suministrando a través de un \textit{endpoint} de SPARQL el acceso a los 
+mismos. 
+
+El experimento diseñado busca realizar las pruebas sobre el componente \texttt{moldeas-api} teniendo en cuenta 
+los métodos desarrollados para la expansión de consultas. Las variables de información presentes en los anuncios 
+de licitación y su correlación se pueden explotar de muchas formas distintas. No obstante, para este experimento 
+se ha seleccionado el tipo de licitación, es decir, los códigos CPV de la misma para comprobar los métodos de 
+recuperación de información debido principalmente a las siguientes causas:
+
+\begin{itemize}
+ \item Es la variable de información cuya presencia está asegurada en todos los anuncios. Otras como el emisor, fechas, etc., también 
+se pueden utilizar para la recuperación de información pero su importancia es ciertamente inferior en cuanto a trascendencia respecto 
+al tipo de contrato público.
+\item Dentro de la ejecución del proyecto ``10ders Information Services'' se han solicitado consultas de los clientes del 
+servicio ``Euroalert.net'' y la información proporcionada se basa en los códigos CPV exclusivamente.
+\end{itemize}
+
+Sintetizando el experimento que se realizará evaluará los códigos CPV generados (o recuperados) mediante el sistema MOLDEAS en contraposición 
+con los suministrados por ``10ders Information Services'' y utilizando las medidas de evaluación Precisión (P), Recall (R), Accuracy (A) y 
+Especificidad (S).
+
+Una vez determinadas los puntos clave a tener en cuenta para la evaluación de la recuperación de información es conveniente la caracterización 
+propia del experimento que consta de las siguientes etapas:
+\begin{enumerate}
+ \item Definición de los objetivos del experimento. Las preguntas a responder por el experimento serán:
+\begin{itemize}
+ \item ¿Es posible implementar un sistema de recuperación de información utilizando datos enlazados?
+ \item ¿Es posible explotar las relaciones semánticas establecidas para mejorar la recuperación de información?
+ \item ¿Cuál es el mejor enfoque para la recuperación de información en los anuncios de licitación? 
+ \item ¿Cómo afectan los resultados en la implementación actual del sistema MOLDEAS?
+\end{itemize}
+ \item Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio. En este caso, 
+la unidad experimental de este estudio será un repositorio RDF en el cual se encuentran almacenadas 
+un $1M$ de anuncios de licitación y las clasificaciones de productos, especialmente el CPV 2008 con $10357$ términos. 
+\begin{itemize}
+ \item Cualitativos: tipo de entorno hardware y software, códigos CPV generados.
+ \item Cuantitativos: tamaño de la muestra y nº de códigos CPV iniciales.
+\end{itemize}
+
+En este caso y centrándose en el tamaño de la muestra se han obtenido las consultas presentadas en la Tabla~\ref{table:queries-ir}, de las 
+cuales se tiene la siguiente información: consulta proporcionada por un cliente, $Q_{str}$, y códigos CPV seleccionados por los expertos 
+de dominio de ``Euroalert.net'', $Q_{cpv}$. En este caso y debido al gran número de códigos CPV tan sólo se muestra la cantidad de los mismos esquivando 
+el código y la descripción. Realmente y desde un punto de vista de la recuperación de información las medidas de evaluación dependen 
+tan sólo del número de códigos que se hayan conseguido generar adecuadamente no así su descripción.
+
+\begin{longtable}[c]{|l|p{10cm}|p{4cm}|} 
+\hline
+\multirow{2}{*}\textbf{$Q_{i}$} &  \textbf{Consulta de Usuario-$Q_{str}$} &  \textbf{Nº de Códigos CPV relevantes-$\#Q^{i}_{cpv}$} \\\hline
+\endhead
+$Q_1$ & ``Comprehensive overview over all environmental technologies renewable energy products'' & $463$ \\ \hline
+$Q_2$ & ``Tendering of public works: housing, hospitals, roads, housing developments, station drinking water treatment, reforestation'' & $35$ \\ \hline
+$Q_3$ & ``Prefabricated buildings'' & $7$ \\ \hline
+$Q_4$ & ``Games for children (parks swings, slides, land of play equipment in the public sphere'' & $26$ \\ \hline
+$Q_5$ & ``Vital signs monitor'' &  $277$\\ \hline
+$Q_6$ & ``Museum and exhibition and product launch services'' & $1$ \\ \hline
+$Q_7$ & ``Voltmeters, instruments measuring electrical quantities, Ammeters, Instruments for checking physical characteristics, hygrometers, thermometers, measuring equipment and control, leak detector, Analyzers, 
+Cable Splicing insulated cable joints kits, screwdrivers, hand tools , screwdriver'' & $117$ \\ \hline
+$Q_8$ & ``Conservation Maintenance of pavements for roads, airfields, bridges, tunnels'' & $13$ \\ \hline
+$Q_9$ & ``Wood poles, Wooden sleepers , Lattice towers'' & $10$ \\ \hline
+$Q_{10}$ & ``Architectural, construction, engineering and inspection services'' &  $173$\\ \hline
+$Q_{11}$ & ``Medical practice and related services'' &  $13$\\ \hline
+
+\hline
+\caption{Consultas suministradas en el proyecto ``10ders Information Services''.}\label{table:queries-ir}\\    
+\end{longtable}
+
+
+Respecto a los métodos empleados para la generación de códigos CPV, ver Tabla~\ref{table:metodos-ir}, es necesario destacar que uno de los mismos está basado 
+en búsqueda sintáctica, $M^1$, y además sirve como primer filtro para la ejecución de los siguientes métodos ya que 
+el primer conjunto de códigos CPV se obtiene de esta forma para ser utilizado como parámetro de entrada en los siguientes 
+métodos. En el caso del segundo método se intentan explotar las relaciones de la jerarquía del CPV (\texttt{skos:broader}) para 
+obtener un nuevo conjunto de salida. De la misma forma se procede en el método $M^3$ pero en este caso se utiliza la 
+técnica de \textit{Spreading Activation} a través de la implementación de ONTOSPREAD para obtener el conjunto de salida 
+final. Finalmente, se ha utilizado un motor de recomendación para la obtención de códigos CPV similares a los de entrada 
+en el método $M^4$, en este caso se supone que el comportamiento difiere de los anteriores métodos ya que la semántica 
+de un sistema de búsqueda o de expansión de consulta difiere del comportamiento de un motor de recomendación, en el primer 
+caso se busca recuperar exactamente un recurso mientras que en el segundo caso, dado un recurso se buscan similares. Este enfoque, 
+también se ha utilizado para interpretar si el sistema de casamiento de consultas y usuarios se puede asociar a un sistema 
+de búsqueda a un motor de recomendación.
+
+\begin{longtable}[c]{|l|p{7cm}|p{5cm}|} 
+\hline
+\textbf{Método} &  \textbf{Descripción} &  \textbf{Tecnología} \\\hline
+\endhead
+$M^1$ & Se indexan las descripciones de los códigos CPV realizando un proceso de búsqueda sintáctica de las consultas preparadas para así 
+obtener un conjunto de códigos CPV resultado. Similar a la reconciliación de entidades llevada a cabo para las clasificaciones de productos. & Apache Lucene y Solr \\ \hline
+$M^2$ & Se extraen una serie de códigos CPV candidatos, atendiendo a las relaciones de la jerarquía se obtiene un nuevo 
+conjunto de códigos CPV de salida ponderado. & $M^1$ + ponderación jerarquía \\ \hline
+$M^3$ & Se extraen una serie de códigos CPV candidatos, atendiendo a las relaciones de la jerarquía y mediante \textit{Spreading Activation} 
+conjunto de códigos CPV de salida ponderado. & $M^1$ + ONTOSPREAD \\ \hline
+$M^4$ & Se extraen una serie de códigos CPV candidatos, atendiendo al histórico de las relaciones 
+entre códigos del $1$ M de anuncioes se obtiene con el motor de recomendación un nuevo 
+conjunto de códigos CPV de salida ponderado. & $M^1$ + Apache Mahout \\ \hline
+\hline
+\caption{Métodos de generación de códigos CPV.}\label{table:metodos-ir}\\    
+\end{longtable}
+
+ \item Especificación de las medidas de trabajo en cuanto a la respuesta. Para cada uno de los métodos a evaluar se recogen los códigos 
+CPV devueltos con el objetivo de calcular los elementos de la Tabla~\ref{tabla:pr} en contraste con los disponibles en las 
+consultas preparadas. De esta forma y atendiendo a las características de la recuperación de anuncios de licitación se 
+recuperarán tantas licitaciones como códigos coincidentes existan entre la consulta $Q^{i}_{cpv}$ formada por los códigos 
+CPV generados por los expertos del dominio y el conjunto $Q^{M^i}_{cpv}$ generado por los respectivos métodos.
+
+ \item Ejecución de un experimento piloto. Con el objetivo de cubrir todo el proceso transversalmente se ha realizado una primera iteración 
+con una sóla consulta extrayendo los códigos CPV para los distintos métodos y realizando los cálculos \textit{PRAS} tanto para 
+la validación de las fórmulas como la comparación con los resultados esperados.
+
+ \item Especificación de un modelo. En este caso, se podría pensar en la realización de un contraste de hipótesis para establecer 
+y asegurar que un método mejora o no la generación de códigos CPV, sin embargo y teniendo en cuenta que la muestra de consultas 
+es de tan sólo $11$ no es considerada significativa para el uso de distribuciones estadísticas y el tipo de test a practicar 
+para este tipo de experimento correspondería a un Test De Wilconxon en el caso de que las muestras sean apareadas.
+ \item Esquematización de los pasos a seguir. La ejecución del experimento sigue los siguientes pasos:
+\begin{enumerate}
+ \item Para cada una de las consultas del usuario $Q_{str}$ identificadas a través de $Q_{i}$ se aplica 
+un método $M_{i}$ de recuperación de códigos CPV.
+\item Cada uno de los métodos $M_{i}$ se configura para que devuelva al menos $\#Q^{i}_{cpv}$ elementos para así poder 
+comparar conjuntos de cardinalidades iguales. En algunos casos está situación los métodos utilizados no son capaces 
+de generar $\#Q^{i}_{cpv}$ elementos debido a la baja representatividad de los últimos códigos generados y al gran número de 
+códigos presentes en $Q^{i}_{cpv}$. Se ha desistimado utilizar la media del número de elementos de cada 
+conjunto $Q^{i}_{cpv}$ debido a su excesiva divergencia.
+\item Cada conjunto resultado $Q^{M^i}_{cpv}$ se compara con el conjunto de resultado esperado $Q^{i}_{cpv}$ a través de un \textit{script} en 
+AWK, ver Figura~\ref{figure:extrac-pras}, para obtener las medidas tp, fp, fn y tn (mediante hoja de cálculo).
+\item Finalmente con estos valores se generan los valores \textit{PRAS} para cada uno de los métodos $M_{i}$ y cada 
+consulta de entrada $Q_{i}$.
+
+\begin{figure}[!ht] 
+\begin{center}
+\begin{lstlisting}[language=AWK]
+awk 'NR==FNR{a[$0];next} $0 in a' $1 $2 > "$1-$2-tp"
+TP=` cat "$1-$2-tp" | wc -l`
+FP=`awk 'NR==FNR { a[$0]; next } !($0 in a)' "$1" "$2" | wc -l`
+FN=`awk 'NR==FNR { a[$0]; next } $0 in a { delete a[$0]; next } 1; END 
+  { for (b in a) print b }' "$1" "$1-$2-tp" | wc -l`
+echo "TP, FP, FN"
+echo $TP "," $FP "," $FN
+rm -f "$1-$2-tp"
+\end{lstlisting}
+\caption{Extracción de valores tp, fp y fn.}
+\label{figure:extrac-pras}
+\end{center}
+\end{figure}
+
+\end{enumerate}
+
+ \item Determinación del tamaño muestral. Como ya se ha comentado anteriormente, en el apartado de factores cuantitativos, se utilizarán
+ los datos generados durante el proceso de promoción de datos a \linkeddata de los anuncios de licitación, de las clasificaciones de productos y 
+de las consultas preparadas suministradas por el servicio de ``Euroalert.net''.
+ \item Revisión de las decisiones anteriores.
+
+\end{enumerate}
+
+\subsection{Ejecución del experimento sobre el Sistema MOLDEAS}
+La ejecución del plan diseñado para el experimento arroja los resultados que se presentan 
+a través de la Tabla~\ref{tabla:results-dss}, en la cual para cada una de las consultas 
+de usuario $Q_{str}$ identificadas a través de $Q_{i}$, se ha ejecutado la generación 
+de códigos CPV a través de los distintos métodos, $M^i$, para obtener un conjunto 
+de salida de códigos CPV $Q^{M^i}_{cpv}$ permitiendo establecer las métricas 
+de evaluación: Precisión, \textit{Recall}, \textit{Accuracy} y Especificidad.
+
+\begin{sidewaystable}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|c||c|c|c|c||c|c|c|c||c|c|c|c||c|c|c|c|}
+\hline
+ \textbf{$Q_i$}&\multicolumn{4}{|c||}{$M^{1}$} & \multicolumn{4}{|c||}{$M^{2}$}& \multicolumn{4}{|c||}{$M^{3}$} & \multicolumn{4}{|c|}{$M^{4}$} \\ \hline
+	  &\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S} &		\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S} &			\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S} &		\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S}  \\ \hline \hline
+$Q_1$  	  &$0,15$ & $0,08$ & $0,94$ & $0,98$ &		$0,15$ & $0,15$ & $0,92$ & $0,96$ &	$0,00$ & $0,00$ & $0,00$ & $0,00$ &	$0,06$ & $0,06$ & $0,68$ & $0,81$ \\ \hline
+$Q_2$  	  &$0,09$ & $0,09$ & $0,99$ & $1,00$ & 		$0,06$ & $0,06$ & $0,99$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,03$ & $0,03$ & $0,99$ & $1,00$ \\ \hline
+$Q_3$  	  &$0,14$ & $0,14$ & $1,00$ & $1,00$ & 		$0,14$ & $0,14$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+$Q_4$  	  &$0,19$ & $0,19$ & $1,00$ & $1,00$ &		$0,00$ & $0,00$ & $0,99$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,00$ & $0,00$ & $0,99$ & $1,00$ \\ \hline
+$Q_5$  	  &$0,12$ & $0,01$ & $0,97$ & $1,00$ & 		$0,01$ & $0,01$ & $0,95$ & $0,97$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,03$ & $0,03$ & $0,95$ & $0,97$ \\ \hline
+$Q_6$  	  &$1,00$ & $1,00$ & $1,00$ & $1,00$ & 		$0,00$ & $0,00$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,10$ & $0,67$ & $0,98$ & $0,98$ \\ \hline
+$Q_7$  	  &$0,20$ & $0,20$ & $0,98$ & $0,99$ & 		$0,09$ & $0,09$ & $0,98$ & $0,99$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,03$ & $0,03$ & $0,98$ & $0,99$ \\ \hline
+$Q_8$  	  &$0,08$ & $0,08$ & $1,00$ & $1,00$ & 		$0,08$ & $0,08$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+$Q_9$  	  &$0,50$ & $0,50$ & $1,00$ & $1,00$ & 		$0,00$ & $0,00$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+$Q_{10}$  &$0,39$ & $0,39$ & $0,98$ & $0,99$ & 		$0,42$ & $0,42$ & $0,98$ & $0,99$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,16$ & $0,16$ & $0,97$ & $0,99$ \\ \hline
+$Q_{11}$  &$0,23$ & $0,23$ & $1,00$ & $1,00$ & 		$0,23$ & $0,23$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+\multicolumn{17}{|c|}{\textbf{Medias Totales de Métricas PRAS}} \\ \hline
+\textbf{Total}  &$0,28$ & $0,26$ & $0,99$ & $1,00$ & 	$0,11$ & $0,11$ & $0,98$ & $0,99$ & 	$0,00$ & $0,00$ & $0,00$ & $0,00$ & 	$0,03$ & $0,03$ & $0,96$ & $0,98$ \\ \hline
+\hline
+ \end{tabular}
+\caption{Resultados PRAS de las consultas suministradas en el proyecto ``10ders Information Services''.}\label{table:queries-ir-results}
+  \label{tabla:results-dss}
+  \end{center}
+\end{sidewaystable} 
+
+%FIXME \cleardoublepage
+\subsection{Validación del experimento sobre el Sistema MOLDEAS}
+La realización del experimento sobre la recuperación de códigos CPV y en consecuencia recuperación 
+de información de los contratos públicos es motivado por el objetivo de ayudar al experto del dominio 
+a decidir los códigos CPV que se ajustan a las consultas en lenguaje natural de los clientes o 
+usuarios. La dificultad de selección de códigos reside en varios puntos que la experiencia ha 
+dejado patente:
+\begin{itemize}
+ \item Extensión del posible conjunto de entrada, $10357$ términos del vocabulario controlado CPV 2008. La necesidad de 
+facilitar la expresividad del conjunto de términos de entrada viene determinada para el aumento de las posibilidades 
+de expresar consultas y enlazar códigos de forma automática, como se ha presentado en la Sección~\ref{sect:validation-tablas}. Ahora 
+bien, un conjunto de entrada más amplio, no implica mayor dificultad para seleccionar los códigos CPV, sino que el punto 
+clave consiste en establecer a partir de un código CPV sus posibles códigos relacionados, independientemente 
+de la extensión del vocabulario de entrada. En este sentido, el experto del dominio debe conocer cómo se etiquetan 
+los anuncios de licitación y estimar las intenciones del usuario ya que en la mayoría de los casos no existe relación 
+entre la expresión del usuario (intuición sobre cómo se han etiquetado los anuncios de licitación) y el etiquetado 
+real de los anuncios. En este contexto, se pone de manifiesto la intervención del experto y las herramientas 
+que faciliten la selección de códigos de forma automática, un sistema en el cual existan más relaciones permite 
+establecer conjuntos de códigos CPV más completos.
+
+\item Explotación de las relaciones jerárquicas de la taxonomía del CPV 2008. En general, la búsqueda sintáctica 
+tradicional se basa en el encaje de cadenas texto preprocesadas mediante distintas técnicas (\textit{stopwords}, 
+\textit{stemming}, \textit{n-grams}, etc.) con el objetivo de facilitar el acceso al mayor número de documentos 
+o recursos de acuerdo a una consulta de entrada. Tanto el proceso de indexación de recursos como el preprocesamiento 
+de la consulta permite que la comparación se realice en las mismas condiciones. No obstante, la explotación de relaciones 
+más allá del lenguaje natural se delega en la propia aplicación antes de proveer la verdadera consulta de entrada. El enriquecimiento 
+o expansión de la consulta a través de la navegación por relaciones semánticas presentes en taxonomías o vocabularios 
+controlados permite obtener un conjunto de términos estrechamente relacionadas y validados ya que han sido consensuados 
+por una comunidad. Este enfoque de expansión en el caso del CPV 2008 se considera perfectamente aplicable ya que no 
+es delegado en una taxonomía genérica y externa como puede ser Wordnet, sino que se utilizan las relaciones 
+entre los distintos códigos, que como se ha visto en la estructura del CPV 2008 no son necesariamente de 
+herencia sino de grado de especificidad. De esta forma, la extensión del conjunto de entrada mediante la navegación 
+por la jerarquía de la taxonomía se considera válida para obtener un conjunto enriquecido que pueda ser 
+trasladado al sistema de búsqueda final, en este caso a una consulta sobre un motor sintáctico 
+en el cual se han indexado las descripciones de los códigos CPV 2008.
+
+\item Diferenciación de comportamiento entre búsqueda y recomendación. La distinción 
+entre estos dos enfoques tecnológicos para la recuperación de información reside 
+en que los sistemas de búsqueda están orientados principalmente a la obtención 
+de respuestas concretas para consultas de usuario planteadas como cadenas 
+de texto para necesidades específicas. En general este enfoque también es correcto 
+para la obtención de recursos relacionados con las consultas del usuario, aunque 
+se basen en el procesamiento de lenguaje natural en muchos casos las respuestas 
+obtenidas son bien aceptadas por el usuario. En el caso de recomendación 
+el comportamiento es significativamente diferente ya que en este caso se buscan 
+recursos relacionados no directamente obtenidos por una consulta de usuario sino 
+más bien de acuerdo a un comportamiento histórico o la explotación de relaciones. En ambos casos, 
+el objetivo es suministrar un mecanismo para el filtrado de la información. No obstante,
+en los últimos años pese al gran triunfo de los sistemas de búsqueda, los sistemas 
+de recomendación se han convertido en su gran competidor y la tendencia 
+dicta que se pueden convertir en su sucesor natural. Sin embargo, la deformación provocada 
+por el uso de sistemas de búsqueda provoca que en algunos casos las respuestas proporcionadas 
+por un sistema de recomendación no dispongan de la acogida apropiada por los usuarios. En este sentido, 
+la recomendación de códigos CPV de acuerdo al histórico presente en los anuncios de licitación 
+se plantea estratégica para futuras iteraciones de un sistema de soporte a la decisión 
+sobre qué códigos CPV seleccionar para la mejora de la recuperación de información 
+proveniente de anuncios de licitación.
+\end{itemize}
+
+Las evidencias destacadas de estos puntos conducen la validación del experimento con la 
+consiguiente extracción de conclusiones:
+
+\begin{itemize}
+ \item Las consultas, $Q_{i}$, preparadas por los expertos de acuerdo a clientes reales dejan patente 
+que la búsqueda de códigos CPV se basa en un encaje sintáctico inicial mediante el cual se 
+establece un conjunto de códigos potenciales a partir de los cuales se seleccionan todos los 
+elementos jerárquicamente inferiores, aumento del grado de especificidad, como nuevos elementos 
+a buscar. Esta situación se refleja en la cardinalidad de cada uno de los conjuntos de códigos 
+CPV de las consultas $Q_{i}$. De esta forma si uno de los elementos de entrada fuera una división 
+se obtienen todos los descendientes, grupos, clases y categorías, aumentando el espectro de códigos 
+válidos enormemente. La disposición de un conjunto esperado de resultados tan numeroso implica por una parte, que 
+la búsqueda real de anuncios de licitación se puede ver distorsionada y por otra parte, que es más sencillo 
+que los métodos de generación de códigos CPV obtengan una precisión mayor. En el punto opuesto se encuentran 
+aquellas consultas muy específicas en las cuales tan sólo se espera un código de salida, en este caso, la precisión 
+de los métodos se ve menoscabada y en muchos casos en un encaje directo es más que suficiente.
+
+\item En general el método más preciso es $M^1$, correspondiente a un motor de búsqueda 
+sintáctico basado en Apache Lucene y Solr mediante la aplicación de filtros sobre el texto tanto 
+para el indexado de los elementos del CPV 2008 como para el texto de la consulta del usuario. De nuevo, 
+esta situación evidencia que el punto anterior sobre el grado de cumplimiento de las expectativas del experto 
+del dominio sobre la búsqueda y recomendación de códigos CPV se basa en técnicas puramente sintácticas. Evidentemente, 
+la afinación de las técnicas de procesamiento de descripciones de códigos de clasificaciones de productos realizadas 
+para la reconciliación de entidades y enlazado con tras clasificaciones se ha visto recompensado por su posterior 
+reutilización para la búsqueda de códigos en general. No obstante, las aspiraciones del experto de dominio no se ven 
+totalmente colmadas y existe un porcentaje importante de mejora para conseguir la máxima precisión con valor $1$. Si bien 
+en la mayoría de los sistemas de búsqueda actuales está situación se admite, un estudio posterior debería sondear con los 
+expertos del dominio si los códigos sugeridos realmente son falsos positivos o bien son códigos que tendrían sentido 
+para la consulta de entrada.
+
+\item El método $M^2$ hace uso de las mismas técnicas que el anterior para obtener un conjunto inicial de conceptos 
+similar a $M^1$ para a partir de ese momento obtener la jerarquía completa para cada uno de los códigos repartiendo 
+un valor de activación entre los hijos. Por ello, se debería mantener la precisión del método $M^1$ pero en este caso 
+se ve decrementada debido principalmente a dos causas: 1) reordenación de la ponderación de los códigos y 2) la selección 
+de códigos no sólo está basada en la navegación jerárquica. Esta situación es tremendamente crítica ya que si bien el experto 
+tiende a situarse en una jerarquía y a partir de ese nivel seleccionar todos los descendientes, dependiendo del caso y de la 
+extensa casuística de los anuncios de licitación, la experiencia conlleva a seleccionar códigos no relacionadas directamente 
+en ningún nivel. Por ejemplo, en los anuncios de licitación relativos a equipamiento de un hospital se encuentran códigos 
+relacionados con la adquisición de \textit{software} y de colchones cuya regla es difícilmente representable con 
+una sola taxonomía. Algún tipo de información extra o el dominio en general podrían ayudar a solventar esta información suministrando
+así un sistema experto con una precisión elevada.
+
+\item El método $M^3$ utiliza las técnicas propuestas en $M^1$ para realizar el salto entre las descripciones textuales 
+de una consulta de usuario a los códigos CPV de la taxonomía. Este conjunto inicial es utilizado por la técnica de \textit{Spreading 
+Activation} para descubrir y enriquecer el conjunto de códigos de salida. No obstante, los resultados no son especialmente satisfactorios 
+debido de nuevo a que los resultados esperados en las consultas preparadas parte de una creación basada en el encaje de descripciones 
+textuales y conocimiento experto de dominio de difícil formalización de forma genérica en una técnica como \textit{Spreading Activation}. Una 
+posible propuesta consiste en establecer un contexto de búsqueda en el cual las técnicas avanzadas sean más ``informadas'' de cuáles 
+son los caminos a recorrer para simular el conocimiento experto.
+
+\item Finalmente, el método $M^4$ cuya ejecución es similar a los anteriores pero que difiere en la técnica de extracción 
+de códigos CPV tampoco obtiene mejoras respecto al método básico $M^1$. Si bien este método reutiliza la información histórica 
+de un millón de anuncios de licitación no consigue aproximarse en cuanto a precisión al conocimiento experto. La causa de esta 
+situación se debe precisamente a que el comportamiento esperado de un sistema de búsqueda respecto a uno de recomendación 
+difiere diametralmente. En este caso y teniendo en cuenta que las consultas preparadas se basan en encajes textuales, 
+la recomendación como técnica de aproximación de códigos CPV se aprecia que no es apropiada. No obstante, las posibilidades 
+de variación de parámetros en los algoritmos de recomendación tienen un carácter tan extenso que si podrían acercarse 
+en implementaciones posteriores.
+
+\item La implementación de estos métodos para la generación de códigos CPV a partir de descripciones textuales de búsqueda 
+de anuncios de licitación pone de manifiesto la posibilidad de consumo de datos enlazados para la construcción de servicios 
+de soporte a la decisión para la recuperación de información de anuncios de licitación. Esta primera aproximación constituye 
+un demostrador público de consumo de \linkeddata y sienta las bases para el perfeccionamiento de la técnica de \textit{Spreading Activation} 
+en este ámbito y de los motores de recomendación como futuro para la recuperación de información. No obstante y de igual 
+forma que en otros muchos contextos la búsqueda tradicional basada en técnicas sintácticas sigue manteniéndose como 
+principal herramienta para obtener los resultados deseados de un usuario. Si bien esta situación puede deberse 
+al comportamiento que nos han acostumbrado los sistemas de búsqueda existentes, la tendencia es obtener búsquedas 
+más exactas y no directamente relacionadas con la consulta inicial, intentando discernir las intenciones del usuario 
+y no ceñirse a una serie de términos.
+\end{itemize}
+
+
+\subsection{Evaluación del experimento sobre el Sistema MOLDEAS}
+La ejecución y validación del experimento mediante la comparación de un conjunto de resultados 
+esperado $Q^{i}_{cpv}$ y un conjunto de resultados obtenido, $Q^{M^i}_{cpv}$, a través de distintos métodos 
+permite dar respuesta a las preguntas planteadas al inicio del experimento.
+
+\begin{itemize}
+ \item ¿Es posible implementar un sistema de recuperación de información utilizando datos enlazados?
+
+Evidentemente, el tipo y formato de una fuente de datos no debe ser impedimento para la construcción de servicios 
+en un dominio determinado. En este caso particular, los datos enlazados provenientes de los anuncios de licitación 
+pueden ser perfectamente consumidos desde un lenguaje de programación como Java mediante el acceso a un 
+\textit{endpoint} de SPARQL y realizando las consultas pertinentes para cargar los objetos de negocio con la 
+información y datos necesarios. Hasta este punto, el consumo de datos enlazados no representa ninguna mejora 
+respecto a otro tipo de almacenamiento y representación, la ventaja estratégica reside en su flexibilidad 
+para añadir e integrar nuevos datos y a la posibilidad de explotación de las relaciones establecidas entre los distintos 
+recursos. Sin embargo, el esfuerzo para el consumo de datos todavía es elevado ya que es complicado mantener esta 
+flexibilidad de representación en su consumo desde un lenguaje de programación. Las APIs y bibliotecas disponibles 
+facilitan esta labor pero distan en mucho a las herramientas disponibles para los sistemas de gestión de bases 
+de datos relacionales. No obstante, este esfuerzo es recompensado ya que los servicios generados están verdaderamente 
+más informados y son capaces de explotar eficientemente la información y los datos para la construcción de servicios 
+de valor añadido. Además en el nuevo contexto de la \wode este requisito de consumo será practicamente indispensable 
+para cualquier aplicación. Finalmente, el consumo de datos enlazados presenta algunas cuestiones abiertas como la 
+confianza y la verificación de la procedencia de los datos que deben ser abordadas para impulsar este proceso.
+
+
+ \item ¿Es posible explotar las relaciones semánticas establecidas para mejorar la recuperación de información?
+
+En el demostrador público del sistema MOLDEAS se permite la consulta y recuperación de anuncios de licitación de acuerdo 
+a un método preestablecido y ciertos parámetros de entrada. La experimentación realizada con los distintos métodos permite 
+adecuar este demostrador a los resultados obtenidos pero la explotación de las relaciones semánticas no se considera 
+suficientemente relevante, al menos desde el punto de vista de un experto de dominio, por lo que aunque el uso de 
+semántica implica una serie de ventajas intrínsecas, su aplicación actual en comparación con las expectativas 
+del usuario deben ser mejoradas para conseguir una diferenciación real entre usar o no semántica en las 
+aplicaciones según es entendida en las iniciativas de Web Semántica y \linkeddaata. No sólo se trata de la posibilidad 
+de formular consultas muy complejas navegando por las relaciones, sino más bien de comprender cómo se ha de utilizar la semántica para dar respuesta 
+a los problemas del usuario, actualmente el uso de semántica se centra en facilitar la inteoperabilidad e integración de aplicaciones que 
+en el suministro de servicios de valor añadido para el gran público. La adición de las grandes compañías de software y servicios a 
+esta iniciativa provocará un vuelco a esta situación, impulsando y facilitando el uso de técnicas semánticas para el usuario 
+final.
+
+
+ \item ¿Cuál es el mejor enfoque para la recuperación de información en los anuncios de licitación? 
+
+Según los resultados obtenidos y de acuerdo al comportamiento de los expertos del dominio, queda patente que el 
+método $M^1$ es el más cercano a los resultados esperados. La explicación, como ya se ha detallado en párrafos anteriores, 
+se debe principalmente al grado de implantación que la búsqueda tradicional posee.
+
+ \item ¿Cómo afectan los resultados en la implementación actual del sistema MOLDEAS?
+
+
+
+\end{itemize}
+
+\cleardoublepage

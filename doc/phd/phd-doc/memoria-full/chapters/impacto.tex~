@@ -1,0 +1,261 @@
+Las actividades de difusión y de explotación forman parte significativa
+de las actividades transversales que hay que realizar en la promoción
+de un trabajo de investigación y se configuran como fundamentales
+para la colaboración con otras personas o entidades desde un punto
+de vista científico como para iniciar el proceso de transferencia
+tecnológica y su posible explotación en el mercado.
+
+El principal objetivo de este tipo de actividades es crear
+concienciación de los resultados conseguidos durante
+el estudio y ejecución de los trabajos de investigación
+tanto a nivel de calidad científica como de su 
+posible explotación industrial. Para llevar a cabo este objetivo
+se deben seleccionar los canales apropiados de distribución así 
+como las entidades que deben hacer eco de los avances realizados. Para conseguir
+el impacto deseado estas actividades de difusión deben ejecutarse en paralelo
+con la investigación para demostrar los avances y el carácter práctico
+atrayendo tanto las comunidades científicas como industriales.
+
+En general las actividades de difusión y demostración se pueden plantear
+en dos planos diferentes:
+
+\begin{description}
+ \item [Interna.] Permitir que la comunicación entre los miembros participantes
+en los trabajos de investigación puedan colaborar de forma ágil. Para ello 
+se han utilizado: listas de correo, un wiki y herramientas de desarrollo
+basadas en el control de versiones. De esta forma, se involucra y se obtiene
+realimentación tanto del Director de la tesis, crucial en este caso, como 
+de los participantes en el marco del proyecto \gls{10ders}, ver Sección~\ref{10ders}.
+\item [Externa.] Difundir el trabajo realizado para la creación de concienciación
+pública. Habitualmente la participación en eventos como conferencias, \textit{workshops}, etc.
+o el envío de artículos a revistas son los medios más utilizados para este tipo de difusión.
+Hoy en día y con la eclosión de las redes sociales, el uso de sitios como Twitter, Facebook o
+Linkedin pueden aportar un gran valor a este tipo de difusión consiguiendo un gran impacto
+real. Para ello se han realizado actividades de distinto tipo: a) Formacionales:
+celebración de cursos relacionados con la tecnología utilizada, b)
+Creación de un demostrador público. c) Creación de un sitio web y presencia en
+las principales redes sociales como canales de distribución de la información y
+sitios de referencia para consultas. d) Realización de publicaciones científicas
+e industriales (aplicación) en conferencias y revistas tanto nacionales como
+internacionales. e) Informe de resultados y conocimiento a través de las
+distintas plataformas tecnológicas a las que pertenece el grupo \gls{WESO}, en proceso.
+\end{description}
+
+Finalmente, la difusión de este trabajo busca integrarse en la comunidad científica situándose como referencia en
+la problemática tratada, \lod en el campo de la contratación pública, así como en el tejido empresarial proporcionando un nuevo
+enfoque para la gestión de información y conocimiento de la información de carácter público. En las siguientes secciones detallaremos
+de forma concisa algunas de las actividades realizadas.
+
+\subsection{Contacto a través de Correo Electrónico y Página Web}
+Con el objetivo de difundir los resultados parciales que se iban consiguiendo en el desarrollo
+de los trabajos y estudios realizados durante la elaboración de tesis se realizaron
+algunos artículos (en formato \textit{blog}) para su posterior publicación
+a través de las redes sociales. Para ello se conformo la siguiente estructura:
+\begin{itemize}
+ \item Página web con un demostrador público del trabajo realizado.
+ \item Uso de la cuenta de Twitter del grupo \gls{WESO}.
+ \item Uso de la página web personal del autor (con correo electrónico) y del grupo WESO para publicitar los avances.
+\end{itemize}
+
+En este sentido y tras la publicación del clasificaciones de productos como \linkeddata hemos obtenido la siguiente
+realimentación:
+\begin{itemize}
+
+ \item Richard Cyganiak Linked \textit{data technologist at the LiDRC}, DERI Galway, Ireland.
+
+\begin{Frame} 
+\begin{itshape}
+Hi Jose,
+
+This looks great! I think it's more appropriate to add the “umbrella” dataset at
+pscs-catalogue to the LOD Cloud, given that all the individual classifications
+are published in the same SPARQL endpoint and look more like parts of one large
+dataset to me. (This is a judgment call, so please let us know if you think that
+any particular sub-datasets should be highlighted as individual datasets – we
+would consider it.)
+
+So for now I've added pscs-catalogue to the lodcloud group and it will be in the
+next update of the LOD Cloud diagram.
+
+The nomenclator-asturias-2010 dataset fulfils the technical criteria, so I'm
+adding it as well. Good job! ;-)
+
+I've done a change to both of the CKAN records: The links:xxx extra field is
+supposed to use the name of the respective CKAN record, so it should be
+links:dbpedia to indicate the number of DBpedia links. I've fixed this for
+pscs-catalogue and nomenclator-asturias-2010, but you may want to still fix it
+for the individual sub-datasets.
+
+I've also updated the description of pscs-catalogue to list the individual
+datasets. Feel free to change this further as you see fit.
+
+Finally, I see that the blog post about the nomenclator dataset lists a number
+of further links that are not present in the CKAN entry. If there's no
+particluar reason for omitting them, then I encourage you to add those links as
+well to the CKAN record.
+
+All the best, and keep up the good work,
+Richard
+\end{itshape}
+\end{Frame}
+
+\item Jindřich Mynarz, University of Economics Prague, miembro del consorcio LOD2 Project~\cite{lod2-project}.
+
+\begin{Frame}
+\begin{itshape}
+Hi Jose,
+
+thanks for our Sunday Twitter discussion. It's always a pleasure to
+find someone who works on a closely related topic as you do!
+...
+
+Of the classifications you have mentioned, CPV and NACE are of most interest to
+me. We have started using you CPV codes to describe the public contracts we
+scraped from the Czech central public contracts repository. Your effort with
+NACE interests me because I'm working on a conversion of NACE rev. 2 to RDF. We
+have an agreement with the Czech Statistical Office to provide us with some
+of their classifications that we can convert to RDF and expose as linked data.
+One of these classification is NACE rev. 2, to which Czech Statistical Office
+has added one level of the most specific concepts (i.e., the activities in NACE
+have more narrower concepts as leaf nodes). It would make sense to me just to
+release this Czech extension of NACE and link to either to your converted NACE
+or to EUROSTAT's NACE in RDF on their metadata server. Unfortunately, there
+are some issues with the data dump I've got from the Czech Statistical Office
+that block progress on this work.
+
+..
+\end{itshape}
+\end{Frame}
+
+\item Andreas Radinger, Professur f\"{u}r Allgemeine BWL, insbesondere E-Business e-business and web science research group. Universit\"{a}t der Bundeswehr M\"{u}nchen.
+
+\begin{Frame}
+\begin{itshape}
+Hi Jose,
+
+congratulations for the very nice dataset at \url{http://www.josemalvarez.es/web/2011/11/05/cpv/}.
+One suggestion:
+The lemma of the URIs of the ProductOntology are case-sensitive.
+...
+and perhaps you can also fix the correct spelling in some cases?
+...
+Best regards,
+Andreas
+\end{itshape}
+\end{Frame}
+
+
+\item Dominique Guardiola, empresa QuiNode en Francia.
+
+\begin{Frame}
+\begin{itshape}
+\textit{Thanks for this great work, this is just what I was looking for
+Just to mention that stores are complaining about the rdf: namespace not being defined in the 2008 dump.}
+\end{itshape}
+\end{Frame}
+
+
+\end{itemize}
+
+Por otra parte y a través de los mecanismos que provee Twitter, ya existen trabajos~\cite{tweet-impact} para evaluar
+el impacto de las publicaciones utilizando este herramienta, como los \textit{retweets} o las menciones de otros
+usuarios podemos destacar los siguientes mensajes:
+
+\begin{itemize}
+
+\item Stefano Bertolo. Project Officer at European Commission DG INFSO/E2.
+
+\begin{Frame}
+\begin{itshape}
+Common Procurement Vocabulary released as \#linkeddata using \#goodrelations and \#productontology via @wesoviedo @mfhepp
+\end{itshape}
+\end{Frame}
+
+\item Jindřich Mynarz.
+
+\begin{Frame}
+\begin{itshape}
+Improving performance of SPARQL for querying EU public procurement notices. \url{http://slidesha.re/tIIUmw} by @wesoviedo
+\end{itshape}
+\end{Frame}
+
+
+\begin{Frame}
+\begin{itshape}
+@wesoviedo @chema\_ar Great! It seems superior to our attempt at publishing CPV as \#linkeddata: \url{http://bit.ly/mTMmry}
+\end{itshape}
+\end{Frame}
+
+
+\begin{Frame}
+\begin{itshape}
+Methods On Linked Data for E-procurement Applying Semantics - demo \url{http://purl.org/weso/moldeas/} by @wesoviedo. \#linkeddata
+\end{itshape}
+\end{Frame}
+
+
+\item Nelson Piedra. Computer Sciences School, Director at UTPL - Universidad Técnica Particular de Loja. Ecuador.
+
+\begin{Frame}
+\begin{itshape}
+Product Scheme Clas.: CPV, CN, CPA, etc. (beta release) as \#LinkedData \#goodrelations \&... \url{http://shar.es/o30mV} @Euroalert (via @wesoviedo)
+\end{itshape}
+\end{Frame}
+
+
+\end{itemize}
+
+En esta línea del uso de Twitter también hemos figurado dos veces en las ``historias del día'' que recoge Ralph Hodgson, Co-founder/CTO de TopQuadrant:
+\begin{itemize}
+ \item 5 de noviembre de 2011 (\url{http://paper.li/ralphtq/1316980404/2011/11/05})
+ \item 16 de noviembre de 2011 (\url{http://paper.li/ralphtq/1316980404/2011/11/16})
+\end{itemize}
+
+Finalmente, el desarrollo del trabajo de investigación de esta tesis ha permitido establecer colaboración a través
+de distintos contactos:
+\begin{itemize}
+ \item Jindřich Mynarz. Colaboración en la elaboración de una ontología para formalizar la información
+contenida en los anuncios de licitación.
+\item Giner Alor-Hernández (Instituto Tecnológico de Orizaba, México). Elaboración de artículos de científicos para el 
+caso de \eproc pero más centrado en las cadenas suministros industriales.
+\item Otras colaboraciones con entidades a nivel regional y nacional, por ejemplo reaprovechando el trabajo de la Universidad de Zaragoza 
+en el campo de la georreferenciación para mejorar al acceso contextualizado a las licitaciones.
+\end{itemize}
+
+Todos estos resultados nos animan a seguir trabajando en esta línea de actuación en el campo de los
+anuncios de licitación y a promocionar la investigación y resultados realizados.
+
+
+\subsection{Contribución a las iniciativas \linkeddata y a \lod}
+El trabajo realizado también se ha plasmado en la contribución de los datos generados a las iniciativas 
+de \linkeddata y \lod. En concreto, el catálogo de clasificaciones de productos se ha difundido 
+a través del registro \gls{CKAN} provisto por ``TheDataHub.org'' y solicitado su incorporación 
+a la nube de datos enlazados de forma exitosa. De esta manera, en la próxima 
+actualización de este diagrama, ampliamente usado y extendido en muchas de las presentaciones 
+relacionadas con esta iniciativa, estará presente el catálogo de clasificaciones de productos.
+
+Para consultar esta información se puede acceder a la siguiente \gls{URL}: \url{http://thedatahub.org/dataset/pscs-catalogue}, 
+en la cual el catálogo está descrito y definido convenientemente. Igualmente, cada una de las clasificaciones de productos 
+están disponibles individualmente. 
+
+Se ha seleccionado este catálogo para su difusión debido a que los datos son abiertos y están disponibles 
+en las fuentes oficiales, respecto a la información y datos concernientes a los anuncios de licitación y organizaciones 
+se ha pospuesto su adición ya que han sido procesados, generados y cedidos de forma conveniente por la empresa 
+Gateway S.C.S. dentro de la ejecución del proyecto ``10ders Information Services''.
+
+No obstante es necesario marcar siempre como objetivo la difusión de los datos promocionados a la iniciativa 
+de \linkeddata para facilitar su posterior reutilización, colaborando en el despegue de este nuevo entorno 
+que constituye la \wode.
+
+
+
+
+
+
+
+
+
+
+
+
+

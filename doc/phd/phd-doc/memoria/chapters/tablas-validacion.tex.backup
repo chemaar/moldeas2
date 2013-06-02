@@ -1,0 +1,378 @@
+\section{Consideraciones sobre las Tablas de Validación}
+El objetivo de esta sección es presentar las tablas de validación que se utilizan para realizar 
+la evaluación del grado de cumplimiento de criterios relativos a las iniciativas de 
+\linkeddata y \opendata para verificar que verdaderamente los datos generados se pueden enclavar 
+bajo estos enfoques asegurando por tanto los beneficios y ventajas propugnados por los mismos. La elaboración 
+y diseño de estas tablas ha considerado el trabajo relacionado presentado en la Sección~\ref{metodologias} así 
+como la experiencia personal en el desarrollo de distintas actividades relacionadas con estas iniciativas. 
+
+Los criterios presentados en estas tablas pueden adquirir tres valores:
+\begin{itemize}
+ \item Valor positivo, \si, si es un criterio que debe tener y se cumple.
+ \item Valor negativo, \no, si es un criterio que debe tener y no se cumple.
+ \item Valor no aplicable, \na, si es un criterio que se desconoce, se solapa con otro o bien 
+o no está asociado al enfoque evaluado.
+\end{itemize}
+
+\subsection{Tabla de Validación $T^{1}$}
+En la Tabla~\ref{table:validation-t1} se recogen criterios de validación relativos a los 
+procesos de producción, publicación y consumo de datos enlazados, realizando un especial hincapié 
+en el diseño de URIs, modelado de información y datos utilizando tecnologías semánticas así como factores relativos a la 
+descripción de la metainformación de los recursos. Se ha realizado la valoración ideal 
+de un \dataset RDF de referencia que contaría con $60$ criterios positivos (\si) y $9$ no aplicables 
+(\na).
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento} \\\hline
+\endhead  
+  1& \multicolumn{2}{|c|}{\textbf{\textit{Uso de URIs}}} \\ \hline
+  1.1&  ¿Las URIs utilizadas permiten acceder a los recursos, \textit{Minting HTTP URIs}? & \si \\ \hline 
+  1.2&  ¿El \textit{namespace} utilizado en las URIs está bajo nuestro control? & \si \\ \hline
+  1.3&  ¿Se utiliza el esquema  HTTP? &\si  \\ \hline
+  1.4&  ¿Las URIs siguen las directrices de \textit{Cool URIs}? &\si  \\ \hline
+  1.5&  ¿Se utilizan \textit{hash URIs}? & \na  \\ \hline
+  1.6&  ¿Se utilizan \textit{slash URIs}? & \si  \\ \hline
+  1.7&  ¿Se utilizan \textit{param URIs}? & \na  \\ \hline
+  1.8&  ¿No se incluyen detalles de implementación en la URI? & \si  \\ \hline
+  1.9&  ¿Se utilizan claves primarias para identificar los recursos, ID URIs? & \si  \\ \hline
+  1.10&  ¿Se utilizan nombres para identificar a los recursos, \textit{Meaningful URIs}? & \na  \\ \hline
+  1.11&  ¿Se ha definido una URI base para los recursos? & \si  \\ \hline
+  1.12&  ¿Se ha definido una URI base para el modelo formal? & \si  \\ \hline
+  1.13&  ¿Se ha definido un esquema de URIs para el \dataset RDF? & \si  \\ \hline
+  1.14&  ¿Se ha definido un esquema de URIs para el modelo formal? & \si  \\ \hline
+  1.15&  ¿Se incluye metainformación en las URIs? & \si  \\ \hline
+ 2&\multicolumn{2}{|c|}{\textbf{\textit{Descripción de recursos en RDF}}}\\ \hline
+  2.1& ¿Se utilizan vocabularios como SKOS, RDFS, OWL para modelar el dominio?& \si  \\ \hline
+  2.2& ¿Se reutilizan vocabularios de acuerdo a su uso y actualización?& \si  \\ \hline
+  2.3& ¿Se utilizan anotaciones de RDFS o SKOS?& \si  \\ \hline
+  2.4& ¿Se relacionan las clases y propiedades con otras ya existentes?& \si \\ \hline
+  2.5& ¿Se reutilizan las clases y propiedades ya existentes?& \si  \\ \hline
+  2.6& ¿Se definen nuevas clases y propiedades?&\si  \\ \hline
+  2.7& ¿Se enriquecen las descripciones RDF con otros \datasets RDF?& \si  \\ \hline
+  2.8& ¿Se describe parcialmente los recursos de otros \datasets RDF a los que se enlaza desde el actual?& \no  \\ \hline
+  2.9& ¿Se añade metainformación a cada recurso RDF individualmente?& \si  \\ \hline
+  2.10& ¿Son las descripciones de los recursos RDF navegables?& \si  \\ \hline
+  2.11& ¿Se provee información útil del recurso RDF a través de la URI?& \si  \\ \hline
+  2.12& ¿Son las URIs reutilizadas referenciables?& \si  \\ \hline  
+ 3&\multicolumn{2}{|c|}{\textbf{\textit{Descripción del \dataset RDF}}}\\ \hline
+  3.1& ¿Se ha definido una URI para el \dataset RDF? & \si  \\ \hline
+  3.2& ¿Se utiliza el vovabulario voID para describir el \dataset RDF? & \si  \\ \hline
+  3.3& ¿Se utiliza el \textit{Semantic Sitemaps} para describir el \dataset RDF? & \na  \\ \hline
+  3.4& ¿Se provee información de \textit{provenance}? & \si  \\ \hline
+  3.5& ¿Se provee licencia de uso, información sobre derechos de copia, etc.?&  \si  \\ \hline
+  3.6& ¿Se provee información sobre la autoría? & \si  \\ \hline
+  3.7& ¿Se proveen ejemplos de uso del \dataset RDF? & \si  \\ \hline
+  3.8& ¿Se utilizan anotaciones de RDFS o SKOS?&  \si  \\ \hline
+  3.9& ¿Se utilizan anotaciones multilingues RDFS o SKOS?& \si  \\ \hline
+ 4&\multicolumn{2}{|c|}{\textbf{\textit{Otros}}}\\ \hline
+  4.1& ¿Se utilizan herramientas automáticas para la producción de RDF?& \si  \\ \hline
+  4.2& ¿Se consolidan parte de los datos en RDF?& \no  \\ \hline
+  4.3& ¿Se realiza la reconciliación de entidades de forma automática?& \no  \\ \hline
+  4.4& ¿Los datos son dinámicos?& \na  \\ \hline
+  4.5& ¿Los datos son estáticos?& \si  \\ \hline
+  4.6& ¿El tamaño del \dataset es del orden de millones de tripletas?& \si  \\ \hline
+  4.7& ¿El tamaño del \dataset es del orden de billones de tripletas?& \na  \\ \hline
+5&\multicolumn{2}{|c|}{\textbf{\textit{Publicación de \linkeddata}}}\\ \hline
+  5.1&  ¿Se publica un volcado de los datos en RDF? & \no  \\ \hline 
+  5.2&  ¿Se utiliza algún método de publicación de datos enlazados? & \si  \\ \hline
+  5.3&  ¿Se provee algún lenguaje de consulta formal? & \si  \\ \hline
+  5.4&  ¿Se provee un \textit{endpoint de SPARQL}? & \si  \\ \hline
+  5.5&  ¿Se provee negociación de contenido? & \si  \\ \hline
+  5.6&  ¿Se pueden referenciar los recursos desde otros documentos tipo HTML? & \si  \\ \hline    
+  5.7&  ¿Se provee un \linkeddata \textit{Frontend}? & \si  \\ \hline  
+  5.8&  ¿Se provee metainformación del \dataset RDF? & \si  \\ \hline
+  5.9&  ¿Se difunde el \dataset RDF en distintos medios tipo CKAN, Prefix.cc, etc.? & \si  \\ \hline
+  5.10&  ¿Se publica algún API o servicio web para la consulta de los datos? & \si  \\ \hline
+  5.11&  ¿Existe alguna restricción en la consulta de los datos? & \no  \\ \hline
+  5.12&  ¿Se establece algún mecanismo de privacidad? & \no  \\ \hline
+  5.13&  ¿Se informa del tamaño del \dataset? & \si  \\ \hline  
+  5.14&  ¿Se publican los datos RDF como un fichero estático? & \na  \\ \hline
+  5.15&  ¿Se publican los datos RDF bajo demanda desde base de datos?& \na  \\ \hline
+  5.16&  ¿Se publican los datos RDF en un repositorio? & \si  \\ \hline    
+  5.17&  ¿Se publican los datos RDF bajo demanda desde una aplicación? & \si  \\ \hline
+  5.18&  ¿Se publican los datos con información temporal y evolución en el tiempo?& \no  \\ \hline     
+  5.19&  ¿Se proveen ejemplos para depuración y consumo? & \si  \\ \hline        
+  5.20&  ¿Se proveen alias a ciertos directorios o nombres? & \si  \\ \hline
+  5.21&  En caso de error, ¿se devuelve algún recurso por omisión? &  \no  \\ \hline      
+  5.22&  ¿Se utilizan protocolos estándar? & \si  \\ \hline    
+  5.23&  ¿Se provee algún mecanismo de realimentación? & \no  \\ \hline    
+  5.24&  ¿Se provee documentación sobre los datos publicados? & \si  \\ \hline
+  5.25&  ¿Se proveen estadísticas de los datos publicados? & \si  \\ \hline    
+  5.26&  ¿Se utilizan mecanismos de sellado en el tiempo o similares? & \si  \\ \hline            
+ \hline
+\caption{$T^{1}$-Tabla de Validación de Características \linkeddata.}\label{table:validation-t1}\\    
+\end{longtable}
+
+
+
+\subsection{Tabla de Validación $T^{2}$}
+
+En la Tabla~\ref{table:validation-t2} se recogen criterios de validación relativos a los 
+a los patrones de diseño utilizados para la generación de datos enlazados. Si bien su uso no es obligatorio, 
+la idea subyacente coincide con los patrones de diseño en ingeniería del software en los cuales 
+se ofrecen soluciones para casuísticas habituales con el objetivo de mejorar tanto los procesos de 
+producción, publicación, consumo, validación y realimentación. Se ha realizado la valoración ideal 
+de un \dataset RDF de referencia que contaría con $44$ criterios positivos (\si), incluyendo la aplicación 
+de todos los patrones, se ha tomado esta decisión para obtener una medida del grado de aplicación de los 
+mismos ya que en muchos casos la información generada en un \dataset RDF puede utilizar unos u otros no es 
+conveniente plantear su uso como disyuntivo.
+
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead 
+   1& \multicolumn{2}{|c|}{\textbf{\textit{Identifier Patterns}}}\\ \hline
+  1.1 &  \textit{Hierarchical URIs} &\si \\ \hline
+  1.2 &  \textit{Literal Keys} &\si \\ \hline
+  1.3 &  \textit{Natural Keys} &\si \\ \hline
+  1.4 &  \textit{Patterned URIs} &\si \\ \hline
+  1.5 &  \textit{Proxy URIs} &\na \\ \hline
+  1.6 &  \textit{Shared Keys} &\na \\ \hline
+  1.7 &  \textit{URL Slug} &\na \\ \hline    
+    2& \multicolumn{2}{|c|}{\textbf{\textit{Modelling Patterns}}}\\ \hline
+  2.1 &  \textit{Custom Datatype} &\si \\ \hline    
+  2.2 &  \textit{Index Resources} &\na \\ \hline    
+  2.3 &  \textit{Label Everything} &\si \\ \hline     
+  2.4 &  \textit{Link Not Label} &\si \\ \hline    
+  2.5 &  \textit{Multi-Lingual Literal} &\si \\ \hline    
+  2.6 &  \textit{N-Ary Relation} &\na \\ \hline    
+  2.7 &  \textit{Ordered List} &\na \\ \hline     
+  2.8 &  \textit{Ordering Relation} &\na \\ \hline     
+  2.9 &  \textit{Preferred Label} &\si \\ \hline    
+  2.10 &  \textit{Qualified Relation} &\si \\ \hline   
+  2.11 &  \textit{Reified Statement} &\na \\ \hline    
+  2.12 &  \textit{Topic Relation} &\si \\ \hline      
+  2.13 &  \textit{Typed Literal} &\si \\ \hline        
+    3& \multicolumn{2}{|c|}{\textbf{\textit{Publishing Patterns}}}\\ \hline
+  3.1 &  \textit{Annotation} &\si \\ \hline    
+  3.2 &  \textit{Autodiscovery} &\si \\ \hline    
+  3.3 &  \textit{Document Type} &\si \\ \hline     
+  3.4 &  \textit{Edit Trail} &\no \\ \hline    
+  3.5 &  \textit{Embedded Metadata} &\si \\ \hline    
+  3.6 &  \textit{Equivalence Links} &\si \\ \hline    
+  3.7 &  \textit{Link Base} &\si \\ \hline     
+  3.8 &  \textit{Materialize Inferences} &\na \\ \hline     
+  3.9 &  \textit{Named Graphs} &\si \\ \hline    
+  3.10 &  \textit{Primary Topic Autodiscovery} &\si \\ \hline    
+  3.11 &  \textit{Progressive Enrichment} &\si \\ \hline      
+  3.12 &  \textit{See Also} &\si \\ \hline    
+        4& \multicolumn{2}{|c|}{\textbf{\textit{Application Patterns}}}\\ \hline
+  4.1 &  \textit{Assertion Query} &\si \\ \hline    
+  4.2 &  \textit{Blackboard} &\si \\ \hline    
+  4.3 &  \textit{Bounded Description} &\si \\ \hline     
+  4.4 &  \textit{Composite Descriptions} &\si \\ \hline    
+  4.5 &  \textit{Follow Your Nose}&\no \\ \hline    
+  4.6 &  \textit{Missing Isn't Broken} &\no \\ \hline    
+  4.7 &  \textit{Parallel Loading} &\no \\ \hline     
+  4.8 &  \textit{Parallel Retrieval} &\no \\ \hline     
+  4.9 &  \textit{Resource Caching} &\no \\ \hline    
+  4.10 &  \textit{Schema Annotation} &\si \\ \hline    
+  4.11 &  \textit{Smushing} &\si \\ \hline
+  4.12 &  \textit{Transformation Query} &\no \\ \hline        
+ 
+\hline
+\caption{$T^{2}$-Tabla de Validación de \textit{Linked Data Patterns}.}\label{table:validation-t2}\\    
+\end{longtable}
+
+
+
+\subsection{Tabla de Validación $T^{3}$}
+En la Tabla~\ref{table:validation-t3} se recogen los principios de \linkeddata que sirven 
+para valorar si un enfoque se encuentra dentro de esta iniciativa. Se ha realizado la valoración ideal 
+de un \dataset RDF de referencia que contaría con $4$ criterios positivos (\si).
+
+\textbf{Referencia} &\textbf{60}&\textbf{0}&\textbf{9}&	\textbf{44}&\textbf{0}&\textbf{0}&	\textbf{4}&\textbf{0}&\textbf{0}&	\textbf{5}&\textbf{0}&\textbf{0}&	\textbf{8}&\textbf{0}&\textbf{0}&	\textbf{14}&\textbf{0}&\textbf{0}&	\textbf{5}&\textbf{0}&\textbf{0}&	\textbf{33}&\textbf{0}&\textbf{14}\\ \hline \hline
+ 
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead
+   1.1&\textit{Use URIs as names for things} & \si  \\ \hline
+   1.2&\textit{When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL)} & \si \\ \hline  
+   1.3&\textit{Include links to other URIs} & \si \\ \hline    
+   1.4&\textit{Use HTTP URIs} & \si \\ \hline    
+   \hline
+  \caption{$T^{3}$-Tabla de Validación de Principios de \linkeddata.}
+  \label{table:validation-t3}
+\end{longtable}
+
+\subsection{Tabla de Validación $T^{3}_1$}
+En la Tabla~\ref{table:validation-t31} y en combinación con la anterior, se recogen los criterios 
+relacionados con el modelo de $\star$ propuesto por Tim Berners-Lee y de esta forma se puede 
+establecer el nivel de datos enlazados de un determinado \dataset RDF, el valor de referencia 
+máximo contaría con $5$ criterios positivos (\si), uno por cada $\star$.
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead
+ 
+   1.1&$\star$	& \si \\ \hline 
+
+1.2&$\star \star$	 & \si \\ \hline 
+
+1.3&$\star \star \star$	& \si  \\ \hline 
+
+1.4&$\star \star \star \star$ & \si \\ \hline 
+ 
+1.5&$\star \star \star \star \star$ & \si \\ \hline 
+  \hline
+  \caption{$T^{3}_1$-Tabla de Validación del Modelo $\star$.}
+  \label{table:validation-t31}
+\end{longtable}
+
+
+
+\subsection{Tabla de Validación $T^{4}$}
+En la Tabla~\ref{table:validation-t4} se recogen los principios de \opendata que sirven 
+para valorar si un enfoque se encuentra dentro de esta iniciativa. Se ha realizado la valoración ideal 
+de un \dataset RDF de referencia, o en general un conjunto de datos públicos, contaría con $8$ criterios positivos (\si).
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead
+  \multicolumn{2}{|c|}{\textbf{8 Principios}}  \\ \hline
+   1.1& \textit{Complete} & \si  \\ \hline
+   1.2&\textit{Primary} & \si  \\ \hline  
+   1.3&\textit{Timely} & \si  \\ \hline  
+   1.4&\textit{Accessible} & \si  \\ \hline  
+   1.5&\textit{Machine processable} & \si  \\ \hline  
+   1.6&\textit{Non-Discriminatory} & \si  \\ \hline  
+   1.7&\textit{Non-Proprietary} &\si  \\ \hline
+   1.8&\textit{License-free} & \si  \\ \hline                                                               
+  \hline
+  \caption{$T^{4}$-Tabla de Validación de Principios de \opendata.}
+  \label{table:validation-t4}
+\end{longtable}
+
+\subsection{Tabla de Validación $T^{4}_1$}
+En la Tabla~\ref{table:validation-t41} se recogen beneficios y ventajas de la aplicación de los principios de \opendata. 
+Se ha realizado la valoración ideal de un \dataset RDF, o en general de un conjunto de datos públicos, 
+de referencia contaría con $14$ criterios positivos (\si).
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead
+   \multicolumn{2}{|c|}{\textbf{Producción}}  \\ \hline
+   1.1& ¿Se ha definido una misión y estrategia para la apertura de los datos? & \no  \\ \hline
+   1.2& ¿Los datos proceden de una fuente segura? & \no  \\ \hline
+   1.3& ¿Se puede conocer la procedencia de los datos? & \si  \\ \hline    
+   1.4& ¿Existe algún mecanismo para asegurar la calidad de los datos? & \si  \\ \hline  
+  \multicolumn{2}{|c|}{\textbf{Ventajas}}  \\ \hline
+   2.1& ¿Facilitan los datos la inclusión? & \si  \\ \hline
+   2.2& ¿Mejoran la transparencia? & \si  \\ \hline    
+   2.3& ¿Existe alguna responsabilidad sobre los datos? & \no  \\ \hline
+  \multicolumn{2}{|c|}{\textbf{Beneficios}}  \\ \hline
+   3.1& ¿Pueden las aplicaciones servirse de estos datos para generar servicios, reutilización? & \si  \\ \hline
+   3.2& ¿Se pueden generar múltiples vistas de los datos? & \si  \\ \hline
+   3.3& ¿Se pueden integrar con otras fuentes de datos? & \si  \\ \hline     
+   \multicolumn{2}{|c|}{\textbf{Consumo}}  \\ \hline
+   4.1& Uso de anotaciones & \si  \\ \hline        
+   4.2& ¿Se provee un API o servicio web de consumo? & \si  \\ \hline
+   4.3& ¿Se provee algún mecanismo de sindicación para obtener los datos?& \no  \\ \hline
+   4.4& ¿Existe algún modelo formal o especificación de los datos publicados? & \si  \\ \hline                                                             
+  \hline
+  \caption{$T^{4}_1$-Tabla de Validación sobre Características de \opendata.}
+  \label{table:validation-t41}
+\end{longtable}
+
+
+
+\subsection{Tabla de Validación $T^{5}$}
+En la Tabla~\ref{table:validation-t5} se recogen los criterios para pertener a la nube de datos 
+enlazados y abiertos. Estos criterios son complementarios a los señalados en las tablas anteriores 
+en el sentido del grado de cumplimiento de \linkeddata y \opendata. Sin embargo, la importancia 
+de esta valoración reside en calibrar el grado de reutilización de información y la capacidad 
+de difusión del \dataset RDF. Es por ello que se fija una valoración de referencia de $5$ criterios 
+positivos (\si).
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead
+   1& ¿Son los recursos RDF accesibles mediante HTTP o HTTPS? & \si  \\ \hline
+   2& ¿Se provee negociación de contenido? & \si  \\ \hline
+   3& ¿El \dataset contiene más de 1000 tripletas? & \si  \\ \hline
+   4& ¿Se provee, al menos, 50 enlaces a \datasets ya disponibles en el diagrama? & \si \\ \hline
+   5& ¿Se provee acceso al \dataset completo? & \si  \\ \hline
+  \hline
+  \caption{$T^{5}$-Tabla de Validación sobre Caraterísticas para pertenecer a \textit{The Linking Open Data Cloud} de los Anuncios de Licitación.}
+  \label{table:validation-t5}
+\end{longtable}
+
+
+
+\subsection{Tabla de Validación $T^{6}$}
+En la Tabla~\ref{table:validation-t6} se recogen los criterios para pertener a un registro CKAN, complementario 
+y obligatorio a la pertencencia a la nube de datos enlazados y abiertos. Este valoración cobra especial relevancia 
+si el \dataset RDF va a ser publicado para su reutilización por terceros, en el caso de datos enlazados a nivel 
+privado no tendría tanta trascendencia. La valoración de un \dataset RDF de referencia se fija 
+en $33$ criterios positivos (\si) y $14$ criterios positivos (\na).
+
+\begin{longtable}[c]{|l|p{7cm}|c|} 
+\hline 
+  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\endhead
+  1&\multicolumn{2}{|c|}{\textbf{Standard CKAN fields}}  \\ \hline
+  1.1&  \textit{Name} & \si  \\ \hline
+  1.2 &  \textit{Title} & \si  \\ \hline
+  1.3 &  \textit{URL} & \si  \\ \hline
+  \multicolumn{3}{|c|}{\textbf{Enhanced CKAN fields}}  \\ \hline
+   1.4&  \textit{Version} & \si  \\ \hline
+   1.5&  \textit{Notes} & \no  \\ \hline
+   1.6&  \textit{Author} & \si  \\ \hline
+   1.7&  \textit{Author email} &\si  \\ \hline
+   1.8&  \textit{License} &\si  \\ \hline
+   \multicolumn{3}{|c|}{\textbf{Custom CKAN fields}}  \\ \hline
+   1.9&  \textit{shortname}  \\ \hline
+   1.10&  \textit{license\_link} & \si  \\ \hline
+   1.11&  \textit{sparql\_graph\_name} & \no  \\ \hline
+   1.12&  \textit{namespace} & \si  \\ \hline
+   1.13&  \textit{triples} & \si  \\ \hline
+   1.14&  \textit{links:xxx} &\si  \\ \hline
+  2&\multicolumn{2}{|c|}{\textbf{CKAN tags}}  \\ \hline
+  2.1&  \textit{<topic>} &\si \\ \hline
+  \multicolumn{3}{|c|}{\textbf{Metainformation CKAN tags}}  \\ \hline  
+  2.2&\textit{format-<prefix>}&\si \\ \hline
+  2.3&\textit{no-proprietary-vocab}&\na \\ \hline
+  2.4 &\textit{deref-vocab}&\si \\ \hline
+  2.5&\textit{no-deref-vocab}&\na \\ \hline
+  2.6&\textit{vocab-mappings}&\si \\ \hline
+  2.7&\textit{no-vocab-mappings}&\na \\ \hline
+  2.8&\textit{provenance-metadata}&\si \\ \hline
+  2.9&\textit{no-provenance-metadata}&\na \\ \hline
+  2.10&\textit{license-metadata}&\si \\ \hline
+  2.11&\textit{no-license-metadata}&\na \\ \hline	
+  2.12&\textit{published-by-producer}&\na \\ \hline
+  2.13&\textit{published-by-third-party}&\si \\ \hline		
+  2.14&\textit{limited-sparql-endpoint}&\no \\ \hline
+  2.15&\textit{lodcloud.nolinks}&\no \\ \hline		
+  2.16&\textit{lodcloud.unconnected} &\no \\ \hline
+  2.17&\textit{lodcloud.needsinfo}&\no \\ \hline				
+  2.18&\textit{lodcloud.needsfixing}&\no \\ \hline				
+  3& \multicolumn{2}{|c|}{\textbf{CKAN resource links}}  \\ \hline
+  3.1&  \textit{Download Page} &\si \\ \hline
+  3.2&  \textit{meta/sitemap} &\na \\ \hline
+  3.3&  \textit{api/sparql} &\si \\ \hline
+  3.4&  \textit{meta/void} &\si \\ \hline
+  3.5&  \textit{application/rdf+xml} &\si \\ \hline
+  3.6&  \textit{text/turtle} &\na \\ \hline
+  3.7&  \textit{application/x-ntriples} &\na \\ \hline
+  3.8&  \textit{application/x-nquads} &\na \\ \hline
+  3.9&  \textit{meta/rdf-schema} &\si \\ \hline
+  3.10&  \textit{example/rdf+xml} &\si \\ \hline
+  3.11& \textit{example/turtle} &\na \\ \hline
+  3.12&  \textit{example/ntriples }&\na \\ \hline
+  3.13&  \textit{example/rdfa} &\na \\ \hline
+  3.14&  \textit{mapping/\{format\}} &\no \\ \hline
+    \hline
+  \caption{$T^{6}$-Tabla de Validación para registrar el \dataset en CKAN de los Anuncios de Licitación.}
+  \label{table:validation-t6}
+\end{longtable}
+
+

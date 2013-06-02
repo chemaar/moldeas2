@@ -1,0 +1,9 @@
+<http://purl.org/weso/webfoundation/webindex/countries/resource/ES> 
+	a eproc:Country ;
+	eproc:refDbpedia <http://dbpedia.org/resource/ISO_3166-1:ES> ;
+	eproc:refNuts <http://nuts.psi.enakting.org/id/ES>
+	geo:lat "40.46366700000001" ;
+	geo:long "-3.74922" ;
+	rdfs:label "Spain"@en ;
+	wi:shortLabel "ES" .
+

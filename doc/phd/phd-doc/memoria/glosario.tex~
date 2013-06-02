@@ -1,0 +1,813 @@
+%intro
+\newglossaryentry{Europea}{name=Europea,
+ description={Unión Europea}}
+
+\newglossaryentry{Estados}{name=Estados,
+ description={Estados Miembros}}
+
+\newglossaryentry{PIB}{name=PIB,
+ description={Producto Interior Bruto}}
+
+\newglossaryentry{PYME}{name=PYME,
+ description={Pequeña y Mediana Empresa}}
+
+\newglossaryentry{SaaS}{name=SaaS,
+ description={\textit{Software as a Service}}}
+
+\newglossaryentry{PSI}{name=PSI,
+ description={Información del Sector Público}}
+
+\newglossaryentry{B2B}{name=B2B,
+ description={\textit{Business to Business}}}
+
+\newglossaryentry{B2C}{name=B2C,
+ description={\textit{Business to Client}}}
+
+\newglossaryentry{A2A}{name=A2A,
+ description={\textit{Administration to Administration}}}
+
+\newglossaryentry{OGD}{name=OGD,
+ description={\textit{Open Government Data}}}
+
+\newglossaryentry{OD}{name=OD,
+ description={\textit{Open Data}}}
+
+\newglossaryentry{LD}{name=LD,
+ description={\textit{Linked Data}}}
+
+\newglossaryentry{RDF}{name=RDF,
+ description={\textit{Resource Description Framework}}}
+
+\newglossaryentry{e-Procurement}{name=e-Procurement,
+ description={Contratación Pública Electrónica}}
+
+\newglossaryentry{WESO}{name=WESO,
+ description={Grupo de Investigación de Web Semántica Oviedo}}
+
+\newglossaryentry{DOUE}{name=DOUE,
+ description={Diario Oficial de la Unión Europea}}
+
+\newglossaryentry{BOPA}{name=BOPA,
+ description={Boletín Oficial del Principado de Asturias}}
+
+\newglossaryentry{RSS}{name=RSS,
+ description={\textit{Really Simple Syndication}}}
+
+\newglossaryentry{HTML}{name=HTML,
+ description={\textit{HyperText Markup Language}}}
+
+\newglossaryentry{REST}{name=REST,
+ description={\textit{Representational State Transfer}}}
+
+\newglossaryentry{SOAP}{name=SOAP,
+ description={\textit{Simple Object Access Protocol}}}
+
+\newglossaryentry{RIF}{name=RIF,
+ description={\textit{Rule Interchange Format}}}
+
+\newglossaryentry{MOLDEAS}{name=MOLDEAS,
+ description={\textit{Methods On Linked Data for E-procurement Applying Semantics}}}
+
+\newglossaryentry{URI}{name=URI,
+ description={\textit{Uniform Resource Identifier}}}
+
+\newglossaryentry{IRI}{name=IRI,
+ description={\textit{Internationalized Resource Identifier}}}
+
+\newglossaryentry{CTIC}{name=CTIC,
+ description={Fundación CTIC-Centro Tecnológico de la Información y Comunicaciones}}
+
+\newglossaryentry{Solr}{name=Solr,
+ description={\textit{Ultra-fast Search Library and Server}}}
+
+\newglossaryentry{Lucene}{name=Lucene,
+ description={\textit{Ultra-fast Search Library and Server}}}
+
+\newglossaryentry{Mahout}{name=Mahout,
+ description={\textit{Scalable machine learning and data mining}}}
+
+\newglossaryentry{ANT}{name=ANT,
+ description={\textit{Pure Java build tool}}}
+
+\newglossaryentry{Maven}{name=Maven,
+ description={\textit{Apache build manager for Java projects}}}
+
+\newglossaryentry{Refine}{name=Refine,
+ description={\textit{A power tool for working with messy data, cleaning it up, transforming it from one format into another}}}
+
+\newglossaryentry{SNORQL}{name=SNORQL,
+ description={\textit{A SPARQL Explorer}}}
+
+\newglossaryentry{Pubby}{name=Pubby,
+ description={\textit{A Linked Data Frontend for SPARQL Endpoints}}}
+
+\newglossaryentry{Eclipse}{name=Eclipse,
+ description={\textit{A universal toolset for development}}}
+
+%e-procurement
+
+\newglossaryentry{BID}{name=BID,
+ description={\textit{Call For Bids}}}
+
+\newglossaryentry{AEAT}{name=AEAT,
+ description={Agencia Estatal de Administración Tributaria}}
+
+\newglossaryentry{TGSS}{name=TGSS,
+ description={Tesorería General de la Seguridad Social}}
+
+\newglossaryentry{PIN}{name=PIN,
+ description={\textit{Prior Information Notice}}}
+
+\newglossaryentry{BOE}{name=BOE,
+ description={BoletínOficial del Estado}}
+
+\newglossaryentry{ROLEC}{name=ROLEC,
+ description={Registro Oficial de Licitadores y de Empresas Clasificadas}}
+
+\newglossaryentry{W3C}{name=W3C,
+ description={\textit{World Wide Web Consortium}}}
+
+\newglossaryentry{TED}{name=TED,
+ description={\textit{Tenders Electronic Daily}}}
+
+
+\newglossaryentry{SIMAP}{name=SIMAP,
+ description={Sistema de Información para la contratación pública europea}}
+
+\newglossaryentry{CODICE}{name=CODICE,
+ description={Componentes y Documentos Interoperables para la Contratación Electrónica}}
+
+\newglossaryentry{OG}{name=OG,
+ description={\textit{Open Government}}}
+
+\newglossaryentry{EEE}{name=EEE,
+ description={Islandia, Liechtenstein y Noruega}}
+
+\newglossaryentry{DG-MARKT}{name={DG-MARKT},
+ description={\textit{The Internal Market and Services Directorate General}}}
+
+\newglossaryentry{DG-TAXUD}{name={DG-TAXUD},
+ description={\textit{Taxation and Customs Union}}}
+
+\newglossaryentry{DIGIT}{name={DIGIT},
+ description={\textit{Directorate-General for Informatics}}}
+
+\newglossaryentry{ePRIOR}{name={ePRIOR},
+ description={\textit{electronic PRocurement Invoicing and ORdering}}}
+
+\newglossaryentry{PEPPOL}{name={PEPPOL},
+ description={\textit{Pan-European Public Procurement Online}}}
+
+\newglossaryentry{DG-INFSO}{name={DG-INFSO},
+ description={\textit{The Information Society and Media Directorate General}}}
+
+\newglossaryentry{STORK}{name={STORK},
+ description={\textit{Secure idenTity acrOss euRope linKed}}}
+
+
+\newglossaryentry{eGovernment}{name={eGovernment},
+ description={Administración Pública Electrónica}}
+
+\newglossaryentry{SOA}{name={SOA},
+ description={\textit{Service Oriented Architecture}}}
+
+\newglossaryentry{XBRL}{name={XBRL},
+ description={\textit{eXtensible Business Reporting Language}}}
+
+\newglossaryentry{XML}{name={XML},
+ description={\textit{eXtensible Markup Language}}}
+
+\newglossaryentry{POST}{name={POST},
+ description={Petición sobre HTTP según RFC 2616}}
+
+\newglossaryentry{HTTP}{name={HTTP},
+ description={\textit{Hypertext Transfer Protocol}}}
+
+\newglossaryentry{WSDL}{name={WSDL},
+ description={\textit{Web Services Description Language}}}
+
+\newglossaryentry{XML Schema}{name={XML Schema},
+ description={\textit{XML vocabulary with the purpose of defining a class of XML documents}}}
+
+
+\newglossaryentry{UBL}{name={UBL},
+ description={\textit{Universal Business Language}}}
+
+\newglossaryentry{ISO}{name={ISO},
+ description={\textit{International Organization for Standardization}}}
+
+\newglossaryentry{opXML}{name={opXML},
+ description={Vocabulario XML de contratos públicos del proyectos ``10ders Information Services''}}
+
+\newglossaryentry{10ders}{name={10ders},
+ description={Proyecto de investigación cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2  
+con código TSI-020100-2010-919}}
+
+\newglossaryentry{RAMON}{name={RAMON},
+ description={\textit{Eurostat's Metadata Server}}}
+
+\newglossaryentry{CPV}{name={CPV},
+ description={\textit{Common Procurement Vocabulary}}}
+
+\newglossaryentry{CPC}{name={CPC},
+ description={Clasificación Central de Productos}}
+
+\newglossaryentry{CIIU}{name={CIIU},
+ description={Clasificación Industrial Internacional Uniforme}}
+
+\newglossaryentry{CPA}{name={CPA},
+ description={Clasificación de Productos por Actividades}}
+
+
+\newglossaryentry{UNESCO}{name={UNESCO},
+ description={\textit{United Nations Educational, Scientific and Cultural Organization}}}
+
+
+\newglossaryentry{ONU}{name={ONU},
+ description={Organización de las Naciones Unidas}}
+
+\newglossaryentry{PDF}{name={PDF},
+ description={\textit{Portable Document Format}}}
+
+\newglossaryentry{CN}{name={CN},
+ description={\textit{Combined Nomenclature}}}
+
+
+\newglossaryentry{TARIC}{name=TARIC,
+ description={\textit{Integrated Tariff of the European Communities}}}
+
+
+\newglossaryentry{ISIC}{name=ISIC,
+ description={\textit{International Standard Industrial Classification of All Economic Activities}}}
+
+\newglossaryentry{NAPCS}{name=NAPCS,
+ description={\textit{North American Product Classification System}}}
+
+
+\newglossaryentry{NAICS}{name=NAICS,
+ description={\textit{North American Industry Classification System}}}
+
+
+\newglossaryentry{PRODCOM}{name=PRODCOM,
+ description={\textit{PRODuction COMmunautaire}}}
+
+\newglossaryentry{SITC}{name=SITC,
+ description={\textit{Standard International Trade Classification}}}
+
+\newglossaryentry{NACE}{name=NACE,
+ description={\textit{Nomenclature générale des activités économiques dans les Communautés européennes}}}
+
+\newglossaryentry{UNSPSC}{name=UNSPSC,
+ description={\textit{United Nations Standard Products and Services Code}}}
+
+%web semantica
+\newglossaryentry{Big Data}{name={Big Data},
+ description={\textit{Data sets that grow so large that they become awkward to work with using on-hand database management tools}}}
+
+\newglossaryentry{RDF Schema}{name={RDF Schema},
+ description={\textit{Resource Description Framework Schema}. RDF(S) ó RDFS}}
+
+\newglossaryentry{OWL}{name={OWL},
+ description={\textit{Web Ontology Language}}}
+
+\newglossaryentry{DL}{name={DL},
+ description={\textit{Description Logics}}}
+
+\newglossaryentry{SGML}{name={SGML},
+ description={\textit{Standard Generalized Markup Language}}}
+
+\newglossaryentry{DTD}{name={DTD},
+ description={\textit{Document Type Definition}}}
+
+\newglossaryentry{XSL}{name={XSL},
+ description={\textit{Extensible Stylesheet Language}}}
+
+\newglossaryentry{XSLT}{name={XSLT},
+ description={\textit{Extensible Stylesheet Language Transformations}}}
+
+
+\newglossaryentry{XPath}{name={XPath},
+ description={\textit{The XML Path Language}}}
+
+\newglossaryentry{JAXB}{name={JAXB},
+ description={\textit{Java Architecture for XML Binding}}}
+
+\newglossaryentry{SWRL}{name={SWRL},
+ description={\textit{Semantic Web Rule Language}}}
+
+
+\newglossaryentry{XHTML}{name={XHTML},
+ description={\textit{eXtensible HyperText Markup Language}}}
+
+
+\newglossaryentry{SKOS}{name={SKOS},
+ description={\textit{Simple Knowledge Organization System}}}
+
+\newglossaryentry{FOAF}{name={FOAF},
+ description={\textit{Friend Of A Friend RDF vocabulary}}}
+
+
+\newglossaryentry{DOAP}{name={DOAP},
+ description={\textit{Description Of A Project RDF vocabulary}}}
+
+\newglossaryentry{SIOC}{name={SIOC},
+ description={\textit{Semantically-Interlinked Online Communities}}}
+
+\newglossaryentry{SWAML}{name={SWAML},
+ description={\textit{Semantic Web Archive of Mailing Lists}}}
+
+\newglossaryentry{OIL}{name={OIL},
+ description={\textit{Ontology Inference Layer}}}
+
+\newglossaryentry{DAML+OIL}{name={DAML+OIL},
+ description={\textit{DAML+OIL Ontology}}}
+
+\newglossaryentry{DARPA}{name={DARPA},
+ description={\textit{Defense Advanced Research Projects Agency}}}
+
+
+\newglossaryentry{WSML}{name={WSML},
+ description={\textit{Web Service Modeling Language}}}
+
+
+\newglossaryentry{WSMO}{name={WSMO},
+ description={\textit{Web Service Modeling Ontology}}}
+
+
+
+\newglossaryentry{SPARQL}{name={SPARQL},
+ description={\textit{Query Language for RDF}}}
+
+\newglossaryentry{SBC}{name={SBC},
+ description={Sistema Basado en el Conocimiento}}
+
+%linkeddata
+
+\newglossaryentry{HTTP URI}{name={HTTP URI},
+ description={URIs basadas en el esquema HTTP}}
+
+
+\newglossaryentry{CSV}{name={CSV},
+ description={\textit{Comma-separated values}}}
+
+\newglossaryentry{OKFN}{name={OKFN},
+ description={\textit{Open Knowledge Foundation}}}
+
+\newglossaryentry{API}{name={API},
+ description={\textit{Application Programming Interface}}}
+
+\newglossaryentry{RDFa}{name={RDFa},
+ description={\textit{Bridging the Human and Data Webs}}}
+
+\newglossaryentry{WCAG}{name={WCAG},
+ description={\textit{Web Content Accessibility Guidelines}}}
+
+\newglossaryentry{ATOM}{name={ATOM},
+ description={\textit{Atom Publishing Protocol}}}
+
+\newglossaryentry{LOD}{name={LOD},
+ description={\textit{Linking Open Data}}}
+
+\newglossaryentry{voID}{name={voID},
+ description={\textit{Vocabulary of Interlinked Datasets}}}
+
+\newglossaryentry{F2F}{name={F2F},
+ description={\textit{Face to Face}}}
+
+
+\newglossaryentry{COLD}{name={COLD},
+ description={\textit{Consuming Linking Open Data}}}
+
+\newglossaryentry{LDOW}{name={LDOW},
+ description={\textit{Linked Data On the Web}}}
+
+\newglossaryentry{SDOW}{name={SDOW},
+ description={\textit{Social Data On the Web}}}
+
+\newglossaryentry{MIME}{name={MIME},
+ description={\textit{Multipurpose Internet Mail Extensions}}}
+
+\newglossaryentry{URL}{name={URL},
+ description={\textit{Uniform Resource Locator}}}
+
+\newglossaryentry{REEEP}{name={REEEP},
+ description={\textit{Renewable Energy and Energy Efficiency Partnership}}}
+
+\newglossaryentry{OMG}{name={OMG},
+ description={\textit{Object Management Group}}}
+
+\newglossaryentry{SBVR}{name={SBVR},
+ description={\textit{Semantics of Business Vocabulary and Business Rules}}}
+
+\newglossaryentry{OASIS}{name={OASIS},
+ description={\textit{Advancing open standards for the information society}}}
+
+\newglossaryentry{SPARUL}{name={SPARUL},
+ description={\textit{SPARQL with Updates}}}
+
+\newglossaryentry{JSON}{name={JSON},
+ description={\textit{JavaScript Object Notation}}}
+
+\newglossaryentry{SCOR}{name={SCOR},
+ description={\textit{Supply-Chain Operations Reference-Model}}}
+
+\newglossaryentry{ebXML}{name={ebXML},
+ description={\textit{Electronic Business using eXtensible Markup Language}}}
+
+\newglossaryentry{ERP}{name={ERP},
+ description={\textit{Enterprise resource planning}}}
+
+\newglossaryentry{AIISO}{name={AIISO},
+ description={\textit{Academic Institution Internal Structure Ontology}}}
+
+\newglossaryentry{FP7}{name={FP7},
+ description={\textit{The Seventh Framework Programme}}}
+
+%metodos
+
+\newglossaryentry{RFC}{name={RFC},
+ description={\textit{Request For Comments}}}
+
+\newglossaryentry{SKOS-XL}{name={SKOS-XL},
+ description={\textit{SKOS eXtension for Labels}}}
+
+\newglossaryentry{NUTS}{name={NUTS},
+ description={Nomenclatura de las Unidades Territoriales Estadísticas}}
+
+
+\newglossaryentry{ETL}{name={ETL},
+ description={\textit{Extract, transform and load}}}
+
+\newglossaryentry{N3}{name={N3},
+ description={\textit{Notation 3 Logic}}}
+
+\newglossaryentry{RDF/XML}{name={RDF/XML},
+ description={\textit{It is a syntax, defined by the W3C, to express (i.e. serialize) an RDF graph as an XML document}}}
+
+\newglossaryentry{Turtle}{name={Turtle},
+ description={\textit{Terse RDF Triple Language}}}
+
+
+\newglossaryentry{SQL}{name={SQL},
+ description={\textit{Structured Query Language}}}
+
+\newglossaryentry{XQuery}{name={XQuery},
+ description={\textit{XQuery is a standardized language for combining documents, databases, Web pages and almost anything else}}}
+
+\newglossaryentry{ORM}{name={ORM},
+ description={\textit{Object-Relational Mapping}}}
+
+\newglossaryentry{TRIOO}{name={TRIOO},
+ description={\textit{Keeping the Semantics of Data Safe and Sound into Object-Oriented Software}}}
+
+\newglossaryentry{CKAN}{name={CKAN},
+ description={\textit{It is the world’s leading open-source data portal platform}}}
+
+\newglossaryentry{HTTPS}{name={HTTPS},
+ description={\textit{Hypertext Transfer Protocol Secure}}}
+
+%metodos separados
+
+\newglossaryentry{KOS}{name={KOS},
+ description={\textit{Knowledge Organization Systems}}}
+
+\newglossaryentry{PSC}{name={PSC},
+ description={\textit{Product Scheme Classifications}}}
+
+\newglossaryentry{FTP}{name={FTP},
+ description={\textit{File Transfer Protocol}}}
+
+%moldeas
+
+\newglossaryentry{J2EE}{name={J2EE},
+ description={\textit{Java 2 Platform, Enterprise Edition}}}
+
+
+\newglossaryentry{IDE}{name={IDE},
+ description={\textit{Integrated Development Environment}}}
+
+
+\newglossaryentry{POJO}{name={POJO},
+ description={\textit{Plain Old Java Object}}}
+
+\newglossaryentry{XP}{name={XP},
+ description={\textit{Extreme programming}}}
+
+\newglossaryentry{UNE}{name={UNE},
+ description={Una Norma Española}}
+
+\newglossaryentry{WIQA}{name={WIQA},
+ description={\textit{Web Information Quality Assessment Framework}}}
+
+
+\newglossaryentry{LODQ}{name={LODQ},
+ description={\textit{LOD Data Quality Vocabulary}}}
+
+
+%exper
+
+\newglossaryentry{BORME}{name={BORME},
+ description={Boletín Oficial del Registro Mercantil}}
+
+\newglossaryentry{BBDD}{name={BBDD},
+ description={Base de Datos}}
+
+%moldeas
+
+
+\newglossaryentry{JAR}{name={JAR},
+ description={\textit{Java ARchive}}}
+
+\newglossaryentry{DAO}{name={DAO},
+ description={Patrón de Diseño \textit{Data Access Object}}}
+
+\newglossaryentry{WADL}{name={WADL},
+ description={\textit{Web Application Description Language}}}
+
+\newglossaryentry{GIS}{name={GIS},
+ description={Sistema de Información Geográfica}}
+
+\newglossaryentry{ORM}{name={ORM},
+ description={\textit{Object-relational mapping}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

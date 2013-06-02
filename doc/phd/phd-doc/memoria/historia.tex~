@@ -1,0 +1,20 @@
+%
+% historian.tex
+%
+
+\chapter*{Historial de este documento}
+
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Fecha} & \textbf{Versión} & \textbf{Comentarios} \\\hline
+Mayo/2011 & 0.1 & Inicio del documento  \\\hline
+Junio/2011 & 0.2 & Estructura del documento  \\\hline
+Septiembre/2011 & 0.3 & Introducción y Estado del Arte  \\\hline
+Octubre/2011 & 0.4 & Contratación Pública y \textit{e-Procurement} \\\hline
+Noviembre/2011 & 0.5 & \textit{Linked Data}, \textit{Open Data} y Web Semántica   \\\hline
+Diciembre/2011 & 0.6 & Ciclo de Vida de Datos Enlazados \\\hline
+Enero/2012 & 0.7 & Aplicación de MOLDEAS al \textit{e-Procurement}\\\hline
+Febrero/2012 & 0.8 & Validación y Experimentación \\\hline
+Marzo/2012 & 0.9 & Versión alfa del documento \\\hline
+Abril/2012 & 1.0 & Versión final del documento \\\hline
+\end{tabular}

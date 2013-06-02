@@ -1,0 +1,33 @@
+<http://purl.org/weso/pscs/cpv/2008/resource/55900000>
+      a       gr:ProductOrServiceModel , cpv-def:Group ;
+     skosxl:prefLabel
+     gr:description      
+     rdfs:label 
+	"Servizi di vendita al dettaglio"@IT , 	
+	"Detailhandel"@DA , 
+	"Detailhandelsdiensten"@NL , 
+	"Servicios comerciales al por menor"@ES , 
+	"Maloobchod"@CS , 
+	"Storitve trgovine na drobno"@SL , 
+	"Retail trade services"@GA , 
+	"Retail trade services"@EN ;
+	...
+      dc:identifier "55900000"^^xsd:string ;
+      dc:subject "55900000-9"^^xsd:string ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/retail> , 
+	<http://www.productontology.org/id/service> , 
+	<http://www.productontology.org/id/trade> ;
+      skos:broaderTransitive
+         <http://purl.org/weso/pscs/cpv/2008/resource/55000000> ;
+      skos:exactMatch 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52900000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52800000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52400000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52600000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52700000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52300000> , 	
+	<http://purl.org/weso/pscs/cpv/2003/resource/52500000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52200000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/52100000> ;
+      skos:inScheme <http://purl.org/weso/pscs/cpv/2008/resource/ds>  .

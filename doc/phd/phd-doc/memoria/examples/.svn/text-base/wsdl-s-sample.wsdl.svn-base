@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<definitions name="PurchaseOrder"
+ targetNamespace="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+ xmlns="http://www.w3.org/2004/08/wsdl"
+ xmlns:tns="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ xmlns:xsd1="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+ xmlns:wssem="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+ xmlns:POOntology="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/ontologies/PurchaseOrder.owl"
+ xmlns:Rosetta="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/ontologies/rosetta.owl">
+   <types> 
+     <xs:import namespace="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+       schemaLocation="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/WSSemantics.xsd"/>
+     <xs:import namespace="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+       schemaLocation="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/POBilling.xsd" />
+     <xs:import namespace="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+       schemaLocation="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/POItem.xsd" />
+     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl"
+           xmlns="http://lsdis.cs.uga.edu/projects/meteor-s/wsdl-s/examples/purchaseOrder.wsdl">
+        <!--Semantic annotations for these complex types are given in their respective type
+            definitions -->
+        <xs:complexType name="processPurchaseOrderRequest"> 
+          <xs:all> 
+            <xs:element name="billingInfo" type="xsd1:POBilling"/>
+            <xs:element name="orderItem" type="xsd1:POItem"/> 
+          </xs:all> 
+         </xs:complexType> 
+        <!--Semantic annotation is added directly to leaf element -->
+        <xs:element name="processPurchaseOrderResponse" type="xs:string"
+               wssem:modelReference="POOntology#OrderConfirmation"/>
+      </xs:schema> 
+    </types>
+   <interface name="PurchaseOrder">
+           <!--Category is added as an extensible element of an interface-->
+           <wssem:category name="Electronics" taxonomyURI="http://www.naics.com/" taxonomyCode="443112" />
+           <operation name="processPurchaseOrder" pattern="wsdl:in-out"
+                     wssem:modelReference="Rosetta:RequestPurchaseOrder" >
+             <input messageLabel ="processPurchaseOrderRequest"
+             element="tns:processPurchaseOrderRequest"/> 
+             <output messageLabel ="processPurchaseOrderResponse"
+             element="processPurchaseOrderResponse"/>
+           <!--Precondition and effect are added as extensible elements on an operation-->
+           <wssem:precondition name="ExistingAcctPrecond"
+           wssem:modelReference="POOntology#AccountExists"/>
+           <wssem:effect name="ItemReservedEffect"
+           wssem:modelReference="POOntology#ItemReserved"/>
+           </operation>
+   </interface>
+</definitions>

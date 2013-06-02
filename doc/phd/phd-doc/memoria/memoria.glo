@@ -1,0 +1,761 @@
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{0.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{0.0}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{PIB?\glossaryentryfield{PIB}{\glsnamefont{PIB}}{Producto Interior Bruto}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{PYME?\glossaryentryfield{PYME}{\glsnamefont{PYME}}{Pequeña y Mediana Empresa}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{Estados?\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{PSI?\glossaryentryfield{PSI}{\glsnamefont{PSI}}{Información del Sector Público}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{SaaS?\glossaryentryfield{SaaS}{\glsnamefont{SaaS}}{\textit {Software as a Service}}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{B2B?\glossaryentryfield{B2B}{\glsnamefont{B2B}}{\textit {Business to Business}}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{B2C?\glossaryentryfield{B2C}{\glsnamefont{B2C}}{\textit {Business to Client}}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{A2A?\glossaryentryfield{A2A}{\glsnamefont{A2A}}{\textit {Administration to Administration}}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{OGD?\glossaryentryfield{OGD}{\glsnamefont{OGD}}{\textit {Open Government Data}}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{1.0}
+\glossaryentry{10ders?\glossaryentryfield{10ders}{\glsnamefont{10ders}}{Proyecto de investigación cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 con código TSI-020100-2010-919}{\relax }|setentrycounter{section}\glsnumberformat}{1.1}
+\glossaryentry{WESO?\glossaryentryfield{WESO}{\glsnamefont{WESO}}{Grupo de Investigación de Web Semántica Oviedo}{\relax }|setentrycounter{section}\glsnumberformat}{1.1}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{1.1}
+\glossaryentry{PYME?\glossaryentryfield{PYME}{\glsnamefont{PYME}}{Pequeña y Mediana Empresa}{\relax }|setentrycounter{section}\glsnumberformat}{1.1}
+\glossaryentry{DOUE?\glossaryentryfield{DOUE}{\glsnamefont{DOUE}}{Diario Oficial de la Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{1.1}
+\glossaryentry{Eclipse?\glossaryentryfield{Eclipse}{\glsnamefont{Eclipse}}{\textit {A universal toolset for development}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{Mahout?\glossaryentryfield{Mahout}{\glsnamefont{Mahout}}{\textit {Scalable machine learning and data mining}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{ANT?\glossaryentryfield{ANT}{\glsnamefont{ANT}}{\textit {Pure Java build tool}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{Maven?\glossaryentryfield{Maven}{\glsnamefont{Maven}}{\textit {Apache build manager for Java projects}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{Refine?\glossaryentryfield{Refine}{\glsnamefont{Refine}}{\textit {A power tool for working with messy data, cleaning it up, transforming it from one format into another}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{SNORQL?\glossaryentryfield{SNORQL}{\glsnamefont{SNORQL}}{\textit {A SPARQL Explorer}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{Pubby?\glossaryentryfield{Pubby}{\glsnamefont{Pubby}}{\textit {A Linked Data Frontend for SPARQL Endpoints}}{\relax }|setentrycounter{section}\glsnumberformat}{1.4}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{BOPA?\glossaryentryfield{BOPA}{\glsnamefont{BOPA}}{Boletín Oficial del Principado de Asturias}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{RIF?\glossaryentryfield{RIF}{\glsnamefont{RIF}}{\textit {Rule Interchange Format}}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{WESO?\glossaryentryfield{WESO}{\glsnamefont{WESO}}{Grupo de Investigación de Web Semántica Oviedo}{\relax }|setentrycounter{section}\glsnumberformat}{1.5}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{1.6}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{1.6}
+\glossaryentry{IRI?\glossaryentryfield{IRI}{\glsnamefont{IRI}}{\textit {Internationalized Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{1.6}
+\glossaryentry{PIB?\glossaryentryfield{PIB}{\glsnamefont{PIB}}{Producto Interior Bruto}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{Estados?\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{AEAT?\glossaryentryfield{AEAT}{\glsnamefont{AEAT}}{Agencia Estatal de Administración Tributaria}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{TGSS?\glossaryentryfield{TGSS}{\glsnamefont{TGSS}}{Tesorería General de la Seguridad Social}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{PIN?\glossaryentryfield{PIN}{\glsnamefont{PIN}}{\textit {Prior Information Notice}}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{DOUE?\glossaryentryfield{DOUE}{\glsnamefont{DOUE}}{Diario Oficial de la Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{BOE?\glossaryentryfield{BOE}{\glsnamefont{BOE}}{BoletínOficial del Estado}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{DOUE?\glossaryentryfield{DOUE}{\glsnamefont{DOUE}}{Diario Oficial de la Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{BOE?\glossaryentryfield{BOE}{\glsnamefont{BOE}}{BoletínOficial del Estado}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{ROLEC?\glossaryentryfield{ROLEC}{\glsnamefont{ROLEC}}{Registro Oficial de Licitadores y de Empresas Clasificadas}{\relax }|setentrycounter{section}\glsnumberformat}{2.1}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{2.2}
+\glossaryentry{CODICE?\glossaryentryfield{CODICE}{\glsnamefont{CODICE}}{Componentes y Documentos Interoperables para la Contratación Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.2}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{2.2}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.3}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.3}
+\glossaryentry{Estados?\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }|setentrycounter{section}\glsnumberformat}{2.3}
+\glossaryentry{Estados?\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }|setentrycounter{section}\glsnumberformat}{2.4}
+\glossaryentry{OG?\glossaryentryfield{OG}{\glsnamefont{OG}}{\textit {Open Government}}{\relax }|setentrycounter{section}\glsnumberformat}{2.5}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.6}
+\glossaryentry{PEPPOL?\glossaryentryfield{PEPPOL}{\glsnamefont{PEPPOL}}{\textit {Pan-European Public Procurement Online}}{\relax }|setentrycounter{section}\glsnumberformat}{2.6}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{2.6}
+\glossaryentry{PYME?\glossaryentryfield{PYME}{\glsnamefont{PYME}}{Pequeña y Mediana Empresa}{\relax }|setentrycounter{section}\glsnumberformat}{2.7}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.7}
+\glossaryentry{Estados?\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }|setentrycounter{section}\glsnumberformat}{2.7}
+\glossaryentry{Estados?\glossaryentryfield{Estados}{\glsnamefont{Estados}}{Estados Miembros}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{EEE?\glossaryentryfield{EEE}{\glsnamefont{EEE}}{Islandia, Liechtenstein y Noruega}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DG-MARKT?\glossaryentryfield{DG-MARKT}{\glsnamefont{DG-MARKT}}{\textit {The Internal Market and Services Directorate General}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DG-TAXUD?\glossaryentryfield{DG-TAXUD}{\glsnamefont{DG-TAXUD}}{\textit {Taxation and Customs Union}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{ePRIOR?\glossaryentryfield{ePRIOR}{\glsnamefont{ePRIOR}}{\textit {electronic PRocurement Invoicing and ORdering}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DG-MARKT?\glossaryentryfield{DG-MARKT}{\glsnamefont{DG-MARKT}}{\textit {The Internal Market and Services Directorate General}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DIGIT?\glossaryentryfield{DIGIT}{\glsnamefont{DIGIT}}{\textit {Directorate-General for Informatics}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{ePRIOR?\glossaryentryfield{ePRIOR}{\glsnamefont{ePRIOR}}{\textit {electronic PRocurement Invoicing and ORdering}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DG-MARKT?\glossaryentryfield{DG-MARKT}{\glsnamefont{DG-MARKT}}{\textit {The Internal Market and Services Directorate General}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DIGIT?\glossaryentryfield{DIGIT}{\glsnamefont{DIGIT}}{\textit {Directorate-General for Informatics}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{PEPPOL?\glossaryentryfield{PEPPOL}{\glsnamefont{PEPPOL}}{\textit {Pan-European Public Procurement Online}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DG-INFSO?\glossaryentryfield{DG-INFSO}{\glsnamefont{DG-INFSO}}{\textit {The Information Society and Media Directorate General}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{STORK?\glossaryentryfield{STORK}{\glsnamefont{STORK}}{\textit {Secure idenTity acrOss euRope linKed}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{DG-INFSO?\glossaryentryfield{DG-INFSO}{\glsnamefont{DG-INFSO}}{\textit {The Information Society and Media Directorate General}}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{eGovernment?\glossaryentryfield{eGovernment}{\glsnamefont{eGovernment}}{Administración Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.8}
+\glossaryentry{B2B?\glossaryentryfield{B2B}{\glsnamefont{B2B}}{\textit {Business to Business}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{\textit {Service Oriented Architecture}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{SOA?\glossaryentryfield{SOA}{\glsnamefont{SOA}}{\textit {Service Oriented Architecture}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XBRL?\glossaryentryfield{XBRL}{\glsnamefont{XBRL}}{\textit {eXtensible Business Reporting Language}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{POST?\glossaryentryfield{POST}{\glsnamefont{POST}}{Petición sobre HTTP según RFC 2616}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{\textit {Web Services Description Language}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{CODICE?\glossaryentryfield{CODICE}{\glsnamefont{CODICE}}{Componentes y Documentos Interoperables para la Contratación Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{UBL?\glossaryentryfield{UBL}{\glsnamefont{UBL}}{\textit {Universal Business Language}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{ISO?\glossaryentryfield{ISO}{\glsnamefont{ISO}}{\textit {International Organization for Standardization}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{10ders?\glossaryentryfield{10ders}{\glsnamefont{10ders}}{Proyecto de investigación cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 con código TSI-020100-2010-919}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{CODICE?\glossaryentryfield{CODICE}{\glsnamefont{CODICE}}{Componentes y Documentos Interoperables para la Contratación Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{opXML?\glossaryentryfield{opXML}{\glsnamefont{opXML}}{Vocabulario XML de contratos públicos del proyectos ``10ders Information Services''}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{2.9}
+\glossaryentry{RAMON?\glossaryentryfield{RAMON}{\glsnamefont{RAMON}}{\textit {Eurostat's Metadata Server}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CPC?\glossaryentryfield{CPC}{\glsnamefont{CPC}}{Clasificación Central de Productos}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CIIU?\glossaryentryfield{CIIU}{\glsnamefont{CIIU}}{Clasificación Industrial Internacional Uniforme}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CPA?\glossaryentryfield{CPA}{\glsnamefont{CPA}}{Clasificación de Productos por Actividades}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CN?\glossaryentryfield{CN}{\glsnamefont{CN}}{\textit {Combined Nomenclature}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CPC?\glossaryentryfield{CPC}{\glsnamefont{CPC}}{Clasificación Central de Productos}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{CPA?\glossaryentryfield{CPA}{\glsnamefont{CPA}}{Clasificación de Productos por Actividades}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{TARIC?\glossaryentryfield{TARIC}{\glsnamefont{TARIC}}{\textit {Integrated Tariff of the European Communities}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{ISIC?\glossaryentryfield{ISIC}{\glsnamefont{ISIC}}{\textit {International Standard Industrial Classification of All Economic Activities}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{NAPCS?\glossaryentryfield{NAPCS}{\glsnamefont{NAPCS}}{\textit {North American Product Classification System}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{NAICS?\glossaryentryfield{NAICS}{\glsnamefont{NAICS}}{\textit {North American Industry Classification System}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{PRODCOM?\glossaryentryfield{PRODCOM}{\glsnamefont{PRODCOM}}{\textit {PRODuction COMmunautaire}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{SITC?\glossaryentryfield{SITC}{\glsnamefont{SITC}}{\textit {Standard International Trade Classification}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{NACE?\glossaryentryfield{NACE}{\glsnamefont{NACE}}{\textit {Nomenclature générale des activités économiques dans les Communautés européennes}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{UNSPSC?\glossaryentryfield{UNSPSC}{\glsnamefont{UNSPSC}}{\textit {United Nations Standard Products and Services Code}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{UNESCO?\glossaryentryfield{UNESCO}{\glsnamefont{UNESCO}}{\textit {United Nations Educational, Scientific and Cultural Organization}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{ONU?\glossaryentryfield{ONU}{\glsnamefont{ONU}}{Organización de las Naciones Unidas}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{\textit {Portable Document Format}}{\relax }|setentrycounter{section}\glsnumberformat}{2.10}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{2.12}
+\glossaryentry{Big Data?\glossaryentryfield{Big Data}{\glsnamefont{Big Data}}{\textit {Data sets that grow so large that they become awkward to work with using on-hand database management tools}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF Schema?\glossaryentryfield{RDF Schema}{\glsnamefont{RDF Schema}}{\textit {Resource Description Framework Schema}. RDF(S) ó RDFS}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DL?\glossaryentryfield{DL}{\glsnamefont{DL}}{\textit {Description Logics}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{IRI?\glossaryentryfield{IRI}{\glsnamefont{IRI}}{\textit {Internationalized Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SGML?\glossaryentryfield{SGML}{\glsnamefont{SGML}}{\textit {Standard Generalized Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DTD?\glossaryentryfield{DTD}{\glsnamefont{DTD}}{\textit {Document Type Definition}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XSL?\glossaryentryfield{XSL}{\glsnamefont{XSL}}{\textit {Extensible Stylesheet Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{\textit {Portable Document Format}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XSLT?\glossaryentryfield{XSLT}{\glsnamefont{XSLT}}{\textit {Extensible Stylesheet Language Transformations}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XPath?\glossaryentryfield{XPath}{\glsnamefont{XPath}}{\textit {The XML Path Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DTD?\glossaryentryfield{DTD}{\glsnamefont{DTD}}{\textit {Document Type Definition}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{WSDL?\glossaryentryfield{WSDL}{\glsnamefont{WSDL}}{\textit {Web Services Description Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{JAXB?\glossaryentryfield{JAXB}{\glsnamefont{JAXB}}{\textit {Java Architecture for XML Binding}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RIF?\glossaryentryfield{RIF}{\glsnamefont{RIF}}{\textit {Rule Interchange Format}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SWRL?\glossaryentryfield{SWRL}{\glsnamefont{SWRL}}{\textit {Semantic Web Rule Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF/XML?\glossaryentryfield{RDF/XML}{\glsnamefont{RDF/XML}}{\textit {It is a syntax, defined by the W3C, to express (i.e. serialize) an RDF graph as an XML document}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDFa?\glossaryentryfield{RDFa}{\glsnamefont{RDFa}}{\textit {Bridging the Human and Data Webs}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{Turtle?\glossaryentryfield{Turtle}{\glsnamefont{Turtle}}{\textit {Terse RDF Triple Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{N3?\glossaryentryfield{N3}{\glsnamefont{N3}}{\textit {Notation 3 Logic}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{JSON?\glossaryentryfield{JSON}{\glsnamefont{JSON}}{\textit {JavaScript Object Notation}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF Schema?\glossaryentryfield{RDF Schema}{\glsnamefont{RDF Schema}}{\textit {Resource Description Framework Schema}. RDF(S) ó RDFS}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XHTML?\glossaryentryfield{XHTML}{\glsnamefont{XHTML}}{\textit {eXtensible HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{FOAF?\glossaryentryfield{FOAF}{\glsnamefont{FOAF}}{\textit {Friend Of A Friend RDF vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DOAP?\glossaryentryfield{DOAP}{\glsnamefont{DOAP}}{\textit {Description Of A Project RDF vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SIOC?\glossaryentryfield{SIOC}{\glsnamefont{SIOC}}{\textit {Semantically-Interlinked Online Communities}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{FOAF?\glossaryentryfield{FOAF}{\glsnamefont{FOAF}}{\textit {Friend Of A Friend RDF vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{OIL?\glossaryentryfield{OIL}{\glsnamefont{OIL}}{\textit {Ontology Inference Layer}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DAML+OIL?\glossaryentryfield{DAML+OIL}{\glsnamefont{DAML+OIL}}{\textit {DAML+OIL Ontology}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DAML+OIL?\glossaryentryfield{DAML+OIL}{\glsnamefont{DAML+OIL}}{\textit {DAML+OIL Ontology}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DARPA?\glossaryentryfield{DARPA}{\glsnamefont{DARPA}}{\textit {Defense Advanced Research Projects Agency}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{WSML?\glossaryentryfield{WSML}{\glsnamefont{WSML}}{\textit {Web Service Modeling Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{WSMO?\glossaryentryfield{WSMO}{\glsnamefont{WSMO}}{\textit {Web Service Modeling Ontology}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SBC?\glossaryentryfield{SBC}{\glsnamefont{SBC}}{Sistema Basado en el Conocimiento}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DL?\glossaryentryfield{DL}{\glsnamefont{DL}}{\textit {Description Logics}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DL?\glossaryentryfield{DL}{\glsnamefont{DL}}{\textit {Description Logics}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{SBC?\glossaryentryfield{SBC}{\glsnamefont{SBC}}{Sistema Basado en el Conocimiento}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{DAML+OIL?\glossaryentryfield{DAML+OIL}{\glsnamefont{DAML+OIL}}{\textit {DAML+OIL Ontology}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{OKFN?\glossaryentryfield{OKFN}{\glsnamefont{OKFN}}{\textit {Open Knowledge Foundation}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{PSI?\glossaryentryfield{PSI}{\glsnamefont{PSI}}{Información del Sector Público}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDFa?\glossaryentryfield{RDFa}{\glsnamefont{RDFa}}{\textit {Bridging the Human and Data Webs}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{XHTML?\glossaryentryfield{XHTML}{\glsnamefont{XHTML}}{\textit {eXtensible HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{WCAG?\glossaryentryfield{WCAG}{\glsnamefont{WCAG}}{\textit {Web Content Accessibility Guidelines}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{ATOM?\glossaryentryfield{ATOM}{\glsnamefont{ATOM}}{\textit {Atom Publishing Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDFa?\glossaryentryfield{RDFa}{\glsnamefont{RDFa}}{\textit {Bridging the Human and Data Webs}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF/XML?\glossaryentryfield{RDF/XML}{\glsnamefont{RDF/XML}}{\textit {It is a syntax, defined by the W3C, to express (i.e. serialize) an RDF graph as an XML document}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{Turtle?\glossaryentryfield{Turtle}{\glsnamefont{Turtle}}{\textit {Terse RDF Triple Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{N3?\glossaryentryfield{N3}{\glsnamefont{N3}}{\textit {Notation 3 Logic}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{JSON?\glossaryentryfield{JSON}{\glsnamefont{JSON}}{\textit {JavaScript Object Notation}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{LOD?\glossaryentryfield{LOD}{\glsnamefont{LOD}}{\textit {Linking Open Data}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{Pubby?\glossaryentryfield{Pubby}{\glsnamefont{Pubby}}{\textit {A Linked Data Frontend for SPARQL Endpoints}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{F2F?\glossaryentryfield{F2F}{\glsnamefont{F2F}}{\textit {Face to Face}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{COLD?\glossaryentryfield{COLD}{\glsnamefont{COLD}}{\textit {Consuming Linking Open Data}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{LDOW?\glossaryentryfield{LDOW}{\glsnamefont{LDOW}}{\textit {Linked Data On the Web}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SDOW?\glossaryentryfield{SDOW}{\glsnamefont{SDOW}}{\textit {Social Data On the Web}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{MIME?\glossaryentryfield{MIME}{\glsnamefont{MIME}}{\textit {Multipurpose Internet Mail Extensions}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{LOD?\glossaryentryfield{LOD}{\glsnamefont{LOD}}{\textit {Linking Open Data}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{eGovernment?\glossaryentryfield{eGovernment}{\glsnamefont{eGovernment}}{Administración Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{REEEP?\glossaryentryfield{REEEP}{\glsnamefont{REEEP}}{\textit {Renewable Energy and Energy Efficiency Partnership}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{GIS?\glossaryentryfield{GIS}{\glsnamefont{GIS}}{Sistema de Información Geográfica}{\relax }|setentrycounter{section}\glsnumberformat}{3.2}
+\glossaryentry{SaaS?\glossaryentryfield{SaaS}{\glsnamefont{SaaS}}{\textit {Software as a Service}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{B2B?\glossaryentryfield{B2B}{\glsnamefont{B2B}}{\textit {Business to Business}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{B2C?\glossaryentryfield{B2C}{\glsnamefont{B2C}}{\textit {Business to Client}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{A2A?\glossaryentryfield{A2A}{\glsnamefont{A2A}}{\textit {Administration to Administration}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{RIF?\glossaryentryfield{RIF}{\glsnamefont{RIF}}{\textit {Rule Interchange Format}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{OMG?\glossaryentryfield{OMG}{\glsnamefont{OMG}}{\textit {Object Management Group}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{SBVR?\glossaryentryfield{SBVR}{\glsnamefont{SBVR}}{\textit {Semantics of Business Vocabulary and Business Rules}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{SPARUL?\glossaryentryfield{SPARUL}{\glsnamefont{SPARUL}}{\textit {SPARQL with Updates}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{JSON?\glossaryentryfield{JSON}{\glsnamefont{JSON}}{\textit {JavaScript Object Notation}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{WSML?\glossaryentryfield{WSML}{\glsnamefont{WSML}}{\textit {Web Service Modeling Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{RIF?\glossaryentryfield{RIF}{\glsnamefont{RIF}}{\textit {Rule Interchange Format}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{SCOR?\glossaryentryfield{SCOR}{\glsnamefont{SCOR}}{\textit {Supply-Chain Operations Reference-Model}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{SBVR?\glossaryentryfield{SBVR}{\glsnamefont{SBVR}}{\textit {Semantics of Business Vocabulary and Business Rules}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{OMG?\glossaryentryfield{OMG}{\glsnamefont{OMG}}{\textit {Object Management Group}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{UNSPSC?\glossaryentryfield{UNSPSC}{\glsnamefont{UNSPSC}}{\textit {United Nations Standard Products and Services Code}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{ebXML?\glossaryentryfield{ebXML}{\glsnamefont{ebXML}}{\textit {Electronic Business using eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{OASIS?\glossaryentryfield{OASIS}{\glsnamefont{OASIS}}{\textit {Advancing open standards for the information society}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{ISO?\glossaryentryfield{ISO}{\glsnamefont{ISO}}{\textit {International Organization for Standardization}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{XBRL?\glossaryentryfield{XBRL}{\glsnamefont{XBRL}}{\textit {eXtensible Business Reporting Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{ERP?\glossaryentryfield{ERP}{\glsnamefont{ERP}}{\textit {Enterprise resource planning}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{opXML?\glossaryentryfield{opXML}{\glsnamefont{opXML}}{Vocabulario XML de contratos públicos del proyectos ``10ders Information Services''}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{UNSPSC?\glossaryentryfield{UNSPSC}{\glsnamefont{UNSPSC}}{\textit {United Nations Standard Products and Services Code}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{FOAF?\glossaryentryfield{FOAF}{\glsnamefont{FOAF}}{\textit {Friend Of A Friend RDF vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{RDFa?\glossaryentryfield{RDFa}{\glsnamefont{RDFa}}{\textit {Bridging the Human and Data Webs}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{FOAF?\glossaryentryfield{FOAF}{\glsnamefont{FOAF}}{\textit {Friend Of A Friend RDF vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{SIOC?\glossaryentryfield{SIOC}{\glsnamefont{SIOC}}{\textit {Semantically-Interlinked Online Communities}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{AIISO?\glossaryentryfield{AIISO}{\glsnamefont{AIISO}}{\textit {Academic Institution Internal Structure Ontology}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{FP7?\glossaryentryfield{FP7}{\glsnamefont{FP7}}{\textit {The Seventh Framework Programme}}{\relax }|setentrycounter{section}\glsnumberformat}{3.4}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{IRI?\glossaryentryfield{IRI}{\glsnamefont{IRI}}{\textit {Internationalized Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{RFC?\glossaryentryfield{RFC}{\glsnamefont{RFC}}{\textit {Request For Comments}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{URL?\glossaryentryfield{URL}{\glsnamefont{URL}}{\textit {Uniform Resource Locator}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SKOS-XL?\glossaryentryfield{SKOS-XL}{\glsnamefont{SKOS-XL}}{\textit {SKOS eXtension for Labels}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{NUTS?\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{ETL?\glossaryentryfield{ETL}{\glsnamefont{ETL}}{\textit {Extract, transform and load}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{Refine?\glossaryentryfield{Refine}{\glsnamefont{Refine}}{\textit {A power tool for working with messy data, cleaning it up, transforming it from one format into another}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF/XML?\glossaryentryfield{RDF/XML}{\glsnamefont{RDF/XML}}{\textit {It is a syntax, defined by the W3C, to express (i.e. serialize) an RDF graph as an XML document}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{N3?\glossaryentryfield{N3}{\glsnamefont{N3}}{\textit {Notation 3 Logic}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{XPath?\glossaryentryfield{XPath}{\glsnamefont{XPath}}{\textit {The XML Path Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{SQL?\glossaryentryfield{SQL}{\glsnamefont{SQL}}{\textit {Structured Query Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{XPath?\glossaryentryfield{XPath}{\glsnamefont{XPath}}{\textit {The XML Path Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{XQuery?\glossaryentryfield{XQuery}{\glsnamefont{XQuery}}{\textit {XQuery is a standardized language for combining documents, databases, Web pages and almost anything else}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{SQL?\glossaryentryfield{SQL}{\glsnamefont{SQL}}{\textit {Structured Query Language}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.5}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{MIME?\glossaryentryfield{MIME}{\glsnamefont{MIME}}{\textit {Multipurpose Internet Mail Extensions}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{N3?\glossaryentryfield{N3}{\glsnamefont{N3}}{\textit {Notation 3 Logic}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{Pubby?\glossaryentryfield{Pubby}{\glsnamefont{Pubby}}{\textit {A Linked Data Frontend for SPARQL Endpoints}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{SOAP?\glossaryentryfield{SOAP}{\glsnamefont{SOAP}}{\textit {Simple Object Access Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{JSON?\glossaryentryfield{JSON}{\glsnamefont{JSON}}{\textit {JavaScript Object Notation}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{ORM?\glossaryentryfield{ORM}{\glsnamefont{ORM}}{\textit {Object-Relational Mapping}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{ORM?\glossaryentryfield{ORM}{\glsnamefont{ORM}}{\textit {Object-Relational Mapping}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{TRIOO?\glossaryentryfield{TRIOO}{\glsnamefont{TRIOO}}{\textit {Keeping the Semantics of Data Safe and Sound into Object-Oriented Software}}{\relax }|setentrycounter{section}\glsnumberformat}{4.7}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.8}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.9}
+\glossaryentry{SPARUL?\glossaryentryfield{SPARUL}{\glsnamefont{SPARUL}}{\textit {SPARQL with Updates}}{\relax }|setentrycounter{section}\glsnumberformat}{4.9}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{4.9}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.9}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.9}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{4.10}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{4.10}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{4.10}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{4.10}
+\glossaryentry{DOUE?\glossaryentryfield{DOUE}{\glsnamefont{DOUE}}{Diario Oficial de la Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{BOE?\glossaryentryfield{BOE}{\glsnamefont{BOE}}{BoletínOficial del Estado}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{CODICE?\glossaryentryfield{CODICE}{\glsnamefont{CODICE}}{Componentes y Documentos Interoperables para la Contratación Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{opXML?\glossaryentryfield{opXML}{\glsnamefont{opXML}}{Vocabulario XML de contratos públicos del proyectos ``10ders Information Services''}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{SKOS-XL?\glossaryentryfield{SKOS-XL}{\glsnamefont{SKOS-XL}}{\textit {SKOS eXtension for Labels}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{5.1}
+\glossaryentry{KOS?\glossaryentryfield{KOS}{\glsnamefont{KOS}}{\textit {Knowledge Organization Systems}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CN?\glossaryentryfield{CN}{\glsnamefont{CN}}{\textit {Combined Nomenclature}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPC?\glossaryentryfield{CPC}{\glsnamefont{CPC}}{Clasificación Central de Productos}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPA?\glossaryentryfield{CPA}{\glsnamefont{CPA}}{Clasificación de Productos por Actividades}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{ISIC?\glossaryentryfield{ISIC}{\glsnamefont{ISIC}}{\textit {International Standard Industrial Classification of All Economic Activities}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{NAICS?\glossaryentryfield{NAICS}{\glsnamefont{NAICS}}{\textit {North American Industry Classification System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{SITC?\glossaryentryfield{SITC}{\glsnamefont{SITC}}{\textit {Standard International Trade Classification}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{SKOS-XL?\glossaryentryfield{SKOS-XL}{\glsnamefont{SKOS-XL}}{\textit {SKOS eXtension for Labels}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{Lucene?\glossaryentryfield{Lucene}{\glsnamefont{Lucene}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{Solr?\glossaryentryfield{Solr}{\glsnamefont{Solr}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CN?\glossaryentryfield{CN}{\glsnamefont{CN}}{\textit {Combined Nomenclature}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPC?\glossaryentryfield{CPC}{\glsnamefont{CPC}}{Clasificación Central de Productos}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{CPA?\glossaryentryfield{CPA}{\glsnamefont{CPA}}{Clasificación de Productos por Actividades}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{ISIC?\glossaryentryfield{ISIC}{\glsnamefont{ISIC}}{\textit {International Standard Industrial Classification of All Economic Activities}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{NAICS?\glossaryentryfield{NAICS}{\glsnamefont{NAICS}}{\textit {North American Industry Classification System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{SITC?\glossaryentryfield{SITC}{\glsnamefont{SITC}}{\textit {Standard International Trade Classification}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{Refine?\glossaryentryfield{Refine}{\glsnamefont{Refine}}{\textit {A power tool for working with messy data, cleaning it up, transforming it from one format into another}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{FTP?\glossaryentryfield{FTP}{\glsnamefont{FTP}}{\textit {File Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{URL?\glossaryentryfield{URL}{\glsnamefont{URL}}{\textit {Uniform Resource Locator}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{FOAF?\glossaryentryfield{FOAF}{\glsnamefont{FOAF}}{\textit {Friend Of A Friend RDF vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{ISO?\glossaryentryfield{ISO}{\glsnamefont{ISO}}{\textit {International Organization for Standardization}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{NUTS?\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{Refine?\glossaryentryfield{Refine}{\glsnamefont{Refine}}{\textit {A power tool for working with messy data, cleaning it up, transforming it from one format into another}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{5.3}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{SNORQL?\glossaryentryfield{SNORQL}{\glsnamefont{SNORQL}}{\textit {A SPARQL Explorer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{J2EE?\glossaryentryfield{J2EE}{\glsnamefont{J2EE}}{\textit {Java 2 Platform, Enterprise Edition}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{IDE?\glossaryentryfield{IDE}{\glsnamefont{IDE}}{\textit {Integrated Development Environment}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{Lucene?\glossaryentryfield{Lucene}{\glsnamefont{Lucene}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{Solr?\glossaryentryfield{Solr}{\glsnamefont{Solr}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{Mahout?\glossaryentryfield{Mahout}{\glsnamefont{Mahout}}{\textit {Scalable machine learning and data mining}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{POJO?\glossaryentryfield{POJO}{\glsnamefont{POJO}}{\textit {Plain Old Java Object}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{Pubby?\glossaryentryfield{Pubby}{\glsnamefont{Pubby}}{\textit {A Linked Data Frontend for SPARQL Endpoints}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{SNORQL?\glossaryentryfield{SNORQL}{\glsnamefont{SNORQL}}{\textit {A SPARQL Explorer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.2}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.3}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{6.3}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.3}
+\glossaryentry{JAR?\glossaryentryfield{JAR}{\glsnamefont{JAR}}{\textit {Java ARchive}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{DAO?\glossaryentryfield{DAO}{\glsnamefont{DAO}}{Patrón de Diseño \textit {Data Access Object}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{URL?\glossaryentryfield{URL}{\glsnamefont{URL}}{\textit {Uniform Resource Locator}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{OWL?\glossaryentryfield{OWL}{\glsnamefont{OWL}}{\textit {Web Ontology Language}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{Lucene?\glossaryentryfield{Lucene}{\glsnamefont{Lucene}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{Solr?\glossaryentryfield{Solr}{\glsnamefont{Solr}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{Refine?\glossaryentryfield{Refine}{\glsnamefont{Refine}}{\textit {A power tool for working with messy data, cleaning it up, transforming it from one format into another}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{JAR?\glossaryentryfield{JAR}{\glsnamefont{JAR}}{\textit {Java ARchive}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{NUTS?\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{XML?\glossaryentryfield{XML}{\glsnamefont{XML}}{\textit {eXtensible Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{REST?\glossaryentryfield{REST}{\glsnamefont{REST}}{\textit {Representational State Transfer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{WADL?\glossaryentryfield{WADL}{\glsnamefont{WADL}}{\textit {Web Application Description Language}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{SNORQL?\glossaryentryfield{SNORQL}{\glsnamefont{SNORQL}}{\textit {A SPARQL Explorer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.4}
+\glossaryentry{XP?\glossaryentryfield{XP}{\glsnamefont{XP}}{\textit {Extreme programming}}{\relax }|setentrycounter{section}\glsnumberformat}{6.5}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.5}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.5}
+\glossaryentry{ISO?\glossaryentryfield{ISO}{\glsnamefont{ISO}}{\textit {International Organization for Standardization}}{\relax }|setentrycounter{section}\glsnumberformat}{6.5}
+\glossaryentry{UNE?\glossaryentryfield{UNE}{\glsnamefont{UNE}}{Una Norma Española}{\relax }|setentrycounter{section}\glsnumberformat}{6.5}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{NUTS?\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{SNORQL?\glossaryentryfield{SNORQL}{\glsnamefont{SNORQL}}{\textit {A SPARQL Explorer}}{\relax }|setentrycounter{section}\glsnumberformat}{6.6}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.0}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{WIQA?\glossaryentryfield{WIQA}{\glsnamefont{WIQA}}{\textit {Web Information Quality Assessment Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{LODQ?\glossaryentryfield{LODQ}{\glsnamefont{LODQ}}{\textit {LOD Data Quality Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{BOE?\glossaryentryfield{BOE}{\glsnamefont{BOE}}{BoletínOficial del Estado}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{XML Schema?\glossaryentryfield{XML Schema}{\glsnamefont{XML Schema}}{\textit {XML vocabulary with the purpose of defining a class of XML documents}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{\textit {Portable Document Format}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{opXML?\glossaryentryfield{opXML}{\glsnamefont{opXML}}{Vocabulario XML de contratos públicos del proyectos ``10ders Information Services''}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{BORME?\glossaryentryfield{BORME}{\glsnamefont{BORME}}{Boletín Oficial del Registro Mercantil}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{TED?\glossaryentryfield{TED}{\glsnamefont{TED}}{\textit {Tenders Electronic Daily}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{BOE?\glossaryentryfield{BOE}{\glsnamefont{BOE}}{BoletínOficial del Estado}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CSV?\glossaryentryfield{CSV}{\glsnamefont{CSV}}{\textit {Comma-separated values}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{BORME?\glossaryentryfield{BORME}{\glsnamefont{BORME}}{Boletín Oficial del Registro Mercantil}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{BBDD?\glossaryentryfield{BBDD}{\glsnamefont{BBDD}}{Base de Datos}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{PSC?\glossaryentryfield{PSC}{\glsnamefont{PSC}}{\textit {Product Scheme Classifications}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{\textit {Portable Document Format}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{PDF?\glossaryentryfield{PDF}{\glsnamefont{PDF}}{\textit {Portable Document Format}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RSS?\glossaryentryfield{RSS}{\glsnamefont{RSS}}{\textit {Really Simple Syndication}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{Lucene?\glossaryentryfield{Lucene}{\glsnamefont{Lucene}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{Solr?\glossaryentryfield{Solr}{\glsnamefont{Solr}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.2}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{NUTS?\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{CPV?\glossaryentryfield{CPV}{\glsnamefont{CPV}}{\textit {Common Procurement Vocabulary}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{NUTS?\glossaryentryfield{NUTS}{\glsnamefont{NUTS}}{Nomenclatura de las Unidades Territoriales Estadísticas}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{7.3}
+\glossaryentry{Europea?\glossaryentryfield{Europea}{\glsnamefont{Europea}}{Unión Europea}{\relax }|setentrycounter{section}\glsnumberformat}{8.1}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{8.1}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{8.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{8.1}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{8.1}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{8.2}
+\glossaryentry{W3C?\glossaryentryfield{W3C}{\glsnamefont{W3C}}{\textit {World Wide Web Consortium}}{\relax }|setentrycounter{section}\glsnumberformat}{8.2}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{8.2}
+\glossaryentry{Mahout?\glossaryentryfield{Mahout}{\glsnamefont{Mahout}}{\textit {Scalable machine learning and data mining}}{\relax }|setentrycounter{section}\glsnumberformat}{8.2}
+\glossaryentry{Lucene?\glossaryentryfield{Lucene}{\glsnamefont{Lucene}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{8.2}
+\glossaryentry{Solr?\glossaryentryfield{Solr}{\glsnamefont{Solr}}{\textit {Ultra-fast Search Library and Server}}{\relax }|setentrycounter{section}\glsnumberformat}{8.2}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{8.3}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{8.3}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{8.3}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{8.3}
+\glossaryentry{SQL?\glossaryentryfield{SQL}{\glsnamefont{SQL}}{\textit {Structured Query Language}}{\relax }|setentrycounter{section}\glsnumberformat}{8.3}
+\glossaryentry{MOLDEAS?\glossaryentryfield{MOLDEAS}{\glsnamefont{MOLDEAS}}{\textit {Methods On Linked Data for E-procurement Applying Semantics}}{\relax }|setentrycounter{section}\glsnumberformat}{8.5}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{8.5}
+\glossaryentry{10ders?\glossaryentryfield{10ders}{\glsnamefont{10ders}}{Proyecto de investigación cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 con código TSI-020100-2010-919}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{WESO?\glossaryentryfield{WESO}{\glsnamefont{WESO}}{Grupo de Investigación de Web Semántica Oviedo}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{WESO?\glossaryentryfield{WESO}{\glsnamefont{WESO}}{Grupo de Investigación de Web Semántica Oviedo}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{URL?\glossaryentryfield{URL}{\glsnamefont{URL}}{\textit {Uniform Resource Locator}}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{10ders?\glossaryentryfield{10ders}{\glsnamefont{10ders}}{Proyecto de investigación cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 con código TSI-020100-2010-919}{\relax }|setentrycounter{section}\glsnumberformat}{A.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{B.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{B.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{B.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{B.0}
+\glossaryentry{e-Procurement?\glossaryentryfield{e-Procurement}{\glsnamefont{e-Procurement}}{Contratación Pública Electrónica}{\relax }|setentrycounter{section}\glsnumberformat}{B.0}
+\glossaryentry{WESO?\glossaryentryfield{WESO}{\glsnamefont{WESO}}{Grupo de Investigación de Web Semántica Oviedo}{\relax }|setentrycounter{section}\glsnumberformat}{B.0}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{SKOS?\glossaryentryfield{SKOS}{\glsnamefont{SKOS}}{\textit {Simple Knowledge Organization System}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{voID?\glossaryentryfield{voID}{\glsnamefont{voID}}{\textit {Vocabulary of Interlinked Datasets}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{HTML?\glossaryentryfield{HTML}{\glsnamefont{HTML}}{\textit {HyperText Markup Language}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{URL?\glossaryentryfield{URL}{\glsnamefont{URL}}{\textit {Uniform Resource Locator}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{URI?\glossaryentryfield{URI}{\glsnamefont{URI}}{\textit {Uniform Resource Identifier}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{SPARQL?\glossaryentryfield{SPARQL}{\glsnamefont{SPARQL}}{\textit {Query Language for RDF}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{HTTP URI?\glossaryentryfield{HTTP URI}{\glsnamefont{HTTP URI}}{URIs basadas en el esquema HTTP}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{API?\glossaryentryfield{API}{\glsnamefont{API}}{\textit {Application Programming Interface}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{HTTP?\glossaryentryfield{HTTP}{\glsnamefont{HTTP}}{\textit {Hypertext Transfer Protocol}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{HTTPS?\glossaryentryfield{HTTPS}{\glsnamefont{HTTPS}}{\textit {Hypertext Transfer Protocol Secure}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{CKAN?\glossaryentryfield{CKAN}{\glsnamefont{CKAN}}{\textit {It is the world’s leading open-source data portal platform}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}
+\glossaryentry{RDF?\glossaryentryfield{RDF}{\glsnamefont{RDF}}{\textit {Resource Description Framework}}{\relax }|setentrycounter{section}\glsnumberformat}{C.1}

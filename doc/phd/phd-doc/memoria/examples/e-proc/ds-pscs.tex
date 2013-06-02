@@ -1,0 +1,300 @@
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/cpv/2003/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "CPV 2003"@en , 
+	  "Common Procurement Vocabulary (CPV 2003)"@en ;
+      dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ; 
+      dcterms:description "Common Procurement Vocabulary 2003" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source 
+	<http://europa.eu/legislation_summaries/internal_market/businesses/public_procurement/l22008_en.htm> ;
+      dcterms:title "CPV 2003" ;
+      void:dataDump <http://purl.org/weso/pscs/cpv/2003/cpv-2003.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/cpv/2003/resource/24000000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/01000000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/02000000> ;
+      void:uriRegexPattern
+        "http://purl.org/weso/pscs/cpv/2003/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept
+	<http://purl.org/weso/pscs/cpv/2003/resource/61000000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/22000000> , 
+	<http://purl.org/weso/pscs/cpv/2003/resource/73000000> ,
+	...
+	<http://purl.org/weso/pscs/cpv/2003/resource/19000000> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset CPV 2003.}
+	\label{fig:pscs-ds-cpv-2003}
+\end{figure}
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/cn/2012/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "CN 2012"@en ;
+      dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ; 
+      dcterms:description "Combined Nomenclature" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source <http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?
+	  TargetUrl=LST_NOM_DTL&StrNom=CN_2012&StrLanguageCode
+	   =EN&IntPcKey=&StrLayoutCode=HIERARCHIC> ;
+      dcterms:title "CN 2012" ;
+      void:dataDump <http://purl.org/weso/pscs/cn/2012/CN-2012.ttl> ;
+      void:exampleResource
+         <http://purl.org/weso/pscs/cn/2012/resource/010011000090> ;
+      void:uriRegexPattern
+          "http://purl.org/weso/pscs/cn/2012/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/cn/2012/resource/410011000090> , 
+	 <http://purl.org/weso/pscs/cn/2012/resource/640011000090> , 
+	 <http://purl.org/weso/pscs/cn/2012/resource/860011000090> , 
+	  ...
+	 <http://purl.org/weso/pscs/cn/2012/resource/500011000090> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset CN 2012.}
+	\label{fig:pscs-ds-cn-2012}
+\end{figure}
+
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/cpc/2008/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+     dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ;
+      dcterms:description "Central Product Classification, United Nations Statistics Division" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source <http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=130> ;
+      dcterms:title "CPC 2008" ;
+      void:dataDump <http://purl.org/weso/pscs/cpc/2008/cpc-2008.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/cpc/2008/resource/0> , 
+	<http://purl.org/weso/pscs/cpc/2008/resource/011> , 
+	<http://purl.org/weso/pscs/cpc/2008/resource/01> ;
+      void:uriRegexPattern
+        "http://purl.org/weso/pscs/cpc/2008/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/cpc/2008/resource/6> , 
+	<http://purl.org/weso/pscs/cpc/2008/resource/0> ,
+	<http://purl.org/weso/pscs/cpc/2008/resource/9> , 
+	<http://purl.org/weso/pscs/cpc/2008/resource/3> , 
+	...
+	<http://purl.org/weso/pscs/cpc/2008/resource/1> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset CPC 2008.}
+	\label{fig:pscs-ds-cpc-2003}
+\end{figure}
+
+
+\begin{figure}[!htp]
+\begin{lstlisting}
+<http://purl.org/weso/pscs/cpa/2008/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "CPA 2008"@en ;
+      dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ; 
+      dcterms:description "Statistical classification of products by activity (CPA)" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source <http://epp.eurostat.ec.europa.eu/statistics_explained/index.php/
+	Glossary:Statistical_classification_of_products_by_activity_%28CPA%29> ;
+      dcterms:title "CPA 2008" ;
+      void:dataDump <http://purl.org/weso/pscs/cpa/2008/cpa-2008.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/cpa/2008/resource/011> , 
+	<http://purl.org/weso/pscs/cpa/2008/resource/A> , 
+	<http://purl.org/weso/pscs/cpa/2008/resource/01> ;
+      void:uriRegexPattern
+         "http://purl.org/weso/pscs/cpa/2008/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/cpa/2008/resource/M> , 
+	<http://purl.org/weso/pscs/cpa/2008/resource/P> , 
+	<http://purl.org/weso/pscs/cpa/2008/resource/S> , 
+	<http://purl.org/weso/pscs/cpa/2008/resource/Q> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset CPA 2008.}
+	\label{fig:pscs-ds-cpa-2008}
+\end{figure}
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/isic/v4/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "ISIC rev. 4"@en ;
+      dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ; 
+      dcterms:description "International Standard Industrial Classification of 
+	  All Economic Activities, United Nations Statistics Division" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source <http://unstats.un.org/unsd/cr/registry/regdntransfer.asp?f=118> ;
+      dcterms:title "ISIC rev. 4" ;
+      void:dataDump <http://purl.org/weso/pscs/isic/v4/isic-v4.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/isic/v4/resource/A> , 
+	<http://purl.org/weso/pscs/isic/v4/resource/011> , 
+	<http://purl.org/weso/pscs/isic/v4/resource/01> ;
+      void:uriRegexPattern
+          "http://purl.org/weso/pscs/isic/v4/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/isic/v4/resource/R> , 
+	<http://purl.org/weso/pscs/isic/v4/resource/S> , 
+	<http://purl.org/weso/pscs/isic/v4/resource/A> , 
+	<http://purl.org/weso/pscs/isic/v4/resource/T> , 
+	  ...
+	<http://purl.org/weso/pscs/isic/v4/resource/N> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset ISIC rev4.}
+	\label{fig:pscs-ds-cpa-2008}
+\end{figure}
+
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/naics/2007/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "NAICS 2007"@en ;
+      dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ;    
+      dcterms:description "North American Industry Classification System" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source <http://www.census.gov/eos/www/naics/> ;
+      dcterms:title "NAICS 2007" ;
+      void:dataDump <http://purl.org/weso/pscs/naics/2007/naics-2007.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/naics/2007/resource/11> ;
+      void:uriRegexPattern
+        "http://purl.org/weso/pscs/naics/2007/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/naics/2007/resource/71> , 
+	<http://purl.org/weso/pscs/naics/2007/resource/72> , 
+	<http://purl.org/weso/pscs/naics/2007/resource/53> , 
+	...
+	<http://purl.org/weso/pscs/naics/2007/resource/62> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset NAICS 2007.}
+	\label{fig:pscs-ds-cpa-2008}
+\end{figure}
+
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/naics/2012/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "NAICS 2012"@en ;
+      dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ;    
+      dcterms:description "North American Industry Classification System" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:source <http://www.census.gov/eos/www/naics/> ;
+      dcterms:title "NAICS 2012" ;
+      void:dataDump <http://purl.org/weso/pscs/naics/2012/naics-2012.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/naics/2012/resource/11> ;
+      void:uriRegexPattern
+        "http://purl.org/weso/pscs/naics/2012/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/naics/2012/resource/61> , 
+	<http://purl.org/weso/pscs/naics/2012/resource/22> , 
+	<http://purl.org/weso/pscs/naics/2012/resource/55> , 
+	  ... 
+	<http://purl.org/weso/pscs/naics/2012/resource/31> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset NAICS 2012.}
+	\label{fig:pscs-ds-cpa-2008}
+\end{figure}
+
+
+
+\begin{figure}[!htp]
+\begin{lstlisting} 
+<http://purl.org/weso/pscs/sitc/v4/resource/ds>
+      a       void:Dataset , skos:ConceptScheme ;
+      rdfs:label "SITC 4"@en ;
+     dcterms:author 
+        <http://www.di.uniovi.es/~labra/labraFoaf.rdf#me> , 
+	<http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:contributor
+        <http://purl.org/weso/pscs/resource/10ders> ,
+	<http://rdfohloh.wikier.org/project/moldeas/rdf> ; 
+      dcterms:description "Standard International Trade Classification" ;
+      dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+      dcterms:modified "2011-11-10"^^xsd:date ;
+      dcterms:publisher <http://www.josemalvarez.es/foaf.rdf#me> ;
+      dcterms:title "SITC 4" ;
+      void:dataDump <http://purl.org/weso/pscs/sitc/v4/sitc-4.ttl> ;
+      void:exampleResource
+        <http://purl.org/weso/pscs/sitc/v4/resource/0> , 
+	<http://purl.org/weso/pscs/sitc/v4/resource/00> ;
+      void:uriRegexPattern
+        "http://purl.org/weso/pscs/sitc/v4/resource/.+" ;
+      void:vocabulary skosxl: , skos: , gr: ;
+      skos:hasTopConcept <http://purl.org/weso/pscs/sitc/v4/resource/I> , 
+	<http://purl.org/weso/pscs/sitc/v4/resource/1> , 
+	<http://purl.org/weso/pscs/sitc/v4/resource/0> , 
+	<http://purl.org/weso/pscs/sitc/v4/resource/8> , 
+	 ...
+	<http://purl.org/weso/pscs/sitc/v4/resource/3> ;
+      foaf:homepage <http://purl.org/weso> .
+\end{lstlisting}
+	\caption{Descripción del \dataset SITC v4.}
+	\label{fig:pscs-ds-cpa-2008}
+\end{figure}

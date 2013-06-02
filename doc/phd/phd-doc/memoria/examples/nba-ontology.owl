@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://demo.org/nba.owl#"
+  xml:base="http://demo.org/nba.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="EntrenadorDivisionAtlantico">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="entrenaA"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="EquipoDivisionAtlantico"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorDivisionPacifico">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="juegaEn"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="EquipoDivisionPacifico"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#EquipoDivisionPacifico">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Equipo"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorDivisionCentral">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="EquipoDivisionCentral"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="EntrenadorConferenciaEste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#EquipoDivisionAtlantico"/>
+              <owl:Class rdf:about="#EquipoDivisionCentral"/>
+              <owl:Class rdf:ID="EquipoDivisionSudeste"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Persona"/>
+  <owl:Class rdf:about="#Equipo">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="esEntrenadoPor"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="Entrenador"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="Division"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="perteneceA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorDivisionSudeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#EquipoDivisionSudeste"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#Entrenador">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Equipo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="#Persona"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EntrenadorDivisionSudeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#EquipoDivisionSudeste"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorDivisionAtlantico">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="#EquipoDivisionAtlantico"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="EntrenadorConferenciaOeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:ID="EquipoDivisionNoroeste"/>
+              <owl:Class rdf:about="#EquipoDivisionPacifico"/>
+              <owl:Class rdf:ID="EquipoDivisionSuroeste"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#EquipoDivisionSuroeste">
+    <rdfs:subClassOf rdf:resource="#Equipo"/>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorDivisionSuroeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#EquipoDivisionSuroeste"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorConferenciaOeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#EquipoDivisionNoroeste"/>
+              <owl:Class rdf:about="#EquipoDivisionPacifico"/>
+              <owl:Class rdf:about="#EquipoDivisionSuroeste"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#EquipoDivisionNoroeste">
+    <rdfs:subClassOf rdf:resource="#Equipo"/>
+  </owl:Class>
+  <owl:Class rdf:ID="EntrenadorDivisionPacifico">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#EquipoDivisionPacifico"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#EquipoDivisionCentral">
+    <rdfs:subClassOf rdf:resource="#Equipo"/>
+  </owl:Class>
+  <owl:Class rdf:about="#EquipoDivisionAtlantico">
+    <rdfs:subClassOf rdf:resource="#Equipo"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Conferencia"/>
+  <owl:Class rdf:ID="EntrenadorDivisionCentral">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#EquipoDivisionCentral"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorDivisionNoroeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#EquipoDivisionNoroeste"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="EntrenadorDivisionNoroeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#EquipoDivisionNoroeste"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#Division">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Conferencia"/>
+        <owl:onProperty rdf:resource="#perteneceA"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="JugadorConferenciaEste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#EquipoDivisionAtlantico"/>
+              <owl:Class rdf:about="#EquipoDivisionCentral"/>
+              <owl:Class rdf:about="#EquipoDivisionSudeste"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="EntrenadorDivisionSuroeste">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#EquipoDivisionSuroeste"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#entrenaA"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#EquipoDivisionSudeste">
+    <rdfs:subClassOf rdf:resource="#Equipo"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Jugador">
+    <rdfs:subClassOf rdf:resource="#Persona"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Equipo"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#juegaEn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#esEntrenadoPor">
+    <rdfs:domain rdf:resource="#Equipo"/>
+    <rdfs:range rdf:resource="#Entrenador"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#entrenaA"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#entrenaA">
+    <rdfs:domain rdf:resource="#Entrenador"/>
+    <rdfs:range rdf:resource="#Equipo"/>
+    <owl:inverseOf rdf:resource="#esEntrenadoPor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#juegaEn">
+    <rdfs:range rdf:resource="#Equipo"/>
+    <rdfs:domain rdf:resource="#Jugador"/>
+  </owl:ObjectProperty>
+  <Division rdf:ID="Pacifico"/>
+  <Division rdf:ID="Noroeste"/>
+  <EquipoDivisionAtlantico rdf:ID="Toronto"/>
+  <Jugador rdf:ID="Gasol">
+    <juegaEn>
+      <EquipoDivisionSuroeste rdf:ID="Memphis"/>
+    </juegaEn>
+  </Jugador>
+  <Division rdf:ID="Central"/>
+  <Entrenador rdf:ID="PeterJackson">
+    <entrenaA>
+      <EquipoDivisionPacifico rdf:ID="Lakers">
+        <esEntrenadoPor rdf:resource="#PeterJackson"/>
+      </EquipoDivisionPacifico>
+    </entrenaA>
+  </Entrenador>
+  <EquipoDivisionNoroeste rdf:ID="Portland"/>
+  <Jugador rdf:ID="Kobe">
+    <juegaEn rdf:resource="#Lakers"/>
+  </Jugador>
+  <EquipoDivisionSudeste rdf:ID="Miami"/>
+  <Division rdf:ID="Suroeste"/>
+  <EquipoDivisionCentral rdf:ID="Chicago"/>
+  <Conferencia rdf:ID="ConferenciaOeste"/>
+  <Division rdf:ID="Sudeste"/>
+  <Conferencia rdf:ID="ConferenciaEste"/>
+  <Division rdf:ID="Atlantico">
+    <perteneceA rdf:resource="#ConferenciaEste"/>
+  </Division>
+  <Jugador rdf:ID="Calderon">
+    <juegaEn rdf:resource="#Toronto"/>
+  </Jugador>
+</rdf:RDF>
+

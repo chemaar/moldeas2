@@ -1,0 +1,10 @@
+\chapter*{To-Do List}
+\begin{enumerate}
+ \item Completar descripción del proceso de generación de anuncios de licitación. Gráfica proceso de tareas. Referencias cruzadas a secciones comunes.
+ \item Gráficas ontologías y diagrama clases excepciones
+ \item Introducir valores de ONTOSPREAD en la tabla
+ \item Quitar FIXMEs
+ \item Transversales: ortografía, expresión escrita, hyphenation, Maquetación (segunda ronda)
+ \item Referencias
+ \item Contrastes de hipotésis, Wilcoxon no aporta demasiado
+\end{enumerate}

@@ -1,0 +1,228 @@
+A lo largo de los capítulos anteriores se han repasado los conceptos fundamentales que atañen 
+al proceso de contratación pública electrónica, la casuística, beneficios y métodos disponibles 
+para la aplicación de los principios de \opendata, \linkeddata y Web Semántica a distintos dominios 
+de conocimiento. Por otra parte, se ha realizado una definición de un ciclo de vida de datos enlazados 
+describiendo procesos, métodos y tareas cuya aplicación conlleva una promoción sostenible de datos a las iniciativas 
+previamente citadas, como se ha señalado en el Capítulo~\ref{capitulo:metodos-separados}. Finalmente, con el objetivo 
+de suministrar soporte a este ciclo de vida se ha implementado una serie de componentes desde un punto de vista de la 
+ingeniería. La siguiente etapa, por tanto, corresponde a la validación del trabajo realizado mediante experimentos en los 
+cuales se pueda cuantificar el enfoque realizado. En este sentido, la experimentación posible es muy variada pero atendiendo 
+a la hipótesis de partida y a los componentes implementados es posible identificar los siguientes experimentos:
+
+\begin{enumerate}
+ \item Experimento para la validación de los datos transformados desde un punto de vista cualitativo, comparando las versiones 
+actuales de los datos disponibles con la versión generada tras la aplicación de los métodos semánticos a las entidades 
+implicados en los anuncios de licitación de un proceso de contratación pública.
+\item Experimento para la verificación de la construcción de un sistema de recuperación de información utilizando una fuente 
+de datos basada en \linkeddata y tecnologías semánticas.
+\item Experimento para la evaluación del rendimiento del sistema construido desde un punto de vista cuantitativo.
+\end{enumerate}
+
+\subsection{Experimento sobre la aplicación de \textit{Linked Data} a las Licitaciones Públicas}
+
+\subsection{Experimento sobre el Sistema MOLDEAS}
+
+\subsection{Experimento sobre el Rendimiento del Sistema}
+The evaluation of the system can be carried out from two different points
+of view: 1) With regards to the validation of the goodness and the improvement 
+of the proposed system we have identified, apart from selecting a service to be tested,
+three main variables: a) the amount of information used; 
+b) the number of tests (execution of prepared user queries) that should be carried out to assess a correct precision and recall of 
+the proposed retrieval system and c) the best combination of expansion methods. From the first
+variable point of view 1M public procurement notices (provided by Gateway
+SCS-Eurolert.net\footnote{\url{http://euroalert.net/}}) and over 320K
+organizations~\footnote{\url{ftp://ftp.ted.europa.eu/META-XML/}} are available.
+2) In the case of performance evaluation the first tests showed us that the execution of expanded queries
+involved an extra-time to execute them via SPARQL. Checking existing works in SPARQL
+optimizations~\cite{Schmidt2010,Bernstein07optarq:a,sparqlOpt} and efficient querying of triple stores~\cite{Yan:2008:EQR:1367497.1367652}
+led us to re-think the process of building expanded user queries trying to improve the execution times. In next section
+the design of the experiment, the steps to accomplish an improvement in the execution of the SPARQL queries and
+the results of the tests are presented. 
+
+
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{2.5cm}|p{3.5cm}|p{3.5cm}|}
+\hline
+  \textbf{Query} & Initial CPV Code & Expanded CPV Codes & NUTS Codes  \\ \hline
+  $Q_1$ & 15331137 & 48611000, 48611000, 50531510, 15871210 & UK, PL, RO \\ \hline
+  $Q_2$ & 50531510 & 34144100, 44212211, 44212212, 50531500 & ES, FR, DE \\ \hline
+  $Q_3$ & 34144100 & 44212211, 31140000, 31140000, 34144100 & PL, CZ, RO \\ \hline
+  $Q_4$ & 64122000 & 64216120, 79571000, 15871210, 64121000 & BE, SE, DE \\ \hline
+  $Q_5$ & 79320000 & 75241000, 75100000, 75000000, 60112000 & UK, FR, AT \\ \hline
+  $Q_6$ & 44100000 & 44110000, 44170000, 44190000, UB03 & NL, SE, DE \\ \hline
+  $Q_7$ & 31000000 & 33141000, 39000000, 44000000, 31600000 & DE, IT, HU \\ \hline
+  $Q_8$ & 50000000 & 50512000, 50333100, 50530000, 50532300 & UK, IR, FR \\ \hline
+  $Q_9$ (random) & 15841400 & 15841300, 15511700, 44921210, 03131400 & ES, FR, DK \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Description of the expanded queries.}
+  \label{tabla:queries}
+  \end{center}
+\end{table} 
+
+
+\subsubsection{Diseño del Experimento}
+In Sect.~\ref{survey} the methods to expand an user query were presented to show how the systems works to 
+generate enhanced queries using the information variables of the public procurement notices. In this experiment, we will focus on the next variables: CPV and NUTS codes and the publishing year. The CPV is a taxonomy in which
+concepts are grouped by a category and identified by a code that indicates their category: 
+``Division'' e.g. 01000000 , ``Group'' e.g. 01100000, ``Class'' e.g. 01110000, ``Category'' e.g.  
+01112000, 01112200, 1112210 or 01112211. On the other hand NUTS is the ``Nomenclature of Territorial Units for Statistics'' 
+established by Eurostat in order to provide a single uniform breakdown of territorial units. Each code begins with 
+a two-letter code referencing the country, which is identical to the ISO 3166-1 alpha-2 and for each EU member country
+three levels of NUTS codes are established. Finally, the publishing year is just a number 
+indicating when the notice was published. Taking into account the description of these variables the 
+proposed methodology is the next one:
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{5.5cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|}
+\hline
+  \textbf{Test}/ \textbf{Feature}& $F_1$ & $F_2$ & $F_3$ & $F_4$ & $F_5$ & $F_6$ &  $F_7$ \\ \hline
+   $T_1$ & $\star$ & & & & & &\\ \hline 
+   $T_2$ & $\star$ & & $\star$ & & & &\\ \hline 
+   $T_3$ &  & $\star$ &  & & & &\\ \hline 
+   $T_4$ &  & $\star$ & $\star$ & & & &\\ \hline 
+   $T_5$ &  & $\star$ & $\star$ & $\star$ & & &\\ \hline 
+   $T^{1}_6$ ($n$ CPV codes and $m$ NUTS codes)&  & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &\\ \hline 
+   $T^{2}_6$ ($\equiv$)&  & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ \\ \hline 
+   $T^{1}_7$ ($1$ CPV code and $m$ NUTS codes) &  & $\star$ & $\star$ & $\star$ &  & $\star$ &  \\ \hline 
+   $T^{2}_7$ ($\equiv$) & & $\star$ & $\star$ & $\star$ &  & $\star$ & $\star$ \\ \hline 
+   $T^{1}_8$ ($\equiv$)& & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &  \\ \hline 
+   $T^{2}_8$ ($\equiv$) & & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &  $\star$ \\ \hline 
+   $T^{1}_9$ ($1$ CPV code and $1$ NUTS code) & & $\star$ & $\star$ & $\star$ &  & $\star$ &   \\ \hline 
+   $T^{2}_9$ ($\equiv$)& & $\star$ & $\star$ & $\star$ & & $\star$ &  $\star$ \\ \hline 
+   $T^{1}_{10}$ ($\equiv$) & & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &   \\ \hline 
+   $T^{2}_{10}$ ($\equiv$) & & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$  \\ \hline 
+  \hline
+  \end{tabular}
+  \caption{Description of the tests and optimization features.}
+  \label{tabla:tests}
+  \end{center}
+\end{table} 
+
+\begin{itemize}
+ \item Select the initial CPV codes (with different categories) to build simple and expanded queries.
+ \item Select the initial NUTS codes.
+ \item Establish the publishing years according to the data in the triple store. Currently, public procurement
+notices from 2008 to 2011 are stored in the database and grouped by the publishing year using named graphs 
+\footnote{E.g: \url{http://purl.org/weso/ppn/2008}}.
+ \item Determine the software and hardware environment.
+ \item Select the datasets stored in the database (e.g. CPV-10K concepts, NUTS-8K codes and Public Procurement Notices-1M of notices 
+altogether about 9 million of triples).
+ \item Build and execute via SPARQL simple and expanded queries with the selected information applying the query expansion methods.
+ \item Combine the different SPARQL and algorithm optimizations, see Table~\ref{tabla:tests}.
+ \item Log the execution times and establish the number of replies (e.g. $3$) to perform the tests. 
+\end{itemize}
+
+
+According to these steps, Table~\ref{tabla:queries} shows the relevant information of the queries. All of them use a range
+between 2008 and 2011 for the publishing year. The software environment is comprised of a Virtual Box (version 4.0.6) virtual machine 
+(Linux 2.6.35-22-server \#33-Ubuntu 2 SMP x86\_64 GNU/Linux Ubuntu 10.10, 2GB RAM and 30GB HardDisk) in which a Open Link Virtuoso~\footnote{\url{http://virtuoso.openlinksw.com}} 
+instance (version 06.01.3127) is installed. The virtual machine is hosted in a DELL PC (same configuration as virtual machine)
+and a regular internet connection is used to execute the queries.
+
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\textbf{Query/ Test} & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $T_5$ & $T^{1}_{6}$ & $T^{2}_{6}$ \\ \hline
+  $Q_1$ & $3.21$ (NA) & $3.13$ ($2.46$) & $19.35$ (NA) & $19.53$ ($-0.91$) & $19.45$ ($0.49$)  & $19.24$ ($0.58$) & $11.16$ ($73.49$)\\ \hline
+  $Q_2$ & $3.15$ (NA) & $3.14$ ($0.52$) & $23.56$ (NA)   & $23.68$ ($-0.52$)  & $23.68$ ($0.52$) & $24.06$ ($-2.10$) & $13.24$ ($77.95$) \\ \hline
+  $Q_3$ & $3.14$ (NA)  & $3.14$ ($0.11$) & $18.56$ (NA)  & $18.47$ ($0.46$)  & $18.44$ ($-0.60$)  & $18.69$ ($-0.71$)  & $10.08$ ($84.14$) \\ \hline
+  $Q_4$ & $3.16$ (NA)  & $3.13$ ($0.79$) & $18.52$ (NA)  & $18.32$ ($1.08$)  & $18.50$ ($-0.10$)  & $18.20$ ($1.77$)  & $10.19$ ($81.73$) \\ \hline
+  $Q_5$ & $3.29$ (NA)  & $3.17$ ($3.82$) & $22.69$ (NA)  & $22.85$ ($-0.72$)  & $22.69$ ($0.01$)  & $22.62$ ($0.31$)  & $14.61$ ($55.31$) \\ \hline
+  $Q_6$ & $3.21$ (NA)  & $3.17$ ($1.35$) & $18.55$ (NA)  & $18.45$ ($0.51$)  & $18.48$ ($-0.35$)  & $18.22$ ($1.78$)  & $10.00$ ($85.46$) \\ \hline
+  $Q_7$ & $3.39$ (NA)  & $3.39$ ($0.25$) & $19.01$ (NA)  & $19.19$ ($-0.93$)  & $19.12$ ($0.55$)  & $18.99$ ($0.09$)  & $11.08$ ($71.56$) \\ \hline
+  $Q_8$ & $3.94$ (NA)  & $3.98$ ($-0.95$)& $23.44$ (NA)  & $23.15$ ($1.26$)  & $23.24$ ($-0.82$)  & $23.50$ ($-0.29$)  & $14.72$ ($59.24$) \\ \hline
+  $Q_9$ & $3.17$ (NA)  & $3.09$ ($2.59$) & $22.23$ (NA)  & $22.32$ ($-0.40$)  & $22.27$ ($0.19$)  & $22.26$ ($-0.15$)  & $12.32$ ($80.45$) \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Execution time (in seconds) and gain (in percent). Part 1.}
+  \label{tabla:results-1}
+  \end{center}
+\end{table} 
+
+After that it is necessary to define the possible optimizations (``description''-$ID$) that will configure the features of the tests as Table~\ref{tabla:tests} shows. In this
+case a distinction between ``simple queries''-$F_1$. ($1$ CPV code) and ``enhanced queries''-$F_2$. ($n$ CPV codes) should be made. Besides
+there is a list of SPARQL optimizations that can be applied: ``LIMIT clause'' (value fixed to $10000$)-$F_3$, ``Rewrite SPARQL queries'' 
+(following the aforementioned works and making the matching and filtering of the triples from the most specific to general)-$F_4$, ``Use of
+named graphs''-$F_5$, ``Split enhanced queries into simple queries''-$F_6$ and ``Use of an ad-hoc implementation of the Map/Reduce 
+algorithm by Google, with $5$ threads to perform the map function and $1$ thread to reduce the results of the queries''-$F_7$. Taking into
+account these features the different tests are performed in $3$ replies using the arithmetic mean to aggregate the execution times.
+
+\subsubsection{Results and Discussion}
+
+The execution of the different tests generates the next results, see Tab.~\ref{tabla:results-1} and Tab.~\ref{tabla:results-2}.
+During the tests about $5751$ SPARQL queries have been performed in order to retrieve the data and the execution times of the queries. 
+These results are processed using ``bash'' scripts that extract out the statistics and generate a spreadsheet. 
+Regarding the comparison of results, the calculation of the gain ($t_{old}/t_{new}-1*100$) is tackled in two ways depending on the kind of
+query (simple or enhanced): 1) comparison of test $T_{1}$ with $T_{2}$ and 2) comparison of test $T_{3}$ with tests $T_{4}...T^{2}_{10}$.
+
+As Tables~\ref{tabla:results-1} and~\ref{tabla:results-2} show there is no sensible gain when some optimizations are put in action
+like $F_3$, $F_4$ and $F_5$. In the case of $F_3$ the use of the ``LIMIT clause'' fixed to ($10000$) is not representative due to the results
+of the triple matching process are previously filtered. ``Rewriting queries'' $F_4$ usually involves an improvement in the execution time
+but maybe the information variables used in these queries does not allow minimize the target dataset while the triple matching process is
+being ran. Also when ``named graphs'' $F_5$  are used the execution time of a single query is obviously 
+lower than one query over all public procurement notices dataset but the number queries to be performed is higher implying 
+a slower execution time. On the other hand, the optimizations $F_6$ and $F_7$ bring strong improvements in the execution times of
+tests $T^{2}_6$, $T^{1}_7$, $T^{2}_7$ and $T^{2}_9$. Nevertheless tests $T^{1}_{10}$ and $T^{2}_{10}$ do not get an improvement in
+execution time due to the fact that the addition of some features does not guarantee a real gain. One of the highlighted outcomes of this study lies on the detection 
+that the number of CPV codes\footnote{Adding or removing NUTS codes does not almost change the execution time.} 
+in a query is related to the execution time (it is about 3 sec. per code) thus the use of only one CPV code in a query improves the process of retrieving public procurement notices. Finally, the use of
+distributed algorithms is widely accepted and proven when scalability problems appear. In conclusion, taking into account these results
+the best configuration to improve the execution time of expanded queries lies on splitting them into simple queries (only one CPV code)
+and use distributed algorithms like Map/Reduce. Nevertheless, other actions in the scope of hardware configuration, 
+caching results~\cite{Blanco:2010:CSE:1835449.1835466}, use of information variables in the queries with more entropy, etc. 
+could improve the behavior of the system.
+
+\begin{sidewaystable}[ht!]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\textbf{Query/ Test} & $T^{1}_{7}$ & $T^{2}_{7}$ & $T^{1}_{8}$ & $T^{2}_{8}$ & $T^{1}_{9}$ & $T^{2}_{9}$ & $T^{1}_{10}$ & $T^{2}_{10}$\\ \hline
+  $Q_1$ & $15.71$ ($23.18$)  & $10.62$ ($82.25$) & $33.27$ ($-41.84$) & $18.75$ ($3.24$) & $21.58$ ($-10.33$) & $12.38$ ($56.28$) & $69.13$ ($-72.00$) & $33.41$ ($-42.07$) \\ \hline
+  $Q_2$ & $15.64$ ($50.57$)  & $9.90$ ($137.84$) & $32.26$ ($-26.98$) & $17.96$ ($25.66$ ) & $26.27$ ($-10.34$) & $15.50$ ($51.97$) & $73.62$ ($-68.00$) & $37.50$ ($-29.49$) \\ \hline
+  $Q_3$ & $15.54$ ($19.44$)  & $9.66$ ($92.13$ ) & $32.04$ ($-42.09$) & $17.94$ ($3.29$) & $20.32$ ($-8.68$) & $10.44$ ($77.68$) & $68.95$ ($-73.09$ ) & $32.95$ ($-50.52$) \\ \hline
+  $Q_4$ & $15.87$ ($16.68$)  & $9.99$ ($85.45$) & $32.07$ ($-42.24$) & $18.43$ ($3.24$) & $20.48$ ($-9.54$) & $10.33$ ($79.23$) & $68.85$ ($-73.10$) & $34.27$ ($-43.79$) \\ \hline
+  $Q_5$ & $16.18$ ($40.22$)  & $11.92$ ($90.39$) & $32.46$ ($-30.10$) & $19.02$ ($23.12$) & $24.28$ ($-6.57$) & $14.40$ ($57.55$) & $74.02$ ($-69.35$ ) & $37.08$ ($-33.79$) \\ \hline
+  $Q_6$ & $15.76$ ($17.73$)  & $9.60$ ($93.21$) & $32.11$ ($-42.23$) & $18.24$ ($-2.48$) & $20.51$ ($-9.55$) & $10.77$ ($72.23$) & $72.28$ ($-74.34$ ) & $32.80$ ($-49.98$) \\ \hline
+  $Q_7$ & $15.93$ ($19.31$)  & $11.23$ ($69.35$ ) & $32.21$ ($-40.99$) & $18.51$ ($4.23$) & $21.12$ ($-10.01$) & $11.27$ ($68.67$) & $69.02$ ($-72.46$) & $33.55$ ($-42.04$) \\ \hline
+  $Q_8$ & $16.12$ ($45.43$)  & $12.11$ ($93.54$ ) & $32.55$ ($-28.01$) & $19.50$ ($26.61$) & $25.33$ ($-7.48$) & $16.16$ ($45.05$) & $72.72$ ($-67.77$) & $38.27$ ($-30.16$) \\ \hline
+  $Q_9$ & $15.58$ ($42.66$)  & $9.89$ ($124.71$) & $31.99$ ($-30.51$) & $17.74$ ($14.01$) & $23.76$ ($-6.46$) & $13.76$ ($61.57$) & $70.76$ ($-68.59$) & $36.40$ ($-41.92$) \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Execution time (in seconds) and gain (in percent). Part 2.}
+  \label{tabla:results-2}
+  \end{center}
+\end{sidewaystable} 
+
+
+Finally, the previous SPARQL expanded query should be rewrite with the aforementioned improvements in order to get 
+an optimized SPARQL query, see Fig.~\ref{figure:rewrite}.
+\begin{figure}[!ht] 
+\begin{center}
+\begin{lstlisting}[language=SPARQL]
+SELECT * WHERE{
+  ...
+  ?notice  cpv-def:codeIn2008  ?cpvCode . 
+  FILTER(? cpvCode = cpv:45221111-3 ... ) .
+  ?notice ppn-def:nutsCode ?nutsCode .
+  FILTER(?place = nuts:B3 ... ) .
+  ...
+  ?notice ppn-def:totalAmount ?totalAmount.
+  FILTER( xsd:double(?amount) >=  xsd:long(170,000)) && 
+	(xsd:double(?amount) <=  xsd:long(200,000)) ).
+ ?notice ppn-def:duration ?duration.
+  FILTER ((xsd:long(?duration) >=  xsd:long(2)) && 
+	   (xsd:long(?duration) <= xsd:long(3)) ).
+}
+\end{lstlisting}
+\caption{Optimized expanded SPARQL query.}
+\label{figure:rewrite}
+\end{center}
+\end{figure}

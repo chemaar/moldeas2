@@ -1,0 +1,34 @@
+El término ``Web Semántica'' se puede interpretar como una evolución de la web
+actual. El uso del adjetivo ``semántica'' aporta un atractivo extra a la Web, dotando a la misma de características cercanas a lo que se entiende 
+habitualmente por inteligencia artificial y que tan utilizadas son en películas de ciencia-ficción.
+No se debe confundir un avance tecnológico con una revolución en la concepción
+de la web actual y es preciso ser cautos con el campo de aplicación de la
+``semántica'' en la red y seleccionar aquellos escenarios en los que realmente
+la semántica enriquezca el desarrollo actual.
+
+Siguiendo las directrices que marcan las grandes empresas y que
+corresponden en muchos casos a la opinión de \textit{Gartner} (``Semantic Web Technologies
+Take Middleware to Next Level''~\cite{gartner}, ya se vaticinaba que en el año 2005 la integración de 
+aplicaciones empresariales estaría guiada por ontologías y por tanto impulsaba, la Web Semántica.
+
+El despliegue de tecnología semántica, confiere una visión más realista, en
+la cual existen grandes discusiones abiertas sobre temas diversos, por ejemplo
+reglas, razonamiento distribuido, procesamiento de \textit{Big Data}, lenguajes de formalización creados por distintas instituciones 
+con distintos niveles de expresividad, herramientas en continuo desarrollo no
+estables, aplicaciones que se venden como Web Semántica cuando no lo son
+estrictamente o bien simplemente se han unido a la ``moda'' de una tecnología
+gratuitamente y en definitiva la sensación de ``yo también quiero Web Semántica
+cómo y dónde sea en mi aplicación''. 
+
+Las expectativas se presentan ambiciosas y tentadoras, pero no menos que en los
+años 1970 con el ``boom'' de la inteligencia artificial. Por todo ello, hay
+que mantener la cabeza fría y los pies en el suelo para dar a este avance
+tecnológico un enfoque teórico y práctico adecuado allá donde realmente sea
+aplicable.  
+
+Esta introducción aunque un tanto pesimista simplemente intenta dar un enfoque
+realista a un estado del arte. Así como se puede decir que las barreras a
+rebasar son importantes también hay que resaltar que el impulso realizado por
+todas las partes: empresa, universidad, administración, desarrolladores,
+etc. está siendo considerable y los resultados estables no tardarán en llegar pero
+siempre teniendo una base estable. 

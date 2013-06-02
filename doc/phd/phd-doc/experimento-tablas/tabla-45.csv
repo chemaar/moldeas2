@@ -1,0 +1,6 @@
+ID, Pregunta, Cumplimiento, 15 Criterios,
+1, ¿Son los recursos RDF accesibles mediante HTTP o HTTPS? ,  , 
+2, ¿Se provee negociación de contenido? ,  , 
+3, ¿El \dataset contiene más de 1000 tripletas? ,  , 
+4, ¿Se provee, al menos, 50 enlaces a \datasets ya disponibles en el diagrama? , , 
+5, ¿Se provee acceso al \dataset completo? ,  , 

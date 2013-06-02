@@ -1,0 +1,108 @@
+%
+% web.bib
+%
+% Referencias Web
+%
+
+@MISC{WebGoogle,
+title = "Google",
+note = "http://www.google.com/"
+}
+
+
+@Misc{PlataformaContratacionEstado,
+author = {Dirección General del Patrimonio del estado},
+title = {{P}lataforma de {C}ontratación del {E}stado},
+month = nov,
+year = {2011},
+note = {\url{http://contrataciondelestado.es/wps/portal/plataforma}}
+}
+
+@Misc{FacturaElectronica,
+author = {Ministerio de Industria Turismo y Comercio},
+title = {{F}actura {E}lectrónica},
+month = nov,
+year = {2011},
+note = {\url{http://www.facturae.es/}}
+}
+
+
+@Misc{PerfilContratante,
+author = {Ayuntamiento de Oviedo},
+title = {{E}jemplo de {P}erfil de {C}ontrante},
+month = nov,
+year = {2011},
+note = {\url{http://www.oviedo.es/index.php/es/el-ayuntamiento/perfil-de-contratante}}
+}
+
+@Misc{l6-1997,
+author = {Ministerio de Administraciones Públicas},
+title = {{L}ey 6/1997, de 14 de abril, de {O}rganización y {F}uncionamiento de la {A}dministración {G}eneral del {E}stado.},
+month = apr,
+year = {1997},
+note = {\url{http://noticias.juridicas.com/base_datos/Admin/l6-1997.html}}
+}
+
+@Misc{e-Proc-green-paper,
+author = {European Commision, Unit C4 – Economic Dimension of Public Procurement; E-Procurement},
+title = {{C}onsultation on the {G}reen Paper on expanding the use of e-{P}rocurement in the {EU}},
+month = apr,
+year = {2010},
+note = {\url{http://ec.europa.eu/internal\_market/consultations/2010/e-procurement\_en.htm}}
+}
+
+@Misc{r1177,
+author = {European Commision, DOUE L 314 de 1 de Diciembre 2009},
+title = {{R}eglamento ({CE}) no 1177/2009 de la {C}omisión, de 30 de noviembre de 2009},
+month = nov,
+year = {2009},
+note = {\url{http://eur-lex.europa.eu/JOHtml.do?uri=OJ:L:2009:314:SOM:ES:HTML}}
+}
+
+@Misc{r1150,
+author = {European Commision, DOUE L 313 de 28 de Noviembre 2009},
+title = {{R}eglamento ({CE}) no 1150/2009 de la {C}omisión, de 10 de noviembre de 2009},
+month = nov,
+year = {2009},
+note = {\url{http://eur-lex.europa.eu/JOHtml.do?uri=OJ:L:2009:313:SOM:ES:HTML}}
+}
+
+
+@Misc{r213,
+author = {European Commision},
+title = {{R}eglamento ({CE}) no 213/2008 de la {C}omisión, de 28 de noviembre de 2007},
+month = nov,
+year = {2007},
+note = {\url{http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008R0213:es:NOT}}
+}
+
+
+@Misc{rd3,
+author = {Ministerio de Economía y Hacienda, BOE de 16 de noviembre de 2011, Núm. 276},
+title = {{R}eal {D}ecreto {L}egislativo 3/2011, de 14 de noviembre},
+month = nov,
+year = {2011},
+note = {\url{http://www.boe.es/boe/dias/2011/11/16/pdfs/BOE-A-2011-17887.pdf}}
+}
+
+
+@Misc{l24,
+author = {Jefatura del Estado, BOE de 2 de agosto de 2011, Núm. 184},
+title = {{L}ey 24/2011, de 1 de agosto},
+month = nov,
+year = {2011},
+note = {\url{http://boe.es/boe/dias/2011/08/02/pdfs/BOE-A-2011-13239.pdf}}
+}
+
+@Misc{r303,
+author = {Ministerio de Economía y Hacienda, BOE de 22 de marzo de 2011, Núm. 69},
+title = {{R}eal {D}ecreto 300/2011, de 4 de marzo},
+month = mar,
+year = {2011},
+note = {\url{www.boe.es/boe/dias/2011/03/22/pdfs/BOE-A-2011-5192.pdf}}
+}
+
+
+
+
+

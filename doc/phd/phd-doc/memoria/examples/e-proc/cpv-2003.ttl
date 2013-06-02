@@ -1,0 +1,24 @@
+ <http://purl.org/weso/pscs/cpv/2003/resource/52900000>
+      a       gr:ProductOrServiceModel , cpv-def:Group ;
+      skosxl:prefLabel
+      gr:description
+      rdfs:label 
+	"Detaljhandel med medicinska produkter"@SV , 
+	"Detailhandel med medicinalvarer"@DA , 
+	"Verkoopdiensten op de detailhandelniveau van medische producten"@NL , 
+	"Storitve trgovine na drobno z medicinskimi izdelki"@SL , 
+	"Servizi di vendita al dettaglio di prodotti medici"@IT , 	
+	"Retail trade services of medical products"@EN , 
+	"Einzelhandel mit medizinischen Erzeugnissen"@DE , 
+	...
+      dc:identifier "52900000" ;
+      dc:subject "52900000-8" ;      
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/medical> , 
+	<http://www.productontology.org/id/retail> , 
+	<http://www.productontology.org/id/product> , 
+	<http://www.productontology.org/id/service> , 
+	<http://www.productontology.org/id/trade> ;
+      skos:broaderTransitive
+              <http://purl.org/weso/pscs/cpv/2003/resource/52000000> ;
+      skos:inScheme "http://purl.org/weso/pscs/cpv/2003/resource/ds" .

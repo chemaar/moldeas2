@@ -1,0 +1,118 @@
+El creciente uso de Internet durante los últimos años ha puesto de manifiesto un
+nuevo entorno de ejecución para las aplicaciones, utilizando como nueva
+plataforma la web, el gran sistema distribuido. Nuevas tecnologías y paradigmas
+están emergiendo para dar soporte al desarrollo y despliegue de aplicaciones y
+servicios, así como para la publicación de datos e información. Los modelos de
+desarrollo están cambiando a un estilo más colaborativo en el cual las empresas
+ofrecen su software como servicios (\textit{Software as a Service}-\gls{SaaS}) materializado a
+través del paradigma de \textit{cloud computing}~\cite{Armbrust09abovethe}, implementado con tecnología de
+servicios con el objetivo de que terceros puedan utilizar estos servicios para
+la construcción de aplicaciones agregadas con valor añadido. 
+
+En este sentido, tal como se ha señalado, iniciativas como la Web Semántica que a través de modelos y
+formatos de datos de conocimiento compartido unificados, intentan elevar el
+significado de los elementos y recursos que están disponibles en la web, con el
+objetivo de mejorar la integración e interoperabilidad entre aplicaciones, 
+impulsando la implantación de este enfoque. Dentro de la iniciativa de Web
+Semántica hay que destacar dos esfuerzos: 
+\begin{enumerate}
+ \item La iniciativa \linkeddata que como se ha descrito propone la publicación de datos
+enlazados siguiendo el modelo \gls{RDF} para facilitar la creación de una web de
+datos en la que éstos se puedan mostrar, intercambiar y conectar a través de
+URIs. La tendencia actual de publicación de datos enlazados está marcando una
+evolución en la interoperabilidad de aplicaciones, con el consiguiente efecto que
+conlleva para las relaciones \gls{B2B}, \gls{B2C} o \gls{A2A}. Entre los casos de éxito
+podríamos destacar: administración electrónica (iniciativa de \textit{Open Government
+Data}, contratación pública de bienes y servicios (\eproc), oferta formacional , contextualización de aplicaciones, \textit{mashups},
+etc. 
+
+\item El desarrollo de lenguajes y formalismos lógicos para representar el conocimiento sobre un universo de discurso, permitiendo la inferencia de nuevos
+datos a partir de los datos ya publicados. En este contexto se han impulsado nuevamente el uso de las técnicas de razonamiento y de sistemas basados en conocimiento, 
+como pueden ser las ontologías y los sistemas basados en reglas (Ontobroker, XSB, etc.) o de producción (Drools , JRules , etc.). 
+La aplicación de estos sistemas está ampliamente asentada en la resolución de diversos problemas
+(diagnóstico, planificación, reglas de negocio, etc.) pero siempre utilizando un enfoque para la representación del conocimiento y de los datos, en muchos casos
+específico y no estandarizado. Por tanto, debe tenerse en cuenta la flexibilidad, tanto para la integración como para la interoperabilidad de las aplicaciones. Una arquitectura orientada a
+servicios sobre la plataforma web, utilizando los protocolos actuales y que se beneficie de las iniciativas relativas a la Web Semántica puede dar respuesta a
+este punto clave. La implantación de un sistema basado en conocimiento, más en concreto de
+sistemas basados en reglas y de razonamiento, que hagan uso de una infraestructura estandarizada y cooperativa puede ser de gran beneficio para la
+resolución de problemas basados en conocimiento declarativo y compartido, mejorando tanto la independencia tecnológica de las aplicaciones como la experiencia de usuario.
+\end{enumerate}
+
+
+Al amparo de la visión de la Web Semántica, el \gls{W3C} ha promovido la creación de varias recomendaciones que intentan ofrecer soluciones 
+para las diferentes capas de la arquitectura. En concreto, RDF es el lenguaje de representación básico que 
+permite representar tripletas de la forma sujeto-predicado-objeto. Dichas tripletas 
+forman un grafo dirigido que puede integrarse automáticamente con otros grafos obtenidos de otros servidores. 
+Otra de las tecnologías propuestas por el W3C es RDFS, que permite la definición de clases, propiedades e individuos y 
+ofrece unos mecanismos básicos de inferencia mediante reglas. RDFS facilita la creación e integración de vocabularios 
+pero carece de expresividad suficiente para describir relaciones avanzadas como complementos de conjuntos o cardinalidades. Las limitaciones 
+expresivas de RDFS propiciaron la definición de \gls{OWL}, un lenguaje de definición de ontologías basado en lógica descriptiva. 
+La versión 2 de OWL llegó a status de recomendación del W3C en octubre del año 2009. Una de las principales mejoras de esta versión era 
+intentar resolver el compromiso entre la expresividad y la complejidad de los razonamientos mediante la definición de perfiles o 
+fragmentos computacionales. Los tres perfiles de OWL2, EL, QL y RL son sublenguajes del mismo que permiten alcanzar una complejidad 
+polinómica para tareas de razonamiento estándar limitando la expresividad. La combinación de OWL con lenguajes basados en 
+reglas que incluyen la negación, como los \textit{dl-programs}~\cite{DBLP:conf/rr/Motik08} han sido desarrollados en las redes de excelencia 
+\textit{REWERSE} y \textit{Knowledge web} y definen la interoperabilidad entre las reglas y las ontologías. 
+
+El problema del intercambio de reglas entre los distintos sistemas de razonamiento e inferencia también ha sido abordado recientemente, 
+así encontramos la recomendación del W3C RIF de 22 de junio del año 2010. 
+\gls{RIF} es, de nuevo, una familia de lenguajes (\textit{Core},\textit{Production Rule Dialect, BLD Basic Logic Dialect, Datatypes and Built-Ins, Framework for Logic Dialects}, etc.) 
+con diferente expresividad, cuyo objetivo es convertirse en \textit{lingua franca} para el intercambio de conocimiento basado en reglas en la web. 
+El formato utilizado por RIF es \gls{XML} y su combinación con ontologías permite que las reglas y el modelo de datos sobre los que se van a aplicar 
+las reglas se pueden intercambiar entre distintos actores. Para interpretar RIF es necesario realizar una traducción desde este vocabulario al motor de inferencia
+deseado. En el ámbito de intercambio de reglas hay que resaltar el antecesor de RIF, RuleML que es una iniciativa internacional sin ánimo de lucro, que cubre
+los aspectos del intercambio y la interoperabilidad de reglas. Esta iniciativa mantiene una estrecha relación con los grupos de OASIS en reglas, así como con
+ISO Common Logic (estándar en el año 2007). RuleML, como grupo, también contribuye en \gls{OMG} a \gls{SBVR}, específicamente en el apartado de \textit{Production Rule Representation} (PRR) cuya última
+versión data de diciembre del año 2009.
+
+Para la consulta de datos \gls{RDF} se ha desarrollado \gls{SPARQL}, un lenguaje de consulta y un
+protocolo de acceso que permiten definir un terminal (o \textit{endpoint}) en el que se publican conjuntos de datos (o datasets) RDF y que pueden accederse
+como servicios en la web. Actualmente se está trabajando en vocabularios para
+definir datasets y poder enlazarlos entre sí de forma sencilla. Con el uso de
+SPARQL han aparecido propuestas para la definición de reglas de producción con
+este lenguaje (extensión \textit{SPARQL with Updates-\gls{SPARUL})} de modo que se ejecuten
+directamente sobre una base de datos en RDF, como puede ser SPARQL-Rules~\cite{citeulike:1294570},
+también existen enfoques para la consulta de ontologías OWL con SPARQL~\cite{Sirin07sparql-dl:sparql} y
+en la especificación en la que se está trabajando al presente, SPARQL 1.1, se
+dispone de un vocabulario para definir los servicios disponibles. Finalmente y
+con el objetivo de personalizar la vista de las aplicaciones por el usuario y su
+contextualización se ha aplicado el uso de reglas en formato \gls{JSON}~\cite{conf/ki/GiurcaP08}. 
+
+
+La evolución de los formalismos para definir ontologías lleva emparejado el
+desarrollo de razonadores que puedan llevar a cabo las inferencias necesarias.
+Desde el pionero KL-ONE hasta este momento, se han implementado múltiples
+razonadores basados en lógica descriptiva siguiendo diferentes técnicas. En la
+actualidad, se pueden destacar Fact++~\cite{Tsarkov2006}, Pellet~\cite{Sirin_Parsia_Grau_Kalyanpur_Katz_2007} y RacerPro~\cite{Rajeev2001Racer}
+que se basan en la técnica conocida como \textit{semantic tableaux}. A pesar de las altas
+complejidades, en el caso peor los algoritmos de razonamiento utilizados en estos sistemas son capaces de resolver muchas tareas prácticas gracias al uso de
+diversas optimizaciones. Para resolver dichas limitaciones, especialmente, al
+tratar con grandes cantidades de datos, se han buscado técnicas alternativas
+como el algoritmo de resolución utilizado en KAON2~\cite{journals/ercim/Motik08}, el sistema
+\textit{hipertableau} empleado en HermiT~\cite{msh09hypertableau}, las técnicas de eliminación de tipos~\cite{DBLP:conf/aaai/RudolphKH08}
+ o las recientes técnicas basadas en eliminación de consecuentes~\cite{DBLP:conf/ijcai/SimancikKH11}.
+
+La utilización de reglas se ha propuesto como una alternativa para la
+implementación de razonadores. En este caso, las definiciones de la ontología
+son compiladas a un conjunto de reglas, que se aplica al conjunto de datos para obtener las inferencias correspondientes. La principal
+ventaja de estos razonadores es que se basan en técnicas ya conocidas en el
+ámbito de la programación lógica con diversas implementaciones disponibles, es sin embargo una
+desventaja, que generalmente es necesario utilizar subconjuntos de OWL, como el
+conocido OWL Horst~\cite{Horst2005}. Uno de los mayores retos de la Web Semántica es la búsqueda de técnicas que
+mejoren la escalabilidad de los razonadores, en esta línea, han surgido
+trabajos que proponen la utilización de tecnologías distribuidas para afrontar
+dicha complejidad. Por ejemplo, en~\cite{SomaPrasanna2008}
+se propone la implementación de un sistema de inferencia paralelizable sobre OWL
+Horst, mediante un particionado de las reglas. Con el objetivo de mejorar la
+escalabilidad, en~\cite{springerlink:10.1007/978-3-642-04930-9_43} se propone un algoritmo para realizar inferencias sobre
+RDFS que se aplica a un \textit{benchmark} de $10.000$ tripletas, proponiendo como trabajo futuro la posible aplicación de MapReduce~\cite{citeulike:430834,DBLP:conf/semweb/UrbaniKOH09}. En~\cite{UrbaniMaassenBal2010} se describe una implementación basada en el algoritmo MapReduce
+logrando realizar el cierre parcial de $864$ millones de tripletas en RDFS en una
+hora utilizando 32 procesadores. Recientemente, los mismos autores
+desarrollaron el sistema WebPIE~\cite{Urbani2010WebPIE}, el cual ha sido capaz de
+realizar inferencias sobre $1$ billón y medio de tripletas en $6,1$ horas utilizando
+$32$ nodos, mediante reglas de OWL Horst. El sistema SAOR se ha implementado para
+dar soporte al buscador semántico SWSE, incorporando un razonador sobre OWL
+Horst~\cite{HoganHarthPolleres2009}, dicho sistema ha diseñado un nuevo algoritmo
+distribuido, mejorando la escalabilidad de la implementación~\cite{DBLP:conf/semweb/HoganPPD10}. Finalmente, también se está 
+trabajando~\cite{HausenblasCloudLOD} en la conjunción de \linkeddata y \textit{cloud computing} para el procesamiento de grandes cantidades de datos.
+

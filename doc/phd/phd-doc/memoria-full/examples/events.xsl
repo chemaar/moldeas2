@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsl:stylesheet xmlns:evt="http://purl.org/weso/events"  
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+               xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	exclude-result-prefixes="evt"
+	version="1.0">
+    <xsl:output method="xml" doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" doctype-public="-//W3C//DTD XHTML 1.1//EN" indent="yes" encoding="iso-8859-1"></xsl:output>
+
+    <xsl:template match="/">
+        <html>
+            <body>	    	
+                <xsl:apply-templates select="//evt:events"/>
+            </body>
+        </html>
+    </xsl:template>
+    
+    <xsl:template match="evt:events">
+        <div id="events">
+            <ul>
+            <xsl:apply-templates select="//evt:event">
+                <xsl:sort select="concat(substring-after(substring-after(string(./evt:date),'/'),'/'),substring-before(substring-after(string(./evt:date),'/'),'/'),substring-before(string(./evt:date),'/'))" data-type="number"/>        
+            </xsl:apply-templates>
+            </ul>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="evt:event">
+            <xsl:element name="li">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="./@type"/>
+                </xsl:attribute>
+                <h2 class="title"><xsl:value-of select="./evt:title"/></h2>
+                <h3 class="date"><xsl:value-of select="./evt:date"/></h3>
+                <h4 class="start"><xsl:value-of select="./evt:start"/></h4>
+                <xsl:if test="./evt:end">
+                    <h4 class="end"><xsl:value-of select="./evt:end"/></h4>
+                </xsl:if>
+                <xsl:if test="./evt:place">
+                    <strong class="place"><xsl:value-of select="./evt:place"/></strong>
+                </xsl:if>                
+                <xsl:apply-templates select="./evt:persons"></xsl:apply-templates>
+                <xsl:apply-templates select="./evt:description"></xsl:apply-templates>
+            </xsl:element>
+    </xsl:template> 
+
+  ...
+</xsl:stylesheet>

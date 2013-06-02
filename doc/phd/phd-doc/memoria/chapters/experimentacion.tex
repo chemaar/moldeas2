@@ -1,0 +1,57 @@
+A lo largo de los capítulos anteriores se han repasado los conceptos fundamentales que atañen 
+al proceso de contratación pública electrónica, la casuística, beneficios y métodos disponibles 
+para la aplicación de los principios de \opendata, \linkeddata y Web Semántica a distintos dominios 
+de conocimiento. Por otra parte, se ha realizado una definición de un ciclo de vida de datos enlazados 
+describiendo procesos, métodos y tareas cuya aplicación conlleva una promoción sostenible de datos a las iniciativas 
+previamente citadas, tal y como se ha señalado en el Capítulo~\ref{capitulo:metodos-separados}. Finalmente, con el objetivo 
+de suministrar soporte a este ciclo de vida se han implementado una serie de componentes desde un punto de vista de la 
+ingeniería. La siguiente etapa, por tanto, corresponde a la validación del trabajo realizado mediante experimentos en los 
+cuales se pueda cuantificar el enfoque realizado, en este sentido, la experimentación posible es muy variada, pero atendiendo 
+a la hipótesis de partida y a los componentes implementados es posible identificar los siguientes experimentos:
+
+\begin{enumerate}
+ \item Experimento para la validación de los datos transformados desde un punto de vista cuantitativo y cualitativo, comparando las versiones 
+actuales de los datos disponibles con la versión generada tras la aplicación de los métodos semánticos a las entidades 
+implicadas en los anuncios de licitación de un proceso de contratación pública.
+\item Experimento para la verificación de la construcción de un sistema de recuperación de información utilizando una fuente 
+de datos basada en \linkeddata y tecnologías semánticas.
+\item Experimento para la evaluación del rendimiento del sistema construido desde un punto de vista cuantitativo.
+
+\end{enumerate}
+
+El diseño de estos experimentos permite por una parte, la verificación de la hipótesis objeto de estudio en este trabajo y, por otra parte, 
+la validación de la construcción de sistemas basados en \linkeddata y tecnologías semánticas.
+
+\subsection{Consideraciones Generales}\label{exp-general}
+Es preciso señalar que todos los experimentos llevados a cabo se realizan 
+bajo la ejecución de un plan detallado, las etapas a seguir serán las siguientes:
+
+\begin{enumerate}
+ \item Definición de los objetivos del experimento. 
+\item Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio. 
+\begin{itemize}
+ \item Cualitativos: tipo de entorno hardware y software, etc. En este caso, se pueden fijar las condiciones \textit{hardware} y \textit{software}:
+  \begin{itemize}
+  \item Servidor. El software consta de un repositorio \gls{RDF} Virtuoso de OpenLink (version 06.01.3127) desplegado sobre una máquina 
+  virtual de Virtual Box (version 4.0.6) sobre un sistema operativo Linux 2.6.35-22-server \#33-Ubuntu 2 SMP x86\_64 GNU/Linux Ubuntu 10.10 con 2GB de RAM y 30GB HardDisk, la 
+  máquina física utilizada como anfitrión es un PC DELL con la misma configuración software que la máquina virtual.
+  \item Cliente. En este caso el cliente es un Notebook DELL XPS M1330 con un sistema operativo Linux 2.6.32-24-generic \#43-Ubuntu SMP x86\_64 GNU/Linux con 4GB de RAM, las distintas 
+  réplicas son ejecutadas a través de la herramienta Java, Junit.
+  \end{itemize}
+ \item Cuantitativos: tamaño de la muestra, de la memoria y número de posibilidades de expresar una consulta.
+\end{itemize}
+ \item Especificación de las medidas de trabajo en cuanto a la respuesta.
+ \item Ejecución de un experimento piloto. 
+ \item Especificación de un modelo.
+ \item Esquematización de los pasos a seguir. 
+ \item Determinación del tamaño muestral.
+ \item Revisión de las decisiones anteriores.
+\end{enumerate}
+
+
+\section{Experimento sobre la aplicación de \textit{Linked Data} a las Licitaciones Públicas}
+\input{chapters/experimentacion/tablas}
+\section{Experimento sobre el Sistema MOLDEAS}
+\input{chapters/experimentacion/moldeas}
+\section{Experimento sobre el Rendimiento del\\ Sistema MOLDEAS}
+\input{chapters/experimentacion/rendimiento}

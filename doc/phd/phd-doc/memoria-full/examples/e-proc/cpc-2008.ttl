@@ -1,0 +1,25 @@
+<http://purl.org/weso/pscs/cpc/2008/resource/62294>
+      a       <http://purl.org/weso/pscs/ontology/PSCConcept> , gr:ProductOrServiceModel ;
+      skosxl:prefLabel
+      gr:description
+      rdfs:label "Specialized store retail trade services, of paper and paperboard"@en ;
+      dc:identifier "62294" ;
+      dc:subject "62294" ;
+      <http://purl.org/weso/pscs/ontology/level>
+              "5" ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/retail> , 
+	<http://www.productontology.org/id/paperboard> , 
+	<http://www.productontology.org/id/trade> , 
+	<http://www.productontology.org/id/service> , 
+	<http://www.productontology.org/id/specialized> , 
+	<http://www.productontology.org/id/store> , 
+	<http://www.productontology.org/id/paper> ;
+      skos:broaderTransitive
+              <http://purl.org/weso/pscs/cpc/2008/resource/6229> ;
+      skos:closeMatch 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55000000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55900000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/51544000> ;
+      skos:inScheme <http://purl.org/weso/pscs/cpc/2008/resource/ds> ;
+ 

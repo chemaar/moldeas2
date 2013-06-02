@@ -1,0 +1,18 @@
+<http://purl.org/weso/pscs/naics/2007/resource/311811>
+      a <http://purl.org/weso/pscs/ontology/PSCConcept> , 
+	gr:ProductOrServiceModel ;
+      gr:description
+      skosxl:prefLabel
+      rdfs:label "Retail Bakeries"@en ;
+      dc:identifier "311811" ;
+      dc:subject "311811" ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/retail> , 
+	<http://www.productontology.org/id/bakery> ;
+      skos:broaderTransitive
+        <http://purl.org/weso/pscs/naics/2007/resource/31181> ;
+      skos:closeMatch 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55000000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55900000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/15612500> ;
+      skos:inScheme <http://purl.org/weso/pscs/naics/2007/resource/ds> . 

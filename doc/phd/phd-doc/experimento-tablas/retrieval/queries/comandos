@@ -1,0 +1,29 @@
+Comandos:
+:::::::::
+
+-Calcular tp (intersección): awk 'NR==FNR{a[$0];next} $0 in a' file1 file2 > q0-tp
+-Calcular fp: awk 'NR==FNR { a[$0]; next } !($0 in a)' q0-expected q0-result
+-Calcular fn: awk 'NR==FNR { a[$0]; next } $0 in a { delete a[$0]; next } 1; END { for (b in a) print b }' set1 set2
+-Calcular tn:    
+
+-Total: 20
+
+Resultados y resultados quitando 2 en el conjunto resultado:
+
+tp: 5 3 
+fp: 3 3 
+fn: 5 7 
+tn: 7
+
+Extraer uri, id, label CPV 2008
+
+http://purl.org/weso/pscs/cpv/2008
+
+select distinct * where{
+?x dc:identifier ?id.
+?x rdfs:label ?label.
+FILTER (lang(?label) = "en")
+
+} limit 100
+
+Extraer la jerarquía desde un punto (en código Java está hecho)

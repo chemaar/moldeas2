@@ -1,0 +1,178 @@
+@inproceedings{Schmidt2010,
+ author = {Schmidt, M. and Meier, M. and Lausen, G.},
+ title = {{Foundations of SPARQL query optimization}},
+ booktitle = {Proc. of the 13th International Conference on Database Theory},
+ series = {ICDT '10},
+ year = {2010},
+ isbn = {978-1-60558-947-3},
+ location = {Lausanne, Switzerland},
+ pages = {4--33},
+ numpages = {30},
+ url = {http://doi.acm.org/10.1145/1804669.1804675},
+ doi = {http://doi.acm.org/10.1145/1804669.1804675},
+ acmid = {1804675},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {RDF, SPARQL, SPARQL algebra, complexity, query optimization, semantic query optimization},
+}
+
+@TECHREPORT{Bernstein07optarq:a,
+    author = {A. Bernstein and C. Kiefer and M. Stocker},
+    title = {{OptARQ: A SPARQL Optimization Approach based on Triple Pattern Selectivity Estimation}},
+    institution = {University of Zurich, Department of},
+    year = {2007}
+}
+
+
+
+@inproceedings{Yan:2008:EQR:1367497.1367652,
+ author = {Yan, Y. and Wang, C. and Zhou, A.},
+ title = {Efficiently querying rdf data in triple stores},
+ booktitle = {Proc. of the 17th WWW},
+ series = {WWW '08},
+ year = {2008},
+ isbn = {978-1-60558-085-2},
+ location = {Beijing, China},
+ pages = {1053--1054},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/1367497.1367652},
+ doi = {http://doi.acm.org/10.1145/1367497.1367652},
+ acmid = {1367652},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {graph partitioning, indexing, rdf, signature},
+} 
+
+
+
+
+@inproceedings{Blanco:2010:CSE:1835449.1835466,
+ author = {Blanco, R. and Bortnikov, E. and Junqueira, F. and Lempel, R- and Telloli, L. and Zaragoza, H.},
+ title = {Caching search engine results over incremental indices},
+ booktitle = {Proceeding of the 33rd ACM SIGIR'10 Conference},
+ series = {SIGIR '10},
+ year = {2010},
+ isbn = {978-1-4503-0153-4},
+ location = {Geneva, Switzerland},
+ pages = {82--89},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1835449.1835466},
+ doi = {http://doi.acm.org/10.1145/1835449.1835466},
+ acmid = {1835466},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {real-time indexing, search engine caching},
+} 
+
+
+
+@TechReport{Page:1998:PCR,
+  author =       "Lawrence Page and Sergey Brin and Rajeev Motwani and
+                 Terry Winograd",
+  title =        "The {PageRank} Citation Ranking: Bringing Order to the
+                 Web",
+  institution =  "Stanford Digital Library Technologies Project,
+                 Stanford University",
+  address =      "Stanford, CA, USA",
+  pages =        "17",
+  day =          "11",
+  month =        nov,
+  year =         "1998",
+  bibdate =      "Thu Oct 24 15:13:54 2002",
+  bibsource =    "http://www.math.utah.edu/pub/tex/bib/master.bib;
+                 http://www.math.utah.edu/pub/tex/bib/pagerank.bib",
+  URL =          "http://dbpubs.stanford.edu/pub/1999-66;
+                 http://ilpubs.Stanford.edu:8090/422/",
+  abstract =     "The importance of a Web page is an inherently
+                 subjective matter, which depends on the readers
+                 interests, knowledge and attitudes. But there is still
+                 much that can be said objectively about the relative
+                 importance of Web pages. This paper describes PageRank,
+                 a mathod for rating Web pages objectively and
+                 mechanically, effectively measuring the human interest
+                 and attention devoted to them. We compare PageRank to
+                 an idealized random Web surfer. We show how to
+                 efficiently compute PageRank for large numbers of
+                 pages. And, we show how to apply PageRank to search and
+                 to user navigation.",
+  annote =       "This is the Google search algorithm.",
+}
+
+
+@misc{Maslov2009,
+  author = {Sergei Maslov and S. Redner},
+  description = {Promise and Pitfalls of Extending Google's PageRank Algorithm to Citation Networks},
+  timestamp = {2010-06-30T09:38:52.000+0200},
+  title = {{Promise and Pitfalls of Extending Google's PageRank Algorithm to Citation Networks}},
+  url = {\url{http://arxiv.org/abs/0901.2640}},
+  year = 2009
+}
+
+
+@book{Manning:2008:IIR:1394399,
+ author = {Manning, Christopher D. and Raghavan, Prabhakar and Schtze, Hinrich},
+ title = {{Introduction to Information Retrieval}},
+ year = {2008},
+ isbn = {0521865719, 9780521865715},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+} 
+
+
+
+@article{Chen:1976:EMU:320434.320440,
+ author = {Chen, Peter Pin-Shan},
+ title = {{The entity-relationship model\—toward a unified view of data}},
+ journal = {ACM Trans. Database Syst.},
+ issue_date = {March 1976},
+ volume = {1},
+ number = {1},
+ month = mar,
+ year = {1976},
+ issn = {0362-5915},
+ pages = {9--36},
+ numpages = {28},
+ url = {\url{http://doi.acm.org/10.1145/320434.320440}},
+ doi = {10.1145/320434.320440},
+ acmid = {320440},
+ publisher = {ACM},
+ address = {New York, NY, USA}, 
+} 
+
+
+
+@book{Wilcock:2009:ILA:1717999,
+ author = {Graham Wilcock},
+ title = {{Introduction to Linguistic Annotation and Text Analytics}},
+ year = {2009},
+ isbn = {1598297384, 9781598297386},
+ edition = {1st},
+ publisher = {Morgan \& Claypool Publishers},
+} 
+
+
+@article{Gong:Cheang:U:2006, 
+title={{Multi-term Web Query Expansion Using WordNet}}, 
+journal={Database and expert systems applications 17th international conference DEXA 2006 Kraków Poland September 48 2006 proceedings}, 
+publisher={Springer-Verlag New York Inc}, 
+author={Gong, Zhiguo and Cheang, Chan Wa and U, Leong Hou}, 
+year={2006}, pages={379}
+}
+
+
+
+
+
+
+
+@techreport{Lisa2010,
+  author= {Lisa Hunemark},
+  title = {{Query expansion using search logs and WordNet}},
+  institution = {Uppsala University},
+  year = {2010},
+  month = {mar},
+  note = {Master’s thesis in Computational Linguistics}
+  }
+
+
+

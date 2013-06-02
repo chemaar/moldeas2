@@ -1,0 +1,46 @@
+%
+% Portadas de los tomos
+%
+% Copyright (c) 2004, Diego Berrueta Muñoz
+%
+% Permission is granted to copy, distribute and/or modify this document
+% under the terms of the GNU Free Documentation License, Version 1.2
+% or any later version published by the Free Software Foundation;
+% with no Invariant Sections, no Front-Cover Texts, and no Back-Cover
+% Texts.  A copy of the license is included in the section entitled "GNU
+% Free Documentation License".
+%
+% Última revisión: $Date: 2004-09-03 17:51:14 +0200 (vie, 03 sep 2004) $
+%
+
+\documentclass[oneside,a4paper,final,11pt,fleqn]{book}  %% ATENCIÓN: draft|final
+\input{../cabeceras}
+\input{../utilidades}
+
+\begin{document}
+
+\frontmatter
+
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\PrintNumeroDocumentoPFC}[1]{DOCUMENTOS N$^\mathrm{os}$ #1}
+\renewcommand{\SpaceAfterNombreDocumentoPFC}{\vspace{1cm}}
+
+\pfctitlepage{\AreaPFC}{\NumeroPFC}{\TituloPFC}{\AutorPFC}{\FechaEntregaPFC}{}{1-4}{Memoria\\Diseño\\Manual técnico\\Manual usuario}
+
+\pfctitlepage{\AreaPFC}{\NumeroPFC}{\TituloPFC}{\AutorPFC}{\FechaEntregaPFC}{TUTOR:
+\TutorPFC}{1-4}{Memoria\\Diseño\\Manual técnico\\Manual usuario}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\PrintNumeroDocumentoPFC}[1]{DOCUMENTO ANEXO}
+\renewcommand{\SpaceAfterNombreDocumentoPFC}{\vspace{1cm}}
+
+\pfctitlepage{\AreaPFC}{\NumeroPFC}{\TituloPFC}{\AutorPFC}{\FechaEntregaPFC}{}{}{Código fuente}
+
+\pfctitlepage{\AreaPFC}{\NumeroPFC}{\TituloPFC}{\AutorPFC}{\FechaEntregaPFC}{TUTOR:
+\TutorPFC}{}{Código fuente}
+
+\end{document}

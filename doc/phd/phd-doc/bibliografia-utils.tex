@@ -1,0 +1,23 @@
+%
+% bibliografia-utils.tex
+%
+%
+% Para insertar la bibliografía
+%
+
+\providecommand*{\phantomsection}{} % Para evitar errores si no usamos el hyperref
+
+\newcommand{\insertbibliography}{%
+  \cleardoublepage
+  \phantomsection
+  \renewcommand{\bibname}{Referencias}
+  \addcontentsline{toc}{chapter}{\bibname}
+  %\bibliographystyle{plain}
+  %\bibliographystyle{unsrt}
+  %\bibliographystyle{../bibliografia/these}
+  \bibliographystyle{../bibliografia/pfc}
+
+  % Bases de datos de bibliografía
+  \bibliography{../bibliografia/moldeas,../bibliografia/metodos,../bibliografia/phd-references,../bibliografia/web,../bibliografia/intro,../bibliografia/linked-data,../bibliografia/experimentacion,../bibliografia/e-procurement,../bibliografia/semantic,../bibliografia/extra}  
+}
+

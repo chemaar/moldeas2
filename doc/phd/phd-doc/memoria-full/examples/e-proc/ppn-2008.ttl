@@ -1,0 +1,13 @@
+<http://purl.org/weso/ppn/2009/201898>
+	a   <http://purl.org/weso/ppn/ontology/Notice> ;
+	...
+      dc:date
+		"2009"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      dc:identifier
+              "201898"^^<http://www.w3.org/2001/XMLSchema#string> ;
+      <http://purl.org/weso/ppn/ontology/ref-cpv>
+              <http://purl.org/weso/pscs/cpv/2008/60424120> , 
+	      <http://purl.org/weso/pscs/cpv/2008/60400000> ;
+      <http://purl.org/weso/ppn/ontology/ref-nuts>
+              <http://nuts.psi.enakting.org/id/FR> ,
+	     <http://nuts.psi.enakting.org/id/FR81> .

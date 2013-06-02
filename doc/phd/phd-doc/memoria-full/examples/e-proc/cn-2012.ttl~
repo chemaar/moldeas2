@@ -1,0 +1,20 @@
+ <http://purl.org/weso/pscs/cn/2012/resource/846721100080>
+      a       <http://purl.org/weso/pscs/ontology/PSCConcept> , 
+      gr:ProductOrServiceModel ;
+      skosxl:prefLabel
+      gr:description
+      rdfs:label "Nombre de pieces"@fr , " Anzahl Stuck"@de , " Number of items"@en ;
+      dc:identifier "846721100080" ;
+      dc:subject "846721100080" ;
+      <http://purl.org/weso/pscs/definitions/level>
+              "6"^^xsd:int ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+        <http://www.productontology.org/id/number> , 
+	<http://www.productontology.org/id/item> ;
+      skos:closeMatch 
+	<http://purl.org/weso/pscs/cpv/2008/resource/GC25> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/GC27> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/GC31> ;
+      skos:inScheme <http://purl.org/weso/pscs/cn/2012/resource/ds> ;
+      skos:notation "p/st"@en ;
+      skos:note "8467 21 10" .

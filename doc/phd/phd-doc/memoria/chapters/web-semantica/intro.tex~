@@ -1,0 +1,31 @@
+El término ``Web Semántica'' se puede interpretar como una evolución de la web
+actual. El uso del adjetivo ``semántica'' aporta un atractivo extra a la Web, dotando a la misma de características cercanas a lo que se entiende 
+habitualmente por inteligencia artificial y que tan utilizadas son en películas de ciencia-ficción.
+No se debe confundir un avance tecnológico con una revolución en la concepción
+de la web actual y es preciso ser cautos con el campo de aplicación de la
+``semántica'' en la red y seleccionar aquellos escenarios en los que realmente
+la semántica enriquezca el desarrollo actual.
+
+Siguiendo las directrices que marcan las grandes empresas y que
+corresponden en muchos casos a la opinión de \textit{Gartner} (``Semantic Web Technologies
+Take Middleware to Next Level''~\cite{gartner}), ya se vaticinaba que en el año 2005 la integración de 
+aplicaciones empresariales estaría guiada por ontologías y por tanto impulsaba, la Web Semántica.
+
+El despliegue de tecnología semántica, confiere una visión más realista, en
+la cual existen grandes discusiones abiertas sobre temas diversos, por ejemplo
+reglas, razonamiento distribuido, procesamiento de \textit{\gls{Big Data}}, lenguajes de formalización creados por distintas instituciones 
+con distintos niveles de expresividad, herramientas en continuo desarrollo no
+estables, aplicaciones que se venden como Web Semántica cuando no lo son
+estrictamente o bien simplemente se han unido a la ``iniciativa'' de una tecnología, con el único objetivo de disponer 
+de este sello en sus aplicaciones. 
+
+Las expectativas se presentan ambiciosas y tentadoras, pero no menos que en la década de los años setenta con la eclosión 
+de la inteligencia artificial. Por todo ello, es necesario un análisis riguroso y exhaustivo para dotar a este avance
+tecnológico de un planteamiento teórico y práctico adecuado donde realmente sea aplicable.  
+
+Esta introducción aunque un tanto pesimista, trata simplemente de otorgar un enfoque
+realista a esta tecnología de vanguardia, ciertamente aunque las barreras a
+superar son importantes, también hay que resaltar que el impulso realizado por
+todas las partes implicadas: empresa, universidad, administración, desarrolladores,
+etc., está siendo considerable y los resultados estables no se dilatarán excesivamente en el tiempo pero
+siempre teniendo una base estable. 

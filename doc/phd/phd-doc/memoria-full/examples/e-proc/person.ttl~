@@ -1,0 +1,22 @@
+<http://purl.org/weso/eprocurement/organization/person/resource/100/vcard>  a v:VCard ;
+  v:fn "Vicente Gotor Santamaría" ;
+  v:org [ v:organisation-name "University of Oviedo" ;
+          v:organisation-unit "Rector Division" ] ;
+  v:adr [ rdf:type v:Work ;
+          v:country-name "Spain" ;
+          v:locality "Oviedo" ;
+          v:postal-code "33003" ;
+          v:street-address "Plaza del Riego, S/N" ] ;
+  v:geo [ v:latitude "43,375" ;
+          v:longitude "-5,844" ] ;
+  v:tel [ rdf:type v:Fax, v:Work ;
+          rdf:value " +34  985 10 30 00"] ; 
+  v:email <mailto:rector@uniovi.es> ;
+  v:logo <http://www.unioviedo.es/mia09/logos/logo_uniovi.jpg>  .
+
+<http://purl.org/weso/eprocurement/organization/person/resource/100> a 
+  foaf:Person ;
+  org:memberOf 
+    <http://purl.org/weso/eprocurement/organization/resource/100> ;
+  org:basedAt 
+    <http://purl.org/weso/eprocurement/organization/person/resource/100/vcard> ;  

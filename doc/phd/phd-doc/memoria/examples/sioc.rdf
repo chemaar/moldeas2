@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:sioc='http://rdfs.org/sioc/ns#'
+  xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  xmlns:mvcb='http://webns.net/mvcb/'
+>
+  <sioc:Site rdf:about="http://groups.google.com/group/sioc-dev">
+    <sioc:host_of>
+      <sioc:Forum rdf:about="http://swaml.berlios.de/demos/sioc-dev/index.rdf#SIOC-Dev">
+        <dc:description>SIOC development mailing list</dc:description>
+        <mvcb:errorReportsTo rdf:resource="http://swaml.berlios.de/bugs"/>
+        <sioc:container_of rdf:resource="http://swaml.berlios.de/demos/sioc-dev/2006-Dec/post-419.rdf"/>
+        <dc:date>2007-06-18</dc:date>
+        <dc:title>SIOC-Dev</dc:title>
+
+        <mvcb:generatorAgent rdf:resource="http://swaml.berlios.de/doap.rdf"/>
+        <sioc:has_host rdf:resource="http://groups.google.com/group/sioc-dev"/>
+        <sioc:has_subscriber rdf:resource="http://swaml.berlios.de/demos/sioc-dev/subscribers.rdf#s26"/>
+      </sioc:Forum>
+    </sioc:host_of>
+
+  </sioc:Site>
+</rdf:RDF>

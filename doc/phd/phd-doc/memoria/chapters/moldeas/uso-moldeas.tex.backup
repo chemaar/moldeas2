@@ -1,0 +1,84 @@
+\subsection{Acciones desde el Interfaz Gráfico}
+Siguiendo las directrices y conceptos de diseño de la interacción que se han 
+repasado y señalado como importantes en las anteriores secciones, cabe ahora 
+destacar las principales acciones a realizar en el demostrador público 
+del sistema MOLDEAS.
+
+\begin{enumerate}
+ \item Pantalla inicial del sistema MOLDEAS, ver Figura~\ref{fig:moldeas-web-screen} en el cual el usuario puede 
+seleccionar y completar las variables de información de su perfil 
+de búsqueda para la recuperación de información. La metáfora utilizada 
+se basa en una simulación del clásico ``carrito de la compra'' en la que 
+el usuario puede seleccionar distintos códigos CPV, NUTS, establecer 
+los rangos para algunas variables, etc. Se ha intentado simplificar 
+al máximo este interfaz para evitar que una simple búsqueda se convierta 
+en una tarea tediosa de rellenar un amplio formulario.
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=16cm]{images/phd/moldeas/moldeas-web}
+\caption{Ejemplo de pantalla inicial en \texttt{moldeas-web}.}
+\label{fig:moldeas-web-screen}
+\end{figure}
+
+
+\item Una vez que el usuario ha seleccionado su perfil de búsqueda se ejecuta 
+el proceso de recuperación de información presentando los resultados en forma 
+tabular y mediante el uso de Exhibit, ver Figura~\ref{}
+
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=16cm]{images/phd/moldeas/moldeas-results}
+\caption{Ejemplo de pantalla de resultados en \texttt{moldeas-web}.}
+\label{fig:moldeas-results}
+\end{figure}
+
+
+
+\end{enumerate}
+
+
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=16cm]{images/phd/moldeas/moldeas-pubby}
+\caption{Acceso a los datos enlazados mediante Pubby.}
+\label{fig:moldeas-pubby}
+\end{figure}
+
+
+
+
+
+
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=16cm]{images/phd/moldeas/moldeas-snorql}
+\caption{Consulta a los datos enlazados mediante SNORQL.}
+\label{fig:moldeas-snorql}
+\end{figure}
+
+
+
+
+% 
+% \section{Conclusiones sobre el diseño del Inspector de SA}
+% El diseño de un interfaz gráfico para el sistema MOLDEAS es una tarea relativamente
+% sencilla, ya que el problema real consiste en la representación gráfica de un
+% estado del proceso mediante la biblioteca Jpowergraph. Como ya se ha comentado,
+% el objetivo de diseño es visualizar \textit{SA} y, al menos, en esta versión no
+% se incluyen opciones de edición o de guardar y cargar configuraciones ya que se
+% escapan del alcance de visualización de estado. Simplemente, se pretende crear
+% un cliente gráfico del algoritmo y no un editor gráfico. Es importante realizar
+% esta puntualización ya que no conviene centrar la atención en el cliente gráfico
+% que se ofrece como un valor añadido, pero no como un objetivo del proyecto, y si en el
+% algoritmo de \textit{SA} (auténtico motivo del proyecto). De cualquier forma, se
+% ha intentado diseñar un interfaz gráfico lo más sencillo, intuitivo, consistente y
+% uniforme posible.
+
+
+
+
+

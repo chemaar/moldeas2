@@ -1,0 +1,1578 @@
+@INPROCEEDINGS{Balzer,
+  author = {Steffen Balzer and Thorsten Liebig},
+  title = {{B}ridging the {G}ap {B}etween {A}bstract and {C}oncrete {S}ervices},
+  booktitle = {A Semantic Approach for Grounding OWL-S},
+  file = {Especificacion del algoritmo que realiza el Grounding en OWL-S mediante mappings en RDF:.\\files\\Bridging_the_Gap_Between_Abstract_and_Concrete_Services.pdf:PDF},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+
+
+
+
+@TechReport{Tree2Graph,
+  author =       {A. Corradini and U. Montanari and F. Rossi and H. Ehrig and R. Heckel and M. Loew},
+  title =        {{A}lgebraic {A}pproaches to {G}raph {T}ransformation, part {I}: {B}asic {C}oncepts and {D}ouble {P}ushout {A}pproach},
+  institution =  {Università di Pisa, Dipartimento di Informatica},
+  year =         {1996},
+  type = {TR-96-17}
+}
+
+
+@article{BursteinBZFHPSW,
+  author    = {Mark H. Burstein and Christoph Bussler and Michal Zaremba and
+Timothy W. Finin and others},
+  title     = {{A} {S}emantic {W}eb {S}ervices {A}rchitecture.},
+  journal   = {IEEE Internet Computing},
+  volume    = {9},
+  number    = {5},
+  year      = {2005},
+  pages     = {72-81},
+}
+
+@misc{WSMODoc,
+   Author = {{WSMO Working Drafts}},
+   Title = {{The Web Service Modeling Ontology (WSMO) available at http://www.wsmo.org/TR/}},
+ Year = {2005} }
+
+
+
+
+@ARTICLE{Berners-Lee2001,
+  author = {Tim Berners-Lee and James Hendler and Ora Lassila},
+  title = {{T}he {S}emantic {W}eb},
+  journal = {Scientific American},
+  year = {2001},
+  volume = {284},
+  pages = {34-43},
+  number = {5},
+  month = {May},
+  biburl = {http://www.bibsonomy.org/bibtex/2222934145a71a9d6cfbbb375d4d62c1d/marciomr},
+  keywords = {semantic_web },
+  lastdatemodified = {2007-04-27},
+  lastname = {Berners-Lee},
+  own = {notown},
+  read = {notread},
+  url = {http://www.ryerson.ca/~dgrimsha/courses/cps720_02/resources/Scientific%20American%20The%20Semantic%20Web.htm}
+}
+@INPROCEEDINGS{Bohring2005,
+  author = {Hannes Bohring and S. Auer},
+  title = {{M}apping {XML} to {O}WL {O}ntologies.},
+  booktitle = {Leipziger Informatik-Tage},
+  year = {2005},
+  editor = {Klaus P. Jantke and Klaus-Peter F{\"a}hnrich and Wolfgang S. Wittig},
+  volume = {72},
+  series = {LNI},
+  pages = {147-156},
+  publisher = {GI},
+  date = {2005-10-31},
+  description = {dblp},
+  file = {:.\\files\\Mapping_XML_to_OWL_Ontologies.pdf:PDF},  isbn = {3-88579-401-2},
+  keywords = {mapping }
+}
+@INPROCEEDINGS{Coetzee2007,
+  author = {Peter Coetzee and Tom Heath and Enrico Motta},
+  title = {{S}parq{P}lug: {G}enerating {L}inked {D}ata from {L}egacy {HTML}, {SPARQL} and the {DOM}},
+  year = {2007},
+  file = {:.\\files\\Coetzee_heath_sparqplug.pdf:PDF},
+  owner = {miguelg.rodriguez},
+  timestamp = {2008.03.25}
+}
+@CONFERENCE{Kopecky2005,
+  author = {Jacek Kopeck\'{y}},
+  title = {{S}imple {RDF} to {XML} {D}ata {G}rounding},
+  year = {2005}, 
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@TECHREPORT{Kopecky2007a,
+  author = {Jacek Kopeck\'{y} and Matthew Moran and Dumitru Roman and Adrian Mocan},
+  title = {{WP3}: {S}ervice {O}ntologies and {S}ervice {D}escription. {D3.12} {S}emantic {W}eb {S}ervices grounding specification},
+  institution = {DIP: Data Information and Process Integration with Semantic Web Services},
+  year = {2007},
+  file = {Especificacion del DIP sobre Grounding:C\:\\Users\\Skywalker\\Desktop\\pfm\\trunk\\documentation\\references\\files\\D3.12_Semantic_Web_Services_grounding_specication.pdf:PDF},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@INPROCEEDINGS{Kopecky2006,
+  author = {Jacek Kopeck\'{y} and Dumitru Roman and Matthew Moran and Dieter Fensel},
+  title = {{S}emantic {W}eb {S}ervices {G}rounding.},
+  booktitle = {AICT/ICIW},
+  year = {2006},
+  pages = {127},
+  publisher = {IEEE Computer Society},
+  biburl = {http://www.bibsonomy.org/bibtex/2ce1958231f08949b4c1dac8a021e748e/dblp},
+  date = {2006-05-22},
+  description = {dblp},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/AICT-ICIW.2006.165},
+  file = {:.\\files\\semantic_web_services_grounding.pdf:PDF},
+  isbn = {0-7695-2522-9},
+  keywords = {dblp },
+  url = {http://dblp.uni-trier.de/db/conf/aict/aict2006.html#KopeckyRMF06}
+}
+@ARTICLE{Kopecky2007,
+  author = {Jacek Kopeck\'{y} and Tomas Vitvar and Carine Bournez and Joel Farrell},
+  title = {{SAWSDL}: {S}emantic {A}nnotations for {WSDL} and {XML} {S}chema.},
+  journal = {IEEE Internet Computing},
+  year = {2007},
+  volume = {11},
+  pages = {60-67},
+  number = {6},
+  date = {2007-11-08},
+  description = {dblp},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/MIC.2007.134},
+  file = {:.\\files\\SAWSDL_Semantic_Annotations_for_WSDL_adn_XML_Schema.pdf:PDF},
+  keywords = {dblp}
+}
+@ARTICLE{Marinchev2005,
+  author = {Ivo Marinchev and Gennady Agre},
+  title = {{S}emantically {A}nnotating {W}eb {S}ervices {U}sing {WSMO} {T}echnologies},
+  journal = {CYBERNETICS AND INFORMATION TECHNOLOGIES},
+  year = {2005},
+  volume = {5},
+  pages = {12},
+  file = {Anotaciones semanticas en WSMO:.\\files\\Semantically_Annotating_Web_Services_Using_WSMO_Technologies.pdf:PDF},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@INPROCEEDINGS{Moran,
+  author = {Matthew Moran and Adrian Mocan},
+  title = {{T}owards {T}ranslating between {XML} and {WSML} based on mappings between {XML} {S}chema and an eqivalent {WSMO} {O}ntology},
+  year = {2005},
+  file = {Propuesta de Grounding mediante mappings en RDF:.\\files\\Towards_Translating_between_XML_and_WSML_based_on_mappings.pdf:PDF},
+  journal = {Proceedings of the WIW 2005 Workshop on WSMO Implementations, Innsbruck, Austria},
+  owner = {Skywalker},
+  timestamp = {2008.04.16}
+}
+@MASTERSTHESIS{Munoz2007,
+  author = {Diego Berrueta Muñoz},
+  title = {{C}aracterización de un lenguaje de transformación de {RDF}},
+  school = {Universidad de Oviedo},
+  year = {2007},
+  file = {Trabajo de investigacion de Diego Berrueta:.\\files\\Caracterización_de_un_lenguaje_de_transformación_de_RDF.pdf:PDF},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@INPROCEEDINGS{Pantschenko,
+  author = {Konstantin Pantschenko and Olaf Noppens and Thorsten Liebig},
+  title = {{G}rounding {W}eb {S}ervices {S}emantically: {W}hy and {H}ow?},
+  file = {Propuesta de Grounding mediante mappings en RDF:.\\files\\Grounding_Web_Services_Semantically_Why_and_How.pdf:PDF},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@BOOK{Roman2006,
+  title = {{S}emantic {W}eb {T}echnologies. {T}rends and research in ontology-based systems},
+  publisher = {Wiley},
+  year = {2006},
+  author = {Dumitru Roman and Jos de Brujin and Adrian Mocan and Ioan Toma and	Holger Lausen and Jacek Kopeck\'{y} and Christoph Bussler and Dieter Fensel and Jhon Domingue and Stefania Galizia and Liliana Cabral},
+  owner = {Skywalker},
+  timestamp = {2007.10.23}
+}
+@INPROCEEDINGS{Shafiq,
+  author = {Omair Shafiq and Matthew Moran and Emilia Cimpian and Adrian Mocan and Michal Zaremba and Dieter Fensel},
+  title = {{A} {C}omparison between {WSMX} and {OWL-S} {T}ools},
+  file = {Comparacion entre las herramientas de OWL-S y WSMO:.\\files\\A_Comparison_between_WSMX_and_OWL-S_Tools.pdf:PDF},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@ARTICLE{Verma2007,
+  author = {Kunal Verma and Amit P. Sheth},
+  title = {{S}emantically {A}nnotating a {W}eb {S}ervice.},
+  journal = {IEEE Internet Computing},
+  year = {2007},
+  volume = {11},
+  pages = {83-85},
+  number = {2},
+  date = {2007-11-08},
+  description = {dblp},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/MIC.2007.48},
+  file = {:.\\files\\Semantically_Annotating_a_Web_Service.pdf:PDF},
+  keywords = {dblp}
+}
+@PROCEEDINGS{Kopecky2007b,
+  title = {{D24.2v0.1.} {WSMO} {G}rounding},
+  year = {2007},
+  editor = {Jacek Kopeck\'{y} and Matthew Moran and Tomas Vitvar and Dumitru Roman
+	and Adrian Mocan},
+  organization = {WSMO},
+  file = {Working draft de WSMO sobre Grounding:http\://www.wsmo.org/TR/d24/d24.2/v0.1/:URL},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+
+@PROCEEDINGS{Joel2007,
+  title = {{S}emantic {A}nnotations for {WSDL} and {XML} {S}chema},
+  year = {2007},
+  editor = {Joel Farrell (IBM), Holger Lausen, (DERI Innsbruck)},
+  organization = {W3C},
+  file = {Especificacion SAWSDL:http\://www.w3.org/TR/sawsdl/:URL},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@PROCEEDINGS{2007,
+  title = {{S}emantic {A}nnotations for {WSDL} and {XML} {S}chema: {U}sage {G}uide},
+  year = {2007},
+  file = {Especificacion de uso de SAWSDL:http\://www.w3.org/TR/sawsdl-guide/:URL},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@PROCEEDINGS{2007a,
+  title = {{SAWSDL} {C}andidate {R}ecommendation {I}mplementation {R}eport},
+  year = {2007},
+  file = {Recomendacion de implementacion de SAWSDL:http\://www.w3.org/2002/ws/sawsdl/CR/:URL},
+  owner = {Skywalker},
+  timestamp = {2007.11.07}
+}
+@PROCEEDINGS{Mocan2005,
+  title = {{D13.3v0.2} {WSMX} {D}ata {M}ediation},
+  year = {2005},
+  editor = {Adrian Mocan and Emilia Cimpian},
+  organization = {WSMO},
+  file = {Especificacion de Mediacion en WSMO:http\://www.wsmo.org/TR/d13/d13.3/v0.2/:URL},
+  owner = {miguelg.rodriguez},
+  timestamp = {2007.11.07}
+}
+
+@PROCEEDINGS{Clark1999,
+  title = {{XSL} {T}ransformations ({XSLT})},
+  year = {1999},
+  editor = {James Clark},
+  organization = {W3C},
+  file = {XSL Transformations (XSLT):http\://www.w3.org/TR/xslt:URL},
+  owner = {miguelg.rodriguez},
+  timestamp = {2008.03.27}
+}
+
+
+@inproceedings{murata01taxonomy,
+    author = "M. Murata and D. Lee and M. Mani",
+    title = "{T}axonomy of {XML} {S}chema {L}anguages using {F}ormal {L}anguage {T}heory",
+    booktitle = "Extreme Markup Languages",
+    address = "Montreal, Canada",
+    year = "2001",
+    url = "citeseer.ist.psu.edu/murata00taxonomy.html" }
+
+
+
+
+
+@BOOK{graphTheory,
+   author = "W. T. Tutte and Crispin St. and J. A. Nash-Williams",
+   title= "{G}raph theory",
+   publisher = "Cambridge University Press",
+   year = 2001,
+   ISBN= "0521794897",
+   pages="356"	
+   }
+
+
+
+
+@TechReport{wsbpel20,
+  author =       {Alexandre Alves and Assaf Arkin and Sid Askary and
+Charlton Barreto and others},
+  title =        {{Web Services Business Process Execution Language Version
+2.0}},
+  institution =  {OASIS},
+  year =         {2007},
+  type = {{OASIS} {S}tandard},
+  note = {http://docs.oasis-open.org/wsbpel/2.0/OS/wsbpel-v2.0-OS.html}
+}
+
+
+@TechReport{XMLSchema,
+  author =       {David C. Fallside and Priscilla Walmsley},
+  title =        {{XML} {S}chema {P}art 0: {P}rimer {S}econd {E}dition},
+  institution =  {W3C},
+  year =         {2004},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/xmlschema-0/}
+}
+
+
+@inproceedings{ decker00knowledge,
+    author = "Stefan Decker and Dieter Fensel and Frank van Harmelen and Ian Horrocks and Sergey Melnik and Michel C. A. Klein and Jeen Broekstra",
+    title = "{K}nowledge {R}epresentation on the {W}eb",
+    booktitle = "Description Logics",
+    pages = "89-97",
+    year = "2000",
+    url = "citeseer.ist.psu.edu/decker00knowledge.html" }
+
+
+@book{sowaKR,
+	author = {Sowa, John  F. },
+	citeulike-article-id = {158975},
+	howpublished = {Hardcover},
+	isbn = {0534949657},
+	keywords = {knowledge\_representation, kr, ontologies, philosophy, semantic, sowa},
+	month = {August},
+	posted-at = {2006-08-03 01:30:29},
+	priority = {0},
+	publisher = {Course Technology},
+	title = {{K}nowledge {R}epresentation: {L}ogical, {P}hilosophical, and {C}omputational {F}oundations},	
+	year = {1999}
+}
+
+
+@Misc{tata2007,
+  author = {H. Comon and M. Dauchet and R. Gilleron and  C. L\"oding
+and F. Jacquemard
+and D. Lugiez and S. Tison and M. Tommasi},
+  title =	 {{T}ree {A}utomata {T}echniques and {A}pplications},
+  note = {release October, 12th 2007},
+  year =	 2007
+}
+
+@TechReport{ChorModel,
+  author =       {David Burdett and Nickolas Kavantzas},
+  title =        {{WS} {C}horeography {M}odel {O}verview},
+  institution =  {W3C},
+  year =         {2004},
+  type = {{W3C} Working Draft},
+  note = {http://www.w3.org/TR/ws-chor-model/}
+}
+
+
+
+@INCOLLECTION{bruijn06-seman-web,
+  author = {Bruijn, Jos de and Marc Ehrig and Cristina Feier and
+                  Francisco Mart\'{i}n-Recuerda and Fran\c{c}ois
+                  Scharffe and Moritz Weiten },
+  title = {{O}ntology mediation, merging and aligning},
+  booktitle = {Semantic Web Technologies},
+  publisher = {Wiley},
+  year = {2006},
+  url = {http://www.debruijn.net/publications/mediation-chapter.pdf},
+  abstract = {Ontology mediation is a broad field of research
+                  which is concerned with determining and overcoming
+                  differences between ontologies in order to allow the
+                  reuse of such ontologies, and the data annotated
+                  using these ontologies, throughout different
+                  heterogeneous applications. Ontology mediation can
+                  be subdivided into three areas: \emph{ontology
+                  mapping}, which is mostly concerned with the
+                  representation of correspondences between
+                  ontologies; \emph{ontology alignment}, which is
+                  concerned with the (semi-)automatic discovery of
+                  correspondences between ontologies; and
+                  \emph{ontology merging}, which is concerned with
+                  creating a single new ontology, based on a number of
+                  source ontologies. This chapter reviews the work
+                  which has been done in the three mentioned areas and
+                  proposes an integrated approach to ontology
+                  mediation in the area of knowledge management. A
+                  language is developed for the representation of
+                  correspondences between ontologies. An algorithm,
+                  which generalizes current state-of-the-art alignment
+                  algorithms, is developed for the (semi-)automated
+                  discovery of such mappings. A tool is presented for
+                  browsing and editing ontology mappings. An ontology
+                  mapping can be used for a variety of different
+                  tasks, such as transforming data between different
+                  representations and querying different heterogeneous
+                  knowledge bases. }
+}
+
+
+
+
+@TechReport{XMLInfoSet,
+  author =       {John Cowan and Richard Tobin},
+  title =        {{XML} {I}nformation {S}et ({S}econd {E}dition)},
+  institution =  {W3C},
+  year =         {2004},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/xml-infoset/}
+}
+
+
+@TechReport{XML11,
+  author =       {Tim Bray and  Jean Paoli and C. M. Sperberg-McQueen and Eve Maler and François Yergeau and  John Cowan},
+  title =        {{E}xtensible {M}arkup {L}anguage ({XML}) 1.1 ({S}econd {E}dition)},
+  institution =  {W3C},
+  year =         {2006},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/xml11/}
+}
+
+@TechReport{NSXML11,
+  author =       {Tim Bray and Dave Hollander and Andrew Layman and Richard Tobin},
+  title =        {{N}amespaces in {XML} 1.1 ({S}econd {E}dition)},
+  institution =  {W3C},
+  year =         {2006},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/xml-names11/}
+}
+
+
+
+
+
+@misc{ noy02evaluating,
+  author = "F. Noy and A. Musen",
+  title = "{E}valuating {O}ntology-{M}apping {T}ools: {R}equirements and {E}xperience",
+  text = "Noy, F. N., Musen, A. M.: Evaluating Ontology-Mapping Tools: Requirements
+    and Experience. In Proceedings of OntoWeb-SIG3 Workshop at the 13th International
+    Conference on Knowledge Engineering and Knowledge Management, Siguenza,
+    Spain, (2002) 1--14",
+  year = "2002",
+  url = "citeseer.ist.psu.edu/noy02evaluating.html" }
+
+@TechReport{WsmxDataMediation,
+  author =       {Adrian Mocan and Emilia Cimpian},
+  title =        {{WSMX} {D}ata {M}ediation},
+  institution =  {Deri},
+  year =         {2005},
+  type = {{WSMX} Working Draft},
+  note = {http://www.wsmo.org/TR/d13/d13.3/}
+}
+
+@TechReport{SparqlSemantics,
+  author =       {Jorge Pérez, Marcelo Arenas, and Claudio Gutierrez},
+  title =        {{S}emantics of {SPARQL}},
+  institution =  {Universidad de Chile},
+  year =         {2006},
+  type = {{TR/DCC}-2006-17},
+  note = {http://www2.ing.puc.cl/~jperez/papers/sparql_semantics.pdf}
+}
+
+@inproceedings{SparqlIswc2006,
+  author    = {Jorge P{\'e}rez and
+               Marcelo Arenas and
+               Claudio Gutierrez},
+  title     = {{S}emantics and {C}omplexity of {SPARQL}},
+  booktitle = {{I}nternational {S}emantic {W}eb {C}onference},
+  year      = {2006},
+  pages     = {30-43},
+  ee        = {http://dx.doi.org/10.1007/11926078_3},
+}
+
+
+
+@inproceedings{CabralDMPH04,
+  author    = {Liliana Cabral and
+               John Domingue and
+               Enrico Motta and
+               Terry R. Payne and
+               Farshad Hakimpour},
+  title     = {{A}pproaches to {S}emantic {W}eb {S}ervices: an {O}verview and {C}omparisons},
+  booktitle = {ESWS},
+  year      = {2004},
+  pages     = {225-239},
+  
+}
+ 
+
+@TechReport{soa4allGrounding,
+  author =       {E.Di Nitto and G.Ripa and M.Zuccalà and R.Gonzales-C. and C.Hmerling and J.Kopecky and O.Shafiq and T.Vitvar},
+  title =        {{D1.1.1} {D}esign {P}rinciples for a {S}ervice {W}eb v1},
+  institution =  {European Project-FP7},
+  year =         {2008},
+  type = {{SOA4All} Deliverable D1.1.1},
+  note = {http://www.soa4all.eu}
+}
+
+
+%PRAVIA
+
+@inproceedings{tx_deriinproceedings_list_uid144,
+	title={{Applying Semantic Web Services to Virtual Travel Agency Case
+Study}},
+	year={2006},
+	month={6},
+	booktitle={Proceedings of the 1st Workshop: SemWiki2006 - From Wiki to Semantics, co-located with the 3rd Annual European Semantic Web Conference (ESWC 2006)},
+	author={Maciej Zaremba and Matthew Moran and Thomas Haselwanter},
+	URL={http://www.eswc2006.org/poster-papers/FP04-Zaremba.pdf},
+	address={Budva, Montenegro},
+	}
+
+
+@inproceedings{tx_deriinproceedings_list_uid322,
+	title={Execution Model for Heterogeneous Web Services},
+	year={2008},
+	month={07},
+	booktitle={Proceedings of IEEE International Conference on Services Computing (SCC2008)},
+	author={Tomas Vitvar and Adrian Mocan and Maciej Zaremba},
+	publisher={IEEE Computer Society},
+	}
+
+
+@inproceedings{tx_deriinproceedings_list_uid279,
+	title={Realizing Multimedia Processes by Combining Intelligent Content and Semantic Web Services},
+	year={2007},
+	month={09},
+	booktitle={Proceedings of ACM Multimedia 2007},
+	author={Tobias Bürger},
+	}
+
+%Organizados para el TI
+
+%SOA
+%:::::::::::::::::::::::::::::::::
+
+@article{PapazoglouSOA2003,
+ author = {M. P. Papazoglou and D. Georgakopoulos},
+ title = {Introduction},
+ journal = {Commun. ACM},
+ volume = {46},
+ number = {10},
+ year = {2003},
+ issn = {0001-0782},
+ pages = {24--28},
+ doi = {http://doi.acm.org/10.1145/944217.944233},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+
+@book{PulierSOA2005,
+ author = {Eric Pulier and Hugh Taylor},
+ title = {{U}nderstanding {E}nterprise {S}OA},
+ year = {2005},
+ isbn = {1932394591},
+ publisher = {Manning Publications Co.},
+ address = {Greenwich, CT, USA},
+ }
+
+@article{KhalafBPEL2006,
+ author = {R. Khalaf and A. Keller and F. Leymann},
+ title = {{B}usiness processes for web services: principles and applications},
+ journal = {IBM Syst. J.},
+ volume = {45},
+ number = {2},
+ year = {2006},
+ issn = {0018-8670},
+ pages = {425--446},
+ publisher = {IBM Corp.},
+ address = {Riverton, NJ, USA},
+ }
+
+%BPEL
+%:::::::::::::::::::::::::::::::::
+
+
+@TechReport{IBMBPEL2007,
+  author =   {IBM and BEA Systems and Microsoft and SAP AG and Siebel Systems},
+  title =        {{B}usiness {P}rocess {E}xecution {L}anguage for {W}eb {S}ervices version 1.1.30},
+  institution =  {IBM},
+  year =         {2007},
+  note = {http://www.ibm.com/developerworks/library/specification/ws-bpel/}
+}
+
+
+@book{JuricBPEL2006,
+ author = {Matjaz B. Juric},
+ title = {{B}usiness {P}rocess {E}xecution {L}anguage for {W}eb {S}ervices {BPEL} and {BPEL4WS} 2nd {E}dition},
+ year = {2006},
+ isbn = {1904811817},
+ publisher = {Packt Publishing},
+ }
+
+%Web Services
+%:::::::::::::::::::::::::::::::::
+
+@TechReport{SOAP11,
+  author =       { Don Box and David Ehnebuske and Gopal Kakivaya},
+  title =        {{S}imple {O}bject {A}ccess {P}rotocol ({SOAP}) 1.1.},
+  institution =  {W3C},
+  year =         {2000},
+  type = {{W3C} Note},
+  note = {http://www.w3.org/TR/2000/NOTE-SOAP-20000508/}
+}
+
+
+
+
+@TechReport{WSDL,
+  author =       {Erik Christensen and  Francisco Curbera and Greg Meredith and Sanjiva Weerawarana},
+  title =        {{W}eb {S}ervices {D}escription {L}anguage ({WSDL}) 1.1},
+  institution =  {W3C},
+  year =         {2001},
+  type = {{W3C} Note},
+  note = {http://www.w3.org/TR/wsdl}
+}
+
+
+@TechReport{WSDL20,
+  author =       {Roberto Chinnici and Jean-Jacques Moreau and Arthur Ryman and Sanjiva Weerawarana},
+  title =        {{W}eb {S}ervices {D}escription {L}anguage ({WSDL}) version 2.0 part 1: {C}ore language},
+  institution =  {W3C},
+  year =         {2007},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/wsdl}
+}
+
+@article{PeltOrchCor2003,
+ author = {Chris Peltz},
+ title = {Web Services Orchestration and Choreography},
+ journal = {Computer},
+ volume = {36},
+ number = {10},
+ year = {2003},
+ issn = {0018-9162},
+ pages = {46--52},
+ doi = {http://dx.doi.org/10.1109/MC.2003.1236471},
+ publisher = {IEEE Computer Society Press},
+ address = {Los Alamitos, CA, USA},
+ }
+
+
+@TechReport{WSCI10,
+  author =       {Assaf Arkin and Sid Askary and Scott Fordin and Wolfgang Jekeli and Kohsuke Kawaguchi and David Orchard and Stefano Pogliani and Karsten Riemer and Susan Struble and Pal Takacsi-Nagy and Ivana Trickovic and Sinisa Zimek},
+  title =        {{W}eb {S}ervice {C}horeography {I}nterface ({WSCI}) 1.0},
+  institution =  {W3C},
+  year =         {2002},
+  type = {{W3C} Note},
+  note = {http://www.w3.org/TR/wsci/}
+}
+
+%Servicios web semanticos
+
+
+@TechReport{WSDLS,
+  author =       {Joel Farrell and Holger Lausen},
+  title =        {{W}eb {S}ervice {S}emantics - {WSDL-S}},
+  institution =  {W3C},
+  year =         {2005},
+  type = {{W3C} Member Submission},
+  note = {http://www.w3.org/Submission/WSDL-S/}
+}
+
+
+@TechReport{SAWSDL,
+  author =       {Joel Farrell and Holger Lausen},
+  title =        {{S}emantic {A}nnotations for {W}SDL and {X}ML Schema},
+  institution =  {W3C},
+  year =         {2007},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/sawsdl/}
+}
+
+
+@TechReport{SWSF,
+  author =       {Steve Battle and Abraham Bernstein and others},
+  title =        {{S}emantic {W}eb Services {F}ramework (SWSF)},
+  institution =  {W3C},
+  year =         {2005},
+  type = {{W3C} Member Submission},
+  note = {http://www.w3.org/Submission/SWSF/}
+}
+
+
+@TechReport{OWLS,
+  author =       {David Martin and Mark Burstein and others},
+  title =        {{OWL-S}: {S}emantic {M}arkup for {W}eb {S}ervices},
+  institution =  {W3C},
+  year =         {2004},
+  type = {{W3C} Member Submission},
+  note = {http://www.w3.org/Submission/OWL-S/}
+}
+
+@TechReport{WSMO,
+  author =       {Jos de Bruijn and Christoph Bussler and John Domingue and Dieter Fensel and others},
+  title =        {{W}eb {S}ervice {M}odeling {O}ntology (WSMO)},
+  institution =  {W3C},
+  year =         {2005},
+  type = {{W3C} Member Submission},
+  note = {http://www.w3.org/Submission/WSMO/}
+}
+
+
+%Web Semantica
+@book{WeavingTim,
+title = {Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web by its Inventor},
+author = {Tim Berners-Lee and Mark Fischetti and Michael L. Dertouzos},
+publisher = {Harper San Francisco},
+year = {1999},
+description = {References from Heiko Haller, FZI},
+isbn = {1402842937},
+keywords = {(*) 1999 Berners-Lee book read web }
+} 
+
+
+@Article{berners-lee06a,
+  author =	 {Tim Berners-Lee and Wendy Hall and James A. Hendler
+                  and Kieron O'Hara and Nigel Shadbolt and Daniel
+                  J. Weitzner},
+  title =	 {{A Framework for Web Science}},
+  journal =	 {Foundations and Trends in Web Science},
+  year =	 2006,
+  volume =	 1,
+  number =	 1,
+  pages =	 {1--130},
+  doi = 	 {10.1561/18000000018},
+  url = 	 {http://jmvidal.cse.sc.edu/library/berners-lee06a.pdf}
+}
+
+
+
+
+  
+@TechReport{XML,
+  author = {C. M. Sperberg-McQueen and Eve Maler and Jean Paoli and Tim Bray and Fran\c{c}ois Yergeau},
+  title = {{E}xtensible {M}arkup {L}anguage ({XML}) 1.0 ({F}ourth {E}dition)},
+  institution = {W3C},
+  year = {2006},
+  note = {http://www.w3.org/TR/2006/REC-xml-20060816},
+  type = {{W3C} Recommendation}
+}
+@TechReport{XSL,
+  author =       {W3C Architecture Domain},
+  title =        {E{X}tensible {S}tyleSheet {L}anguage},
+  institution =  {W3C},
+  note = {http://www.w3.org/Style/XSL/},  
+  year =         {1999}
+}
+
+@TechReport{XPath,
+  author =       {James Clark and Steve DeRose},
+  title =        {{XML} {P}ath {L}anguage ({XPath}) {V}ersion 1.0},
+  institution =  {W3C},
+  year =         {1999},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/xpath}
+}
+
+@inproceedings{kifer05,
+title = {{A} {R}ealistic {A}rchitecture for the {S}emantic {W}eb.},
+author = {Michael Kifer and Jos de Bruijn and Harold Boley and Dieter Fensel},
+booktitle = {RuleML},
+pages = {17-29},
+year = {2005},
+ee = {http://dx.doi.org/10.1007/11580072_3},
+keywords = {rules semanticWeb }
+} 
+
+@TechReport{Swrl,
+  author =       {Ian Horrocks and and Peter F. Patel-Schneider and Harold Boley and others},
+  title =        {{SWRL}: {A} {S}emantic {W}eb {R}ule {L}anguage {C}ombining {OWL} and {RuleML}},
+  institution =  {W3C},
+  year =         {2004},
+  type = {{W3C} Member Submission},
+  note = {http://www.w3.org/Submission/SWRL/}
+}
+
+@TechReport{Sparql,
+  author =       {Eric Prud'hommeaux and Andy Seaborne},
+  title =        {{SPARQL} {Q}uery {L}anguage for {RDF}},
+  institution =  {W3C},
+  year =         {2007},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/rdf-sparql-query/}
+}
+
+
+@TechReport{SKOS-Core,
+  author =       {Alistair Miles and Dan Brickley},
+  title =        {{SKOS} {S}imple {K}nowledge {O}rganisation {S}ystems},
+  institution =  {W3C},  
+  year =         {2005},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20051102}
+
+}
+@techreport{Milin,
+  author= {Emilio Rubiera Azcona},
+  title = {{R}ecursos digitales de lexicografía especializada: {A}vances en {N}uevas {T}ecnologías},
+  institution = {Facultad de Filolog\'{i}a, Universidad de Oviedo},
+  year = {2007},
+  month = {September},
+  note = {Master's thesis}
+  }
+
+  @techreport{Sergio,
+  author= {Sergio Fernández López},
+  title = {{SWAML}, {P}ublicación de {L}istas de {C}orreo en {W}eb {S}emántica},
+  institution = {Escuela Universitaria de Ingeniería Técnica  Informática Oviedo },
+  year = {2006},
+  month = {December},
+  note = {Bachelor's thesis},
+  }
+
+@techreport{Kifer90logical,
+    author = "Michael Kifer and Georg Lausen and James Wu",
+    title = "{L}ogical {F}oundations of {O}bject-{O}riented and {F}rame-{B}ased {L}anguages",
+    institution="Department of Computer Science, State University of New York at Stony Brook (SUNY)",
+    number = "TR-90-003",
+    month = "1,",
+    year = "1990",
+    url = "citeseer.ist.psu.edu/kifer90logical.html" }
+ 
+@inProceedings{WSML2006,
+  AUTHOR = {Jos de Bruijn and Holger Lausen and Axel Polleres and Dieter Fensel},
+  TITLE = {{T}he web service modeling language: {A}n overview},
+  BOOKTITLE = {Proc. of the European Semantic Web Conference},
+  YEAR = {2006},
+}  
+
+@misc{WSMODeri,
+   Author = {{WSMO Working Group}},
+   Title = {{The Web Service Modeling Ontology (WSMO) available at http://www.wsmo.org/index.html}},
+ Year = {2006} }
+
+%Ontologias
+@article{GruberOnto,
+	address = {London, UK, UK},
+	author = {Gruber, Thomas  R. },
+	citeulike-article-id = {244074},
+	doi = {10.1006/knac.1993.1008},
+	issn = {1042-8143},
+	journal = {Knowl. Acquis.},
+	month = {June},
+	number = {2},
+	pages = {199--220},
+	publisher = {Academic Press Ltd.},
+	title = {{A} translation approach to portable ontology specifications},
+	url = {http://portal.acm.org/citation.cfm?id=173747},
+	volume = {5},
+	year = {1993}
+}
+
+@book{isbn1846283965,
+title = {{Ontological Engineering: With Examples from the Areas of Knowledge Management, E-Commerce and the Semantic Web (2nd edition)}},
+address = {Heidelberg},
+editor = {Asunción Gomez-Perez and Mariano Fernandez-Lopez and Oscar Corcho},
+publisher = {Springer-Verlag},
+year = {2007},
+seealso = {http://www4.wiwiss.fu-berlin.de/bookmashup/books/1846283965}, isbn = {1846283965},
+keywords = {books semanticweb sweo }
+} 
+
+@misc{Benjamins98ontological,
+  author = "R. Benjamins and D. Fensel",
+  title = "{T}he {O}ntological {E}ngineering {I}nitiative-{KA}",
+  text = "R. Benjamins and D. Fensel. The Ontological Engineering Initiative-KA2.
+    In N. Guarino, editor, Proceedings of the 1st International Conference on
+    Formal Ontologies in Information Systems, FOIS'98, Trento, Italy, pages
+    287--301. IOS Press, June 1998.",
+  year = "1998",
+  url = "citeseer.ist.psu.edu/benjamins98ontological.html" }
+  
+  @article{Studer98knowledge,
+    author = "Rudi Studer and V. Richard Benjamins and Dieter Fensel",
+    title = "{K}nowledge {E}ngineering: {P}rinciples and {M}ethods",
+    journal = "Data  Knowledge Engineering",
+    volume = "25",
+    number = "1-2",
+    pages = "161-197",
+    year = "1998",
+    url = "citeseer.ist.psu.edu/article/studer98knowledge.html" }
+    
+@inproceedings{Gruber93towards,
+    author = "T. R. Gruber",
+    title = "{Towards Principles for the Design of Ontologies Used for Knowledge Sharing}",
+    booktitle = "{Formal Ontology in Conceptual Analysis and Knowledge Representation}",
+    publisher = "Kluwer Academic Publishers",
+    address = "Deventer, The Netherlands",
+    editor = "N. Guarino and R. Poli",
+    year = "1993",
+    url = "citeseer.ist.psu.edu/gruber93toward.html" }
+
+
+@proceedings{baader03description,
+  editor    = {Franz Baader and
+               Diego Calvanese and
+               Deborah L. McGuinness and
+               Daniele Nardi and
+               Peter F. Patel-Schneider},
+  title     = {{The Description Logic Handbook: Theory, Implementation, and Applications}},
+  booktitle = {Description Logic Handbook},
+  publisher = {Cambridge University Press},
+  year      = {2003},
+  isbn      = {0-521-78176-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+  
+@techreport{Cuenca,
+  author= {Bernardo Cuenca Grau},
+  title = {{Combination and Integration of Ontologies on the Semantic Web}},
+  institution = {Universidad de Valencia},
+  year = {2005},
+  month = {Julio},
+  note = {PhD Dissertation Draft}
+  }
+
+
+@book{Sowa99knowledge,
+	abstract = {Sowa integrates logic, philosophy, linguistics, and computer science into this study of knowledge and its various models and implementations. His definitive new book shows how techniques of artificial intelligence, database design, and object-oriented programming help make knowledge explicit in a form that computer systems can use.},
+	author = {Sowa, John  F. },
+	citeulike-article-id = {158975},
+	howpublished = {Hardcover},
+	isbn = {0534949657},
+	keywords = {knowledge, representation},
+	month = {August},
+	priority = {2},
+	publisher = {Course Technology},
+	title = {{Knowledge Representation: Logical, Philosophical, and Computational Foundations}},
+	url = {http://www.amazon.ca/exec/obidos/redirect?tag=citeulike04-20{\&}path=ASIN/0534949657},
+	year = {1999}
+}
+
+
+@incollection{Bruijin2006,
+  author = {Bruijn, Jos de and Marc Ehrig and Cristina Feier and
+                  Francisco Mart\'{i}n-Recuerda and Fran\c{c}ois
+                  Scharffe and Moritz Weiten },
+  title = {{Ontology mediation, merging and aligning}},
+  booktitle = {Semantic Web Technologies},
+  publisher = {Wiley, UK},
+  year = 2006,
+  url = {http://www.debruijn.net/publications/mediation-chapter.pdf}
+}
+
+@inproceedings{NM00,
+	address = {Austin, Texas, USA},
+	author = {Noy, Fridman  Natasha  and Musen, M. A. },
+	booktitle = {Proc. 17th Intl. Conf. on Artificial Intelligence (AAAI 2000)},
+	keywords = {no-tag},
+	month = {July--August},
+	pages = {450--455},
+	priority = {2},
+	title = {{PROMPT: Algorithm and Tool for Automated Ontology Merging and Alignment}},
+	year = {2000}
+}
+
+@misc{WSMX,
+   Author = {{WSMX Working Group}},
+   Title = {{The Web Services Execution Environment (WSMX) available at http://www.wsmx.org/whoweare.html}},
+ Year = {2006} }
+
+
+@techreport{WSMXOver,
+  author = {Emilia Cimpian and Tomas Vitvar and Michal Zaremba},
+  title = {{Overview and Scope of WSMX}},
+  institution = {DERI},
+  year = {2005},
+  type = {Final Draft},
+  note = {Available at: \url{http://www.wsmo.org/TR/d13/d13.0/v0.2/}},
+}
+
+@techreport{WSMXArch,
+  author = {Michal Zaremba and Matthew Moran and Thomas Haselwanter},
+  title = {{WSMX Architecture}},
+  institution = {DERI},
+  year = {2005},
+  type = {Final Draft},
+  note = {Available at: \url{http://www.wsmo.org/TR/d13/d13.4/v0.2/}},
+}
+
+@techreport{WSMXConceptualModel,
+  author = {Emilia Cimpian and Adrian Mocan and Matthew Moran Eyal Oren
+and Michal Zaremba},
+  title = {{D13.1v0.2 Web Service Modeling Execution Environment - Conceptual
+Model}},
+  institution = {DERI},
+  year = {2004},
+  type = {Final Draft},
+  note = {Available at: \url{http://www.wsmo.org/2004/d13/d13.1/v0.2/}},
+}
+
+
+
+@article{IRS2003,
+ Author = {Motta, E. and Domingue, J. and Cabral, L. and Gaspari, M.},
+   Title = {{IRS-II A Framework and Infrastructure for Semantic Web Services}},
+   Journal = {{The Semantic Web ISWC 2003. Lecture Notes in Computer Science, Springer-Verlag, Heidelberg}},
+   Volume = {2870},
+   Pages = {306-318},
+ Year = {2003} 
+  }
+
+@conference{METEORS,
+    author = {A. Patil and S. Oundhakar and A. Sheth and K. Verma},
+    title = {{Semantic Web Services: Meteor-S Web Service Annotation Framework}},
+    booktitle = {{13th International Conference on World Wide Web}},
+    year = {2004},
+    pages = {553--562}
+}
+
+
+
+@techreport{soa4allD111,
+  author = {E. Di Nitto and G. Ripa and R. Gonzales-C. and C. Hamerling and J.
+Kopecky},
+  title = {{D1.1.1 Design Principles for a Service Web v1}},
+  institution = {soa4All},
+  year = {2009},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.soa4all.eu/file-upload.html?func=startdown&id=25}},
+}
+
+@techreport{soa4allD141,
+  author = {R. Krummenacher and I. Toma and C. Hamerling and J.P. Lorre and F.
+Baude},
+  title = {{D1.4.1A SOA4All Reference Architecture Specification}},
+  institution = {soa4All},
+  year = {2009},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.soa4all.eu/file-upload.html?func=startdown&id=77}},
+}
+
+
+@techreport{superD72,
+  author = {NUIG and SAP and Ontotext},
+  title = {{D7.2  Semantic Web Services-based Business Process
+Architecture}},
+  institution = {SUPER},
+  year = {2007},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M18/D7.2.pdf}},
+}
+
+@techreport{superD22,
+  author = {MIP and IBM and SAP},
+  title = {{D2.2 Semantic Business Process Life Cycle}},
+  institution = {SUPER},
+  year = {2007},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M12/D2.2.pdf}},
+}
+
+@techreport{superD21,
+  author = {TID},
+  title = {{D2.1 Use Case Analysis}},
+  institution = {SUPER},
+  year = {2006},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M6/D2.1.pdf}},
+}
+
+
+@techreport{superD110,
+  author = {USTUTT},
+  title = {{D1.10 BPEL for Semantic Web Services (BPEL4SWS)}},
+  institution = {SUPER},
+  year = {2006},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M24/D1.10.pdf}},
+}
+
+@techreport{superD47,
+  author = {USTUTT},
+  title = {{D4.7 sBPEL to BPEL4SWS Lifting and Lowering}},
+  institution = {SUPER},
+  year = {2008},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M24/D4.7.pdf}},
+}
+
+
+@techreport{superD615,
+  author = {USTUTT},
+  title = {{D6.15 Execution Engine Architecture and Design}},
+  institution = {SUPER},
+  year = {2009},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M36/D6.15.pdf}},
+}
+
+@techreport{superD71,
+  author = {iSOCO and USTUTT and PUE and NUIG},
+  title = {{D7.1 Integration and Interoperability Test Specification}},
+  institution = {SUPER},
+  year = {2006},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.ip-super.org/res/Deliverables/M12/D7.1.pdf}},
+}
+
+@techreport{superD24,
+  author = {SAP and IBIS and IDS and MIP},
+  title = {{D.2.4 Semantic Business Process Modelling and Quality Assurance}},
+  institution = {SUPER},
+  year = {2009},
+  type = {Deliverable},
+  note = {Available
+at: \url{http://www.ip-super.org/res/Deliverables/M36/D2.4.pdf}},
+}
+
+
+@techreport{soa4allD151,
+  author = {B. Schreder and S.H. Cruz and S. Abels and T. Pariente and M.
+Richardson},
+  title = {{D1.5.1 SOA4All Testbeds Specification And Methodology}},
+  institution = {SUPER},
+  year = {2009},
+  type = {Deliverable},
+  note = {Available at:
+\url{http://www.soa4all.eu/file-upload.html?func=startdown&id=78}},
+}
+
+
+
+
+@techreport{wsmoD37v0.2,
+  author = {Nathalie Steinmetz and Jos de Bruijn and Andreas Frankl},
+  title = {{D37.v02 WSML/OWL Mapping}},
+  institution = {WSMO},
+  year = {2008},
+  type = {Deliverable},
+  note = {Available at: \url{http://www.wsmo.org/TR/d37/}},
+}
+
+
+
+%Mediacion
+@article{ontoDriven,
+  author    = {Meenakshi Nagarajan and Kunal Verma and Amit P. Sheth and John A. Miller},
+  title     = {{O}ntology {D}riven {D}ata {M}ediation in {W}eb {S}ervices.},
+  journal   = {International Journal of Web Services Research},
+  volume    = {4},
+  number    = {4},
+  year      = {2007},
+  pages     = {1},
+}
+
+ @techreport{tx_deritr_list_uid10,
+	title={{T}owards an {O}ntology {M}apping {S}pecification {L}anguage for the {S}emantic {W}eb },
+	year={2004},
+	month={5},
+	author={Jos de Bruijn and Axel Polleres },
+	URL={http://www.deri.at/fileadmin/documents/DERI-TR-2004-06-30.pdf},
+	institution={DERI},
+	}
+
+@inproceedings{BanerjeeKKK87,
+  author    = {Jay Banerjee and
+               Won Kim and
+               Hyoung-Joo Kim and
+               Henry F. Korth},
+  title     = {{S}emantics and {I}mplementation of {S}chema {E}volution in {O}bject-{O}riented
+               {D}atabases},
+  booktitle = {SIGMOD Conference},
+  year      = {1987},
+  pages     = {311-322},
+}
+
+
+%SOA
+
+@book{SoaInPractice,
+	uthor = {Josuttis, Nicolai M.},
+	edition = {1},
+	howpublished = {Taschenbuch},
+	isbn = {0596529554},
+	keywords = {soa},
+	month = {August},
+	posted-at = {2008-04-26 20:47:55},
+	priority = {2},
+	publisher = {O'Reilly Media},
+	title = {{SOA in Practice: The Art of Distributed System Design}},
+	url = {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20&path=ASIN/0596529554},
+	year = {2007}
+}
+
+@book{KrBS04,
+	address = {Upper Saddle River, NJ},
+	author = {Krafzig, D. and Banke, K. and Slama, D.},
+	citeulike-article-id = {5220524},
+	posted-at = {2009-07-21 20:15:29},
+	priority = {0},
+	publisher = {Prentice Hall PTR},
+	title = {{Enterprise SOA: Service-Oriented Architecture Best Practices (The Coad Series)}},
+	year = {2004}
+}
+
+
+@book{eai,
+	author = {Hohpe, Gregor and Woolf, Bobby},
+	howpublished = {Hardcover},
+	isbn = {0321200683},
+	keywords = {book, eai},
+	month = {October},
+	posted-at = {2005-08-16 19:09:47},
+	priority = {2},
+	publisher = {{Addison-Wesley Professional}},
+	title = {{Enterprise Integration Patterns : Designing, Building, and Deploying Messaging Solutions}},
+	url = {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20&path=ASIN/0321200683},
+	year = {2003}
+}
+
+
+@book{esb,
+ author = {Chappell, David},
+ title = {{Enterprise Service Bus}},
+ year = {2004},
+ isbn = {0596006756},
+ publisher = {O'Reilly Media, Inc.},
+ }
+
+@book{openEsb,
+ author = {Rademakers, Tijs and Dirksen, Jos},
+ title = {{Open-Source ESBs in Action}},
+ year = {2008},
+ isbn = {1933988215, 9781933988214},
+ publisher = {Manning Publications Co.},
+ address = {Greenwich, CT, USA},
+ }
+
+	
+%project mgt
+
+@book{manMonth,
+	howpublished = {Paperback},
+	isbn = {0201835959},
+	keywords = {engineering, history, is2, reference, software},
+	month = {August},
+	posted-at = {2007-10-08 10:34:41},
+	priority = {0},
+	publisher = {{Addison-Wesley Professional}},
+	title = {{The Mythical Man-Month: Essays on Software Engineering, 20th  Anniversary Edition}},
+	url = {http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20&path=ASIN/0201835959},
+	year = {1995}
+}
+
+	
+%research
+
+@book{craftResearch,
+  author = {Wayne C. Booth and Gregory G. Colomb and Joseph M. Williams},
+  edition = {2.},
+  publisher = {Univ. of Chicago Press},
+  title = {{The Craft of Research}},
+  year = {2003},
+  isbn = {0-226-06583-9, 0-226-06584-7},
+  language = {engl.}
+}
+
+
+@book{ACM01,
+  author = {Deepak Alur and John Crupi and Dan Malks},
+  interHash = {eefe471c8379a321eed5d32b1288ed3b},
+  intraHash = {53cc7e2d0157969277a58b57042e3245},
+  publisher = {Prentice Hall},
+  title = {{Core J2EE Patterns: Best Practices and Design Strategies, 1/e}},
+  year = {2001}
+}
+
+
+
+@book{bpm,
+	howpublished = {Paperback},
+	isbn = {1847191460},
+	keywords = {bpel, bpmn, service, soa},
+	month = {August},
+	posted-at = {2009-07-10 13:27:22},
+	priority = {2},
+	publisher = {Packt Publishing},
+	title = {{Business Process Driven SOA using BPMN and BPEL: From Business Process Modeling to Orchestration and Service Oriented Architecture}},
+	year = {2008}
+}
+
+
+@book{Smith2003,
+	author = {Smith, Howard and Fingar, Peter},
+	editor = {Press, Meghan K.},
+	keywords = {file-import-09-08-11},
+	posted-at = {2009-08-11 02:09:18},
+	priority = {2},
+	title = {{B}usiness {P}rocess {M}anagement: {T}he {T}hird {W}ave},
+	year = {2003}
+}
+
+@techreport{Keller04,
+	author = {Keller, Uwe and Lara, Rub\'{e}n and Polleres, Axel and Toma, Ioan and Kifer, Michel and Fensel, Dieter},
+	citeulike-article-id = {2582753},
+	editor = {Keller, Uwe and Lara, Rub\'{e}n and Polleres, Axel},
+	institution = {DERI},
+	keywords = {csur, dea, discovery, semantic, web-service, wsmo},
+	month = {November},
+	number = {D5.1v0.1},
+	posted-at = {2008-03-24 20:39:29},
+	priority = {2},
+	title = {{WSMO Web Service Discovery}},
+	year = {2004}
+}	
+	
+@book{861318,
+ author = {Monson-Haefel, Richard},
+ title = {{J2EE Web Services}},
+ year = {2003},
+ isbn = {0321146182},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+ }
+
+
+@book{599733,
+ author = {Ferrara, Alex and MacDonald, Matthew},
+ title = {{Programming .Net Web Services}},
+ year = {2002},
+ isbn = {0596002505},
+ publisher = {O'Reilly \& Associates, Inc.},
+ address = {Sebastopol, CA, USA},
+ }
+
+
+@TechReport{mashup,
+  author =       {Rafael Fernández},
+  title =        {{D4.2.1} Estudio de las Plataformas de Mashup y Elección de la más apropiada}},
+  institution =  {Proyecto Vulcano-FIT-350503-2007-7},
+  year =         {2008},
+  type = {{Vulcano} Deliverable D4.2.1},
+  note = {http://forge.morfeo-project.org/projects/vulcano/}
+}
+
+
+
+@TechReport{WSA,
+  author =       {David Booth and Hugo Haas and Francis McCabe},
+  title =        {{Web Services Architecture}},
+  institution =  {W3C},
+  year =         {2004},
+  type = {{W3C} Recommendation},
+  note = {http://www.w3.org/TR/ws-arch/}
+}
+
+
+
+
+@inproceedings{Leukel-ecatalog2005,
+ author = {Volker Schmitz and Joerg Leukel and Frank-Dieter Dorloff},
+ title = {{Do E-Catalog Standards Support Advanced Processes in B2B E-Commerce? Findings from the CEN/ISSS Workshop eCAT}},
+ booktitle = {HICSS '05: Proceedings of the Proceedings of the 38th Annual Hawaii International Conference on System Sciences (HICSS'05) - Track 7},
+ year = {2005},
+ isbn = {0-7695-2268-8-7},
+ pages = {162.3},
+ doi = {http://dx.doi.org/10.1109/HICSS.2005.209},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ }
+
+
+@inproceedings{Leukel-standard,
+  author = {Joerg Leukel},
+  title = {{Standardization of product Ontologies in B2B relationships, On the role of ISO 13584}},
+  booktitle={Proceedings of the Tenth Americas Conference on Information Systems},
+  address = {New York, United States},
+  pages = {4084-4091},
+  year = {2004},
+}
+
+
+@misc{Leukel-modeling,
+  author = {Joerg Leukel and Volker Schmitz and Frank-Dieter Dorloff},
+  title = {A Modeling Approach for Product Classification Systems},
+  url = {citeseer.ist.psu.edu/leukel02modeling.html}
+}
+
+
+@misc{Leukel-exchange,
+  author = {Joerg Leukel and Volker Schmitz and Frank-Deiter Dorloff},
+  title = {Exchange Of Catalog Data In B2B Relationships - Analysis And Improvement},
+  url = {citeseer.ist.psu.edu/leukel02exchange.html},
+}
+
+
+@inproceedings{Leukel-automating,
+  author = {Joerg Leukel},
+  title = {Automating Product Classification: The},
+  booktitle={Proceedings of the IADIS International Conference e-Society 2004 (ES 2004)},
+  address = {Ávila, Spain},
+  year = {2004},
+}
+
+@article{Leukel-comparative,
+  author = {Joerg Leukel and Gregory Maniatopoulos},
+  title = {A Comparative Analysis of Product Classification in Public vs. Private e-Procurement},
+  journal={The Electronic Journal of e-Government (EJEG)},
+  vol={3},
+  number={4},
+  pages = {201-212}, 
+  year = {2005},
+}
+
+@article{Leukel-findings,
+  author = {Volker Schmitz and Joerg Leukel},
+  title = {Findings and Recommendations from a Pan-European Research Project: Comparative Analysis of E-Catalog Standards},
+  journal={International Journal of IT Standards and Standardization Research (JITSR), Idea Group},
+  vol={3},
+  number={2},
+  pages = {51-65}, 
+  year = {2005},
+}
+
+%FIXME REVISAR: vol, number, pages
+@article{Hoffmann-principles,
+ author = {Eivind Hoffmann and Mary Chamie},
+ title = {Standard Statistical Classifications: Basic Principles},
+ journal={Third Meeting of the Expert Group on International Economic and Social Classifications},
+ vol={3},
+ number={2},
+ pages = {51-65}, 
+ year = {1997}
+ }
+%FIXME REVISAR: vol, number, pages, year
+@article{Norbert-class,
+ author = {Norbert Rainer},
+ title = {{El sistema revisado de nomenclaturas y clasificaciones internacionales}},
+ journal={CIIU Rev.3, Nace Rev.1, CPA, Unión Europea},
+ vol={3},
+ number={2},
+ pages = {51-65}, 
+ year = {1997}
+ }
+
+
+
+@TechReport{soa4allProjects,
+  author =       {Alessio Gugliotta and Pierre Grenon and Carlos Pedrinaci and others},
+  title =        {{D0.3. SOA4All: Moving Beyond Related EU Projects}},
+  institution =  {European Project-FP7},
+  year =         {2008},
+  type = {{SOA4All} Deliverable D0.3.},
+  note = {http://www.soa4all.eu}
+}
+
+
+@TechReport{GroundingMiguel,
+  author =       {Miguel García Rodríguez},
+  title =        {{AGUA: Automatizaci\'on de Grounding Usando Anotaciones}},
+  institution =  {Universidad de Oviedo, Departamento de Informática},
+  year =         {2008},
+  note= {http://agua.morfeo-project.org/}
+}
+
+
+@techreport{OrtinTesis,
+    author = "Francisco Ortín Soler",
+    title = "{A} {F}lexible {P}rogramming {C}omputational {S}ystem developed over a {N}on-{R}estrictive {R}eflective {A}bstract {M}achine",
+    institution="University of Oviedo, at the Computer Science Department",
+    number = "PhD. Thesis",
+    month = "12",
+    year = "2001",
+    url = "www.reflection.uniovi.es" }
+
+@techreport{MaesTesis,
+    author = "Pattie Maes",
+    title = "{C}omputational {R}eflection",
+    institution="Vrije Universiteit Brussel, Belgium",
+    number = "PhD. Thesis",
+    month = "12",
+    year = "1983"}
+
+
+
+   @book{python03,
+title = {{T}he {P}ython {L}anguage {R}eference {M}anual},
+author = {Guido Van Rossum},
+howpublished = {Paperback},
+month = {September},
+publisher = {Network Theory Ltd.},
+url = {http://docs.python.org},
+year = {2003},
+abstract = {This manual is the definitive language reference for Python. It describes the syntax of Python and its built-in datatypes in depth. Python is an interpreted object-oriented programming language, suitable for rapid application development and scripting. Python's syntax emphasizes readability, which reduces the cost of program maintenance. This manual covers advanced topics, and is suitable for readers who need to be familiar with the details and rules of the Python language and its object system. A tutorial suitable for those new to Python is available in the companion volume "An Introduction to Python". The standard Python library is documented separately in "The Python Library Reference Manual".},
+keywords = {python }
+} 
+
+
+@TechReport{EuroWordNet,
+  author =       {Piek Vossen},
+  title =        {{EuroWordNet, General Document}},
+  institution =  {University of Amsterdam},
+  year =         {1999}
+}
+
+@MISC{DAML-OIL,
+  AUTHOR = {Frank {van Harmelen} and Peter F. Patel-Schneider and Ian Horrocks},
+  DATE-MODIFIED = {2007-01-31 09:54:00 +0000},
+  MONTH = {MAR},
+  NOTE = {\url{http://www.daml.org/2001/03/reference.html}},
+  TITLE = {{Reference Description of the {DAML+OIL} ({M}arch 2001)
+Ontology Markup Language}},
+  YEAR = 2001
+}
+
+@inproceedings{1091605,
+ author = {Lee, YeongSeok and Bae, JungHyun and Shin, Seokkoo},
+ title = {{Development of Quality Evaluation Metrics for BPM (Business
+Process Management) System}},
+ booktitle = {ICIS '05: Proceedings of the Fourth Annual ACIS International
+Conference on Computer and Information Science},
+ year = {2005},
+ isbn = {0-7695-2296-3},
+ pages = {424--429},
+ doi = {http://dx.doi.org/10.1109/ICIS.2005.54},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ }
+
+
+@TechReport{soaMetrics,
+  author =       {John Salasin},
+  title =        {{Preliminary SOA Indicators/Metrics: A starting point
+for technical discussion / elaboration}},
+  institution =  {NIST},
+  year =         {2006}
+}
+
+@inproceedings{1555645,
+ author = {Cleven, Anne and Gubler, Philipp and H\"{u}ner, Kai M.},
+ title = {{Design alternatives for the evaluation of design science research
+artifacts}},
+ booktitle = {{DESRIST '09: Proceedings of the 4th International Conference on
+Design Science Research in Information Systems and Technology}},
+ year = {2009},
+ isbn = {978-1-60558-408-9},
+ pages = {1--8},
+ location = {Philadelphia, Pennsylvania},
+ doi = {http://doi.acm.org/10.1145/1555619.1555645},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+
+@book{Fowler1999,
+title = {{Refactoring: Improving the Design of Existing Code}},
+address = {Boston, MA, USA},
+author = {Martin Fowler},
+publisher = {Addison-Wesley},
+year = {1999},
+description = {AOEvolutionchapter short paper},
+isbn = {0-201-48567-2},
+keywords = {evolution refactoring software }
+} 
+
+
+@book{beck04,	
+	howpublished = {Paperback},
+	isbn = {0321278658},
+	keywords = {agile, development, extreme, programming, software, xp},
+	month = {November},
+	posted-at = {2009-04-12 00:06:10},
+	priority = {3},
+	publisher = {{Addison-Wesley Professional}},
+	title = {{Extreme Programming Explained : Embrace Change (2nd
+Edition)}},
+	year = {2004}
+}
+
+@book{citeulike:115158,
+	howpublished = {Hardcover},
+	isbn = {0201633612},
+	keywords = {design, development, pattern, software},
+	month = {November},
+	priority = {2},
+	publisher = {Addison-Wesley Professional},
+	title = {{Design Patterns: Elements of Reusable Object-Oriented Software
+(Addison-Wesley Professional Computing Series)}},
+	year = {1994}
+}
+@book{interoperability,
+ author = {Konstantas, Dimitri and Bourri\`{e}res, Jean-Paul and L\'{e}onard,
+Michel and Boudjlida, Nacer},
+ title = {{Interoperability of Enterprise Software and Applications}},
+ year = {2005},
+ isbn = {1846281512},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+ }

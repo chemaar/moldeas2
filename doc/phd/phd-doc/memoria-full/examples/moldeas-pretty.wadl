@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<application xmlns="http://research.sun.com/wadl/2006/10">
+  <resources base="http://156.35.31.156/moldeas/services/">
+    ...
+    <resource path="/moldeas">
+      <resource path="search">
+        <method name="GET">
+          <request>
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="cpvCodes"/>
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="nutsCodes"/>
+	    ...
+            <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="query" name="maxDuration"/>
+          </request>
+          <response>
+            ...
+          </response>
+        </method>
+      </resource>
+      <resource path="search/code/{code}">
+        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="template" name="code"/>
+        <method name="GET">
+          <response>
+         ...
+          </response>
+        </method>
+      </resource>
+     <resource path="search/enhanced/{code}">
+        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="template" name="code"/>
+        <method name="GET">
+          <response>
+        ...
+          </response>
+        </method>
+      </resource>
+      <resource path="search/createQuery/code/{code}">
+        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="template" name="code"/>
+        <method name="GET">
+          <response>
+         ...
+          </response>
+        </method>
+      </resource>
+      <resource path="search/createQuery/enhanced/{code}">
+        <param xmlns:xs="http://www.w3.org/2001/XMLSchema" type="xs:string" style="template" name="code"/>
+        <method name="GET">
+          <response>
+          ...
+          </response>
+        </method>
+      </resource>
+    </resource>
+	...
+   </resources>
+</application>

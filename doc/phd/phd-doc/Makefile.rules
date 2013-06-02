@@ -1,0 +1,18 @@
+RUBBER=rubber
+RUBBER_MODULES=--module makeidx
+
+all: $(DOCUMENTO).ps
+
+$(DOCUMENTO).ps:
+	$(RUBBER) $(RUBBER_MODULES) --ps $(DOCUMENTO)
+
+$(DOCUMENTO).pdf:
+	$(RUBBER) $(RUBBER_MODULES) --pdf $(DOCUMENTO)
+
+clean:
+	rm  -f `find . -name "*~"` *.out *.ps *.pdf
+	$(RUBBER) --clean $(DOCUMENTO)
+
+distclean: clean
+	$(RUBBER) --ps --pdf --clean $(DOCUMENTO)
+

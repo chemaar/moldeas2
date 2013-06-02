@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events xmlns="http://purl.org/weso/events" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://purl.org/weso/events events.xsd">
+	<event type="family">
+		<title>Bautizo</title>
+		<date>28/10/2011</date>
+		<start>12:00:00</start>
+		<place>Tapia de Casariego</place>
+		<description>
+			Bautizo de <xhtml:em>Pablo</xhtml:em> en 
+<xhtml:a href="http://maps.google.com/maps" title="Tapia de Casariego">Tapia de Casariego</xhtml:a>. 
+		</description>		
+	</event>
+	<event type="work">
+		<title>Seguimiento</title>
+		<date>04/11/2010</date>
+		<start>10:00:00</start>
+		<end>13:00:00</end>
+		<place>Facultad de Ciencias, Oviedo</place>
+		<persons>
+			<person>Chema</person>
+		</persons>
+		<description>
+			Kick-off de 10ders.
+		</description>
+	</event>	
+</events>

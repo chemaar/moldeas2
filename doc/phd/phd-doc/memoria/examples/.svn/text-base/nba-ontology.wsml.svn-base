@@ -1,0 +1,235 @@
+namespace { _"http://demo.org/nba.owl#"
+, 
+     rdf _"http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+     rdfs _"http://www.w3.org/2000/01/rdf-schema#", 
+     owl _"http://www.w3.org/2002/07/owl#", 
+     ns3 _"http://demo.org/nba.owl#", 
+     dc _"http://purl.org/dc/elements/1.1/", 
+     wsml _"http://www.wsmo.org/wsml/wsml-syntax#", 
+     xsd _"http://www.w3.org/2001/XMLSchema#" }
+
+ontology _"http://demo.org/nba.owl"
+
+axiom Division1
+     nonFunctionalProperties
+          dc#relation hasValue Division
+     endNonFunctionalProperties
+     definedBy 
+          ?x memberOf ns3#Division implies exists ?y1 (?x[ns3#perteneceA hasValue ?y1] and (?y1 memberOf ns3#Conferencia) ).
+
+
+axiom Equipo2
+     nonFunctionalProperties
+          dc#relation hasValue Equipo
+     endNonFunctionalProperties
+     definedBy 
+          ?x memberOf ns3#Equipo implies exists ?y1 (?x[ns3#perteneceA hasValue ?y1] and (?y1 memberOf ns3#Division) ).
+
+
+axiom Jugador3
+     nonFunctionalProperties
+          dc#relation hasValue Jugador
+     endNonFunctionalProperties
+     definedBy 
+          ?x memberOf ns3#Jugador implies exists ?y1 (?x[ns3#juegaEn hasValue ?y1] and (?y1 memberOf ns3#Equipo) ).
+
+
+axiom esEntrenadoPor4
+     nonFunctionalProperties
+          dc#relation hasValue esEntrenadoPor
+     endNonFunctionalProperties
+     definedBy 
+          ?x memberOf ns3#Equipo impliedBy ns3#esEntrenadoPor(?x,?y).
+
+axiom esEntrenadoPor5
+     nonFunctionalProperties
+          dc#relation hasValue esEntrenadoPor
+     endNonFunctionalProperties
+     definedBy 
+          ?y memberOf ns3#Entrenador impliedBy ns3#esEntrenadoPor(?x,?y).
+
+axiom esEntrenadoPor6
+     nonFunctionalProperties
+          dc#relation hasValue esEntrenadoPor
+     endNonFunctionalProperties
+     definedBy 
+          ?x[ns3#esEntrenadoPor hasValue ?y] impliedBy ?y[ns3#entrenaA hasValue ?x].
+
+axiom esEntrenadoPor7
+     nonFunctionalProperties
+          dc#relation hasValue esEntrenadoPor
+     endNonFunctionalProperties
+     definedBy 
+          ?x[ns3#entrenaA hasValue ?y] impliedBy ?y[ns3#esEntrenadoPor hasValue ?x].
+
+axiom entrenaA8
+     nonFunctionalProperties
+          dc#relation hasValue entrenaA
+     endNonFunctionalProperties
+     definedBy 
+          ?x memberOf ns3#Entrenador impliedBy ns3#entrenaA(?x,?y).
+
+axiom entrenaA9
+     nonFunctionalProperties
+          dc#relation hasValue entrenaA
+     endNonFunctionalProperties
+     definedBy 
+          ?y memberOf ns3#Equipo impliedBy ns3#entrenaA(?x,?y).
+
+axiom entrenaA10
+     nonFunctionalProperties
+          dc#relation hasValue entrenaA
+     endNonFunctionalProperties
+     definedBy 
+          ?x[ns3#entrenaA hasValue ?y] impliedBy ?y[ns3#esEntrenadoPor hasValue ?x].
+
+axiom entrenaA11
+     nonFunctionalProperties
+          dc#relation hasValue entrenaA
+     endNonFunctionalProperties
+     definedBy 
+          ?x[ns3#esEntrenadoPor hasValue ?y] impliedBy ?y[ns3#entrenaA hasValue ?x].
+
+axiom juegaEn12
+     nonFunctionalProperties
+          dc#relation hasValue juegaEn
+     endNonFunctionalProperties
+     definedBy 
+          ?y memberOf ns3#Equipo impliedBy ns3#juegaEn(?x,?y).
+
+axiom juegaEn13
+     nonFunctionalProperties
+          dc#relation hasValue juegaEn
+     endNonFunctionalProperties
+     definedBy 
+          ?x memberOf ns3#Jugador impliedBy ns3#juegaEn(?x,?y).
+
+concept Division subConceptOf owl#Thing
+     nonFunctionalProperties
+          dc#relation hasValue Division1
+     endNonFunctionalProperties
+
+concept JugadorDivisionSudeste
+
+concept EquipoDivisionSudeste subConceptOf Equipo
+
+concept EquipoDivisionCentral subConceptOf Equipo
+
+concept EntrenadorDivisionCentral
+
+concept JugadorConferenciaOeste
+
+concept EntrenadorConferenciaOeste
+
+concept JugadorConferenciaEste
+
+concept EquipoDivisionAtlantico subConceptOf Equipo
+
+concept JugadorDivisionAtlantico
+
+concept EntrenadorDivisionAtlantico
+
+concept Equipo subConceptOf owl#Thing
+     nonFunctionalProperties
+          dc#relation hasValue Equipo2
+     endNonFunctionalProperties
+
+concept EntrenadorDivisionSudeste
+
+concept JugadorDivisionPacifico
+
+concept Entrenador subConceptOf Persona
+
+concept EntrenadorDivisionNoroeste
+
+concept EntrenadorDivisionPacifico
+
+concept EntrenadorDivisionSuroeste
+
+concept EquipoDivisionSuroeste subConceptOf Equipo
+
+concept JugadorDivisionSuroeste
+
+concept EquipoDivisionNoroeste subConceptOf Equipo
+
+concept JugadorDivisionNoroeste
+
+concept EntrenadorConferenciaEste
+
+concept Jugador subConceptOf Persona
+     nonFunctionalProperties
+          dc#relation hasValue Jugador3
+     endNonFunctionalProperties
+
+concept Persona
+
+concept EquipoDivisionPacifico subConceptOf Equipo
+
+concept JugadorDivisionCentral
+
+concept Conferencia
+
+relation perteneceA( impliesType owl#Thing,  impliesType owl#Thing)
+
+relation esEntrenadoPor( impliesType Equipo,  impliesType Entrenador)
+     nonFunctionalProperties
+          dc#relation hasValue {esEntrenadoPor4, esEntrenadoPor5, esEntrenadoPor6, esEntrenadoPor7}
+     endNonFunctionalProperties
+
+relation entrenaA( impliesType Entrenador,  impliesType Equipo)
+     nonFunctionalProperties
+          dc#relation hasValue {entrenaA8, entrenaA9, entrenaA10, entrenaA11}
+     endNonFunctionalProperties
+
+relation juegaEn( impliesType Jugador,  impliesType Equipo)
+     nonFunctionalProperties
+          dc#relation hasValue {juegaEn12, juegaEn13}
+     endNonFunctionalProperties
+
+instance Gasol memberOf Jugador
+
+instance Sudeste memberOf Division
+
+instance Calderon memberOf Jugador
+
+instance Pacifico memberOf Division
+
+instance Portland memberOf EquipoDivisionNoroeste
+
+instance Toronto memberOf EquipoDivisionAtlantico
+
+instance Noroeste memberOf Division
+
+instance Chicago memberOf EquipoDivisionCentral
+
+instance Central memberOf Division
+
+instance ConferenciaEste memberOf Conferencia
+
+instance Kobe memberOf Jugador
+
+instance PeterJackson memberOf Entrenador
+
+instance Miami memberOf EquipoDivisionSudeste
+
+instance Lakers memberOf EquipoDivisionPacifico
+
+instance ConferenciaOeste memberOf Conferencia
+
+instance Memphis memberOf EquipoDivisionSuroeste
+
+instance Suroeste memberOf Division
+
+instance Atlantico memberOf Division
+
+relationInstance juegaEn(Gasol, Memphis)
+
+relationInstance juegaEn(Calderon, Toronto)
+
+relationInstance juegaEn(Kobe, Lakers)
+
+relationInstance entrenaA(PeterJackson, Lakers)
+
+relationInstance esEntrenadoPor(Lakers, PeterJackson)
+
+relationInstance perteneceA(Atlantico, ConferenciaEste)

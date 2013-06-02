@@ -1,0 +1,74 @@
+%sobre
+\chapter*{Sobre este documento}
+
+Este documento recoge el estudio realizado sobre la aplicación
+de métodos semánticos para la producción, publicación y consumo 
+de datos enlazados abiertos en el contexto de la administración pública
+electrónica y más en concreto en el campo de la contratación pública
+electrónica o e-Procurement. Esta memoria de investigación titulada como
+``Métodos Semánticos de Reutilización de Datos Abiertos Enlazados en las
+Licitaciones Públicas'' se ha elaborado para la obtención del título
+de Doctor por la Universidad de Oviedo..
+
+El documento se encuentra organizado de la siguiente forma:
+\begin{itemize}
+\item ``Introducción'' (ver Capítulo~\ref{capitulo:introduccion}): se realiza
+una motivación del problema de investigación a resolver identificando el plan
+y la metodología de trabajo seguida durante el proceso de elaboración
+de la tesis doctoral.
+
+\item ``Contratación Pública y \eproc'' (ver Capítulo~\ref{capitulo:eprocurement}): se 
+presenta la casuística del dominio del problema a estudiar así como las soluciones
+actuales más cercanas al enfoque desarrollado durante la investigación en el dominio
+de la administración electrónica centrando los esfuerzos en la valoración
+de los procesos de contratación pública electrónica.
+
+\item ``Panorámica de uso de la Web Semántica y \linkeddata'' (ver Capítulo~\ref{capitulo:semantica}): se
+repasan desde un punto de vista general el estado del arte de estas iniciativas así como
+su aplicación en los disintos dominios.
+
+\item ``Definición de Métodos Semánticos'' (ver Capítulo~\ref{capitulo:metodos}): se realiza
+la definición teórica de una serie de procesos, métodos y tareas a realizar para la promoción
+de datos siguiendo las directrices de \linkeddata y atendiendo a los principios
+de \opendata.
+
+\item ``Métodos Semánticos en el ámbito de las Licitaciones Públicas'' (ver Capítulo~\ref{capitulo:metodos-separados}): se materializa
+los procesos, métodos y tareas definidos en el capítulo anterior para su aplicación en el campo
+de los anuncios de licitación públicos.
+
+
+\item ``Sistema MOLDEAS'' (ver Capítulo~\ref{capitulo:moldeas}): se describe la implementación
+de los componentes realizados para dar soporte a los procesos, métodos y tareas de carácter
+semántica en el dominio de las licitaciones públicas.
+
+
+\item ``Experimentación y Validación'' (ver Capítulo~\ref{capitulo:validacion}): se diseña
+el experimento y se evalúan y valoran los resultados obtenidos de la investigación realizada.
+
+
+% \item ``Evaluación'' (ver Capítulo~\ref{capitulo:evaluacion}): se evalúan los
+% resultados obtenidos durante la experimentación realizada.
+
+\item ``Conclusiones y Trabajo Futuro''(ver Capítulo~\ref{capitulo:conclusiones}): se comentan las conclusiones obtenidas
+tras la realización de esta memoria de investigación. También se marcan las líneas de evolución futura.
+
+\item ``Impacto y Difusión'' (ver Apéndice~\ref{capitulo:impacto}): se detallan las actividades
+de difusión realizadas a través de los distintos canales durante la elaboración de la tesis doctoral valorando su impacto
+en la comunidad científica e industrial.
+
+
+\item ``Trabajos publicados'' (ver Apéndice~\ref{capitulo:publicaciones}): se enumeran
+las publicaciones científicas realizadas que han surgido como parte del trabajo realizado
+durante la elaboración de la investigación.
+
+
+\item ``Tablas de Validación'' (ver Apéndice~\ref{capitulo:tablas}): se presentan
+las tablas de validación pormenorizadas atendiendo a todos los criterios definidos
+en la experimentación de la investigación.
+
+
+\end{itemize}
+
+\chapter*{Sobre el autor}
+
+FIXME

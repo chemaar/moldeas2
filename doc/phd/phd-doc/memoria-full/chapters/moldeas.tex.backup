@@ -1,0 +1,63 @@
+\section{Introducción}
+En el caso objeto de estudio de este documento se han planteado la aplicación de los principios 
+de \linkeddata para el modelado y explotación de datos e información provenientes de los anuncios de 
+licitación públicos. Para ello y como se ha presentado en los anteriores capítulos se ha definido 
+un ciclo de vida de datos enlazados que a través de procesos, métodos y tareas suministra una metodología 
+de actuación genérica para actuar en este sentido. Como ejemplo de su validez y aplicación se han utilizado 
+los datos de los contratos públicos para ejemplificar los procesos de producción, publicación, consumo, validación y 
+actualización. Aunque ciertas tareas se apoyan en el uso de aplicaciones de terceros como Google Refine o bien 
+en la parametrización de bibliotecas ya existentes como Apache Lucene, es necesario suministrar un entorno 
+en el cual los resultados de aplicar las tareas puedan ser procesados para implementar algunas de las tareas 
+especificadas y así ejemplificar transversalmente el uso de datos enlazados en un determinado dominio. Por ello y 
+de acuerdo al análisis y especificación realizado se plantea la necesidad de diseñar los componentes del sistema 
+MOLDEAS como paso final para la cobertura en el uso de datos enlazados en el campo de la contratación pública 
+electrónica y teniendo presente los siguientes objetivos:
+
+\begin{itemize}
+ \item Facilitar y dar soporte a las tareas del ciclo de vida que no pueden ser desarrolladas completamente 
+por herramientas externas.
+\item Validar los datos generados por otras herramientas.
+\item Enriquecer con procesos \textit{ad-hoc} la información y datos de los anuncios de licitación según el modelo 
+y especificación fijadas en el Capítulo~\ref{capitulo:metodos-separados}.
+\item Implementar un demostrador público de consumo de datos enlazados.
+\item Proveer un sistema de búsqueda/recomendación de anuncios de licitación de acuerdo a criterios predefinidos 
+por el cliente.
+\end{itemize}
+
+
+\begin{figure}[h]
+\begin{tikzpicture}
+  \path[mindmap,concept color=gray,text=white]
+    node[concept] {MOLDEAS}
+    [clockwise from=0]
+    child[concept color=green!50!black] {
+      node[concept] {moldeas-api}   
+      [clockwise from=-90]
+      child [concept color=green!80] { node[concept] {\textbf{Consume}} }   
+    }  
+    child[concept color=blue] {
+      node[concept] {moldeas-transformer}
+      [clockwise from=-90]
+      child [concept color=blue!50] { node[concept] {\textbf{Produce}} }
+      child [concept color=blue!50] { node[concept] {\textbf{Publish}} }           
+    }
+    child[concept color=orange] { node[concept] {moldeas-test} 
+      [clockwise from=-90]
+      child  [concept color=orange!50] { node[concept] {\textbf{Validate}} }      
+    }
+    child[concept color=red] { node[concept] {moldeas-common} } ;
+   
+\end{tikzpicture}
+    \caption{MOLDEAS: Componentes y Procesos.}
+ \label{fig:com}
+\end{figure}
+\section{Análisis del Sistema MOLDEAS}
+\section{Consideraciones Generales de Diseño}
+\input{chapters/moldeas/disenyo-general}
+\subsection{Diseño de Componentes del Sistema MOLDEAS}
+\subsubsection{Diseño de moldeas-common}
+\subsubsection{Diseño de moldeas-transformer}
+\subsubsection{Diseño de moldeas-api}
+\subsubsection{Diseño de moldeas-test}
+\subsubsection{Diseño de moldeas-web}
+\section{Pruebas del Sistema MOLDEAS}

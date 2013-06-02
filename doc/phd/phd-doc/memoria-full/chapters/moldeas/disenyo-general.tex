@@ -1,0 +1,157 @@
+En un sentido amplio, dado un problema y un dispositivo en el cual resolverlo, es necesario suministrar un método preciso de respuesta a la casuística 
+planteada en el problema de acuerdo al dispositivo objetivo, a tal método se denomina \textit{algoritmo}. El diseño de algoritmos\cite{Vallecillo} 
+tiene dos componentes importantes:
+
+\begin{enumerate}
+  \item El primero se refiere a la búsqueda de métodos o procedimientos, secuencias
+finitas de instrucciones adecuadas al dispositivo del cual se dispone, que permita resolver el problema.  
+\item  El segundo permite medir de alguna forma el coste (en tiempo y recursos) de consumo de un algoritmo con el fin de encontrar la
+solución, ofreciendo la posibilidad de comparar distintos algoritmos que resuelven un mismo problema.
+\end{enumerate}
+
+Una vez que se dispone de un algoritmo que funciona correctamente, es necesario
+definir criterios con el objetivo de medir su rendimiento o comportamiento. Estos criterios se centran principalmente en su 
+simplicidad y en el uso eficiente de los recursos. La sencillez es una característica sensiblemente interesante en el diseño 
+de algoritmos, facilitando su verificación, el estudio de su eficiencia y el mantenimiento. De ahí que muchas veces se priorice la simplicidad y legibilidad 
+del código frente a alternativas más crípticas y eficientes del algoritmo. Por otra parte, el uso eficiente de los recursos suele medirse en función de dos
+parámetros: el \textit{espacio}, es decir, memoria utilizada, y el \textit{tiempo}, unidades de tiempo de ejecución. En ambos casos, 
+se hace referencia a los costes que supone la búsqueda de la solución al problema planteado mediante un algoritmo, además estos dos parámetros 
+son utilizados para una posible comparación ulterior de los algoritmos entre sí.
+
+El tiempo de ejecución de un algoritmo dependerá de diversos factores como los datos de entrada que le suministremos, la calidad del código
+generado por el compilador para crear el programa objeto, la naturaleza y rapidez de las instrucciones máquina del procesador concreto que ejecute el programa, y la
+complejidad intrínseca del algoritmo.  Existen dos tipos posibles de estudio sobre el tiempo:
+
+\begin{enumerate}
+\item  Áquel que proporciona una medida teórica (a priori), consistiendo en la obtención de una función que acote 
+(inferior o superiormente) el tiempo de ejecución del algoritmo para unos valores de entrada determinados.
+\item  El qué ofrece una medida real (a posteriori), consistiendo la medición del tiempo de ejecución del algoritmo para unos valores de entrada determinados 
+y un entorno de ejecución particular.
+\end{enumerate}
+
+Ambas medidas son importantes puesto que si bien la primera nos ofrece estimaciones
+del comportamiento de los algoritmos de forma independiente del ordenador en donde serán implementados y sin necesidad de ejecutarlos, 
+la segunda representa las medidas reales del comportamiento del algoritmo. 
+
+\subsection{Consideraciones Diseño de Programas}\label{consideraciones-diseno}
+El objetivo de implementación del sistema \gls{MOLDEAS} recae en suministrar parcialmente soporte 
+a los distintos procesos implicados en el ciclo de vida de datos enlazados, 
+si bien algunas tareas se realizan mediante el uso de ciertas herramientas, existen otras que deben ser parametrizadas e implementadas 
+para ofrecer un entorno homogéneo para el manejo de la información y datos 
+provenientes de los anuncios de licitación. La separación de responsabilidades 
+entre los distintos componentes se realiza de acuerdo a su funcionalidad, de esta manera 
+es posible realizar cambios transparentes en los componentes sin que los otros sean 
+involucrados en el proceso de cambio: implementación, prueba y empaquetamiento. Por ello, 
+se han definido los interfaces de comunicación entre los mismos como un API para que 
+cualquier futuro desarrollo se apoye en este \textit{framework} para añadir nuevas 
+funcionalidades. Las claves para un diseño abierto de un \gls{API} 
+coinciden en muchos sentidos con los de un lenguaje de programación \cite{Interpretes}:
+
+\begin{description}
+\item[Concisión notacional:] el API deberá proporcionar un entorno con un nivel
+de detalle adecuado: interfaces claras, simples, unificadas etc. Las posibles 
+ampliaciones sobre el \textit{framework} de \textit{MOLDEAS} deben resultar sencillas
+y no presentar inconvenientes para el programador comprender y extender su diseño.
+
+\item[Ortogonalidad:] la funcionalidad del API debe suministrar el mecanismo
+adecuado para combinar nuevos componentes y rechazar algunos de los ya
+presentes. Por ejemplo la adición de nuevas restricciones no debe suponer una
+recodificación del código del algoritmo.
+
+\item[Abstracción:] el diseño del API debe basarse en el uso de técnicas como
+los patrones de diseño e interfaces favoreciendo la abstracción de algoritmos.
+
+\item[Seguridad:] los algoritmos implementados debe tener puntos obligatorios de restricciones
+para verificar por ejemplo su terminación aunque se añadan nuevas
+restricciones. 
+
+\item[Expresividad:] el API debe ser lo suficientemente ``rica'' como para que
+nuevas ampliaciones puedan ser formuladas de forma sencilla de acuerdo a la información 
+y datos presentes en los anuncios de licitación y en su modelo formal. 
+
+\item[Extensiblidad:] el API debe basarse en técnicas de programación que
+favorezcan la adición de nuevas características y su adaptación para nuevas
+configuraciones del algoritmo
+
+
+\item[Portabilidad:] el lenguaje seleccionado para proporcionar estas técnicas
+debe poseer esta característica.
+
+\item[Eficiencia:] en cualquier implementación de un algoritmo o conjunto de los mismos esta característica es fundamental y
+aunque el API diseñado, atendiendo a las características anteriores pueda
+sobrecargar la ejecución básica de los procesos, su penalización en tiempo no es tan alta 
+como para descartar los principios de diseño anteriores.
+
+\item[Librerías e interacción con el exterior:] la ejecución de las funcionalidades 
+provistas deberá ser independiente del lenguaje de ontologías utilizado, así aislamos el
+conjunto de técnicas de la fuente de conocimiento favoreciendo el uso del
+cualquier lenguaje de formalización.
+
+\item[Entorno:] para facilitar la depuración de los algoritmos realizados se
+proveerá un entorno gráfico en el cual poder visualizar la ejecución.
+\end{description}
+
+Además de estas principios generales para el diseño del API, hay que tener en
+cuenta: 
+
+\begin{itemize}
+  \item El entorno de ejecución puede ser una aplicación web, por lo que, se
+  deberá tener en cuenta en el diseño para que pueda fácilmente integrarse con
+  \textit{frameworks} como Spring.
+  \item La mayoría de las aplicaciones utilizando Web Semántica utilizan el
+  lenguaje Java, por lo tanto, este será el lenguaje seleccionado en su última versión.
+\end{itemize}
+ 
+\subsection{Patrones de Diseño}\label{patrones}
+Con el objetivo de cumplir los criterios antes mencionadas, el sistema \gls{MOLDEAS} se basará en la aplicación 
+intensiva de patrones de diseño\cite{Gamma,CoreJ2EEPatterns} como buena práctica 
+de programación. Normalmente estos patrones indican la interacción que ha de realizarse entre los distintos elementos 
+que participan en el problema. De esta manera para cada problema tendremos un 
+conjunto de objetos, cada uno de los cuales realizará una función proveyendo servicios a 
+los demás objetos implicados. Los patrones de diseño proponen soluciones con distintas características: 
+elegantes, modulares, escalables y flexibles. Una posible definición de los mismos 
+se presenta a continuación:
+
+\begin{Frame}
+Los patrones de diseño representan soluciones para problemas recurrentes en la ingeniería del \textit{software}.
+\end{Frame}
+
+En general, se trata de soluciones estándar para un problema habitual en programación que utiliza 
+distintas técnicas para la flexibilización del código intentando al mismo tiempo satisfacer 
+ciertos criterios no funcionales. Se suelen asimilar a una estructura determinada de implementación 
+que cumple una finalidad determinada y permite describir ciertos aspectos de un programa.
+
+No obstante, pese a que los patrones nos ofrecen buenas soluciones puede darse el caso de que 
+resulte contraproducente el uso de los mismos. El uso de estas técnicas debe realizarse, 
+por tanto, en el momento justo. La problemática reside en establecer cuándo su aplicación 
+es adecuada y se pueden citar varios criterios:
+\begin{itemize}
+    \item El código del programa ha crecido exponencialmente.
+    \item Las clases de un programa aglutinan código semánticamente no corresponde con su funcionalidad.
+    \item Se deben realizar pruebas unitarias de clases.
+    \item El diseño del programa es altamente complejo y las relaciones entre las distintas 
+clases es opaca.
+   \item La comunicación con otros desarrolladores ha decaído debido a la complejidad del código.
+\end{itemize}
+
+El libro \textit{The Ganf of Four(Gof)}~\cite{Gamma} fue el pionero en introducir estas técnicas de 
+programación caracterizando las mimas en tres niveles:
+\begin{description}
+    \item [Patrones creacionales:]se utilizan para la creación, inicialización
+    Podemos destacar: \textit{Abstract Factory}, \textit{Builder}, \textit{Factory Method}, \textit{Prototype} o
+    \textit{Singleton}.
+    \item [Patrones estructurales:]su objetivo es separar la interfaz de
+    operaciones de la implementación. Tratan de organizar cómo las clases y
+    objetos se agrupan para generar estructuras y organizaciones más grandes.
+    Por ejemplo: \textit{Adapter}, \textit{Bridge}, \textit{Composite}, \textit{Decorator} o \textit{Facade}.
+    \item [Patrones de comportamiento:] describen la comunicación entre los
+    objetos.  \textit{Chain of Responsability}, \textit{Command}, \textit{State}, \textit{Strategy} o \textit{Visitor} son
+    ejemplos de este conjunto.
+\end{description}
+
+En combinación con los patrones de diseño, se encuentra la técnica de \textit{refactoring}~\cite{Fowler1999}, 
+utilizada para reestructurar y refinar el código fuente (en muchos casos aplicando un determinado patrón) 
+sin alterar la funcionalidad o comportamiento externo del mismo.
+
+
+

@@ -1,0 +1,22 @@
+ <http://purl.org/weso/pscs/cpa/2008/resource/470054>
+      a  <http://purl.org/weso/pscs/ontology/PSCConcept> , 
+	gr:ProductOrServiceModel ;
+      dc:identifier "470054" ;
+      dc:subject "47.00.54" ;
+      skosxl:prefLabel
+      gr:description
+      rdfs:label "Retail trade services of electrical household appliances"@en ;
+      <http://purl.org/weso/pscs/ontology/relatedMatch>
+         <http://www.productontology.org/id/retail> , 
+	 <http://www.productontology.org/id/household> , 
+	 <http://www.productontology.org/id/service> , 
+	 <http://www.productontology.org/id/trade> , 
+	 <http://www.productontology.org/id/appliance> , 
+	 <http://www.productontology.org/id/electrical> ;
+      skos:broaderTransitive
+        <http://purl.org/weso/pscs/cpa/2008/resource/47005> ;
+      skos:closeMatch 
+	<http://purl.org/weso/pscs/cpv/2008/resource/39711000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55000000> , 
+	<http://purl.org/weso/pscs/cpv/2008/resource/55900000> ;
+      skos:inScheme <http://purl.org/weso/pscs/cpa/2008/resource/ds> .

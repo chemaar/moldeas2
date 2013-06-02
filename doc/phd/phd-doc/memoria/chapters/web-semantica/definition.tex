@@ -1,0 +1,63 @@
+La Web Semántica siguiendo la definición propuesta por el W3C se presenta como: 
+\begin{Frame}
+\textit{Una web extendida, dotada de mayor significado, en la que cualquier
+usuario en Internet podrá encontrar respuestas a sus preguntas de forma más rápida y
+sencilla gracias a una información mejor definida.}
+\end{Frame}
+
+Surge como respuesta a las dificultades que aparecen al tratar de 
+automatizar muchas tareas en la web actual. Hoy en día, los contenidos de la web son
+creados considerando que van a ser consumidos principalmente por personas,
+lo que hace difícil su interpretación por parte de agentes \textit{software}.
+En consecuencia, algunas tareas comunes como la búsqueda de información en la web actual,
+son notoriamente mejorables; otras tareas aparentemente sencillas son casi imposibles de implementar.
+En el origen de este problema se encuentra la incapacidad de los agentes \textit{software} (las máquinas)
+para encontrar, interpretar, extraer y combinar la información ya disponible en la web.
+
+
+Para tratar de paliar esta situación, \textit{Tim Berners-Lee}, reconocido como ``padre de la web'',
+impulsa a través del \gls{W3C} el desarrollo de la Web Semántica ~\cite{WeavingTim,berners-lee06a}.
+A través de esta iniciativa, se desarrollan los lenguajes y formalismos que permiten
+extender la web actual, de tal manera que sus contenidos sean accesibles tanto a
+personas como a máquinas. Esta tecnología abre la puerta a una nueva generación
+de aplicaciones informáticas capaces de encontrar, seleccionar y combinar la
+información dispersa en la web para realizar tareas que actualmente se ejecutan de forma manual: seleccionar los resultados relevantes en una búsqueda, agregar
+información procedente de distintas fuentes, etc.
+
+
+Una de las fortalezas de la web actual es la ingente cantidad de información que se encuentra
+publicada en ella y la infinidad de servicios a los que se puede acceder.
+Sin embargo, si la explotación de estos recursos requiriese necesariamente la intervención humana,
+como sucede ahora, su utilidad estaría limitada, de ahí que el W3C pretenda
+``guiar a la web hacia su máximo potencial'' como herramienta universal y multipropósito.
+La Web Semántica proporciona una infraestructura para explotar eficientemente el potencial de
+la web~\cite{Berendt02,decker00knowledge}, se encuentra, sin embargo en continuo desarrollo, gestándose gradualmente su progresión.
+
+En el contexto de la iniciativa de la Web Semántica, se han desarrollado y se continúan
+desarrollando estándares que son el soporte necesario para hacer realidad la misma.
+En la base se utilizan tecnologías estándar ya asentadas, como \gls{XML}~\cite{XML11}, \gls{HTTP}~\cite{http-rfc} y \gls{URI}s~\cite{uri-rfc},
+que son también la base de la web actual. Pero además se han creado nuevos mecanismos
+para describir semántica y formalmente la información, se trata, entre otros, de \gls{RDF}~\cite{RDF}, \gls{RDF Schema}~\cite{RDFS} y \gls{OWL}~\cite{OWL11,owl2-primer}. Con estos lenguajes y modelos se puede describir la información de manera precisa y
+y carente de ambig\"{u}edad basándose en teorías lógicas como las \textit{Description Logics~\cite{baader03description} (\gls{DL}s)}.
+En este sentido juegan un papel fundamental las taxonomías, los tesauros y las ontologías,
+como estructuras capaces de dotar de significado a los datos 
+~\cite{Benjamins98knowledgemanagement}.
+
+\subsubsection{No es Web Semántica}
+En muchas ocasiones, no existe manera más conveniente para definir un concepto que encontrar
+un contraejemplo. Así, \textit{Tim Berners-Lee} insiste en que la Web Semántica \textbf{No} es inteligencia artificial: 
+\begin{Frame}
+\textit{El concepto de documento entendible por una máquina no implica algún tipo de
+inteligencia artificial mágica que permita a las máquinas comprender el
+farfullar de los humanos. Sólo indica una habilidad de la máquina para resolver
+un problema bien definido a base de realizar operaciones bien definidas sobre
+unos datos bien definidos. En vez de pedir a las máquinas que entiendan nuestro
+lenguaje, se le pedirá a la gente que haga un esfuerzo extra.} \textit{A roadmap
+to the Semantic Web.  What the semantic Web isn't but can represent}. 1998. 
+
+Fuente: \url{http://www.w3.org/DesignIssues/RDFnot.html}
+\end{Frame}
+
+Por tanto, desposeída de su aura mágica al no constar entre sus objetivos la
+conquista del lenguaje natural, la Web Semántica queda reducida a un intercambio
+de información eficiente entre los agentes.
