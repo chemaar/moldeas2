@@ -131,7 +131,8 @@ del fichero XML.
 
 \begin{figure}[!hbp]
 \centering
-\lstinputlisting[language=XML]{examples/events.xsl}
+\small
+\lstinputlisting[language=XML,basicstyle=\scriptsize]{examples/events.xsl}
 \caption{Ejemplo de hoja de estilo XSL.}
 \label{fig:xsl-example}
 \end{figure}
@@ -187,7 +188,7 @@ Las razones que pueden llevar a elegir XML Schema son, entre otras, las siguient
 
 \begin{figure}[!htbp]
 \centering
-\lstinputlisting[language=XML]{examples/events.xsd}
+\lstinputlisting[language=XML,basicstyle=\tiny]{examples/events.xsd}
 \caption{Ejemplo de XML Schema.}
 \label{fig:xsd-example}
 \end{figure}
@@ -252,7 +253,7 @@ de la negación y cuestiones de expresividad, tiene que ver con OWL, ya que,
 debido a su semántica de primer orden, utiliza la hipótesis de mundo abierto,
 mientras que las reglas habituales de programación lógica utilizan mundo cerrado. 
 
-La extensión más conocida de OWL en este sentido es \gls{SWRL}~\cite{Swrl}, que permite cláusulas
+La extensión más conocida de OWL en este sentido es \gls{SWRL}~\cite{Swrl}, que permite claúsulas
 Horn como axiomas en las bases de conocimiento en OWL. Este lenguaje mantiene
 el mundo abierto de OWL, pero penaliza en rendimiento debido a su alto coste computacional.
 
@@ -595,7 +596,7 @@ intentar mejorar los puntos débiles de esta primera aproximación para la expre
 a vocabularios RDF existen una infinidad~\cite{common-vocabularies} de ellos para ser utilizados en distintos contextos que han sido
 enormemente impulsados por la corriente \linkeddata y \opendata.
 %Avoiding too many floats 
-\clearpage
+%\clearpage
 
 \subsubsection{OIL}
 El \textit{Ontology Inference Layer}~\cite{Fensel01oil:an} (\gls{OIL}) desarrollado en el proyecto Europeo 
