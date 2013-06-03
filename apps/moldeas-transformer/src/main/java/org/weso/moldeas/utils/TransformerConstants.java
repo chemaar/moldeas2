@@ -17,5 +17,17 @@ public class TransformerConstants {
 	public static final String HTTP_NUTS_PSI_ENAKTING_ORG_ID = "http://nuts.psi.enakting.org/id/";
 	static final String MOLDEAS_PREFIX = "moldeas";
 	
+	public static final int INDEX_ID_CONTRACT = 0;
+	public static final int INDEX_NUTS_CODE= 1;
+	public static final int INDEX_TYPE= 6;
+	public static final int INDEX_LABEL= 7;
+	public static final int INDEX_FULL_ADDRESS= 10;
+	public static final int INDEX_STREET= 11;
+	public static final int INDEX_POSTAL_CODE= 12;
+	public static final int INDEX_REGION= 13;
+	public static final int INDEX_EMAIL= 17;
+	public static final int INDEX_TELEPHONE= 18;
+	public static final int INDEX_FAX= 19;
+	public static final int INDEX_HOMEPAGE= 20;
 	
 }

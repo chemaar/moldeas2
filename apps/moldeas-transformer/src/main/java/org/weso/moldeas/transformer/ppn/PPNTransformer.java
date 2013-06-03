@@ -51,6 +51,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.hp.hpl.jena.vocabulary.DCTerms;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 public class PPNTransformer extends ChainTransformerAdapter {
@@ -146,8 +147,8 @@ public class PPNTransformer extends ChainTransformerAdapter {
 		Resource ppnResource = resourceModel.createResource(PSCConstants.formatURIId(id,date));
 		Resource typeResource = resourceModel.createResource(getType());
 		ppnResource.addProperty(RDF.type, typeResource);
-		ppnResource.addLiteral(DC.identifier,id);
-		ppnResource.addLiteral(DC.date,date);		
+		ppnResource.addLiteral(DCTerms.identifier,id);
+		ppnResource.addLiteral(DCTerms.date,date);		
 		for(int i = 0; i<cpvCodes.length;i++){
 			if(cpvCodes[i]!=null && !cpvCodes[i].equals("")){
 				Resource cpv2008 = resourceModel.createResource(PSCConstants.formatId(cpvCodes[i]));
