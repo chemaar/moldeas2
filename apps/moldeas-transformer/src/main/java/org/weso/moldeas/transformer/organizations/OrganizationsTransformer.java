@@ -44,20 +44,17 @@ import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
 import org.weso.moldeas.utils.PrefixManager;
 import org.weso.moldeas.utils.PrettyPrinter;
 import org.weso.moldeas.utils.TransformerConstants;
-import org.weso.pscs.utils.PSCConstants;
+
+import au.com.bytecode.opencsv.CSVReader;
 
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.sparql.vocabulary.FOAF;
-import com.hp.hpl.jena.vocabulary.DCTerms;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.hp.hpl.jena.vocabulary.RDFS;
 import com.hp.hpl.jena.vocabulary.VCARD;
-
-import au.com.bytecode.opencsv.CSVReader;
 
 public class OrganizationsTransformer extends ChainTransformerAdapter{
 
@@ -67,11 +64,7 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 	private static final String MOLDEAS_ORG_PREFIX = "moldeas-org";
 	protected static Logger logger = Logger.getLogger(OrganizationsTransformer.class);
 	static Pattern pattern =  Pattern.compile("^[0-9.()-]{10,25}$"); // ITU E.164 or IETF RfC 3966. 
-    
-
-
-
-	/**
+  	/**
 	 *  
 	 *  0) 000012-2011->ID contract
 	 *  1) bg->ID country
