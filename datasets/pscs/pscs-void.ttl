@@ -45,7 +45,6 @@
 	dcterms:description "Clasificación de Productos por Actividades 2008."@es ; 
 	dcterms:description "Statistical Classification of Products by Activity in the European Economic Community, 2008 version."@en ; 
 	dcterms:source <http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=CPA_2008&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC>;
-	foaf:homepage <http://purl.org/weso> ; 
 	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
         dcterms:publisher  moldeas-org:WESO;
         dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  

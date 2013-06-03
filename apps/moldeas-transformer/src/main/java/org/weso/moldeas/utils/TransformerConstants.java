@@ -12,7 +12,7 @@ public class TransformerConstants {
 	public static final String HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LONG = HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS+"long";
 	public static final String HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS_LAT = HTTP_WWW_W3_ORG_2003_01_GEO_WGS84_POS+"lat";
 	public static final String SPATIALRELATIONS_PREFIX = "spatialrelations";
-	public static final String NUTS_PREFIX = "nuts";
+	public static final String NUTS_PREFIX = "moldeas-nuts";
 	public static final String GEO_PREFIX = "geo";
 	public static final String HTTP_NUTS_PSI_ENAKTING_ORG_ID = "http://nuts.psi.enakting.org/id/";
 	static final String MOLDEAS_PREFIX = "moldeas";

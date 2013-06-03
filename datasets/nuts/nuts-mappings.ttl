@@ -22,32 +22,32 @@
 @prefix moldeas:  <http://localhost/moldeas/> .
 @prefix org:  <http://www.w3.org/ns/org#> .
 
-<http://localhost/moldeas/area/country/AUT> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/AT>.
-<http://localhost/moldeas/area/country/BEL> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/BE>.
-<http://localhost/moldeas/area/country/BGR> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/BG>.
-<http://localhost/moldeas/area/country/CYP> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/CY>.
-<http://localhost/moldeas/area/country/CZE> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/CZ>.
-<http://localhost/moldeas/area/country/DEU> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/DE>.
-<http://localhost/moldeas/area/country/DNK> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/DK>.
-<http://localhost/moldeas/area/country/ESP> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/ES>.
-<http://localhost/moldeas/area/country/FIN> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/FI>.
-<http://localhost/moldeas/area/country/FRA> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/FR>.
-<http://localhost/moldeas/area/country/GRC> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/GR>.
-<http://localhost/moldeas/area/country/HUN> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/HU>.
-<http://localhost/moldeas/area/country/IRL> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/IE>.
-<http://localhost/moldeas/area/country/ITA> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/IT>.
-<http://localhost/moldeas/area/country/LTU> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/LT>.
-<http://localhost/moldeas/area/country/LUX> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/LU>.
-<http://localhost/moldeas/area/country/LVA> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/LV>.
-<http://localhost/moldeas/area/country/MLT> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/MT>.
-<http://localhost/moldeas/area/country/NLD> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/NL>.
-<http://localhost/moldeas/area/country/POL> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/PL>.
-<http://localhost/moldeas/area/country/PRT> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/PT>.
-<http://localhost/moldeas/area/country/ROU> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/RO>.
-<http://localhost/moldeas/area/country/SWE> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/SE>.
-<http://localhost/moldeas/area/country/SVN> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/SI>.
-<http://localhost/moldeas/area/country/SVK> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/SK>.
-<http://localhost/moldeas/area/country/GBR> moldeas-onto:ref-nuts <http://nuts.psi.enakting.org/id/UK>.
+<http://localhost/moldeas/area/country/AUT> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/AT>.
+<http://localhost/moldeas/area/country/BEL> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/BE>.
+<http://localhost/moldeas/area/country/BGR> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/BG>.
+<http://localhost/moldeas/area/country/CYP> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/CY>.
+<http://localhost/moldeas/area/country/CZE> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/CZ>.
+<http://localhost/moldeas/area/country/DEU> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/DE>.
+<http://localhost/moldeas/area/country/DNK> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/DK>.
+<http://localhost/moldeas/area/country/ESP> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/ES>.
+<http://localhost/moldeas/area/country/FIN> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/FI>.
+<http://localhost/moldeas/area/country/FRA> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/FR>.
+<http://localhost/moldeas/area/country/GRC> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/GR>.
+<http://localhost/moldeas/area/country/HUN> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/HU>.
+<http://localhost/moldeas/area/country/IRL> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/IE>.
+<http://localhost/moldeas/area/country/ITA> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/IT>.
+<http://localhost/moldeas/area/country/LTU> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/LT>.
+<http://localhost/moldeas/area/country/LUX> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/LU>.
+<http://localhost/moldeas/area/country/LVA> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/LV>.
+<http://localhost/moldeas/area/country/MLT> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/MT>.
+<http://localhost/moldeas/area/country/NLD> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/NL>.
+<http://localhost/moldeas/area/country/POL> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/PL>.
+<http://localhost/moldeas/area/country/PRT> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/PT>.
+<http://localhost/moldeas/area/country/ROU> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/RO>.
+<http://localhost/moldeas/area/country/SWE> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/SE>.
+<http://localhost/moldeas/area/country/SVN> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/SI>.
+<http://localhost/moldeas/area/country/SVK> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/SK>.
+<http://localhost/moldeas/area/country/GBR> moldeas-onto:ref-nuts <http://localhost/moldeas/nuts/resource/UK>.
 
 
 
