@@ -9,54 +9,33 @@
 \input{../cabeceras}
 \input{../utilidades}
 \input{../bibliografia-utils}
+\input{../portada-deliverable}
 
+
+
+\lhead{Fase 2: Informe \textit{Open Data} (A/EN01-00)} % texto izquierda de la cabecera
+%\chead{\includegraphics[width=11cm]{../logo-avanza} \\ FIXME} % texto centro de la cabecera
+\rhead{10ders Information Services} % número de página a la derecha
+\lfoot{AVANZA COMPETITIVIDAD I+D+I 2010} % texto izquierda del pie
+\cfoot{} % imagen centro del pie
+\rfoot{\thepage} % texto derecha del pie
+\renewcommand{\headrulewidth}{0.8pt} % grosor de la línea de la cabecera
+\renewcommand{\footrulewidth}{0.4pt} % grosor de la línea del pieza
 
 \makeindex
 
 \makeglossaries
 \loadglsentries{glosario}
 
+\newcommand{\TituloDeliverable}{Fase 2: Informe \textit{Open Data} (A/EN01-00)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{A/EN01-00-Informe \textit{Open Data}}
 
-
-\author{
-{Jose María Alvarez-Rodríguez (WESO)\\
-josem.alvarez@weso.es \\
-José Emilio Labra Gayo (WESO) \\
-labra@uniovi.es}}
-
-\revised{Febrero 2, 2012}
-
-%\issuer{Vrije Universiteit Amsterdam}
-
-\identifier{10ders/A/EN01-00}
-
-\version{v1.0}
-
-\state{Final}
-
-\project{10ders-Information Services}
-
-\distribution{protegida}
-
-\synopsis{\strut\\
-Proyecto: 10ders Information Services/TSI-020100-2010-919 \\
-Entregable: A/EN01-00 \\
-Informe \textit{Open Data}.
-
-Palabras clave: open data, linked data, linked open data, web semántica
-}
-
-\coverpages
-
-\setcounter{page}{0}
-
-\pagenumbering{roman}
+\PortadaDeliverable
 
 \include{historial-AEN01-00}
 \include{resumen-AEN01-00}
@@ -73,7 +52,217 @@ Palabras clave: open data, linked data, linked open data, web semántica
 
 
 \chapter{\label{capitulo:introduccion}Introducción} % 10
-% \input{chapters/introduccion}
+Las Administraciones Públicas son uno de los mayores compradores de la Unión \gls{Europea} (UE), ya que
+sus adquisiciones en conjunto representan un $17$\%~\cite{europeanStrategy} del Producto Interior Bruto (\gls{PIB}). La tendencia se dirige a intentar 
+agilizar este gran mercado de oportunidades, que asciende a unos $2,155$ billones de euros, para 
+facilitar el acceso a las empresas, especialmente a las pequeñas y medianas empresas (\gls{PYME}s), posibilitando 
+el acceso a la información presente en los contratos públicos y permitiendo así la construcción de un entorno de mercado competitivo. Por otra parte, 
+un punto clave reside en el impulso de la transparencia y la eficiencia en los propios procesos administrativos asociados a la contratación pública.
+Esta situación ha supuesto la germinación de una voluntad en las Administraciones Públicas para tratar de simplificar 
+el proceso de contratación pública tanto desde un punto vista legal, como operativo. Las acciones de cambio vienen impulsadas desde la Unión Europea 
+a través de distintas directivas que son transpuestas en los distintos \gls{Estados} Miembros, dando soporte a estos procesos de adquisición de bienes y servicios. 
+No obstante, las oportunidades comerciales que representan estos contratos públicos están fragmentadas en 
+cientos de fuentes, en general de carácter local, representando una dilatada sucesión de anuncios de 
+licitación que no llegan a tener una difusión adecuada, lo cuál es inaudito en la era de las comunicaciones instantáneas 
+y globales. 
+
+Por otra parte, teniendo en cuenta que la información incluida en los anuncios de licitación
+tiene la consideración de Información del Sector Público (\gls{PSI}), se deben proveer los mecanismos
+necesarios de acceso a esta información para facilitar la consulta de los datos contenidos
+en los anuncios de licitación. Actualmente la corriente \opendata dentro del seno de las organizaciones e individuos en general y de las entidades públicas en particular, ha generado un entorno
+de datos abiertos en el cual deben formar parte necesariamente los contratos públicos. 
+Esta sensibilidad emergente respecto a la apertura de datos implica una necesaria relación con la 
+contratación pública debido al valor de la información que contienen, tanto para crear nuevos servicios 
+de valor añadido agregando datos de distintas fuentes, como medio de información para 
+las empresas interesadas en atender a procesos de contratación pública.
+
+%Linked Data y semantic web
+Desde otro punto de vista, el creciente uso de Internet durante los últimos años ha puesto de manifiesto un
+nuevo entorno de ejecución para las aplicaciones, utilizando como nueva
+plataforma la Web, el gran sistema distribuido. Nuevas tecnologías y paradigmas
+están emergiendo para dar soporte al desarrollo y despliegue de aplicaciones y
+servicios, así como para la publicación de datos e información. Los modelos de
+desarrollo están evolucionando hacia un estilo más colaborativo en el cual las empresas
+ofrecen su software como servicios (\textit{Software as a Service}-\gls{SaaS}), materializado a
+través del paradigma de \textit{Cloud Computing}, implementado con tecnología de
+servicios con el objetivo de que terceros puedan utilizar estos nuevos servicios y datos para
+la construcción de aplicaciones agregadas con valor añadido. 
+
+En este sentido, iniciativas como la Web Semántica~\cite{Berners-Lee2001} dentro de la nueva ``Web de Datos'' o \wode a través de modelos y
+formatos de datos de conocimiento compartido unificados, intentan elevar el
+significado de los elementos y recursos que están disponibles en la web con el
+objetivo de mejorar la integración e interoperabilidad entre aplicaciones, impulsando la implantación de este enfoque. Dentro de la iniciativa de Web
+Semántica hay que destacar principalmente dos esfuerzos: 
+\begin{enumerate}
+ \item La iniciativa \linkeddata~\cite{Berners-Lee-2006}, propone la publicación de datos
+enlazados siguiendo el modelo \gls{RDF}~\cite{rdf-syntax} para facilitar la creación de una web de
+datos en la que éstos se puedan mostrar, intercambiar y conectar a través de
+URIs. La tendencia actual de publicación de datos enlazados está marcando una
+evolución en la interoperabilidad de aplicaciones con el consiguiente efecto que
+conlleva para las relaciones \textit{Business to Business} (\gls{B2B}), \textit{Business to
+Client}(\gls{B2C}) o \textit{Administration to Administration} (\gls{A2A}). Entre los casos de éxito
+se podrían destacar: administración electrónica (iniciativa de \textit{Open Government
+Data}~\cite{8-principles}-\gls{OGD}), contratación pública electrónica de bienes y servicios (\textit{\gls{e-Procurement}}), oferta
+formacional, contextualización de aplicaciones, etc. 
+
+\item El desarrollo de lenguajes y formalismos lógicos para representar el
+conocimiento sobre un universo de discurso que permita la inferencia de nuevos
+datos a partir de los datos ya publicados. En este contexto se han reimpulsado
+el uso de técnicas de razonamiento y de sistemas basados en conocimiento, 
+como pueden ser las ontologías y los sistemas basados en reglas lógicas (Ontobroker,
+XSB, etc.) o de producción (Drools, JRules, etc.). La aplicación de estos
+sistemas está ampliamente asentada en la resolución de diversos problemas
+(diagnóstico, planificación, reglas de negocio, etc.) pero siempre utilizando un
+enfoque para la representación del conocimiento y de los datos, en muchos casos
+específico y no estandarizado, pero que con la aplicación de los principios
+de la Web Semántica se ve favorecido por un nuevo contexto de estandarización. 
+\end{enumerate}
+
+Por lo tanto, teniendo en cuenta el contexto estratégico que supone la contratación pública
+para el mercado común y la sostenibilidad económica y considerando iniciativas
+como la Web Semántica, que animan y potencian la reutilización de datos, información
+y modelos de conocimiento compartido, queda patente que la inclusión de la tecnología
+semántica en el contexto de la administración electrónica y en concreto en los
+procesos de contratación pública electrónica, mejora e impulsa este dominio con un 
+nuevo enfoque. El estudio e implantación de la semántica conlleva una mejora
+cualitativa en cuanto a la provisión de un modelo estandarizado, cooperativo y con
+nuevas capacidades, para mejorar e instrumentar este entorno desde un punto
+de vista tecnológico y realizar la visión estratégica que desde la política
+se propugna. Si se aplica el principio de evolución de las especies
+de \textit{Charles Darwin}, se diría que la semántica aplicada a la contratación pública
+supone una evolución natural a la forma de entender este proceso administrativo, favoreciendo
+su supervivencia en el nuevo contexto de la \wode.
+
+\textit{It is not the strongest of the species that survive, nor the most
+intelligent, but the ones most responsive to change.}
+
+\section{Motivación}
+La aplicación de las tecnologías semánticas e iniciativas como \opendata y
+\linkeddata, están de rigurosa actualidad, convirtiéndose en pieza clave
+para el desarrollo de nuevas aplicaciones y servicios de valor añadido,
+reutilizando datos provenientes de distintas fuentes: redes sociales, empresas,
+personas o instituciones públicas. Por otra parte, la investigación desarrollada
+en estas áreas se está materializando a través de múltiples publicaciones de
+alto valor científico, realización de conferencias internacionales, desarrollo
+de herramientas y transferencia tecnológica a empresas de distintos
+dominios, en las cuales se han de integrar fuentes de datos heterogéneas y generar
+servicios inteligentes contextualizados para los usuarios, así, se pueden 
+encontrar soluciones en dominios tan dispares como salud, control de procesos
+industriales, administración electrónica, gestión de recursos humanos, etc.
+
+En concreto, en el caso de la administración electrónica, uno de los procesos
+administrativos más influyentes por su impacto económico en la sociedad es la compra y adquisición
+de bienes y servicios, ya que impulsa la actividad económica de las empresas como proveedores
+de la Administración Pública y permite disponer nuevos servicios a los ciudadanos que, en último término, son los clientes
+y contribuyentes de la Administración. Es por ello, que la aplicación de
+las últimas tendencias de investigación y tecnológicas en este contexto se plantean
+como clave para mantener a la Administración Pública como paradigma de funcionamiento,
+organización y actualización.
+
+
+
+\section{El proyecto \textit{10ders Information Services}}\label{10ders}
+\textit{\gls{10ders} Information Services}~\cite{10ders} es un proyecto de investigación
+cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 
+con código TSI-020100-2010-919, liderado por Gateway S.C.S.~\cite{gateway} (creadores de la plataforma
+de alertas de anuncios de licitación Euroalert.net~\cite{euroalert}) y desarrollado en colaboración con la empresa Exis TI~\cite{exis} y el equipo
+de investigación \gls{WESO} de la Universidad de Oviedo. 
+
+El objetivo principal de este proyecto es el siguiente:
+
+\textit{Construir una plataforma pan-europea y unificada que agregue todas
+las licitaciones públicas de la Unión \gls{Europea} con el fin de diseñar productos y
+servicios de información baratos y accesibles que ayuden a las \gls{PYME} a
+ser más competitivas en este mercado.}
+
+De la misma forma, este objetivo se desarrolla dentro de un proceso de ingeniería
+y tecnología cuya meta es:
+
+\textit{Diseñar una arquitectura escalable capaz de localizar e interoperar con miles
+de fuentes de información públicas completamente heterogéneas para agregar
+la información de los cientos de miles de anuncios de licitación publicados
+diariamente en la Unión Europea en múltiples idiomas y culturas, con el fin de
+comprender y extraer conocimiento para el diseño de nuevos productos de
+información para PYMES.}
+
+Teniendo en cuenta este objetivo y el entorno tecnológico predefinido, los siguientes
+problemas que atañen a la contratación pública deben ser abordados y resueltos con la
+aplicación de nuevos métodos.
+
+\begin{description}
+ \item  [Dispersión de la información.] Los anuncios de licitación se difunden en multitud de fuentes
+públicas de ámbito europeo, nacional, regional y local. Adicionalmente, las licitaciones de menor
+valor correspondientes a procedimientos con publicidad restringida y que suponen una larga
+serie de oportunidades comerciales, se publican en los perfiles del contratante de cada
+entidad, agencia o autoridad pública. Conseguir el diseño de un sistema eficiente de rastreo y
+monitorización para miles (cifra estimada) de fuentes de información, capaz de detectar las
+nuevas oportunidades publicadas diariamente, y que además pueda agregar nuevas fuentes a
+medida que sean descubiertas, constituye el primer problema tecnológico.
+
+\item [Mismo anuncio en más de una fuente.] Dependiendo de la diferente normativa legal local,
+regional o nacional, el mismo anuncio de licitación se publica en más de una fuente al
+mismo tiempo. Como dificultad adicional, lo más habitual es que no se utilice ningún tipo de
+código o referencia que identifique el anuncio de forma coherente entre las diferentes
+fuentes. En ocasiones, entre los datos suministrados por cada una de las fuentes existirá más
+detalle en determinados aspectos del mismo anuncio de licitación; así por ejemplo, una fuente
+puede disponer de mejores datos sobre la autoridad contratante, mientras que otra puede que los suministre
+más completos sobre el objeto del contrato. En ese contexto, existe un gran interés en poder
+identificar de forma algorítmica qué datos provenientes de distintas fuentes se refieren al
+mismo anuncio, y al mismo tiempo ser capaces de utilizar los de mayor calidad en cada caso,
+no sólo para evitar tener información duplicada, sino para disponer de la calidad más elevada posible
+en los datos a explotar, agregando la mejor información existente en cada publicación.
+
+\item [Heterogeneidad de los formatos de los anuncios.] Aunque los datos deben ser públicos, no
+existe un formato de anuncio de licitación unificado, ni tan siquiera un número limitado de
+posibilidades. Descargar y procesar la información de cada fuente para que sea utilizable de
+forma agregada, supone resolver diversos problemas complejos para interpretar la información
+estructurada o no, de los anuncios y extraer datos que permitan
+homogeneizar todas estas fuentes. Además los datos disponibles y su formato varían a lo largo
+del tiempo, ya que ninguna de las fuentes públicas ofrece una garantía de estabilidad o
+compatibilidad futura de los formatos utilizados para la publicación.
+
+\item [Almacenamiento.] La cantidad de información que deberá procesar el sistema (solo el Diario
+Oficial de la Unión Europea-\gls{DOUE} supone más de $20,000$ documentos cada día) hace que sea necesario resolver la forma en que
+deba almacenarse para que pueda explotarse de forma eficiente. El sistema de
+almacenamiento diseñado, tiene el reto adicional de ser escalable para incluir nuevas
+fuentes de información.
+
+\item [Diversidad de formatos de explotación.] Un almacén de información unificado con los
+anuncios de compras públicas ofrece múltiples posibilidades de explotación en diferentes
+productos, algunos de los cuales surgirán para responder a necesidades identificadas mucho
+después de cerrar el diseño del sistema. El último gran problema tecnológico es diseñar la
+arquitectura, en la que puedan convivir múltiples subconjuntos de información optimizados
+para requisitos de explotación diversos. En el supuesto más extremo, determinados casos de
+minería de datos estarán interesados en explotar aquellos datos que no tienen utilidad al margen de ese
+caso concreto, luego la arquitectura debe reducir la barrera del re-procesado en tiempo real de
+la información disponible, para extraer datos adiciones sin penalizar con ello otros servicios en
+explotación.
+
+\item [Multiling\"{u}ismo y multiculturalidad.] Como reto añadido se advierte que los documentos de
+licitación pueden publicarse en una o varias de las $23$ lenguas oficiales de la Unión Europea.
+Adicionalmente cada país, en ocasiones utiliza otras lenguas también oficiales en sus respectivos territorios. Todos
+los algoritmos y sistemas que se incorporen a la arquitectura, deberán procesar, agregar e
+interpretar información que estará escrita en un número elevado de lenguas, que además
+estará expresada incorporando particularidades culturales que van desde la moneda, hasta el
+sistema impositivo pasando por la forma en que se codifican las direcciones postales.
+Suplementariamente, cuando el mismo anuncio se publica en más de un idioma, no siempre bastará
+con centrarse en uno de los idiomas, sino que en ocasiones habrá que analizar todos y cada uno de ellos
+utilizando las partes con datos de mayor calidad obtenidos entre las distintas versiones del mismo
+documento.
+\end{description}
+
+Una vez contextualizado el proyecto ``10ders Information Services'', las actividades en las que 
+participa la Universidad de Oviedo, se enclavan en la aplicación de las tecnologías semánticas
+e iniciativas como \linkeddata, añadiendo una capa de conocimiento basada en semántica para proporcionar
+una visión de los datos que sea compatible con los principios y directrices de las 
+actuales corrientes de \opendata y \linkeddata. Con ello se pretende dar respuesta a los retos
+que presenta la contratación pública a nivel europeo, y como se ha reseñado en los puntos anteriores las tecnologías
+basadas en semántica, aportan una solución coherente y sostenible a la identificación y gestión de la información 
+(\textbf{Dispersión de la información} y \textbf{Mismo anuncio en más de una fuente}) mediante modelos de datos y formatos
+compartidos y consensuados (\textbf{Heterogeneidad de los formatos de los anuncios} y \textbf{Diversidad de formatos de explotación}) en un entorno
+intrínsecamente para dar soporte a la internacionalización y acceso ubicuo a la información de forma
+contextualizada (\textbf{Multilingüismo y multiculturalidad})
+
 \chapter{\label{capitulo:semantica}Panorámica de uso de la\\ Web Semántica} 
 \input{chapters/web-semantica/web-semantica}
 \chapter{\label{capitulo:semantica}Panorámica de uso de la\\ Linked Data y Open Data} 
