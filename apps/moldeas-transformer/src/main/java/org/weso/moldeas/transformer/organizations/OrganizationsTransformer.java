@@ -31,7 +31,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+
+import org.apache.commons.validator.UrlValidator;
 import org.apache.log4j.Logger;
 import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
@@ -56,9 +61,15 @@ import au.com.bytecode.opencsv.CSVReader;
 
 public class OrganizationsTransformer extends ChainTransformerAdapter{
 
+	private static final String DEFAULT_HTTP_PURL_ORG_WESO_MOLDEAS = "http://purl.org/weso/moldeas/";
+	public static final String NOT_AVAILABLE = "not-available";
 	private static final int MAX_RESOURCE = 100000;
 	private static final String MOLDEAS_ORG_PREFIX = "moldeas-org";
 	protected static Logger logger = Logger.getLogger(OrganizationsTransformer.class);
+	static Pattern pattern =  Pattern.compile("^[0-9.()-]{10,25}$"); // ITU E.164 or IETF RfC 3966. 
+    
+
+
 
 	/**
 	 *  
@@ -86,11 +97,11 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 	 */
 	@Override
 	protected void execute() throws Exception {
-		// TODO Auto-generated method stub
+		UrlValidator urlValidator = new UrlValidator();
 		Map process = new HashMap<String, String>();
 		Model model = ModelFactory.createDefaultModel();
 		addProperties(model);
-		ResourceLoader loader = new FilesResourceLoader(new String[]{"organizations/tender-organizations.csv"});
+		ResourceLoader loader = new FilesResourceLoader(new String[]{"organizations/corporate-example.txt"});
 		InputStream data =loader.getKnowledgeResources()[0].getKnowledgeSourceData();
 		CSVReader reader = new CSVReader(new InputStreamReader(data),',','\"');
 		String [] nextLine;
@@ -108,10 +119,10 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 			String street = TransformerConstants.INDEX_STREET<length?nextLine[TransformerConstants.INDEX_STREET]:"";
 			String postalCode = TransformerConstants.INDEX_POSTAL_CODE<length?nextLine[TransformerConstants.INDEX_POSTAL_CODE]:"";
 			String region = TransformerConstants.INDEX_REGION<length?nextLine[TransformerConstants.INDEX_REGION]:"";
-			String email = TransformerConstants.INDEX_EMAIL<length?nextLine[TransformerConstants.INDEX_EMAIL]:"";
-			String telephone = TransformerConstants.INDEX_TELEPHONE<length?nextLine[TransformerConstants.INDEX_TELEPHONE]:"";
-			String fax = TransformerConstants.INDEX_FAX<length?nextLine[TransformerConstants.INDEX_FAX]:"";
-			String homepage = TransformerConstants.INDEX_HOMEPAGE<length?nextLine[TransformerConstants.INDEX_FAX]:"";
+			String email = searchEmail(nextLine,10,length);
+			String telephone = searchPhone(nextLine,10,length);
+			String homepage = searchHomePage(urlValidator,nextLine,10,length);
+			String fax= "";
 			OrganizationTO org = new OrganizationTO(id,idContract, nutsCode, type, label, fullAddress, 
 					street, postalCode, region, email, telephone, fax, homepage);
 			if (process.containsKey(idContract)){
@@ -134,36 +145,84 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 			}
 		}
 		data.close();
-				
+	//	PrettyPrinter.serializeModel(model, PrefixManager.getResourceBundle(), "generated/organization-"+files+".ttl", TransformerConstants.TURTLE_SYNTAX);
+		
+
 	}
+
+	private String searchHomePage(UrlValidator validator,String[] nextLine, int min, int max) {
+		boolean found = Boolean.FALSE;
+		String homePage = DEFAULT_HTTP_PURL_ORG_WESO_MOLDEAS;
+		for(int i = min;i<max && !found;i++){
+			if (validator.isValid(nextLine[i])){
+				found = Boolean.TRUE;
+				homePage = nextLine[i];
+			}
+		}
+		return homePage;
+	}
+
+	private String searchPhone(String[] nextLine, int min, int max) {
+		boolean found = Boolean.FALSE;
+		String phone =NOT_AVAILABLE;
+		for(int i = min;i<max && !found;i++){
+			if (isValidPhone(nextLine[i])){
+				found = Boolean.TRUE;
+				phone = nextLine[i];
+			}
+		}
+		return phone;
+	}
+
+	private boolean isValidPhone(String string) {
+		return pattern.matcher(string).matches();
+	}
+
+	private String searchEmail(String[] nextLine, int min, int max) {
+		boolean found = Boolean.FALSE;
+		String email =NOT_AVAILABLE;
+		for(int i = min;i<max && !found;i++){
+			if (isValidEmailAddress(nextLine[i])){
+				found = Boolean.TRUE;
+				email = nextLine[i];
+			}
+		}
+		return email;
+	}
+
 
 	private void addTriples(Model model, OrganizationTO org) {
 		Resource resource = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId());
+		Resource site  = null;
+		Resource organizationName = null;
+		Resource organizationAddress = null;
 		if (resource == null){
-			model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId());
+			model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId());			
 			//Init others
-		}else{
-			//FIXME: TODO
-			Resource site = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#site");
-			model.add(site,
-					VCARD.FN,
-					literalLang(model,org.getLabel(),org.getNutsCode()));
-			Resource organizationName = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#org");
-			model.add(organizationName,
-					VCARD.Orgname,
-					literalLang(model,org.getLabel(),org.getNutsCode()));
-			Resource organizationTel = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#tel");
-			model.add(organizationTel,VCARD.Street,
-					literalLang(model,org.getFullAddress(),org.getNutsCode()));
-			Resource organizationAddress = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#adr");
-			model.add(organizationAddress,	
-					VCARD.Orgname,
-					literalLang(model,org.getLabel(),org.getNutsCode()));
+			site = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#site");
+			organizationName = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#org");
+			organizationAddress = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#adr");
 		}
+
 		Resource organizationResource = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId());;
 		model.add(organizationResource,
 				RDFS.label, 
 				literalLang(model,org.getLabel(),org.getNutsCode()));
+		site = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#site");
+		model.add(site,
+				VCARD.FN,
+				literalLang(model,org.getLabel(),org.getNutsCode()));
+		organizationName = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#org");
+		model.add(organizationName,
+				VCARD.Orgname,
+				literalLang(model,org.getLabel(),org.getNutsCode()));
+		organizationAddress = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#adr");
+		model.add(organizationAddress,	
+				VCARD.Orgname,
+				literalLang(model,org.getLabel(),org.getNutsCode()));
+		model.add(organizationAddress,VCARD.Street,
+				literalLang(model,org.getFullAddress(),org.getNutsCode()));
+	
 	}
 
 	private void addProperties(Model model) {
@@ -171,57 +230,69 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 		model.createProperty(PrefixManager.getURIPrefix("org")+"hasSite");
 		model.createProperty(PrefixManager.getURIPrefix("org")+"siteAddress");
 		model.createProperty(PrefixManager.getURIPrefix("moldeas-onto")+"ref-nuts");
-		
+
 
 	}
-	
+
 	private Resource createRDFResource(Model model, OrganizationTO org) {
 		Resource organizationResource = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId());
 		Resource site = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#site");
 		Resource siteAddress = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#siteAddress");
 		if (!org.getEmail().equalsIgnoreCase(""))
 			model.add(siteAddress,VCARD.EMAIL,model.createResource(org.getEmail()));
-		
+
 		Resource organizationName = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#org");
 		model.add(organizationName,	VCARD.Orgname,literalLang(model,org.getLabel(),org.getNutsCode()));
-		
+
 		Resource organizationAddress = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#adr");
-		model.add(organizationAddress,	VCARD.Orgname,literalLang(model,org.getLabel(),org.getNutsCode()));
-		
+		model.add(organizationAddress,VCARD.Orgname,literalLang(model,org.getLabel(),org.getNutsCode()));
+		model.add(organizationAddress,VCARD.Locality,literalLang(model,org.getRegion(),org.getNutsCode()));
+		model.add(organizationAddress,VCARD.Pcode,org.getPostalCode());
+		model.add(organizationAddress,VCARD.Street,literalLang(model,org.getFullAddress(),org.getNutsCode()));
+
 		Resource organizationTel = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#tel");
-		model.add(organizationTel,VCARD.Locality,literalLang(model,org.getRegion(),org.getNutsCode()));
-		model.add(organizationTel,VCARD.Pcode,org.getPostalCode());
-		model.add(organizationTel,VCARD.Street,literalLang(model,org.getFullAddress(),org.getNutsCode()));
-				
-		
+		model.add(organizationTel,RDF.value,org.getTelephone());
+
+
 		model.add(organizationResource,RDF.type,model.createResource("http://www.w3.org/ns/org#Organization"));
 		model.add(organizationResource,RDF.type,model.createResource(PrefixManager.getURIPrefix("moldeas-onto")+org.getType()));		
-		
-		
+
+
 		model.add(site,RDFS.label,literalLang(model,org.getLabel(),org.getNutsCode()));
 		model.add(site,VCARD.FN,literalLang(model,org.getLabel(),org.getNutsCode()));
-		model.add(site,VCARD.ORG,organizationName);
+		//model.add(site,VCARD.ORG,organizationName);
 		model.add(site,VCARD.ADR,organizationAddress);
 		model.add(site,VCARD.TEL,organizationTel);
-		
-		
+
+
 		model.add(organizationResource,
 				model.getProperty(PrefixManager.getURIPrefix("org")+"hasSite"),
 				site);
-		
-		
+
+
 		if(!org.getHomepage().equalsIgnoreCase(""))
 			model.add(organizationResource,FOAF.homepage,model.createResource(org.getHomepage()));
-		
-		
+
+
 
 		return organizationResource;
 	}
 
-	   
+
 	public static Literal literalLang(Model m, String value, String lang){
 		return m.createLiteral(value, lang);
 	}
+
+	public static boolean isValidEmailAddress(String email) {
+		   boolean result = true;
+		   try {
+		      InternetAddress emailAddr = new InternetAddress(email);
+		      emailAddr.validate();
+		   } catch (AddressException ex) {
+		      result = false;
+		   }
+		   return result;
+		}
 	
 
 	public static void main(String []args) throws Exception{
