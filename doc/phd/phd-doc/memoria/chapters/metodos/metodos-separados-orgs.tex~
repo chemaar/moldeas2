@@ -628,7 +628,7 @@ De esta manera, se obtienen una serie de objetos, $\mathcal{D}_{consum}$, con la
 a  $\mathcal{D}_{pub}$, para ser reutilizados como objetos de negocio en un lenguaje de programación. Es conveniente señalar que el acceso a los datos se realiza a través 
 de la consulta al \textit{endpoint} de \gls{SPARQL} ejecutando consultas \textit{SELECT} y \textit{DESCRIBE}.
 
-\begin{longtable}[c]{|p{2cm}|p{4.5cm}|p{8cm}|} 
+\begin{longtable}[c]{|p{2cm}|p{4.3cm}|p{8.5cm}|} 
 \hline
   \textbf{$\mathcal{M}^1$} &  \textbf{Propiedad} & \textbf{Tipo en Java} \\\hline
 \endhead

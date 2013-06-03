@@ -235,7 +235,7 @@ máximo contaría con $5$ criterios positivos (\si), uno por cada $\star$.
 En la Tabla~\ref{table:validation-t4} se recogen los principios de \opendata que sirven 
 para valorar si un enfoque se encuentra dentro de esta iniciativa. Se ha realizado la valoración ideal 
 de un \dataset \gls{RDF} de referencia, o en general un conjunto de datos públicos, contaría con $8$ criterios positivos (\si).
-\newpage
+
 \begin{longtable}[c]{|l|p{7cm}|c|} 
 \hline 
   \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline

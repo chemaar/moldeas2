@@ -42,11 +42,12 @@ y documentos que forman parte del comercio electrónico, distintos sectores de
 actividad económica han desarrollado sus propias terminologías o
 vocabularios~\cite{Norbert-class} controlados, para armonizar mediante códigos unívocos la identificación de
 los objetos de negocio. Ejemplos de estos vocabularios son: el estándar eCl@ss o
-la clasificación \gls{UNSPSC} entre otros, ver Sección~\ref{sect:pscs}.
+la clasificación \gls{UNSPSC} entre otros.
+%la clasificación \gls{UNSPSC} entre otros, ver Sección~\ref{sect:pscs}.
 
 
 \item [\gls{ebXML} (\textit{Electronic Business using eXtensible Markup Language}).] Es un lenguaje
-\gls{XML} elaborado \linebreak por \gls{OASIS} y UN/CEFACT, también consta de una infraestructura que permite la comunicación entre entidades
+\gls{XML} elaborado por \gls{OASIS} y UN/CEFACT, también consta de una infraestructura que permite la comunicación entre entidades
 participantes en transacciones de negocio electrónico, favoreciendo la interoperabilidad y la seguridad de una forma homogénea entre las distintas partes.
 La propuesta original cubría cinco capas: \textit{Business processes}; \textit{Collaboration protocol agreements};
 \textit{Core data components}; \textit{Messaging} y \textit{Registries and repositories}.
@@ -101,8 +102,9 @@ realizado en TED se centra en el diseño de las entidades presentes en la inform
 un modelo formal a los recursos RDF. Por todo ello, esta ontología sirve como una gran fuente de información 
 para comprobar que tipo de entidades se recogen o publican en el RSS de TED, pero en un espectro más amplio 
 se considera insuficiente para la representación de información teniendo en cuenta los modelos de datos 
-disponibles en las plataformas de contratación o el propio de \gls{opXML} realizado en el proyecto ``10ders Information 
-Services'', como ha quedado señalado en la Sección~\ref{data-model-eproc}. 
+disponibles en las plataformas de contratación o el propio de \gls{opXML} realizado en el proyecto ``10ders Information Services''.
+%%Services'', como ha quedado señalado en la Sección~\ref{data-model-eproc}.
+
 
 Por otra lado y desde el punto de vista del acceso a los datos, se ofrece la posibilidad de la realización 
 de consultas en SPARQL seleccionando una serie de códigos y acotando los resultados por fechas, sin embargo este sistema 
@@ -154,8 +156,9 @@ para las propias entidades públicas.
 Las clasificaciones de productos, son instrumentos claves de estandarización~\cite{Leukel-standard} que nacen con el fin de
 conseguir una clasificación común de productos y servicios. En general, son variadas~\cite{Leukel-ecatalog2005}
 y obedecen a intereses particulares dependiendo del sector como e@Class o RossetaNET,
-o bien de carácter global como \gls{UNSPSC} u otras destinadas a un dominio particular como el \gls{CPV} en la Administración Pública, ver Sección~\ref{sect:pscs}. Las diferencias
-estriban en su alcance y cobertura sectorial, pero también en el grado de especificidad o nivel
+o bien de carácter global como \gls{UNSPSC} u otras destinadas a un dominio particular como el \gls{CPV} en la Administración Pública.
+%o bien de carácter global como \gls{UNSPSC} u otras destinadas a un dominio particular como el \gls{CPV} en la Administración Pública, ver Sección~\ref{sect:pscs}.
+Las diferenciasestriban en su alcance y cobertura sectorial, pero también en el grado de especificidad o nivel
 de profundidad que existe para describir los productos o servicios.
 
 Como señala Hepp\cite{HeppTrueComplexity,HeppEclass,HeppMethodology} todos estos

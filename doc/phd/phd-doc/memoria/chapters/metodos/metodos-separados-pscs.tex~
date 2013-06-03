@@ -8,7 +8,8 @@ suministrando los metadatos necesarios en la descripción de los objetos de info
 
 En el dominio de la contratación pública electrónica estas clasificaciones resultan de gran 
 interés para la especificación de los objetos de contrato, así como para la extracción de 
-estadísticas a posteriori. Como se ha reseñado en la Sección~\ref{sect:pscs}, una de las 
+%estadísticas a posteriori. Como se ha reseñado en la Sección~\ref{sect:pscs}, una de las
+estadísticas a posteriori. Como se ha reseñado en los entregables \textit{AEN01-00 y AEN01-01}, una de las 
 principales clasificaciones en este sentido es el ``\textit{Common Procurement Vocabulary}''(\gls{CPV})~\cite{cpvguide}, 
 pero también existen otros esquemas de clasificación de gran interés en la esfera del comercio 
 electrónico, así la ``\textit{Combined Nomenclature}'' o el ``\textit{North American Product Classification System}''. 
@@ -44,7 +45,8 @@ Las \gls{PSC}s como instrumentos claves de estandarización nacen con el fin de
 conseguir una clasificación común de productos y servicios. Las diferencias entre las clasificaciones no
 sólo se limitan a cuestiones de alcance y cobertura sectorial de producto, sino también al grado de especificidad que difiere de unas a otras.
 
-Como ya se ha reseñado en la Sección~\ref{semantica:pscs}, Hepp~\cite{HeppTrueComplexity,HeppEclass,HeppMethodology} apunta 
+%%Como ya se ha reseñado en la Sección~\ref{semantica:pscs}, Hepp~\cite{HeppTrueComplexity,HeppEclass,HeppMethodology} apunta
+Como ya se ha reseñado en los entregables \textit{AEN01-00 y AEN01-01}, Hepp~\cite{HeppTrueComplexity,HeppEclass,HeppMethodology} apunta
 a estos estándares como una combinación de componentes variables que pueden ser utilizados 
 para la construcción de ontologías derivadas, sin embargo, se puede identificar 
 una estructura común subyacente a todas las PSCs y que debe considerarse fundamental para 
@@ -110,7 +112,8 @@ No existe una definición formal de las relaciones taxonómicas que construyen
 cada $T_{psc}$ de la clasificación y es tentador utilizar la propiedad de un
 vocabulario de ontologías, como \textit{rdfs:subClassOf}, para intentar
 representar estas relaciones semánticas. La postura del enfoque seguido es 
-radicalmente distinta, ver Sección~\ref{semantica:pscs}, desde este punto de vista, las PSCs fueron construidas 
+%%radicalmente distinta, ver Sección~\ref{semantica:pscs}, desde este punto de vista, las PSCs fueron construidas
+radicalmente distinta, ver entregables \textit{AEN01-00 y AEN01-01}, desde este punto de vista, las PSCs fueron construidas 
 para solucionar problemas de comunicación, proporcionar una
 forma de organizar tipos de productos y agruparlos de acuerdo a unos conceptos y
 definiciones que funcionasen \textit{de facto} como un estándar en determinados
@@ -765,7 +768,7 @@ la generación correcta de RDF.
  \item Todos los recursos transformados siguen la plantilla objetivo RDF.
 \end{itemize}
 
-\subsection{Proceso de Realimentación de Clasificaciones Estándar de Productos}
+\subsection{Proceso de Realimentación de Clasificaciones\\ Estándar de Productos}
 Este proceso según la definición realizada en la Sección~\ref{proceso-realimentacion}, busca la mejora 
 y perfeccionamiento de los datos promocionados a \gls{RDF}. Esta situación emerge en el momento en el cual 
 los datos comienzan a ser reutilizados, tanto por aplicaciones o servicios como por individuos. En el caso 

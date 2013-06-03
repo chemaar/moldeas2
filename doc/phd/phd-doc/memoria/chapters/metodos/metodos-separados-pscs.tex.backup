@@ -1,17 +1,17 @@
 Los sistemas de organización del conocimiento, \textit{Knowledge Organization Systems} (\gls{KOS}), como
 tesauros, taxonomías o sistemas de clasificación, se han desarrollado en el seno de distintas comunidades e instituciones, 
-principalmente con el objetivo de organizar grandes bases de datos que contienen recursos de diferente tipo como documentos, 
+principalmente con el objetivo de organizar grandes bases de datos que contienen recursos de diferente tipo tales como documentos, 
 páginas web o elementos multimedia. Estos vocabularios permiten a los usuarios la anotación
 de los objetos de información de los recursos para simplificar su extracción y consulta, habitualmente 
 se utilizan técnicas de indexado por un determinado tema con el objeto de facilitar el acceso también para las máquinas, 
 suministrando los metadatos necesarios en la descripción de los objetos de información.
 
 En el dominio de la contratación pública electrónica estas clasificaciones resultan de gran 
-interés para la especificación de los objetos de contrato así como para la extracción de 
+interés para la especificación de los objetos de contrato, así como para la extracción de 
 estadísticas a posteriori. Como se ha reseñado en la Sección~\ref{sect:pscs}, una de las 
-principales clasificaciones en este sentido es el ``Common Procurement Vocabulary''(\gls{CPV})~\cite{cpvguide}, 
+principales clasificaciones en este sentido es el ``\textit{Common Procurement Vocabulary}''(\gls{CPV})~\cite{cpvguide}, 
 pero también existen otros esquemas de clasificación de gran interés en la esfera del comercio 
-electrónico como son la ``Combined Nomenclature'' o el ``North American Product Classification System''. 
+electrónico, así la ``\textit{Combined Nomenclature}'' o el ``\textit{North American Product Classification System}''. 
 En el ámbito de esta tesis se ha optado por promocionar las clasificaciones más importantes en este contexto 
 para facilitar el acceso a los anuncios de licitación independientemente de la clasificación utilizada, para ello, 
 se ha realizado la transformación siguiendo los principios de \linkeddata y los métodos definidos en el capítulo anterior de 
@@ -33,18 +33,11 @@ Clasificación de Productos por Actividad (2008) & \gls{CPA} & Unión Europea \\
 \caption{Catálogo de Clasificaciones Estándar de Productos seleccionadas.}\label{table:pscs-ld}\\    
 \end{longtable}
 
-\subsection{Proceso de Producción de \linkeddata de Clasificaciones Estándar de Productos}
+\subsection{Proceso de Producción de \linkeddata de Clasificaciones\\ Estándar de Productos}
 Siguiendo la definición realizada en la Sección~\ref{sect:produccion}, este proceso conlleva
-todas las tareas que implican la transformación de un \dataset de entrada $\mathcal{G}$ mediante
-unas reglas de \textit{mapeo} $\mathcal{M}$ para la obtención de un \dataset \gls{RDF} $\mathcal{D}$, método semántico 
-de producción. A continuación, se detalla el flujo de tareas, ver Figura~\ref{fig:produccion-pscs}, que se ha realizado para la 
-promoción de los datos de las clasificaciones estándar de productos cumpliendo los principios de \linkeddata.
-
-\begin{figure}[!htp]
-	%\includegraphics[width=10cm]{images/phd/qb-fig}
-	\caption{Flujo de Tareas para la Producción de \linkeddata de Clasificaciones Estándar de Productos.}
-	\label{fig:produccion-pscs}
-\end{figure}
+todas las tareas que implican la transformación de un \dataset de entrada $\mathcal{G}$, mediante
+unas reglas de \textit{mapeo} $\mathcal{M}$, para la obtención de un \dataset \gls{RDF} $\mathcal{D}$, método semántico 
+de producción. 
 
 \subsubsection{Tarea $t_1$-Análisis del \dataset a transformar}\label{t1-pscs}
 Las \gls{PSC}s como instrumentos claves de estandarización nacen con el fin de
@@ -73,7 +66,7 @@ características:
 Cat_{psc}^1\succ...\succ Cat_{psc}^n $.
  \item Cada elemento de la PSC, $t_{psc}^x$, pertenece a una categoría de
 productos.
- \item Cada elemento de la PSC, $t_{psc}^x$ pertenece sólo a una categoría de
+ \item Cada elemento de la PSC, $t_{psc}^x$, pertenece sólo a una categoría de
 productos. Es decir, las categorías son disjuntas:
 $\displaystyle\bigcap_{n=0}^k{(Cat_{psc}^n)}=\emptyset$.
 \end{itemize}
@@ -137,9 +130,8 @@ completamente justificada desde este enfoque, se trata de una ontología RDF/OWL
 \textit{skos:Concept} y \textit{skos:ConceptScheme}, así todos los elementos de una
 PSC son considerados instancias de \textit{skos:Concept}, de manera que se
 entiende que todos ellos son conceptualizaciones de recursos. Asumiendo este
-modelo, la interpretación de cada elemento $t_{psc}$ de una PSC es natural y
-directa y no provoca incoherencias en su tratamiento, tal como se ha reseñado en los ejemplos
-anteriores de inconsistencia. El interés de este enfoque, radica en la posibilidad de poder 
+modelo, la interpretación de cada elemento $t_{psc}$ de una PSC es natural, directa y no provoca incoherencias en su 
+tratamiento, tal como se ha reseñado en los ejemplos anteriores de inconsistencia. El interés de este enfoque, radica en la posibilidad de poder 
 replicar completamente la semántica original de las PSCs.
 
 Para agrupar todos los elementos de una \gls{PSC} bajo un paraguas común, se construye una
@@ -159,7 +151,7 @@ se construye un concepto subclase de \textit{PSCConcept}, en el caso particular 
  Division \sqsubseteq PCSConcept;Grupo \text{...}
 \end{equation}
 
-y manteniéndose la semántica original de la clasificación añadiendo los siguientes
+Y se mantiene la semántica original de la clasificación añadiendo los siguientes
 axiomas, perfectamente expresables en OWL-DL para el caso del CPV. En otras clasificaciones, no 
 es posible establecer este tipo de axiomas debido a la falta de designación de categorías ya que la 
 relación de jerarquía se establece simplemente mediante un código numérico.
@@ -175,12 +167,13 @@ Division \sqcap\ Grupo \sqcap\ Clase\ \sqcap\ Categoria = \perp
 Por otro lado, el segundo factor importante a destacar reside en la estructura taxonómica de cada
 $T_{psc}$, que como se ha referido, tenía una difícil interpretación como conjunto de
 relaciones de herencia clásica, sin embargo, bajo el paradigma SKOS Core se contemplan relaciones 
-semánticas: \texttt{skos:inScheme}, \texttt{skos:related}, \texttt{skos:broader}, \texttt{skos:narrower} y sus versiones transitivas, que
+semánticas tales como: \texttt{skos:inScheme}, \texttt{skos:related}, \texttt{skos:broader}, \texttt{skos:narrower} y sus versiones transitivas, que
 constituyen el marco conceptual adecuado para el establecimiento de las relaciones entre los elementos de la PSC.
 
-Finalmente, la clase \textit{skos:ConceptScheme} deviene en necesario para completar la 
-interpretación de una PSC y su modelo, ver Figura~\ref{fig:modelo-grafico-pscs}, reificamos 
-una PSC como una instancia de esta clase para también así contextualizar los términos y distinguirlos e identificarlos en lo referido a un entorno web.
+Finalmente, la clase \textit{skos:ConceptScheme} deviene necesario para completar la 
+interpretación de una PSC y su modelo, ver Figura~\ref{fig:modelo-grafico-pscs}, se reifica 
+una PSC como una instancia de esta clase para también así contextualizar los 
+términos y distinguirlos e identificarlos en lo referido a un entorno web.
 
 \begin{equation}
  PSCConcept \equiv\ni inScheme~PSCScheme
@@ -202,11 +195,11 @@ en hojas de cálculo MSExcel o bien directamente en formato \gls{CSV} en los cua
 creadores para evitar caracteres extraños o incorrectos. Habitualmente, todos estos datos provienen de fuentes oficiales por lo que
 este proceso ya ha sido realizado en la labor de creación de los mismos, es por lo que en la promoción de estos datos, esta tarea
 ya ha sido realizada y no es necesario aplicar ningún filtro especial a los datos ya disponibles. Esta circunstancia supone 
-un gran avance para la transformación de datos ya que se dispone de datos $2\star$ según los principios de \linkeddata y no 
+un gran avance para la transformación de datos, ya que se dispone de aquellos clasificados con $2\star$ según los principios de \linkeddata y no 
 es necesario realizar procesos de \textit{screen-scrapping} con la consiguiente ganancia en la calidad de los datos.
 
 \subsubsection{Tarea $t_3$-Selección de Vocabularios}
-Los vocabularios seleccionados para modelar las clasificaciones de productos teniendo en cuenta el análisis 
+Los vocabularios seleccionados para modelar las clasificaciones de productos, teniendo en cuenta el análisis 
 realizado en la tarea $t_1$ se presentan en la Tabla~\ref{table:pscs-select-vocabs}. En general, se trata de vocabularios 
 que atienden a los siguientes criterios:
 
@@ -216,8 +209,8 @@ que atienden a los siguientes criterios:
  \item Representación de tipos de datos, como \gls{XML Schema}.
  \item Gestión de información multiling\"{u}e, como \gls{SKOS-XL} y RDFS.
  \item Representación de información de negocio, como \textit{GoodRelations} y \textit{ProductOntology}.
- \item Adición de metadatos y provenance, como Dublin Core Terms, \gls{voID} y \textit{Provenance Ontology}.
- \item Representación del tiempo e intervalos, como Time Ontology del \gls{W3C}.
+ \item Adición de metadatos y \textit{provenance}, como \textit{Dublin Core Terms}, \gls{voID} y \textit{Provenance Ontology}.
+ \item Representación del tiempo e intervalos, como \textit{Time Ontology} del \gls{W3C}.
 \end{enumerate}
 
 
@@ -225,35 +218,17 @@ que atienden a los siguientes criterios:
 \hline
 \textbf{Prefijo} &  \textbf{Vocabulario} &  \textbf{Fuente} & \textbf{Uso} \\\hline
 \endhead
- c4n & \url{http://vocab.deri.ie/c4n#}& Michael Hausenblas & Especificación de llamadas para participar en eventos. \\ \hline  
  dbpedia & \url{http://dbpedia.org/ontology/}&  Comunidad \linkeddata. & Reutilización de definiciones. \\ \hline 
- dc11 & \url{http://purl.org/dc/elements/1.1/}&  Dublin Core Metadata Initiative & Creación de metadatos para los documentos. \\ \hline  
+ dc & \url{http://purl.org/dc/elements/1.1/}&  \textit{Dublin Core Metadata Initiative} & Creación de metadatos para los documentos. \\ \hline  
  dct & \url{http://dublincore.org/documents/dcmi-terms/}&  $\equiv$ & $\equiv$ \\ \hline  
- dol & \url{http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#}&  \textit{WonderWeb Foundational Ontologies Library} & Ontología estructural. \\ \hline
- edns  &  \url{http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#}& $\equiv$ & $\equiv$ \\ \hline
- mod  &  \url{http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#}& $\equiv$ & $\equiv$ \\ \hline
- mads  &  \url{http://www.loc.gov/mads/rdf/v1#>}& $\equiv$ & $\equiv$ \\ \hline
  foaf & \url{http://xmlns.com/foaf/0.1/} &Comunidad de Web Semántica.& Especificación de relaciones entre personas. \\ \hline 
  gr & \url{http://purl.org/goodrelations/v1#} & Martin Heep & Reutilización de definiciones para describir productos y servicios.\\\hline 
- geo & \url{http://www.w3.org/2003/01/geo/wgs84_pos#} & W3C & Reutilización de elementos geográficos.\\\hline 
- lgd & \url{http://linkedgeodata.org/ontology/} & \textit{Linked Geodata Initiative} & $\equiv$\\\hline 
- org  & \url{http://www.w3.org/ns/org#} & Epimorphics Ltd. & Descripción de organizaciones. \\ \hline
  owl  & \url{http://www.w3.org/2002/07/owl#} & W3C & Realización de definiciones en el dominio. \\\hline
- po & \url{http://www.productontology.org/} & Martin Heep & Reutilización de datos provenientes de Productontology.\\\hline 
- prov  & \url{http://purl.org/twc/ontology/w3c/prov#} & W3C & Especificación de metadatos de procedencia. \\\hline 
- payment  & \url{http://reference.data.gov.uk/def/payment#} & Gobierno de Reino Unido & Especificación de pagos. \\\hline
- pscs  & \url{http://purl.org/weso/pscs/ontology/} & Parte del estudio de esta tesis. &Ontología para las definiciones de las PSCs. \\\hline
- nuts  & \url{http://nuts.psi.enakting.org/def/} & Universidad de Southampton & Especificación de las regiones europeas. \\\hline
- qb & \url{http://purl.org/linked-data/cube#} & Comunidad \linkeddata & Especificación de datos estadísticos. \\ \hline
+ po & \url{http://www.productontology.org/} & \textit{Martin Heep} & Reutilización de datos provenientes de Productontology.\\\hline 
  skos & \url{http://www.w3.org/2004/02/skos/core#} & W3C & Especificación de taxonomías. \\ \hline
  skosxl & \url{http://www.w3.org/2008/05/skos-xl#>} & W3C & Representación de información ling\"uística. \\ \hline
  rdf & \url{http://www.w3.org/1999/02/22-rdf-syntax-ns#} & W3C & Descripción de recursos. \\ \hline
  rdfs & \url{http://www.w3.org/2000/01/rdf-schema#} & W3C & Descripción de recursos con relaciones lógicas. \\ \hline 
- time & \url{http://www.w3.org/2006/time#} & W3C & Especificación de intervalos de tiempo.\\\hline 
- time-entry & \url{http://www.w3.org/2006/time-entry#} & W3C & $\equiv$\\\hline  
- intervals & \url{http://reference.data.gov.uk/def/intervals/} & Gobierno de Reino Unido & $\equiv$ \\\hline 
- vann & \url{http://purl.org/vocab/vann/} & Ian Davis & Anotación de los vocabularios. \\\hline
- vcard & \url{http://www.w3.org/2006/vcard/ns#} & W3C & Representación de información de contacto. \\\hline
  void & \url{http://rdfs.org/ns/void#} & Deri y W3C & Descripción de metadatos de un \dataset. \\\hline
  xml & \url{http://www.w3.org/XML/1998/namespace} & W3C & Reutilización de definiciones. \\\hline
  xsd & \url{http://www.w3.org/2001/XMLSchema#} & W3C & Especificación de tipos de datos. \\\hline
@@ -271,48 +246,28 @@ y enlazan datos provenientes de \textit{GoodRelations} y \textit{ProductOntology
   \textbf{Prefijo} &  \textbf{\textit{Dataset}} &  \textbf{Fuente} & \textbf{Uso} \\\hline
 \endhead
 dbpedia-res & \url{http://dbpedia.org/}&  Comunidad \linkeddata. & Reutilización de datos provenientes de la DBPedia. \\ \hline 
-gr & \url{http://purl.org/goodrelations/v1#} & Martin Heep & Reutilización de definiciones para describir productos y servicios.\\\hline 
-po & \url{http://www.productontology.org/} & Martin Heep & Reutilización de datos provenientes de ProductOntology.\\\hline 
+gr & \url{http://purl.org/goodrelations/v1#} & \textit{Martin Heep} & Reutilización de definiciones para describir productos y servicios.\\\hline 
+po & \url{http://www.productontology.org/} & \textit{Martin Heep} & Reutilización de datos provenientes de ProductOntology.\\\hline 
 \hline
 \caption{Selección de otros \datasets para las Clasificaciones Estándar de Productos.}\label{table:pscs-select-datasets}\\    
 \end{longtable}
 
 
 \subsubsection{Tarea $t_5$-Modelado de datos en RDF}\label{sect:pscs-data-model}
-El resultado de esta tarea debe ser una ontología de dominio $\mathcal{O}$ que modele los recursos,  $t_{psc}$, pertenecientes a un 
+El resultado de esta tarea debe ser una ontología de dominio $\mathcal{O}$. que modele los recursos $t_{psc}$, pertenecientes a un 
 \dataset RDF $\mathcal{D}$. Inicialmente, se debe proveer la especificación del modelo 
 formal u ontología $\mathcal{O}$ de acuerdo al análisis realizado en la Sección~\ref{t1-pscs}, dando soporte 
 a la descripción de los datos de los recursos \gls{RDF}:
 
 \begin{itemize}
  \item $\mathcal{C} = \{$\textit{PSCConcept, CPVConcept, Division, Group, Class, Category}$\}$
- \item $\mathcal{R} = \{$\textit{rdf:type, skos:inScheme, dc:identifier, dc:subject, level, pscs:relatedMatch, pscs:level, skos:exactMatch, skos:broaderTransitive, skosxl:prefLabel, rdfs:label, gr:description}$\}$
+ \item $\mathcal{R} = \{$\textit{rdf:type, skos:inScheme, dc:identifier, dc:subject, level, pscs:relatedMatch, pscs:level, skos:exactMatch, skos:broaderTransitive, skos:prefLabel, rdfs:label, gr:description}$\}$
  \item $\mathcal{I} = \{ t_{psc} \}$
- \item $\mathcal{A} = \{\}$
+ \item $\mathcal{A} = \{\star\}$, son los axiomas propios de una ontología en SKOS.
 \end{itemize}
  
 Como segundo paso se diseñan las propiedades que deben tener los recursos, teniendo en cuenta su ulterior aplicación, 
 ver Tabla~\ref{table:pscs-rdf-model}, pertenecientes a ese \dataset, comunes para todas las \gls{PSC}s.
-
-\begin{longtable}[c]{|p{5cm}|p{4.5cm}|p{5cm}|} 
-\hline
-  \textbf{Propiedad} &  \textbf{Descripción} & \textbf{Ejemplo} \\\hline
-  \texttt{rdf:type} & Especificación del tipo de un recurso $t_{psc}$ & a \texttt{gr:ProductOr ServiceModel}, \texttt{PSCConcept} \\ \hline
-  \texttt{skos:inScheme} & \gls{URI} al esquema de la PSC $T_{psc}$ a la que pertenece $t_{psc}$ & \texttt{skos:inScheme} cpv2008:ds \\ \hline
-  \texttt{dc:identifier} & Identificador utilizado en la URI del recurso $t_{psc}$ &  \texttt{dc:identifier} "55900000"$\textasciicircum\textasciicircum$xsd:string \\ \hline
-  \texttt{dc:subject} & Identificador original proveniente de la fuente de datos &  \texttt{dc:subject} "55900000-9"$\textasciicircum\textasciicircum$xsd:string \\ \hline
-  \texttt{pscs:relatedMatch} & URI a un recurso $t'_{psc}$ que encaja parcialmente con $t_{psc}$ & \texttt{po:retail} \\ \hline
-  \texttt{skos:exactMatch } & URI a un recurso $t'_{psc}$ que encaja totalmente con $t_{psc}$ & \texttt{cpv2008:52900000} \\ \hline
-  \texttt{skos:closeMatch } & URI a un recurso $t'_{psc}$ del CPV 2008 que encaja parcialmente con $t_{psc}$ & \texttt{cpv2008:52900000} \\ \hline
-  \texttt{pscs:level} & Indica el grado de especificidad de un $t_{psc}$ cuando no se puede inferir directamente su antecesor & \texttt{pscs:level} ``5'' \\ \hline  
-  \texttt{skos:broaderTransitive} & URI a un recurso $t'_{psc}$ antecesor de $t_{psc}$ que indica la categoría $Cat_{psc}$ & \texttt{skos:broaderTransitive} cpv2008:55000000 \\ \hline
-  \texttt{skosxl:prefLabel} & Etiquetas y descripciones multing\"{u}es &  "Retail trade services"@EN \\ \hline
-  \texttt{rdfs:label} & $\equiv$ &  $\equiv$\\ \hline
-  \texttt{gr:description} & $\equiv$ &  $\equiv$ \\ \hline
-\endhead
-\hline
-\caption{Diseño de propiedades para los elementos de las Clasificaciones Estándar de Productos.}\label{table:pscs-rdf-model}\\    
-\end{longtable}
 
 Una vez especificado el conjunto de propiedades de cada elemento $t_{psc}$ es necesario definir el conjunto 
 de grafos en los cuales se encuadrarán los recursos, es decir, el \dataset \gls{RDF} $\mathcal{D}$. Para ello, 
@@ -329,7 +284,6 @@ de los grafos $\mathcal{G}_k$ identificados a través de la URI $I_k$.
  \textbf{$\mathcal{G}_3$} & \url{http://purl.org/weso/pscs/cn/2012} \\ \hline
  \textbf{$\mathcal{G}_4$} & \url{http://purl.org/weso/pscs/cpc/2008} \\ \hline
  \textbf{$\mathcal{G}_5$} & \url{http://purl.org/weso/pscs/cpa/2008} \\ \hline
-\newpage
  \textbf{$\mathcal{G}_6$} & \url{http://purl.org/weso/pscs/isic/v4} \\ \hline
  \textbf{$\mathcal{G}_7$} & \url{http://purl.org/weso/pscs/naics/2007} \\ \hline
  \textbf{$\mathcal{G}_8$} & \url{http://purl.org/weso/pscs/naics/2012} \\ \hline
@@ -340,8 +294,31 @@ de los grafos $\mathcal{G}_k$ identificados a través de la URI $I_k$.
 \end{longtable}
 
 
+\begin{longtable}[c]{|p{5cm}|p{4.5cm}|p{5cm}|} 
+\hline
+  \textbf{Propiedad} &  \textbf{Descripción} & \textbf{Ejemplo} \\\hline
+  \texttt{rdf:type} & Especificación del tipo de un recurso $t_{psc}$ & a \texttt{gr:ProductOr ServiceModel}, \texttt{PSCConcept} \\ \hline
+  \texttt{skos:inScheme} & \gls{URI} al esquema de la PSC $T_{psc}$ a la que pertenece $t_{psc}$ & \texttt{skos:inScheme} cpv2008:ds \\ \hline
+  \texttt{dc:identifier} & Identificador utilizado en la URI del recurso $t_{psc}$ &  \texttt{dc:identifier} "55900000"$\textasciicircum\textasciicircum$xsd:string \\ \hline
+  \texttt{dc:subject} & Identificador original proveniente de la fuente de datos &  \texttt{dc:subject} "55900000-9"$\textasciicircum\textasciicircum$xsd:string \\ \hline
+  \texttt{pscs:relatedMatch} & URI a un recurso $t'_{psc}$ que encaja parcialmente con $t_{psc}$ & \texttt{po:retail} \\ \hline
+  \texttt{skos:exactMatch } & URI a un recurso $t'_{psc}$ que encaja totalmente con $t_{psc}$ & \texttt{cpv2008:52900000} \\ \hline
+  \texttt{skos:closeMatch } & URI a un recurso $t'_{psc}$ del CPV 2008 que encaja parcialmente con $t_{psc}$ & \texttt{cpv2008:52900000} \\ \hline
+  \texttt{pscs:level} & Indica el grado de especificidad de un $t_{psc}$ cuando no se puede inferir directamente su antecesor & \texttt{pscs:level} ``5'' \\ \hline  
+  \texttt{skos:broaderTransitive} & URI a un recurso $t'_{psc}$ antecesor de $t_{psc}$ que indica la categoría $Cat_{psc}$ & \texttt{skos:broaderTransitive} cpv2008:55000000 \\ \hline
+  \texttt{skos:prefLabel} & Etiquetas y descripciones multing\"{u}es &  "Retail trade services"@EN \\ \hline
+  \texttt{rdfs:label} & $\equiv$ &  $\equiv$\\ \hline
+  \texttt{gr:description} & $\equiv$ &  $\equiv$ \\ \hline
+\endhead
+\hline
+\caption{Diseño de propiedades para los elementos de las Clasificaciones Estándar de Productos.}\label{table:pscs-rdf-model}\\    
+\end{longtable}
+
+
+
+
 \subsubsection{Tarea $t_6$-Diseño de un Esquema de URIs}
-Esta tarea tiene como objetivo establecer la forma y estructura de las \gls{URI}s para las definiciones 
+Esta tarea tiene como objetivo establecer la forma y estructura de las \gls{URI}s tanto para las definiciones 
 realizadas en la ontología $\mathcal{O}$ como para todos los recursos presentes en el \dataset RDF $\mathcal{D}$ que 
 se genera a partir de la transformación de los datos a \gls{RDF}. Es una de las actividades clave ya que guiará 
 tanto el método final de transformación como el proceso posterior de publicación. En la Tabla~\ref{table:pscs-uris} se 
@@ -366,7 +343,7 @@ hace la descripción de la estructura de URIs que se seguirán para las \gls{PSC
 El objetivo de esta tarea es establecer una plantilla de cada uno de los recursos RDF que están 
 presentes en el \dataset \gls{RDF} $\mathcal{D}$ para que sirvan como guía en los siguientes momentos: 1) en la ejecución propiamente dicha 
 de la transformación de los datos originales a RDF y 2) en la validación de los recursos RDF generados. De esta manera, 
-tratándose de \datasets con una gran cantidad de recursos se puede fácilmente identificar recursos que no sean 
+tratándose de \datasets con una gran cantidad de recursos se pueden identificar fácilmente aquellos que no sean 
 compatibles con este esquema favoreciendo la depuración de los recursos generados. Adicionalmente, un esquema de 
 recurso sirve como documentación extra para el proceso de consumo. En el caso de las clasificaciones de productos es necesario 
 establecer un recurso plantilla, ver Figura~\ref{fig:pscs-template}, para los propios elementos de la \gls{PSC}, $t_{psc}$, así como para la propia descripción 
@@ -381,7 +358,7 @@ resulta de sumo interés para asegurar la calidad de los datos producidos.
 \begin{lstlisting} 
 <<base_uri>/resource/{psc}/{version|year}/{id}>
       a       gr:ProductOrServiceModel , pscs:PSCConcept;
-     (skosxl:prefLabel ""@lang;)+
+     (skos:prefLabel ""@lang;)+
      (gr:description ""@lang;)+
      (rdfs:label ""@lang ;)+
      dc:identifier ""^^xsd:string ;
@@ -404,30 +381,30 @@ ya existentes. En el caso particular de las clasificaciones de productos y de ac
 identificados en la Tarea $t_4$, el enriquecimiento de los elementos se realizará con \textit{ProductOntology} que 
 a su vez dispone de enlaces a la DBPedia, con lo que el enlazado de los datos queda perfectamente justificado. 
 
-Para llevar a cabo el enriquecimiento es necesario realizar reconcialización de entidades entre las descripciones 
-de elementos $t_{psc}$ y los recursos objetivos. Análogamente a enfoques como los de Silk Server o SERIMI y teniendo 
-en cuenta las particularidades de las descripciones de los productos se ha decido implementar un componente 
-para realizar este enlazado, ver Sección~\ref{sect:moldeas-transformer}, sobre el componente \texttt{moldeas-transformer}, que toma como entrada la descripción del producto, en inglés, y tras 
+Para llevar a cabo el enriquecimiento es necesario realizar reconciliación de entidades entre las descripciones 
+de elementos $t_{psc}$ y los recursos objetivos. Análogamente a enfoques como los de \textit{Silk Server} o SERIMI y teniendo 
+en cuenta las particularidades de las descripciones de los productos se ha decido implementar un componente, 
+como parte de \texttt{moldeas-transformer}, para realizar este enlazado, tomando como entrada la descripción del producto, en inglés, y tras 
 la realización del procesamiento de lenguaje natural mediante las herramientas Apache \gls{Lucene}~\cite{Hatcher:2004:LA:1044938} y \gls{Solr}~\cite{solr}, obtiene una lista de recursos 
 candidatos a ser enlazados. Dado que el \textit{matching} de los recursos no se puede asegurar al 100\%, requeriría una validación manual, 
 por lo que se ha creado una propiedad particular \textit{pscs:relatedMatch} para indicar la relación que se establece entre el recurso 
 actual $t_{psc}$ y el recurso obtenido. Adicionalmente, en una segunda versión se ha especializado esta propiedad para incluir 
-un valor de fiabilidad (\textit{threshold}) que indica el grado de similitud entre los recursos. De esta manera se pueden obtener 
+un valor de fiabilidad (\textit{threshold}) que indica el grado de similitud entre los recursos, de esta manera se pueden obtener 
 los recursos similares a uno dado por encima de un valor umbral.
 
 Por otra parte, en el ámbito de los anuncios de licitación la clasificación de productos más relevante es el \gls{CPV} 2008 ya que 
 es el sistema de clasificación vigente y normativo en la Unión Europea. Teniendo en cuenta que los anuncios de licitación 
 objeto de estudio en este documento pertenecen a la Unión Europea y que por lo tanto están clasificados de acuerdo a esta 
-taxonomía es conveniente proveer los enlaces adecuados entre los distintos elementos de todas las PSCs para que puedan 
+taxonomía, es conveniente proveer los enlaces adecuados entre los distintos elementos de todas las PSCs para que puedan 
 ser traducidos al CPV 2008 facilitando la capacidad expresiva para la realización de consultas y en consecuencia favoreciendo 
-la accesibilidad a los anuncios de licitación. El soporte a este enfoque sigue un modelo similar al presentado anteriormente 
+la accesibilidad a los anuncios de licitación. El soporte a este enfoque sigue un modelo similar al presentado anteriormente, 
 con la diferencia de que los recursos origen son aquellos generados en la transformación de las \gls{PSC}s y el \dataset objetivo 
 es el correspondiente al CPV 2008. De esta manera, se establecen dos tipos de enlaces:
 \begin{enumerate}
  \item \textit{Mapping} exacto. Este enlace entre elementos de las PSCs se realiza cuando en las propias clasificaciones existen 
 \textit{mapeos} entre los elementos porque un organismo oficial se ha encargado de realizar esta tarea por cuestiones estratégicas. En este caso, 
 el enlace entre los conceptos se modela mediante la propiedad \texttt{skos:exactMatch} cuya semántica dentro de la especificación 
-de SKOS indica que su uso estará destinado a realizar enlaces entre conceptos \textit{skos:Concept} en los cuales se puede asegurar 
+de SKOS indica que su uso estará destinado a realizar enlaces entre conceptos \textit{skos:Concept}, en los cuales se puede asegurar 
 que representan al mismo recurso.
 \item \textit{Mapping} parcial. Al igual que en el caso anterior el proceso consiste en identificar los recursos del CPV 2008 que encajan 
 parcialmente con un recurso origen en otra PSC. En este caso, la propiedad utilizada es \texttt{skos:closeMatch} que de acuerdo 
@@ -455,14 +432,14 @@ por un enfoque híbrido realizando la transformación inicial mediante la herram
 para trabajar con RDF y las posteriores etapas de enriquecimiento a través de una implementación particular que tenga en cuenta 
 la casuística específica de las clasificaciones de productos. En cualquier caso, en la ejecución de esta 
 tarea se debe asegurar que el \dataset RDF $\mathcal{D}$ generado es válido en cuanto a sintaxis y al modelo definido. Esta tarea 
-se ha ejecutado secuencialmente para cada unas de las clasificaciones de productos, ver Figura~\ref{fig:t9-pscs}.
-
-\begin{figure}[!htb]
-\centering
-	%\includegraphics[width=18cm,angle=90]{./images/phd/pscs}
-\caption{Tarea $t_9$-Transformación de los Datos a RDF de las Clasificaciones de Productos.}
-\label{fig:t9-pscs}
-\end{figure}
+se ha ejecutado secuencialmente para cada unas de las clasificaciones de productos.
+% 
+% \begin{figure}[!htb]
+% \centering
+% 	%\includegraphics[width=18cm,angle=90]{./images/phd/pscs}
+% \caption{Tarea $t_9$-Transformación de los Datos a RDF de las Clasificaciones de Productos.}
+% \label{fig:t9-pscs}
+% \end{figure}
 
 \subsubsection{Tarea $t_{10}$-Reconciliación de Entidades}
 El diseño y ejecución de esta tarea ha sido descrito en la Sección~\ref{t8-pscs} ya que están 
@@ -478,9 +455,9 @@ generan un \textit{mapeo} directo entre las versiones de los mismos, como en el 
 una elección correcta situar la metainformación a nivel de \dataset para cada unas de las PSCs. Para ello y de acuerdo 
 a los vocabularios seleccionados se utiliza \textit{\gls{voID}} como especificación para indicar la metainformación 
 de un \dataset concreto. El enfoque seguido genera metainformación a nivel del catálogo de las clasificaciones 
-de producto, ver Figura~\ref{fig:pscs-ls}, y para cada uno de las clasificaciones transformadas, ver Figura~\ref{fig:pscs-ds-cpv-2008} como ejemplo 
+de producto, ver Figura~\ref{fig:pscs-ls}, y para cada una de las clasificaciones transformadas, ver Figura~\ref{fig:pscs-ds-cpv-2008} como ejemplo 
 de la descripción del \dataset del \gls{CPV} 2008. Es relevante destacar la definición de la licencia de los datos con el objetivo 
-de facilitar su posterior reutilización, en este caso se ha optado por una licencia de ``Open Data'' basada en las directrices 
+de facilitar su posterior reutilización, en este caso se ha optado por una licencia de ``\textit{Open Data}'' basada en las directrices 
 fijadas en la guía provista en~\cite{od-license}.
 
 \begin{figure}[!htp]
@@ -550,7 +527,7 @@ fijadas en la guía provista en~\cite{od-license}.
 	<http://purl.org/weso/pscs/cpv/2008/resource/33000000> ;
       void:uriRegexPattern
         "http://purl.org/weso/pscs/cpv/2008/resource/.+" ;
-      void:vocabulary skosxl: , skos: , gr: ;
+      void:vocabulary dc: , skos: , gr: ;
       skos:hasTopConcept 
 	<http://purl.org/weso/pscs/cpv/2008/resource/63000000> ,
 	<http://purl.org/weso/pscs/cpv/2008/resource/76000000> , 
@@ -563,16 +540,14 @@ fijadas en la guía provista en~\cite{od-license}.
 	\caption{Descripción del \dataset CPV 2008.}
 	\label{fig:pscs-ds-cpv-2008}
 \end{figure}
-
-\cleardoublepage
-
+\clearpage
 \subsubsection{Resultado Final y Ejemplos}\label{resultado-pscs}
-El resultado final del proceso de producción de \linkeddata tras el análisis y ejecución 
-de las tareas identificadas y del método de producción seleccionado genera como resultado un catálogo 
+El resultado final del proceso de producción de \linkeddata, tras el análisis y ejecución 
+de las tareas identificadas y del método de producción seleccionado, genera como resultado un catálogo 
 de clasificaciones de productos mediante datos enlazados, en los cuales se pueden extraer las siguientes 
 estadísticas de producción de datos así como ejemplos de los recursos generados, ver Tabla~\ref{table:pscs-ejemplos}. Por otra parte, 
 el aumento de la expresividad en el momento de realizar consultas se puede observar en la Figura~\ref{fig:pscs-sparql-query} en la 
-cual se expresa la siguiente consulta:
+que se expresa la siguiente consulta:
 
 \begin{Frame}
 \textit{``Dame 100 productos o servicios relacionados, descripción en inglés, con el término construcción que aparezca en cualquiera de los catálogos disponibles y 
@@ -604,8 +579,8 @@ PSCs & $52392$ &  N/A & $1842053$ & $40351$ & $23191$  \\ \hline
 SELECT DISTINCT * WHERE{
   ?product pscs:relatedMatch <http://www.productontology.org/id/construction> .
   ?product skos:closeMatch ?cpv.
-  ?product skosxl:prefLabel ?productLabel.
-  ?cpv skosxl:prefLabel ?cpvLabel.
+  ?product skos:prefLabel ?productLabel.
+  ?cpv skos:prefLabel ?cpvLabel.
   ?product skos:inScheme ?scheme.
   FILTER (?scheme != <http://purl.org/weso/pscs/cpv/2008/resource/ds>).
   FILTER (lang(?cpvLabel)="en")
@@ -614,8 +589,6 @@ SELECT DISTINCT * WHERE{
 	\caption{Ejemplo de consulta en SPARQL sobre el Catálogo de Clasificaciones de Productos.}
 	\label{fig:pscs-sparql-query}
 \end{figure}
-
-
 
 \begin{figure}[!htp]
 \lstinputlisting{examples/e-proc/cpv-2003.ttl}
@@ -676,6 +649,8 @@ SELECT DISTINCT * WHERE{
 	\label{fig:pscs-example-sitc-v4}
 \end{figure}
 
+
+\clearpage
 \subsubsection{Método de Producción de \linkeddata de Clasificaciones Estándar de Productos}
 De acuerdo al análisis y diseño de datos enlazados realizado para las clasificaciones de productos 
 a lo largo de las anteriores anteriores y la tabla de decisión~\ref{tabla:produccion}, el método semántico seleccionado 
@@ -687,7 +662,7 @@ establecer los siguientes conjuntos:
  \item $\mathcal{G}$ es el \dataset de entrada, conjunto de tuplas, conteniendo los datos de cada una de las clasificaciones de productos.
  \item $\mathcal{M}$ es el conjunto de \textit{mapeos}, ver Tabla~\ref{table:pscs-mappings}, extraídos según el análisis y diseño realizado en las secciones anteriores. Estos 
 \textit{mapeos} son directamente expresables en la herramienta de transformación y toman como parámetros el valor de una de las tuplas de entrada (posición $X$) y la propiedad a generar.
- \item \textit{Dataset} RDF $\mathcal{D}$ es el \dataset resultado, igualmente, siguiendo el análisis y diseño realizado en las secciones anteriores y tras la ejecución 
+ \item \textit{Dataset} RDF $\mathcal{D}$ es el \dataset resultado, siguiendo el análisis y diseño realizado en las secciones anteriores y tras la ejecución 
 de la tarea propia de transformación de datos.
 \end{itemize}
 
@@ -701,19 +676,20 @@ de la tarea propia de transformación de datos.
  $m_4$ & \texttt{dc:subject} & \texttt{xsd:string} \\ \hline
  $m_5$ & \texttt{pscs:relatedMatch} & URI  \\ \hline
  $m_6$ & \texttt{skos:exactMatch } & URI \\ \hline
-\newpage
  $m_7$ & \texttt{skos:closeMatch } & URI  \\ \hline
  $m_8$ & \texttt{pscs:level} & \texttt{xds:int} \\ \hline  
  $m_9$ & \texttt{skos:broaderTransitive} & URI \\ \hline
- $m_{10}$ & \texttt{skosxl:prefLabel}, \texttt{rdfs:label}, \texttt{gr:description}  & \texttt{xsd:string@lang} \\ \hline   
+ $m_{10}$ & \texttt{skos:prefLabel}, \texttt{rdfs:label}, \texttt{gr:description}  & \texttt{xsd:string@lang} \\ \hline   
 \hline
 \caption{Conjunto de \textit{mapeos} $\mathcal{M}$ para las Clasificaciones Estándar de Productos.}\label{table:pscs-mappings}\\    
 \end{longtable}
 
-\subsection{Proceso de Publicación de \linkeddata de Clasificaciones Estándar de Productos}\label{sect:proceso-publicacion-ld}
-Continuando con la estrategia definida para todos los \datasets implicados en el proceso de contratación pública 
-electrónica es común, por ello el proceso de publicación es homogéneo siguiendo la estructura definida 
+\subsection{Proceso de Publicación de \linkeddata de Clasificaciones\\ Estándar de Productos}\label{sect:proceso-publicacion-ld}
+Considerando que la estrategia definida para todos los \datasets implicados en el proceso de contratación pública 
+electrónica es común, el proceso de publicación es homogéneo siguiendo la estructura definida 
 en la Sección~\ref{sect:proceso-publicacion-ld}.
+
+\newpage
 
 \subsubsection{Tarea $t_{14}$-Infraestructura para \linkeddata}
 Nuevamente, la estrategia definida para todos los \datasets implicados en el proceso de contratación pública 
@@ -724,14 +700,14 @@ en la Sección~\ref{infraestructura-comun}.
 De la misma forma que en el apartado anterior, el acceso y formato de datos RDF para los datos contenidos y relativos 
 a las organizaciones siguen el esquema proporcionado en la Sección~\ref{t15-comun}.
 
-\subsection{Proceso de Consumo de Clasificaciones Estándar de Productos}
+\subsection{Proceso de Consumo de Clasificaciones Estándar\\ de Productos}
 El proceso de consumo de datos enlazados, según la definición realizada en la Sección~\ref{sect:proceso-consumo}, consiste en 
 la reutilización de los datos enlazados para ser aplicados en la construcción de una nueva aplicación o servicio de valor 
 añadido. En general, la reutilización más sencilla consiste en la representación gráfica de los recursos o la simple 
 consulta con selección de formato de datos de acuerdo a las características de publicación utilizadas. En el caso 
 que nos ocupa y teniendo en cuenta el objetivo de realización de un prototipo experimental de extracción de anuncios 
-de licitación como demostrador del consumo de datos enlazados se ha escogido el método semántico de consumo $SCM_2$-``\textit{Mapeo} a Lenguaje de Programación'', 
-cuya descripción está disponible en la Sección~\ref{scm2-consumo}, y orientado a obtener una representación de los recursos RDF en un 
+de licitación como demostrador del consumo de datos enlazados, se ha escogido el método semántico de consumo $SCM_2$-``\textit{Mapeo} a Lenguaje de Programación'', 
+cuya descripción está disponible en la Sección~\ref{scm2-consumo}, orientado a obtener una representación de los recursos RDF en un 
 lenguaje de programación (en este caso Java) como objetos de negocio. De acuerdo a este objetivo y la definición del propio método 
 es necesario definir:
 \begin{itemize}
@@ -739,9 +715,9 @@ es necesario definir:
  \item El conjunto $\mathcal{M}^1$, ver Tabla~\ref{table:pscs-consumo}, indica como transformar el \dataset anterior a la representación objetivo, objetos del lenguaje Java.
 \end{itemize}
 
-De esta manera, se obtiene una serie de objetos, $\mathcal{D}_{consum}$, con la información y datos necesarios, no se transforma necesariamente todos los datos disponibles en los recursos pertenecientes 
+De esta manera, se obtiene una serie de objetos, $\mathcal{D}_{consum}$, con la información y datos necesarios, no se transforman necesariamente todos los datos disponibles en los recursos pertenecientes 
 a  $\mathcal{D}_{pub}$, para ser reutilizados como objetos de negocio en un lenguaje de programación. Es conveniente señalar que el acceso a los datos se realiza a través 
-de la consulta al \textit{endpoint} de \gls{SPARQL} realizando consultas \textit{SELECT} y \textit{DESCRIBE}.
+de la consulta al \textit{endpoint} de \gls{SPARQL} ejecutando consultas \textit{SELECT} y \textit{DESCRIBE}.
 
 \begin{longtable}[c]{|p{2cm}|p{6cm}|p{6cm}|} 
 \hline
@@ -757,24 +733,22 @@ de la consulta al \textit{endpoint} de \gls{SPARQL} realizando consultas \textit
  $m^1_8$ & \texttt{skos:closeMatch } 	& \texttt{java.util.List<PSCTO>}  \\ \hline
  $m^1_9$ & \texttt{pscs:level} 	& int \\ \hline  
  $m^1_{10}$ & \texttt{skos:broaderTransitive} & java.util.List<PSCTO>  \\ \hline
- $m^1_{11}$ & \texttt{skosxl:prefLabel}, \texttt{rdfs:label}, \texttt{gr:description}  & Map<String,String> (lang, value) para cada propiedad \\ \hline   
+ $m^1_{11}$ & \texttt{skos:prefLabel}, \texttt{rdfs:label}, \texttt{gr:description}  & Map<String,String> (lang, value) para cada propiedad \\ \hline   
 
 \hline
 \caption{Conjunto de \textit{mapeos} $\mathcal{M}^1$ de consumo para las Clasificaciones Estándar de Productos.}\label{table:pscs-consumo}\\    
 \end{longtable}
 
 \subsection{Proceso de Validación de Clasificaciones Estándar de Productos}
-La validación como proceso transversal a cualquier etapa dentro del ciclo de vida de datos 
+La validación como proceso transversal en cualquier etapa dentro del ciclo de vida de datos 
 enlazados debe realizarse con el objetivo de asegurar la calidad de los datos. De acuerdo a la 
 definición realizada en la Sección~\ref{sect:validation}, este proceso consiste en la comprobación 
 de que los recursos de un \dataset RDF cumplen ciertas características. 
 
-\newpage
-
-La realización de esta validación puede ser realizada manual o automáticamente dependiendo del caso, por ejemplo para la características 
-de negociación de contenido se dispone de herramientas o para la inclusión en la nube de datos enlazados, pero 
+La realización de esta validación puede ser realizada manual o automáticamente en función del caso concreto, por ejemplo para la característica 
+de negociación de contenido o para la inclusión en la nube de datos enlazados se dispone de herramientas adecuadas, pero 
 en cambio para comprobaciones relativas a los dominios y rangos de las propiedades, etc., no existe una 
-herramienta completo. Por todo ello, se ha seguido un enfoque híbrido basado en la utilización de herramientas 
+herramienta completa. Por todo ello, se ha seguido un enfoque híbrido basado en la utilización de herramientas 
 y validación manual. La descripción completa de la validación de acuerdo a todas las características 
 se reseña en las Tablas de Validación disponibles en el Apéndice~\ref{tablas-validacion-apen}.
 
@@ -784,26 +758,22 @@ realizada de los catálogos de clasificaciones de productos a la iniciativa \lin
 siguientes puntos:
 
 \begin{itemize}
- \item Los datos \gls{RDF} correctos ya que se han utilizado herramientas y \gls{API}s (Google \gls{Refine} y Jena) que aseguran 
+ \item Los datos \gls{RDF} son correctos ya que se han utilizado herramientas y \gls{API}s (Google \gls{Refine} y Jena) que aseguran 
 la generación correcta de RDF.
- \item El dominio y rango en las propiedades es correcta a realizar la validación contra el modelo definido.
+ \item El dominio y rango en las propiedades es correcta, ya que se realiza la validación contra el modelo definido.
  \item Se ha establecido metainformación sobre la procedencia a nivel de \dataset.
  \item Todos los recursos transformados siguen la plantilla objetivo RDF.
 \end{itemize}
 
-En conclusión, las tareas, métodos y el proceso de validación tienen un calado verdaderamente trascendente 
-en el ciclo de vida de datos enlazados, es por ello que en este estudio se ha rendido especial interés 
-a la consecución correcta de la validación de los datos enlazados.
-
-\subsection{Proceso de Realimentación de Clasificaciones Estándar de Productos}
-Este proceso según la definición realizada en la Sección~\ref{proceso-realimentacion} busca la mejora 
+\subsection{Proceso de Realimentación de Clasificaciones\\ Estándar de Productos}
+Este proceso según la definición realizada en la Sección~\ref{proceso-realimentacion}, busca la mejora 
 y perfeccionamiento de los datos promocionados a \gls{RDF}. Esta situación emerge en el momento en el cual 
-los datos comienzan a ser reutilizados tanto por aplicaciones o servicios como por individuos. En el caso 
+los datos comienzan a ser reutilizados, tanto por aplicaciones o servicios como por individuos. En el caso 
 particular del catálogo de las clasificaciones de productos y debido a su reutilización por la 
 \textit{Charles University} de la República Checa se han detectado errores que han sido 
-corregidos, casos específicos no detectados por el proceso de validación y debidos al procesamiento masivo de datos. En este sentido el proceso 
-de realimentación se basa en un enfoque en el cual \textit{Usuarios y Aplicaciones} realizan 
+corregidos, se trata de casos específicos no detectados por el proceso de validación, debido al procesamiento masivo de datos. 
+En este sentido el proceso de realimentación se basa en un enfoque en el cual \textit{Usuarios y Aplicaciones} realizan 
 el descubrimiento de datos no correctos y cuyo cambio se centra en una \textit{Actualización Ocasional}. Aunque 
 este enfoque es completamente válido, es conveniente señalar que este proceso todavía no se ha definido de forma 
 completa dentro de la iniciativa de \linkeddata por lo que su ejecución automática constituye un objetivo 
-a medio plazo en el cual terceros puedan mejorar los datos previa validación del \textit{Propietario de datos}.
+a medio plazo en el que terceros puedan mejorar los datos previa validación del \textit{Propietario de datos}.

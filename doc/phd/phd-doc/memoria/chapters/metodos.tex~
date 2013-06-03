@@ -32,7 +32,8 @@ los métodos relacionados con la producción de datos enlazados estarán en estr
 con aquellos que se encarguen de actualizar o consolidar los datos, por ejemplo un método que lleve
 a cabo la tarea de descubrimiento automático de \datasets será de gran utilidad tanto en producción como en consumo o actualización. 
 Por todo ello, además de proveer una clasificación de métodos semánticos, ver Figuras~\ref{fig:metodos-clasificacion} y~\ref{fig:metodos-clasificacion-2}, y distintas actividades 
-relacionadas, se deben alinear con los ciclos de vida que se repasan en la Sección~\ref{gld}.
+%relacionadas, se deben alinear con los ciclos de vida que se repasan en la Sección~\ref{gld}.
+relacionadas, se deben alinear con los ciclos de vida que se repasan en los entregables \textit{AEN01-00 y AEN01-01}.
 
 
 \begin{figure}[!htb]
@@ -112,7 +113,8 @@ de la definición de URI encaja \textit{Uniform Resource Locator} (\gls{URL}), q
 especifica cómo se ha de acceder a él. En el documento~\cite{RDF} se hace referencia al término HTTP URIs para identificar
 a aquellas URIs que utilizan el esquema de nombrado \gls{HTTP} para identificar a los recursos dentro de la iniciativa de la Web Semántica.
 
-\item [Modelo RDF.] Aunque ya se ha comentado en la Sección~\ref{semantica} el modelo RDF, cabe recordar su definición, RDF
+%%\item [Modelo RDF.] Aunque ya se ha comentado en la Sección~\ref{semantica} el modelo RDF, cabe recordar su definición, RDF
+\item [Modelo RDF.] Aunque ya se ha comentado en los entregables \textit{AEN01-00 y AEN01-01} el modelo RDF, cabe recordar su definición, RDF
 sigue y cumple con los principios y características de interoperabilidad, extensibilidad, capacidad de evolución
 y descentralización elaborados por el \gls{W3C}. En particular, el modelo RDF se diseñó para tener un modelo de datos
 simple con una semántica formal y capacidades de inferencia basado en un vocabulario que hace uso de URIs para nombrar
@@ -904,7 +906,7 @@ y el cambio en los datos se produce a nivel de conjunto.
 \end{itemize}
 
 \begin{figure}[!htp]
-\begin{lstlisting} [basicstyle=\scriptsize] 
+\begin{lstlisting}[basicstyle=\scriptsize]  
 <http://purl.org/weso/nomenclator/asturias/2010/resource/ds> a void:Dataset ;
 	     rdf:type skos:ConceptScheme ;
 	     rdfs:label "Nomenclator Asturias 2010"@en ;
@@ -1017,7 +1019,8 @@ de herramientas que proporcionen soporte desde dos puntos de vista:
  \item [Completa.] Cubre todos los procesos, métodos y tareas suministrando las herramientas
 adecuadas para cada uno de ellos. Los criterios de selección pueden variar dependiendo
 del estado de madurez, de los datos a tratar, de las tareas a realizar, etc. En este sentido
-la infraestructura definida en \textit{LOD2 project}, ver Sección~\ref{lod2-project}, se puede
+%la infraestructura definida en \textit{LOD2 project}, ver Sección~\ref{lod2-project}, se puede
+la infraestructura definida en \textit{LOD2 project}, ver entregables \textit{AEN01-00 y AEN01-01}, se puede
 considerar como paradigmática.
 \item [Parcial.] Cubre alguno de los procesos, métodos o tareas. Por ejemplo, para el proceso
 de publicación, se puede establecer una infraestructura especial que no tenga en cuenta ningún
