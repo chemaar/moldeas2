@@ -1,0 +1,93 @@
+%\documentclass[b5paper,final,11pt,fleqn,twoside]{book}
+
+\documentclass[a4paper,twoside,12pt]{report}
+\usepackage{times}
+\usepackage{graphics}
+
+\usepackage{weso}
+
+\input{../cabeceras}
+\input{../utilidades}
+\input{../bibliografia-utils}
+
+
+\makeindex
+
+\makeglossaries
+\loadglsentries{glosario}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\title{A/EN01-00-Informe \textit{Open Data}}
+
+
+\author{
+{Jose María Alvarez-Rodríguez (WESO)\\
+josem.alvarez@weso.es \\
+José Emilio Labra Gayo (WESO) \\
+labra@uniovi.es}}
+
+\revised{Febrero 2, 2012}
+
+%\issuer{Vrije Universiteit Amsterdam}
+
+\identifier{10ders/A/EN01-00}
+
+\version{v1.0}
+
+\state{Final}
+
+\project{10ders-Information Services}
+
+\distribution{protegida}
+
+\synopsis{\strut\\
+Proyecto: 10ders Information Services/TSI-020100-2010-919 \\
+Entregable: A/EN01-00 \\
+Informe \textit{Open Data}.
+
+Palabras clave: open data, linked data, linked open data, web semántica
+}
+
+\coverpages
+
+\setcounter{page}{0}
+
+\pagenumbering{roman}
+
+\include{historial-AEN01-00}
+\include{resumen-AEN01-00}
+
+\setlength{\parskip}{0.0cm}
+\tableofcontents
+\listoffigures
+\listoftables
+\setlength{\parskip}{1.0ex}
+
+\newpage
+\pagenumbering{arabic}
+
+
+
+\chapter{\label{capitulo:introduccion}Introducción} % 10
+% \input{chapters/introduccion}
+\chapter{\label{capitulo:semantica}Panorámica de uso de la\\ Web Semántica} 
+\input{chapters/web-semantica/web-semantica}
+\chapter{\label{capitulo:semantica}Panorámica de uso de la\\ Linked Data y Open Data} 
+\input{chapters/linked-data/linked-data}
+\chapter{\label{capitulo:eproc-sm}Tendencias actuales en Semántica} 
+\input{chapters/web-semantica/semantic-trends}
+\chapter{\label{capitulo:eproc-sm}\textit{e-Procurement} y Semántica} 
+\input{chapters/web-semantica/e-proc-sm}% 10-15
+
+
+\printindex
+\printglossaries
+
+
+% Bibliografía
+\insertbibliography
+\end{document}
