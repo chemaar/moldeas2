@@ -271,7 +271,7 @@ generates, has-event, has-document, located-in, budget, buys, payment, topic, me
 gráfica en el diagrama de la ontología y a través de las reglas de negocio definidas previamente.
  \end{itemize}
 %  
-\cleardoublepage
+%\cleardoublepage
 La estrategia utilizada para el diseño de este modelo se ha centrado en la reutilización de vocabularios y propiedades 
 existentes, con el objetivo de facilitar su integración posterior en otros modelos y su extensión por terceros. Como segundo paso 
 se diseñan las propiedades que deben tener los recursos (se adjuntan las más representativas del ejemplo en curso), teniendo en cuenta su ulterior aplicación ver 
@@ -494,7 +494,7 @@ directrices fijadas en la guía provista en~\cite{od-license}.
  
 
 % 
-\cleardoublepage
+%\cleardoublepage
 \subsubsection{Resultado Final y Ejemplos}
 El resultado final del proceso de producción de \linkeddata tras el análisis y ejecución 
 de las tareas identificadas y del método de producción seleccionado, genera como resultado un conjunto de 
@@ -550,7 +550,7 @@ SELECT DISTINCT * WHERE{
 	\label{fig:modelo-hospital-1}
 \end{figure}
 
-\cleardoublepage
+%\cleardoublepage
 \begin{figure}[!htp]
     \centering
 	\includegraphics[width=16cm]{images/phd/modelo/hospital-2}
@@ -613,7 +613,7 @@ de características $\mathcal{P}$, para la obtención de un \dataset RDF $\mathc
 de publicación. El método seleccionado para la publicación de datos es una conjunción 
 de los detallados en las Secciones~\ref{spm-1-pub} (Fichero estático \gls{RDF}),~\ref{spm-3-pub} (\textit{Endpoint} de SPARQL) y~\ref{linkeddata-frontend} 
 (\linkeddata \textit{Frontend}) con el objetivo de proporcionar cobertura a las necesidades de la mayor parte de los potenciales clientes. De esta forma, 
-se suministra un entorno en el cual se pueden: 1) descargar todos los datos de una única consulta y un sólo formato de datos; \linebreak 2) realizar consultas personalizadas 
+se suministra un entorno en el cual se pueden: 1) descargar todos los datos de una única consulta y un sólo formato de datos; 2) realizar consultas personalizadas 
 con distintos formatos de salida a través del protocolo y lenguaje propuesto en \gls{SPARQL} y 3) navegar a través de los datos mediante un interfaz con provisión 
 para la negociación de contenido. 
 % 

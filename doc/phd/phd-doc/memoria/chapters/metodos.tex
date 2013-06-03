@@ -241,7 +241,7 @@ Los modelos de ciclo de vida definen las distintas fases o pasos a realizar para
 y gestión de los datos enlazados. En general, se trata de procesos de alto nivel que sirven como guía tanto desde un punto de vista
 estratégico como técnico y que crean concienciación de los puntos clave para la apertura y enlazado de datos. En las siguientes
 tablas se realiza la alineación de los métodos que se han identificado inicialmente.
-\newpage
+%\newpage
 \begin{longtable}[c]{|p{6cm}|p{8cm}|} 
 
 \hline
@@ -904,7 +904,7 @@ y el cambio en los datos se produce a nivel de conjunto.
 \end{itemize}
 
 \begin{figure}[!htp]
-\begin{lstlisting} 
+\begin{lstlisting}[basicstyle=\scriptsize]  
 <http://purl.org/weso/nomenclator/asturias/2010/resource/ds> a void:Dataset ;
 	     rdf:type skos:ConceptScheme ;
 	     rdfs:label "Nomenclator Asturias 2010"@en ;
@@ -969,7 +969,7 @@ En el vocabulario \textit{RDF Data Cube} este tipo de información se modelaría
  en el cual se tendrían en cuenta 3 dimensiones (género, región y fecha) y una medida (personas).
 
 \begin{figure}[!htp]
-\begin{lstlisting} 
+\begin{lstlisting}[basicstyle=\scriptsize] 
 nomen-stats: sliceByRegionSex a qb:SliceKey;
   rdfs:label "Slice by region"@en;
   rdfs:comment "Fixed year, region and sex change"@en;

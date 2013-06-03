@@ -429,7 +429,7 @@ datos de procedencia, licencia, etc.
 	\caption{Descripción del \dataset de Organizaciones.}
 	\label{fig:orgs-ds}
 \end{figure}
-\cleardoublepage
+%\cleardoublepage
 \begin{figure}[!htp]
 \begin{lstlisting} 
 <http://purl.org/weso/eprocurement/organization/person/resource/ds>

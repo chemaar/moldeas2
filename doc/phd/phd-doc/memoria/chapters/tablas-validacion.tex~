@@ -376,7 +376,7 @@ en $33$ criterios positivos (\si) y $14$ criterios positivos (\na).
   3.13&  \textit{example/rdfa} &\na \\ \hline
   3.14&  \textit{mapping/\{format\}} &\no \\ \hline
     \hline
-  \caption{$T^{6}$-Tabla de Validación para registrar el \dataset en CKAN de los Anuncios de Licitación.}
+  \caption{$T^{6}$-Tabla de Validación para registrar el \dataset en CKAN.}
   \label{table:validation-t6}
 \end{longtable}
 

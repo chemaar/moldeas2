@@ -376,7 +376,7 @@ licitación.
   \end{center}
 \end{table} 
 
-
+\clearpage
 \subsection{Diseño de \texttt{moldeas-test}}\label{sect:moldeas-test}
 El objetivo de este módulo es abstraer las pruebas de los módulos anteriores, 
 especialmente de \texttt{moldeas-api}, para así proveer un sistema separado 
