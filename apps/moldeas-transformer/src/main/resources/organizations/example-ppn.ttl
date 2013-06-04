@@ -1,0 +1,53 @@
+@prefix cpv-2008-ds:  <http://purl.org/weso/pscs/cpv/2008/ds> .
+@prefix spatialrelations:  <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix pscs-onto:  <http://localhost/pscs/ontology/> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix cpv-onto:  <http://localhost/pscs/cpv/ontology/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix moldeas-nuts:  <http://localhost/moldeas/nuts/> .
+@prefix event:   <http://linkedevents.org/ontology/> .
+@prefix pscs:    <http://localhost/pscs/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix c4n:     <http://vocab.deri.ie/c4n#> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas:  <http://localhost/moldeas/> .
+@prefix cpv-2008:  <http://localhost/pscs/cpv/2008/> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix payment:  <http://reference.data.gov.uk/def/payment#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix nuts:    <http://nuts.psi.enakting.org/def/> .
+@prefix intervals:  <http://reference.data.gov.uk/def/intervals/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+@prefix cpv-2003:  <http://localhost/pscs/cpv/2003/> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix nuts-id:  <http://nuts.psi.enakting.org/id/> .
+@prefix v:       <http://www.w3.org/2006/vcard/ns#> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix po:      <http://www.productontology.org/> .
+@prefix gr:      <http://purl.org/goodrelations/v1#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix moldeas-ppn:  <http://localhost/moldeas/ppn/> .
+
+
+<http://localhost/moldeas/ppn/2011/resource/170>
+      a       moldeas-onto:Notice ;
+      rdfs:comment "This is an announcement of a public contract."@en ;
+      rdfs:label "Public Procurement Notice 170"@en ;
+      moldeas-onto:in-process
+              moldeas-onto:Closed ;
+      moldeas-onto:located-in
+              <http://localhost/moldeas/nuts/resource/LU> ;
+      cpv-onto:topic <http://localhost/pscs/cpv/2008/resource/50700000> ;
+      dcterms:date "2011"^^xsd:string ;
+      dcterms:description "This is an announcement of a public contract."@en ;
+      dcterms:identifier "170"^^xsd:string ;
+      dcterms:publisher moldeas-org:WESO .

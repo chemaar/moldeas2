@@ -47,7 +47,6 @@ import org.weso.moldeas.utils.TransformerConstants;
 
 import au.com.bytecode.opencsv.CSVReader;
 
-import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
@@ -200,21 +199,21 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 		Resource organizationResource = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId());;
 		model.add(organizationResource,
 				RDFS.label, 
-				literalLang(model,org.getLabel(),org.getNutsCode()));
+				TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
 		site = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#site");
 		model.add(site,
 				VCARD.FN,
-				literalLang(model,org.getLabel(),org.getNutsCode()));
+				TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
 		organizationName = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#org");
 		model.add(organizationName,
 				VCARD.Orgname,
-				literalLang(model,org.getLabel(),org.getNutsCode()));
+				TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
 		organizationAddress = model.getResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#adr");
 		model.add(organizationAddress,	
 				VCARD.Orgname,
-				literalLang(model,org.getLabel(),org.getNutsCode()));
+				TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
 		model.add(organizationAddress,VCARD.Street,
-				literalLang(model,org.getFullAddress(),org.getNutsCode()));
+				TransformerConstants.literalLang(model,org.getFullAddress(),org.getNutsCode()));
 	
 	}
 
@@ -235,13 +234,13 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 			model.add(siteAddress,VCARD.EMAIL,model.createResource(org.getEmail()));
 
 		Resource organizationName = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#org");
-		model.add(organizationName,	VCARD.Orgname,literalLang(model,org.getLabel(),org.getNutsCode()));
+		model.add(organizationName,	VCARD.Orgname,TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
 
 		Resource organizationAddress = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#adr");
-		model.add(organizationAddress,VCARD.Orgname,literalLang(model,org.getLabel(),org.getNutsCode()));
-		model.add(organizationAddress,VCARD.Locality,literalLang(model,org.getRegion(),org.getNutsCode()));
+		model.add(organizationAddress,VCARD.Orgname,TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
+		model.add(organizationAddress,VCARD.Locality,TransformerConstants.literalLang(model,org.getRegion(),org.getNutsCode()));
 		model.add(organizationAddress,VCARD.Pcode,org.getPostalCode());
-		model.add(organizationAddress,VCARD.Street,literalLang(model,org.getFullAddress(),org.getNutsCode()));
+		model.add(organizationAddress,VCARD.Street,TransformerConstants.literalLang(model,org.getFullAddress(),org.getNutsCode()));
 
 		Resource organizationTel = model.createResource(PrefixManager.getURIPrefix(MOLDEAS_ORG_PREFIX)+"o"+org.getId()+"#tel");
 		model.add(organizationTel,RDF.value,org.getTelephone());
@@ -251,8 +250,8 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 		model.add(organizationResource,RDF.type,model.createResource(PrefixManager.getURIPrefix("moldeas-onto")+org.getType()));		
 
 
-		model.add(site,RDFS.label,literalLang(model,org.getLabel(),org.getNutsCode()));
-		model.add(site,VCARD.FN,literalLang(model,org.getLabel(),org.getNutsCode()));
+		model.add(site,RDFS.label,TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
+		model.add(site,VCARD.FN,TransformerConstants.literalLang(model,org.getLabel(),org.getNutsCode()));
 		//model.add(site,VCARD.ORG,organizationName);
 		model.add(site,VCARD.ADR,organizationAddress);
 		model.add(site,VCARD.TEL,organizationTel);
@@ -271,10 +270,6 @@ public class OrganizationsTransformer extends ChainTransformerAdapter{
 		return organizationResource;
 	}
 
-
-	public static Literal literalLang(Model m, String value, String lang){
-		return m.createLiteral(value, lang);
-	}
 
 	public static boolean isValidEmailAddress(String email) {
 		   boolean result = true;

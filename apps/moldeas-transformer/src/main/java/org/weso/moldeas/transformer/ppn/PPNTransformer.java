@@ -31,7 +31,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -41,7 +40,6 @@ import org.apache.log4j.Logger;
 import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
-import org.weso.moldeas.transformer.pscs.cpv.CPVTransformerInit;
 import org.weso.moldeas.utils.PrefixManager;
 import org.weso.moldeas.utils.PrettyPrinter;
 import org.weso.moldeas.utils.TransformerConstants;
@@ -52,9 +50,9 @@ import au.com.bytecode.opencsv.CSVReader;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.DCTerms;
 import com.hp.hpl.jena.vocabulary.RDF;
+import com.hp.hpl.jena.vocabulary.RDFS;
 
 public class PPNTransformer extends ChainTransformerAdapter {
 
@@ -63,13 +61,14 @@ public class PPNTransformer extends ChainTransformerAdapter {
 	protected static Logger logger = Logger.getLogger(PPNTransformer.class);
 	public void execute() throws Exception{
 		this.model.createProperty(PSCConstants.CPV_codeIn);
+		this.model.createProperty(PSCConstants.IN_PROCESS);
+		this.model.createResource(TransformerConstants.WESO_ORG_URI);
 		//1-Load PPN,CPV file //FIXME: as parameters
 		String [] years = new String []{
-				"2008"
-				//,
-//				"2009",
-//				"2010",
-//				"2011"
+				"2008",
+				"2009",
+				"2010",
+				"2011"
 		};
 		ResourceLoader loaderNuts = new FilesResourceLoader(new String[]{"ppn/tender-nut.csv"});
 		InputStream dataNuts =loaderNuts.getKnowledgeResources()[0].getKnowledgeSourceData();
@@ -146,8 +145,15 @@ public class PPNTransformer extends ChainTransformerAdapter {
 		Resource ppnResource = resourceModel.createResource(PSCConstants.formatURIId(id,date));
 		Resource typeResource = resourceModel.createResource(getType());
 		ppnResource.addProperty(RDF.type, typeResource);
+		ppnResource.addProperty(RDFS.label, TransformerConstants.literalLang(resourceModel, TransformerConstants.DEFAULT_PPN_LABEL+id, TransformerConstants.DEFAULT_LANGUAGE));
+		ppnResource.addProperty(RDFS.comment, TransformerConstants.literalLang(resourceModel, TransformerConstants.DEFAULT_PPN_COMMENT, TransformerConstants.DEFAULT_LANGUAGE));
 		ppnResource.addLiteral(DCTerms.identifier,id);
+		ppnResource.addLiteral(DCTerms.description,TransformerConstants.literalLang(resourceModel, TransformerConstants.DEFAULT_PPN_COMMENT, TransformerConstants.DEFAULT_LANGUAGE));
+		//ppnResource.addLiteral(DCTerms.source,id);	
+		//ppnResource.addLiteral(DCTerms.subject,id);
 		ppnResource.addLiteral(DCTerms.date,date);		
+		resourceModel.add(ppnResource,DCTerms.publisher,this.model.getResource(TransformerConstants.WESO_ORG_URI));
+		resourceModel.add(ppnResource,this.model.getProperty(PSCConstants.IN_PROCESS),resourceModel.createResource(getAccess()));
 		for(int i = 0; i<cpvCodes.length;i++){
 			if(cpvCodes[i]!=null && !cpvCodes[i].equals("")){
 				Resource cpv2008 = resourceModel.createResource(PSCConstants.formatId(cpvCodes[i]));
@@ -180,8 +186,10 @@ public class PPNTransformer extends ChainTransformerAdapter {
 	}
 
 	private String getType() {
-		return PSCConstants.HTTP_PURL_ORG_WESO_PPN_DEF+"ppn";
+		return PSCConstants.HTTP_PURL_ORG_WESO_PPN_DEF+"Notice";
 	}
 
-
+	private String getAccess() {
+		return PSCConstants.HTTP_PURL_ORG_WESO_PPN_DEF+"Closed";
+	}
 }

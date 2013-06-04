@@ -25,15 +25,15 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix moldeas-area:  <http://localhost/moldeas/area/> .
 
 
-
-<http://localhost/moldeas/ppn/resource/ds>
+<http://localhost/moldeas/ppn/ls>
       a       void:Linkset ;
-	void:target <http://localhost/moldeas/ppn/2008/resource/ds> ;
-	void:target <http://localhost/moldeas/ppn/2009/resource/ds> ;
-	void:target <http://localhost/moldeas/ppn/2010/resource/ds> ;
-	void:target <http://localhost/moldeas/ppn/2011/resource/ds> ;
+	void:target <http://localhost/moldeas/ppn/2008/ds> ;
+	void:target <http://localhost/moldeas/ppn/2009/ds> ;
+	void:target <http://localhost/moldeas/ppn/2010/ds> ;
+	void:target <http://localhost/moldeas/ppn/2011/ds> ;
 	dcterms:title "Datasets of Public Procurement Notices" ; 
 	rdfs:label "10ders Project | MOLDEAS | Public Procurement Notices datasets by year"@en ;
 	dcterms:description "Datasets of Public Procurement Notices in RDF by year" ; 
@@ -47,7 +47,7 @@
 .
 
 
-<http://localhost/moldeas/ppn/2008/resource/ds> a void:Dataset ; 
+<http://localhost/moldeas/ppn/2008/ds> a void:Dataset ; 
 	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2008 "@en ;
 	dcterms:title "PPN 2008"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 
@@ -64,7 +64,7 @@
         foaf:homepage <http://localhost/moldeas/> .
 
 
-<http://localhost/moldeas/ppn/2009/resource/ds> a void:Dataset ; 
+<http://localhost/moldeas/ppn/2009/ds> a void:Dataset ; 
 	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2009 "@en ;
 	dcterms:title "PPN 2009"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 
@@ -81,7 +81,7 @@
         foaf:homepage <http://localhost/moldeas/> .
 
 
-<http://localhost/moldeas/ppn/2010/resource/ds> a void:Dataset ; 
+<http://localhost/moldeas/ppn/2010/ds> a void:Dataset ; 
 	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2010 "@en ;
 	dcterms:title "PPN 2010"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 
@@ -97,7 +97,7 @@
         void:vocabulary skos: , rdfs: ;
         foaf:homepage <http://localhost/moldeas/> .
 
-<http://localhost/moldeas/ppn/2011/resource/ds> a void:Dataset ; 
+<http://localhost/moldeas/ppn/2011/ds> a void:Dataset ; 
 	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2011 "@en ;
 	dcterms:title "PPN 2010"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 

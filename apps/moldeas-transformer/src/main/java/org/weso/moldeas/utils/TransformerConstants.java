@@ -1,5 +1,8 @@
 package org.weso.moldeas.utils;
 
+import com.hp.hpl.jena.rdf.model.Literal;
+import com.hp.hpl.jena.rdf.model.Model;
+
 public class TransformerConstants {
 
 	public static final String TURTLE_SYNTAX = "TURTLE";
@@ -29,5 +32,12 @@ public class TransformerConstants {
 	public static final int INDEX_TELEPHONE= 18;
 	public static final int INDEX_FAX= 19;
 	public static final int INDEX_HOMEPAGE= 20;
+	public static Literal literalLang(Model m, String value, String lang){
+		return m.createLiteral(value, lang);
+	}
+	public static final String DEFAULT_LANGUAGE = "en";
+	public static final String DEFAULT_PPN_LABEL = "Public Procurement Notice ";
+	public static final String DEFAULT_PPN_COMMENT = "This is an announcement of a public contract. The original id is comprised of: identifier-year.";
+	public static final String WESO_ORG_URI = PrefixManager.getURIPrefix("moldeas-org")+"WESO";
 	
 }

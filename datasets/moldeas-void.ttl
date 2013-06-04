@@ -1,0 +1,70 @@
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix spatialrelations:  <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix moldeas-onto:  <http://localhost/moldeas/ontology/> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix pscs-onto:  <http://localhost/pscs/ontology/> .
+@prefix nuts:    <http://nuts.psi.enakting.org/def/> .
+@prefix moldeas-people:  <http://localhost/moldeas/people/> .
+@prefix moldeas-country:  <http://localhost/moldeas/area/country/> .
+@prefix qb:      <http://purl.org/linked-data/cube#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix moldeas-org:  <http://localhost/moldeas/organization/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pscs:    <http://localhost/pscs/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix moldeas-region:  <http://localhost/moldeas/area/region/> .
+@prefix moldeas-nuts:  <http://localhost/moldeas/nuts/> .
+@prefix moldeas:  <http://localhost/moldeas/> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix moldeas-area:  <http://localhost/moldeas/area/> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#>.
+
+
+
+
+moldeas:ls
+      a       void:Linkset ;
+	void:target <http://localhost/moldeas/ppn/ls> ;
+	void:target <http://localhost/moldeas/ppn/2008/ds> ;
+	void:target <http://localhost/moldeas/ppn/2009/ds> ;
+	void:target <http://localhost/moldeas/ppn/2010/ds> ;
+	void:target <http://localhost/moldeas/ppn/2011/ds> ;
+	void:target <http://localhost/pscs/ls> ;
+	void:target <http://localhost/pscs/cpv/2008/resource/ds> ;
+	void:target <http://localhost/pscs/cpv/2003/resource/ds> ;
+	void:target <http://localhost/pscs/cpc/2008/resource/ds> ;
+	void:target <http://localhost/pscs/cpa/2008/resource/ds> ;
+	void:target <http://localhost/pscs/cn/2012/resource/ds> ;
+	void:target <http://localhost/pscs/isic/v4/resource/ds> ;
+	void:target <http://localhost/pscs/naics/2007/resource/ds> ;
+	void:target <http://localhost/pscs/naics/2012/resource/ds> ;
+	void:target <http://localhost/pscs/sitc/v4/resource/ds> ;	
+	void:target pscs:ls ;
+	void:target moldeas-area:ls ;
+        void:target moldeas-country:ds ;
+        void:target moldeas-region:ds ;
+	void:target moldeas-nuts:ds ;
+	void:target moldeas-org:ds ;
+	void:target moldeas-people:ds ;
+	dcterms:title "Datasets of the project MOLDEAS" ; 
+	rdfs:label "10ders Project | MOLDEAS | MOLDEAS linksets and datasets"@en ;
+	dcterms:description "Linksets and Datasets of the project MOLDEAS" ; 
+	foaf:homepage <http://purl.org/weso/moldeas/> ; 
+	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
+        dcterms:publisher  moldeas-org:WESO;
+        dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
+        dcterms:license <http://opendatacommons.org/licenses/by/1.0/> ;
+        dcterms:modified "2013-05-16"^^xsd:date ;
+	dcterms:contributor <http://localhost/pscs/resource/10ders> ; 
+
+.
+

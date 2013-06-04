@@ -56,8 +56,8 @@ public class PSCConstants {
 	public static final String HTTP_PURL_ORG_WESO_CPV_2008 = URISchemeManager.getURIPrefix("cpv-2008");
 	public static final String HTTP_PURL_ORG_WESO_CPV_DEF = URISchemeManager.getURIPrefix("cpv-onto");
 	public static final String HTTP_PURL_ORG_WESO_CPV_2003 =  URISchemeManager.getURIPrefix("cpv-2003");
-	public static final String CPV2003_codeIn = URISchemeManager.getURIPrefix("cpv-onto")+"code-in-2003";
-	public static final String CPV_codeIn = URISchemeManager.getURIPrefix("cpv-onto")+"code-in";
+	public static final String CPV2003_codeIn = URISchemeManager.getURIPrefix("moldeas-onto")+"topic-2003";
+	public static final String CPV_codeIn = URISchemeManager.getURIPrefix("moldeas-onto")+"topic";
 	
 	public static final String HTTP_PURL_ORG_WESO_CPV_DEF_DIVISION = URISchemeManager.getURIPrefix("cpv-onto")+"Division";
 	public static final String HTTP_PURL_ORG_WESO_CPV_DEF_GROUP = URISchemeManager.getURIPrefix("cpv-onto")+"Group";
@@ -69,7 +69,9 @@ public class PSCConstants {
 	public static final String HTTP_PURL_ORG_WESO_PPN_DEF = URISchemeManager.getURIPrefix("moldeas-onto");
 	public static final String HTTP_PURL_ORG_WESO_PPN = URISchemeManager.getURIPrefix("moldeas-ppn");
 	//public static final String CPV2008_codeIn = PSCConstants.HTTP_PURL_ORG_WESO_CPV_DEF+"cpv-code";	
-	public static final String NUTS_CODE = URISchemeManager.getURIPrefix("moldeas-onto")+"nuts-code";
+	public static final String NUTS_CODE = URISchemeManager.getURIPrefix("moldeas-onto")+"located-in";
+
+	public static final String IN_PROCESS = URISchemeManager.getURIPrefix("moldeas-onto")+"in-process";
 	
 	
 	public static String formatNUTSTO(String id){	
