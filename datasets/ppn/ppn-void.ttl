@@ -48,7 +48,7 @@
 
 
 <http://localhost/moldeas/ppn/2008/ds> a void:Dataset ; 
-	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2008 "@en ;
+	rdfs:label "10ders Project | MOLDEAS-PPN | Public Procurement Notices in 2008 "@en ;
 	dcterms:title "PPN 2008"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 
 	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
@@ -65,7 +65,7 @@
 
 
 <http://localhost/moldeas/ppn/2009/ds> a void:Dataset ; 
-	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2009 "@en ;
+	rdfs:label "10ders Project | MOLDEAS-PPN | Public Procurement Notices in 2009 "@en ;
 	dcterms:title "PPN 2009"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 
 	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
@@ -98,7 +98,7 @@
         foaf:homepage <http://localhost/moldeas/> .
 
 <http://localhost/moldeas/ppn/2011/ds> a void:Dataset ; 
-	rdfs:label "10ders Project | MOLDEAS-PSCS | Public Procurement Notices in 2011 "@en ;
+	rdfs:label "10ders Project | MOLDEAS-PPN | Public Procurement Notices in 2011 "@en ;
 	dcterms:title "PPN 2010"@en  ; 
 	foaf:homepage <http://purl.org/weso> ; 
 	dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
