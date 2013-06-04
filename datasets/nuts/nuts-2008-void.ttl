@@ -30,7 +30,7 @@
 <http://localhost/moldeas/nuts/resource/ds>
       a       void:Dataset ;
       rdfs:label "10ders Project | MOLDEAS | NUTS codes "@en ;
-      rdfs:comment "Enriched dataset of NITS Codes."@en ;
+      rdfs:comment "Enriched dataset of NUTS Codes."@en ;
       dcterms:contributor moldeas-people:JLmarin , moldeas-people:Anmarin, moldeas-org:Euroalert, moldeas-org:Exis ;
       dcterms:publisher  moldeas-org:WESO;
       dcterms:author  moldeas-people:Chema, moldeas-people:Labra ;  
