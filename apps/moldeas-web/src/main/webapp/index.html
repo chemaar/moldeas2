@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    	<style type="text/css" title="currentStyle"> 
+			@import "css/demo_page.css";
+			@import "css/demo_table.css";
+		</style> 
+    <!--Exhibit-->
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js?autoCreate=false&gmapkey=ABQIAAAAtWdbZbemqbrkgUU-tl1otRTKH4YfZ85r722SigB6cuwLezCZTRSkTMmO0fxufjDwIQvpN45P2a3ERw"></script>
+	<script src="http://api.simile-widgets.org/ajax/2.2.1/simile-ajax-api.js"></script>
+	<script src="http://api.simile-widgets.org/timeline/2.3.1/timeline-api.js"></script>
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/time/time-extension.js"></script>
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/map/map-extension.js"></script>
+    <!--Tabs-->
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+
+    <link type="text/css" rel="stylesheet" href="css/Moldeas.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css" /> 
+    <link href="css/jquery.bubblepopup.v2.3.1.css" rel="stylesheet" type="text/css" /> 
+ 
+
+    <title>MOLDEAS PROJECT</title>
+
+    <script type="text/javascript" language="javascript" src="moldeas/moldeas.nocache.js"></script>
+   <!-- <script type="text/javascript" src="js/jquery-1.4.4.js"></script>-->
+    <script type="text/javascript" src="js/principal.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/ui.core.js"></script> 
+   <!-- <script type="text/javascript" src="js/ui.slider.js"></script> -->
+     <!-- BEGIN: load jqplot --> 
+    <script language="javascript" type="text/javascript" src="js/jquery.jqplot.js"></script> 
+    <script language="javascript" type="text/javascript" src="js/jqplot.barRenderer.js"></script> 
+    <script language="javascript" type="text/javascript" src="js/jqplot.categoryAxisRenderer.js"></script> 
+    <!-- END: load jqplot --> 
+
+    <script src="js/jquery.bubblepopup.v2.3.1.min.js" type="text/javascript"></script> 
+  
+  <script>
+  $(document).ready(function() {
+    $("#tabs").tabs();
+  });
+  </script>
+
+  <style type="text/css"> 
+
+    .jqplot-target {
+        margin-bottom: 2em;
+    }
+    
+    pre {
+        background: #D8F4DC;
+        border: 1px solid rgb(200, 200, 200);
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-bottom: 1em;
+        margin-top: 1em;
+        margin-bottom: 4em;
+        
+    }
+    
+    p {
+        margin: 2em 0;
+    }
+    
+    .note {
+        font-size: 0.8em;
+    }
+  </style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23463280-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body style="font-size:62.5%;">
+  
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+	<div id ="contenedor">
+			<div id ="cabecera">
+			 <img src="img/logo.png" width="100">
+	   		 <h1>MOLDEAS</h1>
+	   		 <h2>Methods On Linked Data for E-procurement Applying Semantics</h2>
+			</div>
+		<div id="tabs">
+		    <ul>
+			<li><a href="#fragment-1"><span>Info</span></a></li>
+			<li><a href="#fragment-2"><span>Demo</span></a></li>
+			<li><a href="#fragment-3"><span>Demo Queries</span></a></li>
+			<li><a href="#fragment-4"><span>API Documentation</span></a></li>
+			<li><a href="#fragment-5"><span>Publications</span></a></li>
+			<li><a href="#fragment-6"><span>Contact</span></a></li>
+		    </ul>
+		    <div id="fragment-1">
+			<h3>Introduction</h3>
+			<p>
+			In the European e-Procurement context there is an increasing commitment to boost the use of electronic communications and 				transaction processing by government institutions and other public sector organizations. The European Commission outlines the 				following advantages in the wider use of <a href="http://ec.europa.eu/internal_market/consultations/docs/2010/e-procurement/green-paper_en.pdf">e-Procurement</a> increased accessibility and transparency, benefits for individual procedures, benefits in terms of more efficient 				procurement administration and potential for integration of EU procurement markets. <a href="http://ted.europa.eu/">TED</a> 				('Tenders Electronic Daily') is the on line version of the 'Supplement to the Official Journal of the European Union', dedicated to 				European public procurement (1500 new procurement notices every day but an unified information system pan-European dealing with: 
+			<ul>
+				<li>dispersion of the information;</li>
+				<li>duplication of the same notice in more than one source</li>
+				<li>different publishing formats</li>
+				<li>problems regarding to a multilingual environment and </li>
+				<li>aggregation of low-value procurement opportunities, is missing.</li>
+			</ul>
+			</p>
+			<p>
+			Obviously one of the most interesting domains to apply the Linking Open Data (LOD) approach is public procurement information published by governmental contracting authorities. In that sense, the growing commitment to the reuse of public sector information (PSI) and initiatives like semantic web, LOD and the use of Knowledge Organization Systems (KOS) provide building blocks for an innovative unified pan-European information system for the benefit of SMEs. 
+			</p>
+			<h3>Main Contributions</h3>
+			<p>
+			This work aims to apply the semantic web and LOD approaches to public procurement notices:</p>
+				<ul>
+				<li>Transforming government controlled vocabularies such as <a href="http://europa.eu/legislation_summaries/internal_market/businesses/public_procurement/l22008_en.htm}">CPV</a>, <a href="http://unstats.un.org/unsd/cr/registry/isic-4.asp">CPC</a>,
+	<a href="http://eurovoc.europa.eu/}">Eurovoc</a>(now available in SKOS), etc. to RDF, RDF(S), SKOS or OWL;</li>
+				<li> Modeling the information inside the public procurement notices as web information resources and enriching them with the aforementioned controlled vocabularies, geographical information (e.g <a href="http://epp.eurostat.ec.europa.eu/portal/page/portal/nuts_nomenclature/introduction">NUTS</a> and the information now available in the linked data cloud;</li>
+				<li>Publishing the information in a SPARQL endpoint providing a <em>linked data node</em> and</li> 
+				<li>Providing enhanced services (search and sort, matchmaking, georeasoning, statistics, etc.) exploiting this semantic information through ``advanced algorithms'' based on Spreading Activation (SA) techniques, rule based systems (RBS) and a mixing of them. 
+				</ul>
+			</p>
+			<h3>Motivating example</h3>
+				<p>The system with these features should be able to answer queries like the next one:</p>
+				<p>Which public procurement notices are relevant to Dutch companies (only SMEs) that want to tender for contracts announced
+				by local authorities with a total value lower than 170K € to procure <em>Transport and Related Services</em> 
+				and a two year duration in the Dutch-speaking region of Flanders (Belgium)?</p>
+			<h3>Functional Architecture Overview</h3>
+			<p>The proposed architecture, is based on two main processes:</p>
+			<ul>
+			<li><strong>RDFizing</strong>. It is the process to transform the data available in the
+databases about public procurement notices from a XML intermediate format to RDF and enrich them with the vocabularies
+of the linked data cloud. It also codes the PSCs as linked data.</li>
+			<li><strong>Enhanced services</strong>. It is the application of the libraries such as
+<a href="http://code.google.com/p/ontospread/">ONTOSPREAD</a> and <a href="http://mahout.apache.org/">Apache Mahout</a> exploit the linked database
+and provide services to the customers.
+			</ul>
+			<p style="text-align:center">
+				<img src="images/moldeas.png" title="Architecture Overview" width="75%"/>
+			</p>
+			<p>
+				The combination of these building blocks seeks for creating a new innovative way to exploit the information included in public procurement notices in the context of the semantic web and LOD initiatives reusing the existing technologies, vocabularies, etc. Following, the key points of this approach are summarized: </p>
+			<ul>
+				<li>existing PSCs, information about public procurement notices and organizations are published as linked data;</li>
+				<li>the application of SA techniques, RBSs and a mixing of them to provide enhanced services adding value to original information.</li>
+			</ul>
+			<h3>Conclusions</h3>
+			<p>The implementation of this work is supposed to afford a new way to exploit
+the information published inside public procurement notices applying advanced algorithms on LOD. 
+Following we highlight the advantages of this approach: 1) decreasing of the information's dispersion; 2) unification of the data models and formats;
+3) implicit support to multilingual and multicultural issues; 4) enrichment of the public procurement notices;
+5) alignment with the Digital Agenda for Europe; 6) raise awareness on public procurement
+opportunities among SMEs and 7) deployment of enhanced services on public procurement notices.</p>
+			<h3>Results</h3>
+			<p>Publications (see Tab)</a></p>
+			<p>Software, Try our demo! or check the API documentation</a></p>
+			<p>Datasets <a href="http://www.w3.org/DesignIssues/LinkedData.html">5 stars</a> (available via <a href="http://www4.wiwiss.fu-berlin.de/pubby/">Pubby</a>  or explore them via <a href="./snorql">SNORQL</a>), triple Stats at <a href="http://156.35.31.156/sparql">WESO SPARL Endpoint</a></p>
+			    <ul>
+			    	<li>CPV (Common Procurement Vocabulary) 2003-<em>278,586</em> (<a href="http://purl.org/weso/cpv/2003/33410000">Check it!</a>)</li>
+			    	<li>CPV 2008-<em>191,368</em> (<a href="http://purl.org/weso/cpv/2008/14521140">Check it!</a>)</li>
+			    	<li>Eurovoc-<em>2,656,015</em></li>
+			    	<li>PPN (Public Procurement Notice) 2008-<em>677,058</em> (<a href="http://purl.org/weso/ppn/2008/308381">Check it!</a>)</li>
+				<li>PPN 2009-<em>2,398,601</em> (<a href="http://purl.org/weso/ppn/2009/201898">Check it!</a>)</li>
+				<li>PPN 2010-<em>2,590,880</em> (<a href="http://purl.org/weso/ppn/2010/7536">Check it!</a>)</li>
+				<li>PPN 2011-<em>402,264</em> (<a href="http://purl.org/weso/ppn/2011/55008">Check it!</a>)</li>
+				<li>NUTS-<em>36,219</em></li>
+				<li>Total: <strong>9,230,991 million of RDF triples.</strong></li>
+				</ul>
+			<h3>TO DO</h3>	
+			<ul>
+				<li>Improve the web interface: statistics, charts, etc.</li>
+				<li>Search CPV and NUTS codes by description</li>
+				<li>Publish the information about organizations</li>
+				<li>Add API documentation</li>
+				<li>Finish the process of publishing datasets</li>
+			</ul>
+		    </div><!--Tab 1-->
+		<div id="fragment-2">
+		<div id ="izquierda">
+		<form class="chartConfiguratorThingy"> 	
+			<fieldset class="typeOptions"> 
+				<legend>CPV Codes</legend> 
+					<div class="fieldGroup"> 
+					<div class="dependencies"> 
+					<div class="fieldGroup"> 
+						<div id="loading"><img src="img/ajax-loader.gif">Loading...</div>
+						<ul class="cpv_input">
+						 	<li><input type="radio" name="cpvTextCode"  value="text" checked="false"/>Text</li>
+				  			<li><input type="radio" name="cpvTextCode"  value="code" checked="false"/>Code</li>
+						</ul>	
+						<label><input type="text" id="txt_buscador" onkeyup="suggestion()" /></label>
+						<div id="suggestionsList"></div>
+						<div>
+						    <input id="bnt_lookup_codes"  type="button" value="Add" style="display:none">
+						    <input id="bnt_remove_codes"  type="button" value="Remove" style="display:none">
+						</div>									
+
+						   <select id="cpvCodes" id="right" size="12" multiple="multiple" style="margin:1em; display:none">
+						    </select>
+					</div> 								
+					</div> 
+				</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>NUTS Names</legend> 
+					<div class="fieldGroup"> 
+					<div class="dependencies"> 
+					<div class="fieldGroup"> 
+						<div id="loadingNuts"><img src="img/ajax-loader.gif">Loading...</div>	
+						<label><input type="text" id="txt_buscador_nuts" onkeyup="suggestionNutsCodes()"  /></label>
+						<div id="nutsCodesList"></div>
+						<div>
+						    <input id="bnt_lookup_nuts_codes"  type="button" value="Add" style="display:none">
+						    <input id="bnt_remove_nuts_codes"  type="button" value="Remove" style="display:none">
+						</div>									
+
+					   <select id="nutsCodes" id="right" size="12" multiple="multiple" style="margin:1em; display:none">
+					    </select>
+
+					</div> 
+					</div> 
+					</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>Between Years</legend> 
+				<div class="fieldGroup"> 
+				<div class="dependencies"> 
+				<div class="fieldGroup"> 
+				<div class="demo">
+					<p> <input type="text" id="years" style="border:0; color:#f6931f; font-weight:bold;" /></p>
+					<div id="slider-range-years"></div>
+				</div>
+				
+				</div> 
+				</div> 
+				</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>Total Cost</legend> 
+				<div class="fieldGroup"> 
+				<div class="dependencies"> 
+				<div class="fieldGroup"> 			
+				<div class="demo">
+					<p> <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" /></p>
+					<div id="slider-range"></div>
+				</div>
+				</div> 
+				</div> 
+				</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>Duration</legend> 
+				<div class="fieldGroup"> 
+				<div class="dependencies"> 
+				<div class="fieldGroup"> 
+				<div class="demo">
+					<p> <input type="text" id="duration" style="border:0; color:#f6931f; font-weight:bold;" /></p>
+					<div id="slider-range-duration"></div>
+
+				</div>	
+				</div> 
+				</div> 
+				</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>Type of company</legend> 
+					<div class="fieldGroup"> 
+						<div class="dependencies"> 
+							<div class="fieldGroup"> 
+								<ul class="results">
+								  <li><input type="radio" name="company"  value="sme" checked="false" />SME</li>
+				  				  <li><input type="radio" name="company"  value="le" checked="false"/>LE</li>
+ 								  <li><input type="radio" name="company"  value="other" checked="false"/>Other</li>
+								</ul>
+							</div> 								
+						</div> 
+					</div> 
+			</fieldset> 
+
+			</form> 
+	
+			</div>
+
+
+			<div id ="derecha">
+
+				<h3>Search Service in Action</h3>
+		 		<p>Enter a CPV code by text or code, add new regions using NUTS names (countries are in uppercase)...and enjoy!</p>
+				<div id="mainContent">				
+					<div id="searching"><img src="img/ajax-loader.gif">Searching...</div>	
+					<div id="results"></div>					
+					<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"></table>
+					<!--<div id="chart1"></div> -->
+				</div>
+			</div>
+		<div class="clear-div"></div>
+
+
+		<!--Exhibit-->
+
+					 <div id="exhibit-content" style="display:none"> 
+					    <div id="title-panel"> 
+						<h3>Showing Results with Exhibit!</h3> 
+					     </div> 
+					    
+					    <div id="top-panels"> 
+						<table width="100%"><tr> 
+						    <td><div ex:role="facet" ex:expression=".year" ex:facetLabel="Year"></div></td> 
+						    <td><div ex:role="facet" ex:expression=".description" ex:facetLabel="Description"></div></td> 
+						    <td><div ex:role="facet" ex:expression=".location" ex:facetLabel="Location"></div></td> 						    	    <td><div ex:role="facet" ex:expression=".score" ex:facetLabel="Score"></div></td> 
+						</tr></table> 
+					    </div> 
+					    <div ex:role="viewPanel" style="padding: 1em 0.5in;"> 
+						<table ex:role="lens" class="ppnlist" style="display: none;"><tr> 
+						    <td> 
+							<div ex:content=".code" class="name"></div> 
+							<div ex:content=".description" class="name"></div> 
+							<div> 
+							    <span ex:content=".location" class="location"></span>, 
+							    <i ex:content=".year"></i> 
+							</div> 
+						     </td> 
+						</tr></table> 
+		
+						  <div ex:role="view"
+						    ex:label="Details"
+						    ex:viewClass="Tile"
+						    ex:showAll="true"
+						    ex:orders=".code, .location, .year"
+						    ex:possibleOrders=".code, .description, .location, .score, .year"> 
+						</div> 
+					  	 <div ex:role="view"
+								ex:viewClass="Map"
+								ex:label="Map Location"
+								ex:latlng=".latLng"
+								ex:center="40.441, -3.702"
+								ex:zoom="3"
+								ex:bubbleWidth="200"
+								ex:shapeWidth="60"
+								ex:shapeHeight="60"
+								>
+							    </div>
+
+						<div ex:role="view"
+						    ex:viewClass="Timeline"
+						    ex:label="Timeline"
+						    ex:start=".year"
+						    ex:colorKey=".location"
+						    ex:bubbleWidth="150"
+						    ex:bubbleHeight="150"> 
+						    <div ex:role="lens" class="ppnlist-timeline-lens" style="display: none;"> 
+							<div><span ex:content=".description"></span></div> 
+							<div> 
+							    <span ex:content=".location" class="location"></span>, 
+							    <span ex:content=".year" class="year"></span> 
+							</div> 
+						    </div> 
+						</div> 
+					    </div> 
+					</div> <!--End Exhibit Content-->
+
+
+		    </div><!--Tab 2-->
+		<div id="fragment-3">
+		 <p>Following some prepared queries are presented in order to show the benefits of using linking open data in the e-procurement sector.</p>
+
+			<ul>
+			<li><a href="./snorql/?query=SELECT+DISTINCT+*+WHERE{%0D%0A+%3Fppn+rdf:type+%3Chttp://purl.org/weso/ppn/def%23ppn%3E.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/ppn/def%23nutsCode%3E+%3FnutsCode.%0D%0A+FILTER(%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/FR%3E+)+.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/cpv/def%23codeIn2008%3E+%3FcpvCode.+%0D%0A+FILTER(%3FcpvCode+%3D+%3Chttp://purl.org/weso/cpv/2008/60000000%3E+)+.%0D%0A+%3Fppn+dc:identifier+%3Fid.%0D%0A+%3Fppn+dc:date+%3Fdate+.+%0D%0A+FILTER+(+(xsd:long(%3Fdate)+%3E%3D++xsd:long(2008))+%26%26+(xsd:long(%3Fdate)+%3C%3D++xsd:long(2009))+)%0D%0A}+LIMIT+100">Give me the public procurement notices in the field of "Transport services (excl. waste transport)" that have been published in France between 2008 and 2009.</a></li>
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+*+WHERE{%0D%0A+%3Fppn+rdf:type+%3Chttp://purl.org/weso/ppn/def%23ppn%3E.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/ppn/def%23nutsCode%3E+%3FnutsCode.%0D%0A+FILTER(%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/FR%3E+)+.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/cpv/def%23codeIn2008%3E+%3FcpvCode.+%0D%0A+%3FcpvCode+cpv-def:codeIn2003+%3Chttp://purl.org/weso/cpv/2003/61100000%3E+.%0D%0A+%3Fppn+dc:identifier+%3Fid.%0D%0A+%3Fppn+dc:date+%3Fdate+.+%0D%0A+FILTER+(+(xsd:long(%3Fdate)+%3E%3D++xsd:long(2008))+%26%26+(xsd:long(%3Fdate)+%3C%3D++xsd:long(2008))+)%0D%0A}+LIMIT+100%0D%0A">Give me the public procurement notices that have been published (with CPV code in 2003 "61100000" )in France in 2008.</a></li>
+
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+*+WHERE{%0D%0A+%3Fppn+rdf:type+%3Chttp://purl.org/weso/ppn/def%23ppn%3E.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/ppn/def%23nutsCode%3E+%3FnutsCode.%0D%0A+FILTER(%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/UK%3E+or+%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/UK%3E+)+.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/cpv/def%23codeIn2008%3E+%3FcpvCode.+%0D%0A+FILTER(%3FcpvCode+%3D+%3Chttp://purl.org/weso/cpv/2008/42000000%3E+)+.%0D%0A+%3Fppn+dc:identifier+%3Fid.%0D%0A+%3Fppn+dc:date+%3Fdate+.+%0D%0A+FILTER+(+(xsd:long(%3Fdate)+%3E%3D++xsd:long(2008))+%26%26+(xsd:long(%3Fdate)+%3C%3D++xsd:long(2009))+)%0D%0A}+LIMIT+100%0D%0A">Give me the public procurement notices in the field of "Industrial machinery" that have been published in France and United Kingdom between 2008 and 2009.</a></li>
+
+
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+*++WHERE{%0D%0A+%3Fppn+rdf:type+%3Chttp://purl.org/weso/ppn/def%23ppn%3E.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/ppn/def%23nutsCode%3E+%3FnutsCode.%0D%0A+FILTER(%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/IT%3E+)+.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/cpv/def%23codeIn2008%3E+%3FcpvCode.+%0D%0A+%3FcpvCode+skosxl:prefLabel+%3FcodeLabel+.%0D%0A+FILTER+(+lang(%3FcodeLabel)%3D%22en%22+).+%0D%0A+FILTER+(regex(%3FcodeLabel,+%22Repair%22)+OR+regex(%3FcodeLabel,+%22Construction%22)).%0D%0A+%3Fppn+dc:identifier+%3Fid.%0D%0A+%3Fppn+dc:date+%3Fdate+.+%0D%0A+FILTER+(+(xsd:long(%3Fdate)+%3E%3D++xsd:long(2010))+%26%26+(xsd:long(%3Fdate)+%3C%3D++xsd:long(2010))+)%0D%0A}+LIMIT+10">Give me the public procurement notices about "Repair" that have been published in Spain during 2010 in English.</a></li>
+
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+*++WHERE{%0D%0A+%3Fppn+rdf:type+%3Chttp://purl.org/weso/ppn/def%23ppn%3E.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/ppn/def%23nutsCode%3E+%3FnutsCode.%0D%0A+FILTER(%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/IT%3E+or+%3FnutsCode+%3D+%3Chttp://nuts.psi.enakting.org/id/ES%3E++)+.%0D%0A+%3Fppn+%3Chttp://purl.org/weso/cpv/def%23codeIn2008%3E+%3FcpvCode.+%0D%0A+%3FcpvCode+skosxl:prefLabel+%3FcodeLabel+.%0D%0A+FILTER+(regex(%3FcodeLabel,+%22Repair%22)+OR+regex(%3FcodeLabel,+%22Construction%22)).%0D%0A+%3Fppn+dc:identifier+%3Fid.%0D%0A+%3Fppn+dc:date+%3Fdate+.+%0D%0A+FILTER+(+(xsd:long(%3Fdate)+%3E%3D++xsd:long(2010))+%26%26+(xsd:long(%3Fdate)+%3C%3D++xsd:long(2010))+)%0D%0A}+LIMIT+10">Give me the public procurement notices about "Repair" or "Construction" that have been published in Italy and Spain during 2010 in English.</a></li>
+
+
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+%3FcpvCode+%3FcodeLabel+WHERE{%0D%0A+%3FcpvCode+rdf:type+%3Ftype.+%0D%0A+%3FcpvCode+skosxl:prefLabel+%3FcodeLabel+.%0D%0A+FILTER+(lang(%3FcodeLabel)+%3D+%22en%22).%0D%0A+FILTER+(regex(%3FcodeLabel,+%22services%22)).%0D%0A+%3FcpvCode+dc:identifier+%3Fid.%0D%0A}+">Give me the code and description of the CPV codes related to "services" in English.</a></li>
+
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+%3FcpvCode+%3FcodeLabel+%3Ftype+WHERE{%0D%0A+%3FcpvCode+rdf:type+%3Ftype.+%0D%0A+FILTER+(%3Ftype+%3D+cpv-def:category).%0D%0A+%3FcpvCode+skosxl:prefLabel+%3FcodeLabel+.%0D%0A+FILTER+(lang(%3FcodeLabel)+%3D+%22en%22).%0D%0A+FILTER+(regex(%3FcodeLabel,+%22services%22)).%0D%0A+%3FcpvCode+dc:identifier+%3Fid.%0D%0A}+">Give me the code and description of the CPV codes (only categories) related to "services" in English.</a></li>
+
+
+			<li><a href="./snorql/?query=SELECT+DISTINCT+%3FcpvCode+%3FcodeLabel+%3Fnarrower+%3FnarrowerLabel+WHERE{%0D%0A+%3FcpvCode+rdf:type+%3Ftype.+%0D%0A+FILTER+(%3Ftype+%3D+cpv-def:category).%0D%0A+%3Fnarrower+skos:broader+%3FcpvCode+.%0D%0A+%3Fnarrower+skosxl:prefLabel+%3FnarrowerLabel.%0D%0A+FILTER+(lang(%3FnarrowerLabel)+%3D+%22el%22).%0D%0A+%3FcpvCode+skosxl:prefLabel+%3FcodeLabel+.%0D%0A+FILTER+(lang(%3FcodeLabel)+%3D+%22en%22).%0D%0A+FILTER+(regex(%3FcodeLabel,+%22services%22)).%0D%0A+%3FcpvCode+dc:identifier+%3Fid.%0D%0A}+limit+10%0D%0A">Give me the code and description (in English) of the CPV codes (only categories) and their narrower codes with description (in Greek) related to "services".</a></li>
+
+			</ul>
+
+		</div><!--Tab 3-->
+		    <div id="fragment-4">
+			<h3>Design and Development</h3>
+			<p>The components of the project are designed as follows:</p>
+				<p style="text-align:center">
+					<img src="images/moldeas-components.png" title="MOLDEAS Components" width="50%"/>
+				</p>
+			<p>
+			<p>It is a Java-based project:</p>
+			<ul>
+				<li>Maven, Spring, Apache Lucene, Apache Mahout, etc.</li>
+				<li>Some stats: 180 Java classes (intensive of design patterns), 8877 source code lines, +60 Junit test cases</li>
+			</ul>
+			<p>Deployment</p>
+			<ul>
+				<li>Java library implementing the semantic methods (<strong>moldeas-api</strong>)</li>				
+				<li>Web application client at WESO server (this one) and at Google Appengine containing the REST services (<strong>moldeas-web</strong>).</li>	
+				<li>Component for RDFizing PSCs and more (<strong>moldeas-transformer</strong>)</li>
+				<li>Component for testing (<strong>moldeas-test</strong>)</li>
+				<li>Component for common utilities (<strong>moldeas-common</strong>) </li>
+			</ul>
+			<h3>Repository</h3>
+				<p>More documentation and the source code is available at <a href="http://code.google.com/p/moldeas/">MOLDEAS repository</a> (hosted by Google Code). </p>
+			<h3>List of demo services (REST):</h3>
+				<ul>
+					<li><a href="services/moldeas/search/code/60161000">Search code: 60161000</a></li>
+					<li><a href="services/moldeas/searchByUri?uri=http://purl.org/weso/cpv/2008/60161000">Search by uri: <code>http://purl.org/weso/cpv/2008/60161000</code></a></li>
+					<li><a href="services/moldeas/search/enhanced/60161000">Enhanced search by code: 60161000</a></li>
+					<li><a href="services/moldeas/psc/describe/60161000">Describe code: 60161000</a></li>
+					<li><a href="services/moldeas/psc/listCodes">List CPV 2008 codes</a></li>
+					<li><a href="services/moldeas/ppn/describe/2009/201898">Describe public procurement notice 201898 year 2009</a></li>
+					<li><a href="services/moldeas/ppn/list/2009">List some public procurement notices of year 2009.</a></li>
+					<li><a href="services/moldeas/psc/listNuts">List NUTS Codes.</a></li>
+					<li><a href="services/moldeas/psc/describe/nuts/ES12">Describe NUTS Code: ES12.</a></li>
+				</ul>
+			</div><!--Tab 4-->
+
+	    	<div id="fragment-5">
+			<h3>List of publications and contributions:</h3>
+				<ul>
+					<li>Jose María Alvarez, José Emilio Labra, Ramón Calmeau, Ángel Marín, Jose Luis Marín. "Query Expansion Methods and Performance Evaluation for Reusing Linking Open Data of the European Public Procurement Notices". <a href="http://red.linkeddata.es/web/guest/tlde">Workshop en Tecnologías de Linked Data y sus aplicaciones en España en CAEPIA 2011</a>, 7-11 November - La Laguna, Tenerife, Spain. </li>
+					<li>José Luis Marín, Ángel Marín, Mai Rodríguez (Gateway Strategic Consultancy Services); Ramon Calmeau (EXIS-TI); Jose Maria Alvarez, Jose Emilio Labra (Universidad de Oviedo). "Euroalert.net: Building a pan-European platform to aggregate public procurement data and deliver commercial services for SMEs powered by open data". Workshop <a href="http://share-psi.eu/">Share-PSI.eu 2011</a>. </li>
+					<li>Jose María Alvarez, José Emilio Labra, Ramón Calmeau, Ángel Marín, Jose Luis Marín. "Innovative Services to ease the Access to the Public Procurement Notices using Linking Open Data and Advanced Methods based on Semantics". <a href="http://conferences.cs.unicam.it/metteg11/">5th International Conference on Methodologies, Technologies and Tools enabling e-Government</a>, 30 June - 1 July 2011 Camerino, Italy. </li>
+					<li>Jose María Alvarez and José Emilio Labra. "Semantic Methods for Reusing Linking Open Data of the European Public Procurement Notices". PhD Symposium ESCW 2011. Accepted as Poster.</li>
+					<li>Luis Polo, Jose María Alvarez and Emilio Rubiera. "Promoting Government Controlled Vocabularies to the Semantic Web: EUROVOC Thesaurus and CPV Product Classification Scheme". SIEDL 2008. ESWC 2008. (Previous work before MOLDEAS project).</li>
+					<li>Jose María Alvarez, Emilio Rubiera and Luis Polo. "Generación automática de ontologías en SKOS de clasificaciones estándar de productos: Common Procurement Vocabulary (CPV)” (Spanish, Proceedings) of CEDI 2007. (Previous work before MOLDEAS project).</li>
+				</ul>
+		</div><!--Tab 5-->
+
+		<div id="fragment-6">
+			<h3>Authors:</h3>
+				<p>This work is being accomplished by WESO Research Project within the partnership project <a href="http://rd.10ders.net/">"10ders Information Services"</a>.
+				<ul>
+					<li><a href="http://www.linkedin.com/in/josemalvarez">Jose María Alvarez Rodríguez</a></li>
+					<li><a href="http://www.di.uniovi.es/~labra">Prof. PhD. Jose Emilio Labra Gayo</a></li>
+				</ul>
+		</div><!--Tab 6-->
+
+
+		 </div><!--Tabs-->
+
+	<div id ="pie">
+
+
+
+		<p>
+							MOLDEAS is part of <a href="http://rd.10ders.net/"><strong>10ders Information Services project</strong></a> partially 
+						funded by the <a href="http://www.mityc.es/>Spanish Ministry of Industry, Commerce and Tourism"></a> 
+						with code TSI-020100-2010-919 and the <a href="http://europa.eu/legislation_summaries/employment_and_social_policy/job_creation_measures/l60015_es.htm">European
+			Regional Development Fund (EFDR)</a> according to the <a href="http://www.micinn.es/portal/site/MICINN/">National Plan of Scientific Research, Development and Technological Innovation 2008-2011</a>, 
+			leaded by <a href="http://gateway-scs.es/">Gateway Strategic Consultancy Services</a>
+			and developed in cooperation with <a href="http://www.exis-ti.com/">Exis-TI</a> and <a href="http://purl.org/weso">WESO Research Group</a>.
+						</p>
+						<p>Partially funded by:</p>
+						<p>
+						<a href="img/Logo_MITYC.png" class="image" title="Logo_MITYC.png"><img alt="Logo_MITYC.png" src="img/Logo_MITYC.png" width="285" height="66" border="0" /></a>     
+						<a href="img/Logo-plan-avanza2.gif" class="image" title="logo-plan-avanza2.gif"><img alt="logo-plan-avanza2.gif" src="img/Logo-plan-avanza2.gif" width="298" height="59" border="0" /></a>
+						<a href="img/Logo_FEDER_una_manera_de_hacer_europa.gif" class="image" title="Logo_FEDER_una_manera_de_hacer_europa.gif"><img alt="Logo_FEDER_una_manera_de_hacer_europa.gif" src="img/Logo_FEDER_una_manera_de_hacer_europa.gif" width="200" height="86" border="0" /></a> 
+					   </p> 
+<p id="copyright">© 2011 <a href="http://purl.org/weso">WESO</a></p>
+			
+						
+
+
+		</div><!--Pie-->
+
+	</div><!--Contenedor-->
+</body>
+</html>
