@@ -1,0 +1,14 @@
+package examples
+import org.weso.moldeas.to.ScoredPPNTO
+import scalaj.collection.Imports._
+
+object QueryExecutor {
+
+
+	def execute (queries: java.util.List[String]):Seq[java.util.Set[ScoredPPNTO]] = {
+		val result = queries.asScala map QueryExecutorMain.execEnhancedRewrite
+		result
+	}
+	
+	def main(args: Array[String]) = QueryExecutorMain.execute()
+}

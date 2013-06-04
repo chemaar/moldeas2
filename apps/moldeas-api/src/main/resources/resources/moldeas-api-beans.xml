@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    (c) Copyright 2011 WESO, Computer Science Department,
+    Facultad de Ciencias, University of Oviedo, Oviedo, Asturias, Spain, 33007
+    All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+    3. The name of the author may not be used to endorse or promote products
+       derived from this software without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+    IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+    OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+    IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+    NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+    DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+    THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+    THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+
+<!--Mahout Enhancers-->
+
+	<bean id="pscWrapperDataModel" class="org.weso.moldeas.dao.WrapperDataModelFileImpl"
+		lazy-init="true">
+		<constructor-arg type="java.lang.String" value="/home/chema/tesis/test/generated/stats_1.mht"/>
+	</bean>
+  
+  	<bean id="PSCMahoutEnhancerStandalone" class="org.weso.moldeas.enhancers.mahout.standalone.PSCMahoutEnhancerStandalone"
+		lazy-init="true">
+			<constructor-arg>
+			<ref bean="pscWrapperDataModel" />
+		</constructor-arg>
+	</bean>
+	
+	<bean id="nutsWrapperDataModel" class="org.weso.moldeas.dao.WrapperDataModelFileImpl"
+		lazy-init="true">
+		<constructor-arg type="java.lang.String" value="/home/chema/tesis/test/generated/stats_2_2_2_2_2008.mht"/>
+	</bean>
+  
+  	<bean id="NUTSMahoutEnhancerStandalone" class="org.weso.moldeas.enhancers.mahout.standalone.NUTSMahoutEnhancerStandalone"
+		lazy-init="true">
+			<constructor-arg>
+			<ref bean="nutsWrapperDataModel" />
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="yearsWrapperDataModel" class="org.weso.moldeas.dao.WrapperDataModelFileImpl"
+		lazy-init="true">
+		<constructor-arg type="java.lang.String" value="/home/chema/tesis/test/generated/stats_2_3_1.mht"/>
+	</bean>
+  
+  	<bean id="YearsMahoutEnhancerStandalone" class="org.weso.moldeas.enhancers.mahout.standalone.YearsMahoutEnhancerStandalone"
+		lazy-init="true">
+			<constructor-arg>
+			<ref bean="yearsWrapperDataModel" />
+		</constructor-arg>
+	</bean>
+	
+	
+<!--Solr Enhancers-->
+
+	<bean id="ResourcesCPVFileDAO" class="org.weso.moldeas.loader.resources.FilesResourceLoader"
+		lazy-init="true">
+		<constructor-arg>
+		  <list>
+     		<value>cpv/cpv-2008.ttl</value>
+  		 </list>
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="MoldeasModelWrapperCPVFileDAO" class="org.weso.moldeas.loader.JenaRDFModelWrapper"
+		lazy-init="true">
+		<constructor-arg index="0">
+			<ref bean="ResourcesCPVFileDAO" />
+		</constructor-arg>
+		<constructor-arg index="1" type="java.lang.String" value="TURTLE"/>
+	</bean>
+	
+	
+	
+	<bean id="CPVFileDAO" class="org.weso.moldeas.dao.impl.CPV2008FileDAOImpl"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="MoldeasModelWrapperCPVFileDAO" />
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="SolrPSCCodesEnhancer" class="org.weso.moldeas.enhancers.psc.SolrPSCCodesEnhancer"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="CPVFileDAO" />
+		</constructor-arg>
+	</bean>
+	
+	
+		
+	<bean id="SolrNLPPSCCodesEnhancer" class="org.weso.moldeas.enhancers.psc.SolrNLPPSCCodesEnhancer"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="PSCDAO" />
+		</constructor-arg>
+	</bean>
+	
+	
+  
+<!--Search engines-->
+	<bean id="SearchEngine" class="org.weso.moldeas.searchers.SPARQLMapReduceSearchEngine"
+		lazy-init="true">
+	</bean>
+  
+ <!--Ranking results-->
+	<bean id="RankingResults" class="org.weso.moldeas.ranking.RankingResultsImpl"
+		lazy-init="true">
+	</bean>
+  
+  <!--Enhancer-->
+	<bean id="Enhancer" class="org.weso.moldeas.enhancers.psc.LucenePSCCodesEnhancer"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="PSCFacade" />
+		</constructor-arg>
+	</bean>
+  
+  <!--set sucessors-->
+    
+<!--Facade of Lucene PSC-->
+	<bean id="PSCFacade" class="org.weso.moldeas.psc.PSCFacade"
+		lazy-init="true">
+		<constructor-arg index="0">
+			<ref bean="PSCSearch" />
+		</constructor-arg>
+		<constructor-arg index="1">
+			<ref bean="PSCDAO" />
+		</constructor-arg>
+		<constructor-arg index="2">
+			<ref bean="NUTSDAO" />
+		</constructor-arg>
+	</bean>
+	<bean id="PSCSearch" class="org.weso.moldeas.psc.PSCSearch"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="LuceneDAOFactory" />
+		</constructor-arg>
+	</bean>
+	<bean id="LuceneDAOFactory" class="org.weso.moldeas.index.lucene.LuceneDAOFactory"
+		lazy-init="true">
+	</bean>
+	
+	<bean id="PSCDAO" class="org.weso.moldeas.dao.impl.CPV2008DAOImpl"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="CPVDataSource" />
+		</constructor-arg>
+	</bean>
+	
+
+	
+	<bean id="NUTSDAO" class="org.weso.moldeas.dao.impl.NUTSDAOImpl"
+		lazy-init="true">
+	</bean>
+	
+	
+	
+	<!--Local Endpoint-->
+	
+	<bean id="CPVDataSource" class="org.weso.moldeas.dao.impl.CPVDataSourceLocalEndpoint"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="MoldeasModelWrapper" />
+		</constructor-arg>
+	</bean>
+	<!--Local Files Loader-->
+	
+	<bean id="MoldeasModelWrapper" class="org.weso.moldeas.loader.JenaRDFModelWrapper"
+		lazy-init="true">
+		<constructor-arg index="0">
+			<ref bean="ResourceLoader" />
+		</constructor-arg>
+		<constructor-arg index="1" value="TURTLE"></constructor-arg>
+	</bean>
+	
+	<bean id="ResourceLoader" class="org.weso.moldeas.loader.resources.FilesResourceLoader"
+		lazy-init="true">
+		<constructor-arg>
+		  <list>
+     		<value>cpv/cpv-2008.ttl</value>
+  		 </list>
+		</constructor-arg>		
+	</bean>
+	
+	
+	<bean id="PPNDAO" class="org.weso.moldeas.dao.impl.PPNDAOImpl"
+		lazy-init="true">
+	</bean>
+
+  
+<!--DAOs-->
+
+	<bean id="organizationsDAOImpl" class="org.weso.moldeas.dao.impl.OrganizationsDAOImpl"
+		lazy-init="true">
+	</bean>
+	<bean id="ppnDAOImpl" class="org.weso.moldeas.dao.impl.PPNDAOImpl"
+		lazy-init="true">
+	</bean>
+</beans>
