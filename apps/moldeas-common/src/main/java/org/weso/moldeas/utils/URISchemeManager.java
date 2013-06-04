@@ -29,4 +29,5 @@ public class URISchemeManager {
 	public static ResourceBundle getResourceBundle(){
 		return prefixes ;
 	}
+	public static final String URI_SEPARATOR = "/";
 }

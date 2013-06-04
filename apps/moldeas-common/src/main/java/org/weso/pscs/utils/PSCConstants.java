@@ -34,7 +34,7 @@ public class PSCConstants {
 
 	private static final String ID_PREFIX = "resource";
 
-	public static final String HTTP_NUTS_PSI_ENAKTING_ORG_ID = "http://nuts.psi.enakting.org/id/";
+	public static final String HTTP_NUTS_PSI_ENAKTING_ORG_ID = URISchemeManager.getURIPrefix("nuts-id");
 	//FIXME: Change # by /
 	
 	public static final String HTTP_WWW_W3_ORG_2004_02_SKOS_CORE = URISchemeManager.getURIPrefix("skos");
@@ -78,18 +78,18 @@ public class PSCConstants {
 	 
 	//2   f(Id)=Skos-Uri
 	public static final String formatId2003(String id){
-		return HTTP_PURL_ORG_WESO_CPV_2003 +ID_PREFIX +"/"+ id;
+		return HTTP_PURL_ORG_WESO_CPV_2003 +ID_PREFIX +URISchemeManager.URI_SEPARATOR+ id;
 	}
 	
 
 	//3   f(Id)=Skos-Uri
 	public static String formatId(String id){	
-		return HTTP_PURL_ORG_WESO_CPV_2008 +ID_PREFIX +"/"+ id ;
+		return HTTP_PURL_ORG_WESO_CPV_2008 +ID_PREFIX +URISchemeManager.URI_SEPARATOR+ id ;
 	}
 	
 
 	public static String formatURIId(String id, String date) {
-		return PSCConstants.HTTP_PURL_ORG_WESO_PPN+date+"/"+ID_PREFIX+"/"+id;
+		return PSCConstants.HTTP_PURL_ORG_WESO_PPN+date+URISchemeManager.URI_SEPARATOR+ID_PREFIX+URISchemeManager.URI_SEPARATOR+id;
 	}
 
 }
