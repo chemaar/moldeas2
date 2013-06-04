@@ -61,16 +61,43 @@
         meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
     ];
 
+ conf:dataset [
+        conf:sparqlEndpoint <http://localhost/sparql/>;
+        conf:sparqlDefaultGraph <http://localhost/moldeas/organization/>;
+        conf:datasetBase <http://localhost/moldeas/>;
+        #conf:datasetURIPattern "moldeas/.*";
+        conf:webResourcePrefix "";
+        conf:fixUnescapedCharacters "(),'!$&*+;=@";
+ 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
+        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
+        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
+        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
+    ];
+
+ conf:dataset [
+        conf:sparqlEndpoint <http://localhost/sparql/>;
+        conf:sparqlDefaultGraph <http://localhost/moldeas/ppn/>;
+        conf:datasetBase <http://localhost/moldeas/>;
+        #conf:datasetURIPattern "moldeas/.*";
+        conf:webResourcePrefix "";
+        conf:fixUnescapedCharacters "(),'!$&*+;=@";
+ 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
+        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
+        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
+        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
+    ];
+
+
 conf:dataset [
         conf:sparqlEndpoint <http://localhost/sparql/>;
         conf:sparqlDefaultGraph <http://localhost/moldeas/ontology/>;
-        conf:datasetBase <http://localhost/pscs/>;
+        conf:datasetBase <http://localhost/moldeas/>;
         conf:datasetURIPattern "moldeas/.*";
         conf:webResourcePrefix "";
  	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
         meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
         meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/webindex/organization/WESO>;
+        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
     ];
 
 .

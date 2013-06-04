@@ -12,7 +12,7 @@
 
 <rule>
     <from>^/moldeas[(\s)|(\/)]*$</from>
-    <to type="redirect">/moldeas/index/ds</to>
+    <to type="redirect">/moldeas/ls</to>
 </rule>
 
 <rule>

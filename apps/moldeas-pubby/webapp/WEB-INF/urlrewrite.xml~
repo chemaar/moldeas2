@@ -12,12 +12,12 @@
 
 <rule>
     <from>^/moldeas[(\s)|(\/)]*$</from>
-    <to type="redirect">/moldeas/index/ds</to>
+    <to type="redirect">/moldeas/ds</to>
 </rule>
 
 <rule>
     <from>^/area[(\s)|(\/)]*$</from>
-    <to type="redirect">/moldeas/area/ds</to>
+    <to type="redirect">/moldeas/area/ls</to>
 </rule>
 
 <rule>
