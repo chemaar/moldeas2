@@ -42,6 +42,8 @@ import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
 import org.weso.moldeas.transformer.pscs.cpv.CPVTransformerInit;
+import org.weso.moldeas.utils.PrefixManager;
+import org.weso.moldeas.utils.PrettyPrinter;
 import org.weso.moldeas.utils.TransformerConstants;
 import org.weso.pscs.utils.PSCConstants;
 
@@ -56,21 +58,18 @@ import com.hp.hpl.jena.vocabulary.RDF;
 
 public class PPNTransformer extends ChainTransformerAdapter {
 
-
-	
-
-
-	private static final int MAX_RESOURCES = 100000;
+	private static final int MAX_PPN_RESOURCES = 100000;
 	
 	protected static Logger logger = Logger.getLogger(PPNTransformer.class);
 	public void execute() throws Exception{
-		this.model.createProperty(PSCConstants.CPV2008_codeIn);
+		this.model.createProperty(PSCConstants.CPV_codeIn);
 		//1-Load PPN,CPV file //FIXME: as parameters
 		String [] years = new String []{
-				"2008",
-				"2009",
-				"2010",
-				"2011"
+				"2008"
+				//,
+//				"2009",
+//				"2010",
+//				"2011"
 		};
 		ResourceLoader loaderNuts = new FilesResourceLoader(new String[]{"ppn/tender-nut.csv"});
 		InputStream dataNuts =loaderNuts.getKnowledgeResources()[0].getKnowledgeSourceData();
@@ -79,6 +78,7 @@ public class PPNTransformer extends ChainTransformerAdapter {
 		
 		for(int i = 0; i<years.length;i++){
 			String tendYearFile = "ppn/tender-cpv-"+years[i]+".csv";
+			logger.info("Loading "+tendYearFile);
 			loadAndTransform(tendYearFile,ppnNuts, years[i]);
 		}
 		
@@ -97,7 +97,7 @@ public class PPNTransformer extends ChainTransformerAdapter {
 				Model resourceModel= processingLine(nextLine, ppnNuts);
 				aggregated.add(resourceModel);
 				resourceModel = null;
-				if (i>MAX_RESOURCES){
+				if (i>MAX_PPN_RESOURCES){
 					serialize(aggregated,total,year);
 					total +=i;
 					i = 0;
@@ -112,11 +112,10 @@ public class PPNTransformer extends ChainTransformerAdapter {
 		
 	}
 
-	private void serialize(Model resourceModel, int i, String year) throws FileNotFoundException {
-		logger.debug("Serialize "+("tmp/"+year+"/ppn-"+i+".n3"));
-		PrintWriter pw = new PrintWriter("tmp/"+year+"/ppn-"+i+".n3"); //FIXME
-		resourceModel.write(pw,TransformerConstants.N3_SYNTAX);
-		pw.close();		
+	private void serialize(Model resourceModel, int i, String year) throws FileNotFoundException, IOException {
+		logger.info("Serialize "+("generated/ppn-"+year+"-"+i+".ttl"));
+		PrettyPrinter.serializeModel(resourceModel, PrefixManager.getResourceBundle(), 
+				"generated/ppn-"+year+"-"+i+".ttl", TransformerConstants.TURTLE_SYNTAX);
 	}
 
 	private Map<String, String[]> createTable(CSVReader readerNuts) throws IOException {
@@ -152,7 +151,7 @@ public class PPNTransformer extends ChainTransformerAdapter {
 		for(int i = 0; i<cpvCodes.length;i++){
 			if(cpvCodes[i]!=null && !cpvCodes[i].equals("")){
 				Resource cpv2008 = resourceModel.createResource(PSCConstants.formatId(cpvCodes[i]));
-				ppnResource.addProperty(model.getProperty(PSCConstants.CPV2008_codeIn),cpv2008);	
+				ppnResource.addProperty(model.getProperty(PSCConstants.CPV_codeIn),cpv2008);	
 			}
 			
 		}
@@ -165,22 +164,18 @@ public class PPNTransformer extends ChainTransformerAdapter {
 		String []nutsCodes = ppnNuts.get(rawCode);
 		if(nutsCodes != null){
 			for(int i = 0; i< nutsCodes.length;i++){
-				Resource nutsResource = resourceModel.createResource("http://nuts.psi.enakting.org/id/"+nutsCodes[i]);
-				ppnResource.addProperty(resourceModel.getProperty(PSCConstants.NUTS_CODE),nutsResource);	
+				Resource nutsResource = resourceModel.createResource(
+						PrefixManager.getURIPrefix("moldeas-nuts")+"resource/"+nutsCodes[i]);
+				ppnResource.addProperty(
+						resourceModel.getProperty(PSCConstants.NUTS_CODE),
+						nutsResource);	
 			}
 		}
-		
 		return resourceModel;
 	}
 
 	private Model createResourceModel() {
 		Model resourceModel = ModelFactory.createDefaultModel();
-		resourceModel.setNsPrefix("cpv2008", PSCConstants.HTTP_PURL_ORG_WESO_CPV_2008);
-		resourceModel.setNsPrefix("cpv2003", PSCConstants.HTTP_PURL_ORG_WESO_CPV_2003);
-		resourceModel.setNsPrefix("cpv-def", PSCConstants.HTTP_PURL_ORG_WESO_CPV_DEF);
-		resourceModel.setNsPrefix("skos", PSCConstants.HTTP_WWW_W3_ORG_2004_02_SKOS_CORE);
-		resourceModel.setNsPrefix("skosxl", PSCConstants.HTTP_WWW_W3_ORG_2008_05_SKOS_XL);
-		resourceModel.setNsPrefix("ppn-def", PSCConstants.HTTP_PURL_ORG_WESO_PPN_DEF);
 		return resourceModel;
 	}
 

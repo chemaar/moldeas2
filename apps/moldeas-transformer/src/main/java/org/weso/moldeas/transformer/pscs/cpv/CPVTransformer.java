@@ -33,6 +33,7 @@ import java.io.InputStreamReader;
 import org.weso.moldeas.loader.resources.FilesResourceLoader;
 import org.weso.moldeas.loader.resources.ResourceLoader;
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
+import org.weso.moldeas.utils.PrefixManager;
 import org.weso.pscs.utils.PSCConstants;
 
 import au.com.bytecode.opencsv.CSVReader;
@@ -45,15 +46,7 @@ import com.hp.hpl.jena.vocabulary.RDFS;
 
 
 public class CPVTransformer extends ChainTransformerAdapter{
-
-
-
-
-
-
-	public static final String HTTP_PURL_ORG_WESO_PSCS_CPV_2008_DS = "http://purl.org/weso/pscs/cpv/2008/ds";
-
-
+	public static final String HTTP_PURL_ORG_WESO_PSCS_CPV_2008_DS = PrefixManager.getURIPrefix("cpv-2008-ds");
 
 	public CPVTransformer (){
 		

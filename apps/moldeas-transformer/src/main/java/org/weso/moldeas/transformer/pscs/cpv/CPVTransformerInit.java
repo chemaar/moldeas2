@@ -28,6 +28,7 @@
 package org.weso.moldeas.transformer.pscs.cpv;
 
 import org.weso.moldeas.transformer.pscs.ChainTransformerAdapter;
+import org.weso.moldeas.utils.PrefixManager;
 import org.weso.pscs.utils.PSCConstants;
 
 
@@ -48,8 +49,7 @@ public class CPVTransformerInit extends ChainTransformerAdapter {
 	//	this.model.setNsPrefix("cpv2003", PSCConstants.HTTP_PURL_ORG_WESO_CPV_2003);
 		this.model.setNsPrefix("cpv-def", PSCConstants.HTTP_PURL_ORG_WESO_CPV_DEF);
 		this.model.setNsPrefix("skos", PSCConstants.HTTP_WWW_W3_ORG_2004_02_SKOS_CORE);
-		this.model.setNsPrefix("skosxl", PSCConstants.HTTP_WWW_W3_ORG_2008_05_SKOS_XL);
-		this.model.setNsPrefix("gr", "http://purl.org/goodrelations/v1#");
+		this.model.setNsPrefix("gr", PrefixManager.getURIPrefix("gr"));
 		
 	}
 	

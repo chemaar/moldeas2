@@ -1,5 +1,5 @@
-000170-2011,bg,false,7,5,1,ContractingAuthority,Европейски парламент,,,"plateau de Kirchberg, 2929, Люксембург",plateau de Kirchberg,2929,Люксембург,,"",,,
-000170-2011,cs,false,7,5,1,ContractingAuthority,Evropský parlament,,,"plateau de Kirchberg, 2929, Lucemburk",plateau de Kirchberg,2929,Lucemburk,,"",,,
+000170-2011,bg,false,7,5,1,ContractingAuthority,Европейски парламент,,,"plateau de Kirchberg, 2929, Люксембург",plateau de Kirchberg,2929,Люксембург,,"",,,985-210466,http://example.org
+000170-2011,cs,false,7,5,1,ContractingAuthority,Evropský parlament,,,"plateau de Kirchberg, 2929, Lucemburk",plateau de Kirchberg,2929,Lucemburk,,"",,
 000170-2011,da,false,7,5,1,ContractingAuthority,Europa-Parlamentet,,,"plateau de Kirchberg, 2929, Luxembourg",plateau de Kirchberg,2929,Luxembourg,,"",,,
 000170-2011,de,false,7,5,1,ContractingAuthority,Europäisches Parlament,,,"plateau de Kirchberg, 2929, Luxemburg",plateau de Kirchberg,2929,Luxemburg,,"",,,
 000170-2011,el,false,7,5,1,ContractingAuthority,Ευρωπαϊκό Κοινοβούλιο,,,"plateau de Kirchberg, 2929, Λουξεμβούργο",plateau de Kirchberg,2929,Λουξεμβούργο,,"",,,

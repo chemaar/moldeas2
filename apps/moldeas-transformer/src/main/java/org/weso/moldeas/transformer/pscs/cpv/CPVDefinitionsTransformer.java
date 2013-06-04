@@ -39,8 +39,6 @@ import com.hp.hpl.jena.vocabulary.RDFS;
 public class CPVDefinitionsTransformer extends ChainTransformerAdapter {
 
 	protected void execute(){	
-		this.model.setNsPrefix("skos", PSCConstants.HTTP_WWW_W3_ORG_2004_02_SKOS_CORE);
-		this.model.setNsPrefix("skosxl", PSCConstants.HTTP_WWW_W3_ORG_2008_05_SKOS_XL);
 		createTaxonomy("division", "Division", "01000000-7");
 		createTaxonomy("group", "Group", "01100000-8");
 		createTaxonomy("class", "Class", "01110000-1");
