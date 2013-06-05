@@ -3,12 +3,12 @@
 "webapps/moldeas/WEB-INF/urlrewrite2.6.dtd">
 <urlrewrite>
 
-
+<!--
 <rule>
     <from>^/ontology[(\s)|(\/)]*$</from>
     <to type="redirect">/datasets/moldeas/moldeas-onto.ttl</to>
 </rule>
-        
+        -->
 
 <rule>
     <from>^/moldeas[(\s)|(\/)]*$</from>
@@ -39,6 +39,44 @@
     <from>^/people[(\s)|(\/)]*$</from>
     <to type="redirect">/moldeas/people/ds</to>
 </rule>
+
+
+<rule>
+    <from>^/nuts[(\s)|(\/)]*$</from>
+    <to type="redirect">/moldeas/nuts/ds</to>
+</rule>
+
+
+<rule>
+    <from>^/ppn[(\s)|(\/)]*$</from>
+    <to type="redirect">/moldeas/ppn/ls</to>
+</rule>
+
+<rule>
+    <from>^/ppn/2008[(\s)|(\/)]*$</from>
+    <to type="redirect">/moldeas/ppn/2008/ds</to>
+</rule>
+
+<rule>
+    <from>^/ppn/2009[(\s)|(\/)]*$</from>
+    <to type="redirect">/moldeas/ppn/2009/ds</to>
+</rule>
+
+<rule>
+    <from>^/ppn/2010[(\s)|(\/)]*$</from>
+    <to type="redirect">/moldeas/ppn/2010/ds</to>
+</rule>
+
+
+
+<rule>
+    <from>^/ppn/2011[(\s)|(\/)]*$</from>
+    <to type="redirect">/moldeas/ppn/2011/ds</to>
+</rule>
+
+
+
+
 
 
 </urlrewrite>

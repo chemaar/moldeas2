@@ -3,16 +3,16 @@
 "webapps/moldeas/WEB-INF/urlrewrite2.6.dtd">
 <urlrewrite>
 
-
+<!--
 <rule>
     <from>^/ontology[(\s)|(\/)]*$</from>
     <to type="redirect">/datasets/moldeas/moldeas-onto.ttl</to>
 </rule>
-        
+       --> 
 
 <rule>
     <from>^/pscs[(\s)|(\/)]*$</from>
-    <to type="redirect">/pscs/resource/ds</to>
+    <to type="redirect">/pscs/ls</to>
 </rule>
 
 <rule>

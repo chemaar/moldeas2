@@ -41,36 +41,36 @@
 <> a conf:Configuration;
     conf:projectName "10ders | PSCs";
     conf:projectHomepage <http://purl.org/weso/moldeas/>;
-    conf:webBase <http://localhost/pscs/>;
+    conf:webBase <http://purl.org/weso/pscs/>;
     conf:usePrefixesFrom <>;
     conf:defaultLanguage "en";
-    conf:indexResource <http://localhost/pscs/ds>;
+    conf:indexResource <http://purl.org/weso/pscs/>;
 
 
 
     conf:dataset [
-        conf:sparqlEndpoint <http://localhost/sparql/>;
-        conf:sparqlDefaultGraph <http://localhost/pscs/>;
-        conf:datasetBase <http://localhost/pscs/>;
+        conf:sparqlEndpoint <http://156.35.82.103/sparql>;
+        conf:sparqlDefaultGraph <http://purl.org/weso/pscs/>;
+        conf:datasetBase <http://purl.org/weso/pscs/>;
         #conf:datasetURIPattern "pscs/.*";
         conf:webResourcePrefix "";
         conf:fixUnescapedCharacters "(),'!$&*+;=@";
- 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
-        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
-        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
+ 	meta:pubbyUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:pubbyOperator <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointOperator <http://purl.org/weso/moldeas/organization/WESO>;
     ];
 
 conf:dataset [
-        conf:sparqlEndpoint <http://localhost/sparql/>;
-        conf:sparqlDefaultGraph <http://localhost/pscs/ontology/>;
-        conf:datasetBase <http://localhost/pscs/ontology>;
+        conf:sparqlEndpoint <http://156.35.82.103/sparql>;
+        conf:sparqlDefaultGraph <http://purl.org/weso/pscs/ontology/>;
+        conf:datasetBase <http://purl.org/weso/pscs/ontology>;
         conf:datasetURIPattern "pscs/.*";
         conf:webResourcePrefix "";
- 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
-        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
-        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
+ 	meta:pubbyUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:pubbyOperator <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointOperator <http://purl.org/weso/moldeas/organization/WESO>;
     ];
 
 .

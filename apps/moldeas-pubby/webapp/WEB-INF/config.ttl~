@@ -41,63 +41,38 @@
 <> a conf:Configuration;
     conf:projectName "10ders | MOLDEAS";
     conf:projectHomepage <http://purl.org/weso/moldeas/>;
-    conf:webBase <http://localhost/moldeas/>;
+    conf:webBase <http://purl.org/weso/moldeas/>;
     conf:usePrefixesFrom <>;
     conf:defaultLanguage "en";
-    conf:indexResource <http://localhost/moldeas/ds>;
+    conf:indexResource <http://purl.org/weso/moldeas/ls>;
 
 
 
     conf:dataset [
-        conf:sparqlEndpoint <http://localhost/sparql/>;
-        conf:sparqlDefaultGraph <http://localhost/moldeas/>;
-        conf:datasetBase <http://localhost/moldeas/>;
+        conf:sparqlEndpoint <http://purl.org/weso/sparql/>;
+        conf:sparqlDefaultGraph <http://purl.org/weso/moldeas/>;
+        conf:datasetBase <http://purl.org/weso/moldeas/>;
         #conf:datasetURIPattern "moldeas/.*";
         conf:webResourcePrefix "";
         conf:fixUnescapedCharacters "(),'!$&*+;=@";
- 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
-        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
-        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
+ 	meta:pubbyUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:pubbyOperator <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointOperator <http://purl.org/weso/moldeas/organization/WESO>;
     ];
 
- conf:dataset [
-        conf:sparqlEndpoint <http://localhost/sparql/>;
-        conf:sparqlDefaultGraph <http://localhost/moldeas/organization/>;
-        conf:datasetBase <http://localhost/moldeas/>;
-        #conf:datasetURIPattern "moldeas/.*";
-        conf:webResourcePrefix "";
-        conf:fixUnescapedCharacters "(),'!$&*+;=@";
- 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
-        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
-        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
-    ];
-
- conf:dataset [
-        conf:sparqlEndpoint <http://localhost/sparql/>;
-        conf:sparqlDefaultGraph <http://localhost/moldeas/ppn/>;
-        conf:datasetBase <http://localhost/moldeas/>;
-        #conf:datasetURIPattern "moldeas/.*";
-        conf:webResourcePrefix "";
-        conf:fixUnescapedCharacters "(),'!$&*+;=@";
- 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
-        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
-        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
-    ];
 
 
 conf:dataset [
-        conf:sparqlEndpoint <http://localhost/sparql/>;
-        conf:sparqlDefaultGraph <http://localhost/moldeas/ontology/>;
-        conf:datasetBase <http://localhost/moldeas/>;
+        conf:sparqlEndpoint <http://purl.org/weso/sparql/>;
+        conf:sparqlDefaultGraph <http://purl.org/weso/moldeas/ontology/>;
+        conf:datasetBase <http://purl.org/weso/moldeas/ontology>;
         conf:datasetURIPattern "moldeas/.*";
         conf:webResourcePrefix "";
- 	meta:pubbyUser <http://localhost/moldeas/organization/WESO>;
-        meta:pubbyOperator <http://localhost/moldeas/organization/WESO>;
-        meta:endpointUser <http://localhost/moldeas/organization/WESO>;
-        meta:endpointOperator <http://localhost/moldeas/organization/WESO>;
+ 	meta:pubbyUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:pubbyOperator <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointUser <http://purl.org/weso/moldeas/organization/WESO>;
+        meta:endpointOperator <http://purl.org/weso/moldeas/organization/WESO>;
     ];
 
 .
