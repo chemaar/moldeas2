@@ -19,14 +19,6 @@
 <!--Commons-->
 	<dependencies>
 
-<!--Mahout-->
-		
-			<dependency> 
-				<groupId>org.apache.mahout</groupId>
-				<artifactId>mahout-core</artifactId> 
-				<version>0.4</version>
-			</dependency>
-
 <!--Moldeas common-->
 		<dependency>
 			<groupId>org.weso</groupId>
