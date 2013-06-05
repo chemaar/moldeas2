@@ -33,17 +33,17 @@ import org.weso.moldeas.utils.ApplicationContextLocator;
 public class CPV2008DAOImpl extends CPVDAOImpl {
 
 	protected static Logger logger = Logger.getLogger(CPV2008DAOImpl.class);
-	private CPVDataSource dataSource = null;
+	private DataSource dataSource = null;
 	public CPV2008DAOImpl(){
-		this.dataSource = (CPVDataSource) ApplicationContextLocator.getApplicationContext().
-		getBean(CPVDataSource.class.getSimpleName());
+		this.dataSource = (DataSource) ApplicationContextLocator.getApplicationContext().
+		getBean(CPVDAOImpl.CPV_DATA_SOURCE_BEAN);
 	}
 
-	public CPV2008DAOImpl(CPVDataSource dataSource ){
+	public CPV2008DAOImpl(DataSource dataSource ){
 		this.dataSource = dataSource;
 	}
 	@Override
-	protected CPVDataSource getCVPDataSource() {	
+	protected DataSource getCVPDataSource() {	
 		return this.dataSource;
 	}
 

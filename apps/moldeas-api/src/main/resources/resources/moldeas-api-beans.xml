@@ -101,6 +101,7 @@
 		</constructor-arg>
 	</bean>
 	
+		
 	
 	<bean id="SolrPSCCodesEnhancer" class="org.weso.moldeas.enhancers.psc.SolrPSCCodesEnhancer"
 		lazy-init="true">
@@ -170,33 +171,43 @@
 		</constructor-arg>
 	</bean>
 	
-
 	
 	<bean id="NUTSDAO" class="org.weso.moldeas.dao.impl.NUTSDAOImpl"
 		lazy-init="true">
+		<constructor-arg>
+			<ref bean="NUTSDataSource" />
+		</constructor-arg>
 	</bean>
 	
 	
 	
 	<!--Local Endpoint-->
 	
-	<bean id="CPVDataSource" class="org.weso.moldeas.dao.impl.CPVDataSourceLocalEndpoint"
+	<bean id="CPVDataSource" class="org.weso.moldeas.dao.impl.DataSourceLocalEndpoint"
 		lazy-init="true">
 		<constructor-arg>
-			<ref bean="MoldeasModelWrapper" />
+			<ref bean="CPVMoldeasModelWrapper" />
 		</constructor-arg>
 	</bean>
+	
+	<bean id="NUTSDataSource" class="org.weso.moldeas.dao.impl.DataSourceLocalEndpoint"
+		lazy-init="true">
+		<constructor-arg>
+			<ref bean="NUTSMoldeasModelWrapper" />
+		</constructor-arg>
+	</bean>
+	
 	<!--Local Files Loader-->
 	
-	<bean id="MoldeasModelWrapper" class="org.weso.moldeas.loader.JenaRDFModelWrapper"
+	<bean id="CPVMoldeasModelWrapper" class="org.weso.moldeas.loader.JenaRDFModelWrapper"
 		lazy-init="true">
 		<constructor-arg index="0">
-			<ref bean="ResourceLoader" />
+			<ref bean="CPVResourceLoader" />
 		</constructor-arg>
 		<constructor-arg index="1" value="TURTLE"></constructor-arg>
 	</bean>
 	
-	<bean id="ResourceLoader" class="org.weso.moldeas.loader.resources.FilesResourceLoader"
+	<bean id="CPVResourceLoader" class="org.weso.moldeas.loader.resources.FilesResourceLoader"
 		lazy-init="true">
 		<constructor-arg>
 		  <list>
@@ -204,6 +215,24 @@
   		 </list>
 		</constructor-arg>		
 	</bean>
+	
+	<bean id="NUTSMoldeasModelWrapper" class="org.weso.moldeas.loader.JenaRDFModelWrapper"
+		lazy-init="true">
+		<constructor-arg index="0">
+			<ref bean="NUTSResourceLoader" />
+		</constructor-arg>
+		<constructor-arg index="1" value="TURTLE"></constructor-arg>
+	</bean>
+	
+	<bean id="NUTSResourceLoader" class="org.weso.moldeas.loader.resources.FilesResourceLoader"
+		lazy-init="true">
+		<constructor-arg>
+		  <list>
+     		<value>nuts/nuts-2008.ttl</value>
+  		 </list>
+		</constructor-arg>		
+	</bean>
+	
 	
 	
 	<bean id="PPNDAO" class="org.weso.moldeas.dao.impl.PPNDAOImpl"

@@ -32,17 +32,18 @@ package org.weso.moldeas.dao;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.weso.moldeas.dao.impl.NUTSDAOImpl;
+import org.weso.moldeas.to.NUTSTO;
 
 public class NUTSDAOTest {
 
 	@Test
 	public void testDescribe() {
-		fail("Not yet implemented");
+		NUTSDAO dao = new NUTSDAOImpl();
+		NUTSTO nutsTO = new NUTSTO("http://localhost/moldeas/nuts/resource/DEB11");
+		dao.describe(nutsTO );
+		
 	}
 
-	@Test
-	public void testGetNUTSTOs() {
-		fail("Not yet implemented");
-	}
 
 }

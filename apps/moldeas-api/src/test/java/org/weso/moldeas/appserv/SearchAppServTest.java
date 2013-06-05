@@ -38,14 +38,18 @@ import org.weso.moldeas.psc.PSCFacade;
 import org.weso.moldeas.psc.PSCFacadeTest;
 import org.weso.moldeas.ranking.DummyRankingImpl;
 import org.weso.moldeas.searchers.SPARQLSearchEngine;
+import org.weso.moldeas.to.DurationTO;
+import org.weso.moldeas.to.NUTSTO;
 import org.weso.moldeas.to.PPNResultTO;
 import org.weso.moldeas.to.PSCTO;
 import org.weso.moldeas.to.RequestSearchTO;
+import org.weso.moldeas.to.TotalCostTO;
+import org.weso.moldeas.to.YearsTO;
 
 
 public class SearchAppServTest {
 
-	@Test
+	//@Test
 	public void testSimpleSearchByCode(){
 		RequestSearchTO requestSearch = new RequestSearchTO();
 		PSCTO pstTO = new PSCTO();
@@ -60,7 +64,7 @@ public class SearchAppServTest {
 		PPNResultTO result = appServ.search(requestSearch);
 		Assert.assertEquals(692, result.getScoredPnnsTO().size());
 	}
-	@Test
+	//@Test
 	public void testEnhancedSearch(){
 		RequestSearchTO requestSearch = new RequestSearchTO();
 		PSCTO pstTO = new PSCTO();
@@ -75,11 +79,51 @@ public class SearchAppServTest {
 		PPNResultTO result = appServ.enhancedSearch(requestSearch);
 		Assert.assertEquals(1821, result.getScoredPnnsTO().size());
 	}
+	
+	@Test
+	public void testFailSearch(){
+		RequestSearchTO requestSearch = new RequestSearchTO();
+		PSCTO pstTO = new PSCTO();
+		pstTO.setUri("http://localhost/pscs/cpv/2008/resource/98510000");
+		requestSearch.getPscCodes().add(pstTO);
+		requestSearch.getNutsCodes().add(new NUTSTO("http://localhost/moldeas/nuts/resource/DE"));
+		DurationTO duration = new DurationTO();
+		duration.setMin(Long.valueOf(1));
+		duration.setMax(Long.valueOf(3));
+		requestSearch.setDuration(duration);
+		TotalCostTO totalCost = new TotalCostTO();
+		totalCost.setMin(Long.valueOf(75));
+		totalCost.setMax(Long.valueOf(300));
+		requestSearch.setTotalCost(totalCost );
+		YearsTO years = new YearsTO();
+		years.setMin(Long.valueOf(2009));
+		years.setMax(Long.valueOf(2010));
+		requestSearch.setYears(years);
+		//return new PPNResultTO();
+		//request.setMaxResults(10000);
+		requestSearch.setMaxResults(1000);		
+		
+//		RequestSearchTO requestSearch = new RequestSearchTO();
+//		PSCTO pstTO = new PSCTO();
+//		pstTO.setUri("http://localhost/pscs/cpv/2008/resource/98510000");
+//		requestSearch.getPscCodes().add(pstTO);
+//		requestSearch.setMaxResults(2000);
+//		requestSearch.getNutsCodes().add(new NUTSTO("http://localhost/moldeas/nuts/resource/DE"));
+		PSCFacade pscFacade = PSCFacadeTest.createPSCFacade(); 
+		SearchAppServ appServ = new SearchAppServ(
+				new SPARQLSearchEngine(),
+				new DummyRankingImpl(),
+				createEnhancers(pscFacade));//Skip the use of spring		
+		PPNResultTO result = appServ.enhancedSearch(requestSearch);
+		Assert.assertEquals(16, result.getScoredPnnsTO().size());
+	}
+	
+	
 	public static  Enhancer createEnhancers(PSCFacade facade){
 		return new LucenePSCCodesEnhancer(facade);
 	}
 	
-	@Test
+	//@Test
 	public void testCreateQuery(){
 		RequestSearchTO requestSearch = new RequestSearchTO();
 		PSCTO pstTO = new PSCTO();

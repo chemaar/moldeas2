@@ -43,11 +43,11 @@ import com.hp.hpl.jena.query.ResultSet;
 public class CPVCacheDAOImpl extends CPVDAOImpl {
 
 	protected static Logger logger = Logger.getLogger(CPVCacheDAOImpl.class);
-	private CPVDataSource dataSource = null;
+	private DataSource dataSource = null;
 	protected Map<String,PSCTO> cpvConcepts ;
 	protected List<PSCTO> listConcepts;
 	
-	public CPVCacheDAOImpl(CPVDataSource dataSource){
+	public CPVCacheDAOImpl(DataSource dataSource){
 		this.dataSource = dataSource;
 		this.cpvConcepts = createMapCPVConceptsV2();
 		this.listConcepts = new LinkedList<PSCTO>(this.cpvConcepts.values());
@@ -55,8 +55,8 @@ public class CPVCacheDAOImpl extends CPVDAOImpl {
 
 	public CPVCacheDAOImpl(){
 		logger.debug("Default Constructor");
-		this.dataSource = (CPVDataSource) ApplicationContextLocator.getApplicationContext().
-		getBean(CPVDataSource.class.getSimpleName());
+		this.dataSource = (DataSource) ApplicationContextLocator.getApplicationContext().
+				getBean(CPVDAOImpl.CPV_DATA_SOURCE_BEAN);
 		this.cpvConcepts = createMapCPVConceptsV2();
 		this.listConcepts = new LinkedList<PSCTO>(this.cpvConcepts.values()); 
 	
@@ -100,7 +100,7 @@ public class CPVCacheDAOImpl extends CPVDAOImpl {
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Category> ). " +
 		"FILTER (lang(?prefLabel)=\"ES\")"+ //FIXME: SPARQL Jena does not admit "es" it works with "ES", Virtuoso works with "es" "ES" not yet tested 
 		"} "; 
-		CPVDataSource cvpDataSource = getCVPDataSource();
+		DataSource cvpDataSource = getCVPDataSource();
 		logger.debug("Executing query: "+query+" data source ");		
 		List<PSCTO> pscTOs = new LinkedList<PSCTO>();
 		ResultSet resultsSet = cvpDataSource.execSelect(query);
@@ -141,7 +141,7 @@ public class CPVCacheDAOImpl extends CPVDAOImpl {
 	}
 
 	@Override
-	protected CPVDataSource getCVPDataSource() {	
+	protected DataSource getCVPDataSource() {	
 		return this.dataSource;
 	}
 

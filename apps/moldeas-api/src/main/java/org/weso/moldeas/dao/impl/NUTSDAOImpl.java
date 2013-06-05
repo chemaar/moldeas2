@@ -34,54 +34,65 @@ import org.apache.log4j.Logger;
 import org.weso.moldeas.dao.DAOSPARQLService;
 import org.weso.moldeas.dao.NUTSDAO;
 import org.weso.moldeas.to.NUTSTO;
+import org.weso.moldeas.utils.ApplicationContextLocator;
 import org.weso.moldeas.utils.SPARQLPPNUtils;
 
-import com.hp.hpl.jena.query.QueryExecution;
-import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 
-public class NUTSDAOImpl implements NUTSDAO{
+public class  NUTSDAOImpl implements NUTSDAO{
 
+	public static final String NUTS_DATA_SOURCE_BEAN = "NUTSDataSource";
 	protected static Logger logger = Logger.getLogger(NUTSDAOImpl.class);
+	private DataSource dataSource;
+
+
+	public NUTSDAOImpl() {
+		this.dataSource = (DataSource) ApplicationContextLocator.getApplicationContext().
+				getBean(NUTS_DATA_SOURCE_BEAN);
+			
+	}
+
+	public NUTSDAOImpl (DataSource dataSource ){
+		this.dataSource = dataSource;
+	}
+	
 	@Override
 	public NUTSTO describe(NUTSTO nutsTO) {
 		String query = DAOSPARQLService.NS+" "+
-		"SELECT DISTINCT * WHERE{" +
-			"?region rdf:type moldeas-onto:NUTSRegion. " + //FIXME: nuts:
-			"?region rdfs:label ?label. " +
-			"?region <http://nuts.psi.enakting.org/def/shapeKML> ?kml. " +
-			"?region <http://nuts.psi.enakting.org/def/code> ?code. "+
-			"OPTIONAL { ?region <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/containedBy> ?parent. }."+
-			"FILTER (?region=<"+nutsTO.getUri()+">)"+
-		"}"	;
-		logger.debug("Executing query: "+query+" service: "+DAOSPARQLService.WESO_SPARQL_SERVICE);
-		QueryExecution qExec = QueryExecutionFactory.sparqlService(
-				DAOSPARQLService.WESO_SPARQL_SERVICE, query);
-		ResultSet resultSet = qExec.execSelect();
-		for ( ; resultSet.hasNext() ; ){
-			return (createNUTSTO(resultSet.next()));
+				"SELECT DISTINCT * WHERE{" +
+				"?region rdf:type nuts:NUTSRegion. " + //FIXME: nuts:
+				"?region rdfs:label ?label. " +
+				"?region <http://nuts.psi.enakting.org/def/shapeKML> ?kml. " +
+				"?region <http://nuts.psi.enakting.org/def/code> ?code. "+
+				"OPTIONAL { ?region <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/containedBy> ?parent. }."+
+				"FILTER (?region=<"+nutsTO.getUri()+">)"+
+				"}"	;
+		ResultSet resultsSet = getNUTSDataSource().execSelect(query);	
+		for ( ; resultsSet.hasNext() ; ){
+			return (createNUTSTO(resultsSet.next()));
 		}
 		return new NUTSTO();
+	}
+
+	private DataSource getNUTSDataSource() {
+			return this.dataSource;
 	}
 
 	@Override
 	public List<NUTSTO> getNUTSTOs() {
 		String query = DAOSPARQLService.NS+" "+
-		"SELECT DISTINCT * WHERE{" +
-			"?region rdf:type moldeas-onto:NUTSRegion. " +
-			"?region rdfs:label ?label. " +		
-			"?region <http://nuts.psi.enakting.org/def/shapeKML> ?kml. " +
-			"?region <http://nuts.psi.enakting.org/def/code> ?code. "+
-			"OPTIONAL { ?region <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/containedBy> ?parent. }."+
-		"}"	;
-		logger.debug("Executing query: "+query+" service: "+DAOSPARQLService.WESO_SPARQL_SERVICE);
-		QueryExecution qExec = QueryExecutionFactory.sparqlService(
-				DAOSPARQLService.WESO_SPARQL_SERVICE, query);
-		ResultSet resultSet = qExec.execSelect();
+				"SELECT DISTINCT * WHERE{" +
+				"?region rdf:type nuts:NUTSRegion. " +
+				"?region rdfs:label ?label. " +		
+				"?region <http://nuts.psi.enakting.org/def/shapeKML> ?kml. " +
+				"?region <http://nuts.psi.enakting.org/def/code> ?code. "+
+				"OPTIONAL { ?region <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/containedBy> ?parent. }."+
+				"}"	;
+		ResultSet resultsSet = getNUTSDataSource().execSelect(query);	
 		List<NUTSTO> nutsTO = new LinkedList<NUTSTO>();
-		for ( ; resultSet.hasNext() ; ){
-			nutsTO.add(createNUTSTO(resultSet.next()));
+		for ( ; resultsSet.hasNext() ; ){
+			nutsTO.add(createNUTSTO(resultsSet.next()));
 		}
 		return nutsTO;
 	}
@@ -100,5 +111,5 @@ public class NUTSDAOImpl implements NUTSDAO{
 		result.setContainedBy(containedBy);
 		return result;
 	}
-	
+
 }

@@ -41,6 +41,7 @@ public class DAOSPARQLService {
 	//FIXME: Extract to database or consult via SPARQL and VOID vocabulary
 	
 	public static final String CPV_2008_GRAPH_URI = "http://purl.org/weso/pscs/";
+	public static final String DEFAULT_GRAPH_URI = "http://purl.org/weso/moldeas/";
 //	public static final String CPV_2003_GRAPH_URI = "http://purl.org/weso/pscs/cpv/2003";
 //	public static final String NUTS_2008_GRAPH_URI = "ttp://nuts.psi.enakting.org";
 //	public static final String EUROVOC_GRAPH_URI = "http://eurovoc.europa.eu";

@@ -17,7 +17,7 @@ import org.apache.mahout.cf.taste.recommender.Recommender;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import org.weso.moldeas.dao.WrapperDataModel;
 import org.weso.moldeas.dao.WrapperDataModelFileImpl;
-import org.weso.moldeas.dao.impl.CPVDataSource;
+import org.weso.moldeas.dao.impl.DataSource;
 import org.weso.moldeas.enhancers.EnhancerAdapter;
 import org.weso.moldeas.to.EnhancedRequestSearchTO;
 import org.weso.moldeas.to.PSCTO;
@@ -124,9 +124,9 @@ public class PSCMahoutEnhancerStandalone extends EnhancerAdapter {
 			} else if (scored instanceof ScoredDurationTO){
 				enhancedRequest.getScoredDurationTOs().add((ScoredDurationTO) scored);
 			}else{
-				System.out.println("Skipping to add "+scored.toString()+" to enhanced request.");
+				logger.debug("Skipping to add "+scored.toString()+" to enhanced request.");
 			}
-		} else System.out.println("Skipping to add null recommendation.");
+		} else logger.debug("Skipping to add null recommendation.");
 		
 	}
 }

@@ -37,8 +37,8 @@ import org.junit.Test;
 import org.weso.moldeas.dao.PSCDAO;
 import org.weso.moldeas.dao.impl.CPV2008DAOImpl;
 import org.weso.moldeas.dao.impl.CPVCacheDAOImpl;
-import org.weso.moldeas.dao.impl.CPVDataSource;
-import org.weso.moldeas.dao.impl.CPVDataSourceLocalEndpoint;
+import org.weso.moldeas.dao.impl.DataSource;
+import org.weso.moldeas.dao.impl.DataSourceLocalEndpoint;
 import org.weso.moldeas.exceptions.EmptySyntacticQueryException;
 import org.weso.moldeas.exceptions.InvalidQueryException;
 import org.weso.moldeas.index.lucene.LuceneDAOFactory;
@@ -63,7 +63,7 @@ public class PSCFacadeTest {
 	public static PSCFacade createPSCFacade() {
 		ResourceLoader loader = new FilesResourceLoader(new String[]{"cpv/cpv-2008.ttl"});
 		JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,"TURTLE");
-		CPVDataSource dataSource = new CPVDataSourceLocalEndpoint(rdfModel);
+		DataSource dataSource = new DataSourceLocalEndpoint(rdfModel);
 		PSCDAO pscDAO = new CPV2008DAOImpl(dataSource);
 		LuceneDAOFactory luceneDAOFactory = new LuceneDAOFactory();
 		PSCSearch pscSearch = new PSCSearch(luceneDAOFactory);

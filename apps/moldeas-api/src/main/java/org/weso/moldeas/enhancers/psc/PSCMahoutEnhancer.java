@@ -96,9 +96,9 @@ public class PSCMahoutEnhancer extends EnhancerAdapter {
 		Recommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity); 
 		List<RecommendedItem> recommendations = 
 			recommender.recommend(31000000,3); //(id concept, number of recomendations)
-		System.out.println(recommendations.size());
+		logger.debug(recommendations.size());
 		for (RecommendedItem recommendation : recommendations) {
-			System.out.println(recommendation.getItemID()+"  "+recommendation.getValue());
+			logger.debug(recommendation.getItemID()+"  "+recommendation.getValue());
 		}
 
 	}

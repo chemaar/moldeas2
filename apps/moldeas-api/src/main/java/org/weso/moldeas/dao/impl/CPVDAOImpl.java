@@ -53,18 +53,19 @@ public abstract class CPVDAOImpl implements PSCDAO {
 
 	//FIXME: Use Command design pattern
 	protected static Logger logger = Logger.getLogger(CPVDAOImpl.class);
+	public static final String CPV_DATA_SOURCE_BEAN = "CPVDataSource";
 
 	public CPVDAOImpl(){
 		//FIXME: REquest dataSource
 	}
 
-	protected abstract CPVDataSource getCVPDataSource();
+	protected abstract DataSource getCVPDataSource();
 	
 	@Override
 	public PSCTO describe(PSCTO pscTO) {
 		String query = DAOSPARQLService.NS+" " +
 		"DESCRIBE <"+pscTO.getUri()+">";
-		CPVDataSource cvpDataSource = getCVPDataSource();
+		DataSource cvpDataSource = getCVPDataSource();
 		logger.debug("Executing describe query: "+query+" provider: "+ cvpDataSource.getClass().getSimpleName());
 		Model results = cvpDataSource.execDescribe(query);
 		PSCTO result = new PSCTO();
@@ -95,7 +96,7 @@ public abstract class CPVDAOImpl implements PSCDAO {
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Class> ). " +
 		"FILTER (lang(?prefLabel)=\"EN\")"+ //FIXME
 		"} "; 
-		CPVDataSource cvpDataSource = getCVPDataSource();
+		DataSource cvpDataSource = getCVPDataSource();
 		logger.debug("Executing query: "+query+" provider: "+cvpDataSource);
 		List<PSCTO> pscTOs = new LinkedList<PSCTO>();
 		ResultSet resultsSet = cvpDataSource.execSelect(query);
@@ -130,7 +131,7 @@ public abstract class CPVDAOImpl implements PSCDAO {
 				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Class> ). " +
 				"FILTER (lang(?prefLabel)=\"EN\")" +
 				"}"; //FIXME";			
-		CPVDataSource cvpDataSource = getCVPDataSource();
+		DataSource cvpDataSource = getCVPDataSource();
 		logger.debug("Executing query: "+query+" provider: "+cvpDataSource);
 		ResultSet resultsSet = cvpDataSource.execSelect(query);
 		List<PSCTO> pscTOs = new LinkedList<PSCTO>();

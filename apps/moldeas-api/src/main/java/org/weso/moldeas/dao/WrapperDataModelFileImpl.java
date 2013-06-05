@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.model.DataModel;
-import org.weso.moldeas.dao.impl.CPVDataSource;
+import org.weso.moldeas.dao.impl.DataSource;
 import org.weso.moldeas.utils.ApplicationContextLocator;
 
 public class WrapperDataModelFileImpl implements WrapperDataModel {

@@ -35,9 +35,9 @@ import org.weso.moldeas.loader.resources.ResourceLoader;
 public class CPV2003DAOImpl extends CPVDAOImpl {
 protected static Logger logger = Logger.getLogger(CPV2003DAOImpl.class);
 
-	private CPVDataSource dataSource = null;
+	private DataSource dataSource = null;
 
-	public CPV2003DAOImpl(CPVDataSource dataSource ){
+	public CPV2003DAOImpl(DataSource dataSource ){
 		this.dataSource = dataSource;
 	}
 	
@@ -45,12 +45,12 @@ protected static Logger logger = Logger.getLogger(CPV2003DAOImpl.class);
 		//FIXME: ref bean
 	}
 	@Override
-	protected CPVDataSource getCVPDataSource() {	
+	protected DataSource getCVPDataSource() {	
 		//FIXME: extract beans
 		if(dataSource==null){
 			ResourceLoader loader = new FilesResourceLoader(new String[]{"cpv/cpv-2003.ttl"});
 			JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,"TURTLE");
-			this.dataSource = new CPVDataSourceLocalEndpoint(rdfModel); 
+			this.dataSource = new DataSourceLocalEndpoint(rdfModel); 
 		}		
 		return this.dataSource;
 	}
