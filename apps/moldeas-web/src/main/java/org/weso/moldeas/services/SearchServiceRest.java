@@ -27,8 +27,6 @@
  */
 package org.weso.moldeas.services;
 
-import java.io.IOException;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -65,6 +63,14 @@ public class SearchServiceRest {
 				getBean(MoldeasServiceFacade.class.getSimpleName());
 		
 	}
+	
+	private MoldeasServiceFacade getFacade(){
+		if (this.facade == null){
+			this.facade =  (MoldeasServiceFacade) ApplicationContextLocator.getApplicationContext().
+					getBean(MoldeasServiceFacade.class.getSimpleName());
+		}
+		return this.facade;
+	}
 	@GET
 	@Path("search/code/{code}")
 	@ProduceMime({"text/plain", "application/xml", "application/json"})
@@ -77,7 +83,7 @@ public class SearchServiceRest {
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
 			request.setMaxResults(MAX_RESULTS);
-			return this.facade.search(request);
+			return getFacade().search(request);
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}
@@ -93,7 +99,7 @@ public class SearchServiceRest {
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
 			request.setMaxResults(MAX_RESULTS);
-			return this.facade.search(request);
+			return getFacade().search(request);
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}
@@ -109,7 +115,7 @@ public class SearchServiceRest {
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
 			request.setMaxResults(MAX_RESULTS);
-			return this.facade.enhancedSearch(request);
+			return getFacade().enhancedSearch(request);
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}
@@ -158,14 +164,12 @@ public class SearchServiceRest {
 			years.setMin(Long.valueOf(minYear));
 			years.setMax(Long.valueOf(maxYear));
 			request.setYears(years);
-			//return new PPNResultTO();
-			//request.setMaxResults(10000);
 			request.setMaxResults(MAX_RESULTS);
-			logger.debug(request);
-			PPNResultTO result = this.facade.enhancedSearch(request); //FIXME: Check parameters
+			PPNResultTO result = getFacade().enhancedSearch(request); //FIXME: Check parameters
 			logger.info("RESULTS: "+result.getTotalResults());
 			return result;
-		}catch (Exception e){			
+		}catch (Exception e){	
+			e.printStackTrace();
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}
 
@@ -183,7 +187,7 @@ public class SearchServiceRest {
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
 			request.setMaxResults(MAX_RESULTS);
-			return new QueryTO(this.facade.createSimpleSPARQLQuery(request));
+			return new QueryTO(getFacade().createSimpleSPARQLQuery(request));
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}
@@ -201,7 +205,7 @@ public class SearchServiceRest {
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
 			request.setMaxResults(MAX_RESULTS);
-			return new QueryTO(this.facade.createEnhancedSPARQLQuery(request));
+			return new QueryTO(getFacade().createEnhancedSPARQLQuery(request));
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}

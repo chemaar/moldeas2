@@ -73,7 +73,7 @@ public class SearchAppServ {
 	 * @return
 	 */
 	public PPNResultTO enhancedSearch(RequestSearchTO request){
-		logger.debug("Enhanced search in appserv.");
+		logger.info("Enhanced search in appserv." +request);
 		//Chain of responsability to enrich the query
 		long time = System.currentTimeMillis();
 		//1-PSCCode

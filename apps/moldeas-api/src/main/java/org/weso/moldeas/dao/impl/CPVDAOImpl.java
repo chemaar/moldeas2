@@ -95,6 +95,12 @@ public abstract class CPVDAOImpl implements PSCDAO {
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Group> " +
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Class> ). " +
 		"FILTER (lang(?prefLabel)=\"EN\")"+ //FIXME
+		
+//		"FILTER (?type=<http://purl.org/weso/pscs/cpv/ontology/Category> " + 
+//		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Division> " +
+//		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Group> " +
+//		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Class> ). " +
+//		"FILTER (lang(?prefLabel)=\"EN\")"+ //FIXME
 		"} "; 
 		DataSource cvpDataSource = getCVPDataSource();
 		logger.debug("Executing query: "+query+" provider: "+cvpDataSource);
@@ -125,10 +131,15 @@ public abstract class CPVDAOImpl implements PSCDAO {
 				"?code skos:broaderTransitive <" +pscTO.getUri()+"> ." +
 				"?code dc:identifier ?id. " +
 				"?code skos:prefLabel ?prefLabel. "+
-				"FILTER (?type=<http://purl.org/weso/pscs/cpv/ontology/Category> " + 
-				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Division> " +
-				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Group> " +
-				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Class> ). " +
+				"FILTER (?type=<http://localhost/pscs/cpv/ontology/Category> " + 
+				"|| ?type=<http://localhost/pscs/cpv/ontology/Division> " +
+				"|| ?type=<http://localhost/pscs/cpv/ontology/Group> " +
+				"|| ?type=<http://localhost/pscs/cpv/ontology/Class> ). " +
+				
+//				"FILTER (?type=<http://purl.org/weso/pscs/cpv/ontology/Category> " + 
+//				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Division> " +
+//				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Group> " +
+//				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Class> ). " +
 				"FILTER (lang(?prefLabel)=\"EN\")" +
 				"}"; //FIXME";			
 		DataSource cvpDataSource = getCVPDataSource();

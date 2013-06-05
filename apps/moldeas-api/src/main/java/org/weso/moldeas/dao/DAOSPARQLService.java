@@ -33,7 +33,7 @@ import java.util.ResourceBundle;
 import org.weso.moldeas.utils.URISchemeManager;
 
 public class DAOSPARQLService {
-	public static String WESO_SPARQL_SERVICE = "http://localhost/sparql/"; //FIXME: EXTRACT PARAM IN SPRING-BEANS
+	public static String WESO_SPARQL_SERVICE = "http://localhost/sparql/"; 
 	
 	public static String MAX_LIMIT = "LIMIT 1000"; //FIXME: ONLY FOR GOOGLE APPENGIN
 	public static String MAX_LIMIT_PPN = "LIMIT 2000"; //FIXME: ONLY FOR GOOGLE APPENGIN
@@ -42,15 +42,6 @@ public class DAOSPARQLService {
 	
 	public static final String CPV_2008_GRAPH_URI = "http://purl.org/weso/pscs/";
 	public static final String DEFAULT_GRAPH_URI = "http://purl.org/weso/moldeas/";
-//	public static final String CPV_2003_GRAPH_URI = "http://purl.org/weso/pscs/cpv/2003";
-//	public static final String NUTS_2008_GRAPH_URI = "ttp://nuts.psi.enakting.org";
-//	public static final String EUROVOC_GRAPH_URI = "http://eurovoc.europa.eu";
-//	public static final String PPN_GRAPH_URI = "http://purl.org/weso/moldeas/ppn";
-//	public static final String PPN_GRAPH_URI_2008 = PPN_GRAPH_URI+"/2008";
-//	public static final String PPN_GRAPH_URI_2009 = PPN_GRAPH_URI+"/2009";
-//	public static final String PPN_GRAPH_URI_2010 = PPN_GRAPH_URI+"/2010";
-//	public static final String PPN_GRAPH_URI_2011 = PPN_GRAPH_URI+"/2011";
-	
 	public static final String ORGANIZATIONS_GRAPH_URI = "http://purl.org/weso/moldeas/organization/";
 	
 	public static String NS = "";

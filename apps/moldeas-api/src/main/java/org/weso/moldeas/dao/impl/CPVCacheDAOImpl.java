@@ -98,7 +98,13 @@ public class CPVCacheDAOImpl extends CPVDAOImpl {
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Group> " +
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Class> " +
 		"|| ?type=<http://localhost/pscs/cpv/ontology/Category> ). " +
-		"FILTER (lang(?prefLabel)=\"ES\")"+ //FIXME: SPARQL Jena does not admit "es" it works with "ES", Virtuoso works with "es" "ES" not yet tested 
+		"FILTER (lang(?prefLabel)=\"ES\")"+ //FIXME: SPARQL Jena does not admit "es" it works with "ES", Virtuoso works with "es" "ES" not yet tested
+		
+//		"FILTER (?type=<http://purl.org/weso/pscs/cpv/ontology/Division> " + 
+//		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Group> " +
+//		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Class> " +
+//		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Category> ). " +
+//		"FILTER (lang(?prefLabel)=\"ES\")"+ //FIXME: SPARQL Jena does not admit "es" it works with "ES", Virtuoso works with "es" "ES" not yet tested 
 		"} "; 
 		DataSource cvpDataSource = getCVPDataSource();
 		logger.debug("Executing query: "+query+" data source ");		

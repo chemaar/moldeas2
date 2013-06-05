@@ -140,5 +140,13 @@ public class RequestSearchTO {
 	public void setSwap(Map swap) {
 		this.swap = swap;
 	}
+	@Override
+	public String toString() {
+		return "RequestSearchTO [pscCodes=" + pscCodes + ", totalCost="
+				+ totalCost + ", duration=" + duration + ", years=" + years
+				+ ", nutsCodes=" + nutsCodes + ", state=" + state
+				+ ", maxResults=" + maxResults + ", stringQuery=" + stringQuery
+				+ ", swap=" + swap + "]";
+	}
 	
 }

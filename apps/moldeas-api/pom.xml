@@ -16,18 +16,18 @@
 
 
 
-<!--Commons-->
+	<!--Commons -->
 	<dependencies>
 
-<!--Mahout-->
-		
-			<dependency> 
-				<groupId>org.apache.mahout</groupId>
-				<artifactId>mahout-core</artifactId> 
-				<version>0.4</version>
-			</dependency>
+		<!--Mahout -->
 
-<!--Moldeas common-->
+		<dependency>
+			<groupId>org.apache.mahout</groupId>
+			<artifactId>mahout-core</artifactId>
+			<version>0.4</version>
+		</dependency>
+
+		<!--Moldeas common -->
 		<dependency>
 			<groupId>org.weso</groupId>
 			<artifactId>moldeas-common</artifactId>
@@ -41,7 +41,7 @@
 			<scope>test</scope>
 			<optional>true</optional>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -64,7 +64,7 @@
 		</dependency>
 
 
-<!--XML-Proccessing -->
+		<!--XML-Proccessing -->
 		<dependency>
 			<groupId>xalan</groupId>
 			<artifactId>xalan</artifactId>
@@ -81,14 +81,28 @@
 			<version>2.1</version>
 		</dependency>
 
-<!--Spring-->
+		<!--Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
 
-<!--Jena-->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>20040616</version>
+		</dependency>
+
+		<dependency>
+			<groupId>backport-util-concurrent</groupId>
+			<artifactId>backport-util-concurrent</artifactId>
+			<version>2.1</version>
+		</dependency>
+
+
+
+		<!--Jena -->
 		<dependency>
 			<groupId>com.hp.hpl.jena</groupId>
 			<artifactId>jena</artifactId>
@@ -109,34 +123,18 @@
 			<artifactId>geonames</artifactId>
 			<version>1.0</version>
 		</dependency>
-<!--SCALA-->
-<!--  
-	 <dependency>
-                <groupId>org.scala-lang</groupId>
-                <artifactId>scala-library</artifactId>
-                <version>2.8.0</version>
-        </dependency>
+		<!--SCALA -->
+		<!-- <dependency> <groupId>org.scala-lang</groupId> <artifactId>scala-library</artifactId> 
+			<version>2.8.0</version> </dependency> <dependency> <groupId>org.scalaj</groupId> 
+			<artifactId>scalaj-collection_2.8.0</artifactId> <version>1.0</version> </dependency> -->
+		<!-- Specs (Behavior Driven Testing through JUnit) -->
+		<!-- <dependency> <groupId>org.scala-tools.testing</groupId> <artifactId>specs</artifactId> 
+			<version>1.6.1-2.8.0.Beta1-RC1</version> <scope>test</scope> </dependency> -->
 
-	 <dependency>
-		<groupId>org.scalaj</groupId> 
-	        <artifactId>scalaj-collection_2.8.0</artifactId> 
-		<version>1.0</version>
-	 </dependency>
-	 -->
-	<!-- Specs (Behavior Driven Testing through JUnit) -->
-<!--
-	<dependency>
-	 <groupId>org.scala-tools.testing</groupId>
-	 <artifactId>specs</artifactId>
-	 <version>1.6.1-2.8.0.Beta1-RC1</version>
-	 <scope>test</scope>
-	</dependency>
--->
-
-<!--Lucene-->
+		<!--Lucene -->
 		<dependency>
-		 	<groupId>org.apache.solr</groupId>
-			<artifactId>solr-core</artifactId> 
+			<groupId>org.apache.solr</groupId>
+			<artifactId>solr-core</artifactId>
 			<version>1.4.1</version>
 		</dependency>
 
@@ -147,53 +145,40 @@
 			<version>2.9.0</version>
 		</dependency>
 
-		<!--
-			<dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-ant</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-bdb-je</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-collation</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-contrib</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-fast-vector-highlighter</artifactId>
-			<version>3.0.3</version> </dependency> <dependency>
-			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-highlighter</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-instantiated</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-lucli</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-memory</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-misc</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-queries</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-queryparser</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-regex</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-remote</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-similarity</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-snowball</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-spatial</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-spellchecker</artifactId> <version>3.0.3</version>
-			</dependency> <dependency> <groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-surround</artifactId> <version>3.0.3</version>
-			</dependency>
-		-->
+		<!-- <dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-ant</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-bdb-je</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-collation</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-contrib</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-fast-vector-highlighter</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-highlighter</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-instantiated</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-lucli</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-memory</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-misc</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-queries</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-queryparser</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-regex</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-remote</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-similarity</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-snowball</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-spatial</artifactId> 
+			<version>3.0.3</version> </dependency> <dependency> <groupId>org.apache.lucene</groupId> 
+			<artifactId>lucene-spellchecker</artifactId> <version>3.0.3</version> </dependency> 
+			<dependency> <groupId>org.apache.lucene</groupId> <artifactId>lucene-surround</artifactId> 
+			<version>3.0.3</version> </dependency> -->
 	</dependencies>
 
 
 
-<!--Repositorios -->
+	<!--Repositorios -->
 	<repositories>
 		<repository>
 			<id>java.net</id>
@@ -216,32 +201,32 @@
 			<name>JENA Maven Repo</name>
 			<url>http://openjena.org/repo/</url>
 		</repository>
- 		 <repository>
-   		   <id>scala-tools.org</id>
-     		   <name>Scala-tools Maven2 Repository</name>
-      		   <url>http://scala-tools.org/repo-releases</url>
-    		</repository>
+		<repository>
+			<id>scala-tools.org</id>
+			<name>Scala-tools Maven2 Repository</name>
+			<url>http://scala-tools.org/repo-releases</url>
+		</repository>
 	</repositories>
-	  <pluginRepositories>
-	    <pluginRepository>
-	      <id>scala-tools.org</id>
-	      <name>Scala-tools Maven2 Repository</name>
-	      <url>http://scala-tools.org/repo-releases</url>
-	    </pluginRepository>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>scala-tools.org</id>
+			<name>Scala-tools Maven2 Repository</name>
+			<url>http://scala-tools.org/repo-releases</url>
+		</pluginRepository>
 
-	  <pluginRepository>  
-		<id>mc-release</id>  
-		<name>Local Maven repository of releases</name>  
-		<url>http://mc-repo.googlecode.com/svn/maven2/releases</url>  
-		<snapshots>  
-		    <enabled>false</enabled>  
-		</snapshots>  
-		<releases>  
-		    <enabled>true</enabled>  
-		</releases>  
-	    </pluginRepository> 
+		<pluginRepository>
+			<id>mc-release</id>
+			<name>Local Maven repository of releases</name>
+			<url>http://mc-repo.googlecode.com/svn/maven2/releases</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
 
-	  </pluginRepositories>
+	</pluginRepositories>
 	<issueManagement>
 		<system>Code Google</system>
 		<url>http://code.google.com/p/moldeas</url>
@@ -286,63 +271,40 @@
 	</contributors>
 
 
-<!--Build plugins -->
+	<!--Build plugins -->
 	<build>
 		<plugins>
-		 	<plugin>  
-				<groupId>com.google.code.maven-license-plugin</groupId>  
-				<artifactId>maven-license-plugin</artifactId>  
-				<configuration>  
-				    <header>src/main/config/copyright.txt</header>  
-					<excludes>  
-						<exclude>**/LICENSE.txt</exclude>  
-						<exclude>**/COPYING.LESSER</exclude>  
-						<exclude>**/COPYING</exclude>  
-						<exclude>**/resources/**</exclude>  
-					    </excludes>  
-					    <mapping>  
-						<jspx>xml</jspx>  
-					    </mapping>  
-					<executions>  
-					    <execution>  
-						<goals>  
-						    <goal>check</goal>  
-						</goals>  
-					    </execution>  
-					</executions>  
-				</configuration>  
-		   	 </plugin>  
-		   <!--  
 			<plugin>
-			  <groupId>org.scala-tools</groupId>
-			  <artifactId>maven-scala-plugin</artifactId>
-			  <executions>
-			    <execution>
-			      <id>compile</id>
-			      <goals><goal>compile</goal></goals>
-			      <phase>compile</phase>
-			    </execution>
-			    <execution>
-			      <id>test-compile</id>
-			      <goals><goal>testCompile</goal></goals>
-			      <phase>test-compile</phase>
-			    </execution>
-			    <execution>
-			      <phase>process-resources</phase>
-			      <goals><goal>compile</goal></goals>
-			    </execution>
-			  </executions>
-			  <configuration>
-			    <scalaVersion>${scala.version}</scalaVersion>
-			   <launchers>
-			      <launcher>
-				 <id>myLauncher</id>
-				 <mainClass>examples.QueryExecutor</mainClass>
-			      </launcher>
-			   </launchers>
-			  </configuration>
+				<groupId>com.google.code.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<header>src/main/config/copyright.txt</header>
+					<excludes>
+						<exclude>**/LICENSE.txt</exclude>
+						<exclude>**/COPYING.LESSER</exclude>
+						<exclude>**/COPYING</exclude>
+						<exclude>**/resources/**</exclude>
+					</excludes>
+					<mapping>
+						<jspx>xml</jspx>
+					</mapping>
+					<executions>
+						<execution>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+				</configuration>
 			</plugin>
-			-->
+			<!-- <plugin> <groupId>org.scala-tools</groupId> <artifactId>maven-scala-plugin</artifactId> 
+				<executions> <execution> <id>compile</id> <goals><goal>compile</goal></goals> 
+				<phase>compile</phase> </execution> <execution> <id>test-compile</id> <goals><goal>testCompile</goal></goals> 
+				<phase>test-compile</phase> </execution> <execution> <phase>process-resources</phase> 
+				<goals><goal>compile</goal></goals> </execution> </executions> <configuration> 
+				<scalaVersion>${scala.version}</scalaVersion> <launchers> <launcher> <id>myLauncher</id> 
+				<mainClass>examples.QueryExecutor</mainClass> </launcher> </launchers> </configuration> 
+				</plugin> -->
 			<plugin>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 			</plugin>
@@ -352,37 +314,20 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
-					<encoding>utf-8</encoding>					
+					<encoding>utf-8</encoding>
 					<showDeprecation>false</showDeprecation>
 				</configuration>
 			</plugin>
-      
-      <!-- WEB 
-			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>maven-jetty-plugin</artifactId>
-				<version>6.1.18</version>
-				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<connectors>
-						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-							<port>9000</port>
-							<maxIdleTime>60000</maxIdleTime>
-						</connector>
-					</connectors>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>tomcat-maven-plugin</artifactId>
-				<version>1.1</version>
-					<configuration> <systemProperties> <proxySet>true</proxySet>
-					<http.proxyHost>proxy.uniovi.es</http.proxyHost>
-					<http.proxyPort>8888</http.proxyPort> </systemProperties>
-				</configuration>
-					
-			</plugin>
-			-->
+
+			<!-- WEB <plugin> <groupId>org.mortbay.jetty</groupId> <artifactId>maven-jetty-plugin</artifactId> 
+				<version>6.1.18</version> <configuration> <scanIntervalSeconds>10</scanIntervalSeconds> 
+				<connectors> <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector"> 
+				<port>9000</port> <maxIdleTime>60000</maxIdleTime> </connector> </connectors> 
+				</configuration> </plugin> <plugin> <groupId>org.codehaus.mojo</groupId> 
+				<artifactId>tomcat-maven-plugin</artifactId> <version>1.1</version> <configuration> 
+				<systemProperties> <proxySet>true</proxySet> <http.proxyHost>proxy.uniovi.es</http.proxyHost> 
+				<http.proxyPort>8888</http.proxyPort> </systemProperties> </configuration> 
+				</plugin> -->
 		</plugins>
 	</build>
 </project>
