@@ -3,14 +3,10 @@ package org.weso.moldeas.stats;
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.Map;
-import java.util.Set;
 import java.util.Map.Entry;
-
-import junit.framework.Assert;
+import java.util.Set;
 
 import org.weso.moldeas.to.StatsPairTO;
-
-import com.hp.hpl.jena.reasoner.rulesys.builtins.Print;
 
 public class PPNCreateDataModelMain {
 

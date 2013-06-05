@@ -17,14 +17,14 @@ import org.weso.pscs.utils.PSCConstants;
 
 public class CPV2008FileDAOImplTest {
 
-//	@Test
-//	public void testGetPSCTOs(){
-//		List<PSCTO> pscTOs = new CPV2008FileDAOImpl().getPSCTOs();		
-//		for(PSCTO pscTO: pscTOs){
-//			System.out.println(pscTO);
-//		}
-//		Assert.assertEquals(10357,pscTOs.size());
-//	}
+	@Test
+	public void testGetPSCTOs(){
+		List<PSCTO> pscTOs = new CPV2008FileDAOImpl().getPSCTOs();		
+		for(PSCTO pscTO: pscTOs){
+			System.out.println(pscTO);
+		}
+		Assert.assertEquals(10357,pscTOs.size());
+	}
 //	
 //	@Test
 //	public void testGetPSCTOsLabels() throws FileNotFoundException{

@@ -103,5 +103,11 @@ public class PPNResultTO {
 	public void setTotalResults(long totalResults) {
 		this.totalResults = totalResults;
 	}
+	@Override
+	public String toString() {
+		return "PPNResultTO [totalResults=" + totalResults + ", request="
+				+ request + ", enhancedRequest=" + enhancedRequest
+				+ ", scoredPnnsTO=" + scoredPnnsTO + ", time=" + time + "]";
+	}
 	
 }

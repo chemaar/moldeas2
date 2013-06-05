@@ -48,7 +48,7 @@ public class NUTSDAOImpl implements NUTSDAO{
 	public NUTSTO describe(NUTSTO nutsTO) {
 		String query = DAOSPARQLService.NS+" "+
 		"SELECT DISTINCT * WHERE{" +
-			"?region rdf:type <http://nuts.psi.enakting.org/def/NUTSRegion>. " +
+			"?region rdf:type moldeas-onto:NUTSRegion. " + //FIXME: nuts:
 			"?region rdfs:label ?label. " +
 			"?region <http://nuts.psi.enakting.org/def/shapeKML> ?kml. " +
 			"?region <http://nuts.psi.enakting.org/def/code> ?code. "+
@@ -69,7 +69,7 @@ public class NUTSDAOImpl implements NUTSDAO{
 	public List<NUTSTO> getNUTSTOs() {
 		String query = DAOSPARQLService.NS+" "+
 		"SELECT DISTINCT * WHERE{" +
-			"?region rdf:type <http://nuts.psi.enakting.org/def/NUTSRegion>. " +
+			"?region rdf:type moldeas-onto:NUTSRegion. " +
 			"?region rdfs:label ?label. " +		
 			"?region <http://nuts.psi.enakting.org/def/shapeKML> ?kml. " +
 			"?region <http://nuts.psi.enakting.org/def/code> ?code. "+

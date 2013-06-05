@@ -45,7 +45,7 @@ public class PSCImplTest {
 		PSCFacade pscFacade = PSCFacadeTest.createPSCFacade(); 
 		PSCAppServ appServ = new PSCAppServ(pscFacade);
 		PSC psc = new PSCImpl(appServ);
-		PSCTO pscTO = new PSCTO("http://purl.org/weso/cpv/2008/14780000");
+		PSCTO pscTO = new PSCTO("http://localhost/pscs/cpv/2008/resource/14780000");
 		PSCTO result = psc.describe(pscTO);
 		Assert.assertEquals(result.getUri(), pscTO.getUri());
 	}

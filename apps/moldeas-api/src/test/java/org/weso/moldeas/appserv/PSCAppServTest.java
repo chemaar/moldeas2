@@ -43,7 +43,7 @@ public class PSCAppServTest {
 	public void testDescribe() {
 		PSCFacade pscFacade = PSCFacadeTest.createPSCFacade(); 
 		PSCAppServ appServ = new PSCAppServ(pscFacade);
-		PSCTO pscTO = new PSCTO("http://purl.org/weso/cpv/2008/14780000");
+		PSCTO pscTO = new PSCTO("http://localhost/pscs/cpv/2008/resource/14780000");
 		PSCTO result = appServ.describe(pscTO);
 		Assert.assertEquals(result.getUri(), pscTO.getUri());
 	}

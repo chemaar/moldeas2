@@ -155,14 +155,14 @@ public class SPARQLPPNUtils {
 	public static String createRewritingQuery(String filterCPV, String filterNuts, int max, String filterYears){
 		return DAOSPARQLService.NS+" " +  
 		"SELECT ?ppn ?id  ?date ?cpvCode ?nutsCode  WHERE{ " +
-		"?ppn rdf:type <http://purl.org/weso/ppn/def#ppn>. " +
-		"?ppn <http://purl.org/weso/ppn/def#nutsCode> ?nutsCode. "+
+		"?ppn rdf:type moldeas-onto:Notice. " +
+		"?ppn moldeas-onto:located-in ?nutsCode. "+
 		filterNuts+
-		"?ppn dc:date ?date. " +
+		"?ppn dcterms:date ?date. " +
 		filterYears+
-		"?ppn <http://purl.org/weso/cpv/def#codeIn2008> ?cpvCode. " +
+		"?ppn moldeas-onto:topic ?cpvCode. " +
 		filterCPV+
-		"?ppn dc:identifier ?id. " +
+		"?ppn dcterms:identifier ?id. " +
 		"} "+"LIMIT "+max ;
 		
 	}
@@ -170,13 +170,13 @@ public class SPARQLPPNUtils {
 	public static String createRewritingQuery(String filterCPV, String filterNuts, int max){
 		return DAOSPARQLService.NS+" " +  
 		"SELECT ?ppn ?id  ?date ?cpvCode ?nutsCode  WHERE{ " +
-		"?ppn rdf:type <http://purl.org/weso/ppn/def#ppn>. " +
-		"?ppn <http://purl.org/weso/ppn/def#nutsCode> ?nutsCode. "+
+		"?ppn rdf:type moldeas-onto:Notice. " +
+		"?ppn moldeas-onto:located-in ?nutsCode. "+
 		filterNuts+
-		"?ppn <http://purl.org/weso/cpv/def#codeIn2008> ?cpvCode. " +
+		"?ppn moldeas-onto:topic ?cpvCode. " +
 		filterCPV+
-		"?ppn dc:identifier ?id. " +
-		"?ppn dc:date ?date. " +
+		"?ppn dcterms:identifier ?id. " +
+		"?ppn dcterms:date ?date. " +
 		"} "+"LIMIT "+max ;
 		
 	}
@@ -185,11 +185,11 @@ public class SPARQLPPNUtils {
 	public static String createRawQuery(String filterCPV, String filterNuts, int max, String filterYears){
 		return DAOSPARQLService.NS+" " +  
 		"SELECT ?ppn ?id  ?date ?cpvCode ?nutsCode  WHERE{ " +
-		"?ppn rdf:type <http://purl.org/weso/ppn/def#ppn>. " +
-		"?ppn dc:identifier ?id. " +	
-		"?ppn <http://purl.org/weso/cpv/def#codeIn2008> ?cpvCode. " +
-		"?ppn <http://purl.org/weso/ppn/def#nutsCode> ?nutsCode. "+
-		"?ppn dc:date ?date. " +
+		"?ppn rdf:type moldeas-onto:Notice. " +
+		"?ppn dcterms:identifier ?id. " +	
+		"?ppn moldeas-onto:topic ?cpvCode. " +
+		"?ppn moldeas-onto:located-in ?nutsCode. "+
+		"?ppn dcterms:date ?date. " +
 		filterCPV+
 		filterNuts+
 		filterYears+

@@ -27,6 +27,8 @@
  */
 package org.weso.moldeas.services;
 
+import java.io.IOException;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -35,6 +37,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 
+import org.apache.log4j.Logger;
 import org.weso.moldeas.dao.DAOSPARQLService;
 import org.weso.moldeas.to.DurationTO;
 import org.weso.moldeas.to.NUTSTO;
@@ -49,6 +52,9 @@ import org.weso.pscs.utils.PSCConstants;
 
 @Path("/moldeas")
 public class SearchServiceRest {
+	private static final int MAX_RESULTS = 1000;
+
+	protected static Logger logger = Logger.getLogger(SearchServiceRest.class);
 
 	private MoldeasServiceFacade facade;
 	public SearchServiceRest(){
@@ -59,12 +65,13 @@ public class SearchServiceRest {
 	@ProduceMime({"text/plain", "application/xml", "application/json"})
 	public PPNResultTO searchByCode(@PathParam("code") String code){	  
 		try{
+			logger.info("Searching by code "+code);
 			PSCTO pscTO = new PSCTO();
 			pscTO.setId(code);
 			pscTO.setUri(PSCConstants.formatId(code));		   
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
-			request.setMaxResults(Integer.parseInt(DAOSPARQLService.MAX_LIMIT_PPN));
+			request.setMaxResults(MAX_RESULTS);
 			return this.facade.search(request);
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
@@ -80,7 +87,7 @@ public class SearchServiceRest {
 			pscTO.setUri(uri);		   
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
-			request.setMaxResults(Integer.parseInt(DAOSPARQLService.MAX_LIMIT_PPN));
+			request.setMaxResults(MAX_RESULTS);
 			return this.facade.search(request);
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
@@ -96,7 +103,7 @@ public class SearchServiceRest {
 			pscTO.setUri(PSCConstants.formatId(code));		   
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
-			request.setMaxResults(Integer.parseInt(DAOSPARQLService.MAX_LIMIT_PPN));
+			request.setMaxResults(MAX_RESULTS);
 			return this.facade.enhancedSearch(request);
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
@@ -147,10 +154,10 @@ public class SearchServiceRest {
 			years.setMax(Long.valueOf(maxYear));
 			request.setYears(years);
 			//return new PPNResultTO();
-			request.setMaxResults(10000);
-			//request.setMaxResults(Integer.parseInt(DAOSPARQLService.MAX_LIMIT_PPN));
-			return this.facade.enhancedSearch(request); //FIXME: Check parameters
-		}catch (Exception e){
+			//request.setMaxResults(10000);
+			request.setMaxResults(MAX_RESULTS);
+			return this.facade.enhancedSearch(request); //FIXME: Check parameters			
+		}catch (Exception e){			
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}
 
@@ -167,7 +174,7 @@ public class SearchServiceRest {
 			pscTO.setUri(PSCConstants.formatId(code));		   
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
-			request.setMaxResults(Integer.parseInt(DAOSPARQLService.MAX_LIMIT_PPN));
+			request.setMaxResults(MAX_RESULTS);
 			return new QueryTO(this.facade.createSimpleSPARQLQuery(request));
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
@@ -185,7 +192,7 @@ public class SearchServiceRest {
 			pscTO.setUri(PSCConstants.formatId(code));		   
 			RequestSearchTO request = new RequestSearchTO();
 			request.getPscCodes().add(pscTO);
-			request.setMaxResults(Integer.parseInt(DAOSPARQLService.MAX_LIMIT_PPN));
+			request.setMaxResults(MAX_RESULTS);
 			return new QueryTO(this.facade.createEnhancedSPARQLQuery(request));
 		}catch (Exception e){
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);

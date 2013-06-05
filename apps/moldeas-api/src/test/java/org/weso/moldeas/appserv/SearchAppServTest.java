@@ -49,7 +49,7 @@ public class SearchAppServTest {
 	public void testSimpleSearchByCode(){
 		RequestSearchTO requestSearch = new RequestSearchTO();
 		PSCTO pstTO = new PSCTO();
-		pstTO.setUri("http://purl.org/weso/cpv/2008/60161000");
+		pstTO.setUri("http://localhost/pscs/cpv/2008/resource/60161000");
 		requestSearch.getPscCodes().add(pstTO);
 		requestSearch.setMaxResults(1000);
 		PSCFacade pscFacade = PSCFacadeTest.createPSCFacade(); 
@@ -64,7 +64,7 @@ public class SearchAppServTest {
 	public void testEnhancedSearch(){
 		RequestSearchTO requestSearch = new RequestSearchTO();
 		PSCTO pstTO = new PSCTO();
-		pstTO.setUri("http://purl.org/weso/cpv/2008/60161000");
+		pstTO.setUri("http://localhost/pscs/cpv/2008/resource/60161000");
 		requestSearch.getPscCodes().add(pstTO);
 		requestSearch.setMaxResults(2000);
 		PSCFacade pscFacade = PSCFacadeTest.createPSCFacade(); 

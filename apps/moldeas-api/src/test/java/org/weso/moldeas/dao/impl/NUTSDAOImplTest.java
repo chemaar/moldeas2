@@ -44,7 +44,7 @@ public class NUTSDAOImplTest {
 	public void testDescribe() {
 		NUTSDAOImpl dao = new NUTSDAOImpl();
 		NUTSTO nutsTO = new NUTSTO();
-		nutsTO.setUri("http://nuts.psi.enakting.org/id/UKL14");
+		nutsTO.setUri("http://localhost/moldeas/nuts/resource/UKL14");
 		Assert.assertEquals(nutsTO.getUri(),dao.describe(nutsTO).getUri());
 	}
 
@@ -52,7 +52,7 @@ public class NUTSDAOImplTest {
 	public void testDescribeCountry() {
 		NUTSDAOImpl dao = new NUTSDAOImpl();
 		NUTSTO nutsTO = new NUTSTO();
-		nutsTO.setUri("http://nuts.psi.enakting.org/id/ES");
+		nutsTO.setUri("http://localhost/moldeas/nuts/resource/ES");
 		NUTSTO result =  dao.describe(nutsTO);
 		Assert.assertEquals(nutsTO.getUri(),result.getUri());
 	}
@@ -61,7 +61,7 @@ public class NUTSDAOImplTest {
 	public void testDescribeCountryFR() {
 		NUTSDAOImpl dao = new NUTSDAOImpl();
 		NUTSTO nutsTO = new NUTSTO();
-		nutsTO.setUri("http://nuts.psi.enakting.org/id/FR");
+		nutsTO.setUri("http://localhost/moldeas/nuts/resource/FR");
 		NUTSTO result =  dao.describe(nutsTO);
 		Assert.assertEquals(nutsTO.getUri(),result.getUri());
 	}
@@ -70,7 +70,7 @@ public class NUTSDAOImplTest {
 	public void testDescribeRegion() {
 		NUTSDAOImpl dao = new NUTSDAOImpl();
 		NUTSTO nutsTO = new NUTSTO();
-		nutsTO.setUri("http://nuts.psi.enakting.org/id/ES12");//FIXME: Two labels: Asturias and Principado de Asturias, 2 codes repeat
+		nutsTO.setUri("http://localhost/moldeas/nuts/resource/ES12");//FIXME: Two labels: Asturias and Principado de Asturias, 2 codes repeat
 		NUTSTO result =  dao.describe(nutsTO);
 		Assert.assertEquals(nutsTO.getUri(),result.getUri());
 	}
@@ -80,9 +80,9 @@ public class NUTSDAOImplTest {
 	public void testGetNUTSTOs() {
 		NUTSDAOImpl dao = new NUTSDAOImpl();
 		List<NUTSTO> result = dao.getNUTSTOs();
-		for(NUTSTO nutsTO:result){
-			System.out.println(nutsTO);
-		}
+//		for(NUTSTO nutsTO:result){
+//			System.out.println(nutsTO);
+//		}
 		Assert.assertEquals(1973, result.size());
 	}
 

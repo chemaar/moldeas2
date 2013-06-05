@@ -41,11 +41,7 @@
 			<scope>test</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -356,8 +352,8 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
-					<encoding>utf-8</encoding>
-					<showDeprecation>true</showDeprecation>
+					<encoding>utf-8</encoding>					
+					<showDeprecation>false</showDeprecation>
 				</configuration>
 			</plugin>
       

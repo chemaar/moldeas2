@@ -36,13 +36,15 @@ import java.util.Set;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 import org.apache.commons.collections.map.HashedMap;
 
 @XmlRootElement(name = "requestSearchTO")
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "requestSearchTO", propOrder = {
     "pscCodes",
     "totalCost",
@@ -55,15 +57,22 @@ import org.apache.commons.collections.map.HashedMap;
     "stringQuery"
 })
 public class RequestSearchTO {
-
+	 @XmlElement
 	private Set<PSCTO> pscCodes;
+	 @XmlElement
 	private TotalCostTO totalCost;
+	 @XmlElement
 	private DurationTO duration;
+	 @XmlElement
 	private YearsTO years;
 	//private EnterpriseTypeTO enterpriseType;
+	 @XmlElement
 	private Set<NUTSTO> nutsCodes;
+	 @XmlElement
 	private StateTO state;
+	 @XmlElement
 	private int maxResults = 1;
+	 @XmlElement
 	private String stringQuery;
 	private Map swap;	//FIXME: do not serialize
 	

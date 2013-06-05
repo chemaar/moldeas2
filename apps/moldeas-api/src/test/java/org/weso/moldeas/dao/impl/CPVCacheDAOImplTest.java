@@ -61,7 +61,7 @@ public class CPVCacheDAOImplTest {
 	@Test
 	public void testGetPSCTOs() {
 		dao.getPSCTOs();
-	//	assertEquals(10000,dao.getPSCTOs().size());//FIXME
+		assertEquals(10357,dao.getPSCTOs().size());//FIXME
 	}
 	@Test
 	public void testGetBroaderOf() {

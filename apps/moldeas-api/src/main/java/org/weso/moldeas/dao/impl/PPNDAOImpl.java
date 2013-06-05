@@ -49,6 +49,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.NodeIterator;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.hp.hpl.jena.vocabulary.DCTerms;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 public class PPNDAOImpl implements PPNDAO{
@@ -65,6 +66,7 @@ public class PPNDAOImpl implements PPNDAO{
 		String query = DAOSPARQLService.NS+" " +
 		"DESCRIBE <"+ppnTO.getUri()+">";
 
+		
 		QueryExecution qExec = QueryExecutionFactory.sparqlService(
 				DAOSPARQLService.WESO_SPARQL_SERVICE, query);
 		Model results = qExec.execDescribe();
@@ -72,8 +74,8 @@ public class PPNDAOImpl implements PPNDAO{
 		PPNTO result = new PPNTO();
 		Resource target = results.listResourcesWithProperty(RDF.type).next();//only one
 		result.setUri(target.getURI());
-		result.setId(target.getProperty(DC.identifier).getString());
-		result.setYear(target.getProperty(DC.date).getString());
+		result.setId(target.getProperty(DCTerms.identifier).getString());
+		result.setYear(target.getProperty(DCTerms.date).getString());
 		
 		NodeIterator it = results.listObjectsOfProperty(target, results.getProperty(PSCConstants.CPV_codeIn));
 		while (it.hasNext()){
@@ -96,12 +98,12 @@ public class PPNDAOImpl implements PPNDAO{
 	public List<PPNTO> getPPNTOs() {
 		String query = DAOSPARQLService.NS+"" +
 				"SELECT * WHERE{" +
-				"?ppn rdf:type <http://purl.org/weso/ppn/def#ppn>. " +
-				"?ppn dc:identifier ?id. " +
-				"?ppn dc:date ?date. " +
-				"?ppn cpv-def:codeIn2008 ?cpvCode." +
-				"?ppn ppn-def:nutsCode ?nutsCode. " +
-				"} " +
+				"?ppn rdf:type moldeas-onto:Notice. " +
+				"?ppn dcterms:identifier ?id. " +
+				"?ppn dcterms:date ?date. " +
+				"?ppn moldeas-onto:topic ?cpvCode." +
+				"?ppn moldeas-onto:located-in ?nutsCode. " +
+				"}  " +
 				DAOSPARQLService.MAX_LIMIT_PPN;
 		logger.debug("Executing query: "+query+" service: "+DAOSPARQLService.WESO_SPARQL_SERVICE);
 		QueryExecution qExec = QueryExecutionFactory.sparqlService(
@@ -134,11 +136,11 @@ public class PPNDAOImpl implements PPNDAO{
 	public List<PPNTO> getPPNTOsByYear(PPNTO ppnTO) {
 		String query =DAOSPARQLService.NS+" " + 
 		"SELECT * WHERE{ " +
-		"?ppn rdf:type <http://purl.org/weso/ppn/def#ppn>. " +
-		"?ppn dc:identifier ?id. " +
-		"?ppn dc:date ?date. " +
-		"?ppn cpv-def:codeIn2008 ?cpvCode." +
-		"?ppn ppn-def:nutsCode ?nutsCode. " +
+		"?ppn rdf:type moldeas-onto:Notice. " +
+		"?ppn dcterms:identifier ?id. " +
+		"?ppn dcterms:date ?date. " +
+		"?ppn moldeas-onto:topic ?cpvCode." +
+		"?ppn moldeas-onto:located-in ?nutsCode. " +
 		"FILTER (str(?date) = \""+ppnTO.getYear() +"\")"+
 		"} " +
 		DAOSPARQLService.MAX_LIMIT_PPN;

@@ -93,11 +93,11 @@ public class CPVCacheDAOImpl extends CPVDAOImpl {
 		"SELECT * WHERE{ "+
 		"?code dc:identifier ?id. "+ 
 		"?code rdf:type ?type. " +
-		"?code skosxl:prefLabel ?prefLabel. "+
-		"FILTER (?type=<http://purl.org/weso/cpv/def#division> " + 
-		"|| ?type=<http://purl.org/weso/cpv/def#group> " +
-		"|| ?type=<http://purl.org/weso/cpv/def#class> " +
-		"|| ?type=<http://purl.org/weso/cpv/def#category> ). " +
+		"?code skos:prefLabel ?prefLabel. "+
+		"FILTER (?type=<http://localhost/pscs/cpv/ontology/Division> " + 
+		"|| ?type=<http://localhost/pscs/cpv/ontology/Group> " +
+		"|| ?type=<http://localhost/pscs/cpv/ontology/Class> " +
+		"|| ?type=<http://localhost/pscs/cpv/ontology/Category> ). " +
 		"FILTER (lang(?prefLabel)=\"ES\")"+ //FIXME: SPARQL Jena does not admit "es" it works with "ES", Virtuoso works with "es" "ES" not yet tested 
 		"} "; 
 		CPVDataSource cvpDataSource = getCVPDataSource();

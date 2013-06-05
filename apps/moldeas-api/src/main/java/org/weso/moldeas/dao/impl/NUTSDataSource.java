@@ -27,31 +27,11 @@
  */
 package org.weso.moldeas.dao.impl;
 
-import org.apache.log4j.Logger;
-import org.weso.moldeas.loader.JenaRDFModelWrapper;
-import org.weso.moldeas.loader.resources.FilesResourceLoader;
-import org.weso.moldeas.loader.resources.ResourceLoader;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.Model;
 
-public class CPV2003DAOImpl extends CPVDAOImpl {
-protected static Logger logger = Logger.getLogger(CPV2003DAOImpl.class);
-
-	private CPVDataSource dataSource = null;
-
-	public CPV2003DAOImpl(CPVDataSource dataSource ){
-		this.dataSource = dataSource;
-	}
+public interface NUTSDataSource {
 	
-	public CPV2003DAOImpl(){
-		//FIXME: ref bean
-	}
-	@Override
-	protected CPVDataSource getCVPDataSource() {	
-		//FIXME: extract beans
-		if(dataSource==null){
-			ResourceLoader loader = new FilesResourceLoader(new String[]{"cpv/cpv-2003.ttl"});
-			JenaRDFModelWrapper rdfModel = new JenaRDFModelWrapper(loader,"TURTLE");
-			this.dataSource = new CPVDataSourceLocalEndpoint(rdfModel); 
-		}		
-		return this.dataSource;
-	}
+	public Model execDescribe(String query);
+	public ResultSet execSelect(String query);
 }

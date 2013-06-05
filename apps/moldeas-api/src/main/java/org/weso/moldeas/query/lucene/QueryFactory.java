@@ -31,15 +31,18 @@ import org.apache.log4j.Logger;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
+import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.BooleanQuery;
+import org.apache.lucene.search.FuzzyLikeThisQuery;
+import org.apache.lucene.search.FuzzyQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
-import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.util.Version;
 import org.weso.moldeas.index.lucene.PSCIndexFields;
 import org.weso.moldeas.to.PSCTO;
 
 public class QueryFactory {
+	private static final float FUZZY_VALUE = 0.75f;
 	private static Logger logger = Logger.getLogger(QueryFactory.class);
 	public static Query createQueryFromPSCTO(PSCTO pscTO) {
 		TermQuery keyTerm = new TermQuery(
@@ -53,4 +56,22 @@ public class QueryFactory {
 	   return new QueryParser(PSCIndexFields.PSC_FIELDS.PREF_LABEL.toString(), 
 			   new QueryAnalyzer(Version.LUCENE_29)).parse(q);
 	}
+	
+//	public static Query createQueryFromString(String q) throws ParseException {		
+//		QueryParser parser = new QueryParser(PSCIndexFields.PSC_FIELDS.PREF_LABEL.toString(),
+//				new org.weso.transformer.filters.PSCAnalyzer());
+//		parser.setDefaultOperator(QueryParser.Operator.OR);
+//		Query query = parser.parse(QueryParser.escape(q));
+//		return query;
+//		
+//	}
+//
+//	public static Query createFuzzyQueryFromString(String q) throws ParseException {		
+//		FuzzyLikeThisQuery flt=new FuzzyLikeThisQuery(50,
+//				new org.weso.transformer.filters.PSCAnalyzer()); 
+//		flt.addTerms(q, PSCIndexFields.PSC_FIELDS.PREF_LABEL.toString(), FUZZY_VALUE,	
+//				FuzzyQuery.defaultPrefixLength); 
+//		return flt;
+//	}
+	
 }

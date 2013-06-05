@@ -46,6 +46,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.NodeIterator;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.hp.hpl.jena.vocabulary.DCTerms;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 public abstract class CPVDAOImpl implements PSCDAO {
@@ -87,11 +88,11 @@ public abstract class CPVDAOImpl implements PSCDAO {
 		"SELECT * WHERE{ "+
 		"?code dc:identifier ?id. "+ 
 		"?code rdf:type ?type. " +
-		"?code s ?prefLabel. "+
-		"FILTER (?type=<http://purl.org/weso/pscs/cpv/ontology/Category> " + 
-		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Division> " +
-		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Group> " +
-		"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Class> ). " +
+		"?code skos:prefLabel ?prefLabel. "+
+		"FILTER (?type=<http://localhost/pscs/cpv/ontology/Category> " + 
+		"|| ?type=<http://localhost/pscs/cpv/ontology/Division> " +
+		"|| ?type=<http://localhost/pscs/cpv/ontology/Group> " +
+		"|| ?type=<http://localhost/pscs/cpv/ontology/Class> ). " +
 		"FILTER (lang(?prefLabel)=\"EN\")"+ //FIXME
 		"} "; 
 		CPVDataSource cvpDataSource = getCVPDataSource();
@@ -122,7 +123,7 @@ public abstract class CPVDAOImpl implements PSCDAO {
 				"?code rdf:type ?type . " +
 				"?code skos:broaderTransitive <" +pscTO.getUri()+"> ." +
 				"?code dc:identifier ?id. " +
-				"?code skosxl:prefLabel ?prefLabel. "+
+				"?code skos:prefLabel ?prefLabel. "+
 				"FILTER (?type=<http://purl.org/weso/pscs/cpv/ontology/Category> " + 
 				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Division> " +
 				"|| ?type=<http://purl.org/weso/pscs/cpv/ontology/Group> " +
