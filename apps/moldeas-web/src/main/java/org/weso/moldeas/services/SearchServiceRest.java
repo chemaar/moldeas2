@@ -38,7 +38,6 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
-import org.weso.moldeas.dao.DAOSPARQLService;
 import org.weso.moldeas.to.DurationTO;
 import org.weso.moldeas.to.NUTSTO;
 import org.weso.moldeas.to.PPNResultTO;
@@ -57,8 +56,14 @@ public class SearchServiceRest {
 	protected static Logger logger = Logger.getLogger(SearchServiceRest.class);
 
 	private MoldeasServiceFacade facade;
+	public SearchServiceRest(MoldeasServiceFacade facade){
+		this.facade =  facade;
+		
+	}
 	public SearchServiceRest(){
-		this.facade = new MoldeasServiceFacadeImpl();
+		this.facade =  (MoldeasServiceFacade) ApplicationContextLocator.getApplicationContext().
+				getBean(MoldeasServiceFacade.class.getSimpleName());
+		
 	}
 	@GET
 	@Path("search/code/{code}")
@@ -125,7 +130,7 @@ public class SearchServiceRest {
 			@QueryParam("typeEnterprise") String typeEnterprise
 			){	  
 		try{
-			System.out.println(cpvCodes+" "+nutsCodes+" "+minYear+" "+maxYear+" "+minCost+" "+maxCost+" "+minDuration+" "+maxDuration+" "+typeEnterprise);
+			logger.info("SEARCHING WITH: "+cpvCodes+" "+nutsCodes+" "+minYear+" "+maxYear+" "+minCost+" "+maxCost+" "+minDuration+" "+maxDuration+" "+typeEnterprise);
 			RequestSearchTO request = new RequestSearchTO();
 			String []cpvRawCodes = cpvCodes.split(",");
 			for(int i = 0; i<cpvRawCodes.length;i++){
@@ -156,7 +161,10 @@ public class SearchServiceRest {
 			//return new PPNResultTO();
 			//request.setMaxResults(10000);
 			request.setMaxResults(MAX_RESULTS);
-			return this.facade.enhancedSearch(request); //FIXME: Check parameters			
+			logger.debug(request);
+			PPNResultTO result = this.facade.enhancedSearch(request); //FIXME: Check parameters
+			logger.info("RESULTS: "+result.getTotalResults());
+			return result;
 		}catch (Exception e){			
 			throw new WebApplicationException(Response.Status.BAD_REQUEST);
 		}

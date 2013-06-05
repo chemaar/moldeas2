@@ -25,47 +25,35 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
 package org.weso.moldeas.services;
 
-import org.weso.moldeas.business.Search;
-import org.weso.moldeas.business.SearchImpl;
-import org.weso.moldeas.to.PPNResultTO;
-import org.weso.moldeas.to.RequestSearchTO;
 
-public class MoldeasServiceFacadeImpl implements MoldeasServiceFacade{
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-	Search searcher = new SearchImpl();
 
-	@Override
-	public PPNResultTO enhancedSearch(RequestSearchTO request) {
-		return this.searcher.enhancedSearch(request);
+public class ApplicationContextLocator {
+
+	private static final String BEANS_XML = "/resources/moldeas-web-beans.xml";
+
+
+	private static ApplicationContext applicationContext;
+
+	/**
+	 * Singleton (for efficiency and consistency)
+	 * 
+	 * @return
+	 */
+	public synchronized static ApplicationContext getApplicationContext() {
+		if ( applicationContext == null ) {
+			applicationContext = new ClassPathXmlApplicationContext(BEANS_XML);
+		}
+		return applicationContext;
 	}
 
-	@Override
-	public PPNResultTO search(RequestSearchTO request) {
-		return this.searcher.search(request);
+	public static void setApplicationContext(ApplicationContext applicationContext) {
+		ApplicationContextLocator.applicationContext = applicationContext;
 	}
-
-	
-	@Override
-	public String createEnhancedSPARQLQuery(RequestSearchTO enhancedRequest) {
-		return this.searcher.createEnhancedSPARQLQuery(enhancedRequest);
-	}
-
-	@Override
-	public String createSimpleSPARQLQuery(RequestSearchTO request) {
-		return this.searcher.createSimpleSPARQLQuery(request);
-	}
-
-	public MoldeasServiceFacadeImpl(Search searcher) {
-		super();
-		this.searcher = searcher;
-	}
-
-	public MoldeasServiceFacadeImpl() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 
 }
