@@ -1,10 +1,36 @@
-<html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
   <head>
-    <title>MOLDEAS PROJECT-Demo</title>
+    <title>MOLDEAS PROJECT-View</title>
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>vis</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+ <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!--end Bubble Cloud-->
+
   </head>
   <body>
     <script src="http://code.jquery.com/jquery.js"></script>
@@ -21,10 +47,10 @@
 	     <ul class="nav">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./documentation.html">Documentation</a></li>
-		<li class="active"><a href="#">Demo</a></li>
+                <li><a href="./demo.html">Demo</a></li>
                 <li><a href="./publications.html">Publications</a></li>
                 <li><a href="./software-datasets.html">Software and Datasets</a></li>
-                <li><a href="./view.html">View Statistis</a></li>
+		<li class="active"><a href="#">View Statistics</a></li>
                 <li><a href="./ongoing.html">On-going initiatives</a></li>
               </ul>
             </div>
@@ -36,7 +62,7 @@
       <div class="jumbotron">
         <h1>MOLDEAS2 is now available!</h1>
         <p class="lead">This work applies the semantic web and the Linked Open Data approaches to public procurement notices.</p>
-        <a class="btn btn-large btn-success" href="./demo.html">Test the MOLDEAS2 Demo</a>
+       
       </div>
 
       <hr>
@@ -44,6 +70,37 @@
       <!-- Example row of columns -->
       <div class="row-fluid">
         
+
+	<div id="container" class="container">
+	      <select id="text-select">
+		<option value="sherlock">Sherlock Holmes</option>
+		<option value="aesop">Aesop's Fables</option>
+		<option value="alice">Alice in Wonderland</option>
+		<option value="gulliver">Gulliver's Travels</option>
+		<option value="forbes">Forbes</option>
+		<option value="corfu">CORFU</option>
+	      </select>
+	    <header>
+	    <h1>MOLDEAS Cloud Generator</h1>
+
+	      <h2 id="book-title"></h2>
+	    </header>
+	    <div id="main" role="main">
+	      <div id="vis"></div>
+	      <div id="status"></div>
+	      <div id="controls">
+		<h3>Jitter</h3>
+		<form id="jitter" oninput="output.value = (jitter_input.value / 200).toFixed(3)" >
+		  <input id="jitter_input" type="range" min="0" max="400" value="100" style="width:240px;">
+		  <output name="output" for="input">0.5</output>
+		</form>
+	      </div>
+	    </div>
+	    <footer>
+	    </footer>
+	  </div> <!--! end of #container -->
+
+
       </div>
 
       <hr>
@@ -77,6 +134,24 @@
       </div>
 
     </div> <!-- /container -->
+
+<!--From bubble cloud-->
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="bubble_cloud/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script defer src="js/plugins.js"></script>
+  <script src="js/libs/coffee-script.js"></script>
+  <script src="js/libs/d3.v2.js"></script>
+  <script type="text/coffeescript" src="coffee/vis.coffee"></script>
+  <script type="text/javascript">
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
 
     <!-- Le javascript
     ================================================== -->
