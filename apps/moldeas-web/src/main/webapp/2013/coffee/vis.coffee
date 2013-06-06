@@ -337,9 +337,9 @@ Bubbles = () ->
     node.classed("bubble-selected", (d) -> id == idValue(d))
     # if no node is selected, id will be empty
     if id.length > 0
-      d3.select("#status").html("<h3>The word <a href=\"http://www.google.com?q=#{id}\"<span class=\"active\">#{id}</span></a> is now active</h3>")
+      d3.select("#status").html("<h3>The element <span class=\"active\">#{id}</span> is now active.</h3>")
     else
-      d3.select("#status").html("<h3>No word is active</h3>")
+      d3.select("#status").html("<h3>No element is active</h3>")
 
   # ---
   # hover event
@@ -405,12 +405,21 @@ root.plotData = (selector, data, plot) ->
     .call(plot)
 
 texts = [
-  {key:"sherlock",file:"top_sherlock.csv",name:"The Adventures of Sherlock Holmes"}
-  {key:"aesop",file:"top_aesop.csv",name:"Aesop's Fables"}
-  {key:"alice",file:"alice.csv",name:"Alice's Adventures in Wonderland"}
-  {key:"gulliver",file:"top_gulliver.csv",name:"Gulliver's Travels"}
-  {key:"forbes",file:"forbes.csv",name:"Forbes"}
-  {key:"corfu",file:"corfu.csv",name:"CORFU"}
+  {key:"ppnyear",file:"ppnyear.csv",name:"Public Procurement Notices by year"}
+  {key:"ppnregion",file:"ppnregion.csv",name:"The top 50 of regions rewarding Public Contracts"}
+  {key:"ppnregion10",file:"ppnregion10.csv",name:"The name in Chinese of the top 10 countries rewarding Public Contracts in 2010"}
+  {key:"10cpves",file:"10cpves.csv",name:"The top 10 of most used CPV codes in 2008 in Spanish"}
+  {key:"10cpven",file:"10cpven.csv",name:"The top 10 of most used CPV codes in 2009 in English"}
+  {key:"10cpvgr",file:"10cpvgr.csv",name:"The top 10 of most used CPV codes in 2010 in Greek"}
+  {key:"10cpvsv",file:"10cpvsv.csv",name:"The top 10 of most used CPV codes in 2011 in Slovak"}
+  {key:"50cpvbg",file:"50cpvbg.csv",name:"The top 50 of most used CPV codes in Bulgarian"}
+  {key:"50cpvfr",file:"50cpvfr.csv",name:"The top 50 of most used CPV codes in French"}
+  {key:"50cpvpt",file:"50cpvpt.csv",name:"The top 50 of most used CPV codes in Portuguese"}
+  {key:"cpves",file:"cpves.csv",name:"The top 100 of most used CPV codes in Spanish"}
+  {key:"cpven",file:"cpven.csv",name:"The top 100 of most used CPV codes in English"}
+  {key:"cpvgr",file:"cpvgr.csv",name:"The top 100 of most used CPV codes in Greek"}
+  {key:"forbes",file:"forbes.csv",name:"The top 100 of Forbes Companies in Australian Public Contracts"}
+  {key:"corfu",file:"corfu.csv",name:"Others from the CORFU technique"}
 ]
 
 # ---
