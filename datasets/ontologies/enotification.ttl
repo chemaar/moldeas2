@@ -1,0 +1,350 @@
+@prefix pscs: <http://purl.org/weso/pscs/ontology/> .
+@prefix intervals: <http://reference.data.gov.uk/def/intervals/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix edns: <http://www.loa-cnr.it/ontologies/ExtendedDnS.owl#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix mod: <http://www.loa-cnr.it/ontologies/ModalDescriptions.owl#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix dct: <http://dublincore.org/documents/dcmi-terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix time-entry: <http://www.w3.org/2006/time-entry#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix iso3166: <http://downlode.org/rdf/iso-3166/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lgd: <http://linkedgeodata.org/ontology/> .
+@prefix dol: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix prov: <http://purl.org/twc/ontology/w3c/prov#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix nuts: <http://nuts.psi.enakting.org/def/> .
+@prefix : <http://purl.org/weso/eprocurement/enotification#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix payment: <http://reference.data.gov.uk/def/payment#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix c4n: <http://vocab.deri.ie/c4n#> .
+@prefix spatialrelations:  <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix org:  <http://www.w3.org/ns/org#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix v: <http://www.w3.org/2006/vcard/ns#>.
+@prefix moldeas-onto:  <http://purl.org/weso/moldeas/ontology/> .
+@prefix pscs-onto:  <http://purl.org/weso/pscs/ontology/> .
+@prefix moldeas-people:  <http://purl.org/weso/moldeas/people/> .
+@prefix moldeas-country:  <http://purl.org/weso/moldeas/area/country/> .
+@prefix moldeas-org:  <http://purl.org/weso/moldeas/organization/> .
+@prefix moldeas-region:  <http://purl.org/weso/moldeas/area/region/> .
+@prefix moldeas-nuts:  <http://purl.org/weso/moldeas/nuts/> .
+@prefix moldeas:  <http://purl.org/weso/moldeas/ontology/> .
+@prefix moldeas-area:  <http://purl.org/weso/moldeas/area/> .
+@prefix pscs:    <http://purl.org/weso/pscs/> .
+@prefix lg:  <http://linkedgeodata.org/ontology/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+
+<http://purl.org/weso/moldeas/ontology/> rdf:type owl:Ontology ;
+                                                  
+                                                  rdfs:label "e-Notification phase ontology (partial)"@en ;
+                                                  
+                                                  owl:versionInfo "1.0"@en ;
+                                                  
+                                                  rdfs:comment "e-Notification phase ontology (partial)"@en .
+
+#Country definitions
+
+moldeas-onto:Region a skos:Concept, lg:Place;
+rdfs:label "Region concept"@en; 
+.
+
+moldeas-onto:Country a skos:Concept, lg:Country;
+skos:broader moldeas-onto:Region;
+rdfs:label "Country concept"@en; 
+.
+
+moldeas-onto:has-iso-alpha2-code a rdf:Property; 
+rdfs:label "ISO-code-alpha 2 digit"@en; 
+rdfs:subPropertyOf dc:identifier; 
+rdfs:range skos:Concept; 
+. 
+
+moldeas-onto:has-iso-alpha3-code a rdf:Property; 
+rdfs:label "ISO-code-alpha 3 digit"@en; 
+rdfs:subPropertyOf dc:identifier; 
+rdfs:range skos:Concept; 
+. 
+
+moldeas-onto:has-country a rdf:Property; 
+rdfs:label "Country in a region"@en; 
+rdfs:range skos:Concept; 
+. 
+
+moldeas-onto:ref-dbpedia a rdf:Property; 
+rdfs:label "URI to a DBPedia resource"@en; 
+rdfs:range skos:Concept; 
+. 
+
+#Taxonomy
+
+moldeas-onto:PublicContract a owl:Class;
+rdfs:label "Abstract entity of the administrative process of e-Procurement."@en;
+.
+
+moldeas-onto:Lot a owl:Class;
+rdfs:label "One part rewarded by a public contract."@en;
+.
+
+moldeas-onto:Item a owl:Class;
+rdfs:label "One item rewarded by a public contract."@en;
+.
+
+#Type of notices
+
+moldeas-onto:Notice rdfs:subClassOf skos:Concept ;
+rdfs:label "A public notice published by a public body"@en;
+.
+
+moldeas-onto:PriorNotice rdfs:subClassOf moldeas-onto:Notice;
+rdfs:label "A prior notice of a contract published by a public body"@en;
+.
+
+moldeas-onto:PublicProcurementNotice rdfs:subClassOf moldeas-onto:Notice;
+rdfs:label "A public procurement notice published by a public body"@en;
+.
+
+moldeas-onto:PriorAwardNotice rdfs:subClassOf moldeas-onto:Notice;
+rdfs:label "A prior notice of a rewarded contract published by a public body"@en;
+.
+
+moldeas-onto:AwardNotice rdfs:subClassOf moldeas-onto:Notice;
+rdfs:label "A notice of a rewarded contract published by a public body"@en;
+.
+
+
+#Different phases of the e-Procurement
+
+moldeas-onto:Phase rdfs:subClassOf skos:Concept ;
+rdfs:label "e-Procuremet Process pahse"@en;
+.
+
+moldeas-onto:eNotification rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet Publishing stage"@en;
+.
+
+moldeas-onto:eAccess rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet Publishing stage"@en;
+.
+
+moldeas-onto:eSubmission rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet eSubmission stage"@en;
+.
+
+moldeas-onto:eEvaluation rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet eEvaluation stage"@en;
+.
+
+moldeas-onto:eAwarding rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet eAwarding stage"@en;
+.
+
+moldeas-onto:eOrdering rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet eOrdering stage"@en;
+.
+
+moldeas-onto:eInvoicing rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet eInvoicing stage"@en;
+.
+
+moldeas-onto:ePayment rdfs:subClassOf moldeas-onto:Phase;
+rdfs:label "e-Procuremet ePayment stage"@en;
+.
+
+
+#What kind of procedure is used to reward the contract
+
+moldeas-onto:Transaction rdfs:subClassOf skos:Concept ;
+rdfs:label "Type of procedure"@en;
+.
+
+moldeas-onto:Ordinary rdf:type moldeas-onto:Transaction ;
+rdfs:label "A contract will be rewarded using an ordinary transaction."@en;
+.
+
+moldeas-onto:Urgent rdf:type moldeas-onto:Transaction ;
+rdfs:label "A contract will be rewarded using an urgent transaction."@en;
+.
+
+moldeas-onto:Emergency rdf:type moldeas-onto:Transaction ;
+rdfs:label "A contract will be rewarded using an emergency transaction."@en;
+.
+
+
+#How contracts are rewarded
+
+moldeas-onto:Procedure rdfs:subClassOf skos:Concept ;
+rdfs:label "How the contract is rewarded"@en;
+.
+
+moldeas-onto:Open rdf:type moldeas-onto:Procedure  ;
+rdfs:label "A contract that is rewarded with an open procedure"@en;
+.
+
+moldeas-onto:Restricted rdf:type moldeas-onto:Procedure  ;
+rdfs:label "A contract that is rewarded with a restricted procedure"@en;
+.
+
+moldeas-onto:Negotiated rdf:type moldeas-onto:Procedure  ;
+rdfs:label "A contract that is rewarded with a negotiated procedure"@en;
+.
+
+moldeas-onto:CompetitiveDialogue rdf:type moldeas-onto:Procedure  ;
+rdfs:label "A contract that is rewarded with a competitive dialogue."@en;
+.
+
+
+
+#Type of agents
+
+moldeas-onto:ContractAuthority rdfs:subClassOf org:Organization ;
+rdfs:label "A public body that publishes contracts."@en;
+.
+
+moldeas-onto:Supplier rdfs:subClassOf org:Organization ;
+rdfs:label "A small and medium enterprise organization."@en;
+.
+
+
+moldeas-onto:SME rdfs:subClassOf moldeas-onto:Supplier;
+rdfs:label "A small and medium enterprise organization."@en;
+.
+
+
+moldeas-onto:LTE rdfs:subClassOf moldeas-onto:Supplier ;
+rdfs:label "A large enterprise organization."@en;
+.
+
+moldeas-onto:Entrepreneur rdfs:subClassOf moldeas-onto:Supplier;
+rdfs:label "An individual."@en;
+.
+
+
+#Award Criteria (complete, not in this phase
+
+moldeas-onto:AwardCriteria rdfs:subClassOf skos:Concept ;
+rdfs:label "Kind of criteria used to reward the contract."@en;
+.
+
+moldeas-onto:LowestPrice rdf:type moldeas-onto:AwardCriteria;
+rdfs:label "The lowest price is a key criteria."@en;
+.
+
+#Parts of a public contract
+
+#################################################################
+#
+#    Object properties
+#
+#################################################################
+
+moldeas-onto:has-notice a owl:ObjectProperty;
+rdfs:label "A public contract has different kind of notices."@en; 
+rdfs:domain moldeas-onto:PublicContract; 
+rdfs:range moldeas-onto:Notice; 
+.
+
+moldeas-onto:has-lot a owl:ObjectProperty;
+rdfs:label "A public contract is comprised of several lots, at least, 1."@en; 
+rdfs:domain moldeas-onto:PublicContract; 
+rdfs:range moldeas-onto:Lot; 
+.
+
+moldeas-onto:is-lot-of a owl:ObjectProperty;
+rdfs:label "A public contract is comprised of several lots, at least, 1."@en; 
+rdfs:range moldeas-onto:PublicContract; 
+rdfs:domain moldeas-onto:Lot; 
+.
+
+moldeas-onto:runs a owl:ObjectProperty;
+rdfs:label "A public contract is comprised of several lots, at least, 1."@en; 
+rdfs:domain moldeas-onto:Lot; 
+rdfs:range moldeas-onto:Phase; 
+.
+
+moldeas-onto:budget a owl:ObjectProperty;
+rdfs:label "A lot has a budget to buy things."@en; 
+rdfs:domain moldeas-onto:Lot; 
+rdfs:range moldeas-onto:Budget; 
+.
+
+moldeas-onto:located-in a owl:ObjectProperty;
+rdfs:label "Where the contract/lot will take place."@en; 
+rdfs:domain moldeas-onto:Item; 
+rdfs:range nuts:NUTSRegion ; 
+.
+
+moldeas-onto:buys a owl:ObjectProperty;
+rdfs:label "The item that is going to be provided."@en; 
+rdfs:domain moldeas-onto:Lot; 
+rdfs:range moldeas-onto:Item ; 
+.
+
+moldeas-onto:topic a owl:ObjectProperty;
+rdfs:label "The subject of the contract, a CPV code."@en; 
+rdfs:domain moldeas-onto:Notice;
+rdfs:domain moldeas-onto:Item;  
+rdfs:range pscs-onto:PSCConcept ; 
+.
+
+moldeas-onto:payment a owl:ObjectProperty;
+rdfs:label "The subject of the contract, a CPV code."@en; 
+rdfs:domain moldeas-onto:Item;  
+rdfs:range payment:Payment ; 
+.
+
+
+moldeas-onto:quantity a owl:ObjectProperty;
+rdfs:label "The subject of the contract, a CPV code."@en; 
+rdfs:domain moldeas-onto:Item;  
+rdfs:range payment:Payment ; 
+.
+
+moldeas-onto:value a owl:ObjectProperty;
+rdfs:label "The subject of the contract, a CPV code."@en; 
+rdfs:domain moldeas-onto:Item;  
+rdfs:range payment:Payment ; 
+.
+
+
+moldeas-onto:currency a owl:DatatypeProperty;
+rdfs:subPropertyOf payment:unit;
+rdfs:domain moldeas-onto:Lot;   
+.
+
+
+moldeas-onto:is-contractor-of a owl:ObjectProperty;
+rdfs:domain org:Organization;
+rdfs:range moldeas-onto:ContractingAuthority;      
+.
+
+
+moldeas-onto:contractor-of a owl:ObjectProperty;
+rdfs:range org:Organization;
+rdfs:domain moldeas-onto:ContractingAuthority;      
+.
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+
+###  Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net
+
