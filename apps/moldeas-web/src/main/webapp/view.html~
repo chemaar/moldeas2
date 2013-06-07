@@ -1,0 +1,185 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <title>MOLDEAS PROJECT-View</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>vis</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+ <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!--end Bubble Cloud-->
+
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    
+      <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">MOLDEAS-Methods On Linked Data for E-procurement Applying Semantics</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+	     <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./documentation.html">Documentation</a></li>
+                <li><a href="./demo.html">Demo</a></li>
+                <li><a href="./publications.html">Publications</a></li>
+                <li><a href="./software-datasets.html">Software and Datasets</a></li>
+		<li class="active"><a href="#">View Statistics</a></li>
+                <li><a href="./ongoing.html">On-going initiatives</a></li>
+		<li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Visualizing MOLDEAS...</h1>
+        <p class="lead">
+	<em>"Be a yardstick of quality. Some people aren't used to an environment where excellence is expected."</em> Steve Jobs </p>
+       	<a class="btn btn-large btn-success" href="./ongoing.html">What's next...</a>
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        
+	<div id="container" class="container">
+	      <select id="text-select">
+		<option value="ppnyear">Public Procurement Notices by year</option>	
+		<option value="ppnregion">The top 50 of regions rewarding Public Contracts</option>	
+		<option value="ppnregion10">The name in Chinese of the top 10 countries rewarding Public Contracts in 2010</option>	
+		<option value="10cpves">The top 10 of most used CPV codes in 2008 in Spanish</option>	
+		<option value="10cpven">The top 10 of most used CPV codes in 2009 in English</option>
+		<option value="10cpvgr">The top 10 of most used CPV codes in 2010 in Greek</option>
+		<option value="10cpvsv">The top 10 of most used CPV codes in 2011 in Slovak</option>
+		<option value="50cpvbg">The top 50 of most used CPV codes in Bulgarian</option>	
+		<option value="50cpvfr">The top 50 of most used CPV codes in French</option>
+		<option value="50cpvpt">The top 50 of most used CPV codes in Portuguese</option>
+		<option value="cpves">The top 100 of most used CPV codes in Spanish</option>	
+		<option value="cpven">The top 100 of most used CPV codes in English</option>
+		<option value="cpvgr">The top 100 of most used CPV codes in Greek</option>
+		<option value="forbes">The top 100 of Forbes Companies in Australian Public Contracts</option>
+		<option value="corfu">Others from the CORFU technique</option>
+	      </select>
+	    <header>
+	    <h1>MOLDEAS Cloud Generator</h1>
+
+	      <h2 id="book-title"></h2>
+	    </header>
+	    <div id="main" role="main">
+	      <div id="vis"></div>
+	      <div id="status"></div>
+	      <div id="controls">
+		<h3>Jitter</h3>
+		<form id="jitter" oninput="output.value = (jitter_input.value / 200).toFixed(3)" >
+		  <input id="jitter_input" type="range" min="0" max="400" value="100" style="width:240px;">
+		  <output name="output" for="input">0.5</output>
+		</form>
+	      </div>
+	    </div>
+	    <footer>
+	    </footer>
+	  </div> <!--! end of #container -->
+
+
+      </div>
+
+      <hr>
+
+      <div class="footer">
+
+		<p style="text-align:center">MOLDEAS is part of <a href="http://rd.10ders.net/"><strong>10ders Information Services project</strong></a> partially 
+		funded by the <a href="http://www.mityc.es/">Spanish Ministry of Industry, Commerce and Tourism</a> 
+		with code TSI-020100-2010-919 and the <a href="http://europa.eu/legislation_summaries/employment_and_social_policy/job_creation_measures/l60015_es.htm">European 
+		Regional Development Fund (EFDR)</a> according to the <a href="http://www.micinn.es/portal/site/MICINN/">National Plan of Scientific Research, Development and 			Technological Innovation 2008-2011</a>, 	leaded by <a href="http://gateway-scs.es/">Gateway Strategic Consultancy Services</a> and developed in cooperation with 		<a href="http://www.exis-ti.com/">Exis-TI</a> and the <a href="http://www.weso.es">WESO Research Group</a>.</p>
+						
+		<p style="text-align:center">Partially funded by:</p>
+<p style="text-align:center">        
+		<a href="http://www.mityc.es/" class="image" title="Logo_MITYC.png">
+			<img alt="Logo_MITYC.png" src="./g/Logo_MITYC.png" width="150" height="30" border="0" />
+		    </a> 
+		<a href="http://www.planavanza.es" class="image" title="logo-plan-avanza2.gif">
+		<img alt="Logo Avanza" src="./g/Logo-plan-avanza2.gif" width="150" height="30" border="0" /></a>
+	<a href="#" class="image" title="Logo_FEDER_una_manera_de_hacer_europa.gif">
+		<img alt="Logo_FEDER_una_manera_de_hacer_europa.gif" src="./g/Logo_FEDER_una_manera_de_hacer_europa.gif" width="100" height="43" border="0" /></a>  
+
+    	     </p> 
+
+      <hr>
+
+        <p style="text-align:center"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MOLDEAS as part of the <a href="#">10dersIS project</a></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="http://www.josemalvarez.es">Jose María Alvarez-Rodríguez</a> and <a href="http://www.weso.es">the WESO Research Group</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </p>
+        
+        
+        
+      </div>
+
+    </div> <!-- /container -->
+
+<!--From bubble cloud-->
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="bubble_cloud/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script defer src="js/plugins.js"></script>
+  <script src="js/libs/coffee-script.js"></script>
+  <script src="js/libs/d3.v2.js"></script>
+  <script type="text/coffeescript" src="coffee/vis.coffee"></script>
+  <script type="text/javascript">
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap-transition.js"></script>
+    <script src="./bootstrap/js/bootstrap-alert.js"></script>
+    <script src="./bootstrap/js/bootstrap-modal.js"></script>
+    <script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap/js/bootstrap-tab.js"></script>
+    <script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap/js/bootstrap-popover.js"></script>
+    <script src="./bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    
+    
+  </body>
+</html

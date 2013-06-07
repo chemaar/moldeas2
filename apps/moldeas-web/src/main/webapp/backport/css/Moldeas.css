@@ -1,0 +1,180 @@
+
+#contenedor{
+        border:1px solid #CCCCCC;
+	width: 80%;
+	margin-left:10%;
+padding:1em;
+	
+}
+#cabecera{
+border-bottom:1px solid black;
+padding-bottom:1em;
+margin-bottom:1em;
+        height:20%;
+}
+#cabecera h1{
+float:right
+}
+
+#menu{
+        height:10%;
+        border: 1px solid #C8CACC;
+}
+#izquierda{
+        float:left;
+        width:28%;
+}
+#derecha{
+        width:70%;
+float:right;
+
+}
+.clear-div{
+clear:both;
+}
+#pie{
+	margin-top:2em;
+	padding-top:2em;
+        height:20%;
+        clear:both;
+}
+
+
+//Sugerencias CPV
+
+#suggestionsList{
+	position:relative;
+	top:-1em;
+	left:0em;
+}
+
+#suggestionsList ul {
+	display:block;
+	border: thin solid #CCCCCC;
+}
+
+#suggestionsList li {
+	height: 2em;
+	display:block;
+	vertical-align: middle;
+}
+
+#suggestionsList li:hover {
+	background-color: #D8D8D8;
+}
+
+
+
+//Sugerencias nuts
+
+#nutsCodesList{
+	position:relative;
+	top:-1em;
+	left:0em;
+}
+
+#nutsCodesList ul {
+	display:block;
+	border: thin solid #CCCCCC;
+}
+
+#nutsCodesList li {
+	height: 2em;
+	display:block;
+	vertical-align: middle;
+}
+
+#nutsCodesList li:hover {
+	background-color: #D8D8D8;
+}
+
+
+
+.button{
+	display:table-cell;
+	vertical-align: middle;
+	border-bottom:#003366 1px solid;
+	cursor:pointer;
+	margin:1em;
+}
+
+
+//Slider
+ #demo-frame > div.demo { padding: 10px !important; };
+
+
+
+p{
+text-align:justify;
+}
+
+
+
+ul.cpv_input li{
+	display:inline;
+}
+ul.cpv_input input{
+	margin-right:1em;
+}
+
+
+ul.cpv_input li span{
+margin-right:1em;
+font-size:1.8em;
+
+
+}
+
+
+table ul{
+
+list-style-type: none;
+
+}
+
+legend strong{
+color:green;
+}
+//Exhibit
+
+#exhibit-content { clear:both; }
+
+#title-panel { padding: 0.25in 0.5in; }
+        #top-panels {
+            padding:        0.5em 0.5in;
+            border-top:     1px solid #BCB79E;
+            border-bottom:  1px solid #BCB79E;
+            background:     light gray;
+        }
+        
+        .exhibit-tileView-body { list-style: none; }
+        .exhibit-collectionView-group-count { display: none; }
+        
+        table.ppnlist {
+            border:     1px solid #ddd;
+            padding:    0.5em;
+	    list-style-type: none;
+        }
+        div.name {
+            font-weight: bold;
+            font-size:   120%;
+        }
+        .score {
+            color:  #888;
+        }
+        
+        div.ppnlist-thumbnail {
+            float:      left;
+            width:      13em;
+            height:     10em;
+            border:     1px solid #BCB79E;
+            background: #F0FFF0;
+            padding:    1em;
+            margin:     0.5em;
+            text-align: center;
+        }
+        div.ppnlist-timeline-lens {
+            padding:    1em;
+            text-align: center;
+        }
+

@@ -10,30 +10,53 @@ String.prototype.startsWith = function(str) {
 
 function Snorql() {
    // this._endpoint = document.location.href.match(/^([^?]*)snorql\//)[1] + 'sparql';
-    this._endpoint = "http://156.35.31.156/sparql"
+    this._endpoint = "http://156.35.82.103/sparql"
     this._poweredByLink = 'http://www4.wiwiss.fu-berlin.de/bizer/d2r-server/';
     this._poweredByLabel = 'D2R Server';
     this._enableNamedGraphs = false;
-
-	var D2R_namespacePrefixes = {
-	    owl2xml: 'http://www.w3.org/2006/12/owl2-xml#',
-	    nvcl: 'http://www.auscope.org/ontology/vocabs/nvcl/0.3#',
-	    xsd: 'http://www.w3.org/2001/XMLSchema#',
-	    rdfs: 'http://www.w3.org/2000/01/rdf-schema#',
-	    rdf: 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-	    skos: 'http://www.w3.org/2004/02/skos/core#',
-	    owl: 'http://www.w3.org/2002/07/owl#',
-	    "cpv-def": 'http://purl.org/weso/cpv/def#',
-	    cpv: 'http://purl.org/weso/cpv/2008/',
-	    cpv2003: 'http://purl.org/weso/cpv/2003/',
-	    "ppn-def": 'http://purl.org/weso/ppn/def#',
-            ppn2008: 'http://purl.org/weso/ppn/2008/',
-	    ppn2009: 'http://purl.org/weso/ppn/2009/',
-	    ppn2010: 'http://purl.org/weso/ppn/2010/',
-	    ppn2011: 'http://purl.org/weso/ppn/2011/',
-	    skosxl: 'http://www.w3.org/2008/05/skos-xl#',
-	    dc: 'http://purl.org/dc/elements/1.1/'		 
-	};
+ 
+      var D2R_namespacePrefixes = {
+		    owl2xml: 'http://www.w3.org/2006/12/owl2-xml#',
+		    nvcl: 'http://www.auscope.org/ontology/vocabs/nvcl/0.3#',
+		    	moldeas : 'http://purl.org/weso/moldeas/', 
+		    	'moldeas-onto' : 'http://purl.org/weso/moldeas/ontology/', 
+		    	'moldeas-people' : 'http://purl.org/weso/moldeas/people/', 
+		    	'moldeas-org' : 'http://purl.org/weso/moldeas/organization/', 
+		    	'moldeas-region' : 'http://purl.org/weso/moldeas/area/region/', 
+		    	'moldeas-country' : 'http://purl.org/weso/moldeas/area/country/', 
+		    	'moldeas-nuts' : 'http://purl.org/weso/moldeas/nuts/', 
+		    	'moldeas-ppn' : 'http://purl.org/weso/moldeas/ppn/', 
+		    	pscs : 'http://purl.org/weso/pscs/', 
+		    	'pscs-onto' : 'http://purl.org/weso/pscs/ontology/', 
+		    	'cpv-2008' : 'http://purl.org/weso/pscs/cpv/2008/', 
+		    	'cpv-2003' : 'http://purl.org/weso/pscs/cpv/2003/', 
+		    	'cpv-onto' : 'http://purl.org/weso/pscs/cpv/ontology/', 
+		    	time : 'http://www.w3.org/2006/time#', 
+		    	skos : 'http://www.w3.org/2004/02/skos/core#', 
+		    	geo : 'http://www.w3.org/2003/01/geo/wgs84_pos#', 
+		    	spatialrelations : 'http://data.ordnancesurvey.co.uk/ontology/spatialrelations/', 
+		    	nuts : 'http://nuts.psi.enakting.org/def/', 
+		    	org : 'http://www.w3.org/ns/org#', 
+		    	v : 'http://www.w3.org/2006/vcard/ns#', 
+		    	foaf : 'http://xmlns.com/foaf/0.1/', 
+		    	gr : 'http://purl.org/goodrelations/v1#', 
+		    	'cpv-2008-ds' : 'http://purl.org/weso/pscs/cpv/2008/ds', 
+		    	'nuts-id' : 'http://nuts.psi.enakting.org/id/', 
+		    	payment : 'http://reference.data.gov.uk/def/payment#', 
+		    	po : 'http://www.productontology.org/', 
+		    	geo : 'http://www.w3.org/2003/01/geo/wgs84_pos#', 
+		    	c4n : 'http://vocab.deri.ie/c4n#', 
+		    	event : 'http://linkedevents.org/ontology/', 
+		    	intervals : 'http://reference.data.gov.uk/def/intervals/', 
+		    	rdf : 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 
+		    	rdfs : 'http://www.w3.org/2000/01/rdf-schema#', 
+		    	xsd : 'http://www.w3.org/2001/XMLSchema#', 
+		    	owl : 'http://www.w3.org/2002/07/owl#', 
+		    	dc : 'http://purl.org/dc/elements/1.1/', 
+		    	dcterms : 'http://purl.org/dc/terms/', 
+		    	foaf : 'http://xmlns.com/foaf/0.1/'
+		};
+	
 
     this._browserBase = null;
     this._namespaces = {};

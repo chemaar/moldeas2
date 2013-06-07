@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>MOLDEAS PROJECT</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    
+      <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">MOLDEAS-Methods On Linked Data for E-procurement Applying Semantics</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+	     <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="./documentation.html">Documentation</a></li>
+                <li><a href="./demo.html">Demo</a></li>
+                <li><a href="./publications.html">Publications</a></li>
+                <li><a href="./software-datasets.html">Software and Datasets</a></li>
+                <li><a href="./view.html">View Statistics</a></li>
+                <li><a href="./ongoing.html">On-going initiatives</a></li>
+		<li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>MOLDEAS2 is now available!</h1>
+        <p class="lead">This work applies the Semantic Web and the Linked Open Data approaches to public procurement notices.</p>
+        <a class="btn btn-large btn-success" href="./demo.html">Test the MOLDEAS2 Demo</a>
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>People</h2>
+          <ul>
+          	<li><a href="http://www.josemalvarez.es">Jose María Alvarez Rodríguez</a></li>
+          	<li><a href="http;//www.di.uniovi.es">Jose Emilio Labra Gayo</a></li>
+          </ul>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>WESO</h2>
+          <p>This work has been carried out at the <a href="http://www.weso.es/">WESO Research Group</a>
+           within the <a href="http://www.di.uniovi.es">Department of Computer Science</a> 
+	   at the <a href="http://www.uniovi.es/">University of Oviedo</a>, Oviedo, Spain.
+           </p>           
+           <p><a href="http://www.weso.es"><img src="../img/logo.png" width="80" height="80" /></a></p>
+          <p><a class="btn" href="http://www.weso.es">Visit WESO &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>10dersIS Project</h2>
+          <p>This work is supported by the <a href="http://www.mityc.es/">Spanish Ministry of Industry, Commerce and Tourism"</a> 
+	   with code TSI-020100-2010-919 and the <a href="http://europa.eu/legislation_summaries/employment_and_social_policy/job_creation_measures/l60015_es.htm">European
+			Regional Development Fund (EFDR)</a> according to the 
+		<a href="http://www.micinn.es/portal/site/MICINN/">National Plan of Scientific Research, Development and Technological Innovation 2008-2011</a>, 
+		leaded by <a href="http://gateway-scs.es/">Gateway Strategic Consultancy Services</a> 
+and developed in cooperation with <a href="http://www.exis-ti.com/">Exis-TI</a></p>
+
+	
+          <p><a href="http://www.mityc.es/" class="image" title="Logo_MITYC.png">
+		<img alt="Logo_MITYC.png" src="../img/Logo_MITYC.png" width="150" height="30" border="0" />
+	    </a> 
+	  </p>
+          <p> 
+		<a href="http://www.planavanza.es" class="image" title="logo-plan-avanza2.gif">
+		<img alt="Logo Avanza" src="../img/Logo-plan-avanza2.gif" width="150" height="30" border="0" /></a>
+	</p>
+	  <p><a href="#" class="image" title="Logo_FEDER_una_manera_de_hacer_europa.gif">
+		<img alt="Logo_FEDER_una_manera_de_hacer_europa.gif" src="../img/Logo_FEDER_una_manera_de_hacer_europa.gif" width="100" height="43" border="0" /></a>  </p> 
+          <p><a class="btn" href="#">Visit 10dersIS Project</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p style="text-align:center"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MOLDEAS as part of the <a href="#">10dersIS project</a></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="http://www.josemalvarez.es">Jose María Alvarez-Rodríguez</a> and <a href="http://www.weso.es">the WESO Research Group</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </p>
+        
+        
+        
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap-transition.js"></script>
+    <script src="./bootstrap/js/bootstrap-alert.js"></script>
+    <script src="./bootstrap/js/bootstrap-modal.js"></script>
+    <script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap/js/bootstrap-tab.js"></script>
+    <script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap/js/bootstrap-popover.js"></script>
+    <script src="./bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    
+    
+  </body>
+</html

@@ -1,0 +1,869 @@
+<html>
+  <head>
+    <title>MOLDEAS PROJECT-Documentation</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="./js/prettify.js"></script>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    
+      <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">MOLDEAS-Methods On Linked Data for E-procurement Applying Semantics</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+	     <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+		<li class="active"><a href="#">Documentation</a></li>
+                <li><a href="./demo.html">Demo</a></li>
+                <li><a href="./publications.html">Publications</a></li>
+                <li><a href="./software-datasets.html">Software and Datasets</a></li>
+                <li><a href="./view.html">View Statistics</a></li>
+                <li><a href="./ongoing.html">On-going initiatives</a></li>
+		<li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Learn more about MOLDEAS...</h1>
+        <p class="lead">Quickstart... <a href="#querying-the-sparql-endpoint">see the Demo Queries</a></p>
+            <a class="btn btn-large btn-success" href="http://purl.org/weso/moldeas/">Browse all the MOLDEAS datasets</a>
+      </div>
+
+      <hr>
+	<h2>Table of Contents</h2>
+
+<!--Content-->
+
+	<ul>
+		<li><a href="#moldeas-as-linked-data">The MOLDEAS project as Linked Data</a></li>
+		<li><a href="#principles-and-methodology">Principles and Methodology</a></li>
+		<li><a href="#vocabulary-selection">Vocabulary Selection</a></li>
+		<li><a href="#reused-datasets">Reused Datasets</a></li>
+		<li><a href="#uri-design-scheme">URI Design Scheme</a></li>
+		<li><a href="#example-of-rdf-resources">Example of RDF resources</a></li>
+		<li><a href="#querying-the-sparql-endpoint">Querying the SPARQL Endpoint</a></li>
+		<li><a href="#tools-and-services">Tools and Services</a></li>
+		<li><a href="#statistics">Statistics</a></li>
+	</ul>
+   	 <h2><a name="moldeas-as-linked-data">The MOLDEAS project as a Linked Data effort</a></h2>
+
+		<p style="text-align:center">
+				<img src="backport/images/moldeas.png" title="Architecture Overview" width="75%"/>
+			</p>
+
+
+	    	<h3><a name="principles-and-methodology">Principles and Methodology</a></h3>
+		<ul>
+			<li><a href="http://www.w3.org/DesignIssues/LinkedData.html">Linked Data Design Issues</a></li>
+			<li><a href="http://linkeddatabook.com/editions/1.0/">Linked Data: Evolving the Web into a Global Data Space</a></li>
+			<li><a href="http://patterns.dataincubator.org/book/">Linked Data Patterns</a></li>
+			<li><a href="http://www.w3.org/TR/swbp-vocab-pub/">W3C-Best Practice Recipes for Publishing RDF Vocabularies</a></li>
+			<li><a href="http://www.w3.org/2011/gld/wiki/Linked_Data_Cookbook">W3C-Linked Data Cookbook</a></li>
+			<li><a href="http://www.w3.org/TR/gov-data/">W3C-Publishing Open Government Data</a></li>
+			<li><a href="http://lod2.eu/WikiArticle/TechnologyStack.html">LOD2 Stack</a></li>
+			<li><a href="http://www.w3.org/Submission/2012/02/">Toward a Basic Profile for Linked Data (W3C version)</a></li>
+			<li><a href="http://www.semantic-web.at/LOD-TheEssentials.pdf">Linked Open Data: The Essentials</a></li>
+			<li><a href="http://jn.wspc.com.sg/ijseke/22/2203/S0218194012400086.html">Towards a Pan-European E-Procurement platform to Aggregate, Publish and Search Public Procurement Notices powered by Linked Open Data: The MOLDEAS Approach.</a></li>
+			<li><a href="http://www.w3.org/TR/cooluris/">W3C-Cool URIs for the Semantic Web</a></li>
+			<li><a href="http://sw.deri.org/~aidanh/docs/bnodes.pdf">On Blank Nodes</a></li>
+			<li>...</li>
+		</ul>
+
+		<p style="text-align:center">
+				<img src="http://www.josemalvarez.es/web/wp-content/uploads/2012/04/lld-en.png" title="the MOLDEAS Linked Data Lifecycle" width="75%"/>
+			  <img src="http://www.josemalvarez.es/web/wp-content/uploads/2012/04/ldf-en.png" title="the MOLDEAS Linked Data Lifecycle: Methods and Tasks" width="75%"/>
+			</p>
+
+
+    		<h3><a name="vocabulary-selection">Vocabulary Selection</a></h3>
+	<p>In order to reuse definitions of existing vocabularies and ontologies we have selected the following ones to be applied in 
+the promotion of the Public Procurement Notices to the Linked Data initiative. This selection has taken into account the three main 
+entities in our effort: <strong>Notices</strong>, <strong>Product Scheme Classifications</strong> and <strong>Geographical Information</strong>.</p>
+ 
+
+	<table class="table table-striped">
+		<thead>
+		<tr>
+			<td><strong>Vocabulary</strong></td>
+			<td><strong>Main Use</strong></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><a href="http://www.w3.org/TR/skos-reference/">SKOS-Simple Knowledge Organization System</a></td>
+			<td>Definition of concepts (PSCConcept, Division, Category, etc.) and their relationships to mainly represent the Product Scheme Classifications.</td>
+		</tr>
+		<tr>
+			<td><a href="http://linkedevents.org/ontology/">Description of events</a></td>
+			<td>An ontology for Linking Open Descriptions of Event.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://vocab.deri.ie/c4n#">Call for Anything vocabulary</a></td>
+			<td>Reuse of terms in call for events.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://purl.org/goodrelations/v1#">Good Relations</a></td>
+			<td>Reuse of entities to link product scheme classifications and describe the type of contract.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://reference.data.gov.uk/def/payment#">Payments Ontology</a></td>
+			<td>Description of payments in the e-Procurement process.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://nuts.psi.enakting.org/def/">NUTS definitions</a></td>
+			<td>Description of the European regions.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://www.w3.org/TR/vocab-org/">W3C-Organizations Ontology</a></td>
+			<td>Publishing information about contracting authorities and providers.</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.foaf-project.org/">The Friend of a Friend (FOAF) project</a></td>
+			<td>Publishing information about people.</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.w3.org/TR/owl-time/">W3C-Time Ontology</a></td>
+			<td>Modelling time intervals.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://www.w3.org/2006/time-entry#">W3C-Time Entry</a></td>
+			<td>Modelling dates and time.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://reference.data.gov.uk/def/intervals/">Intervals UK</a></td>
+			<td>Modelling dates and intervals.</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://vocab.deri.ie/void/">Vocabulary of Interlinked Datasets (VoID)</a></td>
+			<td>Express metadata about RDF datasets.</td>
+		</tr>
+		<tr>
+			<td><a href="http://dublincore.org/documents/dcmi-terms/">DCMI Metadata Terms</a></td>
+			<td>Express metadata about RDF resources, etc.</td>
+		</tr>
+		<tr>
+			<td><a href="http://linkedgeodata.org/ontology/">Linked Geo Data Ontology</a></td>
+			<td>Reuse of country and region definitions</td>
+		</tr>
+		<tr>
+			<td><a href="http://dublincore.org/documents/dcmi-terms/">Semantic Web stack vocabularies and ontologies</a></td>
+			<td><a href="http://www.w3.org/TR/rdf-schema/">RDFS</a>, <a href="http://www.w3.org/TR/owl2-overview/">OWL2</a>, <a href="http://www.w3.org/XML/Schema">XML-Schema</a>, etc.</td>
+		</tr>
+		</tbody>
+	      </table>
+	
+	<p>The common prefixes and namespaces of these vocabularies have been retrieved from <a href="http://prefix.cc/">Prefix.cc</a>.</p>
+	<h3><a name="reused-datasets">Reused Datasets</a></h3>
+
+	<table class="table table-striped">
+		<thead>
+		<tr>
+			<td><strong>Dataset</strong></td>
+			<td><strong>Main Use</strong></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><a href="http://dbpedia.org/">DBPedia</a></td>
+			<td>Links to countries and other concepts.</td>
+		</tr>
+		<tr>
+			<td><a href="http://nuts.psi.enakting.org/">NUTS dataset</a></td>
+			<td>Links to countries and regions.</td>
+		</tr>
+		<tr>
+			<td><a href="http://www.fao.org/knowledge/kfhome/faogeopoliticalontology/en/">FAO Geopolotical Ontology and Data</a></td>
+			<td>Links to geographical data.</td>
+		</tr>
+		<tr>
+			<td>etc.</td>
+			<td>etc.</td>
+		</tr>
+		</tbody>
+		</table>
+
+    <h3><a name="uri-design-scheme">URI Design Scheme</a></h3>
+<p>Although we present below the theoretical URI design we have made only one distinction between the Product Scheme 
+Classifications and others with the aim of easing the creation of queries without the requirement of indicating graphs in 
+the FROM clause.</p>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<td><strong>Dataset</strong></td>
+				<td><strong>Graph URI</strong></td>
+				<td><strong>Example</strong></td>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>*</td>
+			<td><a href="http://purl.org/weso/moldeas/">http://purl.org/weso/moldeas/</a> (default)</td>
+			<td>*</td>
+		</tr>
+
+		<tr>
+			<td>Public Procurement Notices</td>
+			<td><a href="http://purl.org/weso/moldeas/ppn/ls"">http://purl.org/weso/moldeas/ppn/{year}/resource/{id}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/ppn/2008/resource/262457">http://purl.org/weso/moldeas/ppn/2008/resource/262457</a></td>
+		</tr>
+
+
+		<tr>
+			<td>Product Scheme Classifications</td>
+			<td><a href="http://purl.org/weso/pscs/"">http://purl.org/weso/pscs/{psc}/{version|year}/resource/{id}</a></td>
+			<td><a href="http://purl.org/weso/pscs/cpv/2008/resource/55130000">http://purl.org/weso/pscs/cpv/2008/resource/55130000</a></td>
+		</tr>
+
+		<tr>
+			<td>Organizations</td>
+			<td><a href="http://purl.org/weso/moldeas/organization/">http://purl.org/weso/moldeas/organization/resource/{id}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/organization/resource/ca170">http://purl.org/weso/moldeas/page/organization/resource/ca170</a></td>
+		</tr>
+		<tr>
+			<td>NUTS</td>
+			<td><a href="http://purl.org/weso/moldeas/nuts/">http://purl.org/weso/moldeas/nuts/resource/{id}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/nuts/resource/ES">http://purl.org/weso/moldeas/nuts/resource/ES</a></td>
+		</tr>
+
+
+
+		<tr>
+			<td>Areas</td>
+			<td><a href="http://purl.org/weso/moldeas/area/">http://purl.org/weso/moldeas/area/{country|region}/{id}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/area/country/">http://purl.org/weso/moldeas/area/country</a></td>
+		</tr>
+
+	
+		<tr>
+			<td>Regions</td>
+			<td><a href="http://purl.org/weso/moldeas/region/">http://purl.org/weso/moldeas/region/{id}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/area/region/Americas">http://purl.org/weso/moldeas/area/region/Americas</a></td>
+		</tr>
+
+		<tr>
+			<td>Countries</td>
+			<td><a href="http://purl.org/weso/moldeas/country/">http://data.webfoundation.org/webindex/area/country/{ISO-code-3}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/area/country/ESP">http://purl.org/weso/moldeas/area/country/ESP</a></td>
+		</tr>	
+		
+	
+		<tr>
+			<td>People</td>
+			<td><a href="http://purl.org/weso/moldeas/people/">http://purl.org/weso/moldeas/people/{id}</a></td>
+			<td><a href="http://purl.org/weso/moldeas/people/Chema">http://purl.org/weso/moldeas/people/Chema</a></td>
+		</tr>
+
+		
+		<tr>
+			<td>Ontology and definitions</td>
+			<td><a href="http://purl.org/weso/moldeas/ontology/">http://purl.org/weso/moldeas/ontology</a></td>
+			<td><a href="http://purl.org/weso/moldeas/ontology/Notice">http://purl.org/weso/moldeas/ontology/Notice</a></td>
+		</tr>
+		
+		</tbody>
+		</table>
+
+<p>As an example of result, a diagram explaining how Product Scheme Classifications are linked to the CPV 2008.
+
+
+</p>
+
+
+		<p style="text-align:center">
+				<img src="http://www.josemalvarez.es/web/wp-content/uploads/2011/11/graph1.png" title="Linking PSCs" width="75%"/>
+			  
+			</p>
+
+
+
+   <h3><a name="example-of-rdf-resources">Example of RDF resources</a></h3>
+	<ul>
+		<li>Partial view of a Public Procurement Notice...
+		<pre class="prettyprint lang-sql">
+&lt;http://purl.org/weso/moldeas/ppn/2008/resource/317962&gt;
+	a       moldeas-onto:Notice ;
+	rdfs:label "Public Procurement Notice 317962"@en ;
+	dcterms:date "2008"^^xsd:string ;
+	dcterms:description "This is an announcement of a public contract..."@en ;
+	dcterms:identifier "317962"^^xsd:string ;
+	dcterms:publisher moldeas-org:WESO ;
+	moldeas-onto:in-process moldeas-onto:Closed ;
+	moldeas-onto:located-in &lt;http://purl.org/weso/moldeas/nuts/resource/NL&gt; ;
+        moldeas-onto:topic 
+		&lt;http://purl.org/weso/pscs/cpv/2008/resource/51600000&gt; , 
+		&lt;http://purl.org/weso/pscs/cpv/2008/resource/72600000&gt; , 
+		&lt;http://purl.org/weso/pscs/cpv/2008/resource/50320000&gt; , 
+		&lt;http://purl.org/weso/pscs/cpv/2008/resource/48000000&gt; , 
+		&lt;http://purl.org/weso/pscs/cpv/2008/resource/30230000&gt; .
+		</pre>
+	</li>
+
+		<li>A CPV 2008 concept...
+		<pre class="prettyprint lang-sql">
+&lt;http://purl.org/weso/pscs/cpv/2008/resource/55130000&gt;
+      a       cpv-def:Class , gr:ProductOrServiceModel ;
+      rdfs:label "Andra hotelltjänster"@SV , "Otros servicios hoteleros"@ES , "Egyéb szállodaipari szolgáltatások"@HU , "Other hotel services"@EN , "Other hotel services"@GA , "Servizzi oħrajn tal-lukandi"@MT , "Inne usługi hotelarskie"@PL , "Muut hotellipalvelut"@FI , "Iné hotelové služby"@SK , "Άλλες υπηρεσίες ξενοδοχείων"@EL , "Alte servicii hoteliere"@RO , "Overige hoteldiensten"@NL , "Outros serviços de hotelaria"@PT , "Druge hotelske storitve"@SL , "Sonstige Hotel-Dienstleistungen"@DE , "Kitos viešbučių paslaugos"@LT , "Jiné ubytovací služby"@CS , "Други хотелиерски услуги"@BG , "Hotel — andre tjenesteydelser"@DA , "Muud hotelliteenused"@ET , "Autres services d'hôtellerie"@FR , "Altri servizi alberghieri"@IT , "Citi viesnīcu pakalpojumi"@LV ;
+      dc:identifier "55130000"^^xsd:string ;
+      dc:subject "55130000-0"^^xsd:string ;
+      ...
+      &lt;http://purl.org/weso/pscs/ontology/relatedMatch&gt;
+              &lt;http://www.productontology.org/id/hotel&gt; , &lt;http://www.productontology.org/id/service&gt; ;
+      skos:broaderTransitive
+              &lt;http://purl.org/weso/pscs/cpv/2008/resource/55100000&gt; ;
+      skos:inScheme &lt;http://purl.org/weso/pscs/cpv/2008/resource/ds&gt; ;
+      .
+		</pre>
+
+
+		<li>Organization</li>
+<pre class="prettyprint lang-sql">
+&lt;http://purl.org/weso/moldeas/organization/resource/ca170#org&gt;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#Orgname&gt;
+	"Parlamentul European"@ro , 
+	"Euroopa Parlament"@et ,
+	"Euroopan parlamentti"@fi , 
+	"Evropský parlament"@cs , 
+	"Европейски парламент"@bg , 
+	"Parlamento Europeu"@pt , 
+	"Parlement européen"@fr , 
+	"Parlament Europejski"@pl , 
+	"Europäisches Parlament"@de , 
+	"Európsky parlament"@sk , 
+	"Parlamento Europeo"@es , 
+	"Eiropas Parlaments"@lv , 
+	"European Parliament"@en , 
+	"Europa-Parlamentet"@da , 
+	"Europos Parlamentas"@lt , 
+	"Ευρωπαϊκό Κοινοβούλιο"@el , 
+	"Europees Parlement"@nl , 
+	"Europaparlamentet"@sv , 
+	"Európai Parlament"@hu ,
+	"Parlamento europeo"@it ,
+	"Evropski parlament"@sl .
+
+&lt;http://purl.org/weso/moldeas/organization/resource/ca170&gt;
+      a       moldeas-onto:ContractingAuthority , org:Organization ;
+	...
+      moldeas-onto:is-contractor-of
+              &lt;http://purl.org/weso/moldeas/ppn/2011/resource/170&gt; ;
+      dcterms:description "This is an organization with regards to the contract: 000170-2011"@en ;
+      org:hasSite &lt;http://purl.org/weso/moldeas/organization/resource/ca170#site&gt; ;
+      foaf:homepage moldeas: .
+
+&lt;http://purl.org/weso/moldeas/organization/resource/ca170#adr&gt;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#Locality&gt;  "Люксембург"@bg ;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#Orgname&gt;
+	"Parlamentul European"@ro , 
+	"Euroopa Parlament"@et ,
+	"Euroopan parlamentti"@fi , 
+	"Evropský parlament"@cs , 
+	"Европейски парламент"@bg , 
+	"Parlamento Europeu"@pt , 
+	"Parlement européen"@fr , 
+	"Parlament Europejski"@pl , 
+	"Europäisches Parlament"@de , 
+	"Európsky parlament"@sk , 
+	"Parlamento Europeo"@es , 
+	"Eiropas Parlaments"@lv , 
+	"European Parliament"@en , 
+	"Europa-Parlamentet"@da , 
+	"Europos Parlamentas"@lt , 
+	"Ευρωπαϊκό Κοινοβούλιο"@el , 
+	"Europees Parlement"@nl , 
+	"Europaparlamentet"@sv , 
+	"Európai Parlament"@hu ,
+	"Parlamento europeo"@it ,
+	"Evropski parlament"@sl .
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#Pcode&gt; "2929" ;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#Street&gt;
+	"plateau de Kirchberg, 2929, Luxemburgo"@es , 
+	"plateau de Kirchberg, 2929, Luxemburgo"@pt , 
+	"plateau de Kirchberg, 2929, Λουξεμβούργο"@el , 
+	"plateau de Kirchberg, 2929, Люксембург"@bg , 
+	"plateau de Kirchberg, 2929, Luxemburg"@sv , 
+	"plateau de Kirchberg, 2929, Luxemburg"@de , 
+	"plateau de Kirchberg, 2929, Luxemburg"@fi , 
+	"plateau de Kirchberg, 2929, Luxemburg"@nl , 
+	"plateau de Kirchberg, 2929, Luxemburg"@ro , 
+	"plateau de Kirchberg, 2929, Luxemburg"@sk , 
+	"plateau de Kirchberg, 2929, Liuksemburgas"@lt ,
+	"plateau de Kirchberg, 2929, Luksemburg"@pl , 
+	"plateau de Kirchberg, 2929, Luxembourg"@hu , 
+	"plateau de Kirchberg, 2929, Luxembourg"@fr , 
+	"plateau de Kirchberg, 2929, Luxembourg"@et , 
+	"plateau de Kirchberg, 2929, Luxembourg"@en , 
+	"plateau de Kirchberg, 2929, Luxembourg"@da , 
+	"plateau de Kirchberg, 2929, Luxembourg"@sl , 
+	"plateau de Kirchberg, 2929, Luksemburga"@lv , 
+	"plateau de Kirchberg, 2929, Lucemburk"@cs , 
+	"plateau de Kirchberg, 2929, Lussemburgo"@it .
+
+&lt;http://purl.org/weso/moldeas/organization/resource/ca170#tel&gt; rdf:value "na" .
+
+&lt;http://purl.org/weso/moldeas/organization/resource/ca170#siteAddress&gt;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#EMAIL&gt;
+              &lt;http://purl.org/weso/moldeas/resource/na&gt; .
+
+&lt;http://purl.org/weso/moldeas/organization/resource/ca170#site&gt;
+      rdfs:label "Европейски парламент"@bg ;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#ADR&gt;
+              &lt;http://purl.org/weso/moldeas/organization/resource/ca170#adr&gt; ;
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#FN&gt;
+"Parlamentul European"@ro , 
+	"Euroopa Parlament"@et ,
+	"Euroopan parlamentti"@fi , 
+	"Evropský parlament"@cs , 
+	"Европейски парламент"@bg , 
+	"Parlamento Europeu"@pt , 
+	"Parlement européen"@fr , 
+	"Parlament Europejski"@pl , 
+	"Europäisches Parlament"@de , 
+	"Európsky parlament"@sk , 
+	"Parlamento Europeo"@es , 
+	"Eiropas Parlaments"@lv , 
+	"European Parliament"@en , 
+	"Europa-Parlamentet"@da , 
+	"Europos Parlamentas"@lt , 
+	"Ευρωπαϊκό Κοινοβούλιο"@el , 
+	"Europees Parlement"@nl , 
+	"Europaparlamentet"@sv , 
+	"Európai Parlament"@hu ,
+	"Parlamento europeo"@it ,
+	"Evropski parlament"@sl .
+      &lt;http://www.w3.org/2001/vcard-rdf/3.0#TEL&gt;
+              &lt;http://purl.org/weso/moldeas/organization/resource/ca170#tel&gt; .
+</pre>
+
+	</li>
+		<li>A NUTS region (enriched)...
+		<pre class="prettyprint lang-sql">
+&lt;http://purl.org/weso/moldeas/nuts/resource/ES120&gt;
+      a       nuts:NUTSRegion ;
+      rdfs:label "Asturias" ;
+      spatialrelations:containedBy
+              &lt;http://purl.org/weso/moldeas/nuts/resource/ES12&gt; ;
+      spatialrelations:spatiallyEqualTo
+              &lt;http://purl.org/weso/moldeas/nuts/resource/ES12&gt; ;
+      nuts:code "ES120"^^nuts:NUTS3Code ;
+      nuts:shapeGeoJson &lt;http://geoservice.psi.enakting.org/nuts/polygon?nuts_id=ES120&format=json&gt; ;
+      nuts:shapeKML &lt;http://geoservice.psi.enakting.org/nuts/polygon?nuts_id=ES120&format=kml&gt; ;
+      nuts:validity 
+	&lt;http://purl.org/weso/moldeas/nuts/resource/v3&gt; , 
+	&lt;http://purl.org/weso/moldeas/nuts/resource/v4&gt; ;
+      geo:lat "43.36029"^^xsd:double ;
+      geo:long "-5.84476"^^xsd:double .
+
+	</pre>
+</li>
+
+
+	<li>An enriched country...</li>
+<pre class="prettyprint lang-sql">
+moldeas-country:ESP moldeas-onto:has-iso-alpha2-code "ES";
+	moldeas-onto:ref-nuts &lt;http://purl.org/weso/moldeas/nuts/resource/ES&gt;;
+	moldeas-onto:has-iso-alpha3-code "ESP";
+	moldeas-onto:ref-dbpedia dbpedia:ISO_3166-1:ES;
+	a moldeas-onto:Country;
+	rdfs:label "Spain"@en;
+	geo:lat "40.46366700000001";
+	geo:long "-3.74922";
+	skos:altLabel "Espa\u00F1a"@ES,
+		"l'Espagne"@FR,
+		"Spain"@EN,
+		"Испания"@RU,
+		"إسبانيا"@AR,
+		"西班牙"@ZH;
+	skos:exactMatch <http://aims.fao.org/aos/geopolitical.owl#Spain>;
+	skos:hiddenLabel "Espagne"@FR,
+		"Espa\u00F1a"@ES,
+		"Spagna"@IT,
+		"Spain"@EN,
+		"Испания"@RU,
+		"سبانيا"@AR,
+		"西班牙"@ZH;
+	skos:prefLabel "el Reino de Espa\u00F1a"@ES,
+		"le Royaume d'Espagne"@FR,
+		"the Kingdom of Spain"@EN,
+		"Королевство Испания"@RU,
+		"مملكة إسبانيا"@AR,
+		"西班牙王国"@ZH.
+</pre>		
+		<li>An region...</li>
+<pre class="prettyprint lang-sql">
+moldeas-region:Europe  a moldeas-onto:Region;
+	moldeas-onto:ref-dbpedia &lt;http://dbpedia.org/resource/Europe&gt;;
+	moldeas-onto:has-country moldeas-country:FIN;
+	moldeas-onto:has-country moldeas-country:FRA;
+	moldeas-onto:has-country moldeas-country:ITA;
+	moldeas-onto:has-country moldeas-country:ISL;
+	moldeas-onto:has-country moldeas-country:TUR;
+	moldeas-onto:has-country moldeas-country:POL;
+	moldeas-onto:has-country moldeas-country:PRT;
+	moldeas-onto:has-country moldeas-country:IRL;
+	moldeas-onto:has-country moldeas-country:NOR;
+	moldeas-onto:has-country moldeas-country:RUS;
+	moldeas-onto:has-country moldeas-country:ESP;
+	moldeas-onto:has-country moldeas-country:SWE;
+	moldeas-onto:has-country moldeas-country:GBR;
+	moldeas-onto:has-country moldeas-country:DEU;
+	moldeas-onto:has-country moldeas-country:CHE;
+	rdfs:label "Europe"@en;
+.
+</pre>
+
+
+		<li>A person...</li>
+<pre class="prettyprint lang-sql">
+moldeas-people:Chema a foaf:Person;
+	foaf:depiction &lt;http://www.weso.es/img/joseMaria.jpg&gt;;
+	foaf:family_name "Alvarez Rodríguez";
+	foaf:givenname "Jose María";
+	foaf:homepage &lt;http://www.josemalvarez.es&gt;;
+	foaf:name "Jose María";
+	foaf:nick "chema";
+	foaf:title "Dr.";
+	org:memberOf moldeas-org:WESO;
+	foaf:workInfoHomepage &lt;http://www.weso.es/Contents/about&gt;;
+	foaf:workplaceHomepage &lt;http://www.weso.es/&gt;;
+	rdfs:seeAlso &lt;http://www.josemalvarez.es/foaf.rdf#me&gt;.
+.
+</pre>
+
+
+	</ul>
+    <h2><a name="querying-the-sparql-endpoint">Querying the SPARQL Endpoint</a></h2>
+	
+
+	<ul>
+
+<li><a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT+DISTINCT+*+WHERE%7B%0D%0A+%3Fppn+rdf%3Atype+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2FNotice%3E.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Flocated-in%3E+%3FnutsCode.%0D%0A+FILTER%28%3FnutsCode+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fnuts%2Fresource%2FFR%3E+%29+.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Ftopic%3E+%3FcpvCode.+%0D%0A+FILTER%28%3FcpvCode+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2Fcpv%2F2008%2Fresource%2F60000000%3E+%29+.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fidentifier%3E+%3Fid.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fdate%3E+%3Fdate+.+%0D%0A+FILTER+%28+%28xsd%3Along%28%3Fdate%29+%3E%3D++xsd%3Along%282008%29%29+%26%26+%28xsd%3Along%28%3Fdate%29+%3C%3D++xsd%3Along%282009%29%29+%29%0D%0A%7D+LIMIT+100">Give me the public procurement notices in the field of "Transport services (excl. waste transport)" that have been published in France between 2008 and 2009.</a>
+<pre class="prettyprint lang-sql">
+SELECT DISTINCT * WHERE{
+ ?ppn rdf:type &lt;http://purl.org/weso/moldeas/ontology/Notice&gt;.
+ ?ppn &lt;http://purl.org/weso/moldeas/ontology/located-in&gt; ?nutsCode.
+ FILTER(?nutsCode = &lt;http://purl.org/weso/moldeas/nuts/resource/FR&gt; ) .
+ ?ppn &lt;http://purl.org/weso/moldeas/ontology/topic&gt; ?cpvCode. 
+ FILTER(?cpvCode = &lt;http://purl.org/weso/pscs/cpv/2008/resource/60000000&gt; ) .
+ ?ppn &lt;http://purl.org/dc/terms/identifier&gt; ?id.
+ ?ppn &lt;http://purl.org/dc/terms/date&gt; ?date . 
+ FILTER ( (xsd:long(?date) &gt;=  xsd:long(2008)) && (xsd:long(?date) &lt;=  xsd:long(2009)) )
+} LIMIT 100
+</pre>
+</li>
+
+
+<li><a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT+DISTINCT+*+%0D%0AFROM+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2F%3E+%0D%0AFROM+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2F%3E+%0D%0AWHERE%7B%0D%0A+%3Fppn+rdf%3Atype+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2FNotice%3E.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Flocated-in%3E+%3FnutsCode.%0D%0A+FILTER%28%3FnutsCode+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fnuts%2Fresource%2FFR%3E+%29+.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Ftopic%3E+%3FcpvCode.+%0D%0A+%3FcpvCode+skos%3AexactMatch+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2Fcpv%2F2003%2Fresource%2F90120000%3E.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fidentifier%3E+%3Fid.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fdate%3E+%3Fdate+.+%0D%0A+FILTER+%28+%28xsd%3Along%28%3Fdate%29+%3E%3D++xsd%3Along%282008%29%29+%26%26+%28xsd%3Along%28%3Fdate%29+%3C%3D++xsd%3Along%282008%29%29+%29%0D%0A%7D+LIMIT+100">Give me the public procurement notices that have been published (with CPV code in 2003 "90120000" )in France in between 2008 and 2009.</a>
+<pre class="prettyprint lang-sql">
+SELECT DISTINCT * 
+FROM &lt;http://purl.org/weso/pscs/&gt; 
+FROM &lt;http://purl.org/weso/moldeas/&gt; 
+WHERE{
+ ?ppn rdf:type &lt;http://purl.org/weso/moldeas/ontology/Notice&gt;.
+ ?ppn &lt;http://purl.org/weso/moldeas/ontology/located-in&gt; ?nutsCode.
+ FILTER(?nutsCode = &lt;http://purl.org/weso/moldeas/nuts/resource/FR&gt; ) .
+ ?ppn &lt;http://purl.org/weso/moldeas/ontology/topic&gt; ?cpvCode. 
+ ?cpvCode skos:exactMatch &lt;http://purl.org/weso/pscs/cpv/2003/resource/90120000&gt;.
+ ?ppn &lt;http://purl.org/dc/terms/identifier&gt; ?id.
+ ?ppn &lt;http://purl.org/dc/terms/date&gt; ?date . 
+ FILTER ( (xsd:long(?date) &gt;=  xsd:long(2008)) && (xsd:long(?date) &lt;=  xsd:long(2008)) )
+} LIMIT 100
+</pre>
+</li>
+
+
+<li><a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT+DISTINCT+*++%0D%0AFROM+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2F%3E+%0D%0AFROM+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2F%3E+%0D%0AWHERE%7B%0D%0A+%3Fppn+rdf%3Atype+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2FNotice%3E.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Flocated-in%3E+%3FnutsCode.%0D%0A+FILTER%28%3FnutsCode+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fnuts%2Fresource%2FIT%3E+or+%3FnutsCode+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fnuts%2Fresource%2FES%3E+++%29+.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Ftopic%3E+%3FcpvCode.+%0D%0A+%3FcpvCode+skos%3AprefLabel+%3FcodeLabel+.%0D%0A+FILTER+%28lang%28%3FcodeLabel%29%3D%22en%22%29.%0D%0A+FILTER+%28regex%28%3FcodeLabel%2C+%22Repair%22%29+OR+regex%28%3FcodeLabel%2C+%22Construction%22%29%29.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fidentifier%3E+%3Fid.%0D%0A+%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fdate%3E+%3Fdate+.+%0D%0A+FILTER+%28+%28xsd%3Along%28%3Fdate%29+%3E%3D++xsd%3Along%282010%29%29+%26%26+%28xsd%3Along%28%3Fdate%29+%3C%3D++xsd%3Along%282010%29%29+%29%0D%0A%7D+LIMIT+10">Give me the public procurement notices about "Repair" or "Construction" that have been published in Italy and Spain during 2010 in English.</a>
+<pre class="prettyprint lang-sql">
+SELECT DISTINCT *  
+FROM &lt;http://purl.org/weso/pscs/&gt; 
+FROM &lt;http://purl.org/weso/moldeas/&gt; 
+WHERE{
+ ?ppn rdf:type &lt;http://purl.org/weso/moldeas/ontology/Notice&gt;.
+ ?ppn &lt;http://purl.org/weso/moldeas/ontology/located-in&gt; ?nutsCode.
+ FILTER(?nutsCode = &lt;http://purl.org/weso/moldeas/nuts/resource/IT&gt; or ?nutsCode = &lt;http://purl.org/weso/moldeas/nuts/resource/ES&gt;   ) .
+ ?ppn &lt;http://purl.org/weso/moldeas/ontology/topic&gt; ?cpvCode. 
+ ?cpvCode skos:prefLabel ?codeLabel .
+ FILTER (lang(?codeLabel)="en").
+ FILTER (regex(?codeLabel, "Repair") OR regex(?codeLabel, "Construction")).
+ ?ppn &lt;http://purl.org/dc/terms/identifier&gt; ?id.
+ ?ppn &lt;http://purl.org/dc/terms/date&gt; ?date . 
+ FILTER ( (xsd:long(?date) &gt;=  xsd:long(2010)) && (xsd:long(?date) &lt;=  xsd:long(2010)) )
+} LIMIT 10
+
+</pre>
+</li>
+
+<li><a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT+DISTINCT+%3FcpvCode+%3FcodeLabel+%3Ftype+%0D%0AFROM+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2F%3E+%0D%0AWHERE%7B%0D%0A+%3FcpvCode+rdf%3Atype+%3Ftype.+%0D%0A+FILTER+%28%3Ftype+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2Fcpv%2Fontology%2FClass%3E%29.%0D%0A+%3FcpvCode+skos%3AprefLabel+%3FcodeLabel+.%0D%0A+FILTER+%28lang%28%3FcodeLabel%29+%3D+%22en%22%29.%0D%0A+FILTER+%28regex%28%3FcodeLabel%2C+%22services%22%29%29.%0D%0A+%3FcpvCode+dc%3Aidentifier+%3Fid.%0D%0A%7D+">Give me the code and description of the CPV codes related to "services" in English.</a>
+<pre class="prettyprint lang-sql">
+SELECT DISTINCT ?cpvCode ?codeLabel ?type 
+FROM &lt;http://purl.org/weso/pscs/&gt; 
+WHERE{
+ ?cpvCode rdf:type ?type. 
+ FILTER (?type = &lt;http://purl.org/weso/pscs/cpv/ontology/Class&gt;).
+ ?cpvCode skos:prefLabel ?codeLabel .
+ FILTER (lang(?codeLabel) = "en").
+ FILTER (regex(?codeLabel, "services")).
+ ?cpvCode dc:identifier ?id.
+} 
+
+</pre>
+</li>
+
+<li><a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT+DISTINCT+%3FcpvCode+%3FcodeLabel+%3Fnarrower+%3FnarrowerLabel+%0D%0AFROM+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2F%3E%0D%0AWHERE%7B%0D%0A+%3FcpvCode+rdf%3Atype+%3Ftype.+%0D%0A+FILTER+%28%3Ftype+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2Fcpv%2Fontology%2FCategory%3E%29.%0D%0A+%3Fnarrower+skos%3AbroaderTransitive+%3FcpvCode+.%0D%0A+%3Fnarrower+skos%3AprefLabel+%3FnarrowerLabel.%0D%0A+FILTER+%28lang%28%3FnarrowerLabel%29+%3D+%22el%22%29.%0D%0A+%3FcpvCode+skos%3AprefLabel+%3FcodeLabel+.%0D%0A+FILTER+%28lang%28%3FcodeLabel%29+%3D+%22en%22%29.%0D%0A+FILTER+%28regex%28%3FcodeLabel%2C+%22services%22%29%29.%0D%0A+%3FcpvCode+dc%3Aidentifier+%3Fid.%0D%0A%7D+limit+10">Give me the code and description (in English) of the CPV codes (only categories) and their narrower codes with description (in Greek) related to "services".</a>
+<pre class="prettyprint lang-sql">
+SELECT DISTINCT ?cpvCode ?codeLabel ?narrower ?narrowerLabel 
+FROM &lt;http://purl.org/weso/pscs/&gt;
+WHERE{
+ ?cpvCode rdf:type ?type. 
+ FILTER (?type = &lt;http://purl.org/weso/pscs/cpv/ontology/Category&gt;).
+ ?narrower skos:broaderTransitive ?cpvCode .
+ ?narrower skos:prefLabel ?narrowerLabel.
+ FILTER (lang(?narrowerLabel) = "el").
+ ?cpvCode skos:prefLabel ?codeLabel .
+ FILTER (lang(?codeLabel) = "en").
+ FILTER (regex(?codeLabel, "services")).
+ ?cpvCode dc:identifier ?id.
+} LIMIT 10
+</pre>
+</li>
+
+
+</li>
+		<li><a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT+%3Fppn+%3FotherCountry+%3FotherCountryName+%0D%0AWHERE%7B%0D%0A++%3Fppn+rdf%3Atype+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2FNotice%3E.%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Ftopic%3E+%3FcpvCode.%0D%0A++FILTER+%28%3FcpvCode%3D%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fpscs%2Fcpv%2F2008%2Fresource%2F72254000%3E%29.+%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Flocated-in%3E+%3FnutsCode.++%0D%0A++FILTER%28%3FnutsCode+%3D+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fnuts%2Fresource%2FBE%3E%29.%0D%0A++%3Fcountry+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Fref-nuts%3E+%3FnutsCode.%0D%0A++%3Fcountry+geo%3Alat+%3Flat.%0D%0A++%3Fcountry+geo%3Along+%3Flong.%0D%0A++%3FotherCountry+rdf%3Atype+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2FCountry%3E.%0D%0A++FILTER%28%3Fcountry+%21%3D+%3FotherCountry%29.%0D%0A++%3FotherCountry+geo%3Alat+%3Flat1.%0D%0A++%3FotherCountry+geo%3Along+%3Flong1.%0D%0A++FILTER%28xsd%3Adouble%28%3Flat1%29+-+xsd%3Adouble%28%3Flat%29+%3C%3D+2+%26%26+xsd%3Adouble%28%3Flat%29+-+xsd%3Adouble%28%3Flat1%29+%3C%3D+2+%26%26%0D%0Axsd%3Adouble%28%3Flong1%29+-+xsd%3Adouble%28%3Flong%29+%3C%3D+2+%26%26+xsd%3Adouble%28%3Flong%29+-+xsd%3Adouble%28%3Flong1%29+%3C%3D+2%29.%0D%0A++%3FotherCountry+skos%3AprefLabel+%3FotherCountryName.%0D%0A++FILTER+%28lang%28%3FotherCountryName%29%3D+%27fr%27%29.%0D%0A%7D+limit+10">Give me the public procurement notices about "Software Testing" in countries (name in French) close to Belgium (&gt; 200km).</a>
+<pre class="prettyprint lang-sql">
+SELECT ?ppn ?otherCountry ?otherCountryName 
+WHERE{
+  ?ppn rdf:type &lt;http://purl.org/weso/moldeas/ontology/Notice&gt;.
+  ?ppn &lt;http://purl.org/weso/moldeas/ontology/topic&gt; ?cpvCode.
+  FILTER (?cpvCode=&lt;http://purl.org/weso/pscs/cpv/2008/resource/72254000&gt;). 
+  ?ppn &lt;http://purl.org/weso/moldeas/ontology/located-in&gt; ?nutsCode.  
+  FILTER(?nutsCode = &lt;http://purl.org/weso/moldeas/nuts/resource/BE&gt;).
+  ?country &lt;http://purl.org/weso/moldeas/ontology/ref-nuts&gt; ?nutsCode.
+  ?country geo:lat ?lat.
+  ?country geo:long ?long.
+  ?otherCountry rdf:type &lt;http://purl.org/weso/moldeas/ontology/Country&gt;.
+  FILTER(?country != ?otherCountry).
+  ?otherCountry geo:lat ?lat1.
+  ?otherCountry geo:long ?long1.
+  FILTER(xsd:double(?lat1) - xsd:double(?lat) &lt;= 2 && xsd:double(?lat) - xsd:double(?lat1) &lt;= 2 &&
+xsd:double(?long1) - xsd:double(?long) &lt;= 2 && xsd:double(?long) - xsd:double(?long1) &lt;= 2).
+  ?otherCountry skos:prefLabel ?otherCountryName.
+  FILTER (lang(?otherCountryName)= 'fr').
+} LIMIT 10
+</pre>
+
+</li>
+
+<li>
+
+<a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT++str%28%3Flabel%29+%28COUNT%28%3Fcpv%29+as+%3FpCount%29%0D%0AWHERE%0D%0A%7B%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Ftopic%3E+%3Fcpv+.%0D%0A++%3Fcpv+rdfs%3Alabel+%3Flabel.%0D%0A++filter%28lang%28%3Flabel%29%3D%22en%22%29%0D%0A%7D%0D%0AGROUP+BY+str%28%3Flabel%29+%0D%0AORDER+BY+desc%28%3FpCount%29%0D%0ALIMIT+100">The top 100 of CPV codes.</a>
+
+
+<pre class="prettyprint lang-sql">
+SELECT  str(?label) (COUNT(?cpv) as ?pCount)
+WHERE
+{
+  ?ppn &lt;http://purl.org/weso/moldeas/ontology/topic> ?cpv .
+  ?cpv rdfs:label ?label.
+  filter(lang(?label)="en")
+}
+GROUP BY str(?label) 
+ORDER BY desc(?pCount)
+LIMIT 100
+</pre>
+
+</li>
+
+
+
+
+<li>
+
+<a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT++str%28%3Fyear%29+%28COUNT%28%3Fppn%29+as+%3FpCount%29%0D%0AWHERE%0D%0A%7B%0D%0A++%3Fppn+rdf%3Atype+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2FNotice%3E.%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fdate%3E+%3Fyear.%0D%0A%7D%0D%0AGROUP+BY+str%28%3Fyear%29+%0D%0AORDER+BY+desc%28%3FpCount%29">Number of notices per year.</a>
+
+
+<pre class="prettyprint lang-sql">
+SELECT  str(?year) (COUNT(?ppn) as ?pCount)
+WHERE
+{
+  ?ppn rdf:type &lt;http://purl.org/weso/moldeas/ontology/Notice&gt;.
+  ?ppn &lt;http://purl.org/dc/terms/date&gt; ?year.
+}
+GROUP BY str(?year) 
+ORDER BY desc(?pCount)
+</pre>
+
+</li>
+
+<li>
+
+<a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT++str%28%3Flabel%29+%28COUNT%28%3Fnuts%29+as+%3FpCount%29%0D%0AWHERE%0D%0A%7B%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Ftopic%3E+%3Fnuts+.%0D%0A++%3Fnuts+rdfs%3Alabel+%3Flabel.%0D%0A++filter%28lang%28%3Flabel%29%3D%22en%22%29%0D%0A%7D%0D%0AGROUP+BY+str%28%3Flabel%29+%0D%0AORDER+BY+desc%28%3FpCount%29%0D%0ALIMIT+50">The top 50 of NUTS codes.</a>
+
+
+<pre class="prettyprint lang-sql">
+SELECT  str(?label) (COUNT(?nuts) as ?pCount)
+WHERE
+{
+  ?ppn &lt;http://purl.org/weso/moldeas/ontology/topic&gt; ?nuts .
+  ?nuts rdfs:label ?label.
+  filter(lang(?label)="en")
+}
+GROUP BY str(?label) 
+ORDER BY desc(?pCount)
+LIMIT 50
+</pre>
+
+</li>
+
+<li>
+
+<a href="http://156.35.82.103/moldeas-web/snorql/?query=SELECT++str%28%3FprefLabel%29+%28COUNT%28%3Fnuts%29+as+%3FpCount%29%0D%0AWHERE%0D%0A%7B%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Flocated-in%3E+%3Fnuts+.%0D%0A++%3Fppn+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fdate%3E+%3Fdate.%0D%0A++filter%28str%28%3Fdate%29%3D%222010%22%29.%0D%0A++%3Fcountry+%3Chttp%3A%2F%2Fpurl.org%2Fweso%2Fmoldeas%2Fontology%2Fref-nuts%3E+%3Fnuts.%0D%0A++%3Fcountry+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23prefLabel%3E+%3FprefLabel.%0D%0A++filter%28lang%28%3FprefLabel%29%3D%22zh%22%29%0D%0A%7D%0D%0AGROUP+BY+str%28%3FprefLabel%29+%0D%0AORDER+BY+desc%28%3FpCount%29%0D%0ALIMIT+10">The top 10 regions (name in Chinese) by number of notices in 2010.</a>
+
+
+<pre class="prettyprint lang-sql">
+SELECT  str(?prefLabel) (COUNT(?nuts) as ?pCount)
+WHERE
+{
+  ?ppn &lt;http://purl.org/weso/moldeas/ontology/located-in&gt; ?nuts .
+  ?ppn &lt;http://purl.org/dc/terms/date&gt; ?date.
+  filter(str(?date)="2010").
+  ?country &lt;http://purl.org/weso/moldeas/ontology/ref-nuts&gt; ?nuts.
+  ?country &lt;http://www.w3.org/2004/02/skos/core#prefLabel&gt; ?prefLabel.
+  filter(lang(?prefLabel)="zh")
+}
+GROUP BY str(?prefLabel) 
+ORDER BY desc(?pCount)
+LIMIT 10
+</pre>
+
+</li>
+
+
+	</ul>
+<p>These last "count" queries can be visualized in the <a href="./view.html">View Statistics</a> page.</p>	
+    <h3><a name="tools-and-services">Tools and Services</a></h3>
+	   <ul>
+	      <li><a href="http://156.35.82.103/sparql">SPARQL Endpoint</a> by <a href="http://virtuoso.openlinksw.com/">OpenLink-Virtuoso</a></li>
+	      <li><a href="http://purl.org/weso/moldeas/">Linked Data Frontend</a> by <a href="http://www4.wiwiss.fu-berlin.de/pubby/">Pubby</a></li>
+	      <li><a href="http://156.35.82.103/snorql">Explore the Endpoint</a> by <a href="http://data.semanticweb.org/snorql/">SNORQL</a></li>
+	    </ul>
+    <h3><a name="statistics">Statistics</a></h3>
+<p>This is a summary of the statistics provided by <a href="http://virtuoso.openlinksw.com/">OpenLink-Virtuoso</a>. 
+
+<table class="table table-striped">
+		<thead>
+		<tr>
+			<td><strong>Graph</strong></td>
+			<td><strong>Elements</strong></td>
+			<td><strong>RDF triples </strong></td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>MOLDEAS (covering public procurement notices, countries, etc.)</td>
+			<td>919341 (PPNs), 1779 (NUTS) and 246 (countries) among others</td>
+			<td>10704984</strong></td>
+
+		</tr>
+
+		<tr>
+			<td>PSCSs (covering 9 classifications)</td>
+			<td>53423</td>
+			<td>1845039</td>
+
+		</tr>
+	
+		<tr>
+			<td>Organizations</td>
+			<td>106220</td>
+			<td>14576732</td>
+
+		</tr>
+
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><strong>1081009</strong></td>
+			<td><strong>27126755</strong></td>
+
+		</tr>
+		
+		</tbody>
+</table>
+
+
+<!--end content-->
+
+
+ 	
+      <hr>
+
+      <div class="footer">
+
+		<p style="text-align:center">MOLDEAS is part of <a href="http://rd.10ders.net/"><strong>10ders Information Services project</strong></a> partially 
+		funded by the <a href="http://www.mityc.es/">Spanish Ministry of Industry, Commerce and Tourism</a> 
+		with code TSI-020100-2010-919 and the <a href="http://europa.eu/legislation_summaries/employment_and_social_policy/job_creation_measures/l60015_es.htm">European 
+		Regional Development Fund (EFDR)</a> according to the <a href="http://www.micinn.es/portal/site/MICINN/">National Plan of Scientific Research, Development and 			Technological Innovation 2008-2011</a>, 	leaded by <a href="http://gateway-scs.es/">Gateway Strategic Consultancy Services</a> and developed in cooperation with 		<a href="http://www.exis-ti.com/">Exis-TI</a> and the <a href="http://www.weso.es">WESO Research Group</a>.</p>
+						
+		<p style="text-align:center">Partially funded by:</p>
+<p style="text-align:center">        
+		<a href="http://www.mityc.es/" class="image" title="Logo_MITYC.png">
+			<img alt="Logo_MITYC.png" src="./img/Logo_MITYC.png" width="150" height="30" border="0" />
+		    </a> 
+		<a href="http://www.planavanza.es" class="image" title="logo-plan-avanza2.gif">
+		<img alt="Logo Avanza" src="./img/Logo-plan-avanza2.gif" width="150" height="30" border="0" /></a>
+	<a href="#" class="image" title="Logo_FEDER_una_manera_de_hacer_europa.gif">
+		<img alt="Logo_FEDER_una_manera_de_hacer_europa.gif" src="./img/Logo_FEDER_una_manera_de_hacer_europa.gif" width="100" height="43" border="0" /></a>  
+
+    	     </p> 
+
+      <hr>
+
+        <p style="text-align:center"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MOLDEAS as part of the <a href="#">10dersIS project</a></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="http://www.josemalvarez.es">Jose María Alvarez-Rodríguez</a> and <a href="http://www.weso.es">the WESO Research Group</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </p>
+        
+        
+        
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap-transition.js"></script>
+    <script src="./bootstrap/js/bootstrap-alert.js"></script>
+    <script src="./bootstrap/js/bootstrap-modal.js"></script>
+    <script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap/js/bootstrap-tab.js"></script>
+    <script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap/js/bootstrap-popover.js"></script>
+    <script src="./bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    
+    
+  </body>
+</html

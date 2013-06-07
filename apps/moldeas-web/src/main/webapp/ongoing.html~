@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <title>MOLDEAS PROJECT-Ongoing Initiatives</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="./js/prettify.js"></script>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    
+      <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">MOLDEAS-Methods On Linked Data for E-procurement Applying Semantics</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+	     <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+		<li><a href="./documentation.html">Documentation</a></li>
+	        <li><a href="./demo.html">Demo</a></li>
+                <li><a href="./publications.html">Publications</a></li>
+                <li><a href="./software-datasets.html">Software and Datasets</a></li>
+                <li><a href="./view.html">View Statistics</a></li>
+		<li class="active"><a href="#">On-going initiatives</a></li>
+		<li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>MOLDEAS on the move...</h1>
+        <p class="lead"><em>"It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is the most adaptable to change."</em> Charles Darwin.</p>
+      	 <a class="btn btn-large btn-success" href="./contact.html">Contact Us!</a>
+      </div>
+
+      <hr>
+	<h2>Research Activities</h2>
+	<ul>
+		
+		<li>Guest editors of Computers in Industry. An International, Application Oriented Research Journal. Impact factor: 1.620. Special Issue: <a href="http://www.journals.elsevier.com/computers-in-industry/call-for-papers/special-issue-on-new-trends-on-e-procurement/">"New trends on E-Procurement applying Semantic Technologies"</a>.</li>
+		
+
+	<li><a href="https://github.com/chemaar/corfu">The CORFU (Company, Organization and Firm unifier)</a> project:
+	<ul>
+	<li>Rodríguez, J. M. A. A natural language and semantic-based technique to unify corporate names in the e-Procurement sector. The CORFU approach. The 8th South East European Doctoral Student Conference. 2013. (Under review).
+
+	<p style="text-align:justify"><strong>Abstract.</strong> Public administrations are currently facing a big challenge trying to improve both the performance and the transparency of administrative processes.In this context the e-Government and Open Linked Data initiatives are tackling existing interoperability and integration issues among ICT-based systems but the creation of a real transparent environment requires much more than the simple publication of data and information in specific open formats; data and information 
+	quality is the next major step in the pubic sector. More specifically in the e-Procurement domain there is a vast amount of valuable data that is already available via the Internet protocols and formats and can be used for the creation of new added-value services. Nevertheless the simple extraction of statistics or creation of reports can imply extra tasks with regards to clean, prepare and reconcile data. From a transparency point of view one of the most interesting services lies in tracking rewarded contracts (type, location, and supplier). Depending on the capabilities of the public organization this kind of basic report can turn into a complex task due to a lack of standardization in supplier names or the use of different descriptors for the type of contract. That is why this paper presents a stepwise method based on natural language processing and semantics to deal with the heterogeneities in corporate names. Furthermore a research study to evaluate the precision and recall of the proposed technique, using as use case the public dataset of rewarded public contracts in Australia during the period 2004-2012, is also presented. Finally some discussion, conclusions and future work are also outlined.</p></li>
+
+	<li>See the initial results of unifying corporate names (when initially all names were in 1):
+
+		<p style="text-align:center">
+		<img src="img/corfu-stats.png" title="CORFU Stats" width="50%"/>
+		</p>
+
+	</li>
+
+	<li>From a graphical point of view, please visit the next bubble clouds:
+
+		<ul>
+			<li><a href="view.html?corfu#">Others from the CORFU technique</a>.
+			<li><a href="view.html?forbes#">The top 100 of Forbes Companies in Australian Public Contracts</a>.
+		</ul>
+
+	</li>
+
+</ul>
+
+</li>
+
+<li>Vafopoulos, Michalis N., Rodríguez,  J. M. Á., Meimaris, Marios, Xidias, Ioannis, Klonaras, Michailis and Vafeiadis, Giorgos, Insights in Global Public Spending (May 12, 2013). <a href="http://i-semantics.tugraz.at/i-challenge/call-for-submissions">I-Challenge 2013 on 9th International Conference on Semantic Systems (I-Semantics 2013).</a>(Under review)
+	<ul>
+		<li>The collaboration here has generated the <a href="http://publicspending.net">PublicSpending.net</a> portal.</li>
+	</ul>
+
+</li>
+
+	</ul>
+	<h2>Collaborations and Networking</h2>
+        	<ul>
+		
+		<li><a href="http://publicspending.net">PublicSpending.net</a></li>
+		<li>Contact with people involved in the European project <a href="http://lod2.eu/">LOD2</a>, more specifically in the <a href="http://lod2.eu/WorkPackage/wp9a.html">WP9A – LOD2 for a distributed Marketplace for Public Sector Contracts</a>.
+		<li><a href="http://www.w3.org/community/opendataspain/2013/04/01/grupo-de-contratacion-publica-3/">W3C Community Group on Public Contracts and Open Data(Spain)</a></li>
+		<li><a href="http://www.w3.org/community/bpmlod/">Best Practices for Multilingual Linked Open Data Community Group</a></li>
+	</ul>
+      	
+      <hr>
+
+      <div class="footer">
+
+		<p style="text-align:center">MOLDEAS is part of <a href="http://rd.10ders.net/"><strong>10ders Information Services project</strong></a> partially 
+		funded by the <a href="http://www.mityc.es/">Spanish Ministry of Industry, Commerce and Tourism</a> 
+		with code TSI-020100-2010-919 and the <a href="http://europa.eu/legislation_summaries/employment_and_social_policy/job_creation_measures/l60015_es.htm">European 
+		Regional Development Fund (EFDR)</a> according to the <a href="http://www.micinn.es/portal/site/MICINN/">National Plan of Scientific Research, Development and 			Technological Innovation 2008-2011</a>, 	leaded by <a href="http://gateway-scs.es/">Gateway Strategic Consultancy Services</a> and developed in cooperation with 		<a href="http://www.exis-ti.com/">Exis-TI</a> and the <a href="http://www.weso.es">WESO Research Group</a>.</p>
+						
+		<p style="text-align:center">Partially funded by:</p>
+<p style="text-align:center">        
+		<a href="http://www.mityc.es/" class="image" title="Logo_MITYC.png">
+			<img alt="Logo_MITYC.png" src="./img/Logo_MITYC.png" width="150" height="30" border="0" />
+		    </a> 
+		<a href="http://www.planavanza.es" class="image" title="logo-plan-avanza2.gif">
+		<img alt="Logo Avanza" src="./img/Logo-plan-avanza2.gif" width="150" height="30" border="0" /></a>
+	<a href="#" class="image" title="Logo_FEDER_una_manera_de_hacer_europa.gif">
+		<img alt="Logo_FEDER_una_manera_de_hacer_europa.gif" src="./img/Logo_FEDER_una_manera_de_hacer_europa.gif" width="100" height="43" border="0" /></a>  
+
+    	     </p> 
+
+      <hr>
+
+        <p style="text-align:center"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MOLDEAS as part of the <a href="#">10dersIS project</a></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="http://www.josemalvarez.es">Jose María Alvarez-Rodríguez</a> and <a href="http://www.weso.es">the WESO Research Group</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </p>
+        
+        
+        
+      </div>  
+        
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap-transition.js"></script>
+    <script src="./bootstrap/js/bootstrap-alert.js"></script>
+    <script src="./bootstrap/js/bootstrap-modal.js"></script>
+    <script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap/js/bootstrap-tab.js"></script>
+    <script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap/js/bootstrap-popover.js"></script>
+    <script src="./bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    
+    
+  </body>
+</html

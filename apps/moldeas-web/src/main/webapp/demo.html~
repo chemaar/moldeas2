@@ -1,0 +1,366 @@
+<html>
+  <head>
+    <title>MOLDEAS PROJECT-Demo</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!--Backport-->
+	<style type="text/css" title="currentStyle"> 
+			@import "./backport/css/demo_page.css";
+			@import "./backport/css/demo_table.css";
+	</style> 
+
+    <!--Exhibit Local
+	<script src="exhibit/exhibit-1.js"></script>
+	<script src="exhibit/simile-ajax-api.js"></script>
+	<script src="exhibit/timeline-api.js"></script>
+	<script src="exhibit/time-extension.js"></script>
+	<script src="exhibit/map-extension.js"></script>
+-->
+    <!--Exhibit-->
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/exhibit-api.js?autoCreate=false&gmapkey=AIzaSyADbk3D8D2j6AB0RWcv_Ha5oR3BYbX86ho"></script>
+	<script src="http://api.simile-widgets.org/ajax/2.2.1/simile-ajax-api.js"></script>
+	<script src="http://api.simile-widgets.org/timeline/2.3.1/timeline-api.js"></script>
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/time/time-extension.js"></script>
+	<script src="http://api.simile-widgets.org/exhibit/2.2.0/extensions/map/map-extension.js"></script>
+
+
+   <!--End Exhibit-->
+
+        <script src="backport/js/jquery.min.js"></script>
+        <script src="backport/js/jquery-ui.min.js"></script>
+        <link href="backport/js/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="stylesheet" type="text/css" href="backport/css/Moldeas.css">
+        <link rel="stylesheet" type="text/css" href="backport/css/jquery.jqplot.css" /> 
+        <link rel="stylesheet" type="text/css" href="backport/css/jquery.bubblepopup.v2.3.1.css" /> 
+
+
+
+	<script type="text/javascript" src="backport/js/principal.js"></script>
+    	<script type="text/javascript" src="backport/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="backport/js/ui.core.js"></script> 
+
+   <!-- BEGIN: load jqplot --> 
+        <script language="javascript" type="text/javascript" src="backport/js/jquery.jqplot.js"></script> 
+        <script language="javascript" type="text/javascript" src="backport/js/jqplot.barRenderer.js"></script> 
+       <script language="javascript" type="text/javascript" src="backport/js/jqplot.categoryAxisRenderer.js"></script> 
+    <!-- END: load jqplot --> 
+
+
+
+<!--End Backport-->
+  </head>
+  <body>
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+
+    <!--<script src="http://code.jquery.com/jquery.js"></script>-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    
+      <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">MOLDEAS-Methods On Linked Data for E-procurement Applying Semantics</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+	     <ul class="nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./documentation.html">Documentation</a></li>
+		<li class="active"><a href="#">Demo</a></li>
+                <li><a href="./publications.html">Publications</a></li>
+                <li><a href="./software-datasets.html">Software and Datasets</a></li>
+                <li><a href="./view.html">View Statistics</a></li>
+                <li><a href="./ongoing.html">On-going initiatives</a></li>
+		<li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Run MOLDEAS...</h1>
+        <p class="lead">Test the application and the search service...</p>
+	<a class="btn btn-large btn-success" href="./publications.html">See the publications</a>
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+	<form class="chartConfiguratorThingy"> 	
+        <div class="span4">
+         		<fieldset class="typeOptions"> 
+				<legend>Select some <strong>CPV</strong> code...</legend> 
+					<div class="fieldGroup"> 
+					<div class="dependencies"> 
+					<div class="fieldGroup"> 
+						<div id="loading"><img src="backport/images/ajax-loader.gif">Loading...</div>
+						<ul class="cpv_input">
+						 	<li><input type="radio" name="cpvTextCode"  value="text" checked="false"/><span>Text</span></li>
+				  			<li><input type="radio" name="cpvTextCode"  value="code" checked="false"/><span>Code</span></li>
+						</ul>	
+						<label><input type="text" id="txt_buscador" onkeyup="suggestion()" style="height: 3em; width: 100%;"/></label>
+						<div id="suggestionsList"></div>
+						<div>
+						    <input id="bnt_lookup_codes"  type="button" value="Add" style="display:none" class="btn btn-primary">
+						    <input id="bnt_remove_codes"  type="button" value="Remove" style="display:none" class="btn">
+						</div>									
+
+						   <select id="cpvCodes" id="right" size="12" multiple="multiple" style="margin:1em; display:none">
+						    </select>
+					</div> 								
+					</div> 
+				</div> 
+			</fieldset> 
+	</div><!--span4-->
+	<div class="span4">
+			<fieldset class="typeOptions"> 
+				<legend>...and a <strong>NUTS</strong> region...</legend> 
+					<div class="fieldGroup"> 
+					<div class="dependencies"> 
+					<div class="fieldGroup"> 
+						<div id="loadingNuts"><img src="backport/images/ajax-loader.gif">Loading...</div>
+							<div style="height: 32px;"></div>	
+						<label><input type="text" id="txt_buscador_nuts" onkeyup="suggestionNutsCodes()"  style="height: 3em; width: 100%;" /></label>
+						<div id="nutsCodesList"></div>
+						<div>
+						    <input id="bnt_lookup_nuts_codes"  type="button" value="Add" style="display:none" class="btn btn-primary">
+						    <input id="bnt_remove_nuts_codes"  type="button" value="Remove" style="display:none" class="btn">
+						</div>									
+
+					   <select id="nutsCodes" id="right" size="12" multiple="multiple" style="margin:1em; display:none">
+					    </select>
+
+					</div> 
+					</div> 
+					</div> 
+			</fieldset> 
+	</div><!--span4-->
+        <div class="span4">
+			<fieldset class="typeOptions"> 
+				<legend>...filter by <strong>year!</strong></legend> 
+				<div class="fieldGroup"> 
+				<div class="dependencies"> 
+				<div class="fieldGroup"> 
+				<div class="demo">
+					<p style="text-align: center;"> <input type="text" id="years" style="height: 2em; text-align: center; border:0; font-weight:bold; font-size:2em;" disabled></p>
+					<div id="slider-range-years"></div>
+				</div>
+				
+				</div> 
+				</div> 
+				</div> 
+			</fieldset> 
+	</div><!--span4-->
+<!--
+			<fieldset class="typeOptions"> 
+				<legend>Total Cost</legend> 
+				<div class="fieldGroup"> 
+				<div class="dependencies"> 
+				<div class="fieldGroup"> 			
+				<div class="demo">
+					<p> <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" /></p>
+					<div id="slider-range"></div>
+				</div>
+				</div> 
+				</div> 
+				</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>Duration</legend> 
+				<div class="fieldGroup"> 
+				<div class="dependencies"> 
+				<div class="fieldGroup"> 
+				<div class="demo">
+					<p> <input type="text" id="duration" style="border:0; color:#f6931f; font-weight:bold;" /></p>
+					<div id="slider-range-duration"></div>
+
+				</div>	
+				</div> 
+				</div> 
+				</div> 
+			</fieldset> 
+			<fieldset class="typeOptions"> 
+				<legend>Type of company</legend> 
+					<div class="fieldGroup"> 
+						<div class="dependencies"> 
+							<div class="fieldGroup"> 
+								<ul class="results">
+								  <li><input type="radio" name="company"  value="sme" checked="false" />SME</li>
+				  				  <li><input type="radio" name="company"  value="le" checked="false"/>LE</li>
+ 								  <li><input type="radio" name="company"  value="other" checked="false"/>Other</li>
+								</ul>
+							</div> 								
+						</div> 
+					</div> 
+			</fieldset> 
+
+			-->
+
+	</form> 
+
+      </div>
+
+
+      <hr>
+
+
+<!--Searching and results-->
+				<div id="mainContent">				
+					<div id="searching"><img src="backport/images/ajax-loader.gif">Searching...</div>	
+					<div id="results"></div>					
+					<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"></table>
+					<!--<div id="chart1"></div> -->
+				</div>
+
+
+
+
+
+		<!--Exhibit-->
+
+					 <div id="exhibit-content" style="display:none"> 
+					    <div id="title-panel"> 
+						<h3>Showing Results with Exhibit!</h3> 
+					     </div> 
+					    
+					    <div id="top-panels"> 
+						<table width="100%"><tr> 
+						    <td><div ex:role="facet" ex:expression=".year" ex:facetLabel="Year"></div></td> 
+						    <td><div ex:role="facet" ex:expression=".description" ex:facetLabel="Description"></div></td> 
+						    <td><div ex:role="facet" ex:expression=".location" ex:facetLabel="Location"></div></td> 						    	    <td><div ex:role="facet" ex:expression=".score" ex:facetLabel="Score"></div></td> 
+						</tr></table> 
+					    </div> 
+					    <div ex:role="viewPanel" style="padding: 1em 0.5in;"> 
+						<table ex:role="lens" class="ppnlist" style="display: none;"><tr> 
+						    <td> 
+							<div ex:content=".code" class="name"></div> 
+							<div ex:content=".description" class="name"></div> 
+							<div> 
+							    <span ex:content=".location" class="location"></span>, 
+							    <i ex:content=".year"></i> 
+							</div> 
+						     </td> 
+						</tr></table> 
+		
+						  <div ex:role="view"
+						    ex:label="Details"
+						    ex:viewClass="Tile"
+						    ex:showAll="true"
+						    ex:orders=".code, .location, .year"
+						    ex:possibleOrders=".code, .description, .location, .score, .year"> 
+						</div> 
+					  	 <div ex:role="view"
+								ex:viewClass="Map"
+								ex:label="Map Location"
+								ex:latlng=".latLng"
+								ex:center="40.441, -3.702"
+								ex:zoom="3"
+								ex:bubbleWidth="200"
+								ex:shapeWidth="60"
+								ex:shapeHeight="60"
+								>
+							    </div>
+
+						<div ex:role="view"
+						    ex:viewClass="Timeline"
+						    ex:label="Timeline"
+						    ex:start=".year"
+						    ex:colorKey=".location"
+						    ex:bubbleWidth="150"
+						    ex:bubbleHeight="150"> 
+						    <div ex:role="lens" class="ppnlist-timeline-lens" style="display: none;"> 
+							<div><span ex:content=".description"></span></div> 
+							<div> 
+							    <span ex:content=".location" class="location"></span>, 
+							    <span ex:content=".year" class="year"></span> 
+							</div> 
+						    </div> 
+						</div> 
+					    </div> 
+					</div> <!--End Exhibit Content-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr>
+
+      <div class="footer">
+
+		<p style="text-align:center">MOLDEAS is part of <a href="http://rd.10ders.net/"><strong>10ders Information Services project</strong></a> partially 
+		funded by the <a href="http://www.mityc.es/">Spanish Ministry of Industry, Commerce and Tourism</a> 
+		with code TSI-020100-2010-919 and the <a href="http://europa.eu/legislation_summaries/employment_and_social_policy/job_creation_measures/l60015_es.htm">European 
+		Regional Development Fund (EFDR)</a> according to the <a href="http://www.micinn.es/portal/site/MICINN/">National Plan of Scientific Research, Development and 			Technological Innovation 2008-2011</a>, 	leaded by <a href="http://gateway-scs.es/">Gateway Strategic Consultancy Services</a> and developed in cooperation with 		<a href="http://www.exis-ti.com/">Exis-TI</a> and the <a href="http://www.weso.es">WESO Research Group</a>.</p>
+						
+		<p style="text-align:center">Partially funded by:</p>
+<p style="text-align:center">        
+		<a href="http://www.mityc.es/" class="image" title="Logo_MITYC.png">
+			<img alt="Logo_MITYC.png" src="./img/Logo_MITYC.png" width="150" height="30" border="0" />
+		    </a> 
+		<a href="http://www.planavanza.es" class="image" title="logo-plan-avanza2.gif">
+		<img alt="Logo Avanza" src="./img/Logo-plan-avanza2.gif" width="150" height="30" border="0" /></a>
+	<a href="#" class="image" title="Logo_FEDER_una_manera_de_hacer_europa.gif">
+		<img alt="Logo_FEDER_una_manera_de_hacer_europa.gif" src="./img/Logo_FEDER_una_manera_de_hacer_europa.gif" width="100" height="43" border="0" /></a>  
+
+    	     </p> 
+
+      <hr>
+
+        <p style="text-align:center"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">MOLDEAS as part of the <a href="#">10dersIS project</a></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><a href="http://www.josemalvarez.es">Jose María Alvarez-Rodríguez</a> and <a href="http://www.weso.es">the WESO Research Group</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+        </p>
+        
+        
+        
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap-transition.js"></script>
+    <script src="./bootstrap/js/bootstrap-alert.js"></script>
+    <script src="./bootstrap/js/bootstrap-modal.js"></script>
+    <script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="./bootstrap/js/bootstrap-tab.js"></script>
+    <script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="./bootstrap/js/bootstrap-popover.js"></script>
+    <script src="./bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+    
+    
+  </body>
+</html
