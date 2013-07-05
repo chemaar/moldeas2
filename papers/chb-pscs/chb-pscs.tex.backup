@@ -1,0 +1,196 @@
+\documentclass[preprint,12pt]{elsarticle}
+
+
+%% The `ecrc' package must be called to make the CRC functionality available
+%\usepackage{ecrc}
+
+%% set the volume if you know. Otherwise `00'
+%\volume{00}
+
+%% set the starting page if not 1
+%\firstpage{1}
+
+%% Give the name of the journal
+%\journalname{Expert Systems With Applications}
+
+%% Give the author list to appear in the running head
+%% Example \runauth{C.V. Radhakrishnan et al.}
+%\runauth{}
+
+%% The choice of journal logo is determined by the \jid and \jnltitlelogo commands.
+%% A user-supplied logo with the name <\jid>logo.pdf will be inserted if present.
+%% e.g. if \jid{yspmi} the system will look for a file yspmilogo.pdf
+%% Otherwise the content of \jnltitlelogo will be set between horizontal lines as a default logo
+
+%% Give the abbreviation of the Journal.  Contact the journal editorial office if in any doubt
+%\jid{eswa}
+
+%% Give a short journal name for the dummy logo (if needed)
+%\jnltitlelogo{ESWA Logo}
+
+%% Provide the copyright line to appear in the abstract
+%% Usage:
+%   \CopyrightLine[<text-before-year>]{<year>}{<restt-of-the-copyright-text>}
+%   \CopyrightLine[Crown copyright]{2011}{Published by Elsevier Ltd.}
+%   \CopyrightLine{2011}{Elsevier Ltd. All rights reserved}
+%\CopyrightLine{2013}{Published by Elsevier Ltd.}
+
+
+
+%\usepackage{llncsdoc}
+\usepackage[figuresright]{rotating}
+%\usepackage{makeidx}  % allows for indexgeneration
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+
+\usepackage{url}
+\usepackage{rotating}
+
+%%%Math
+\usepackage{latexsym}
+% \usepackage{amsmath}
+% \usepackage{amssymb}
+% \usepackage{amsthm}
+%\usepackage{eurosans}
+
+\usepackage{eurosym}
+
+\usepackage{longtable}
+
+\usepackage{listings}
+
+\usepackage{color}
+\usepackage{textcomp}
+
+
+\definecolor{gray}{gray}{0.5}
+\definecolor{green}{rgb}{0,0.5,0}
+
+
+\begin{document}
+
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+%\dochead{}
+%% Use \dochead if there is an article header, e.g. \dochead{Short communication}
+%% \dochead can also be used to include a conference title, if directed by the editors
+%% e.g. \dochead{17th International Conference on Dynamical Processes in Excited States of Solids}
+
+
+\title{Empowering the access to public procurement opportunities by means of linking controlled vocabularies.  A case study of Product Scheme Classifications in the European e-Procurement sector.}
+
+
+%% use optional labels to link authors explicitly to addresses:
+\author[label1]{Jose María Alvarez-Rodríguez\corref{cor1}}
+\address[label1]{The South East European Research Center, Thessaloniki, Greece}
+\ead{jmalvarez@seerc.org}
+\ead[url]{http://www.seerc.org}
+
+\author[label2]{José Emilio Labra-Gayo}
+\address[label2]{WESO Research Group, Department of Computer Science, University of Oviedo, 33007, Oviedo, Spain.}
+\ead{labra@uniovi.es}
+
+\author[label3]{Patricia Ordoñez De Pablos}
+\address[label3]{WESO Research Group, Department of Business Administration, University of Oviedo, 33007, Oviedo, Spain.}
+\ead{patriop@uniovi.es}
+
+\author[label4]{Patricia Ordoñez De Pablos}
+\address[label4]{WESO Research Group, Department of Business Administration, University of Oviedo, 33007, Oviedo, Spain.}
+\ead{patriop@uniovi.es}
+
+
+
+\author{}
+
+\address{}
+
+\begin{abstract}
+This article introduces a method to promote existing controlled vocabularies to 
+the Linked Data initiative. A common data model and an enclosed conversion 
+method for knowledge organization systems based on semantic web technologies and 
+vocabularies such as SKOS are presented.  This method is applied to well-known 
+taxonomies and controlled vocabularies in the business sector, more specifically 
+to Product Scheme Classifications created by governmental institutions such as 
+the European Union or the United Nations. Once these product schemes are 
+available in a common and shared data model, the needs of the European 
+e-Procurement sector are outlined to finally demonstrate how Linked Data can 
+address some of the challenges for publishing and retrieving information 
+resources. As a consequence, two experiments are also provided in order to 
+validate the gain, in terms of expressivity, and the goodness of this emerging 
+approach to help expert users to make decisions on the selection of descriptors 
+for public procurement notices.
+\end{abstract}
+
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+e-Procurement \sep product scheme classifications \sep  linked open data \sep  semantic web \sep expert systems
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+
+
+% \titlerunning{}
+% 
+% 
+% \author{Jose Mar\'{i}a \'{A}lvarez\inst{1} \and Patricia Ordoñez de Pablos~\inst{2} \and Michail Vafolopoulos\inst{3} \and Jos\'{e} Emilio Labra\inst{4}}
+% 
+% 
+% \authorrunning{Jose Mar\'{i}a Alvarez \and Michail Vafolopoulos \and  Jos\'{e} Emilio Labra}
+% 
+% 
+% \institute{South East European Research Center, \\ 54622, Thessaloniki, Greece\\
+%   \email{{jmalvarez@seerc.org}}\\
+%    \and  WESO Research Group, Department of Business Administration, University of Oviedo \\ 33007, Oviedo, Spain.\\
+%     \email{{patriop@uniovi.es}},\\
+%   \and  Multimedia Technology Laboratory, National Technical University of Athens, \\ 15773, Athens, Greece.\\
+%     \email{{vafopoulos@medialab.ntua.gr}},
+% \and WESO Research Group, Department of Computer Science, University of Oviedo, \\ 33007, Oviedo, Spain.\\
+%   \email{{labra@uniovi.es.es}}\\  
+% }
+% 
+% 
+% \authorrunning{Jose Mar\'{i}a Alvarez-Rodr\'{i}guez}
+% 
+% \date{}
+% 
+% \maketitle
+% 
+% \renewcommand{\labelitemi}{$\bullet$}
+
+
+
+\section{Introduction}
+
+
+\end{document}
