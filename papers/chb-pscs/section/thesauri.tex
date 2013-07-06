@@ -1,0 +1,45 @@
+This section discusses existing methods to convert knowledge organizations systems distinguishing between RDF/OWL 
+conversions methods for thesauri and product classification systems.
+\begin{itemize}
+ \item \textbf{Thesauri Conversion Methods}. A thesaurus is a controlled vocabulary, with equivalent terms explicitly 
+ identified and with ambiguous words or phrases (e.g. homographs) made unique. This set of terms also may include broader-narrower 
+ or other relationships. Usually they are considered to be the most complex of controlled vocabularies. Thesauri as a KOS 
+ system can be converted by means of different procedures. On one hand, there are methods~\cite{DBLP:conf/jcdl/Soergel05} that propose specific 
+ techniques for thesauri conversions into ontology. However the method does not target a specific output format and it considers the 
+ hierarchical structure of thesauri as logical is-a relationships. On the other hand, there are some generic methods 
+ for thesauri conversions, as the step-wise method defined by Miles et al~\cite{DBLP:conf/esws/AssemMMS06}. This method selects a common output data model, the 
+ SKOS vocabulary, and is comprised of the following sequenced steps: generation of the RDF encoding, error checking and validation 
+ and publishing the RDF triples on the Web. In addition, this method has been refined (FIXME: Polo-Paredes, Álvarez-Rodríguez \& Rubiera-Azcona, 2008) 
+ adding three new sub steps for generating the RDF encoding: analyzing the vocabulary, mapping the vocabulary to 
+ SKOS properties and classes and building a conversion program. This initial stepwise method can be considered as 
+ a previous effort to the abovementioned linked data lifecycles in which all tasks are already defined and these
+ steps are embedded as part of the whole lifecycle.
+ 
+ \item \textbf{Product Scheme Classification Conversion Methods.}  Product Scheme Classifications (PSCs) have been developed to 
+ organize the marketplace~\cite{Leukel-automating} in distinct vertical sectors that reflect the 
+ activity (or some activities) of economy and commerce. They have been built to solve specific problems of 
+ interoperability and communication in e-commerce~\cite{Leukel-findings} providing a structural organization 
+ of different kind of products collected together by some economic criteria. The aim of a PSC is to be used 
+ as a standard~\cite{Leukel-standard} de facto by different agents for information interchange 
+ in marketplaces~\cite{FenselOmel2001,FenselDing2001}.
+ 
+ 
+ Many approaches for product classification systems adaptation to the Semantic Web, 
+ like~\cite{Lonsdale:2010:ROL:1743778.1744005}, present methods with the goal to convert them to domain-ontologies. 
+ The tree-based structure between product terms is interpreted then as a logical is-a hierarchy. 
+ From our point of view and following the discussion about~\cite{Hepp:2007:POR:1256315.1256337,Hepp:2006:SWS:1128590.1128683}, hierarchical 
+ links between the elements of each economic sector have not the semantics of subsumption relationships. The next example 
+ taken directly from the CPV 2008 shows how the relationship between the element ``Parts and accessories for bicycles'' (34442000-7) 
+ and its direct antecessor, ``Bicycles'' (34440000-3), does not seem an is-a relation. In this case, an ontological 
+ property for object composition like \texttt{hasPart} would be much better. Moreover, there are further 
+ remarks against the idea of using the PSCs as domain-ontologies. It is difficult to assert 
+ that the CPV element, ``Tin bars, rods, profiles and wire'' (27623100), represents 
+ any specific product. Rather it should be regarded as a collection of products. 
+ To convert correctly this element into a domain ontology concept, it should be considered 
+ as equivalent to the union of several concepts (e.g. $TinBar \cup TinRod \cup TinProfiles \cup TinWire$).
+ 
+ Our approach instead will not consider PCSs as domain ontologies, but a specific kind of knowledge organization system. Any PSC is 
+ interpreted as a conceptual scheme comprised of conceptual resources. Thus, hierarchical relationships are not 
+ considered to be any more logical \texttt{is-a} relations, but \texttt{broader/narrower} ones. 
+
+\end{itemize}
