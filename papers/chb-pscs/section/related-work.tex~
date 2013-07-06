@@ -1,0 +1,18 @@
+As part of the LOD effort other similar initiatives have also been deployed such as the Linked Geo Data effort, 
+the GeoNames service, the Linked Open Drug Data initiative or the OpenLink Data Spaces network among others. 
+More specifically in the field of Open Government Data (OGD) there are projects trying to exploit the 
+information of public procurement notices like the ``Linked Open Tenders Electronic Daily'' project~\cite{loted}
+where they use the RSS feeds of TED.  In the European project LOD2~\cite{lod2-project}, there is a specific workpackage, 
+WP9a ``LOD2 for A Distributed Marketplace for Public Sector Contracts'', to explore and demonstrate the 
+application of linked data principles for procuring contracts in the public sector and, 
+the Media Lab research group at the Technical University of Athens has recently published the 
+``PublicSpending.net''~\cite{publicspending} portal to visualize and manage statistics about public spending around the world. Finally the 
+``OpenSpending.org''~\cite{open-spending} portal also presents some specifications to model public procurement data and 
+visualize where the money goes. The ``LOD Around-the-Clock''~\cite{latc-project} (LATC) and PlanetData~\cite{planet-data-project} projects are also increasing the awareness of 
+LOD across Europe delivering specific research and dissemination activities such as the 
+``European Data Forum''. Furthermore legal aspects of public sector information are being reviewed in the 
+LAPSI project~\cite{lapsi-project}. In the case of vocabularies and datasets, GoodRelations 
+and ProductOntology are two of the most prominent approaches for tagging products and services using semantic web technologies, 
+for instance Renault UK has GoodRelations in RDFa in their UK merchandise store.
+
+FIXME: from COMIND survey
