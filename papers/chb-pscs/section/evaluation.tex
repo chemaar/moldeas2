@@ -141,6 +141,43 @@ $M^4$ & Similar to $M^2$ but codes are selected using the analysis of historical
 \end{table}
 
 
+% Since the CORFU approach has been designed and implemented~\footnote{\url{https://github.com/chemaar/corfu}} it is necessary to 
+% establish a method to assess quantitatively the quality of the results.  The steps to carry 
+% out this experiment are: 1) Configure the CORFU technique, see Table~\ref{config-corfu};  
+% 2) Execute the algorithm taking as a parameter the file containing the whole dataset of company names;
+% 3) Validate (manually) the dump of unified names; 4) Calculate the measures of 
+% precision, see Eq.~\ref{eq-1}, recall, see Eq.~\ref{eq-2}, and the F1 score (the harmonic mean of precision and recall), see Eq.~\ref{eq-3} according to the values of $tp$ (true positive), 
+% $fp$ (false positive), $tn$ (true negative) and $fn$ (false negative). In particular, this evaluation considers the precision of the algorithm as ``the number of supplier names that have been correctly unified under the same name'' while recall is 
+% ``the number of supplier names that have not been correctly classified under a proper name''.  More specifically, $tp$ is ``the number of corporate names properly unified'', $fp$ is 
+% ``the number of corporate names wrongly unified'', $tn$ is ``the number of corporate names properly non-unified'' and $fn$ is ``the number of corporate names wrongly non-unified''.
+% 
+% 
+
+
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\begin{equation}\label{eq-1}
+Precision = \frac{tp}{tp+fp} 
+\end{equation}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\begin{equation}\label{eq-2}
+Recall = \frac{tp}{tp+fn}
+\end{equation}
+\end{minipage}
+\end{figure}
+
+
+\begin{equation}\label{eq-3}
+F1 = 2 \cdot \frac{Precision \cdot Recall}{ Precision + Recall}
+\end{equation}
+
+
+
+
 \subsection{Sample}
 In order to carry out this study we have used the next samples of data:
 \begin{itemize}
