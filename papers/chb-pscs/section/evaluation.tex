@@ -33,16 +33,68 @@ Once these assumptions are defined, the gain of linking a new finite PSC to CPV 
  \end{enumerate}
  
  \item The percentage of gain in terms of expressivity (number of elements to be used in queries) is related to the number of elements that enables go from $\mathcal{V}_{psc}$ to $\mathcal{V}$:	
- \begin{equation}
+ \begin{equation}\label{percentage}
   \%=100*(\frac{\#\mathcal{V}_{psc} + \#\mathcal{V}}{\#\mathcal{V}}-1)
  \end{equation}
+ 
+  As an example of this approach, two controlled vocabularies and a set of links/pairs are presented to calculate the gain in terms of expressivity:
+  \begin{itemize}
+  \item Let $\mathcal{V} = \{ 1, 2, 3 \}$  and  $\mathcal{V}_{psc} = \{A, B, C, D, E\}$ the source and target controlled vocabularies.
+  \item Let $P = \{ (A,1), (B,2), (C,1) (C,2) \}$ the set of links/pairs between $\mathcal{V}$ and $\mathcal{V}_{psc}$.
+  \item Therefore, the derivate controlled vocabulary is $\mathcal{V'}_{psc} = \mathcal{V}\,\cup\,\{A, B, C\}$ and the percentage of gain in terms of expressivity 
+  according to the Equation~\ref{percentage} is:
+
+  \begin{equation}
+      \% = 100 - \{ \langle (3+3) / 3 \rangle -1 \} = 2-1 = 100 
+  \end{equation}
+      \item As a consequence the number of final terms to create queries is just two times than the initial set, increasing the expressivity in a $100\%$.
+  \end{itemize}
 
  \item Finally, in this study, there is a specific scenario in which elements $v^k_{psc} \in \mathcal{V}_{psc}$ are not directly mapped to elements $v \in \mathcal{V}$ but 
- assuming that there are relations $r_k$  among elements $v^j_{psc}$  and $v^k_{psc}$ new links could emerge between $v^j_{psc}$ and $v$ through $r_k$ . Nevertheless this 
+ assuming that there are relations $r_k$  among elements $v^j_{psc}$  and $v^k_{psc}$ new links could emerge between $v^j_{psc}$ and $v$ through $r_k$. Nevertheless this 
  situation should be avoided in order to prevent an infinite and recursive linking process and keep the advantages of using finite controlled vocabularies, 
  e.g. in the ongoing example, Product Ontology (PO) is used as a bridge classification implying an infinite max gain ($\infty$).
  
- 
-
 \end{itemize}
+
+\subsection{Sample}
+The PSCs in Table that have been selected to be promoted to RDF are also used to check if we get any gain when a link between a PSC and the CPV is created. 
+
+
+\begin{longtable}[c]{|p{2.6cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|} 
+\hline
+  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real trough PO  &  $\%$ max   \\\hline
+\endhead
+CPV 2008 	& $10357$  	& $803311$	& $0$	 	& $0$	 	& $10000$	& $96,55$  \\ \hline
+CPV 2003 	& $8323$  	& $462$		& $8312$ 	& $4.46$ 	& $80.25$	& $80.36$  \\ \hline
+CN 2012  	& $14552$	& $2390$	& $2390$ 	& $23.07$	& $23.07$	& $140.50$  \\ \hline
+CPC 2008 	& $4408$	& $4402$   	& $4403$	& $42.50$	& $42.51$ 	& $42.56$  \\ \hline
+CPA 2008 	& $5429$	& $5399$   	& $5410$	& $52.12$	& $52.23$	& $52.41$  \\ \hline
+ISIC v4  	& $766$		& $765$   	& $765$ 	& $7.38$ 	& $7.38$	& $7.39$    \\ \hline
+NAICS 2007 	& $2328$	& $2300$ 	& $2300$	& $22.20$	& $22.20$	& $22.47$  \\ \hline
+NAICS 2012 	& $2212$	& $2186$ 	& $2186$	& $21.10$	& $21.10$	& $21.35$  \\ \hline
+SITC v4 	& $4017$	& $3811$   	& $3820$	& $36.79$	& $36.88$	& $38.78$  \\ \hline
+\multicolumn{7}{|c|}{\textbf{Total}} \\ \hline
+$\star$ & $42035$ 		& $21715$   	& $29586$	& $209.66$ 	& $285.66$	& $405.86$ \\ \hline
+\hline
+\multicolumn{7}{|c|}{\textbf{Linking CPV 2008 and \textit{ProductOntology}}} \\ \hline
+\textit{PO}& $\infty$	& $10000$   	& N/A	& $96.55$	& $96.55$ 	& $\infty$  \\ \hline
+\multicolumn{7}{|c|}{\textbf{Total including \textit{ProductOntology}}} \\ \hline
+$\star$	 & $\infty$	& $31715$   	& 39586	& $306.21$	& $382.21$	& $\infty$ \\ \hline
+\hline
+\caption{Statistics of promoting to RDF selected PSCs and linking them to the CPV 2008.}\label{ganancia-terminos}\\    
+\end{longtable}
+
+\subsection{Results and Discussion}
+
+
+Additionally, the lifecycle applied to promote and validate the data generated from public procurements notices is based on 
+a checklist~\cite{} created by a compilation of $196$ checkpoints which a value can be ``Applicable and positive (Yes)'', ``Applicable and not found (No)'' or ``Not Applicable (N/A)''; 
+from books, W3C specifications, Open Data and Linked Data principles, CKAN validator, LOD Cloud requirements, etc., 
+and know-how acquired in previous projects that seeks for ensuring the principles of the LOD initiative, 
+easing the reuse, maintenance, governance, coverage and expressivity of data. 
+In order to compare the new version of a PSCs catalogue to existing public versions of these classifications, 
+we have carried out this survey obtaining the next results, see Figure . Finally, this PSCs catalogue has been released to the LOD community, added to the ``datahub.io'' 
+register and joined the LOD Cloud Diagram under the dataset id ``\texttt{pscs-catalogue}''.
+
 
