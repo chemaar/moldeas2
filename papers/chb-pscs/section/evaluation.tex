@@ -62,6 +62,17 @@ Once these assumptions are defined, the gain of linking a new finite PSC to CPV 
 The PSCs that have been selected to be promoted to RDF, see Table~\ref{}, are also used to check if the gain we can get through a direct link to the CPV 2008 or 
 by means of creating a un-directed link through the ProductOntology.
 
+ 
+
+\subsection{Results and Discussion}
+Table~\ref{ganancia-terminos} presents the statistics of transforming each PSC as well as the number of terms that have linked to CPV 2008 and the gain (percentage) of 
+new descriptors we can use to query the dataset. As an example, the CPV 2008 is comprised of $8323$ elements that have generated $546135$ RDF triples. 
+Once this PSC is in RDF, the linking process has created $462$ links between the CPV 2003 and CPV 2008 obtaining a $\% = 100 * \{ \langle (462+10357) / 10357 \rangle -1 \} = 1.0446-1 = 4.46$\% more 
+of expressivity (in terms of descriptors to query a dataset) with regards to the initial set of $10357$ terms in CPV 2008. In case of using the ProductOntology as a bridget 
+between the CPV 2003 and CPV 2008, $8312$ descriptions in CPV 2003 have linked to the ProductOntology generating a new controlled vocabulary with a 
+gain of $80.25$\# in terms of expressivity (it is possible to use...)FIXME: Explain how this value is generated
+
+
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
 \begin{center}
@@ -90,15 +101,7 @@ $\star$ 	& $42035$ 	& $1842053$	& $21715$   	& $209.66$	& $29586$ 	& $285.66$	 \
   \caption{Statistics of promoting to RDF selected PSCs and linking them to the CPV 2008.}\label{ganancia-terminos}  
   
   \end{center}
-\end{table} 
-
-\subsection{Results and Discussion}
-Table~\ref{ganancia-terminos} presents the statistics of transforming each PSC as well as the number of terms that have linked to CPV 2008 and the gain (percentage) of 
-new descriptors we can use to query the dataset. As an example, the CPV 2008 is comprised of $8323$ elements that have generated $546135$ RDF triples. 
-Once this PSC is in RDF, the linking process has created $462$ links between the CPV 2003 and CPV 2008 obtaining a $\% = 100 * \{ \langle (462+10357) / 10357 \rangle -1 \} = 1.0446-1 = 4.46$\% more 
-of expressivity (in terms of descriptors to query a dataset) with regards to the initial set of $10357$ terms in CPV 2008. In case of using the ProductOntology as a bridget 
-between the CPV 2003 and CPV 2008, $8312$ descriptions in CPV 2003 have linked to the ProductOntology generating a new controlled vocabulary with a 
-gain of $80.25$\# in terms of expressivity (it is possible to use...)FIXME: Explain how this value is generated
+\end{table}
 
 
 
@@ -110,5 +113,126 @@ easing the reuse, maintenance, governance, coverage and expressivity of data.
 In order to compare the new version of a PSCs catalogue to existing public versions of these classifications, 
 we have carried out this survey obtaining the next results, see Figure . Finally, this PSCs catalogue has been released to the LOD community, added to the ``datahub.io'' 
 register and joined the LOD Cloud Diagram under the dataset id ``\texttt{pscs-catalogue}''.
+
+
+\subsection{Study 2}
+The aim of this study is to verify if the Linked Data coming from public procurement notices, PSCs, etc. can be consumed to deliver a decision support system that help expert 
+users to select CPV codes from user queries in natural language. This study is motivated by the company Euroaler.net that sells an alert service for users (companies, etc.) 
+that want to tender in specific sectors under a certain profile. Usually, the most relevant variables in public procurement notices are the CPV codes and the 
+location (NUTS codes). In this experiment we simulate the behavior of Euroalert.net employees when they have to translate user queries into CPV codes 
+for creating a new alert. Basically, the experiment is based on traditional semantic search and concept query expansion methods that we have designed to 
+tackle the recommendation of CPV codes, see. Table~\ref{methods-recommending} and Figure . 
+\subsection{Research Design}
+
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}[c]{|l|p{8.5cm}|p{4.5cm}|} 
+\hline
+\textbf{Method} &  \textbf{Description} &  \textbf{Technology} \\\hline
+$M^1$ & CPV English descriptions are indexed and a syntactic search process is performed for each $Q_i$ & Apache Lucene y Solr \\ \hline
+$M^2$ & CPV codes are selected according to the SKOS taxonomy. Previously, the method $M^1$ is applied to extract CPV codes from natural language & $M^1$ + ranking broader/narrower \\ \hline
+$M^3$ & Similar to $M^2$ but codes are selected using \textit{Spreading Activation}& $M^1$ + ONTOSPREAD \\ \hline
+$M^4$ & Similar to $M^2$ but codes are selected using the analysis of historical relationships in previous public procurement notices & $M^1$ + Apache Mahout \\ \hline
+ \end{tabular}
+  \caption{Methods for recommending CPV 2008 codes.}\label{methods-recommending}  
+    \end{center}
+\end{table}
+
+
+\subsection{Sample}
+In order to carry out this study we have used the next samples of data:
+\begin{itemize}
+\item A dataset of 1 million of public procurement notices provided by Euroalert.net containing CPV and NUTS codes.
+\item A set of 11 user queries and the expected CPV codes created by Euroalert.net employees, see Table~\ref{expected-codes} (queries have been ``normalized'' according to one CPV descriptor to keep privacy) .
+\item The CPV dataset as Linked Data.
+\end{itemize}
+
+
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}[c]{|l|p{8.5cm}|p{4cm}|} 
+\hline
+  \multirow{2}{*}\textbf{$Q_{i}$} &  \textbf{User query-$Q_{str}$} &  \textbf{Number of expected CPV codes-$\#Q^{i}_{cpv}$} \\\hline
+  $Q_1$ & ``Comprehensive overview over all environmental technologies renewable energy products'' & $463$ \\ \hline
+  $Q_2$ & ``Tendering of public works: housing, hospitals, roads, housing developments, station drinking water treatment, reforestation'' & $35$ \\ \hline
+  $Q_3$ & ``Prefabricated buildings'' & $7$ \\ \hline
+  $Q_4$ & ``Games for children (parks swings, slides, land of play equipment in the public sphere'' & $26$ \\ \hline
+  $Q_5$ & ``Vital signs monitor'' &  $277$\\ \hline
+  $Q_6$ & ``Museum and exhibition and product launch services'' & $1$ \\ \hline
+  $Q_7$ & ``Voltmeters, instruments measuring electrical quantities, Ammeters, Instruments for checking physical characteristics, hygrometers, thermometers, measuring equipment and control, leak detector, Analyzers, 
+  Cable Splicing insulated cable joints kits, screwdrivers, hand tools , screwdriver'' & $117$ \\ \hline
+  $Q_8$ & ``Conservation Maintenance of pavements for roads, airfields, bridges, tunnels'' & $13$ \\ \hline
+  $Q_9$ & ``Wood poles, Wooden sleepers , Lattice towers'' & $10$ \\ \hline
+  $Q_{10}$ & ``Architectural, construction, engineering and inspection services'' &  $173$\\ \hline
+  $Q_{11}$ & ``Medical practice and related services'' &  $13$\\ \hline
+ \end{tabular}
+  \caption{User queries and number of expected CPV codes.}\label{expected-codes}  
+    \end{center}
+\end{table}
+
+
+
+
+\subsection{Results and Discussion}
+According to the results in Table~\ref{table:queries-ir-results}, the method that better match the behavior of an expert user is $M^1$ followed by $M^3$. 
+This implies that a method based on natural language processing techniques is the most appropriate to translate user queries into CPV codes. 
+Oddly, the results of semantic-based methods, $M^2$ and $M^3$, do not get a good performance. Likely, the type of translation 
+that the expert user does is more close to a direct language translation than a real thinking about the 
+relationships in the taxonomy. Finally, the exploitation of the historical statistics using Apache Mahout algorithms 
+(after different iterations and tests we have chosen the best one based on collaborative filtering) do not seem to reflect 
+the expert user behavior. Although search and recommendation should not be compared it is strange than a dataset containing the use 
+CPV codes in $1$ million public procurement notices could not improve the traditional syntactic search. Nevertheless, there is an 
+open issue that lies in the number of true negative codes that in a second step should be validated by experts. 
+Thus, the semantic-based methods could improve their results with regards to the traditional one. 
+
+
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\scriptsize
+\begin{tabular}{|c||c|c|c||c|c|c||c|c|c||c|c|c|}
+\hline
+ \textbf{$Q_i$}&\multicolumn{3}{|c||}{$M^{1}$} & \multicolumn{3}{|c||}{$M^{2}$}& \multicolumn{3}{|c||}{$M^{3}$} & \multicolumn{3}{|c|}{$M^{4}$} \\ \hline
+	  &\textbf{P} & \textbf{R} & \textbf{F1} & \textbf{P} & \textbf{R} & \textbf{F1} & \textbf{P} & \textbf{R} & \textbf{F1} & \textbf{P} & \textbf{R} & \textbf{F1}  \\ \hline \hline
+$Q_1$  	  &$0.15$ & $0.08$ & $0.08$ &		$0.15$ & $0.15$ & $0.92$ &	$0.12$ & $0.06$ & $0.94$ &	$0.06$ & $0.06$ & $0.81$ \\ \hline
+$Q_2$  	  &$0.09$ & $0.09$ & $0.08$ & 		$0.06$ & $0.06$ & $0.99$ & 	$0.03$ & $0.03$ & $0.99$ & 	$0.03$ & $0.03$ & $1.00$ \\ \hline
+$Q_3$  	  &$0.14$ & $0.14$ & $0.08$ & 		$0.14$ & $0.14$ & $1.00$ & 	$0.14$ & $0.14$ & $1.00$ & 	$0.00$ & $0.00$ & $1.00$ \\ \hline
+$Q_4$  	  &$0.19$ & $0.19$ & $0.08$ &		$0.00$ & $0.00$ & $0.99$ & 	$0.12$ & $0.12$ & $1.00$ & 	$0.00$ & $0.00$ & $1.00$ \\ \hline
+$Q_5$  	  &$0.12$ & $0.01$ & $0.08$ & 		$0.01$ & $0.01$ & $0.95$ & 	$0.08$ & $0.01$ & $0.97$ & 	$0.03$ & $0.03$ & $0.97$ \\ \hline
+$Q_6$  	  &$1.00$ & $1.00$ & $0.08$ & 		$0.00$ & $0.00$ & $1.00$ & 	$1.00$ & $1.00$ & $1.00$ & 	$0.10$ & $0.67$ & $0.98$ \\ \hline
+$Q_7$  	  &$0.20$ & $0.20$ & $0.08$ & 		$0.09$ & $0.09$ & $0.98$ & 	$0.15$ & $0.16$ & $0.98$ & 	$0.03$ & $0.03$ & $0.99$ \\ \hline
+$Q_8$  	  &$0.08$ & $0.08$ & $0.08$ & 		$0.08$ & $0.08$ & $1.00$ & 	$0.08$ & $0.08$ & $1.00$ & 	$0.00$ & $0.00$ & $1.00$ \\ \hline
+$Q_9$  	  &$0.50$ & $0.50$ & $0.08$ & 		$0.00$ & $0.00$ & $1.00$ & 	$0.30$ & $0.38$ & $1.00$ & 	$0.00$ & $0.00$ & $1.00$ \\ \hline
+$Q_{10}$  &$0.39$ & $0.39$ & $0.08$ & 		$0.42$ & $0.42$ & $0.98$ & 	$0.34$ & $0.35$ & $0.98$ & 	$0.16$ & $0.16$ & $0.99$ \\ \hline
+$Q_{11}$  &$0.23$ & $0.23$ & $0.08$ & 		$0.23$ & $0.23$ & $1.00$ & 	$0.15$ & $0.17$ & $1.00$ & 	$0.00$ & $0.00$ & $1.00$ \\ \hline
+\multicolumn{13}{|c|}{\textbf{Average of quanitative measures}} \\ \hline
+\textbf{Total}  &$0.28$ & $0.26$ & $0.99$ & 	$0.11$ & $0.11$ & $0.98$ &  	$0.23$ & $0.23$ & $0.99$ &  	$0.03$ & $0.03$ & $0.96$ \\ \hline
+\hline
+ \end{tabular}
+\caption{Quantitative measures (P-precision and R-recall) of methods for recommending CPV codes.}\label{table:queries-ir-results}
+  \end{center}
+\end{table} 
+
+
+
+% \begin{table}[!htb]
+% \renewcommand{\arraystretch}{1.3}
+% \begin{center}
+% \begin{tabular}[c]{|l|c|c|c|} 
+% \hline
+% \textbf{Method} &  \textbf{Precision} &  \textbf{Recall} & \textbf{F1 score} \\\hline
+% $M^1$ & $0.28$ & $0.26$ & $0.26$ \\ \hline
+% $M^2$ & $0.11$ & $0.11$ & $0.11$ \\ \hline
+% $M^3$ & $0.23$ & $0.23$ & $0.23$ \\ \hline
+% $M^4$ & $0.03$ & $0.03$ & $0.03$ \\ \hline
+%  \end{tabular}
+%   \caption{Quantitative measures (average) of methods for recommending CPV codes.}\label{methods-result}  
+%     \end{center}
+% \end{table}
 
 
