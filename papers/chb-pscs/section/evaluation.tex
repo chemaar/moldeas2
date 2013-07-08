@@ -29,23 +29,24 @@ Once these assumptions are defined, the gain of linking a new finite PSC to CPV 
   \item $1-n$ link, there are elements $v^k_{psc} \in \mathcal{V}_{psc}$ that are linked to some elements $v \in \mathcal{V}$ generating $K$ links.  
   \item The result of the previous operation generates links or pairs in the form $p_k=(v^k_{psc}, v^k)$ building a set of pairs $\mathcal{P}=\{p_1,p_2,...,p_k,p_n\}$. Taking into account this situation, 
   the initial vocabulary $V$ is increased in all elements $v^k_{psc} \in \mathcal{V}_{psc}$ that have a link to an element $v \in \mathcal{V}$. The new 
-  derivate vocabulary $V'_{psc}$ is a controlled vocabulary comprising all elements in $\mathcal{V}$ and all $v^k_{psc}: v^k_{psc} \in p_i$.
+  derivate vocabulary $\mathcal{V'}_{psc}$ is a controlled vocabulary comprising all elements $v^k_{psc}: v^k_{psc} \in p_i$.
  \end{enumerate}
  
  \item The percentage of gain in terms of expressivity (number of elements to be used in queries) is related to the number of elements that enables go from $\mathcal{V}_{psc}$ to $\mathcal{V}$:	
  \begin{equation}\label{percentage}
-  \%=100*(\frac{\#\mathcal{V}_{psc} + \#\mathcal{V}}{\#\mathcal{V}}-1)
+  \%=100*(\frac{\#\mathcal{V'}_{psc} + \#\mathcal{V}}{\#\mathcal{V}}-1)
  \end{equation}
  
   As an example of this approach, two controlled vocabularies and a set of links/pairs are presented to calculate the gain in terms of expressivity:
   \begin{itemize}
   \item Let $\mathcal{V} = \{ 1, 2, 3 \}$  and  $\mathcal{V}_{psc} = \{A, B, C, D, E\}$ the source and target controlled vocabularies.
   \item Let $P = \{ (A,1), (B,2), (C,1) (C,2) \}$ the set of links/pairs between $\mathcal{V}$ and $\mathcal{V}_{psc}$.
-  \item Therefore, the derivate controlled vocabulary is $\mathcal{V'}_{psc} = \mathcal{V}\,\cup\,\{A, B, C\}$ and the percentage of gain in terms of expressivity 
+  \item Let $\mathcal{V'}_{psc} = \{ A, B, C \}$ the set of elements $v^k_{psc}: v^k_{psc} \in p_i$.
+  \item Therefore, the new controlled vocabulary to query the dataset is comprised of $\{\mathcal{V}\,\cup\,\mathcal{V'}_{psc}\}$ and the percentage of gain in terms of expressivity 
   according to the Equation~\ref{percentage} is:
 
   \begin{equation}
-      \% = 100 - \{ \langle (3+3) / 3 \rangle -1 \} = 2-1 = 100 
+      \% = 100 * \{ \langle (3+3) / 3 \rangle -1 \} = 2-1 = 100 
   \end{equation}
       \item As a consequence the number of final terms to create queries is just two times than the initial set, increasing the expressivity in a $100\%$.
   \end{itemize}
@@ -58,34 +59,47 @@ Once these assumptions are defined, the gain of linking a new finite PSC to CPV 
 \end{itemize}
 
 \subsection{Sample}
-The PSCs in Table that have been selected to be promoted to RDF are also used to check if we get any gain when a link between a PSC and the CPV is created. 
+The PSCs that have been selected to be promoted to RDF, see Table~\ref{}, are also used to check if the gain we can get through a direct link to the CPV 2008 or 
+by means of creating a un-directed link through the ProductOntology.
 
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}[c]{|p{2.2cm}|p{1.6cm}|p{1.8cm}|p{1.6cm}|p{1.6cm}|p{1.8cm}|p{1.6cm}|}
+ 
+ \hline
+  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & RDF triples &Links to CPV 2008 &  $\%$ real & Links through PO & $\%$ real trough PO    \\\hline
 
-\begin{longtable}[c]{|p{2.6cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|} 
-\hline
-  $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real trough PO  &  $\%$ max   \\\hline
-\endhead
-CPV 2008 	& $10357$  	& $803311$	& $0$	 	& $0$	 	& $10000$	& $96,55$  \\ \hline
-CPV 2003 	& $8323$  	& $462$		& $8312$ 	& $4.46$ 	& $80.25$	& $80.36$  \\ \hline
-CN 2012  	& $14552$	& $2390$	& $2390$ 	& $23.07$	& $23.07$	& $140.50$  \\ \hline
-CPC 2008 	& $4408$	& $4402$   	& $4403$	& $42.50$	& $42.51$ 	& $42.56$  \\ \hline
-CPA 2008 	& $5429$	& $5399$   	& $5410$	& $52.12$	& $52.23$	& $52.41$  \\ \hline
-ISIC v4  	& $766$		& $765$   	& $765$ 	& $7.38$ 	& $7.38$	& $7.39$    \\ \hline
-NAICS 2007 	& $2328$	& $2300$ 	& $2300$	& $22.20$	& $22.20$	& $22.47$  \\ \hline
-NAICS 2012 	& $2212$	& $2186$ 	& $2186$	& $21.10$	& $21.10$	& $21.35$  \\ \hline
-SITC v4 	& $4017$	& $3811$   	& $3820$	& $36.79$	& $36.88$	& $38.78$  \\ \hline
+CPV 2008 	& $10357$  	& $803311$	& $0$	 	& $0$	 	& $10000$	& $96,55$	  \\ \hline
+CPV 2003 	& $8323$  	& $546135$	& $462$ 	& $4.46$ 	& $8312$	& $80.25$	 \\ \hline
+CN 2012  	& $14552$	& $137484$	& $2390$ 	& $23.08$	& $2390$	& $23.08$	  \\ \hline
+CPC 2008 	& $4408$	& $100819$   	& $4402$	& $42.50$	& $4403$	& $42.51$ 	  \\ \hline
+CPA 2008 	& $5429$	& $92749$   	& $5399$	& $52.13$	& $5410$	& $52.24$	  \\ \hline
+ISIC v4  	& $766$		& $18986$   	& $765$ 	& $7.39$ 	& $765$		& $7.39$	   \\ \hline
+NAICS 2007 	& $2328$	& $36292$ 	& $2300$	& $22.21$	& $2300$	& $22.21$	 \\ \hline
+NAICS 2012 	& $2212$	& $70887$ 	& $2186$	& $21.11$	& $2186$	& $21.11$	  \\ \hline
+SITC v4 	& $4017$	& $3811$   	& $3811$	& $36.80$	& $3820$	& $36.88$	 \\ \hline
 \multicolumn{7}{|c|}{\textbf{Total}} \\ \hline
-$\star$ & $42035$ 		& $21715$   	& $29586$	& $209.66$ 	& $285.66$	& $405.86$ \\ \hline
+$\star$ 	& $42035$ 	& $1842053$	& $21715$   	& $209.66$	& $29586$ 	& $285.66$	 \\ \hline
 \hline
-\multicolumn{7}{|c|}{\textbf{Linking CPV 2008 and \textit{ProductOntology}}} \\ \hline
-\textit{PO}& $\infty$	& $10000$   	& N/A	& $96.55$	& $96.55$ 	& $\infty$  \\ \hline
-\multicolumn{7}{|c|}{\textbf{Total including \textit{ProductOntology}}} \\ \hline
-$\star$	 & $\infty$	& $31715$   	& 39586	& $306.21$	& $382.21$	& $\infty$ \\ \hline
-\hline
-\caption{Statistics of promoting to RDF selected PSCs and linking them to the CPV 2008.}\label{ganancia-terminos}\\    
-\end{longtable}
+%  \multicolumn{7}{|c|}{\textbf{Linking CPV 2008 and \textit{ProductOntology}}} \\ \hline
+%  \textit{PO}& $\infty$	& $10000$   	& N/A	& $96.55$					& $96.55$ 	& $\infty$  \\ \hline
+% \multicolumn{8}{|c|}{\textbf{Total including \textit{ProductOntology}}} \\ \hline
+% $\star$	 & $\infty$	& $31715$   	& $209.66$	& $306.21$	& $39586$ & $382.21$	& $\infty$ \\ \hline
+  \end{tabular}
+  \caption{Statistics of promoting to RDF selected PSCs and linking them to the CPV 2008.}\label{ganancia-terminos}  
+  
+  \end{center}
+\end{table} 
 
 \subsection{Results and Discussion}
+Table~\ref{ganancia-terminos} presents the statistics of transforming each PSC as well as the number of terms that have linked to CPV 2008 and the gain (percentage) of 
+new descriptors we can use to query the dataset. As an example, the CPV 2008 is comprised of $8323$ elements that have generated $546135$ RDF triples. 
+Once this PSC is in RDF, the linking process has created $462$ links between the CPV 2003 and CPV 2008 obtaining a $\% = 100 * \{ \langle (462+10357) / 10357 \rangle -1 \} = 1.0446-1 = 4.46$\% more 
+of expressivity (in terms of descriptors to query a dataset) with regards to the initial set of $10357$ terms in CPV 2008. In case of using the ProductOntology as a bridget 
+between the CPV 2003 and CPV 2008, $8312$ descriptions in CPV 2003 have linked to the ProductOntology generating a new controlled vocabulary with a 
+gain of $80.25$\# in terms of expressivity (it is possible to use...)FIXME: Explain how this value is generated
+
 
 
 Additionally, the lifecycle applied to promote and validate the data generated from public procurements notices is based on 
