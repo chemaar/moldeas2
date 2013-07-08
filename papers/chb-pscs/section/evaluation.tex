@@ -1,0 +1,48 @@
+In order to evaluate if the approach to generate Linked Data from PSCs can improve the access to public procurement data 
+exploiting the advantages of this initiative, an evaluation of the number of links and its application to implement a decision 
+support system has been carried out. The first studio check if we can access more public procurement notices when the 
+links between a PSC and the CPV are created. The aim of this study is to compare the initial input vocabulary (containing the CPV descriptors) and 
+the final input vocabulary (containing the descriptors of the PSCs linked to the CPV). If we extend the input vocabulary we can access to more 
+public procurement notices because we have a greater number of descriptors to build SPARQL queries going from any PSC to the CPV. 
+The second study tries to exploit the semantic relationships between the CPV concepts to build a recommender of CPV codes for business users. 
+In order to make a real comparison we have used $11$ user queries and the translation into CPV codes made by the company Euroalert.net 
+(the real user query and the descriptions of the CPV codes are skipped in order to keep the privacy of this company and their clients).
+\subsection{Study 1}
+\subsection{Research Design}
+The purpose of this study is to compare the size of the initial input vocabulary for retrieving public procurement notices 
+with regards to the final input vocabulary when links between a PSC and the CPV are created. The exploitation of these links can be used 
+to build new SPARQL queries that can take advantage of Linked Data principles to provide a greater input vocabulary. Let's assume the following points about the 
+public procurement notices and the PSCs used in this study:
+\begin{itemize}
+ \item All public procurement notices are annotated by, at least, one CPV element.
+ \item Each PSC is a controlled vocabulary comprised of a finite set of elements. The CPV is a controlled vocabulary, $\mathcal{V}$, comprised of $10357$ elements/terms/codes.
+ \item The public procurement notices is a dataset, $\mathcal{D}$, comprised of 1M of documents, 
+ already available as RDF resources. Each document, $d \in \mathcal{D}$ is tagged, at least, using a CPV code, $v \in \mathcal{V}$. Thus, 
+ if a query contains all elements, $v \in \mathcal{V}$, the entire dataset of notices will be retrieved.
+\end{itemize}
+Once these assumptions are defined, the gain of linking a new finite PSC to CPV can be calculated as follows:
+\begin{itemize}
+ \item The source controlled vocabulary, $\mathcal{V}_{psc}$, is comprised of \#$\mathcal{V}_{psc}$ elements.
+ \item The linking of terms between a source vocabulary, $\mathcal{V}_{psc}$, and  a target vocabulary, $\mathcal{V}$ can be carried out in the next ways:
+ \begin{enumerate}
+  \item $1-1$ link, there are elements $v^k_{psc} \in \mathcal{V}_{psc}$ that are linked to only one element $v \in \mathcal{V}$.
+  \item $1-n$ link, there are elements $v^k_{psc} \in \mathcal{V}_{psc}$ that are linked to some elements $v \in \mathcal{V}$ generating $K$ links.  
+  \item The result of the previous operation generates links or pairs in the form $p_k=(v^k_{psc}, v^k)$ building a set of pairs $\mathcal{P}=\{p_1,p_2,...,p_k,p_n\}$. Taking into account this situation, 
+  the initial vocabulary $V$ is increased in all elements $v^k_{psc} \in \mathcal{V}_{psc}$ that have a link to an element $v \in \mathcal{V}$. The new 
+  derivate vocabulary $V'_{psc}$ is a controlled vocabulary comprising all elements in $\mathcal{V}$ and all $v^k_{psc}: v^k_{psc} \in p_i$.
+ \end{enumerate}
+ 
+ \item The percentage of gain in terms of expressivity (number of elements to be used in queries) is related to the number of elements that enables go from $\mathcal{V}_{psc}$ to $\mathcal{V}$:	
+ \begin{equation}
+  \%=100*(\frac{\#\mathcal{V}_{psc} + \#\mathcal{V}}{\#\mathcal{V}}-1)
+ \end{equation}
+
+ \item Finally, in this study, there is a specific scenario in which elements $v^k_{psc} \in \mathcal{V}_{psc}$ are not directly mapped to elements $v \in \mathcal{V}$ but 
+ assuming that there are relations $r_k$  among elements $v^j_{psc}$  and $v^k_{psc}$ new links could emerge between $v^j_{psc}$ and $v$ through $r_k$ . Nevertheless this 
+ situation should be avoided in order to prevent an infinite and recursive linking process and keep the advantages of using finite controlled vocabularies, 
+ e.g. in the ongoing example, Product Ontology (PO) is used as a bridge classification implying an infinite max gain ($\infty$).
+ 
+ 
+
+\end{itemize}
+
