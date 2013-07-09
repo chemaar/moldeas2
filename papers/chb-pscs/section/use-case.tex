@@ -50,10 +50,10 @@ Following a summary of the relevant tasks according to the MOLDEAS lifecycle is 
 
  Taking into account these points and the features of the PSC, a common model using SKOS is presented in Figure~\ref{fig:pscs-data-model}.
  
- \begin{figure}[ht]
+ \begin{figure}[!ht]
 \centering
-	%\includegraphics[width=\textwidth]{./imgs/corfu-stats}
- \caption{PSCs Data Model in SKOS.}
+	\includegraphics[width=\textwidth]{./imgs/fig-2}
+ \caption{A partial view of the data model for PSCs in SKOS.}
  \label{fig:pscs-data-model}
 \end{figure}
 
@@ -89,7 +89,6 @@ through the execution of a custom entity reconciliation process based on Natural
 these mappings are automatically discovered and generated.
 
 \end{itemize}
-
 Once the lifecycle has been carried out the results of promoting to RDF the selected PSCs can be shown in Table , 
 more specifically the first four columns specify respectively the vocabulary of a PSC ($V_{psc}$), the number of elements 
 to be promoted ($V_{psc}$), the number of generated RDF triples and the number of links to the CPV. 
@@ -98,9 +97,6 @@ links among them. Finally, Figure~\ref{fig:example-cpv-code}  shows an example o
 hierarchy relationships and links can be found. Furthermore, data can be now exploited through SPARQL queries 
 such as ``Give me 100 products or services related to construction in any PSC that 
 have a mapping with products or services in CPV (descriptions in English)'', see Figure~\ref{fig:example-sparql-query}, using different vocabularies.
-
-
-
 
 \begin{figure}[!ht]
 \begin{lstlisting}[language=SQL,basicstyle=\ttfamily\footnotesize]  
@@ -140,7 +136,7 @@ cpv2008-res:30210000 a gr:ProductOrServiceModel, cpv-onto:Group;
     cpv2003-res:30216000, cpv2003-res:30215000,  cpv2003-res:30213000,   
     cpv2003-res:30212000, cpv2003-res: 30211000,  cpv2003-res:30214000.
 \end{lstlisting}
-\caption{Example of CPV item in RDF.}
+\caption{Example of CPV 2008 item in RDF.}
  \label{fig:example-cpv-code}
 \end{figure}
 
