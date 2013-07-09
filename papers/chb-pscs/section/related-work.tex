@@ -1,18 +1,61 @@
-As part of the LOD effort other similar initiatives have also been deployed such as the Linked Geo Data effort, 
-the GeoNames service, the Linked Open Drug Data initiative or the OpenLink Data Spaces network among others. 
-More specifically in the field of Open Government Data (OGD) there are projects trying to exploit the 
-information of public procurement notices like the ``Linked Open Tenders Electronic Daily'' project~\cite{loted}
-where they use the RSS feeds of TED.  In the European project LOD2~\cite{lod2-project}, there is a specific workpackage, 
-WP9a ``LOD2 for A Distributed Marketplace for Public Sector Contracts'', to explore and demonstrate the 
-application of linked data principles for procuring contracts in the public sector and, 
-the Media Lab research group at the Technical University of Athens has recently published the 
-``PublicSpending.net''~\cite{publicspending} portal to visualize and manage statistics about public spending around the world. Finally the 
-``OpenSpending.org''~\cite{open-spending} portal also presents some specifications to model public procurement data and 
-visualize where the money goes. The ``LOD Around-the-Clock''~\cite{latc-project} (LATC) and PlanetData~\cite{planet-data-project} projects are also increasing the awareness of 
-LOD across Europe delivering specific research and dissemination activities such as the 
-``European Data Forum''. Furthermore legal aspects of public sector information are being reviewed in the 
-LAPSI project~\cite{lapsi-project}. In the case of vocabularies and datasets, GoodRelations 
-and ProductOntology are two of the most prominent approaches for tagging products and services using semantic web technologies, 
-for instance Renault UK has GoodRelations in RDFa in their UK merchandise store.
+According to the topics of the paper the relevant works can be divided into the next points:
 
-FIXME: from COMIND survey
+\begin{itemize}
+ \item  The emerging Semantic Web area, coined by Tim Berners-Lee et al.~\cite{Berners-Lee2001} in 2001, 
+ has experienced during last years a growing commitment from both academia and industrial areas 
+ with the objective of elevating the meaning of web information resources through a common and shared data model (graphs) and 
+ an underlying semantics based on different logic formalisms (ontologies) such as Description Logics. 
+ In the same way the effort carried out by international standardization organisms such as the W3C has produced and is currently delivering 
+ new specifications, vocabularies and models to boost the use of semantic technologies in a broad scope 
+ of domains such as e-Government, e-Health, Biomedicine, Education, Bibliography or Geograph to name a few, 
+ with the aim of solving existing problems of integration and interoperability among applications and create 
+ a proper knowledge environment under Web-based protocolos. The Resource Description Framework (RDF), based on a graph model, 
+ and the Web Ontology Language (OWL), designed to formalize and model domain knowledge, 
+ are the two main \textit{ingredients} to reuse information and data in a knowledge-based realm. Thus data, information 
+ and knowledge can be easily shared, exchanged and linked~\cite{Maali_Cyganiak_2011} to other knowledge and databases 
+ through the use URIs, more specifically HTTP-URIs. Therefore the broad objective of this effort can be summarized 
+ as a new environment of added-value services that can encourage and improve B2B (Business to Business), B2C (Business to Client) or 
+ A2A (Administration to Administration) relationships by means of the implementation of new contex-awareness expert systems to tackle existing 
+ cross-domain problems such as medical reasoning~\cite{DBLP:journals/cbm/GonzalezA13,DBLP:journals/eswa/Casado-LumbrerasGAP12}, 
+ analysis of social media, etc. in which data heterogeneities, lack of standard knowledge representation 
+ and interoperability problems are common factors. 
+ 
+ \item The Linked Data~\cite{Berners-Lee-2006,Heath_Bizer_2011} initiative. This initiative seeks for the application of semantic web concepts to 
+ create a large and distributed database on the Web. In order to reach this major objective the publication 
+ of information and data under a common data model (RDF) and formats with a specific formal 
+ query language (SPARQL~\cite{Sparql11}) provide the required building blocks to turn the Web of documents 
+ into a real database of data. Research works are focused in two main areas: 1) production/publishing~\cite{bizer07how} and 2) consumption of 
+ Linked Data. In the first case data quality~\cite{bizer2007,wiqa,ld-quality,DBLP:journals/ws/BizerC09,lodq,link-qa}, conformance~\cite{DBLP:journals/ws/HoganUHCPD12}, 
+ provenance~\cite{w3c-prov,DBLP:conf/ipaw/HartigZ10}, trust~\cite{Carroll05namedgraphs}, description of datasets~\cite{void,Cyganiak08semanticsitemaps,ckanValidator} and 
+ entity reconciliation~\cite{Serimi,Maali_Cyganiak_2011} are becoming major objectives since a mass of amount data is already available~\cite{Triplify} 
+ through SPARQL endpoints deployed on the top of RDF repositories such as OpenLink Virtuoso or OWLim. Furthermore and with regards to the promotion of 
+ raw data to RDF, there is an increasing interest in the creation of methodologies, best practices/recipes~\cite{best-gld,linked-data-cookbook} and lifecycles~\cite{gld-lifecycle,lod2-stack}. In this sense, some 
+ Linked Data design considerations can be found in~\cite{bizer07how} covering from the design or URIs~\cite{Sauermann+2007a,bernerslee1998uri,uris-uk}, design patterns~\cite{linked-data-patterns}, 
+ publication of RDF datasets and vocabularies~\cite{Berr08}, etc. to the establishment of Linked Data profiles~\cite{basic-profile-w3c}.
+ 
+ On the other hand, consumption of Linked Data is being addressed to provide new ways of data visualization~\cite{DBLP:journals/semweb/DadzieR11,hoga-etal-2011-swse-JWS}, 
+ faceted browsing~\cite{Pietriga06fresnel, citeulike:8529753,Sparallax} and searching~\cite{hoga-etal-2011-swse-JWS}, processing~\cite{Harth:2011:SIP:1963192.1963318} and exploitation of data applying 
+ different approaches such as sensors~\cite{Jeung:2010:EMM:1850003.1850235,ontology-search} and techniques such as distributed queries\cite{Hartig09executingsparql,Ankolekar07thetwo,sparqlOpt}, 
+ scalable reasoning process~\cite{Urbani2010WebPIE,HoganHarthPolleres2009,DBLP:conf/semweb/HoganPPD10}, 
+ annnotation of web pages~\cite{rdfa-primer} or information retrieval~\cite{Pound} to name a few.
+  
+  FIXME: linking+lifecycles+retrieval
+  
+ \item In the field of Open Government Data (OGD) there are projects trying to exploit the 
+ information of public procurement notices like the ``Linked Open Tenders Electronic Daily'' project~\cite{loted} 
+ where they use the RSS feeds of TED.  In the European project LOD2~\cite{lod2-project}, there is a specific workpackage, 
+ WP9a ``LOD2 for A Distributed Marketplace for Public Sector Contracts'', to explore and demonstrate the 
+ application of linked data principles for procuring contracts in the public sector and, 
+ the Media Lab research group at the Technical University of Athens has recently published the 
+ ``PublicSpending.net''~\cite{publicspending} portal to visualize and manage statistics about public spending around the world. Finally the 
+ ``OpenSpending.org''~\cite{open-spending} portal also presents some specifications to model public procurement data and 
+ visualize where the money goes. The ``LOD Around-the-Clock''~\cite{latc-project} (LATC) and PlanetData~\cite{planet-data-project} projects are also increasing the awareness of 
+ LOD across Europe delivering specific research and dissemination activities such as the 
+ ``European Data Forum''. Furthermore legal aspects of public sector information are being reviewed in the 
+ LAPSI project~\cite{lapsi-project}. In the case of vocabularies and datasets, GoodRelations 
+ and ProductOntology are two of the most prominent approaches for tagging products and services using semantic web technologies, 
+ for instance Renault UK has GoodRelations in RDFa in their UK merchandise store.
+
+\end{itemize}
+
+
