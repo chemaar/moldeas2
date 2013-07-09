@@ -1,5 +1,6 @@
-This section discusses existing methods to convert knowledge organizations systems distinguishing between RDF/OWL 
+This section specifically discusses existing methods to convert knowledge organizations systems distinguishing between RDF/OWL 
 conversions methods for thesauri and product classification systems.
+
 \begin{itemize}
  \item \textbf{Thesauri Conversion Methods}. A thesaurus is a controlled vocabulary, with equivalent terms explicitly 
  identified and with ambiguous words or phrases (e.g. homographs) made unique. This set of terms also may include broader-narrower 
@@ -16,27 +17,24 @@ conversions methods for thesauri and product classification systems.
  steps are embedded as part of the whole lifecycle.
  
  \item \textbf{Product Scheme Classification Conversion Methods.}  Product Scheme Classifications (PSCs) have been developed to 
- organize the marketplace~\cite{Leukel-automating} in distinct vertical sectors that reflect the 
+ organize the marketplace~\cite{Leukel-automating,Leukel-comparative} in distinct vertical sectors that reflect the 
  activity (or some activities) of economy and commerce. They have been built to solve specific problems of 
  interoperability and communication in e-commerce~\cite{Leukel-findings} providing a structural organization 
  of different kind of products collected together by some economic criteria. The aim of a PSC is to be used 
  as a standard~\cite{Leukel-standard} de facto by different agents for information interchange 
- in marketplaces~\cite{FenselOmel2001,FenselDing2001}.
- 
- 
- Many approaches for product classification systems adaptation to the Semantic Web, 
+ in marketplaces~\cite{FenselOmel2001,FenselDing2001}. Many approaches for product classification systems adaptation to the Semantic Web, 
  like~\cite{Lonsdale:2010:ROL:1743778.1744005}, present methods with the goal to convert them to domain-ontologies. 
- The tree-based structure between product terms is interpreted then as a logical is-a hierarchy. 
- From our point of view and following the discussion about~\cite{Hepp:2007:POR:1256315.1256337,Hepp:2006:SWS:1128590.1128683}, hierarchical 
+ The tree-based structure between product terms is then interpreted as a logical is-a hierarchy. 
+ From our point of view and following the discussion in~\cite{Hepp:2007:POR:1256315.1256337,Hepp:2006:SWS:1128590.1128683}, hierarchical 
  links between the elements of each economic sector have not the semantics of subsumption relationships. The next example 
- taken directly from the CPV 2008 shows how the relationship between the element ``Parts and accessories for bicycles'' (34442000-7) 
- and its direct antecessor, ``Bicycles'' (34440000-3), does not seem an is-a relation. In this case, an ontological 
+ taken directly from the CPV 2008 shows how the relationship between the element ``Parts and accessories for bicycles'' (34432000-4) 
+ and its direct antecessor, ``Bicycles'' (34430000-0), does not seem an is-a relation. In this case, an ontological 
  property for object composition like \texttt{hasPart} would be much better. Moreover, there are further 
  remarks against the idea of using the PSCs as domain-ontologies. It is difficult to assert 
- that the CPV element, ``Tin bars, rods, profiles and wire'' (27623100), represents 
+ that the CPV element, ``Bars, rods, wire and profiles used in construction'' (44330000-2), represents 
  any specific product. Rather it should be regarded as a collection of products. 
  To convert correctly this element into a domain ontology concept, it should be considered 
- as equivalent to the union of several concepts (e.g. $TinBar \cup TinRod \cup TinProfiles \cup TinWire$).
+ as equivalent to the union of several concepts (e.g. $Bar \cup Rod \cup Wire \cup Profile$).
  
  Our approach instead will not consider PCSs as domain ontologies, but a specific kind of knowledge organization system. Any PSC is 
  interpreted as a conceptual scheme comprised of conceptual resources. Thus, hierarchical relationships are not 
