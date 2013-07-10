@@ -1,11 +1,13 @@
 Previous sections have outlined the importance of PSCs to improve the accesibility and other issues in 
 the e-Procurement sector. The applicability of semantic technologies and Linked Data has been also presented 
 as a method to improve interoperability and integration among systems. Furthermore the MOLDEAS lifecycle has been 
-also outlined as well as existing conversion methods and common features of PSCs. FIXME: Following a detailed 
-summary of tasks to promote PSCs to Linked Data is presented. Firstly, Table~\ref{table:pscs-ld} shows 
-the PSCs that have been selected following the next criteria:
+also outlined as well as existing conversion methods and common features of PSCs. In order to carry out 
+the promotion of PSCs to Linked Data following thise lifecycle, a detailed summary of the main tasks is presented below:
+
 \begin{itemize}
- \item The use of the CPV 2008 (hereafter CVP refers to CPV 2008) is mandatory for all public procurement notices according 
+ \item  Firstly, the criteria to select the PSCs, see Table~\ref{table:pscs-ld}, are presented:
+\begin{itemize}
+ \item The use of the CPV 2008 is mandatory for all public procurement notices according 
  to the Regulation (EC) Nº 2195/2002 of the European Parliament and it is used as a hub classification.
  \item European classifications such as CPC or CPA have direct mappings (hand-made) to the CPV so they perfectly fit 
  to the task $t_8$ of interlinking RDF resources (the SKOS property \texttt{skos:exactMatch} can be used for this purpose).
@@ -36,45 +38,43 @@ the PSCs that have been selected following the next criteria:
   \end{center}
 \end{table} 
 
-\begin{itemize}
  \item Tasks $t_1$ and $t_5$. There is an implicit structure in each product classification 
  that enables the use of graph definitions (tree and forest), see Figure~\ref{fig:pscs-data-model}.
  \begin{itemize}
   \item Product categories. A PSC is divided into product categories, $Cat_{psc}$ that group different elements according to hierarchy levels, 
   these categories are disjointed sets of elements. Thus, each PSC element or term is defined in only one $Cat^k_{psc}$.
   \item Taxonomy. Apart from categories and hierarchy division, each product sector can be considered as a tree, $T_{psc}$, 
-  and the whole set of trees builds a forest, $F_{psc}$. Each $t^0_{psc}$  element is the root of a product sector and each $t_psc$ 
-  is part of only one $T_{psc}$. According to the forest definition, the set product sectors are disjointed.
+  and the whole set of trees builds a forest, $F_{psc}$. Each $t^0_{psc}$ element is the root of a product sector, each $t_{psc}$ 
+  is part of only one $T_{psc}$ and the set product sectors are disjointed by the forest definition.
  \end{itemize}
+ 
+ The use of SKOS Core to model PSCs is then justified due to the fact this ontology is based on two 
+ main classes \texttt{skos:Concept} and \texttt{skos:ConceptScheme}. Thus all PSC elements are 
+ an instance of the class \texttt{skos:Concept}. Assuming this modeling, the interpreation of each $t_{psc}$ 
+ is obvious and avoids the issues presented in Section~\ref{sect:least} keeping all original semantics of the PSC. In order 
+ to group all elementos of a PSC under a same concept, a new class $PSCConcept$ is defined as subclass of 
+ \texttt{skos:Concept}. Furthermore this class can be divided into different categories to represent 
+ the conceptual hierarchy of the PSC. Thus for each $Cat_{psc}^k$ a subclass of $PSCConcept$ is defined, e.g. 
+ Equation~\ref{cpv-st} represents the CPV structure.
+ 
+ \begin{equation}\label{cpv-st}
+ \begin{split}
+ PSCConcept\ \equiv Division\ \sqcup\ Group \sqcup\ Class \sqcup\ Category \\
+ Division \sqcap\ Group \sqcap\ Class\ \sqcap\ Category = \perp
+ \end{split}
+\end{equation}
 
+  As Section~\ref{sect:least} has outlined, the PSC taxonomy should not be interpreted as a classical \texttt{is-a} hierarchy but 
+  the SKOS vocabulary defines specific properties such as \texttt{skos:inScheme}, \texttt{skos:related}, \texttt{skos:broaderTransitive} or
+  \texttt{skos:narrowerTransitive} that perfectly match the requirements of establishing relationships among PSC elements. Finally an 
+  instance of a PSC element, $t_{psc}$, defined using semantic properties is presented in Table~\ref{table:properties}. 
+  
  \begin{figure}[!ht]
 \centering
 	\includegraphics[width=\textwidth]{./imgs/fig-2}
  \caption{A partial view of the data model for PSCs in SKOS.}
  \label{fig:pscs-data-model}
 \end{figure}
-
-
- \begin{table}[!ht]
-\renewcommand{\arraystretch}{1.3}
-\begin{center}
-\begin{tabular}[c]{|l|p{8cm}|} 
-\hline
-  \textbf{Vocabulary prefix} &  \textbf{Description} \\\hline
- dbpedia &  Reuse of DBPedia concepts and properties \\ \hline 
- dc and dct & Dubling Core properties for describing metadata \\ \hline  
- gr & Use of the GoodRelations vocabulary to describe products and services \\\hline 
- po & Use of the ProductOntology vocabulary to create links to existing product and service definitions\\\hline 
- skos & Taxonomy specification and labeling properties \\ \hline
- void & Description of datasets metadata \\\hline
-\hline
-\end{tabular}
-\caption{Main semantic vocabularies selected to model a PSC.}\label{table:vocabs} 
-  \end{center}
-\end{table} 
-
-
-
 
  \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -98,11 +98,34 @@ the PSCs that have been selected following the next criteria:
 \end{table} 
 
 
+\item Task $t_3$. The Linked Data community has released a lot of vocabularies to model information and 
+knowledge in different domains. One of the keypoints to improve interoperability among sytems 
+keeping semantics and, therefore, reasoning capabilities lies in the reuse of these definitions. That is 
+why some existing vocabularies have been selected, see Table~\ref{table:vocabs}, to model the PSCs.
 
 
-\item Task $t_6$. One of the key points to a successful promotion of raw data consists on the URI 
-design~\cite{Heath_Bizer_2011}. Table~\ref{table:pscs-uri} presents an URI scheme with the aim of addressing the desired features 
-of providing ``Cool Uris'', meaningful, keep the namespaces under our control, etc. easing the reuse of RDF resources in the ``Web of Data''.
+ \begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}[c]{|l|p{8cm}|} 
+\hline
+  \textbf{Vocabulary prefix} &  \textbf{Description} \\\hline
+ dbpedia &  Reuse of DBPedia concepts and properties \\ \hline 
+ dc and dct & Dubling Core properties for describing metadata \\ \hline  
+ gr & Use of the GoodRelations vocabulary to describe products and services \\\hline 
+ po & Use of the ProductOntology vocabulary to create links to existing product and service definitions\\\hline 
+ skos & Taxonomy specification and labeling properties \\ \hline
+ void & Description of datasets metadata \\\hline
+\hline
+\end{tabular}
+\caption{Main semantic vocabularies selected to model a PSC. These prefixes have been retrieved using the ``Prefix.cc'' service.}\label{table:vocabs} 
+  \end{center}
+\end{table} 
+
+
+\item Task $t_6$. In order to get a successful promotion of raw data, the design of a good URI Scheme 
+is a key-task~\cite{Heath_Bizer_2011}. Table~\ref{table:pscs-uri} presents the PSCs URI scheme with the aim of addressing the desired features 
+of providing ``Cool Uris'', keep the namespaces under our control, etc. easing the reuse of RDF resources in the ``Web of Data''.
   
  \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -128,11 +151,6 @@ public procurement notices from any PSC. The mappings can be generated following
 1) exact mappings created by a domain expert or 2) related, through the execution of a custom entity reconciliation process 
 based on NLP techniques, these mappings are automatically discovered and generated.
 \end{itemize}
-
-
-
-
-
 
 Once the lifecycle has been carried out the results of promoting to RDF the selected PSCs can be shown in Table~\ref{ganancia-terminos},
 more specifically the first four columns specify respectively the vocabulary of a PSC ($V_{psc}$), the number of elements 
