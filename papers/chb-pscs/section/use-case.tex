@@ -153,7 +153,9 @@ based on NLP techniques. To do so a PSC reconciliation service has been designed
 both filters and the syntactic search engine can be easily customized. Firstly a target PSC is selected and their descriptors (in English) 
 are indexed using Apache Lucene. After that the mappings between elements in a source PSC are automatically discoverd and generated through the execution 
 of queries against the indexed PSC. Basically the creation of a mapping lies in a string comparison between the source descriptor and the 
-target descriptor. Nevertheless the personalization of Apache Lucene and Solr allows us the creation of more accurate mappings.
+target descriptor. Nevertheless the personalization of Apache Lucene and Solr allowed us the creation of more accurate mappings. Finally 
+an important issue lies in the mapping confidence, in this case a pairwise human-validation has been carried out to ensure between a 80-90\% of 
+correct mappings.
 
 \item Task $t_9$. Since a model for representing PSCs is available the real transformation to RDF has been performed using Google Refine 
 and a Java processor. The results of promoting to RDF the selected PSCs are presented in Table~\ref{ganancia-terminos}, 
