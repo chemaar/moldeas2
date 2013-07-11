@@ -140,16 +140,13 @@ $\star$ 	& $42035$ 	& $1842053$	& $21715$   	& $209,66$	& $29586$ 	& $285,66$	 \
 
 
 \subsection{Study 2}
-The aim of this study is to verify if the Linked Data coming from public procurement notices, PSCs, etc. can be consumed to deliver a decision support system that help expert 
-users to select CPV codes from user queries in natural language. This study is motivated by the company Euroaler.net that sells an alert service for users (companies, etc.) 
-that want to tender in specific sectors under a certain profile. Usually, the most relevant variables in public procurement notices are the CPV codes and the 
-location (NUTS codes). In this experiment we simulate the behavior of Euroalert.net employees when they have to translate user queries into CPV codes 
-for creating a new alert. Basically, the experiment is based on traditional semantic search and concept query expansion methods that we have designed to 
+The aim of this study is to verify if the Linked Data generated from public procurement notices, PSCs, etc. can be consumed to deliver a decision 
+support system that help business users to select CPV codes from user queries in natural language. This study is motivated by the company ``Euroalert.net'' 
+that sells an alert service for users (companies, etc.) that want to tender in specific sectors under a certain profile. 
+Usually, the most relevant variables in public procurement notices are the CPV codes and the location (NUTS codes). In this experiment 
+we simulate the behavior of ``Euroalert.net'' employees when they have to translate user queries, $Q_{str}$, into CPV codes for creating a new alert. 
+Basically, the experiment is based on methods for semantic search and concept query expansion methods that we have designed to 
 tackle the recommendation of CPV codes, see. Table~\ref{methods-recommending} . 
-
-
-\subsection{Research Design}
-
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -157,7 +154,7 @@ tackle the recommendation of CPV codes, see. Table~\ref{methods-recommending} .
 \begin{tabular}[c]{|l|p{8.5cm}|p{4.5cm}|} 
 \hline
 \textbf{Method} &  \textbf{Description} &  \textbf{Technology} \\\hline
-$M^1$ & CPV English descriptions are indexed and a syntactic search process is performed for each $Q_i$ & Apache Lucene y Solr \\ \hline
+$M^1$ & CPV English descriptions are indexed and a syntactic search process is performed for each $Q_{str}$ & Apache Lucene y Solr \\ \hline
 $M^2$ & CPV codes are selected according to the SKOS taxonomy. Previously, the method $M^1$ is applied to extract CPV codes from natural language & $M^1$ + ranking broader/narrower \\ \hline
 $M^3$ & Similar to $M^2$ but codes are selected using \textit{Spreading Activation}& $M^1$ + ONTOSPREAD \\ \hline
 $M^4$ & Similar to $M^2$ but codes are selected using the analysis of historical relationships in previous public procurement notices & $M^1$ + Apache Mahout \\ \hline
@@ -167,18 +164,13 @@ $M^4$ & Similar to $M^2$ but codes are selected using the analysis of historical
 \end{table}
 
 
-% Since the CORFU approach has been designed and implemented~\footnote{\url{https://github.com/chemaar/corfu}} it is necessary to 
-% establish a method to assess quantitatively the quality of the results.  The steps to carry 
-% out this experiment are: 1) Configure the CORFU technique, see Table~\ref{config-corfu};  
-% 2) Execute the algorithm taking as a parameter the file containing the whole dataset of company names;
-% 3) Validate (manually) the dump of unified names; 4) Calculate the measures of 
-% precision, see Eq.~\ref{eq-1}, recall, see Eq.~\ref{eq-2}, and the F1 score (the harmonic mean of precision and recall), see Eq.~\ref{eq-3} according to the values of $tp$ (true positive), 
-% $fp$ (false positive), $tn$ (true negative) and $fn$ (false negative). In particular, this evaluation considers the precision of the algorithm as ``the number of supplier names that have been correctly unified under the same name'' while recall is 
-% ``the number of supplier names that have not been correctly classified under a proper name''.  More specifically, $tp$ is ``the number of corporate names properly unified'', $fp$ is 
-% ``the number of corporate names wrongly unified'', $tn$ is ``the number of corporate names properly non-unified'' and $fn$ is ``the number of corporate names wrongly non-unified''.
-% 
-% 
-
+\subsection{Research Design}
+In order to validate the accuracy of the different methods to suggest CPV codes the traditional measures of 
+precision, see Equation~\ref{eq-1}, recall, see Equation~\ref{eq-2} and F1 score(the harmonic mean of precision and recall), see Equation~\ref{eq-3} will 
+be used to compare and select the best method to recommend CPV codes. In particular, $tp$ (true positive) is ``the set of expected CPV codes 
+that have been retrieved'', $fp$ is ``the set of un-expected CPV codes that have been retrieved'', 
+$tn$ is ``the set of expected CPV codes that have not been retrieved'' and $fn$ is 
+``the set of un-expected CPV codes that have not been retrieved''.
 
 \begin{figure}[ht]
 \begin{minipage}[b]{0.45\linewidth}
@@ -202,7 +194,7 @@ F1 = 2 \cdot \frac{Precision \cdot Recall}{ Precision + Recall}
 \end{equation}
 
 \subsection{Sample}
-In order to carry out this study we have used the next samples of data:
+This experiment has been carried out using the next datasets:
 \begin{itemize}
 \item A RDF dataset of public procurement notices from 2008 to 2011 that contains $919341$ documents annotated with 
 a total number of $1866367$ CPV codes ($10062$ are different) and $1438572$ NUTS codes ($1896$ are different).
@@ -211,7 +203,9 @@ a total number of $1866367$ CPV codes ($10062$ are different) and $1438572$ NUTS
 \item The CPV dataset as Linked Data.
 \end{itemize}
 
-
+More specifically, Table~\ref{expected-codes} shows the description of each query where $Q_{i}$ is the identifier 
+of a user query, $Q_{str}$ is the real query as a string and $\#Q^{i}_{cpv}$ is the number of expected CPV codes. Obviously, the comparison 
+does not just take into account the cardinality of the output set but the CPV code.
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -238,18 +232,20 @@ a total number of $1866367$ CPV codes ($10062$ are different) and $1438572$ NUTS
 
 
 \subsection{Results and Discussion}
-According to the results in Table~\ref{table:queries-ir-results}, the method that better match the behavior of an expert user is $M^1$ followed by $M^3$. 
-This implies that a method based on natural language processing techniques is the most appropriate to translate user queries into CPV codes. 
-Oddly, the results of semantic-based methods, $M^2$ and $M^3$, do not get a good performance. Likely, the type of translation 
-that the expert user does is more close to a direct language translation than a real thinking about the 
-relationships in the taxonomy. Finally, the exploitation of the historical statistics using Apache Mahout algorithms 
-(after different iterations and tests we have chosen the best one based on collaborative filtering) do not seem to reflect 
-the expert user behavior. Although search and recommendation should not be compared it is strange than a dataset containing the use 
-CPV codes in $1$ million public procurement notices could not improve the traditional syntactic search. Nevertheless, there is an 
-open issue that lies in the number of true negative codes that in a second step should be validated by experts. 
-Thus, the semantic-based methods could improve their results with regards to the traditional one. 
-
-
+According to the results in Table~\ref{table:queries-ir-results}, the method that better match the behavior 
+of an expert user is $M^1$ with an average precision of $0,28$ and recall of $0,26$. This implies that a method based 
+on natural language processing techniques is the most appropriate to translate user queries into CPV codes, or, at least 
+is the method that better matches the translation made by business users. On the other hand, although the method $M^3$ 
+with an average precision of $0,23$ and recall of $0,23$ obtains the second position but taking into account that 
+exploits the semantic relationships in the CPV it should be able to get a better performance. Likely, 
+the type of translation that the expert user does is more close to a direct language translation than a real thinking about the 
+relationships in the taxonomy. Finally, the exploitation of the historical statistics using Apache Mahout algorithms, $M^{4}$, 
+(after different iterations and tests we have chosen the best configuration based on a collaborative filtering algorithm) do not 
+seem to reflect the expert user behavior. Although search and recommendation should not be compared it is strange 
+than a dataset containing the use CPV codes in $919341$ public procurement notices could not improve the traditional syntactic 
+search. Nevertheless, there is an open issue that lies in the number of true negative codes that in a second step should 
+be validated by experts, in this situation we strongly believe semantic-based methods could improve their results with regards to 
+$M^1$ . 
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -277,4 +273,21 @@ $Q_{11}$  &$0,23$ & $0,23$ & $0,23$ & 		$0,23$ & $0,23$ & $0,23$ & 	$0,15$ & $0,
 \caption{Quantitative measures (P-precision and R-recall) of methods for recommending CPV codes.}\label{table:queries-ir-results}
   \end{center}
 \end{table} 
+
+Finally, after the execution of these experiments and back to the motivating examples 
+presented in the introduction section some assertations can be done:
+\begin{itemize}
+ \item The American SME can now use the NAICS classification to search public procurement 
+ opportunities in Europe.
+ 
+ \item The family-owned Spanish company can access to Bulgarian low-value procurement opportunities because the 
+ use of the CPV (through Internet protocols) directly supports a multilingual environment and they can also obtain suggestions of CPV codes.
+ 
+ \item The department of statistics within the WorldBank can gather and summarize different economic data due to 
+ the link among PSCs. In this case the CPV can be used as \textit{lingua franca} to make data comparisons.
+ 
+ \item The company that sells a commercial alert service or more specifically its employees can take advantage of 
+ the recommending engine to support their decisions and make a better translation of customers intentions.
+\end{itemize}
+
 
