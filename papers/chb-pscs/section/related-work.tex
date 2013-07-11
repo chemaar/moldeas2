@@ -8,24 +8,24 @@ According to the previous section, some relevant works can be found and grouped 
  in a knowledge-based realm. Thus data, information and knowledge can be easily shared, exchanged and linked~\cite{Maali_Cyganiak_2011} 
  to other knowledge and databases through the use URIs, more specifically HTTP-URIs. Therefore the broad objective of this effort can be summarized 
  as a new environment of added-value information and services that can encourage and improve B2B (Business to Business), B2C (Business to Client) or 
- A2A (Administration to Administration) relationships by means of the implementation of new contex-awareness expert systems to tackle existing 
+ A2A (Administration to Administration) relationships. The implementation of new context-awareness expert systems to tackle existing 
  cross-domain problems such as medical reasoning, analysis of social media, etc. in which data heterogeneities, 
- lack of standard knowledge representation and interoperability problems are common factors. As a practical view of the Semantic Web, 
+ lack of standard knowledge representation and interoperability problems are common factors that the use of semantics can improve. As a practical view of the Semantic Web, 
  the Linked Data~\cite{Berners-Lee-2006,Heath_Bizer_2011} initiative emerges to create a large and distributed database on the Web. 
  In order to reach this major objective the publication of information and data under a common data model (RDF) 
  with a specific formal query language (SPARQL~\cite{Sparql11}) provides the required building blocks to turn the Web of documents 
  into a real database or ``Web of Data''. Research works are focused in two main areas: 1) production/publishing~\cite{bizer07how} and 2) consumption of 
- Linked Data. In the first case data quality~\cite{bizer2007,wiqa,ld-quality,DBLP:journals/ws/BizerC09,lodq,link-qa}, conformance~\cite{DBLP:journals/ws/HoganUHCPD12}, 
+ Linked Data. In the first case data quality~\cite{bizer2007,Bizer2009QA,lodq,link-qa}, conformance~\cite{DBLP:journals/ws/HoganUHCPD12}, 
  provenance~\cite{w3c-prov,DBLP:conf/ipaw/HartigZ10}, trust~\cite{Carroll05namedgraphs}, description of 
- datasets~\cite{void,Cyganiak08semanticsitemaps,ckanValidator} and entity reconciliation~\cite{Serimi,Maali_Cyganiak_2011} are 
+ datasets~\cite{void,Cyganiak08semanticsitemaps,ckanValidator} and entity reconciliation~\cite{Serimi,Maali_Cyganiak_2011} issues are 
  becoming major objectives since a mass of amount data is already available through RDF repositories and SPARQL endpoints. 
  
  On the other hand, consumption of Linked Data is being addressed to provide new ways of data 
- visualization~\cite{DBLP:journals/semweb/DadzieR11,hoga-etal-2011-swse-JWS}, faceted browsing~\cite{Pietriga06fresnel, citeulike:8529753,Sparallax}, 
+ visualization~\cite{DBLP:journals/semweb/DadzieR11,hoga-etal-2011-swse-JWS}, faceted browsing~\cite{Pietriga06fresnel,citeulike:8529753}, 
  searching~\cite{hoga-etal-2011-swse-JWS} and data exploitation~\cite{Harth:2011:SIP:1963192.1963318}. Some approaches 
  based on sensors~\cite{Jeung:2010:EMM:1850003.1850235,ontology-search}, distributed queries\cite{Hartig09executingsparql,Ankolekar07thetwo,sparqlOpt}, 
- scalable reasoning processes~\cite{Urbani2010WebPIE,DBLP:conf/semweb/HoganPPD10}, 
- annnotation of web pages~\cite{rdfa-primer} or information retrieval~\cite{Pound} are key-enablers for easing the access 
+ scalable reasoning processes~\cite{DBLP:journals/ws/UrbaniKMHB12,DBLP:journals/ws/BonattiHPS11}, 
+ annotation of web pages~\cite{rdfa-primer} or information retrieval~\cite{Pound} are key-enablers for easing the access 
  to information and data.
   
  \item In the particular case of e-Procurement there are projects trying to exploit the 
@@ -36,12 +36,12 @@ According to the previous section, some relevant works can be found and grouped 
  the Media Lab research group at the Technical University of Athens has recently published the 
  ``PublicSpending.net''~\cite{publicspending} portal to visualize and manage statistics about public spending around the world. 
  Finally the ``OpenSpending.org''~\cite{open-spending} portal also presents some specifications to model public procurement data and 
- visualize where the money goes. In general, the ``LOD Around-the-Clock''~\cite{latc-project} (LATC) and PlanetData~\cite{planet-data-project} 
+ visualize where the money goes. In general, the ``LOD Around-the-Clock''~\cite{latc-project} (LATC) and the PlanetData~\cite{planet-data-project} 
  projects are also increasing the awareness of LOD across Europe delivering specific research and dissemination activities such as the 
  ``European Data Forum''. Furthermore legal aspects of public sector information are being reviewed in the 
  LAPSI project~\cite{lapsi-project}. In the case of vocabularies and datasets, GoodRelations and ProductOntology are two of 
  the most prominent approaches for tagging products and services using semantic web technologies, 
- for instance Renault UK has GoodRelations in RDFa in their UK merchandise store. Although these previous efforts to apply Semantic Web 
+ for instance Renault UK uses GoodRelations in RDFa in their UK merchandise store. Although these previous efforts to apply Semantic Web 
  principles to procurement data, a system to link existing PSCs to enable a better consumption of 
  public procurement notices and interoperability among e-Procurement systems is still missing 
 
@@ -56,36 +56,36 @@ some remarks and discussion about related works are outlined below.
  that perform some kind of string comparison (labels~\cite{Serimi} or URIs~\cite{Maali_Cyganiak_2011}) to establish a similarity 
  value between two RDF resources under a particular threshold of confidence. The Silk framework~\cite{DBLP:conf/semweb/JentzschIB10} 
  provides an API for discovering relationships between data items within different Linked Data sources. In this sense 
- the DBPedia Spotlight~\cite{DBLP:conf/i-semantics/MendesJGB11} gives a ``tool for automatically annotating mentions of DBpedia resources in text,
+ the DBPedia Spotlight~\cite{DBLP:conf/i-semantics/MendesJGB11} gives also a ``tool for automatically annotating mentions of DBpedia resources in text,
  a solution for linking unstructured information sources to the Linked Open Data cloud through DBpedia''. Other approaches 
  coming from the ontology mapping and alignment areas try to create links according to the structure (relationships) and naming convention 
  of the RDF resources. Finally some machine learning techniques such as genetic programming~\cite{DBLP:conf/semweb/IseleB11} are emerging 
- to learn linkage rules from existing datasets. As conclusion, the interlinkage of RDF resources is consider 
- to be a key-enabler for an enriched data consumption. Neverthless the main drawback of these approaches lies in the necessity of human validation 
- to ensure the validaty and quality of the link. Furthermore these tools have been designed with a general purpose (parameters such as stopwords cannot 
+ to learn linkage rules from existing datasets. As conclusion, the inter-linkage of RDF resources is consider 
+ to be a key-enabler for an enriched data consumption. Nevertheless the main drawback of these approaches lies in the necessity of human validation 
+ to ensure the quality of the link. Furthermore these tools have been designed with a general purpose (parameters such as stopwords cannot 
  be easily configured) and based on the assumption that resources are already available in RDF. That is why it is necessary 
  to provide a custom PSC reconciliation service that takes into account the specific characteristics of PSCs descriptors.
  
  \item On the other hand there is an increasing interest in the creation of methodologies, 
- best practices/recipes~\cite{best-gld,linked-data-cookbook} and lifecycles~\cite{gld-lifecycle,lod2-stack}. 
+ best practices/recipes~\cite{best-gld,linked-data-cookbook} and lifecycles~\cite{gld-lifecycle,lod2-stack} in the Linked Data community. 
  In this sense, some Linked Data design considerations can be found in~\cite{bizer07how} covering from the design or URIs~\cite{Sauermann+2007a,bernerslee1998uri,uris-uk}, design patterns~\cite{linked-data-patterns}, 
- publication of RDF datasets and vocabularies~\cite{Berr08}, etc. to the establishment of Linked Data profiles~\cite{basic-profile-w3c}. Neverthless all these guidelines present 
+ publication of RDF datasets and vocabularies~\cite{Berr08}, etc. to the establishment of Linked Data profiles~\cite{basic-profile-w3c}. Nevertheless all these guidelines present 
  a tangled environment of aspects with different levels of abstraction that prevent a clear application to 
  a specific problem such as the promotion of PSCs to the Linked Data initiative.
  
  \item Finally information retrieval and recommending techniques have been widely studied to tackle existing problems of searching 
- and filtering information according to an user profile in different domains~\cite{freews}. More specifically in the particular 
+ and filtering information according to an user profile in different domains~\cite{freews}. In the particular 
  case of Spreading Activation~\cite{Collins_Loftus_1975,Scott1981} (SA) it has been demonstrated its application to 
  extract correlations between query terms and documents analyzing user logs~\cite{Cui:2003:QEM:1435677.858986} and to retrieve resources amongst multiple 
  systems~\cite{Schumacher:2008:CFD:1789394.1789447} in which ontologies are used to link and annotate resources. In conjunction with ontologies some works 
  have studied this technique to explore concepts addressing two important issues: 1) the selection and
- 2) the weighting of  additional search terms and to measure conceptual similarity~\cite{gouws-vanrooyen-engelbrecht:2010:CCSR}. 
+ 2) the ranking of  additional search terms and to measure conceptual similarity~\cite{gouws-vanrooyen-engelbrecht:2010:CCSR}. 
  On the other hand, data mining, more specifically mining socio-semantic networks\cite{Troussov08miningsocio-semantic}, and applications to collaborative filtering 
  (community detection based on tag recommendations, expertise location, etc.) are other potential scenarios to apply the SA theory due to 
- the high performance and scalability of this technique. In particular, annotation and tagging~\cite{LabraGayo:2010:WAS:1668126.1668147,DBLP:journals/ijksr/RodriguezGP12} services 
+ its high performance and scalability. In particular, annotation and tagging~\cite{LabraGayo:2010:WAS:1668126.1668147,DBLP:journals/ijksr/RodriguezGP12} services 
  to gather metadata~\cite{GelgiVD05} from the Web or to predict social annotation~\cite{Chen:2007:PSA:1780653.1780702} and recommending
  systems based on the combination of ontologies and SA~\cite{Gao:2008:SAR:1441425.1441845} are taken advantage of using this technique. Besides 
- semantic search is a highlight area to apply SA following hybrid approaches~\cite{DBLP:conf/jckbse/BerruetaGP06,Rocha:2004:HAS:988672.988723} or user/concept
+ semantic search is a relevant area to apply SA following hybrid approaches~\cite{DBLP:conf/jckbse/BerruetaGP06,Rocha:2004:HAS:988672.988723} or user/concept
  query expansion~\cite{Nie:2003:QEQ:767396.767402} combining metadata and user information.
 
  \end{enumerate}
