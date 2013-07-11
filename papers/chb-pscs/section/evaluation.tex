@@ -133,7 +133,7 @@ $\star$ 	& $42035$ 	& $1842053$	& $21715$   	& $209,66$	& $29586$ 	& $285,66$	 \
 
  \begin{figure}[!ht]
 \centering
-	\includegraphics[width=\textwidth]{./imgs/fig-3}
+	\includegraphics[width=\textwidth]{./imgs/fig-5}
  \caption{Evolution of the number of terms when a new PSC is linked to the CPV 2008 .}
  \label{fig:results-3}
 \end{figure}
@@ -145,8 +145,8 @@ support system that helps business users to select CPV codes from user queries i
 that sells an alert service for users (companies, etc.) that want to tender in specific sectors under a certain profile. 
 Usually, the most relevant variables in public procurement notices are the CPV codes and the location (NUTS codes). In this experiment 
 we simulate the behavior of ``Euroalert.net'' employees when they have to translate user queries, $Q_{str}$, into CPV codes for creating a new alert. 
-Basically, the experiment is based on methods for semantic search and concept query expansion that we have designed to 
-tackle the recommendation of CPV codes, see Table~\ref{methods-recommending} . 
+Basically, the experiment is based on methods for semantic search and concept query expansion, see Figure~\ref{fig:results-6}, that we have designed to 
+tackle the recommendation of CPV codes, see Table~\ref{methods-recommending}. 
 
 \begin{table}[!htb]
 \renewcommand{\arraystretch}{1.3}
@@ -162,6 +162,13 @@ $M^4$ & Similar to $M^2$ but codes are selected using the analysis of historical
   \caption{Methods for recommending CPV 2008 codes.}\label{methods-recommending}  
     \end{center}
 \end{table}
+
+ \begin{figure}[!ht]
+\centering
+	\includegraphics[width=6cm]{./imgs/fig-6}
+ \caption{Workflow to recommend CPV 2008 codes according to an user query.}
+ \label{fig:results-6}
+\end{figure}
 
 
 \subsection{Research Design}
@@ -192,6 +199,7 @@ Recall = \frac{tp}{tp+fn}
 \begin{equation}\label{eq-3}
 F1 = 2 \cdot \frac{Precision \cdot Recall}{ Precision + Recall}
 \end{equation}
+
 
 \subsection{Sample}
 This experiment has been carried out using the next datasets:
