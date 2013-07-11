@@ -1,14 +1,14 @@
 In order to evaluate if the approach to generate Linked Data from PSCs can improve the access to public procurement data 
-exploiting the advantages of this initiative, two experiments have been designed:
+exploiting the advantages of this initiative two experiments have been designed:
 \begin{enumerate}
  \item The first one checks if we can access more public procurement notices when the links between a PSC and the CPV are created. 
  The aim of this study is to compare the initial input vocabulary (containing only the CPV descriptors) and the final 
- input vocabulary (containing all descriptors that have linked to the CPV). Therefore if we extend the input vocabulary we can ease the access to 
+ input vocabulary (containing all descriptors that have been linked to the CPV). Therefore if we extend the input vocabulary we can ease the access to 
  more public procurement notices because we can jump from any PSC to the CPV. In the same way if we need to make some kind of comparison 
- between systems working with different PSCs we can use the CPV as ``lingua franca''.
+ between systems working with different PSCs we can use the CPV as \textit{lingua franca}.
  
  \item The second study tries to exploit the semantic relationships between the CPV concepts to build a recommender of CPV codes for business users. 
- In order to make a empirical experiment we have used $11$ user queries and their translation into CPV codes made by the company ``Euroalert.net''.
+ In order to make a empirical experiment we have used $11$ real user queries and their translation into CPV codes made by the company ``Euroalert.net''.
 \end{enumerate}
 
 \subsection{Study 1}
@@ -19,15 +19,15 @@ to build new SPARQL queries that can take advantage of Linked Data principles to
 public procurement notices and the PSCs used in this study:
 \begin{itemize}
  \item All public procurement notices are always annotated by, at least, one CPV element.
- \item Each PSC is a controlled vocabulary. The CPV is a controlled vocabulary, $\mathcal{V}$, comprised of $10357$ elements/terms/codes.
+ \item Each PSC is a controlled vocabulary. The CPV is a controlled vocabulary $\mathcal{V}$ comprised of $10357$ elements/terms/codes.
  \item The public procurement notices is a RDF dataset, $\mathcal{D}$,
- Each document, $d \in \mathcal{D}$ is annotated, at least, using a CPV code, $v \in \mathcal{V}$. Thus, 
- if a query contains all elements, $v \in \mathcal{V}$, the entire dataset of notices will be retrieved.
+ Each document $d \in \mathcal{D}$ is annotated, at least, using a CPV code $v \in \mathcal{V}$. Thus, 
+ if a query contains all elements $v \in \mathcal{V}$ the entire dataset of notices will be retrieved.
 \end{itemize}
-Once these assumptions are defined, the gain of linking a new finite PSC to CPV can be calculated as follows:
+Once these assumptions are defined, the gain of linking a new finite PSC to the CPV can be calculated as follows:
 \begin{itemize}
- \item The source controlled vocabulary, $\mathcal{V}_{psc}$, is comprised of \#$\mathcal{V}_{psc}$ elements.
- \item The linking of terms between a source vocabulary, $\mathcal{V}_{psc}$, and  a target vocabulary, $\mathcal{V}$ can be carried out in the next ways:
+ \item The source controlled vocabulary $\mathcal{V}_{psc}$ is comprised of \#$\mathcal{V}_{psc}$ elements.
+ \item The linking of terms between a source vocabulary $\mathcal{V}_{psc}$ and  a target vocabulary $\mathcal{V}$ can be carried out in the next ways:
  \begin{enumerate}
   \item $1-1$ link, there are elements $v^k_{psc} \in \mathcal{V}_{psc}$ that are linked to only one element $v \in \mathcal{V}$.
   \item $1-n$ link, there are elements $v^k_{psc} \in \mathcal{V}_{psc}$ that are linked to some elements $v \in \mathcal{V}$ generating $K$ links.  
@@ -58,16 +58,16 @@ Once these assumptions are defined, the gain of linking a new finite PSC to CPV 
  \item Finally, in this study, there is a specific scenario in which elements $v^k_{psc} \in \mathcal{V}_{psc}$ are not directly mapped to elements $v \in \mathcal{V}$ but 
  assuming that there are relations $r_k$  among elements $v^j_{psc}$  and $v^k_{psc}$ new links could emerge between $v^j_{psc}$ and $v$ through $r_k$. Nevertheless this 
  situation should be avoided in order to prevent an infinite and recursive linking process and keep the advantages of using finite controlled vocabularies, 
- e.g. in the ongoing example, Product Ontology (PO) is used as a bridge classification implying an infinite max gain ($\infty$).
+ e.g. in the ongoing example the Product Ontology (PO) is used as a bridge classification implying an infinite max gain ($\infty$).
  
 \end{itemize}
 
 \subsection{Sample}
 
 The PSCs that have been selected to be promoted to RDF, see Table~\ref{table:pscs-ld}, are also used to check 
-if the gain we can get through a direct link to the CPV 2008 or by means of creating a ``bridge link'' 
+the gain we can get through a direct link to the CPV 2008 or by means of creating a ``bridge link'' 
 through the ProductOntology. A RDF dataset $\mathcal{D}$ of public procurement notices that contains $919341$ documents 
-annotated with a total number of $1866367$ CPV codes ($10062$ are different).
+annotated with a total number of $1866367$ CPV codes ($10062$ are different), has been selected as a sample dataset.
 
 
 \subsection{Results and Discussion}
@@ -140,12 +140,12 @@ $\star$ 	& $42035$ 	& $1842053$	& $21715$   	& $209,66$	& $29586$ 	& $285,66$	 \
 
 
 \subsection{Study 2}
-The aim of this study is to verify if the Linked Data generated from public procurement notices, PSCs, etc. can be consumed to deliver a decision 
-support system that help business users to select CPV codes from user queries in natural language. This study is motivated by the company ``Euroalert.net'' 
+The aim of this study is to verify if the Linked Data generated from public procurement notices, PSCs, etc. can be exploited to deliver a decision 
+support system that helps business users to select CPV codes from user queries in natural language. This study is motivated by the company ``Euroalert.net'' 
 that sells an alert service for users (companies, etc.) that want to tender in specific sectors under a certain profile. 
 Usually, the most relevant variables in public procurement notices are the CPV codes and the location (NUTS codes). In this experiment 
 we simulate the behavior of ``Euroalert.net'' employees when they have to translate user queries, $Q_{str}$, into CPV codes for creating a new alert. 
-Basically, the experiment is based on methods for semantic search and concept query expansion methods that we have designed to 
+Basically, the experiment is based on methods for semantic search and concept query expansion that we have designed to 
 tackle the recommendation of CPV codes, see Table~\ref{methods-recommending} . 
 
 \begin{table}[!htb]
@@ -165,7 +165,7 @@ $M^4$ & Similar to $M^2$ but codes are selected using the analysis of historical
 
 
 \subsection{Research Design}
-In order to validate the accuracy of the different methods to suggest CPV codes the traditional measures of 
+In order to validate the accuracy of the different methods to suggest CPV codes the typical measures of 
 precision, see Equation~\ref{eq-1}, recall, see Equation~\ref{eq-2} and F1 score(the harmonic mean of precision and recall), see Equation~\ref{eq-3} will 
 be used to compare and select the best method to recommend CPV codes. In particular, $tp$ (true positive) is ``the set of expected CPV codes 
 that have been retrieved'', $fp$ is ``the set of un-expected CPV codes that have been retrieved'', 
@@ -198,7 +198,7 @@ This experiment has been carried out using the next datasets:
 \begin{itemize}
 \item A RDF dataset of public procurement notices from 2008 to 2011 that contains $919341$ documents annotated with 
 a total number of $1866367$ CPV codes ($10062$ are different) and $1438572$ NUTS codes ($1896$ are different).
-\item A set of 11 user queries and the expected CPV codes created by ``Euroalert.net'' employees, see Table~\ref{expected-codes} 
+\item A set of 11 real user queries and the expected set of CPV codes created by ``Euroalert.net'' employees, see Table~\ref{expected-codes} 
 (queries have been ``normalized'' according to one CPV descriptor to keep privacy) .
 \item The CPV dataset as Linked Data.
 \end{itemize}
@@ -232,17 +232,16 @@ does not just take into account the cardinality of the output set but the CPV co
 
 
 \subsection{Results and Discussion}
-According to the results in Table~\ref{table:queries-ir-results}, the method that better match the behavior 
+According to the results in Table~\ref{table:queries-ir-results}, the method that better matches the behavior 
 of an expert user is $M^1$ with an average precision of $0,28$ and recall of $0,26$. This implies that a method based 
 on natural language processing techniques is the most appropriate to translate user queries into CPV codes, or, at least 
 is the method that better matches the translation made by business users. On the other hand, although the method $M^3$ 
-with an average precision of $0,23$ and recall of $0,23$ obtains the second position but taking into account that 
-exploits the semantic relationships in the CPV it should be able to get a better performance. Likely, 
+with an average precision of $0,23$ and recall of $0,23$ obtains the second position it should be able to get a better 
+performance exploiting semantic relationships in the CPV (maybe a training process is required to adjust the Spreading Activation algorithm). Likely, 
 the type of translation that the expert user does is more close to a direct language translation than a real thinking about the 
 relationships in the taxonomy. Finally, the exploitation of the historical statistics using Apache Mahout algorithms, $M^{4}$, 
-(after different iterations and tests we have chosen the best configuration based on a collaborative filtering algorithm) do not 
-seem to reflect the expert user behavior. Although search and recommendation should not be compared it is strange 
-than a dataset containing the use CPV codes in $919341$ public procurement notices could not improve the traditional syntactic 
+(after different iterations and tests we have chosen the best configuration based on a collaborative filtering algorithm) does not 
+seem to reflect the expert user behavior. Although search and recommendation should not be compared it is uncommon than a dataset containing the use CPV codes in $919341$ public procurement notices could not improve the traditional syntactic 
 search. Nevertheless, there is an open issue that lies in the number of true negative codes that in a second step should 
 be validated by experts, in this situation we strongly believe semantic-based methods could improve their results with regards to 
 $M^1$ . 
@@ -266,7 +265,7 @@ $Q_8$  	  &$0,08$ & $0,08$ & $0,08$ & 		$0,08$ & $0,08$ & $0,08$ & 	$0,08$ & $0,
 $Q_9$  	  &$0,50$ & $0,50$ & $0,50$ & 		$0$ & $0$ & $0$ & 		$0,30$ & $0,38$ & $0,34$ & 	$0$ & $0$ & $0$ \\ \hline
 $Q_{10}$  &$0,39$ & $0,39$ & $0,39$ & 		$0,42$ & $0,42$ & $0,42$ & 	$0,34$ & $0,35$ & $0,34$ & 	$0,16$ & $0,16$ & $0,16$ \\ \hline
 $Q_{11}$  &$0,23$ & $0,23$ & $0,23$ & 		$0,23$ & $0,23$ & $0,23$ & 	$0,15$ & $0,17$ & $0,16$ & 	$0$ & $0$ & $0$ \\ \hline
-\multicolumn{13}{|c|}{\textbf{Average of quanitative measures}} \\ \hline
+\multicolumn{13}{|c|}{\textbf{Average of quantitative measures}} \\ \hline
 \textbf{Total}  &$0,28$ & $0,26$ & $0,27$ & 	$0,11$ & $0,11$ & $0,11$ &  	$0,23$ & $0,23$ & $0,224$ &  	$0,03$ & $0,03$ & $0,044$ \\ \hline
 \hline
  \end{tabular}
@@ -275,12 +274,12 @@ $Q_{11}$  &$0,23$ & $0,23$ & $0,23$ & 		$0,23$ & $0,23$ & $0,23$ & 	$0,15$ & $0,
 \end{table} 
 
 Finally, after the execution of these experiments and back to the motivating examples 
-presented in the introduction section some assertations can be done:
+presented in the introduction section some assertions can be done:
 \begin{itemize}
  \item The American SME can now use the NAICS classification to search public procurement 
  opportunities in Europe.
  
- \item The family-owned Spanish company can access to Bulgarian low-value procurement opportunities because the 
+ \item The Spanish family-owned company can access to Bulgarian low-value procurement opportunities because the 
  use of the CPV (through Internet protocols) directly supports a multilingual environment and they can also obtain suggestions of CPV codes.
  
  \item The department of statistics within the WorldBank can gather and summarize different economic data due to 
