@@ -1,5 +1,5 @@
 Previous sections have outlined the importance of PSCs to improve the accessibility and other issues in 
-the e-Procurement sector. The applicability of semantic technologies and Linked Data has been also presented 
+the e-Procurement sector. Common uses of semantic technologies and Linked Data have been also presented 
 as a method to improve interoperability and integration among systems. Furthermore the MOLDEAS lifecycle has been 
 also outlined as well as existing conversion methods and common features of PSCs. In order to carry out 
 the promotion of PSCs to Linked Data following this lifecycle, a detailed summary of the main tasks is presented below.
@@ -44,11 +44,11 @@ the promotion of PSCs to Linked Data following this lifecycle, a detailed summar
   \item Product categories. A PSC is divided into product categories, $Cat^k_{psc}$, that group different elements according to 
   hierarchy levels generating a disjointed set of elements. Thus, each PSC element or term is defined in only one $Cat^k_{psc}$.
   \item Taxonomy. Apart from categories and hierarchy division, each product sector can be considered as a tree, $T_{psc}$, 
-  and the whole set of trees builds a forest, $F_{psc}$. Each $t^0_{psc}$ element is the root of a product sector, each $t_{psc}$ 
+  and the whole set of trees builds a forest, $F_{psc}$. Each $t^0_{psc}$ element is the root of a product sector, a $t_{psc}$ 
   is part of only one $T_{psc}$ and the set product sectors are also disjointed by the forest definition.
  \end{itemize}
  
- The use of the SKOS Core Recommendation to model PSCs is then justified due to the fact this ontology is based on two 
+ The use of the SKOS vocabulary to model PSCs is then justified due to the fact this ontology is based on two 
  main classes \texttt{skos:Concept} and \texttt{skos:ConceptScheme}. Thus all PSC elements are 
  an instance of the class \texttt{skos:Concept}. Therefore the interpretation of each element $t_{psc}$ 
  is obvious and avoids the issues presented in Section~\ref{sect:least} keeping all original PSC semantics. In order 
@@ -64,10 +64,10 @@ the promotion of PSCs to Linked Data following this lifecycle, a detailed summar
  \end{split}
 \end{equation}
 
-  As Section~\ref{sect:least} has outlined, the PSC taxonomy should not be interpreted as a classical \texttt{is-a} hierarchy but 
+  As Section~\ref{sect:thesauri} has outlined, the PSC taxonomy should not be interpreted as a classical \texttt{is-a} hierarchy but 
   the SKOS Core ontology defines specific properties such as \texttt{skos:inScheme}, \texttt{skos:related}, \texttt{skos:broader Transitive} or
-  \texttt{skos:narrowerTransitive} that perfectly match the requirements of establishing relationships among PSC elements. Finally an 
-  instance of a ``semantized'' PSC element, $t_{psc}$, is presented in Table~\ref{table:properties}. 
+  \texttt{skos:narrowerTransitive} that perfectly match the requirements of establishing relationships among PSC elements. According to 
+  these requirements, Table~\ref{table:properties} presents an example of a ``semantized'' PSC element. 
   
  \begin{figure}[!ht]
 \centering
@@ -84,8 +84,8 @@ the promotion of PSCs to Linked Data following this lifecycle, a detailed summar
   \textbf{Property} &  \textbf{Description} & \textbf{Example} \\\hline
   \texttt{rdf:type} & Type of a PSC element $t_{psc}$ & a \texttt{gr:ProductOr ServiceModel}, \texttt{PSCConcept} \\ \hline
   \texttt{skos:inScheme} & URI to the PSC dataset $T_{psc}$ & \texttt{skos:inScheme} cpv2008:ds \\ \hline
-  \texttt{dct:identifier} & Id used in the URI of the element $t_{psc}$ &  \texttt{dc:identifier} "30210000"$\textasciicircum\textasciicircum$xsd:string \\ \hline
-  \texttt{dct:subject} & Original Id of the element $t_{psc}$ &  \texttt{dc:subject} "30210000-4"$\textasciicircum\textasciicircum$xsd:string \\ \hline
+  \texttt{dct:identifier} & Id used in the URI of the element $t_{psc}$ &  \texttt{dct:identifier} "30210000"$\textasciicircum\textasciicircum$xsd:string \\ \hline
+  \texttt{dct:subject} & Original Id of the element $t_{psc}$ &  \texttt{dct:subject} "30210000-4"$\textasciicircum\textasciicircum$xsd:string \\ \hline
   \texttt{skos:closeMatch} and \texttt{pscs:relatedMatch} & URI to a target PSC element $t'_{psc}$ that is partially related to a source PSC element $t_{psc}$ & \texttt{po:machine} \\ \hline
   \texttt{skos:exactMatch} & URI to a target PSC element $t'_{psc}$ that is related to a source PSC element $t_{psc}$ & \texttt{cpv2003:30216000} \\ \hline
   \texttt{pscs:level} & Level in the hierarchy of an element $t_{psc}$ when an explicit hierarchy definition is missing & \texttt{pscs:level} ``5'' \\ \hline  
@@ -99,7 +99,7 @@ the promotion of PSCs to Linked Data following this lifecycle, a detailed summar
 
 
 \item Task $t_3$. The Linked Data community has released a lot of vocabularies to model information and 
-knowledge in different domains. One of the keypoints to improve interoperability among stems 
+knowledge in different domains. One of the key-points to improve interoperability among systems 
 keeping semantics and, therefore, reasoning capabilities lies in the reuse of these definitions. That is 
 why some existing vocabularies have been selected, see Table~\ref{table:vocabs}, to model the PSCs.
 
@@ -125,7 +125,7 @@ why some existing vocabularies have been selected, see Table~\ref{table:vocabs},
 
 \item Task $t_6$. In order to get a successful promotion of raw data, the design of a good URI Scheme 
 is a key-task~\cite{Heath_Bizer_2011}. Table~\ref{table:pscs-uri} presents the PSCs URI scheme with the aim of addressing the desired features 
-of providing ``Cool Uris'', keep the namespaces under our control, etc. and easing the reuse of RDF resources in the ``Web of Data''.
+of providing ``Cool URIs'', keep the namespaces under our control, etc. and easing the reuse of RDF resources in the ``Web of Data''.
   
  \begin{table}[!ht]
 \renewcommand{\arraystretch}{1.3}
@@ -146,15 +146,14 @@ of providing ``Cool Uris'', keep the namespaces under our control, etc. and easi
   \end{center}
 \end{table} 
 
-\item Task $t_8$. The broad aim of this task is to enable the possibility of querying, 
-public procurement notices from any PSC. The mappings can be generated following two approaches: 
+\item Task $t_8$. The broad aim of this task is to enable the possibility of querying public procurement notices from any PSC. The mappings can be generated following two approaches: 
 1) exact mappings created by a domain expert ($2387$) or 2) related ($19328$), through the execution of a custom entity reconciliation process 
 based on NLP techniques. To do so a PSC reconciliation service has been designed using the Apache Lucene and Solr libraries in which
 both filters and the syntactic search engine can be easily customized. Firstly a target PSC is selected and their descriptors (in English) 
 are indexed using Apache Lucene. After that the mappings between elements in a source PSC are automatically discovered and generated through the execution 
 of queries against the indexed PSC. Basically the creation of a mapping lies in a string comparison between the source descriptor and the 
 target descriptor. Nevertheless the personalization of Apache Lucene and Solr allowed us the creation of more accurate mappings. Finally 
-an important issue lies in the mapping confidence, in this case a pairwise human-validation has been carried out to ensure between a 80-90\% of 
+an important issue lies in the mapping confidence, in this case a pairwise human-validation has been carried out to ensure a 80-90\% of 
 correct mappings.
 
 \item Task $t_9$. Since a model for representing PSCs is available the real transformation to RDF has been performed using Google Refine 
@@ -222,15 +221,15 @@ SELECT DISTINCT * WHERE{
 do so all RDF triples and the ontology have been deployed in a RDF repository (OpenLink Virtuoso), thus data can be accessed through 
 a SPARQL endpoint. Furthermore and with the aim of making dereferenceable URIs and enabling content negotiation an instance 
 of Pubby (a Linked Data frontend) has been also deployed. Besides in order to ease the creation and execution of SPARQL queries, SNORQL 
-(a tool for exploring SPARQL endpoints) has been also released. Finally, the new PSCs catalogue has been released to the 
+(a tool for exploring SPARQL endpoints) has been also released. Finally, the new PSCs catalogue has been reported to the 
 LOD community, added to the ``datahub.io'' register and joined the LOD Cloud Diagram under the dataset id ``\texttt{pscs-catalogue}''.
 
 \item Task $t_{12}$ (validation process). The MOLDEAS lifecycle also purposes a validation method based on a checklist of $196$ points compiled from books, 
 W3C specifications, Open Data and Linked Data principles, CKAN validator, LOD Cloud requirements, etc. which values can be 
 ``Applicable and positive (Yes)'', ``Applicable and not found (No)'' or ``Not Applicable (N/A)''. The objective of this questionnaire is 
 to ensure the principles of the LOD initiative for easing the reuse, maintenance, governance, coverage and expressivity of data. In order to compare 
-the new version of a PSCs catalogue to existing public versions, we have carried out this survey obtaining the next results, 
-see Figure~\ref{fig:results-4}, in which ``Reference'' corresponds to the MOLDEAS lifecycle perfect evaluation, ``CSV/Excel'' to the official publicly 
+the new version of the PSCs catalogue to existing public versions, we have carried out this survey obtaining the next results, 
+see Figure~\ref{fig:results-4}, in which ``Reference'' corresponds to the MOLDEAS lifecycle \textit{best} possible evaluation, ``CSV/Excel'' to the official publicly 
 available versions of PCSs and ``Third-parties service'' to those versions managed by non-official organizations. 
 
 \item Task $t_{11}$ (consumption process). The PSCs catalogue as Linked Data has been used in the development of the MOLDEAS project and a 
