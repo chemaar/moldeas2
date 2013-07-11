@@ -71,7 +71,7 @@ the promotion of PSCs to Linked Data following this lifecycle, a detailed summar
   
  \begin{figure}[!ht]
 \centering
-	\includegraphics[width=\textwidth]{./imgs/fig-2}
+	\includegraphics[width=8cm]{./imgs/fig-2}
  \caption{A partial view of the data model for PSCs in SKOS.}
  \label{fig:pscs-data-model}
 \end{figure}
@@ -170,36 +170,6 @@ such as ``Give me 100 products or services related to construction in any PSC th
 services in CPV (descriptions in English)'', see Figure~\ref{fig:example-sparql-query}, using more descriptors and 
 different vocabularies.
 
-\item Other tasks such as ``Add metainformation'' are considered optional but relevant to mainly ease the process of dataset discovery.
-
-\item Task $t_{14}$. Once the PSCs are available as RDF is necessary to make them publicly available through a Linked Data infrastructure. To 
-do so all RDF triples and the ontology have been deployed in a RDF repository (OpenLink Virtuoso), thus data can be accessed through 
-a SPARQL endpoint. Furthermore and with the aim of making dereferenceable URIs and enabling content negotiation an instance 
-of Pubby (a Linked Data frontend) has been also deployed. Besides in order to ease the creation and execution of SPARQL queries, SNORQL 
-(a tool for exploring SPARQL endpoints) has been also released. Finally, the new PSCs catalogue has been released to the 
-LOD community, added to the ``datahub.io'' register and joined the LOD Cloud Diagram under the dataset id ``\texttt{pscs-catalogue}''.
-
-\item Task $t_{12}$. The MOLDEAS lifecycle also purposes a validation method based on a checklist of $196$ points compiled from books, 
-W3C specifications, Open Data and Linked Data principles, CKAN validator, LOD Cloud requirements, etc. which values can be 
-``Applicable and positive (Yes)'', ``Applicable and not found (No)'' or ``Not Applicable (N/A)''. The objective of this questionnaire is 
-to ensure the principles of the LOD initiative for easing the reuse, maintenance, governance, coverage and expressivity of data. In order to compare 
-the new version of a PSCs catalogue to existing public versions, we have carried out this survey obtaining the next results, 
-see Figure~\ref{fig:results-4}, in which ``Reference'' corresponds to the MOLDEAS lifecycle perfect evaluation, ``CSV/Excel'' to the official publicly 
-available versions of PCSs and ``Third-parties service'' to those versions managed by non-official organizations. 
-
- \begin{figure}[!ht]
-\centering
-	\includegraphics[width=12cm]{./imgs/fig-4}
- \caption{Validation and comparison of the PSCs Catalogue as Linked Data with regards to existing versions.}
- \label{fig:results-4}
-\end{figure}
-
-
-
-\end{itemize}
-
-
-
 \begin{figure}[!ht]
 \begin{lstlisting}[language=SQL,basicstyle=\ttfamily\scriptsize]  
 cpv2008-res:30210000 a gr:ProductOrServiceModel, cpv-onto:Group;
@@ -244,5 +214,49 @@ SELECT DISTINCT * WHERE{
 \caption{Example of SPARQL query.}
  \label{fig:example-sparql-query}
 \end{figure}
+
+
+\item Other tasks such as ``Add metainformation'' are considered optional but relevant to mainly ease the process of dataset discovery.
+
+\item Task $t_{14}$. Once the PSCs are available as RDF is necessary to make them publicly available through a Linked Data infrastructure. To 
+do so all RDF triples and the ontology have been deployed in a RDF repository (OpenLink Virtuoso), thus data can be accessed through 
+a SPARQL endpoint. Furthermore and with the aim of making dereferenceable URIs and enabling content negotiation an instance 
+of Pubby (a Linked Data frontend) has been also deployed. Besides in order to ease the creation and execution of SPARQL queries, SNORQL 
+(a tool for exploring SPARQL endpoints) has been also released. Finally, the new PSCs catalogue has been released to the 
+LOD community, added to the ``datahub.io'' register and joined the LOD Cloud Diagram under the dataset id ``\texttt{pscs-catalogue}''.
+
+\item Task $t_{12}$ (validation process). The MOLDEAS lifecycle also purposes a validation method based on a checklist of $196$ points compiled from books, 
+W3C specifications, Open Data and Linked Data principles, CKAN validator, LOD Cloud requirements, etc. which values can be 
+``Applicable and positive (Yes)'', ``Applicable and not found (No)'' or ``Not Applicable (N/A)''. The objective of this questionnaire is 
+to ensure the principles of the LOD initiative for easing the reuse, maintenance, governance, coverage and expressivity of data. In order to compare 
+the new version of a PSCs catalogue to existing public versions, we have carried out this survey obtaining the next results, 
+see Figure~\ref{fig:results-4}, in which ``Reference'' corresponds to the MOLDEAS lifecycle perfect evaluation, ``CSV/Excel'' to the official publicly 
+available versions of PCSs and ``Third-parties service'' to those versions managed by non-official organizations. 
+
+ \begin{figure}[!ht]
+\centering
+	\includegraphics[width=12cm]{./imgs/fig-4}
+ \caption{Validation and comparison of the PSCs Catalogue as Linked Data with regards to existing versions.}
+ \label{fig:results-4}
+\end{figure}
+
+\item Task $t_{11}$ (consumption process). The PSCs catalogue as Linked Data has been used in the development of the MOLDEAS project and a 
+public demonstrator can be used to search public procurement notices, see Figure~\ref{fig:moldeas-snap}.
+
+
+
+ \begin{figure}[!ht]
+\centering
+	\includegraphics[width=12cm]{./imgs/moldeas-snapshot}
+ \caption{The MOLDEAS public demonstrator using the PSCs catalogue as Linked Data.}
+ \label{fig:moldeas-snap}
+\end{figure}
+
+
+\end{itemize}
+
+
+
+
 
 
