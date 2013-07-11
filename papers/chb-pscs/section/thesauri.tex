@@ -5,14 +5,14 @@ conversions methods for thesauri and product classification systems.
  \item \textbf{Thesauri Conversion Methods}. A thesaurus is a controlled vocabulary, with equivalent terms explicitly 
  identified and with ambiguous words or phrases (e.g. homographs) made unique. This set of terms also may include broader-narrower 
  or other relationships. Usually they are considered to be the most complex of controlled vocabularies. Thesauri as a KOS 
- system can be converted by means of different procedures. On one hand, there are methods~\cite{DBLP:conf/jcdl/Soergel05} that propose specific 
+ system can be converted by means of different procedures. On the one hand, there are methods~\cite{DBLP:conf/jcdl/Soergel05} that propose specific 
  techniques for thesauri conversions into ontology. However the method does not target a specific output format and it considers the 
  hierarchical structure of thesauri as logical is-a relationships. On the other hand, there are some generic methods 
  for thesauri conversions, as the step-wise method defined in~\cite{DBLP:conf/esws/AssemMMS06}. This method selects a common output data model, the 
  SKOS vocabulary, and is comprised of the following sequenced steps: generation of the RDF encoding, error checking and validation 
  and publishing the RDF triples on the Web. In addition, this method has been refined in~\cite{siedl2008} adding three new sub steps 
  for generating the RDF encoding: analyzing the vocabulary, mapping the vocabulary to SKOS properties and classes and building a conversion program. 
- This initial stepwise method can be considered as a previous effort to the abovementioned linked data lifecycles in which all tasks are already defined and these
+ This initial stepwise method can be considered as a previous effort to the aforementioned linked data lifecycles in which all tasks are already defined and these
  steps are embedded as part of the whole lifecycle.
  
  \item \textbf{Product Scheme Classification Conversion Methods.}  Product Scheme Classifications (PSCs) have been developed to 
@@ -27,7 +27,7 @@ conversions methods for thesauri and product classification systems.
  From our point of view and following the discussion in~\cite{Hepp:2007:POR:1256315.1256337,Hepp:2006:SWS:1128590.1128683}, hierarchical 
  links between the elements of each economic sector have not the semantics of subsumption relationships. The next example 
  taken directly from the CPV 2008 shows how the relationship between the element ``Parts and accessories for bicycles'' (34432000-4) 
- and its direct antecessor, ``Bicycles'' (34430000-0), does not seem an is-a relation. In this case, an ontological 
+ and its direct predecessor, ``Bicycles'' (34430000-0), does not seem an is-a relation. In this case, an ontological 
  property for object composition like \texttt{hasPart} would be much better. Moreover, there are further 
  remarks against the idea of using the PSCs as domain-ontologies. It is difficult to assert 
  that the CPV element, ``Bars, rods, wire and profiles used in construction'' (44330000-2), represents 
