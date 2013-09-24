@@ -1,20 +1,6 @@
 \subsection{Design}
 \subsection{Sample}
 \subsection{Results and Discussion}
-
-% \begin{table*}[t]
-%   \centering
-%   \begin{tabular}{*{15}{c}}
-%     \hline
-%     One & Two & Three & Four & Five & Six & Seven & Eight & Nine & Ten & Eleven & Twelve & Thirteen & Fourteen & Fifteen \\
-%     \hline
-%     Fifteen & Fourteen & Thirteen & Twelve & Eleven & Ten & Nine & Eight & Seven & Six & Five & Four & Three & Two & One \\
-%     \hline
-%   \end{tabular}
-%   \caption{Here is a caption.}
-% \end{table*}
-
-
 %\begin{sidewaystable}[ht!]
 \begin{table*}[t]
 \scriptsize
@@ -51,5 +37,83 @@
   \end{center}
 %\end{sidewaystable}
 \end{table*} 
+
+
+
+\begin{table}[t]
+\scriptsize
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}[c]{|p{2cm}|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Table}&$T^{1}$ & $T^{2}$& $T^{3}$ & $T^{3}_1$ & $T^{4}$ & $T^{4}_1$ &$T^{5}$ & $T^{6}$ \\ \hline
+ \multicolumn{9}{|c|}{\textbf{Public Procurement Notices}} \\ \hline
+ \textbf{TED}	     			& $65$ & \na & $100$ & $100$ & $75$ & $78,57$ & \na & \na \\ \hline
+ \textbf{CONTRATACION}	& $75$ & \na & $100$ & $100$ & $87,5$ & $78,57$ & \na & \na \\ \hline 
+ \textbf{BOE}	     			& $52,63$ & \na & $100$ & $100$ & $100$ & $76,92$ & \na & \na\\ \hline 
+ \textbf{Third-parties services}	     	& $60$ & \na & $100$ & $100$ & $62,5$ & $66,66$ & \na & \na \\ \hline 
+ \textbf{LOTED}	     			& $59,32$ & $74,19$ & $100$ & $100$ & $100$ & $85,71$ & $100$ & \na \\ \hline 
+ \textbf{MOLDEAS}	     		& $88,52$ & $91,18$ & $100$ & $100$ & $100$ & $100$ & $100$ & \na \\ \hline 
+ \multicolumn{9}{|c|}{\textbf{Catalogue of Product Scheme Classifications}} \\ \hline
+ \textbf{CSV/MSExcel} 			&$69,23$ & \na & \na & $100$ & $100$ & $42,86$ & \na & \na \\ \hline 
+ \textbf{Servicios on-line}  		&$50$ & \na & \na & \na & $71,43$ & $38,46$ & \na & \na \\ \hline 
+ \textbf{MOLDEAS}			&$88,52$ & $100$ & $100$ & $100$ & $100$ & $100$ & $100$ & $100$ \\ \hline 
+ \multicolumn{9}{|c|}{\textbf{Organizations}} \\ \hline
+ \textbf{TED} 				& $50$ & \na & \na & $100$ & $75$ & $71,43$ & \na & \na \\ \hline 
+ \textbf{CONTRATACION} 	& $76,47$ & \na & $100$ & $20$ & $100$ & $85,71$ & \na & \na\\ \hline 
+ \textbf{BORME}			 	& $100$ & \na & \na & $100$ & $100$ & $92,85$ & \na & \na \\ \hline 
+ \textbf{Third-parties services} 		& $60$ & \na & $100$ & $100$ & $12,5$ & $50$ & \na & \na \\ \hline 
+ \textbf{Commercial Databases} 			& $100$ & \na & \na & \na & $16,67$ & $71,43$ & \na & \na \\ \hline 
+ \textbf{OpenCorporates} 	 	& $61,40$ & $67,74$ & $100$ & $100$ & $100$ & $92,86$ & $100$ & \na\\ \hline 
+ \textbf{MOLDEAS} 		 	& $88,52$ & $91,18$ & $100$ & $100$ & $100$ & $100$ & $100$ & \na \\ \hline 
+\hline
+  \end{tabular}
+  \caption{Tabla agregada de Validación Conjunta con Porcentajes \si entre aplicables.}
+  \label{tabla:agregado-full-porcentaje}
+
+  \end{center}
+%\end{sidewaystable}
+\end{table} 
+
+
+
+
+\begin{table}[t]
+\scriptsize
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}[c]{|l|c|c|c||c||c|} 
+\hline
+ \textbf{Versión} & \si&\no&\na & \textbf{Total} & \textbf{\% \si entre aplicables} \\\hline
+
+    \textbf{Referencia} & 173 & 0 & 23 & 196& 100 \\ \hline \hline
+ \multicolumn{6}{|c|}{\textbf{Public Procurement Notices}} \\ \hline   
+     \textbf{TED} & 32 & 12 & 152 &$\equiv$ & $72.72$\\ \hline 
+     \textbf{CONTRATACION} & 35 & 9 & 152 &$\equiv$ & $79.54$\\ \hline 
+    \textbf{BOE} & 30 & 12 & 154 &$\equiv$ & $71.42$\\ \hline 
+    \textbf{Third-parties services} & 25 & 14 & 157 &$\equiv$ & $64.10$\\ \hline 
+    \textbf{LOTED} & 92 & 34 & 70 &$\equiv$ & $73.01$\\ \hline 
+     \textbf{MOLDEAS} & 121 & 10 & 65 &$\equiv$ & $92.36$\\ \hline 
+ \multicolumn{6}{|c|}{\textbf{Catalogue of Product Scheme Classifications}} \\ \hline
+    \textbf{CSV/MSExcel} &  25 & 12 & 159 &$\equiv$ & $67.56$\\ \hline 
+     \textbf{Third-parties services} &  21 & 21 & 154 &$\equiv$ & $50$\\ \hline 
+    \textbf{MOLDEAS} &  166 & 7 & 23 &$\equiv$ & $93.86$\\ \hline 
+ \multicolumn{6}{|c|}{\textbf{Organizations}} \\ \hline
+    \textbf{TED} & 20 & 9 & 167 &$\equiv$ & $68.96$\\ \hline 
+    \textbf{CONTRATACION}  & 35 & 10 & 151 &$\equiv$ & $77.77$ \\ \hline 
+    \textbf{BORME}  & 23 & 1 & 172 &$\equiv$ & $95.83$\\ \hline 
+    \textbf{Third-parties services}  & 20 & 20 & 156 &$\equiv$ & $50$\\ \hline   
+    \textbf{Commercial Databases}  & 12 & 9 & 175 &$\equiv$ & $57.14$\\ \hline 
+    \textbf{OpenCorporates}  & 85 & 33 & 78  &$\equiv$ & $72.03$\\ \hline 
+    \textbf{MOLDEAS}  & 121 & 10 & 65 &$\equiv$ & $92.36$\\ \hline 
+\hline
+  \end{tabular}
+\caption{Tabla agregada de Validación Conjunta con Valores Totales.}\label{tabla:agregado-sumatorio}
+  \end{center}
+%\end{sidewaystable}
+\end{table} 
+
+
+
 
 
