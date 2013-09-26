@@ -6,48 +6,48 @@
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline 
   \textbf{ID} & \textbf{Question} &  \textbf{Expected value} \\\hline  
-  1& \multicolumn{2}{c|}{\textbf{\textit{Uso de URIs}}} \\ \hline
-  1.1&  ¿Las URIs utilizadas permiten acceder a los recursos, \textit{Minting HTTP URIs}? & \si \\ \hline 
-  1.2&  ¿El \textit{namespace} utilizado en las URIs está bajo nuestro control? & \si \\ \hline
-  1.3&  ¿Se utiliza el esquema  HTTP? &\si  \\ \hline
-  1.4&  ¿Las URIs siguen las directrices de \textit{Cool URIs}? &\si  \\ \hline
-  1.5&  ¿Se utilizan \textit{hash URIs}? & \na  \\ \hline
-  1.6&  ¿Se utilizan \textit{slash URIs}? & \si  \\ \hline
-  1.7&  ¿Se utilizan \textit{param URIs}? & \na  \\ \hline
-  1.8&  ¿No se incluyen detalles de implementación en la URI? & \si  \\ \hline
-  1.9&  ¿Se utilizan claves primarias para identificar los recursos, ID URIs? & \si  \\ \hline
-  1.10&  ¿Se utilizan nombres para identificar a los recursos, \textit{Meaningful URIs}? & \na  \\ \hline
-  1.11&  ¿Se ha definido una URI base para los recursos? & \si  \\ \hline
-  1.12&  ¿Se ha definido una URI base para el modelo formal? & \si  \\ \hline
-  1.13&  ¿Se ha definido un esquema de URIs para el \dataset RDF? & \si  \\ \hline
-  1.14&  ¿Se ha definido un esquema de URIs para el modelo formal? & \si  \\ \hline
-  1.15&  ¿Se incluye metainformación en las URIs? & \si  \\ \hline
- 2&\multicolumn{2}{c|}{\textbf{\textit{Descripción de recursos en RDF}}}\\ \hline
-  2.1& ¿Se utilizan vocabularios como SKOS, RDFS, OWL para modelar el dominio?& \si  \\ \hline
-  2.2& ¿Se reutilizan vocabularios de acuerdo a su uso y actualización?& \si  \\ \hline
-  2.3& ¿Se utilizan anotaciones de RDFS o SKOS?& \si  \\ \hline
-  2.4& ¿Se relacionan las clases y propiedades con otras ya existentes?& \si \\ \hline
-  2.5& ¿Se reutilizan las clases y propiedades ya existentes?& \si  \\ \hline
-  2.6& ¿Se definen nuevas clases y propiedades?&\si  \\ \hline
-  2.7& ¿Se enriquecen las descripciones RDF con otros \datasets RDF?& \si  \\ \hline
-  2.8& ¿Se describe parcialmente los recursos de otros \datasets RDF a los que se enlaza desde el actual?& \no  \\ \hline
-  2.9& ¿Se añade metainformación a cada recurso RDF individualmente?& \si  \\ \hline
-  2.10& ¿Son las descripciones de los recursos RDF navegables?& \si  \\ \hline
-  2.11& ¿Se provee información útil del recurso RDF a través de la URI?& \si  \\ \hline
-  2.12& ¿Son las URIs reutilizadas referenciables?& \si  \\ \hline  
- 3&\multicolumn{2}{c|}{\textbf{\textit{Descripción del \dataset RDF}}}\\ \hline
-  3.1& ¿Se ha definido una URI para el \dataset RDF? & \si  \\ \hline
-  3.2& ¿Se utiliza el vocabulario voID para describir el \dataset RDF? & \si  \\ \hline
-  3.3& ¿Se utiliza el \textit{Semantic Sitemaps} para describir el \dataset RDF? & \na  \\ \hline
-  3.4& ¿Se provee información de \textit{provenance}? & \si  \\ \hline
-  3.5& ¿Se provee licencia de uso, información sobre derechos de copia, etc.?&  \si  \\ \hline
-  3.6& ¿Se provee información sobre la autoría? & \si  \\ \hline
-  3.7& ¿Se proveen ejemplos de uso del \dataset RDF? & \si  \\ \hline
-  3.8& ¿Se utilizan anotaciones de RDFS o SKOS?&  \si  \\ \hline
-  3.9& ¿Se utilizan anotaciones multilingües RDFS o SKOS?& \si  \\ \hline
+  1& \multicolumn{2}{c|}{\textbf{\textit{Design of an URI scheme}}} \\ \hline
+  1.1&  Are the resources accessible via their URIs? \textit{Minting HTTP URIs}? & \si \\ \hline 
+  1.2&  Is the namespace under our control? & \si \\ \hline
+  1.3&  Is the HTTP scheme used? &\si  \\ \hline
+  1.4&  Can the URIs consider as \textit{Cool URIs}? &\si  \\ \hline
+  1.5&  Are the URIs of type \textit{hash URIs}? & \na  \\ \hline
+  1.6&  Are the URIs of type \textit{slash URIs}? & \si  \\ \hline
+  1.7&  Are the URIs of type \textit{param URIs}? & \na  \\ \hline
+  1.8&  Is not any implementation detail in the URI?& \si  \\ \hline
+  1.9&  Are primary-keys used to identify resources (ID URIs)?  & \si  \\ \hline
+  1.10& Are the URIs of type  \textit{Meaningful URIs}? & \na  \\ \hline
+  1.11& Has an URI base been defined for all resources? & \si  \\ \hline
+  1.12& Has an URI been defined for the data model?  & \si  \\ \hline
+  1.13& Has a complete URI scheme been defined for RDF \dataset RDF? & \si  \\ \hline
+  1.14& Has a complete URI scheme been defined for the data model? & \si  \\ \hline
+  1.15& Has any metadata been included in the URIs? & \si  \\ \hline
+ 2&\multicolumn{2}{c|}{\textbf{\textit{RDF resources description}}}\\ \hline
+  2.1& Have vocabularies such as SKOS, RDFS or OWL been used to create the domain model? & \si  \\ \hline
+  2.2& Have the selected vocabularies been selected according to their adequacy and up-to-date?& \si  \\ \hline
+  2.3& Have annotations in RDFS or SKOS been included?& \si  \\ \hline
+  2.4& Have the new classes and properties been aligned to existing ones?& \si \\ \hline
+  2.5& Have some existing classes and properties been re-used?& \si  \\ \hline
+  2.6& Have new classes and properties been defined?&\si  \\ \hline
+  2.7& Have the RDF resources been enriched with existing and widely-accepted RDF datasets?& \si  \\ \hline
+  2.8& Have the RDF resources been locally described when they are linked to existing RDF resources in external datasets?& \no  \\ \hline
+  2.9& Is there any extra-metainformation in all RDF resources?& \si  \\ \hline
+  2.10& Is it possible to browse all RDF resources?& \si  \\ \hline
+  2.11& Is there any useful information in the URI of RDF resources?& \si  \\ \hline
+  2.12& Are the URIs accessible via Internet protocols? & \si  \\ \hline  
+ 3&\multicolumn{2}{c|}{\textbf{\textit{RDF \dataset description}}}\\ \hline
+  3.1& Has an URI been defined for all the RDF datasets? & \si  \\ \hline
+  3.2& Have the voID vocabulary or similar been used to describe the RDF dataset? & \si  \\ \hline
+  3.3& Is there any Semantic Sitemap? & \na  \\ \hline
+  3.4& Is there any provenance information? & \si  \\ \hline
+  3.5& Is there any information about the license, copyright, etc.?&  \si  \\ \hline
+  3.6& Is there any information about the authors? & \si  \\ \hline
+  3.7& Is there any example of the RDF resources? & \si  \\ \hline
+  3.8& Have annotations in RDFS or SKOS been included? &  \si  \\ \hline
+  3.9& Have multilingual annotations in RDFS or SKOS been included ?& \si  \\ \hline
  \hline
   \end{tabular}
-\caption{$T^{1}$-Linked Data features (I).}\label{table:validation-t11}  
+\caption{$T^{1}$-List of Linked Data features (I).}\label{table:validation-t11}  
   \end{center}
 \end{table} 
 
@@ -60,36 +60,36 @@
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline 
   \textbf{ID} & \textbf{Question} &  \textbf{Expected value} \\\hline  
- 4&\multicolumn{2}{c|}{\textbf{\textit{Otros}}}\\ \hline
-  4.1& ¿Se utilizan herramientas automáticas para la producción de RDF?& \si  \\ \hline
-  4.2& ¿Se consolidan parte de los datos en RDF?& \no  \\ \hline
-  4.3& ¿Se realiza la reconciliación de entidades de forma automática?& \no  \\ \hline
-  4.4& ¿Los datos son dinámicos?& \na  \\ \hline
-  4.5& ¿Los datos son estáticos?& \si  \\ \hline
-  4.6& ¿El tamaño del \dataset es del orden de millones de tripletas?& \si  \\ \hline
-  4.7& ¿El tamaño del \dataset es del orden de billones de tripletas?& \na  \\ \hline
-5&\multicolumn{2}{c|}{\textbf{\textit{Publicación de \linkeddata}}}\\ \hline
-  5.1&  ¿Se publica un volcado de los datos en RDF? & \no  \\ \hline 
-  5.2&  ¿Se utiliza algún método de publicación de datos enlazados? & \si  \\ \hline
-  5.3&  ¿Se provee algún lenguaje de consulta formal? & \si  \\ \hline
-  5.4&  ¿Se provee un \textit{endpoint de SPARQL}? & \si  \\ \hline
-  5.5&  ¿Se provee negociación de contenido? & \si  \\ \hline
-  5.6&  ¿Se pueden referenciar los recursos desde otros documentos tipo HTML? & \si  \\ \hline    
-  5.7&  ¿Se provee un \linkeddata \textit{Frontend}? & \si  \\ \hline  
-  5.8&  ¿Se provee metainformación del \dataset RDF? & \si  \\ \hline
-  5.9&  ¿Se difunde el \dataset RDF en distintos medios tipo CKAN, Prefix.cc, etc.? & \si  \\ \hline
-  5.10&  ¿Se publica algún API o servicio web para la consulta de los datos? & \si  \\ \hline
-  5.11&  ¿Existe alguna restricción en la consulta de los datos? & \no  \\ \hline
-  5.12&  ¿Se establece algún mecanismo de privacidad? & \no  \\ \hline
-  5.13&  ¿Se informa del tamaño del \dataset? & \si  \\ \hline  
-  5.14&  ¿Se publican los datos RDF como un fichero estático? & \na  \\ \hline
-  5.15&  ¿Se publican los datos RDF bajo demanda desde base de datos?& \na  \\ \hline
-  5.16&  ¿Se publican los datos RDF en un repositorio? & \si  \\ \hline    
-  5.17&  ¿Se publican los datos RDF bajo demanda desde una aplicación? & \si  \\ \hline
-  5.18&  ¿Se publican los datos con información temporal y evolución en el tiempo?& \no  \\ \hline     
-  5.19&  ¿Se proveen ejemplos para depuración y consumo? & \si  \\ \hline        
-  5.20&  ¿Se proveen alias a ciertos directorios o nombres? & \si  \\ \hline
-  5.21&  En caso de error, ¿se devuelve algún recurso por omisión? &  \no  \\ \hline      
+ 4&\multicolumn{2}{c|}{\textbf{\textit{Others}}}\\ \hline
+  4.1& Has any tool/automatic method been used to generate the RDF?& \si  \\ \hline
+  4.2& Does the dataset contain consolidated RDF?& \no  \\ \hline
+  4.3& Is the process of entity reconciliation performed automatically?& \no  \\ \hline
+  4.4& Is the source dataset dynamic?& \na  \\ \hline
+  4.5& Is the source dataset static? & \si  \\ \hline
+  4.6& Is the target dataset size in order of million of triples?& \si  \\ \hline
+  4.7& Is the target dataset size in order of billion of triples?& \na  \\ \hline
+5&\multicolumn{2}{c|}{\textbf{\textit{Publishing \linkeddata}}}\\ \hline
+  5.1&  Is there any RDF data dump publicly available? & \no  \\ \hline 
+  5.2&  Has any automatic method been used for publishing RDF? & \si  \\ \hline
+  5.3&  Is there any formal query language to access data? & \si  \\ \hline
+  5.4&  Is any SPARQL endpoint publicly available? & \si  \\ \hline
+  5.5&  Is there any content negotiation method to access RDF resources? & \si  \\ \hline
+  5.6&  Is it possible to create links between the RDF resources and other documents such as HTML? & \si  \\ \hline    
+  5.7&  Is there any Linked Data Frontend available to browse the RDF repository? & \si  \\ \hline  
+  5.8&  Is there any metadescription of the RDF dataset? & \si  \\ \hline
+  5.9&  Has the RDF dataset (data, namespaces, etc.) been published through services such as CKAN, Prefix.cc, etc.? & \si  \\ \hline
+  5.10&  Is there any API or web service to access data? & \si  \\ \hline
+  5.11&  Is there any restriction to query data? & \no  \\ \hline
+  5.12&  Is there any privacy mechanism available? & \no  \\ \hline
+  5.13&  Is there any information about the size of the dataset? & \si  \\ \hline  
+  5.14&  Are the RDF datasets (or resources) published as a static file? & \na  \\ \hline
+  5.15&  Are the RDF datasets (or resources) generated on-the-fly from a database?& \na  \\ \hline
+  5.16&  Are the RDF datasets (or resources) published via a RDF repository? & \si  \\ \hline    
+  5.17&  Are the RDF datasets (or resources) generated on-the-fly from a customized application? & \si  \\ \hline
+  5.18&  Do the RDF datasets (or resources) contain temporal or evolution information?& \no  \\ \hline     
+  5.19&  Does the RDF dataset contain examples for debugging and consumption? & \si  \\ \hline        
+  5.20&  Does the RDF dataset contain alias to specific dirs or names? & \si  \\ \hline
+  5.21&  In case of an error, is there any default RDF resource? &  \no  \\ \hline      
   5.22&  ¿Se utilizan protocolos estándar? & \si  \\ \hline    
   5.23&  ¿Se provee algún mecanismo de realimentación? & \no  \\ \hline    
   5.24&  ¿Se provee documentación sobre los datos publicados? & \si  \\ \hline
@@ -97,7 +97,7 @@
   5.26&  ¿Se utilizan mecanismos de sellado en el tiempo o similares? & \si  \\ \hline            
  \hline
   \end{tabular}
-\caption{$T^{1}$-Linked Data features (II).}\label{table:validation-t12}  
+\caption{$T^{1}$-List of Linked Data features (II).}\label{table:validation-t12}  
   \end{center}
 \end{table} 
 
@@ -160,7 +160,7 @@
 \hline 
 
    \end{tabular}
-  \caption{$T^{2}$-Tabla de Validación de \textit{Linked Data Patterns}.}\label{table:validation-t2}   
+  \caption{$T^{2}$-List of \textit{Linked Data Patterns}.}\label{table:validation-t2}   
   \end{center}
 \end{table} 
 
@@ -179,7 +179,7 @@
    1.4&\textit{Use HTTP URIs} & \si \\ \hline    
    \hline
    \end{tabular}
-  \caption{$T^{3}$-Tabla de Validación de Principios de \linkeddata.}
+  \caption{$T^{3}$-List of Linked Data Principles.}
   \label{table:validation-t3}
   \end{center}
 \end{table} 
@@ -197,7 +197,7 @@
     1.4&$\star \star \star \star$ & \si \\ \hline 
    1.5&$\star \star \star \star \star$ & \si \\ \hline 
    \end{tabular}
-   \caption{$T^{3}_1$-Tabla de Validación del Modelo $\star$.}
+   \caption{$T^{3}_1$-List of features of the 5 $\star$ Model.}
    \label{table:validation-t31}
   \end{center}
 \end{table} 
@@ -221,7 +221,7 @@
    1.8&\textit{License-free} & \si  \\ \hline                                                               
   \hline
   \end{tabular}
- \caption{$T^{4}$-Tabla de Validación de Principios de \opendata.}
+ \caption{$T^{4}$-List of Open Data Principles.}
   \label{table:validation-t4}
   \end{center}
 \end{table} 
@@ -255,7 +255,7 @@
    4.4& ¿Existe algún modelo formal o especificación de los datos publicados? & \si  \\ \hline                                                             
   \hline
   \end{tabular}
-  \caption{$T^{4}_1$-Tabla de Validación sobre Características de \opendata.}
+  \caption{$T^{4}_1$-List of Open Data features.}
   \label{table:validation-t41}
   \end{center}
 \end{table} 
@@ -277,7 +277,7 @@
    5& ¿Se provee acceso al \dataset completo? & \si  \\ \hline
   \hline
   \end{tabular}
-  \caption{$T^{5}$-Tabla de Validación sobre Características para pertenecer a \textit{The Linking Open Data Cloud}.}
+  \caption{$T^{5}$-List of features to join \textit{The Linking Open Data Cloud}.}
   \label{table:validation-t5}
   \end{center}
 \end{table} 
@@ -345,7 +345,7 @@
   3.14&  \textit{mapping/\{format\}} &\no \\ \hline
     \hline
   \end{tabular}
-  \caption{$T^{6}$-Tabla de Validación para registrar el \dataset en CKAN.}
+  \caption{$T^{6}$-List of features to register a \dataset in a CKAN repository.}
   \label{table:validation-t6}
   \end{center}
 \end{table} 
