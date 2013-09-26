@@ -91,10 +91,10 @@
   5.20&  Does the RDF dataset contain alias to specific dirs or names? & \si  \\ \hline
   5.21&  In case of an error, is there any default RDF resource? &  \no  \\ \hline      
   5.22&  ¿Se utilizan protocolos estándar? & \si  \\ \hline    
-  5.23&  ¿Se provee algún mecanismo de realimentación? & \no  \\ \hline    
-  5.24&  ¿Se provee documentación sobre los datos publicados? & \si  \\ \hline
-  5.25&  ¿Se proveen estadísticas de los datos publicados? & \si  \\ \hline    
-  5.26&  ¿Se utilizan mecanismos de sellado en el tiempo o similares? & \si  \\ \hline            
+  5.23&  Is there any mechanism to provide feedback? & \no  \\ \hline    
+  5.24&  Is there any official documentation about the published data? & \si  \\ \hline
+  5.25&  Have statistics of the datasets been published? & \si  \\ \hline    
+  5.26&  Is there any mechanism of timestamping or similar? & \si  \\ \hline            
  \hline
   \end{tabular}
 \caption{$T^{1}$-List of Linked Data features (II).}\label{table:validation-t12}  
@@ -172,7 +172,7 @@
 \begin{center}
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline
-  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+  \textbf{ID} & \textbf{Question} &  \textbf{Expected Value}  \\\hline
    1.1&\textit{Use URIs as names for things} & \si  \\ \hline
    1.2&\textit{When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL)} & \si \\ \hline  
    1.3&\textit{Include links to other URIs} & \si \\ \hline    
@@ -190,7 +190,7 @@
 \begin{center}
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline
-  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+  \textbf{ID} & \textbf{Question} &  \textbf{Expected Value}  \\\hline
     1.1&$\star$	& \si \\ \hline 
     1.2&$\star \star$	 & \si \\ \hline 
     1.3&$\star \star \star$	& \si  \\ \hline 
@@ -209,8 +209,8 @@
 \begin{center}
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline
-  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
-  \multicolumn{3}{|c|}{\textbf{8 Principios}}  \\ \hline
+  \textbf{ID} & \textbf{Question} &  \textbf{Expected Value}  \\\hline
+  \multicolumn{3}{|c|}{\textbf{8 Principles of Open Data}}  \\ \hline
    1.1& \textit{Complete} & \si  \\ \hline
    1.2&\textit{Primary} & \si  \\ \hline  
    1.3&\textit{Timely} & \si  \\ \hline  
@@ -234,25 +234,25 @@
 \begin{center}
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline
-  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
-   \multicolumn{3}{|c|}{\textbf{Producción}}  \\ \hline
-   1.1& ¿Se ha definido una misión y estrategia para la apertura de los datos? & \no  \\ \hline
-   1.2& ¿Los datos proceden de una fuente segura? & \no  \\ \hline
-   1.3& ¿Se puede conocer la procedencia de los datos? & \si  \\ \hline    
-   1.4& ¿Existe algún mecanismo para asegurar la calidad de los datos? & \si  \\ \hline  
-  \multicolumn{3}{|c|}{\textbf{Ventajas}}  \\ \hline
-   2.1& ¿Facilitan los datos la inclusión? & \si  \\ \hline
-   2.2& ¿Mejoran la transparencia? & \si  \\ \hline    
-   2.3& ¿Existe alguna responsabilidad sobre los datos? & \no  \\ \hline
-  \multicolumn{3}{|c|}{\textbf{Beneficios}}  \\ \hline
-   3.1& ¿Pueden las aplicaciones servirse de estos datos para generar servicios, reutilización? & \si  \\ \hline
-   3.2& ¿Se pueden generar múltiples vistas de los datos? & \si  \\ \hline
-   3.3& ¿Se pueden integrar con otras fuentes de datos? & \si  \\ \hline     
-   \multicolumn{2}{|c|}{\textbf{Consumo}}  \\ \hline
-   4.1& Uso de anotaciones & \si  \\ \hline        
-   4.2& ¿Se provee un API o servicio web de consumo? & \si  \\ \hline
-   4.3& ¿Se provee algún mecanismo de sindicación para obtener los datos?& \no  \\ \hline
-   4.4& ¿Existe algún modelo formal o especificación de los datos publicados? & \si  \\ \hline                                                             
+  \textbf{ID} & \textbf{Question} &  \textbf{Expected Value}  \\\hline
+   \multicolumn{3}{|c|}{\textbf{Production}}  \\ \hline
+   1.1& Is there any strategy or policy behind the data publishing? & \no  \\ \hline
+   1.2& Are the RDF dataset generated from a trusted source? & \no  \\ \hline
+   1.3& Is there any mechanism for provenance? & \si  \\ \hline    
+   1.4& Is there any mechanism to check data quality? & \si  \\ \hline  
+  \multicolumn{3}{|c|}{\textbf{Advantages}}  \\ \hline
+   2.1& Can the use of this dataset improve the inclusion? & \si  \\ \hline
+   2.2& Can the publishing of the dataset improve the transparency? & \si  \\ \hline    
+   2.3& Is there any entity/person/etc. in charge of data maintenance? & \no  \\ \hline
+  \multicolumn{3}{|c|}{\textbf{Benefits}}  \\ \hline
+   3.1& Can data be reused to generate added-value services? & \si  \\ \hline
+   3.2& Can data be reused to generate multiply views? & \si  \\ \hline
+   3.3& Can data be integrated with other datasources? & \si  \\ \hline     
+   \multicolumn{2}{|c|}{\textbf{Consumption}}  \\ \hline
+   4.1& Has the dataset contain annotations? & \si  \\ \hline        
+   4.2& Is there any API or web service for consumption? & \si  \\ \hline
+   4.3& Is there any syndicate mechanism to retrieve or access data? & \no  \\ \hline
+   4.4& Is there any formal model or specification of the published data? & \si  \\ \hline                                                             
   \hline
   \end{tabular}
   \caption{$T^{4}_1$-List of Open Data features.}
@@ -269,12 +269,12 @@
 \begin{center}
 \begin{tabular}[c]{|l|p{5cm}|c|} 
 \hline
-  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
-   1& ¿Son los recursos RDF accesibles mediante HTTP o HTTPS? & \si  \\ \hline
-   2& ¿Se provee negociación de contenido? & \si  \\ \hline
-   3& ¿El \dataset contiene más de 1000 tripletas? & \si  \\ \hline
-   4& ¿Se provee, al menos, 50 enlaces a \datasets ya disponibles en el diagrama? & \si \\ \hline
-   5& ¿Se provee acceso al \dataset completo? & \si  \\ \hline
+  \textbf{ID} & \textbf{Question} &  \textbf{Expected Value}  \\\hline
+   1& Are the RDF resources accesible via HTTP or HTTPS? & \si  \\ \hline
+   2& Is there any content negotiation method? & \si  \\ \hline
+   3& Has the dataset contain more than 1000 triples? & \si  \\ \hline
+   4& Has the dataset contain more than 50 links to existing datasets in the LOD cloud? & \si \\ \hline
+   5& Is there any access to download the whole dataset? & \si  \\ \hline
   \hline
   \end{tabular}
   \caption{$T^{5}$-List of features to join \textit{The Linking Open Data Cloud}.}
@@ -290,7 +290,8 @@
 \renewcommand{\arraystretch}{1.3}
 \begin{center}
 \begin{tabular}[c]{|l|p{5cm}|c|} 
-  \textbf{ID} & \textbf{Pregunta} &  \textbf{Cumplimiento}  \\\hline
+\hline
+  \textbf{ID} & \textbf{Question} &  \textbf{Expected Value}  \\\hline
   1&\multicolumn{2}{|c|}{\textbf{Standard CKAN fields}}  \\ \hline
   1.1&  \textit{Name} & \si  \\ \hline
   1.2 &  \textit{Title} & \si  \\ \hline
