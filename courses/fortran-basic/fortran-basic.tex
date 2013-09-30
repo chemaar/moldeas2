@@ -1,0 +1,147 @@
+%
+% main.tex
+%
+
+% notes = hide | show | only
+\documentclass[xcolor=dvipsnames,dvip,notes=show,table]{beamer}
+
+% Para crear una versión 'handout' (impresa)
+%\documentclass[xcolor=pst,dvips,handout,notes=show]{beamer}
+
+\input{headers}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[FORTRAN]{Basic Examples of FORTRAN Programming}
+\author[Jose María Álvarez Rodríguez]{\textbf{Programming Course} \\ \vspace{0.3cm} Jose María Álvarez Rodríguez}
+\subtitle{}
+\institute{Department of Computer Science \\ Carlos III University of Madrid}
+
+
+\date{Course 2013/2014}
+
+\begin{document}
+
+\frame{
+\titlepage
+
+}
+% 
+% \frame{
+% \tableofcontents
+% 
+% }
+% 
+% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Basic Examples}
+% 
+\frame{
+
+
+}
+\begin{frame}[fragile]
+\frametitle{Hello World!}
+
+\begin{lstlisting}
+program HelloWorld
+  write (*,*) 'Hello, world!' 
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Hello World!}
+
+\begin{lstlisting}
+program HelloWorld
+  write (*,*) 'Hello, world!' 
+end
+\end{lstlisting}
+\end{frame}
+
+%http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/chap01/struct.html
+%http://nf.nci.org.au/training/FortranBasic/
+
+\begin{frame}[fragile]
+\frametitle{Average}
+
+\scriptsize
+\begin{lstlisting}
+program average
+real x, y, z
+print *, "What are the two numbers you want to average?"
+read *, x, y
+call avg(x,y,z)
+print *, "The average is", z
+end
+ 
+subroutine avg(a,b,c)
+real a, b, c
+c = (a + b)/2.
+end
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Factorial}
+
+\scriptsize
+\begin{lstlisting}
+PROGRAM  FACT 
+ INTEGER N 
+ REAL FACT, FACTORIAL 
+ READ (*,*) N 
+ FACT = FACT_FUNCT (N) 
+ PRINT *, FACT 
+END
+
+FUNCTION FACT_FUNCT (N) 
+  INTEGER I, N 
+  REAL FACTORIAL,  PROD 
+  PROD = 1.0 
+  DO I = 2, N 
+     PROD = PROD * I 
+  END DO 
+END
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Factorial}
+
+\scriptsize
+\begin{lstlisting}
+PROGRAM Fibonacci
+IMPLICIT NONE
+INTEGER:: F1 = 1, F2 = 0, i = 0, n = 0
+WRITE(*,*) "Enter how many numbers of the Fibonacci sequence you want to see."
+READ(*,*) n
+DO ! Calculate and write numbers in sequence
+    IF (i >= n) EXIT
+    F1 = F2 + F1
+    WRITE(*,*) F1
+    i = i + 1
+    IF (i >= n) EXIT
+    F2 = F2 + F1
+    WRITE(*,*) F2
+    i = i + 1
+END DO
+END PROGRAM Fibonacci
+\end{lstlisting}
+\end{frame}
+
+
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

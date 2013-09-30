@@ -1,0 +1,21 @@
+\frametitle {Factorial}
+
+\scriptsize
+\begin{lstlisting}
+PROGRAM Fibonacci
+IMPLICIT NONE
+INTEGER:: F1 = 1, F2 = 0, i = 0, n = 0
+WRITE(*,*) "Enter how many numbers of the Fibonacci sequence you want to see."
+READ(*,*) n
+DO ! Calculate and write numbers in sequence
+    IF (i >= n) EXIT
+    F1 = F2 + F1
+    WRITE(*,*) F1
+    i = i + 1
+    IF (i >= n) EXIT
+    F2 = F2 + F1
+    WRITE(*,*) F2
+    i = i + 1
+END DO
+END PROGRAM Fibonacci
+\end{lstlisting}
