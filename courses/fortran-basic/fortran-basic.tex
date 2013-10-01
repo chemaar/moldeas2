@@ -14,7 +14,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[FORTRAN]{Basic Examples of FORTRAN Programming}
+\title[FORTRAN]{Syntax and Basic Examples of FORTRAN Programming Language}
 \author[Jose María Álvarez Rodríguez]{\textbf{Programming Course} \\ \vspace{0.3cm} Jose María Álvarez Rodríguez}
 \subtitle{}
 \institute{Department of Computer Science \\ Carlos III University of Madrid}
@@ -29,19 +29,155 @@
 
 }
 % 
-% \frame{
-% \tableofcontents
-% 
-% }
+\frame{
+\tableofcontents
+
+}
 % 
 % 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Basic Examples}
+\section{Syntax}
+% % 
+\begin{frame}[fragile]
+\frametitle{Hello World!}
+
+\begin{lstlisting}
+program HelloWorld
+  write (*,*) 'Hello, FORTRAN world!' 
+end
+\end{lstlisting}
+\end{frame}
+
 % 
-\frame{
+\begin{frame}[fragile]
+\frametitle{Program Structure}
+
+\begin{lstlisting}
+PROGRAM    program-name
+   IMPLICIT   NONE
+   [specification part]
+   [execution part]
+   [subprogram part]
+END PROGRAM program-name
+\end{lstlisting}
+\end{frame}
+
+% 
+% \frame{
+%   \frametitle{Comments} 
+%   
+% \begin{alertblock}{Structure...}
+% \begin{itemize}
+%  \item Contents in [ ] are optional.
+%  \item Keyword IMPLICIT NONE must present.
+% \item A program starts with the keyword PROGRAM,
+% \begin{itemize}
+%  \item ...a program name,
+%  \item ...the IMPLICIT NONE statement,
+%  \item ...(my own) some specification statements,
+%  \item ...the execution part,
+%  \item ...a set of internal subprograms,
+%  \item ...keywords END PROGRAM and the program name.
+% \end{itemize}
+% 
+% \item Comments can be added for improving readability.
+% \end{itemize}
+% \end{alertblock}
+% }
+% 
+% %http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/chap01/struct.html
+% %http://nf.nci.org.au/training/FortranBasic/
+% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Comments}
+% \scriptsize
+% \begin{block}{Types...}
+% \begin{enumerate}
+%  \item All characters following an exclamation mark, !, except in a character string, are commentary, and are ignored by the compiler.
+% 
+%  \begin{lstlisting}
+% Year = Year + 1   ! add 1 to Year
+%  \end{lstlisting}
+% 
+%  \item An entire line may be a comment
+%   \begin{lstlisting}
+% ! This is a comment line in the middle of a program
+%  \end{lstlisting}
+%  
+%  \item A blank line is also interpreted as a comment line.
+%    \begin{lstlisting}
+% 
+% ! The above blank line is a comment line
+%  \end{lstlisting}
+%  
+%  
+% \end{enumerate}
+% 
+% \end{block}
+% 
+% 
+% \end{frame}
+% 
+% 
+% %% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Fortran Continuation Lines}
+% 
+% \begin{exampleblock}{Statements...}
+%  In Fortran, a statement must start on a new line. If a statement is too long to fit on a line, it can be continued with the following methods:
+% \end{exampleblock}
+% 
+% \tiny
+% \begin{block}{Types...}
+% \begin{enumerate}
+%  \item If a line is ended with an \& (it is not part of the statement), it will be continued on the next line.
+%  \item Continuation is normally to the first character of the next non-comment line.
+% 
+%  \begin{lstlisting}
+% A = 174.5 * Year   &
+%     + Count / 100
+%  \end{lstlisting}
+% 
+%  \item If the first non-blank character of the continuation line is \&, continuation is to the first character after the \&:
+%   \begin{lstlisting}
+% A = 174.5 + ThisIsALong&
+%      &VariableName * 123.45
+%      
+% A = 174.5 + ThisIsALongVariableName * 123.45
+%  \end{lstlisting}
+%   
+% \end{enumerate}
+% 
+% \end{block}
+% 
+% 
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Alphabet}
+% \begin{block}{Letters}
+%  a-zA-Z
+% \end{block}
+% 
+% \begin{exampleblock}{Numbers}
+% 0-9
+% \end{exampleblock}
+% 
+% 
+% \begin{alertblock}{Special Characters}
+% space ' " ( ) * + - / : = \_ ! \& \$ ; < > \% ? , .
+% %space \' \" ( ) * + - 
+% \end{alertblock}
+% 
+% 
+% \end{frame}
 
 
-}
+\section{Basic Examples}
+
 \begin{frame}[fragile]
 \frametitle{Hello World!}
 
@@ -51,37 +187,248 @@ program HelloWorld
 end
 \end{lstlisting}
 \end{frame}
+% 
 
 
 \begin{frame}[fragile]
-\frametitle{Hello World!}
-
+\frametitle{Adding two numbers...}
+\scriptsize
 \begin{lstlisting}
-program HelloWorld
-  write (*,*) 'Hello, world!' 
+program adding
+  real x, y, z
+  print *, "What are the two numbers you want to add?"
+  read *, x, y  
+  z = x + y
+  print *, "The result is ", z
 end
 \end{lstlisting}
 \end{frame}
 
-%http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/chap01/struct.html
-%http://nf.nci.org.au/training/FortranBasic/
+
 
 \begin{frame}[fragile]
-\frametitle{Average}
+\frametitle{Swap variables...}
+
+\scriptsize
+\begin{lstlisting}
+program swap
+  real x, y, z
+  print *, "What are the two numbers you want to swap?"
+  read *, x, y
+  print *, "The values (before swapping) are ", x, y
+  z = y
+  y = x
+  x = z
+  print *, "The values (after swapping) are ", x, y
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Average (I)...}
 
 \scriptsize
 \begin{lstlisting}
 program average
-real x, y, z
-print *, "What are the two numbers you want to average?"
-read *, x, y
-call avg(x,y,z)
-print *, "The average is", z
+  real x, y, z
+  print *, "What are the two numbers you want to average?"
+  read *, x, y
+  z = (x + y)/2
+  print *, "The average is ", z
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Average (II)...}
+
+\scriptsize
+\begin{lstlisting}
+program average
+  real x, y, z
+  print *, "What are the two numbers you want to average?"
+  read *, x, y
+  call avg(x,y,z)
+  print *, "The average is", z
 end
  
 subroutine avg(a,b,c)
-real a, b, c
-c = (a + b)/2.
+  real a, b, c
+  c = (a + b)/2.
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Highest number...}
+
+\scriptsize
+\begin{lstlisting}
+program highest
+  real x, y, z
+  print *, "What are the two numbers you want to compare?"
+  read *, x, y
+  if (x >y ) then 
+    print *, "The highest value is ", x
+  else 
+    print *, "The highest value is ", y
+  end if
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Highest number (among 3)...}
+
+\scriptsize
+\begin{lstlisting}
+program highest3
+  real x, y, z
+  print *, "What are the three numbers you want to compare?"
+  read *, x, y, z
+  if (x>=y .AND. x>=z ) then 
+    print *, "The highest value is ", x
+  else if (y>=x .AND. y>=z) then
+    print *, "The highest value is ", y
+  else 
+    print *, "The highest value is ", z
+  end if
+end
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Show the first 20 numbers (ascending)...}
+
+\scriptsize
+\begin{lstlisting}
+program asc20
+  integer :: a
+  do a = 1, 20
+   print*,a
+  end do
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Show the first 20 numbers (descending)...}
+
+\scriptsize
+\begin{lstlisting}
+program desc20
+  integer :: a
+  a = 20
+  do while (a > 0) 
+   print*,a
+   a = a - 1
+  end do
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Sum of the first 20 numbers...}
+
+\scriptsize
+\begin{lstlisting}
+program sum20
+  integer :: sum,a
+  sum = 0
+  do a = 1, 20
+   sum = sum + a    
+  end do
+  print*,sum
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Show even numbers between 1 and 20...}
+
+\scriptsize
+\begin{lstlisting}
+program even20
+  integer :: a
+  do a = 1, 20
+    if ( mod(a,2) == 0.0 ) then 
+    	print *, a
+    end if	
+  end do
+end
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Count odd numbers between 1 and 20...}
+
+\scriptsize
+\begin{lstlisting}
+program countodd
+  integer :: a, count
+  count = 0
+  do a = 1, 20
+    if ( mod(a,2) /= 0.0 ) then 
+    	count = count + 1 
+    end if	
+  end do
+ print *, count 
+end
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Square of the first 20 numbers...}
+
+\scriptsize
+\begin{lstlisting}
+program square
+  integer :: a, b
+  do a = 1, 20
+    b = a**2
+    print*,a,"to the power of two = ",b
+  end do
+end
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Cube of the first 8 numbers...}
+
+\scriptsize
+\begin{lstlisting}
+program cube
+  integer :: a, b
+  do a = 1, 8
+    b = a*a*a
+    print*,a,"to the power of three = ",b
+  end do
+end
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Power of a number $a^b$...}
+
+\scriptsize
+\begin{lstlisting}
+program aexponentb
+  integer :: a, b
+  real :: value
+  read *, a,b
+  value = 1
+  do i = 1, b
+    value = value * a
+  end do
+  print*,a,"to the power of",b,"= ",value
 end
 \end{lstlisting}
 \end{frame}
@@ -90,56 +437,106 @@ end
 
 \begin{frame}[fragile]
 \frametitle{Factorial}
-
 \scriptsize
 \begin{lstlisting}
-PROGRAM  FACT 
- INTEGER N 
- REAL FACT, FACTORIAL 
- READ (*,*) N 
- FACT = FACT_FUNCT (N) 
- PRINT *, FACT 
-END
-
-FUNCTION FACT_FUNCT (N) 
-  INTEGER I, N 
-  REAL FACTORIAL,  PROD 
-  PROD = 1.0 
-  DO I = 2, N 
-     PROD = PROD * I 
-  END DO 
-END
+program fact
+  real fvalue
+  integer n
+  print *, "Enter a number..."
+  read *, n
+  ! fact(n) = n * fact (n-1)
+  if (n < 0) then 
+    print *, "The number is negative..."
+  else if (n>=0 .AND. n<=1) then
+    fvalue = 1
+  else
+    fvalue = 1
+    do i = 2, n
+      fvalue = i * fvalue
+    end do
+  end if
+  print *, "The result is ", fvalue
+end
 \end{lstlisting}
 \end{frame}
 
 
 
 \begin{frame}[fragile]
-\frametitle{Factorial}
+\frametitle{Factorial (I)}
 
 \scriptsize
 \begin{lstlisting}
-PROGRAM Fibonacci
-IMPLICIT NONE
-INTEGER:: F1 = 1, F2 = 0, i = 0, n = 0
-WRITE(*,*) "Enter how many numbers of the Fibonacci sequence you want to see."
-READ(*,*) n
-DO ! Calculate and write numbers in sequence
-    IF (i >= n) EXIT
-    F1 = F2 + F1
-    WRITE(*,*) F1
-    i = i + 1
-    IF (i >= n) EXIT
-    F2 = F2 + F1
-    WRITE(*,*) F2
-    i = i + 1
-END DO
-END PROGRAM Fibonacci
+program fact1
+ real, dimension(20) :: fact
+ integer :: n, nmax = 20
+ fact(1) = 1.0
+ do n = 2, nmax
+  fact(n) = fact(n-1) * n
+ end do
+ print*,fact
+end
 \end{lstlisting}
 \end{frame}
 
 
 
+
+\begin{frame}[fragile]
+\frametitle{Factorial (III)}
+
+\scriptsize
+\begin{lstlisting}
+program  Fact 
+ integer N 
+ real fact
+ read (*,*) n 
+ fact = ffact (N) 
+ print *, FACT 
+end
+
+function FFACT (N) 
+  integer I, N 
+  real factorial,  prod
+  prod = 1.0 
+  do i = 2, N 
+     prod = prod * i 
+  end do 
+end
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Print the Fibonacci sequence of a number... $fib_n=fib_{n-1}+fib_{n-2}$ // $fib_0 = 0$ and $fib_1 = 1$}
+
+\scriptsize
+\begin{lstlisting}
+program Fibonacci
+  IMPLICIT NONE
+  integer:: F1 = 1, F2 = 0, i = 0, n = 0
+  print *, "Enter a number..."
+  read (*,*) n
+  do 
+    if (i >= n) exit
+    F1 = F2 + F1
+    print *, F1
+    i = i + 1
+    if (i >= n) exit
+      F2 = F2 + F1
+      print *, F2
+      i = i + 1
+  end do
+end
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\titlepage
+
+}
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
