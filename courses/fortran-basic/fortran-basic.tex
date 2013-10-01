@@ -14,7 +14,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[FORTRAN]{Syntax and Basic Examples of FORTRAN Programming Language}
+\title[FORTRAN]{Syntax and Basic Examples of \\ the FORTRAN Programming Language}
 \author[Jose María Álvarez Rodríguez]{\textbf{Programming Course} \\ \vspace{0.3cm} Jose María Álvarez Rodríguez}
 \subtitle{}
 \institute{Department of Computer Science \\ Carlos III University of Madrid}
@@ -54,140 +54,190 @@ end
 
 \begin{lstlisting}
 PROGRAM    program-name
-   IMPLICIT   NONE
+   IMPLICIT   NONE 
    [specification part]
    [execution part]
    [subprogram part]
 END PROGRAM program-name
 \end{lstlisting}
+
+\begin{alertblock}{IMPLICIT NONE}
+\begin{itemize}
+ \item In FORTRAN 77, this declaration enables the possibility of using variables that have not been previously declared.
+ \item  It is a kind of dynamic declaration, variable on-the-fly.
+ \item It is a source of problems. In FORTRAN 90, it is mandatory to declare all variables.
+\end{itemize}
+\end{alertblock}
+
 \end{frame}
 
 % 
-% \frame{
-%   \frametitle{Comments} 
-%   
-% \begin{alertblock}{Structure...}
-% \begin{itemize}
-%  \item Contents in [ ] are optional.
-%  \item Keyword IMPLICIT NONE must present.
-% \item A program starts with the keyword PROGRAM,
-% \begin{itemize}
-%  \item ...a program name,
-%  \item ...the IMPLICIT NONE statement,
-%  \item ...(my own) some specification statements,
-%  \item ...the execution part,
-%  \item ...a set of internal subprograms,
-%  \item ...keywords END PROGRAM and the program name.
-% \end{itemize}
-% 
-% \item Comments can be added for improving readability.
-% \end{itemize}
-% \end{alertblock}
-% }
-% 
+\frame{
+  \frametitle{Some Notes...} 
+  
+\begin{block}{Structure...}
+\begin{itemize}
+ \item Contents in [ ] are optional.
+ \item Keyword IMPLICIT NONE must present (in previous FORTRAN versions).
+\item A program starts with the keyword PROGRAM,
+\begin{itemize}
+ \item ...a program name,
+ \item ...the IMPLICIT NONE statement,
+ \item ...(my own) some specification statements,
+ \item ...the execution part,
+ \item ...a set of internal subprograms,
+ \item ...keywords END PROGRAM and the program name.
+\end{itemize}
+
+\item Comments can be added for improving readability.
+\end{itemize}
+\end{block}
+}
+
 % %http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/chap01/struct.html
 % %http://nf.nci.org.au/training/FortranBasic/
 % 
 % 
-% \begin{frame}[fragile]
-% \frametitle{Comments}
-% \scriptsize
-% \begin{block}{Types...}
-% \begin{enumerate}
-%  \item All characters following an exclamation mark, !, except in a character string, are commentary, and are ignored by the compiler.
-% 
-%  \begin{lstlisting}
-% Year = Year + 1   ! add 1 to Year
-%  \end{lstlisting}
-% 
-%  \item An entire line may be a comment
-%   \begin{lstlisting}
-% ! This is a comment line in the middle of a program
-%  \end{lstlisting}
-%  
-%  \item A blank line is also interpreted as a comment line.
-%    \begin{lstlisting}
-% 
-% ! The above blank line is a comment line
-%  \end{lstlisting}
-%  
-%  
-% \end{enumerate}
-% 
-% \end{block}
-% 
-% 
-% \end{frame}
+\begin{frame}[fragile]
+\frametitle{Comments}
+\scriptsize
+\begin{block}{Types...}
+\begin{enumerate}
+ \item Characters that follow an exclamation mark, !, except in a character string, are comments (ignored by the compiler).
+
+ \begin{lstlisting}
+salary  = salary + 10   ! add 10 to the salary
+ \end{lstlisting}
+
+ \item A line comment...
+  \begin{lstlisting}
+! A comment in the middle of the program
+ \end{lstlisting}
+ 
+ \item A blank line is also interpreted as a comment line...
+   \begin{lstlisting}
+
+! The above blank line is a comment line
+ \end{lstlisting}
+ 
+ 
+\end{enumerate}
+
+\end{block}
+
+
+\end{frame}
 % 
 % 
 % %% 
+
+\begin{frame}[fragile]
+\frametitle{Fortran Continuation Lines}
+
+\begin{exampleblock}{Statements...}
+Each statement in a new line but long statements can be splitted into several lines...
+\end{exampleblock}
+
+\tiny
+\begin{block}{Types...}
+\begin{enumerate}
+ \item A line can be ended with an \& (not part of the statement)...
+ \item ...the continuation is usually with the char in the next non-comment line
+
+ \begin{lstlisting}
+salary = 100.5 * 12   &
+    + 21 / 100
+ \end{lstlisting}
+
+ \item If the first non-blank character of the continuation line is \&, continuation is to the first character after the \&:
+  \begin{lstlisting}
+salary = 100.5 * 12 + averylooooong&
+     &variablename * 10
+     
+salary = 100.5 * 12 + averylooooongvariablename * 10
+\end{lstlisting}
+  
+\end{enumerate}
+
+\end{block}
+
+
+\end{frame}
 % 
-% \begin{frame}[fragile]
-% \frametitle{Fortran Continuation Lines}
-% 
-% \begin{exampleblock}{Statements...}
-%  In Fortran, a statement must start on a new line. If a statement is too long to fit on a line, it can be continued with the following methods:
-% \end{exampleblock}
-% 
-% \tiny
-% \begin{block}{Types...}
-% \begin{enumerate}
-%  \item If a line is ended with an \& (it is not part of the statement), it will be continued on the next line.
-%  \item Continuation is normally to the first character of the next non-comment line.
-% 
-%  \begin{lstlisting}
-% A = 174.5 * Year   &
-%     + Count / 100
-%  \end{lstlisting}
-% 
-%  \item If the first non-blank character of the continuation line is \&, continuation is to the first character after the \&:
-%   \begin{lstlisting}
-% A = 174.5 + ThisIsALong&
-%      &VariableName * 123.45
-%      
-% A = 174.5 + ThisIsALongVariableName * 123.45
-%  \end{lstlisting}
-%   
-% \end{enumerate}
-% 
-% \end{block}
-% 
-% 
-% \end{frame}
-% 
-% 
-% \begin{frame}[fragile]
-% \frametitle{Alphabet}
-% \begin{block}{Letters}
-%  a-zA-Z
-% \end{block}
-% 
-% \begin{exampleblock}{Numbers}
-% 0-9
-% \end{exampleblock}
-% 
-% 
-% \begin{alertblock}{Special Characters}
-% space ' " ( ) * + - / : = \_ ! \& \$ ; < > \% ? , .
-% %space \' \" ( ) * + - 
-% \end{alertblock}
+
+\begin{frame}[fragile]
+ \frametitle{Alphabet}
+ \begin{block}{Letters}
+  a-zA-Z
+ \end{block}
+ 
+ \begin{exampleblock}{Numbers}
+ 0-9
+ \end{exampleblock}
 % 
 % 
-% \end{frame}
+ \begin{alertblock}{Special Characters}
+ FIXME
+ %space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
+ %space \' \" ( ) * + - 
+ \end{alertblock}
+ 
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Constants...}
+\scriptsize
+  \begin{exampleblock}{Definition}
+ 0-9
+ \end{exampleblock}
+
+ 
+ 
+ 
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Identifiers...}
+\scriptsize
+  \begin{exampleblock}{Definition}
+ \end{exampleblock}
+ 
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Variables...}
+\scriptsize
+  \begin{exampleblock}{Definition}
+ \end{exampleblock}
+ 
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Declarations...}
+\scriptsize
+  \begin{exampleblock}{Definition}
+ \end{exampleblock}
+ 
+\end{frame}
 
 
 \section{Basic Examples}
 
-\begin{frame}[fragile]
-\frametitle{Hello World!}
-
-\begin{lstlisting}
-program HelloWorld
-  write (*,*) 'Hello, world!' 
-end
-\end{lstlisting}
-\end{frame}
+% \begin{frame}[fragile]
+% \frametitle{Hello World!}
 % 
+% \begin{lstlisting}
+% program HelloWorld
+%   write (*,*) 'Hello, world!' 
+% end
+% \end{lstlisting}
+% \end{frame}
+% % 
 
 
 \begin{frame}[fragile]
