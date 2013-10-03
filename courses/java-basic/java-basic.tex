@@ -470,7 +470,7 @@ public class CountOddIn20Numbers {
    int k = 0;
    counter = 0;
    while (k<=top){
-     if (k%2 == 0){
+     if (k%2 != 0){
        counter++;
      }
      k = k+1; //k++
@@ -913,9 +913,9 @@ public class PrimeNumber {
     int i = 2;
     while(isPrime && i!=number){
       if(number%i ==  0){
-      isPrime = false;
-     }
-    i++;
+	isPrime = false;
+      }
+      i++;
     }
     mc.println("The number "+number+" is prime "+isPrime);
   }
@@ -937,13 +937,13 @@ Write a program to show the first 100 primer numbers.
 
 \begin{frame}[fragile]
 \frametitle{Exercise-21: examples/First100PrimeNumbers.java}
-\scriptsize
+\tiny
 \begin{lstlisting}
 public class First100PrimeNumbers {
   public static void main (String []args){
     MyConsole mc = new MyConsole();
     int nprimes = 100;
-    int matches = 1; //1 is primePrint 1 and 2
+    int matches = 1; //1 is prime Print 1 and 2
     int number = 2; //...we start in 2...
     boolean isPrime = true;			
     int i = 2;
@@ -1107,9 +1107,37 @@ public class Fibonacci {
 \end{lstlisting}
 \end{frame}
 
-
 \begin{frame}[fragile]
 \frametitle{Exercise-25}
+\begin{block}{Statement...}
+Write a program to generate the multiplication table (from 1 to 10).
+\end{block}
+% 
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise-24: examples/MultiplicationTable.java}
+\scriptsize
+\begin{lstlisting}
+public class MultiplicationTable {
+  public static void main(String[] args) {
+    MyConsole mc = new MyConsole();
+    for (int i = 1; i <= 10; i++) {
+      for (int j = 1; j <= 10; j++) {
+	  mc.print( i * j );
+	  mc.print("\t");
+	}
+      mc.println("");
+      }
+   }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-26}
 \begin{block}{Statement...}
 Write a program to implement a binomial coefficient.
 \end{block}
@@ -1131,7 +1159,7 @@ C_{k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}
  \item If you find some typo or error please report me.
  \item The same problem can have several solutions.
  \item Follow the methodology to address the problem.
- \item ...If you are hesitating...Please ASK!
+ \item ...If you are hesitating in some of the examples...Please ASK!
 \end{itemize}
 
 \end{exampleblock}
