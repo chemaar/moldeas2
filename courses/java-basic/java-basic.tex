@@ -1,0 +1,866 @@
+%
+% main.tex
+%
+
+% notes = hide | show | only
+\documentclass[xcolor=dvipsnames,dvip,notes=show,table]{beamer}
+
+
+% Para crear una versión 'handout' (impresa)
+%\documentclass[xcolor=pst,dvips,handout,notes=show]{beamer}
+
+\input{headers}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Java]{Basic Examples of \\ the Java Programming Language}
+\author[Jose María Álvarez Rodríguez]{\textbf{Programming Course} \\ \vspace{0.3cm} Jose María Álvarez Rodríguez}
+\subtitle{}
+\institute{Department of Computer Science \\ Carlos III University of Madrid}
+
+
+\date{Course 2013/2014}
+
+\begin{document}
+
+\frame{
+\titlepage
+
+}
+% 
+\frame{
+\tableofcontents
+
+}
+% 
+% 
+\section{Basic Examples}
+
+\frame{
+
+\frametitle{Methodology}
+\begin{exampleblock}{Steps...}
+\begin{enumerate}
+ \item Analyze and understand the problem. Is there any formal model?
+ \item Design a solution.
+ \item Implement the solution.
+ \item Test: verify the results. Trace and Debug the program.
+ \item Document the solution.
+ \item Refine, refactor the existing code (Improvement).
+\end{enumerate}
+\end{exampleblock}
+
+}
+
+\frame{
+
+\frametitle{Remarks}
+\begin{alertblock}{...}
+\begin{enumerate}
+ \item In all examples a class called MyConsole is used to read and write from/to the Java console. It is a 
+ helper class to deal with simple datatypes.
+ \item All examples are available in the package ``examples''.
+ \item ...the ``package'' and ``import'' directives have been removed to ease the reading of the following examples
+ \item We offer a potential solution more approaches could be applied to solve the same problem.
+\end{enumerate}
+
+ 
+\end{alertblock}
+
+}
+
+
+\frame{
+
+\frametitle{Exercise-1}
+\begin{block}{Statement...}
+ Write a program to read and add two numbers.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-1: examples/AddNumbers.java}
+\scriptsize
+\begin{lstlisting}
+public class AddNumbers {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int op1, op2, result;
+    op1 = mc.readInt();
+    op2 = mc.readInt();
+    result = op1 + op2;
+    mc.println("The result is: "+result);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-2}
+\begin{block}{Statement...}
+ Write a program to swap the values of two integer variables.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-2: examples/SwapVariables.java}
+\scriptsize
+\begin{lstlisting}
+public class SwapVariables {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int a,b;
+    int temp;
+    a = mc.readInt();
+    b = mc.readInt();
+    mc.println("The values (before swapping) are: "+a+", "+b);
+    temp = a;
+    a = b;
+    b = temp;
+    mc.println("The values (after swapping) are: "+a+", "+b);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\frametitle{Exercise-3}
+\begin{block}{Statement...}
+ Write a program to calculate the average of two numbers.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-3: examples/AverageTwoNumbers.java}
+\scriptsize
+\begin{lstlisting}
+public class AverageTwoNumbers {
+public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    float op1, op2;
+    float average;
+    op1 = mc.readFloat();
+    op2 = mc.readFloat();
+    average = (op1 + op2) / 2;
+    mc.println("The average is: "+average);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-4}
+\begin{block}{Statement...}
+ Write a program to calculate the highest value of two float numbers.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-4: examples/HighestValue.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestValue {
+public static void main(String []args){
+  MyConsole mc = new MyConsole();
+  float op1, op2;
+  op1 = mc.readFloat();
+  op2 = mc.readFloat();
+  //This is not a secure method to compare floats
+  //To compare only int...
+  if (op1 > op2){
+    mc.println("The highest value is: "+op1);	
+  }else{
+    mc.println("The highest value is: "+op2);
+  }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise-4 (v2 using the Java API): examples/HighestValueAPI.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestValueAPI {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    float op1, op2;
+    op1 = mc.readFloat();
+    op2 = mc.readFloat();
+    int compare = Float.compare(op1, op2); 
+    if (compare == 0){
+      mc.println("Values are equals.");	
+    }else if(compare < 0){
+      mc.println("The highest value is: "+op2);
+    }else {
+      mc.println("The highest value is: "+op1);
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-5}
+\begin{block}{Statement...}
+ Write a program to calculate the highest value of three integer numbers.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-5: examples/HighestThreeIntValue.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestThreeIntValue {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int op1, op2, op3;
+    op1 = mc.readInt();
+    op2 = mc.readInt();
+    op3 = mc.readInt();
+    if (op1 > op2 && op1 > op3){
+      mc.println("The highest value is: "+op1);
+     }else if (op2 > op1 && op2 > op3){
+      mc.println("The highest value is: "+op2);
+     }else{
+      mc.println("The highest value is: "+op3);
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-5 (v2 using the Java API): examples/HighestThreeValueAPI.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestThreeValueAPI {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    float op1, op2, op3;
+    op1 = mc.readFloat();
+    op2 = mc.readFloat();
+    op3 = mc.readFloat();
+    if (Float.compare(op1, op2)>0 && 
+        Float.compare(op1, op3)>0){
+      mc.println("The highest value is: "+op1);
+     }else if (Float.compare(op2, op3)>0 && 
+               Float.compare(op2, op3)>0){
+      mc.println("The highest value is: "+op2);
+     }else{
+      mc.println("The highest value is: "+op3);
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-6}
+\begin{block}{Statement...}
+ Write a program to show the first 20 natural numbers (using 3 different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-6: examples/ShowFirst20Numbers.java}
+\scriptsize
+\begin{lstlisting}
+public class ShowFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(i);
+      i = i + 1; //i++
+    }while(i<=top);
+
+    for(int j = 0; j<=top; j++){
+      mc.println(j);
+     }
+    
+    int k = 0;
+    while (k<=top){
+      mc.println(k);
+      k = k+1; //k++
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-6}
+\begin{block}{Statement...}
+ Write a program to show the first 20 natural numbers (descending and using 3 different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-6: examples/ShowFirst20NumbersDesc.java}
+\scriptsize
+\begin{lstlisting}
+public class ShowFirst20NumbersDesc {
+  public static void main(String []args){		
+    MyConsole mc = new MyConsole();
+    int i = 20;
+    do{
+      mc.println(i);
+      i = i-1 ; //i--
+    }while(i>=0);
+
+    for(int j = 20; j>=0; j--){
+      mc.println(j);
+    }
+    int k = 20;
+    while (k>=0){
+      mc.println(k);
+      k = k-1; //k--
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-7}
+\begin{block}{Statement...}
+ Write a program to add up the first 20 natural numbers (using 3 different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-7: examples/SumFirst20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class SumFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    int sum = 0;
+    MyConsole mc = new MyConsole();
+    sum = 0;
+    do{
+      sum = sum + i;
+      i = i + 1; //i++
+    }while(i<=top);		
+    mc.println("After the first loop..."+sum);
+    sum=0;
+    for(int j = 0; j<=top; j++){
+      sum = sum + j;
+    }
+    mc.println("After the second loop..."+sum);
+    int k = 0;
+    sum = 0;
+    while (k<=top){
+      sum = sum + k;
+      k = k+1; //k++
+    }
+  mc.println("After the third loop..."+sum);
+ }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-8}
+\begin{block}{Statement...}
+ Write a program to print the even numbers between 0 and 20 (using 3 different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-8: examples/EvenIn20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class EvenIn20Numbers {
+  public static void main(String []args){
+  int top = 20;  int i = 0;
+  MyConsole mc = new MyConsole();
+  do{
+    if (i%2 == 0){
+      mc.println(i);
+    }
+  i = i + 1; //i++
+  }while(i<=top);		
+  for(int j = 0; j<=top; j++){
+    if (j%2 == 0){
+      mc.println(j);
+    }
+   }
+  int k = 0;
+  while (k<=top){
+    if (k%2 == 0){
+      mc.println(k);
+    }
+  k = k+1; //k++
+  }
+  while (k++<=top){
+  if (k%2 == 0){
+    mc.println(k);
+    }
+  }}}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\frametitle{Exercise-9}
+\begin{block}{Statement...}
+ Write a program to count the odd numbers between 0 and 20 (using different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-9: examples/CountOddIn20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class CountOddIn20Numbers {
+  public static void main(String []args){
+    int top = 20; int i = 0; int counter = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      if (i%2 != 0){
+       counter++;
+      }
+      i = i + 1; //i++
+     }while(i<=top);				
+    mc.println("Found "+counter+" odd numbers.");
+    counter = 0;
+    for(int j = 0; j<=top; j++){
+      if (j%2 != 0){
+      counter++;
+      }
+    }
+   mc.println("Found "+counter+" odd numbers.");
+   int k = 0;
+   counter = 0;
+   while (k<=top){
+     if (k%2 == 0){
+       counter++;
+     }
+     k = k+1; //k++
+    }
+   mc.println("Found "+counter+" odd numbers.");
+ }}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\frame{
+\frametitle{Exercise-10}
+\begin{block}{Statement...}
+ Write a program to calculate the square of numbers between 0 and 20 (using different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-10: examples/SquareFirst20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class SquareFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(i*i);
+      i = i + 1; //i++
+    }while(i<=top);
+  
+  for(int j = 0; j<=top; j++){
+    mc.println(j*j);
+    }
+
+  int k = 0;
+  while (k<=top){
+    mc.println(k*k);
+    k = k+1; //k++
+  }
+ }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-11}
+\begin{block}{Statement...}
+ Write a program to calculate the cube of numbers between 0 and 20 (using different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-11: examples/CubeFirst20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class CubeFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(i*i*i);
+      i = i + 1; //i++
+    }while(i<=top);
+
+    for(int j = 0; j<=top; j++){
+      mc.println(j*j*j);
+    }
+    int k = 0;
+    while (k<=top){
+      mc.println(k*k*k);
+      k = k+1; //k++
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-12}
+\begin{block}{Statement...}
+ ...the previous example but using the Java Math API.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-12: examples/CubeFirst20NumbersMathAPI.java}
+\tiny
+\begin{lstlisting}
+public class CubeFirst20NumbersMathAPI {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(Math.pow(i, 3));
+      i = i + 1; //i++
+     }while(i<=top);
+    for(int j = 0; j<=top; j++){
+      mc.println(Math.pow(j, 3));
+    }
+    int k = 0;
+    while (k<=top){
+      mc.println(Math.pow(k, 3));
+      k = k+1; //k++
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\frametitle{Exercise-13}
+\begin{block}{Statement...}
+ Write a program to calculate the pow of any number in the form $a^b$.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-13: examples/CubeFirst20NumbersMathAPI.java}
+\tiny
+\begin{lstlisting}
+public class MyOwnPow {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    double base = 0;
+    int exponent = 0;
+    double value = 1;
+    base = mc.readDouble();
+    exponent = mc.readInt();
+    for (int i = 0; i<exponent;i++){
+      value = value  * base; 
+    }
+  mc.println("The pow of "+base+" raised to "+exponent+" is equals to "+value);
+  mc.println("Using the Java API: "+Math.pow(base, exponent));
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-14}
+\begin{block}{Statement...}
+ Write a program to calculate if a year is a leap year.
+\end{block}
+\begin{lstlisting}
+if year is divisible by 400 then
+   is_leap_year
+else if year is divisible by 100 then
+   not_leap_year
+else if year is divisible by 4 then
+   is_leap_year
+else
+   not_leap_year
+\end{lstlisting}
+
+Source: \url{http://en.wikipedia.org/wiki/Leap\_year}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-14: examples/LeapYear.java}
+\scriptsize
+\begin{lstlisting}
+public class LeapYear {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int year = 0;
+    year = mc.readInt();
+    boolean isLeapYear = (year % 4 == 0);
+    // divisible by 4 and not 100
+    isLeapYear = isLeapYear && (year % 100 != 0);
+    // divisible by 4 and not 100 unless divisible by 400
+    isLeapYear = isLeapYear || (year % 400 == 0);
+    mc.println(isLeapYear);	
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-15}
+\begin{block}{Statement...}
+ Write a program to know if a number is a palindrome.
+\end{block}
+
+\begin{exampleblock}{Palindrome}
+  A number/string is called palindrome if number/string and its reverse is equal.
+  \begin{itemize}
+   \item 121 is a palindrome.
+   \item 123 is not a palindrome.
+  \end{itemize}
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-15: examples/PalindromeNumber.java}
+\scriptsize
+\begin{lstlisting}
+public class PalindromeNumber {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int number;
+    int palindrome, reverse;
+    number = mc.readInt();
+    palindrome = number;
+    reverse = 0;
+    while (palindrome != 0) {
+      int remainder = palindrome % 10;
+      reverse = reverse * 10 + remainder;
+      palindrome = palindrome / 10;
+    }
+    mc.println("The number "+number+"is palindrome "+ 
+      (number==reverse));
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-16}
+\begin{block}{Statement...}
+ Write a program to know if a number is a palindrome.
+\end{block}
+
+\begin{exampleblock}{Armstrong number}
+ An Armstrong number of three digit is a number whose sum of cubes of its digit is equal to its number. 
+  \begin{itemize}
+   \item  153 = $1^3+5^3+3^3$ = $1+125+27$=153 is an Armstrong Number.
+   \item  See \url{http://en.wikipedia.org/wiki/Narcissistic\_number}
+  \end{itemize}
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-16: examples/PalindromeNumber.java}
+\scriptsize
+\begin{lstlisting}
+public class ArmstrongNumber {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int number = 0;
+    int result, source;
+    number = mc.readInt();
+    source = number;
+    result = 0;
+    while(number != 0){
+      int remainder = number%10;
+      result = result + remainder*remainder*remainder;
+      number = number/10;
+     }
+    mc.println("The number "+number+" is Armstrong number "+
+      (source==result));        
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-17}
+\begin{block}{Statement...}
+ Write a program to show a Wedge of Stars (given the number of stars).
+\end{block}
+
+\begin{lstlisting}
+ *******
+ ******
+ *****
+ ****
+ ***
+ **
+ *
+\end{lstlisting}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-17: examples/WedgeOfStars.java}
+\scriptsize
+\begin{lstlisting}
+public class WedgeOfStars {
+  public static void main(String args[]){
+    MyConsole mc = new MyConsole();
+    int numberOfStars = 0;
+    numberOfStars = mc.readInt();
+    for (int i = numberOfStars; i>0; i--){
+      for(int j = 0; j<i; j++){
+	mc.print("*");
+      }
+      mc.println("");
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-18}
+\begin{block}{Statement...}
+ Write a program to show a Holiday Tree.
+\end{block}
+
+\begin{lstlisting}
+       *
+      ***
+     *****
+    *******
+   *********
+  ***********
+ *************
+***************
+      ***
+      ***
+      ***
+\end{lstlisting}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-18: examples/HolidayTree.java}
+\tiny
+\begin{lstlisting}
+public class HolidayTree {
+  public static void main(String []args) throws IOException{
+    MyConsole mc = new MyConsole();
+    int baseStars = 15;
+    int halfBlankSpaces = 0;
+    for (int i = 1; i<baseStars; i=i+2){
+      halfBlankSpaces = (baseStars-i)/2;
+      for(int j = 0; j<halfBlankSpaces;j++) {mc.print(" ");}
+      for(int k = 0; k<i;k++) {mc.print("*");}
+      for(int j = 0; j<halfBlankSpaces;j++) { mc.print(" ");}
+      mc.println("");
+    }
+    halfBlankSpaces = (baseStars/2)-1;
+    for(int i = 0; i<3;i++){
+      for(int j = 0; j<halfBlankSpaces;j++){mc.print(" ");}
+      for(int k = 0; k<3;k++){mc.print("*");}
+      for(int j = 0; j<halfBlankSpaces;j++){mc.print(" ");}
+    mc.println(" ");
+    }}}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\titlepage
+
+}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

@@ -78,7 +78,7 @@ END PROGRAM program-name
 \begin{block}{Structure...}
 \begin{itemize}
  \item Contents in [ ] are optional.
- \item Keyword IMPLICIT NONE must present (in previous FORTRAN versions).
+ \item Keyword IMPLICIT NONE must present.
 \item A program starts with the keyword PROGRAM,
 \begin{itemize}
  \item ...a program name,
@@ -177,9 +177,8 @@ salary = 100.5 * 12 + averylooooongvariablename * 10
 % 
 % 
  \begin{alertblock}{Special Characters}
- FIXME
- %space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
- %space \' \" ( ) * + - 
+  %space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
+ space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
  \end{alertblock}
  
 \end{frame}
@@ -188,11 +187,20 @@ salary = 100.5 * 12 + averylooooongvariablename * 10
 \begin{frame}[fragile]
 \frametitle{Constants...}
 \scriptsize
-  \begin{exampleblock}{Definition}
- 0-9
- \end{exampleblock}
+ \begin{exampleblock}{Definition}
+...are the tokens used to denote the value of a particular type.
+\end{exampleblock}
 
- 
+ \begin{block}{Types}
+ \begin{enumerate}
+  \item Integer, set of digits with an optional sign. 
+  \item Real: decimal and exponential representation. 
+  \item Complex: not covered in this course. 
+  \item Logical, set of digits with an optional sign. 
+  \item Character String, set of chars enclosed between double quotes or apostrophes (single quotes).  
+ \end{enumerate}
+
+\end{block} 
  
  
 \end{frame}
@@ -239,7 +247,7 @@ salary = 100.5 * 12 + averylooooongvariablename * 10
 % \end{frame}
 % % 
 
-
+%1
 \begin{frame}[fragile]
 \frametitle{Adding two numbers...}
 \scriptsize
@@ -255,7 +263,7 @@ end
 \end{frame}
 
 
-
+%2
 \begin{frame}[fragile]
 \frametitle{Swap variables...}
 
@@ -274,7 +282,7 @@ end
 \end{lstlisting}
 \end{frame}
 
-
+%3
 \begin{frame}[fragile]
 \frametitle{Average (I)...}
 
@@ -291,6 +299,7 @@ end
 \end{frame}
 
 
+%4
 \begin{frame}[fragile]
 \frametitle{Average (II)...}
 
@@ -312,6 +321,7 @@ end
 \end{frame}
 
 
+%5
 \begin{frame}[fragile]
 \frametitle{Highest number...}
 
@@ -331,6 +341,7 @@ end
 \end{frame}
 
 
+%6
 \begin{frame}[fragile]
 \frametitle{Highest number (among 3)...}
 
@@ -351,6 +362,7 @@ end
 \end{lstlisting}
 \end{frame}
 
+%7
 \begin{frame}[fragile]
 \frametitle{Show the first 20 numbers (ascending)...}
 
@@ -366,6 +378,7 @@ end
 \end{frame}
 
 
+%8
 \begin{frame}[fragile]
 \frametitle{Show the first 20 numbers (descending)...}
 
@@ -383,6 +396,7 @@ end
 \end{frame}
 
 
+%9
 \begin{frame}[fragile]
 \frametitle{Sum of the first 20 numbers...}
 
@@ -400,6 +414,7 @@ end
 \end{frame}
 
 
+%10
 \begin{frame}[fragile]
 \frametitle{Show even numbers between 1 and 20...}
 
@@ -416,6 +431,7 @@ end
 \end{lstlisting}
 \end{frame}
 
+%11
 \begin{frame}[fragile]
 \frametitle{Count odd numbers between 1 and 20...}
 
@@ -435,6 +451,7 @@ end
 \end{frame}
 
 
+%12
 \begin{frame}[fragile]
 \frametitle{Square of the first 20 numbers...}
 
@@ -450,6 +467,7 @@ end
 \end{lstlisting}
 \end{frame}
 
+%13
 \begin{frame}[fragile]
 \frametitle{Cube of the first 8 numbers...}
 
@@ -465,6 +483,7 @@ end
 \end{lstlisting}
 \end{frame}
 
+%14
 \begin{frame}[fragile]
 \frametitle{Power of a number $a^b$...}
 
@@ -483,8 +502,71 @@ end
 \end{lstlisting}
 \end{frame}
 
+%15
+\begin{frame}[fragile]
+\frametitle{Year}
+\scriptsize
+\begin{lstlisting}
+program bisiesto
+  
+end
+\end{lstlisting}
+\end{frame}
 
 
+%16
+\begin{frame}[fragile]
+\frametitle{Palindrome Numbers}
+\scriptsize
+\begin{block}{What is a palindrome?}
+  A number/string is called palindrome if number/string and its reverse is equal.
+\end{block}
+
+\begin{lstlisting}
+program isPalindrome
+  integer:: palindrome, num, reverse, remainder
+  read *, num
+  palindrome = num
+  reverse = 0
+  do while (palindrome /= 0)
+    remainder = mod(palindrome,10)
+    reverse = reverse * 10 + remainder
+    palindrome = palindrome / 10	
+  end do
+  if (num == reverse ) then 
+      print *, "The number ", num, " is a palindrome."
+  else 
+     print *, "The number ", num, " is not a palindrome."
+  end if
+end 
+\end{lstlisting}
+\end{frame}
+
+
+%17
+\begin{frame}[fragile]
+\frametitle{Holiday Tree}
+\scriptsize
+\begin{lstlisting}
+program holidaytree
+  
+end
+\end{lstlisting}
+\end{frame}
+
+
+%18
+\begin{frame}[fragile]
+\frametitle{Stars}
+\scriptsize
+\begin{lstlisting}
+program stars
+  
+end
+\end{lstlisting}
+\end{frame}
+
+%19
 \begin{frame}[fragile]
 \frametitle{Factorial}
 \scriptsize
@@ -511,7 +593,7 @@ end
 \end{frame}
 
 
-
+%20
 \begin{frame}[fragile]
 \frametitle{Factorial (I)}
 
@@ -530,7 +612,7 @@ end
 \end{frame}
 
 
-
+%21
 
 \begin{frame}[fragile]
 \frametitle{Factorial (III)}
@@ -557,7 +639,7 @@ end
 \end{frame}
 
 
-
+%22
 \begin{frame}[fragile]
 \frametitle{Print the Fibonacci sequence of a number... $fib_n=fib_{n-1}+fib_{n-2}$ // $fib_0 = 0$ and $fib_1 = 1$}
 
