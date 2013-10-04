@@ -146,7 +146,8 @@ public class SwapVariables {
 \scriptsize
 \begin{lstlisting}
 public class AverageTwoNumbers {
-public static void main(String []args){
+
+public static void main(String []args){
     MyConsole mc = new MyConsole();
     float op1, op2;
     float average;
@@ -174,7 +175,8 @@ public class AverageTwoNumbers {
 \scriptsize
 \begin{lstlisting}
 public class HighestValue {
-public static void main(String []args){
+
+public static void main(String []args){
   MyConsole mc = new MyConsole();
   float op1, op2;
   op1 = mc.readFloat();
@@ -406,7 +408,8 @@ public class SumFirst20Numbers {
 \begin{lstlisting}
 public class EvenIn20Numbers {
   public static void main(String []args){
-  int top = 20;  int i = 0;
+  int top = 20;
+  int i = 0;
   MyConsole mc = new MyConsole();
   do{
     if (i%2 == 0){
@@ -476,7 +479,8 @@ public class CountOddIn20Numbers {
      k = k+1; //k++
     }
    mc.println("Found "+counter+" odd numbers.");
- }}
+
+ }}
 \end{lstlisting}
 \end{frame}
 
@@ -717,7 +721,7 @@ public class PalindromeNumber {
 \begin{frame}[fragile]
 \frametitle{Exercise-16}
 \begin{block}{Statement...}
- Write a program to know if a number is a palindrome.
+ Write a program to know if a number is an Armstrong Number.
 \end{block}
 
 \begin{exampleblock}{Armstrong number}
@@ -849,7 +853,9 @@ public class HolidayTree {
       for(int k = 0; k<3;k++){mc.print("*");}
       for(int j = 0; j<halfBlankSpaces;j++){mc.print(" ");}
     mc.println(" ");
-    }}}
+    }
+}
+}
 \end{lstlisting}
 \end{frame}
 
