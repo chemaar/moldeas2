@@ -15,4 +15,4 @@ program sum20
 
  print*,sum
 
-end
+end program sum20

@@ -6,7 +6,7 @@ program desc20
   end do
 
   a = 20
-  do while (a > 0) 
+  do while (a >= 0) 
    print*,a
    a = a - 1
   end do

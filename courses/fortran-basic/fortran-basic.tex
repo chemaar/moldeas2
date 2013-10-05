@@ -14,7 +14,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[FORTRAN]{Syntax and Basic Examples of \\ the FORTRAN Programming Language}
+\title[FORTRAN]{Basic Examples of \\ the FORTRAN Programming Language}
 \author[Jose María Álvarez Rodríguez]{\textbf{Programming Course} \\ \vspace{0.3cm} Jose María Álvarez Rodríguez}
 \subtitle{}
 \institute{Department of Computer Science \\ Carlos III University of Madrid}
@@ -44,9 +44,25 @@
 \begin{lstlisting}
 program HelloWorld
   write (*,*) 'Hello, FORTRAN world!' 
-end
+end program HelloWorld
 \end{lstlisting}
 \end{frame}
+
+\frame{
+
+\frametitle{Methodology}
+\begin{exampleblock}{Steps...}
+\begin{enumerate}
+ \item Analyze and understand the problem. Is there any formal model?
+ \item Design a solution.
+ \item Implement the solution.
+ \item Test: verify the results. Trace and Debug the program.
+ \item Document the solution.
+ \item Refine, refactor the existing code (Improvement).
+\end{enumerate}
+\end{exampleblock}
+
+}
 
 % 
 \begin{frame}[fragile]
@@ -94,144 +110,167 @@ END PROGRAM program-name
 \end{block}
 }
 
-% %http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/chap01/struct.html
-% %http://nf.nci.org.au/training/FortranBasic/
-% 
-% 
-\begin{frame}[fragile]
-\frametitle{Comments}
-\scriptsize
-\begin{block}{Types...}
+\frame{
+
+\frametitle{Remarks}
+\begin{alertblock}{...}
 \begin{enumerate}
- \item Characters that follow an exclamation mark, !, except in a character string, are comments (ignored by the compiler).
+ \item All examples are available in the folder ``examples''.
+ \item We offer a potential solution more approaches could be applied to solve the same problem.
+ \item All examples have been tested with the compiler ``gfortran'' (see version below).
+\end{enumerate} 
+\end{alertblock}
 
- \begin{lstlisting}
-salary  = salary + 10   ! add 10 to the salary
- \end{lstlisting}
-
- \item A line comment...
-  \begin{lstlisting}
-! A comment in the middle of the program
- \end{lstlisting}
- 
- \item A blank line is also interpreted as a comment line...
-   \begin{lstlisting}
-
-! The above blank line is a comment line
- \end{lstlisting}
- 
- 
-\end{enumerate}
-
+\begin{block}{Fortran Version}
+ \begin{itemize}
+  \item OS: Linux 3.8.0-31-generic \#46-Ubuntu SMP Tue Sep 10 20:03:44 UTC 2013 x86\_64 x86\_64 x86\_64 GNU/Linux
+  \item Install command: sudo apt-get install gfortran
+  \item gcc 4.7.3 (Ubuntu/Linaro 4.7.3-1ubuntu1) 
+ \end{itemize}
 \end{block}
 
 
-\end{frame}
+}
+
+
+% % %http://www.cs.mtu.edu/~shene/COURSES/cs201/NOTES/chap01/struct.html
+% % %http://nf.nci.org.au/training/FortranBasic/
+% % 
+% % 
+% \begin{frame}[fragile]
+% \frametitle{Comments}
+% \scriptsize
+% \begin{block}{Types...}
+% \begin{enumerate}
+%  \item Characters that follow an exclamation mark, !, except in a character string, are comments (ignored by the compiler).
+% 
+%  \begin{lstlisting}
+% salary  = salary + 10   ! add 10 to the salary
+%  \end{lstlisting}
+% 
+%  \item A line comment...
+%   \begin{lstlisting}
+% ! A comment in the middle of the program
+%  \end{lstlisting}
+%  
+%  \item A blank line is also interpreted as a comment line...
+%    \begin{lstlisting}
+% 
+% ! The above blank line is a comment line
+%  \end{lstlisting}
+%  
+%  
+% \end{enumerate}
+% 
+% \end{block}
 % 
 % 
-% %% 
-
-\begin{frame}[fragile]
-\frametitle{Fortran Continuation Lines}
-
-\begin{exampleblock}{Statements...}
-Each statement in a new line but long statements can be splitted into several lines...
-\end{exampleblock}
-
-\tiny
-\begin{block}{Types...}
-\begin{enumerate}
- \item A line can be ended with an \& (not part of the statement)...
- \item ...the continuation is usually with the char in the next non-comment line
-
- \begin{lstlisting}
-salary = 100.5 * 12   &
-    + 21 / 100
- \end{lstlisting}
-
- \item If the first non-blank character of the continuation line is \&, continuation is to the first character after the \&:
-  \begin{lstlisting}
-salary = 100.5 * 12 + averylooooong&
-     &variablename * 10
-     
-salary = 100.5 * 12 + averylooooongvariablename * 10
-\end{lstlisting}
-  
-\end{enumerate}
-
-\end{block}
-
-
-\end{frame}
+% \end{frame}
+% % 
+% % 
+% % %% 
 % 
-
-\begin{frame}[fragile]
- \frametitle{Alphabet}
- \begin{block}{Letters}
-  a-zA-Z
- \end{block}
- 
- \begin{exampleblock}{Numbers}
- 0-9
- \end{exampleblock}
+% \begin{frame}[fragile]
+% \frametitle{Fortran Continuation Lines}
+% 
+% \begin{exampleblock}{Statements...}
+% Each statement in a new line but long statements can be splitted into several lines...
+% \end{exampleblock}
+% 
+% \tiny
+% \begin{block}{Types...}
+% \begin{enumerate}
+%  \item A line can be ended with an \& (not part of the statement)...
+%  \item ...the continuation is usually with the char in the next non-comment line
+% 
+%  \begin{lstlisting}
+% salary = 100.5 * 12   &
+%     + 21 / 100
+%  \end{lstlisting}
+% 
+%  \item If the first non-blank character of the continuation line is \&, continuation is to the first character after the \&:
+%   \begin{lstlisting}
+% salary = 100.5 * 12 + averylooooong&
+%      &variablename * 10
+%      
+% salary = 100.5 * 12 + averylooooongvariablename * 10
+% \end{lstlisting}
+%   
+% \end{enumerate}
+% 
+% \end{block}
 % 
 % 
- \begin{alertblock}{Special Characters}
-  %space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
- space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
- \end{alertblock}
- 
-\end{frame}
-
-
-\begin{frame}[fragile]
-\frametitle{Constants...}
-\scriptsize
- \begin{exampleblock}{Definition}
-...are the tokens used to denote the value of a particular type.
-\end{exampleblock}
-
- \begin{block}{Types}
- \begin{enumerate}
-  \item Integer, set of digits with an optional sign. 
-  \item Real: decimal and exponential representation. 
-  \item Complex: not covered in this course. 
-  \item Logical, set of digits with an optional sign. 
-  \item Character String, set of chars enclosed between double quotes or apostrophes (single quotes).  
- \end{enumerate}
-
-\end{block} 
- 
- 
-\end{frame}
-
-
-\begin{frame}[fragile]
-\frametitle{Identifiers...}
-\scriptsize
-  \begin{exampleblock}{Definition}
- \end{exampleblock}
- 
-\end{frame}
-
-
-
-\begin{frame}[fragile]
-\frametitle{Variables...}
-\scriptsize
-  \begin{exampleblock}{Definition}
- \end{exampleblock}
- 
-\end{frame}
-
-
-\begin{frame}[fragile]
-\frametitle{Declarations...}
-\scriptsize
-  \begin{exampleblock}{Definition}
- \end{exampleblock}
- 
-\end{frame}
+% \end{frame}
+% % 
+% 
+% \begin{frame}[fragile]
+%  \frametitle{Alphabet}
+%  \begin{block}{Letters}
+%   a-zA-Z
+%  \end{block}
+%  
+%  \begin{exampleblock}{Numbers}
+%  0-9
+%  \end{exampleblock}
+% % 
+% % 
+%  \begin{alertblock}{Special Characters}
+%   %space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
+%  space ' " ( ) * + - / : = \_ \! \& \$ ; < > \% ? , .
+%  \end{alertblock}
+%  
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Constants...}
+% \scriptsize
+%  \begin{exampleblock}{Definition}
+% ...are the tokens used to denote the value of a particular type.
+% \end{exampleblock}
+% 
+%  \begin{block}{Types}
+%  \begin{enumerate}
+%   \item Integer, set of digits with an optional sign. 
+%   \item Real: decimal and exponential representation. 
+%   \item Complex: not covered in this course. 
+%   \item Logical, set of digits with an optional sign. 
+%   \item Character String, set of chars enclosed between double quotes or apostrophes (single quotes).  
+%  \end{enumerate}
+% 
+% \end{block} 
+%  
+%  
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Identifiers...}
+% \scriptsize
+%   \begin{exampleblock}{Definition}
+%  \end{exampleblock}
+%  
+% \end{frame}
+% 
+% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Variables...}
+% \scriptsize
+%   \begin{exampleblock}{Definition}
+%  \end{exampleblock}
+%  
+% \end{frame}
+% 
+% 
+% \begin{frame}[fragile]
+% \frametitle{Declarations...}
+% \scriptsize
+%   \begin{exampleblock}{Definition}
+%  \end{exampleblock}
+%  
+% \end{frame}
 
 
 \section{Basic Examples}
@@ -248,44 +287,74 @@ salary = 100.5 * 12 + averylooooongvariablename * 10
 % % 
 
 %1
+
+\frame{
+
+\frametitle{Exercise-1}
+\begin{block}{Statement...}
+ Write a program to read and add two numbers.
+\end{block}
+
+}
+
+
+
 \begin{frame}[fragile]
-\frametitle{Adding two numbers...}
+\frametitle{Exercise-1: examples/exercise-1.f90}
 \scriptsize
 \begin{lstlisting}
-program adding
+program adding2numbers
   real x, y, z
   print *, "What are the two numbers you want to add?"
   read *, x, y  
   z = x + y
   print *, "The result is ", z
-end
+end program adding2numbers
 \end{lstlisting}
 \end{frame}
 
+\frame{
+\frametitle{Exercise-2}
+\begin{block}{Statement...}
+ Write a program to swap the values of two real variables.
+\end{block}
 
-%2
+}
+
+
+
 \begin{frame}[fragile]
-\frametitle{Swap variables...}
-
+\frametitle{Exercise-2: examples/exercise-2.f90}
 \scriptsize
 \begin{lstlisting}
-program swap
-  real x, y, z
-  print *, "What are the two numbers you want to swap?"
-  read *, x, y
-  print *, "The values (before swapping) are ", x, y
-  z = y
-  y = x
-  x = z
-  print *, "The values (after swapping) are ", x, y
-end
+program swap2variables
+ real x, y, z
+ print *, "What are the two numbers you want to swap?"
+ read *, x, y
+ print *, "The values (before swapping) are ", x, y
+ z = y
+ y = x
+ x = z
+ print *, "The values (after swapping) are ", x, y
+end program swap2variables
 \end{lstlisting}
 \end{frame}
 
-%3
-\begin{frame}[fragile]
-\frametitle{Average (I)...}
 
+
+\frame{
+\frametitle{Exercise-3}
+\begin{block}{Statement...}
+ Write a program to calculate the average of two numbers.
+\end{block}
+
+}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-3: examples/AverageTwoNumbers.java}
 \scriptsize
 \begin{lstlisting}
 program average
@@ -294,41 +363,26 @@ program average
   read *, x, y
   z = (x + y)/2
   print *, "The average is ", z
-end
+end program average
 \end{lstlisting}
 \end{frame}
 
 
-%4
-\begin{frame}[fragile]
-\frametitle{Average (II)...}
+\frame{
+\frametitle{Exercise-4}
+\begin{block}{Statement...}
+ Write a program to calculate the highest value of two float numbers.
+\end{block}
 
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-4: examples/HighestValue.java}
 \scriptsize
 \begin{lstlisting}
-program average
-  real x, y, z
-  print *, "What are the two numbers you want to average?"
-  read *, x, y
-  call avg(x,y,z)
-  print *, "The average is", z
-end
- 
-subroutine avg(a,b,c)
-  real a, b, c
-  c = (a + b)/2.
-end
-\end{lstlisting}
-\end{frame}
-
-
-%5
-\begin{frame}[fragile]
-\frametitle{Highest number...}
-
-\scriptsize
-\begin{lstlisting}
-program highest
-  real x, y, z
+program highestvalue
+  real x, y
   print *, "What are the two numbers you want to compare?"
   read *, x, y
   if (x >y ) then 
@@ -336,70 +390,112 @@ program highest
   else 
     print *, "The highest value is ", y
   end if
-end
+end program highestvalue
 \end{lstlisting}
 \end{frame}
 
+\frame{
+\frametitle{Exercise-5}
+\begin{block}{Statement...}
+ Write a program to calculate the highest value of three integer numbers.
+\end{block}
 
-%6
+}
+
+
+
 \begin{frame}[fragile]
-\frametitle{Highest number (among 3)...}
-
+\frametitle{Exercise-5: examples/exercise-5.f90}
 \scriptsize
 \begin{lstlisting}
-program highest3
+program highestvalue3
   real x, y, z
   print *, "What are the three numbers you want to compare?"
   read *, x, y, z
-  if (x>=y .AND. x>=z ) then 
+  if (x>=y .AND. x>=c ) then 
     print *, "The highest value is ", x
   else if (y>=x .AND. y>=z) then
     print *, "The highest value is ", y
   else 
     print *, "The highest value is ", z
   end if
-end
+end program highestvalue3
 \end{lstlisting}
 \end{frame}
 
-%7
-\begin{frame}[fragile]
-\frametitle{Show the first 20 numbers (ascending)...}
 
+\frame{
+\frametitle{Exercise-6}
+\begin{block}{Statement...}
+ Write a program to show the first 20 natural numbers (use different loops).
+\end{block}
+
+}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-6: examples/exercise-6.java}
 \scriptsize
 \begin{lstlisting}
 program asc20
   integer :: a
-  do a = 1, 20
+  
+ do a = 1, 20
    print*,a
   end do
-end
+
+ a = 1 
+ do while (a <= 20) 
+   print*,a
+   a = a+1
+ end do
+
+end program asc20
 \end{lstlisting}
 \end{frame}
 
+\frame{
+\frametitle{Exercise-7}
+\begin{block}{Statement...}
+ Write a program to show the first 20 natural numbers (descending and using different loops).
+\end{block}
 
-%8
+}
+
+
 \begin{frame}[fragile]
-\frametitle{Show the first 20 numbers (descending)...}
-
+\frametitle{Exercise-7: examples/exercise-7.f90}
 \scriptsize
 \begin{lstlisting}
 program desc20
   integer :: a
+
+  do a = 20, 0, -1
+   print*,a
+  end do
+
   a = 20
-  do while (a > 0) 
+  do while (a >= 0) 
    print*,a
    a = a - 1
   end do
-end
+end program desc20
 \end{lstlisting}
 \end{frame}
 
 
-%9
-\begin{frame}[fragile]
-\frametitle{Sum of the first 20 numbers...}
+\frame{
+\frametitle{Exercise-8}
+\begin{block}{Statement...}
+ Write a program to add up the first 20 natural numbers (using different loops).
+\end{block}
 
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-8: examples/exercise-8.f90}
 \scriptsize
 \begin{lstlisting}
 program sum20
@@ -409,261 +505,459 @@ program sum20
    sum = sum + a    
   end do
   print*,sum
-end
+
+ a = 1 
+ sum = 0
+ do while (a <= 20) 
+   sum = sum + a    
+   a = a+1
+ end do
+
+ print*,sum
+
+end program sum20
 \end{lstlisting}
 \end{frame}
 
 
-%10
-\begin{frame}[fragile]
-\frametitle{Show even numbers between 1 and 20...}
-
-\scriptsize
-\begin{lstlisting}
-program even20
-  integer :: a
-  do a = 1, 20
-    if ( mod(a,2) == 0.0 ) then 
-    	print *, a
-    end if	
-  end do
-end
-\end{lstlisting}
-\end{frame}
-
-%11
-\begin{frame}[fragile]
-\frametitle{Count odd numbers between 1 and 20...}
-
-\scriptsize
-\begin{lstlisting}
-program countodd
-  integer :: a, count
-  count = 0
-  do a = 1, 20
-    if ( mod(a,2) /= 0.0 ) then 
-    	count = count + 1 
-    end if	
-  end do
- print *, count 
-end
-\end{lstlisting}
-\end{frame}
-
-
-%12
-\begin{frame}[fragile]
-\frametitle{Square of the first 20 numbers...}
-
-\scriptsize
-\begin{lstlisting}
-program square
-  integer :: a, b
-  do a = 1, 20
-    b = a**2
-    print*,a,"to the power of two = ",b
-  end do
-end
-\end{lstlisting}
-\end{frame}
-
-%13
-\begin{frame}[fragile]
-\frametitle{Cube of the first 8 numbers...}
-
-\scriptsize
-\begin{lstlisting}
-program cube
-  integer :: a, b
-  do a = 1, 8
-    b = a*a*a
-    print*,a,"to the power of three = ",b
-  end do
-end
-\end{lstlisting}
-\end{frame}
-
-%14
-\begin{frame}[fragile]
-\frametitle{Power of a number $a^b$...}
-
-\scriptsize
-\begin{lstlisting}
-program aexponentb
-  integer :: a, b
-  real :: value
-  read *, a,b
-  value = 1
-  do i = 1, b
-    value = value * a
-  end do
-  print*,a,"to the power of",b,"= ",value
-end
-\end{lstlisting}
-\end{frame}
-
-%15
-\begin{frame}[fragile]
-\frametitle{Year}
-\scriptsize
-\begin{lstlisting}
-program bisiesto
-  
-end
-\end{lstlisting}
-\end{frame}
-
-
-%16
-\begin{frame}[fragile]
-\frametitle{Palindrome Numbers}
-\scriptsize
-\begin{block}{What is a palindrome?}
-  A number/string is called palindrome if number/string and its reverse is equal.
+\frame{
+\frametitle{Exercise-9}
+\begin{block}{Statement...}
+ Write a program to print the even numbers between 0 and 20 (using different loops).
 \end{block}
 
+}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-9: examples/exercise-9.f90}
+\scriptsize
 \begin{lstlisting}
-program isPalindrome
-  integer:: palindrome, num, reverse, remainder
-  read *, num
-  palindrome = num
-  reverse = 0
-  do while (palindrome /= 0)
-    remainder = mod(palindrome,10)
-    reverse = reverse * 10 + remainder
-    palindrome = palindrome / 10	
+program showevennumbers
+  integer :: a
+  do a = 0, 20
+    if ( mod(a,2)  == 0.0 ) then 
+	 print *, a 
+    end if	
   end do
-  if (num == reverse ) then 
-      print *, "The number ", num, " is a palindrome."
-  else 
-     print *, "The number ", num, " is not a palindrome."
-  end if
-end 
-\end{lstlisting}
-\end{frame}
 
-
-%17
-\begin{frame}[fragile]
-\frametitle{Holiday Tree}
-\scriptsize
-\begin{lstlisting}
-program holidaytree
-  
-end
-\end{lstlisting}
-\end{frame}
-
-
-%18
-\begin{frame}[fragile]
-\frametitle{Stars}
-\scriptsize
-\begin{lstlisting}
-program stars
-  
-end
-\end{lstlisting}
-\end{frame}
-
-%19
-\begin{frame}[fragile]
-\frametitle{Factorial}
-\scriptsize
-\begin{lstlisting}
-program fact
-  real fvalue
-  integer n
-  print *, "Enter a number..."
-  read *, n
-  ! fact(n) = n * fact (n-1)
-  if (n < 0) then 
-    print *, "The number is negative..."
-  else if (n>=0 .AND. n<=1) then
-    fvalue = 1
-  else
-    fvalue = 1
-    do i = 2, n
-      fvalue = i * fvalue
-    end do
-  end if
-  print *, "The result is ", fvalue
-end
-\end{lstlisting}
-\end{frame}
-
-
-%20
-\begin{frame}[fragile]
-\frametitle{Factorial (I)}
-
-\scriptsize
-\begin{lstlisting}
-program fact1
- real, dimension(20) :: fact
- integer :: n, nmax = 20
- fact(1) = 1.0
- do n = 2, nmax
-  fact(n) = fact(n-1) * n
+ a = 0
+ sum = 0
+ do while (a <= 20) 
+   if ( mod(a,2)  == 0.0 ) then 
+     print *, a 
+   end if	
+   a = a+1
  end do
- print*,fact
-end
+end program showevennumbers
 \end{lstlisting}
 \end{frame}
 
 
-%21
 
-\begin{frame}[fragile]
-\frametitle{Factorial (III)}
-
-\scriptsize
-\begin{lstlisting}
-program  Fact 
- integer N 
- real fact
- read (*,*) n 
- fact = ffact (N) 
- print *, FACT 
-end
-
-function FFACT (N) 
-  integer I, N 
-  real factorial,  prod
-  prod = 1.0 
-  do i = 2, N 
-     prod = prod * i 
-  end do 
-end
-\end{lstlisting}
-\end{frame}
-
-
-%22
-\begin{frame}[fragile]
-\frametitle{Print the Fibonacci sequence of a number... $fib_n=fib_{n-1}+fib_{n-2}$ // $fib_0 = 0$ and $fib_1 = 1$}
-
-\scriptsize
-\begin{lstlisting}
-program Fibonacci
-  IMPLICIT NONE
-  integer:: F1 = 1, F2 = 0, i = 0, n = 0
-  print *, "Enter a number..."
-  read (*,*) n
-  do 
-    if (i >= n) exit
-    F1 = F2 + F1
-    print *, F1
-    i = i + 1
-    if (i >= n) exit
-      F2 = F2 + F1
-      print *, F2
-      i = i + 1
-  end do
-end
-\end{lstlisting}
-\end{frame}
-
+% 
+% %2
+% \begin{frame}[fragile]
+% \frametitle{Swap variables...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program swap
+%   real x, y, z
+%   print *, "What are the two numbers you want to swap?"
+%   read *, x, y
+%   print *, "The values (before swapping) are ", x, y
+%   z = y
+%   y = x
+%   x = z
+%   print *, "The values (after swapping) are ", x, y
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %3
+% \begin{frame}[fragile]
+% \frametitle{Average (I)...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program average
+%   real x, y, z
+%   print *, "What are the two numbers you want to average?"
+%   read *, x, y
+%   z = (x + y)/2
+%   print *, "The average is ", z
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %4
+% \begin{frame}[fragile]
+% \frametitle{Average (II)...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program average
+%   real x, y, z
+%   print *, "What are the two numbers you want to average?"
+%   read *, x, y
+%   call avg(x,y,z)
+%   print *, "The average is", z
+% end
+%  
+% subroutine avg(a,b,c)
+%   real a, b, c
+%   c = (a + b)/2.
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %5
+% \begin{frame}[fragile]
+% \frametitle{Highest number...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program highest
+%   real x, y, z
+%   print *, "What are the two numbers you want to compare?"
+%   read *, x, y
+%   if (x >y ) then 
+%     print *, "The highest value is ", x
+%   else 
+%     print *, "The highest value is ", y
+%   end if
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %6
+% \begin{frame}[fragile]
+% \frametitle{Highest number (among 3)...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program highest3
+%   real x, y, z
+%   print *, "What are the three numbers you want to compare?"
+%   read *, x, y, z
+%   if (x>=y .AND. x>=z ) then 
+%     print *, "The highest value is ", x
+%   else if (y>=x .AND. y>=z) then
+%     print *, "The highest value is ", y
+%   else 
+%     print *, "The highest value is ", z
+%   end if
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %7
+% \begin{frame}[fragile]
+% \frametitle{Show the first 20 numbers (ascending)...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program asc20
+%   integer :: a
+%   do a = 1, 20
+%    print*,a
+%   end do
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %8
+% \begin{frame}[fragile]
+% \frametitle{Show the first 20 numbers (descending)...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program desc20
+%   integer :: a
+%   a = 20
+%   do while (a > 0) 
+%    print*,a
+%    a = a - 1
+%   end do
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %9
+% \begin{frame}[fragile]
+% \frametitle{Sum of the first 20 numbers...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program sum20
+%   integer :: sum,a
+%   sum = 0
+%   do a = 1, 20
+%    sum = sum + a    
+%   end do
+%   print*,sum
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %10
+% \begin{frame}[fragile]
+% \frametitle{Show even numbers between 1 and 20...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program even20
+%   integer :: a
+%   do a = 1, 20
+%     if ( mod(a,2) == 0.0 ) then 
+%     	print *, a
+%     end if	
+%   end do
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %11
+% \begin{frame}[fragile]
+% \frametitle{Count odd numbers between 1 and 20...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program countodd
+%   integer :: a, count
+%   count = 0
+%   do a = 1, 20
+%     if ( mod(a,2) /= 0.0 ) then 
+%     	count = count + 1 
+%     end if	
+%   end do
+%  print *, count 
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %12
+% \begin{frame}[fragile]
+% \frametitle{Square of the first 20 numbers...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program square
+%   integer :: a, b
+%   do a = 1, 20
+%     b = a**2
+%     print*,a,"to the power of two = ",b
+%   end do
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %13
+% \begin{frame}[fragile]
+% \frametitle{Cube of the first 8 numbers...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program cube
+%   integer :: a, b
+%   do a = 1, 8
+%     b = a*a*a
+%     print*,a,"to the power of three = ",b
+%   end do
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %14
+% \begin{frame}[fragile]
+% \frametitle{Power of a number $a^b$...}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program aexponentb
+%   integer :: a, b
+%   real :: value
+%   read *, a,b
+%   value = 1
+%   do i = 1, b
+%     value = value * a
+%   end do
+%   print*,a,"to the power of",b,"= ",value
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %15
+% \begin{frame}[fragile]
+% \frametitle{Year}
+% \scriptsize
+% \begin{lstlisting}
+% program bisiesto
+%   
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %16
+% \begin{frame}[fragile]
+% \frametitle{Palindrome Numbers}
+% \scriptsize
+% \begin{block}{What is a palindrome?}
+%   A number/string is called palindrome if number/string and its reverse is equal.
+% \end{block}
+% 
+% \begin{lstlisting}
+% program isPalindrome
+%   integer:: palindrome, num, reverse, remainder
+%   read *, num
+%   palindrome = num
+%   reverse = 0
+%   do while (palindrome /= 0)
+%     remainder = mod(palindrome,10)
+%     reverse = reverse * 10 + remainder
+%     palindrome = palindrome / 10	
+%   end do
+%   if (num == reverse ) then 
+%       print *, "The number ", num, " is a palindrome."
+%   else 
+%      print *, "The number ", num, " is not a palindrome."
+%   end if
+% end 
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %17
+% \begin{frame}[fragile]
+% \frametitle{Holiday Tree}
+% \scriptsize
+% \begin{lstlisting}
+% program holidaytree
+%   
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %18
+% \begin{frame}[fragile]
+% \frametitle{Stars}
+% \scriptsize
+% \begin{lstlisting}
+% program stars
+%   
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% %19
+% \begin{frame}[fragile]
+% \frametitle{Factorial}
+% \scriptsize
+% \begin{lstlisting}
+% program fact
+%   real fvalue
+%   integer n
+%   print *, "Enter a number..."
+%   read *, n
+%   ! fact(n) = n * fact (n-1)
+%   if (n < 0) then 
+%     print *, "The number is negative..."
+%   else if (n>=0 .AND. n<=1) then
+%     fvalue = 1
+%   else
+%     fvalue = 1
+%     do i = 2, n
+%       fvalue = i * fvalue
+%     end do
+%   end if
+%   print *, "The result is ", fvalue
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %20
+% \begin{frame}[fragile]
+% \frametitle{Factorial (I)}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program fact1
+%  real, dimension(20) :: fact
+%  integer :: n, nmax = 20
+%  fact(1) = 1.0
+%  do n = 2, nmax
+%   fact(n) = fact(n-1) * n
+%  end do
+%  print*,fact
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %21
+% 
+% \begin{frame}[fragile]
+% \frametitle{Factorial (III)}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program  Fact 
+%  integer N 
+%  real fact
+%  read (*,*) n 
+%  fact = ffact (N) 
+%  print *, FACT 
+% end
+% 
+% function FFACT (N) 
+%   integer I, N 
+%   real factorial,  prod
+%   prod = 1.0 
+%   do i = 2, N 
+%      prod = prod * i 
+%   end do 
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
+% 
+% %22
+% \begin{frame}[fragile]
+% \frametitle{Print the Fibonacci sequence of a number... $fib_n=fib_{n-1}+fib_{n-2}$ // $fib_0 = 0$ and $fib_1 = 1$}
+% 
+% \scriptsize
+% \begin{lstlisting}
+% program Fibonacci
+%   IMPLICIT NONE
+%   integer:: F1 = 1, F2 = 0, i = 0, n = 0
+%   print *, "Enter a number..."
+%   read (*,*) n
+%   do 
+%     if (i >= n) exit
+%     F1 = F2 + F1
+%     print *, F1
+%     i = i + 1
+%     if (i >= n) exit
+%       F2 = F2 + F1
+%       print *, F2
+%       i = i + 1
+%   end do
+% end
+% \end{lstlisting}
+% \end{frame}
+% 
 
 \frame{
 \titlepage
