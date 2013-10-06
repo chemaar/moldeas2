@@ -1,0 +1,22 @@
+program wedgeOfStars
+ integer :: numberofStars
+ integer :: i,j
+
+ print*,"Intro a number of stars..."
+ read *, number
+
+ i = number
+ do while (i>0)
+	j = 0
+	do while (j<i)
+	  write(*,"(Aw)",advance="no") "*"
+	 j = j + 1
+	end do
+   print*,""
+   i = i - 1
+ end do
+ 
+ 
+end program wedgeOfStars
+
+

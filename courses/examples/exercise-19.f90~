@@ -1,0 +1,28 @@
+program oneHundredPrimeNumber
+  integer :: number
+  integer :: i
+  integer :: matches
+  logical :: isPrime = .TRUE.
+  
+  matches = 0
+  number = 1  
+  do while (matches < 100)
+     isPrime = .TRUE.
+     if (number .NE. 1) then 
+	  i = 2	 
+	  do while ( (isPrime) .AND. (i .NE. number)) 
+		if (mod(number,i) == 0.0) then
+			isPrime = .FALSE.
+		endif
+	    i = i+1
+	  end do 
+      endif
+     if (isPrime) then
+	print *,number
+        matches = matches + 1
+     end if
+     number = number + 1
+ end do
+ 
+end program isPrimeNumber
+

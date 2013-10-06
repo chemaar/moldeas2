@@ -1,0 +1,18 @@
+program isPalindrome
+ integer :: number
+ integer :: palindrome, reverse, remainder
+
+ print*,"Intro a number..."
+ read *, number
+
+ palindrome = number
+ reverse = 0
+ do while (palindrome .NE. 0)
+  remainder = mod(palindrome,10)
+  reverse = reverse * 10 + remainder
+  palindrome = palindrome / 10
+ end do
+
+ print*,"The number ",number," is palindrome ",  (number .EQ. reverse)
+end program isPalindrome
+
