@@ -1,4 +1,4 @@
-%
+% %
 % main.tex
 %
 
@@ -38,15 +38,15 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Syntax}
 % % 
-\begin{frame}[fragile]
-\frametitle{Hello World!}
-
-\begin{lstlisting}
-program HelloWorld
-  write (*,*) 'Hello, FORTRAN world!' 
-end program HelloWorld
-\end{lstlisting}
-\end{frame}
+% \begin{frame}[fragile]
+% \frametitle{Hello World!}
+% 
+% \begin{lstlisting}
+% program HelloWorld
+%   write (*,*) 'Hello, FORTRAN world!' 
+% end program HelloWorld
+% \end{lstlisting}
+% \end{frame}
 
 \frame{
 
@@ -117,6 +117,7 @@ END PROGRAM program-name
 \begin{enumerate}
  \item All examples are available in the folder ``examples''.
  \item We offer a potential solution more approaches could be applied to solve the same problem.
+ \item Integrity checkings such as range and domain of the variables are not included (Robustness improvement).
  \item All examples have been tested with the compiler ``gfortran'' (see version below).
 \end{enumerate} 
 \end{alertblock}
@@ -354,7 +355,7 @@ end program swap2variables
 
 
 \begin{frame}[fragile]
-\frametitle{Exercise-3: examples/AverageTwoNumbers.java}
+\frametitle{Exercise-3: examples/exercise-3.f90}
 \scriptsize
 \begin{lstlisting}
 program average
@@ -378,7 +379,7 @@ end program average
 
 
 \begin{frame}[fragile]
-\frametitle{Exercise-4: examples/HighestValue.java}
+\frametitle{Exercise-4: examples/exercise-4.f90}
 \scriptsize
 \begin{lstlisting}
 program highestvalue
@@ -435,7 +436,7 @@ end program highestvalue3
 
 
 \begin{frame}[fragile]
-\frametitle{Exercise-6: examples/exercise-6.java}
+\frametitle{Exercise-6: examples/exercise-6.f90}
 \scriptsize
 \begin{lstlisting}
 program asc20
@@ -556,408 +557,692 @@ end program showevennumbers
 
 
 
+\frame{
+\frametitle{Exercise-10}
+\begin{block}{Statement...}
+ Write a program to calculate the square of numbers between 1 and 20 (using different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-10: examples/exercise-10.f90}
+\tiny
+\begin{lstlisting}
+program squares
+  integer :: a, b
+  do a = 1, 20
+    b = a**2
+    print*,a,"to the power of two = ",b
+  end do
+  a = 1
+  b = 0
+  do while (a <= 20) 
+   b = a**2
+   print*,a,"to the power of two = ",b
+   a = a+1
+ end do
+end program squares
+\end{lstlisting}
+\end{frame}
+
+\frame{
+\frametitle{Exercise-11}
+\begin{block}{Statement...}
+ Write a program to calculate the cube of numbers between 1 and 20 (using different loops).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-11: examples/exercise-11.f90}
+\tiny
+\begin{lstlisting}
+program cubes
+  integer :: a, b
+  integer :: exponent
+  exponent = 3
+  do a = 1, 20
+    b = a**exponent
+    print*,a,"to the power of two = ",b
+  end do
+  a = 1
+  b = 0
+  do while (a <= 20) 
+   b = a**exponent
+   print*,a,"to the power of ", exponent," = ",b
+   a = a+1
+ end do
+end program cubes
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Exercise-12}
+\begin{block}{Statement...}
+ Write a program to calculate the pow of any number in the form $a^b$.
+\end{block}
+
+\begin{exampleblock}{Notes...}
+ Implement your own loop instead of using the Fortran operator $pow=base**exponent$.
+\end{exampleblock}
+
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-12: examples/exercise-12.f90}
+\tiny
+\begin{lstlisting}
+program mypow
+  integer :: base, exponent
+  real :: value
+  integer :: i
+  
+  print*,"Intro the base..."
+  read *, base
+  print*,"Intro the exponent..."
+  read *, exponent
+ 
+  i = 0
+  value = 1
+  do while (i < exponent) 
+    value = value * base
+    i = i+1
+  end do 
+
+  print*,base,"to the power of ", exponent," = ",value 	
+ 
+end program mypow
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-13}
+\begin{block}{Statement...}
+ Write a program to calculate if a year is a leap year.
+\end{block}
+\begin{lstlisting}
+if year is divisible by 400 then
+   is_leap_year
+else if year is divisible by 100 then
+   not_leap_year
+else if year is divisible by 4 then
+   is_leap_year
+else
+   not_leap_year
+\end{lstlisting}
+
+Source: \url{http://en.wikipedia.org/wiki/Leap\_year}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-13: examples/exercise-13.f90}
+\scriptsize
+\begin{lstlisting}
+program leapyear
+ integer :: year
+ logical :: isLeapYear
+
+ print*,"Intro the year..."
+ read *, year
+
+ isLeapYear = mod (year, 4) == 0
+ ! divisible by 4 and not 100
+ isLeapYear = isLeapYear .AND. .NOT.(mod(year, 100) == 0.0)
+ ! divisible by 4 and not 100 unless divisible by 400
+ isLeapYear = isLeapYear .OR. mod(year, 400) == 0
+
+ print*,"The year ",year," is leap year ",isLeapYear
+ 
+end program leapyear
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-14}
+\begin{block}{Statement...}
+ Write a program to know if a number is a palindrome.
+\end{block}
+
+\begin{exampleblock}{Palindrome}
+  A number/string is called palindrome if number/string and its reverse is equal.
+  \begin{itemize}
+   \item 121 is a palindrome.
+   \item 123 is not a palindrome.
+  \end{itemize}
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-14: examples/exercise-14.f90}
+\scriptsize
+\begin{lstlisting}
+program isPalindrome
+ integer :: number
+ integer :: palindrome, reverse, remainder
+
+ print*,"Intro a number..."
+ read *, number
+
+ palindrome = number
+ reverse = 0
+ do while (palindrome .NE. 0)
+  remainder = mod(palindrome,10)
+  reverse = reverse * 10 + remainder
+  palindrome = palindrome / 10
+ end do
+
+ print*,"The number ",number," is palindrome ",  (number .EQ. reverse)
+end program isPalindrome
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-15}
+\begin{block}{Statement...}
+ Write a program to know if a number is an Armstrong Number.
+\end{block}
+
+\begin{exampleblock}{Armstrong number}
+ An Armstrong number of three digit is a number whose sum of cubes of its digit is equal to its number. 
+  \begin{itemize}
+   \item  153 = $1^3+5^3+3^3$ = $1+125+27$=153 is an Armstrong Number.
+   \item  See \url{http://en.wikipedia.org/wiki/Narcissistic\_number}
+  \end{itemize}
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-15: examples/exercise-15.f90}
+\scriptsize
+\begin{lstlisting}
+program isArmstrong
+ integer :: number
+ integer :: result, source, remainder
+
+ print*,"Intro a number..."
+ read *, number
+
+ source = number
+ result = 0
+ do while (source .NE. 0)
+  remainder = mod(source,10)
+  result = result + remainder**3
+  source = source / 10
+ end do
+
+ print*,"The number ",number," is an Armstrong number ",  
+  (number .EQ. result)
+end program isArmstrong
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-16}
+\begin{block}{Statement...}
+ Write a program to show a Wedge of Stars (given the number of stars).
+\end{block}
+
+
+\begin{lstlisting}
+ *******
+ ******
+ *****
+ ****
+ ***
+ **
+ *
+\end{lstlisting}
+
+\begin{block}{Hint...}
+ To write something without a new line use this sentence: write(*,``(A)'',advance=``no'') ``*''
+\end{block}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-16: examples/exercise-16.f90}
+\scriptsize
+\begin{lstlisting}
+program wedgeOfStars
+ integer :: numberofStars
+ integer :: i,j
+
+ print*,"Intro a number of stars..."
+ read *, number
+
+ i = number
+ do while (i>0)
+	j = 0
+	do while (j<i)
+	  write(*,"(A)",advance="no") "*"
+	 j = j + 1
+	end do
+   print*,""
+   i = i - 1
+ end do
+end program wedgeOfStars
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-17}
+\begin{block}{Statement...}
+ Write a program to show a Holiday Tree.
+\end{block}
+
+\begin{lstlisting}
+       *
+      ***
+     *****
+    *******
+   *********
+  ***********
+ *************
+***************
+      ***
+      ***
+      ***
+\end{lstlisting}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-17: examples/exercise-17.f90}
+\tiny
+
+\begin{columns}[c] % the "c" option specifies center vertical alignment
+\column{.5\textwidth} % column designated by a command
+
+\begin{lstlisting}
+program holidayTree
+ integer :: baseStars = 15
+ integer :: halfBlankSpaces = 0
+ integer :: i, j, k
+
+ i = 1
+ do while (i<baseStars)
+        halfBlankSpaces = (baseStars-i)/2
+	j = 0  
+	do while (j<halfBlankSpaces)
+	  write(*,"(A)",advance="no") " "
+	  j = j + 1
+	end do
+
+	k = 0  
+	do while (k<i)
+	  write(*,"(A)",advance="no") "*"
+	  k = k + 1
+	end do
+
+	j = 0  
+	do while (j<halfBlankSpaces)
+	  write(*,"(A)",advance="no") " "
+	  j = j + 1
+	end do
+   print*,""
+   i = i + 2
+ end do
+ ...
+\end{lstlisting}
+
+\column{.5\textwidth}
+
+
+
+\begin{lstlisting}
+...
+halfBlankSpaces = (baseStars/2)-1
+i = 0
+do while (i<3)
+	j = 0  
+	do while (j<halfBlankSpaces)
+	  write(*,"(A)",advance="no") " "
+	  j = j + 1
+	end do
+
+	k = 0  
+	do while (k<3)
+	  write(*,"(A)",advance="no") "*"
+	  k = k + 1
+	end do
+
+	j = 0  
+	do while (j<halfBlankSpaces)
+	  write(*,"(A)",advance="no") " "
+	  j = j + 1
+	end do
+   print*,""
+   i = i + 1
+ end do
+
+end program holidayTree
+\end{lstlisting}
+
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-18}
+\begin{block}{Statement...}
+Write a program to know if a number is a prime number.
+\end{block}
+
+\begin{exampleblock}{Definition from Wikipedia}
+ A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. 
+\end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-18: examples/exercise-18.f90}
+\scriptsize
+\begin{lstlisting}
+program isPrimeNumber
+  integer :: number
+  integer :: i
+  logical :: isPrime = .TRUE.
+  
+  print*,"Intro a number..."
+  read *, number
+  
+  if (number .NE. 1) then 
+	  i = 2
+	  do while ( (isPrime) .AND. (i .NE. number)) 
+		if (mod(number,i) == 0.0) then
+			isPrime = .FALSE.
+		endif
+	    i = i+1
+	  end do 
+  endif
+  print*,"The number ", number," is prime ",isPrime
+ 
+end program isPrimeNumber
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-19}
+\begin{block}{Statement...}
+Write a program to show the first 100 primer numbers.
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-19: examples/exercise-19.f90}
+\tiny
+\begin{lstlisting}
+program oneHundredPrimeNumbers
+  integer :: number
+  integer :: i
+  integer :: matches
+  logical :: isPrime = .TRUE.
+  
+  matches = 0
+  number = 1  
+  do while (matches < 100)
+     isPrime = .TRUE.
+     if (number .NE. 1) then 
+	  i = 2	 
+	  do while ( (isPrime) .AND. (i .NE. number)) 
+		if (mod(number,i) == 0.0) then
+			isPrime = .FALSE.
+		endif
+	    i = i+1
+	  end do 
+      endif
+     if (isPrime) then
+	print *,number
+        matches = matches + 1
+     end if
+     number = number + 1
+ end do
+ 
+end program oneHundredPrimeNumbers
+\end{lstlisting}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-20}
+\begin{block}{Statement...}
+Write a program to add up $n$ numbers (requesting the parameters to the user).
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-20: examples/exercise-20.f90}
+\scriptsize
+\begin{lstlisting}
+program addUp
+ integer :: toRead = 0
+ integer :: i = 0
+ integer :: value, sum
+ print *, "Enter the number of values to read..."
+ read *, toRead 
+ if (toRead > 0) then
+   value = 0
+   sum = 0
+   i = 0
+   do while (i<toRead)
+	 print *, "Enter a value..."
+	 read *, value 
+ 	 sum = sum + value
+         i = i + 1
+   end do
+ end if
+ print*, "The sum is ",sum
+end program addUp
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-21}
+\begin{block}{Statement...}
+Write a program to calculate the factorial of a number.
+\end{block}
+
+
+\begin{equation}
+n!=\prod_{k=1}^n k \!  
+\end{equation}
+
+
+\begin{equation}
+n! = \begin{cases}
+1 & \text{if } n = 0, \\
+(n-1)!\times n & \text{if } n > 0.
+\end{cases}
+\end{equation}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-21: examples/exercise-21.f90}
+\scriptsize
+\begin{lstlisting}
+program factorial
+  real fvalue
+  integer n
+  print *, "Which is the number you want to calculate 
+    the factorial?"
+  read *, n
+  ! fact(n) = n * fact (n-1)
+  if (n < 0) then 
+    print *, "You cannot calculate the factorial of 
+      negative numbers"
+  else if (n>=0 .AND. n<=1) then
+    fvalue = 1
+  else
+    fvalue = 1
+    do i = 2, n
+      fvalue = i * fvalue
+    end do
+  end if
+  print *, "The result is ", fvalue
+end program factorial
+\end{lstlisting}
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-22}
+\begin{block}{Statement...}
+Write a program to generate a Fibonacci sequence of $n$ numbers.
+\end{block}
 % 
-% %2
-% \begin{frame}[fragile]
-% \frametitle{Swap variables...}
+\begin{exampleblock}{Definition from Wikipedia}
+The Fibonacci sequence is the numbers in the following integer sequence:
+0,1,1,2,3,5,8,13,21...
+\end{exampleblock}
+
+
+\begin{equation}
+F_n = \begin{cases}
+0 & \text{if } n = 0, \\
+1 & \text{if } n = 1, \\
+F_{n-1} + F_{n-2} & n > 1.\\
+\end{cases}
+\end{equation}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-22: examples/exercise-22.f90}
+\scriptsize
+\begin{lstlisting}
+program Fibonacci
+  IMPLICIT NONE
+  integer:: F1 = 1, F2 = 0, i = 0, n = 0
+  print *, "Enter a number..."
+  read (*,*) n
+  do 
+      if (i >= n) exit
+	F1 = F2 + F1
+	print *, F1
+	i = i + 1
+      if (i >= n) exit
+	F2 = F2 + F1
+	print *, F2
+	i = i + 1
+    end do
+end program Fibonacci
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise-23}
+\begin{block}{Statement...}
+Write a program to generate the multiplication table (from 1 to 10).
+\end{block}
 % 
-% \scriptsize
-% \begin{lstlisting}
-% program swap
-%   real x, y, z
-%   print *, "What are the two numbers you want to swap?"
-%   read *, x, y
-%   print *, "The values (before swapping) are ", x, y
-%   z = y
-%   y = x
-%   x = z
-%   print *, "The values (after swapping) are ", x, y
-% end
-% \end{lstlisting}
-% \end{frame}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise-23: examples/exercise-23.f90}
+\scriptsize
+\begin{lstlisting}
+program multiplicationTable
+ integer :: i, j
+ i = 1
+ do while (i <= 10)
+  j = 1
+  do while (j<=10)
+    write(*,"(I4)",advance="no") i*j
+    j = j + 1
+  end do
+  print*,""
+  i = i + 1
+ end do
+end
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise-24}
+\begin{block}{Statement...}
+Write a program to implement a binomial coefficient.
+\end{block}
 % 
-% %3
-% \begin{frame}[fragile]
-% \frametitle{Average (I)...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program average
-%   real x, y, z
-%   print *, "What are the two numbers you want to average?"
-%   read *, x, y
-%   z = (x + y)/2
-%   print *, "The average is ", z
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %4
-% \begin{frame}[fragile]
-% \frametitle{Average (II)...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program average
-%   real x, y, z
-%   print *, "What are the two numbers you want to average?"
-%   read *, x, y
-%   call avg(x,y,z)
-%   print *, "The average is", z
-% end
-%  
-% subroutine avg(a,b,c)
-%   real a, b, c
-%   c = (a + b)/2.
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %5
-% \begin{frame}[fragile]
-% \frametitle{Highest number...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program highest
-%   real x, y, z
-%   print *, "What are the two numbers you want to compare?"
-%   read *, x, y
-%   if (x >y ) then 
-%     print *, "The highest value is ", x
-%   else 
-%     print *, "The highest value is ", y
-%   end if
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %6
-% \begin{frame}[fragile]
-% \frametitle{Highest number (among 3)...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program highest3
-%   real x, y, z
-%   print *, "What are the three numbers you want to compare?"
-%   read *, x, y, z
-%   if (x>=y .AND. x>=z ) then 
-%     print *, "The highest value is ", x
-%   else if (y>=x .AND. y>=z) then
-%     print *, "The highest value is ", y
-%   else 
-%     print *, "The highest value is ", z
-%   end if
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% %7
-% \begin{frame}[fragile]
-% \frametitle{Show the first 20 numbers (ascending)...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program asc20
-%   integer :: a
-%   do a = 1, 20
-%    print*,a
-%   end do
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %8
-% \begin{frame}[fragile]
-% \frametitle{Show the first 20 numbers (descending)...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program desc20
-%   integer :: a
-%   a = 20
-%   do while (a > 0) 
-%    print*,a
-%    a = a - 1
-%   end do
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %9
-% \begin{frame}[fragile]
-% \frametitle{Sum of the first 20 numbers...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program sum20
-%   integer :: sum,a
-%   sum = 0
-%   do a = 1, 20
-%    sum = sum + a    
-%   end do
-%   print*,sum
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %10
-% \begin{frame}[fragile]
-% \frametitle{Show even numbers between 1 and 20...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program even20
-%   integer :: a
-%   do a = 1, 20
-%     if ( mod(a,2) == 0.0 ) then 
-%     	print *, a
-%     end if	
-%   end do
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% %11
-% \begin{frame}[fragile]
-% \frametitle{Count odd numbers between 1 and 20...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program countodd
-%   integer :: a, count
-%   count = 0
-%   do a = 1, 20
-%     if ( mod(a,2) /= 0.0 ) then 
-%     	count = count + 1 
-%     end if	
-%   end do
-%  print *, count 
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %12
-% \begin{frame}[fragile]
-% \frametitle{Square of the first 20 numbers...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program square
-%   integer :: a, b
-%   do a = 1, 20
-%     b = a**2
-%     print*,a,"to the power of two = ",b
-%   end do
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% %13
-% \begin{frame}[fragile]
-% \frametitle{Cube of the first 8 numbers...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program cube
-%   integer :: a, b
-%   do a = 1, 8
-%     b = a*a*a
-%     print*,a,"to the power of three = ",b
-%   end do
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% %14
-% \begin{frame}[fragile]
-% \frametitle{Power of a number $a^b$...}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program aexponentb
-%   integer :: a, b
-%   real :: value
-%   read *, a,b
-%   value = 1
-%   do i = 1, b
-%     value = value * a
-%   end do
-%   print*,a,"to the power of",b,"= ",value
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% %15
-% \begin{frame}[fragile]
-% \frametitle{Year}
-% \scriptsize
-% \begin{lstlisting}
-% program bisiesto
-%   
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %16
-% \begin{frame}[fragile]
-% \frametitle{Palindrome Numbers}
-% \scriptsize
-% \begin{block}{What is a palindrome?}
-%   A number/string is called palindrome if number/string and its reverse is equal.
-% \end{block}
-% 
-% \begin{lstlisting}
-% program isPalindrome
-%   integer:: palindrome, num, reverse, remainder
-%   read *, num
-%   palindrome = num
-%   reverse = 0
-%   do while (palindrome /= 0)
-%     remainder = mod(palindrome,10)
-%     reverse = reverse * 10 + remainder
-%     palindrome = palindrome / 10	
-%   end do
-%   if (num == reverse ) then 
-%       print *, "The number ", num, " is a palindrome."
-%   else 
-%      print *, "The number ", num, " is not a palindrome."
-%   end if
-% end 
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %17
-% \begin{frame}[fragile]
-% \frametitle{Holiday Tree}
-% \scriptsize
-% \begin{lstlisting}
-% program holidaytree
-%   
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %18
-% \begin{frame}[fragile]
-% \frametitle{Stars}
-% \scriptsize
-% \begin{lstlisting}
-% program stars
-%   
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% %19
-% \begin{frame}[fragile]
-% \frametitle{Factorial}
-% \scriptsize
-% \begin{lstlisting}
-% program fact
-%   real fvalue
-%   integer n
-%   print *, "Enter a number..."
-%   read *, n
-%   ! fact(n) = n * fact (n-1)
-%   if (n < 0) then 
-%     print *, "The number is negative..."
-%   else if (n>=0 .AND. n<=1) then
-%     fvalue = 1
-%   else
-%     fvalue = 1
-%     do i = 2, n
-%       fvalue = i * fvalue
-%     end do
-%   end if
-%   print *, "The result is ", fvalue
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %20
-% \begin{frame}[fragile]
-% \frametitle{Factorial (I)}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program fact1
-%  real, dimension(20) :: fact
-%  integer :: n, nmax = 20
-%  fact(1) = 1.0
-%  do n = 2, nmax
-%   fact(n) = fact(n-1) * n
-%  end do
-%  print*,fact
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %21
-% 
-% \begin{frame}[fragile]
-% \frametitle{Factorial (III)}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program  Fact 
-%  integer N 
-%  real fact
-%  read (*,*) n 
-%  fact = ffact (N) 
-%  print *, FACT 
-% end
-% 
-% function FFACT (N) 
-%   integer I, N 
-%   real factorial,  prod
-%   prod = 1.0 
-%   do i = 2, N 
-%      prod = prod * i 
-%   end do 
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
-% 
-% %22
-% \begin{frame}[fragile]
-% \frametitle{Print the Fibonacci sequence of a number... $fib_n=fib_{n-1}+fib_{n-2}$ // $fib_0 = 0$ and $fib_1 = 1$}
-% 
-% \scriptsize
-% \begin{lstlisting}
-% program Fibonacci
-%   IMPLICIT NONE
-%   integer:: F1 = 1, F2 = 0, i = 0, n = 0
-%   print *, "Enter a number..."
-%   read (*,*) n
-%   do 
-%     if (i >= n) exit
-%     F1 = F2 + F1
-%     print *, F1
-%     i = i + 1
-%     if (i >= n) exit
-%       F2 = F2 + F1
-%       print *, F2
-%       i = i + 1
-%   end do
-% end
-% \end{lstlisting}
-% \end{frame}
-% 
+
+\begin{equation}
+C_{k} = \binom{n}{k} = \frac{n!}{k!(n-k)!} 
+\end{equation}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{What's next?}
+\begin{exampleblock}{Remarks...}
+\begin{itemize}
+ \item Try to think and implement the examples by yourself.
+ \item If you find some typo or error please report me.
+ \item The same problem can have several solutions.
+ \item Follow the methodology to address the problem.
+ \item ...If you are hesitating in some of the examples...Please ASK!
+\end{itemize}
+
+\end{exampleblock}
+
+
+
+\end{frame}
+
 
 \frame{
 \titlepage
