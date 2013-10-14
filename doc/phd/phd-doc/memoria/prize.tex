@@ -211,7 +211,7 @@ o el documento técnico de IBM ``Toward a Basic Profile for LinkedData''~\cite{b
 \textit{W3C Member Submission} son los más destacados en este ámbito.
 
 \chapter{La plataforma MOLDEAS}
-En la sección anterior se ha realizado una introducción y un repaso a las principales iniciativas 
+En el capítulo anterior se ha realizado una introducción y un repaso a las principales iniciativas 
 de Web Semántica, \opendata, \linkeddata y \lod que atañen al dominio de la contratación pública, en los cuales se ha podido comprobar
 la diversidad de esfuerzos, enfoques y estrategias que se están desarrollando desde distintos ámbitos 
 con el objetivo de hacer realidad la \wod. Para ello en el contexto de este trabajo se ha definido 
@@ -235,22 +235,26 @@ genera un \dataset RDF $\mathcal{D}$.
     $SPM : \mathcal{G} \times \mathcal{M} \longrightarrow \mathcal{D}$
 \end{center}
 
-Las características que tiene esta definición de un $SPM$ son las siguientes: 1) para todo valor $g_{i}$ del conjunto de 
-entrada $\mathcal{G}$, existe al menos un \textit{mapeo} $m_{i}$ en el conjunto $\mathcal{M}$ y  2) existen valores $g_{i}$ del conjunto de entrada $\mathcal{G}$, para los que existen varios \textit{mapeos} $m_{i}$ 
-formando un conjunto $\mathcal{M}_{i}$ subconjunto de $\mathcal{M}$. Posteriormente dependiendo del método de 
-producción seleccionado ($SPM_1$-Transformación de datos a RDF, $SPM_2$-\textit{Mapeo} con Base de Datos o $SPM_3$-Consulta y transformación a RDF) 
+Las características que tiene esta definición de un $SPM$ son las siguientes:
+\begin{enumerate}
+ \item Para todo valor $g_{i}$ del conjunto de entrada $\mathcal{G}$, existe al menos un \textit{mapeo} $m_{i}$ en el conjunto $\mathcal{M}$.
+ \item Existen valores $g_{i}$ del conjunto de entrada $\mathcal{G}$, para los que existen varios \textit{mapeos} $m_{i}$ 
+formando un conjunto $\mathcal{M}_{i}$ subconjunto de $\mathcal{M}$.
+\end{enumerate}
+
+Posteriormente dependiendo del método de producción seleccionado ($SPM_1$-Transformación de datos a RDF, $SPM_2$-\textit{Mapeo} con Base de Datos o $SPM_3$-Consulta y transformación a RDF) 
 se especificarán las cuestiones particulares dentro de este modelo formal. Igualmente para cada uno de los procesos se han definido 
 e identificado sus posibles realizaciones, estableciendo tablas de decisión para cada uno de ellos.
 
 \begin{figure}[htb]
 \centering
- %\includegraphics[width=8cm]{img/lld}
+ \includegraphics[width=16cm]{img/lld}
 \caption{Procesos del Ciclo de Vida de Datos Enlazados Abiertos.}\label{lld}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
- %\includegraphics[width=8cm]{img/lld}
+ \includegraphics[width=16cm]{img/ldl}
 \caption{Flujo de tareas en el Ciclo de Vida de Datos Enlazados Abiertos.}\label{tareas}
 \end{figure}
 
@@ -275,14 +279,14 @@ pre-existente y 7) diseñar un sistema extensible y escalable para su futura amp
 
 \begin{figure}[htb]
 \centering
-% \includegraphics[width=8cm]{img/functional-overview}
+ \includegraphics[width=14cm]{img/functional-overview}
 \caption{Visión funcional de la plataforma MOLDEAS.}\label{moldeas}
 \end{figure}
 
 
 \begin{figure}[h]
 \centering
-\begin{tikzpicture}[scale=0.5, transform shape]
+\begin{tikzpicture}[scale=0.8, transform shape]
   \path[mindmap,concept color=gray,text=white]
     node[concept] {MOLDEAS}
     [clockwise from=0]
@@ -354,13 +358,13 @@ por usuarios finales como por máquinas, facilitando y potenciando su reutilizac
       \end{tabular}
  \end{table}   
  
-Finalmente, la plataforma MOLDEAS mediante sus algoritmos de explotación de conocimiento es capaz de generar la consulta SPARQL 
+Finalmente, la plataforma MOLDEAS~\footnote{\url{http://purl.org/weso/moldeas-web/}} mediante sus algoritmos de explotación de conocimiento es capaz de generar la consulta SPARQL 
 motivadora, ver Figura~\ref{figure:expanded}, de esta trabajo (en la parte concerniente a explotación de datos) ajustando los parámetros de la consulta (por ejemplo 
 la cuantía del contrato) al perfil definido por el usuario mediante el interfaz gráfico, ver Figura~\ref{fig:moldeas-web} .
 
 \begin{figure}[!htb]
 \centering
-%	\includegraphics[width=8cm]{./img/moldeas-web}
+	\includegraphics[width=14cm]{./img/interfaz}
 \caption{Interfaz de Usuario de la plataforma MOLDEAS.}
 \label{fig:moldeas-web}
 \end{figure}
@@ -507,8 +511,8 @@ aumentando así la capacidad expresiva para la realización de consultas o extra
 \begin{table}[!t]
   \centering
   \caption{Porcentaje de Ganancia Real y Máxima al enlazar las Clasificaciones de Productos con el CPV 2008.}\label{ganancia-terminos}   
-%{|p{2.6cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|} 
-    \begin{tabular}{|p{1cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.75cm}|} 
+%
+    \begin{tabular}{|p{2.6cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|} 
      \hline
     $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real con PO  &  $\%$ máximo   \\\hline
     CPV 2003 	& $8323$  	& $462$		& $8312$ 	& $4.46$ 	& $80.25$	& $80.36$  \\ \hline
@@ -533,7 +537,7 @@ aumentando así la capacidad expresiva para la realización de consultas o extra
 
 \begin{figure}[!htb]
 \centering
-%	\includegraphics[width=8cm]{./img/evo-n-terminos}
+  \includegraphics[width=12cm]{./img/evo-n-terminos}
 \caption{Evolución Número de Términos.}
 \label{fig:eval-n-terminos}
 \end{figure}
@@ -563,7 +567,7 @@ asegurar ventajas y beneficios en el acceso a la información y manejo de los da
 \begin{table}[!t]
   \centering
   \caption{Tabla agregada de Validación Conjunta con Valores Totales.}\label{tabla:agregado-sumatorio}
-      \begin{tabular}{|p{2cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}||p{0.6cm}||p{1cm}|} 
+      \begin{tabular}{|p{4cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}||p{2cm}||p{2cm}|} 
            \hline
        \textbf{Versión} & \si&\no&\na & \textbf{Total} & \textbf{\% \si entre aplicables} \\\hline
           \textbf{Referencia} & 173 & 0 & 23 & 196& 100 \\ \hline \hline
@@ -613,7 +617,7 @@ cantidad de datos a procesar, etc., que pueden ser optimizados a través de las 
 \begin{table}[!t]
   \centering
 \caption{Métodos de generación de códigos CPV.}\label{table:metodos-ir}   
-\begin{tabular}[!t]{|l|p{4cm}|p{2cm}|} 
+\begin{tabular}[!t]{|l|p{6cm}|p{4cm}|} 
 \hline  
 \textbf{Método} &  \textbf{Descripción} &  \textbf{Tecnología} \\\hline
 $M^1$ & Indexa códigos CPV y búsqueda sintáctica. & Apache Lucene y Solr \\ \hline
@@ -628,7 +632,7 @@ $M^4$ & Extrae códigos CPV candidatos ponderados según el histórico del $1$ M
 \begin{table}[!t]
   \centering
   \caption{Consultas suministradas en el proyecto ``10ders Information Services''.}\label{table:queries-ir}    
-\begin{tabular}[c]{|l|p{5.5cm}|p{1.5cm}|} 
+\begin{tabular}[c]{|l|p{10cm}|p{3cm}|} 
 \hline
 \textbf{$Q_{i}$} &  \textbf{Consulta de Usuario-$Q_{str}$} &  \textbf{Nº de Códigos CPV relevantes-$\#Q^{i}_{cpv}$} \\\hline
 $Q_1$ & ``Comprehensive overview over all environmental technologies renewable energy products'' & $463$ \\ \hline
@@ -674,11 +678,224 @@ $Q_{11}$  &$0,23$ & $0,23$ & $1,00$ & $1,00$ & 		$0,23$ & $0,23$ & $1,00$ & $1,0
 
  \end{sidewaystable} 
   
-Finalmente se ha realizado un \textbf{tercer experimento} empírico~\cite{Alvarez:2011:QEM:2075561.2075618} para probar la generación de consultas en SPARQL y el rendimiento 
-del sistema MOLDEAS cuyos resultados se han omitido por considerarse anexos a la tesis pero que han servido para optimizar las consultas tanto 
-en su generación (reducción de claúsulas) como en modelo de ejecución (distribuido).
+\section{Experimento III}
+El objetivo de un experimento es averiguar si unos determinados factores influyen en una determinada variable de interés para así poder cuantificar dicha influencia. En el caso 
+de esta sección, la variable a estudiar es el rendimiento de las consultas \gls{SPARQL} contra el \textit{endpoint} utilizado, si bien 
+no es el experimento principal de este documento ya que conllevaría la comparación con distintos proveedores de 
+repositorios \gls{RDF}, si que ha surgido la necesidad de abordar esta cuestión por la latencia en las consultas. La metodología utilizada 
+para el diseño del experimento es la repetición, en condiciones indistinguibles, con el objetivo de minimizar la variabilidad 
+del mismo y que el error experimental sea lo más pequeño posible.
 
-\chapter{Principales Aportaciones, Conclusiones y Trabajo Futuro}
+\begin{table}[!ht]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{3cm}|p{2.5cm}|p{3.5cm}|p{3.5cm}|}
+\hline
+  \textbf{ID Consulta} & \textbf{Código CPV inicial} & \textbf{Códigos CPV expandidos} & \textbf{Códigos NUTS}  \\ \hline
+  $Q_1$ & 15331137 & 48611000, 48611000, 50531510, 15871210 & UK, PL, RO \\ \hline
+  $Q_2$ & 50531510 & 34144100, 44212211, 44212212, 50531500 & ES, FR, DE \\ \hline
+  $Q_3$ & 34144100 & 44212211, 31140000, 31140000, 34144100 & PL, CZ, RO \\ \hline
+  $Q_4$ & 64122000 & 64216120, 79571000, 15871210, 64121000 & BE, SE, DE \\ \hline
+  $Q_5$ & 79320000 & 75241000, 75100000, 75000000, 60112000 & UK, FR, AT \\ \hline
+  $Q_6$ & 44100000 & 44110000, 44170000, 44190000, UB03 & NL, SE, DE \\ \hline
+  $Q_7$ & 31000000 & 33141000, 39000000, 44000000, 31600000 & DE, IT, HU \\ \hline
+  $Q_8$ & 50000000 & 50512000, 50333100, 50530000, 50532300 & UK, IR, FR \\ \hline
+  $Q_9$ (random)   & 15841400 & 15841300, 15511700, 44921210, 03131400 & ES, FR, DK \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Descripción de los códigos en las consultas en SPARQL del experimento.}
+  \label{tabla:queries}
+  \end{center}
+\end{table} 
+
+
+En referencia a los aspectos cuantitativos del experimento, el tamaño de la muestra consta de nueve consultas ($Q_{1..9}$), el número de réplicas 
+para evitar el ruido y la aleatoriedad previamente comentada es de $3$ y la situación de partida para cada una de ellas se produce 
+bajo las mismas condiciones: reinicio de la máquina y consultas de entrenamiento (1 simple y 1 expandida) antes de la ejecución de una réplica para la obtención 
+de las observaciones de tiempo de ejecución. Referente al tamaño de la muestra, se utilizará el \textit{endpoint} descrito anteriormente y con la carga 
+de tripletas generada a partir de la aplicación de los métodos semánticos a los anuncios de licitación y siguiendo la distribución por 
+grafos nombrados especificada en el Sección~\ref{sect:pscs-data-model}.
+
+Por otra parte, las características, $F_i$, a evaluar en combinación se presentan en la siguiente Tabla~\ref{table:sparql-features}, en resumen se parte de una 
+consulta simple (1 código CPV y 1 código NUTS) para obtener un tiempo de referencia, a partir de esta primera referencia se aplican 
+las distintas optimizaciones, generando los distintos tratamientos ($T_i$), ver Tabla~\ref{tabla:tests}, para el establecimiento de la mejor combinación posible.
+\begin{enumerate}
+  \item Especificación de las medidas de trabajo en cuanto a la respuesta. El valor que se toma es el tiempo de ejecución 
+en segundos de la consulta en SPARQL. 
+ \item Ejecución de un experimento piloto. Evidentemente esta tarea se ha realizado con una pequeña muestra de consultas, sólo un año de anuncios 
+de licitación pero ejecutando todos los tratamientos con el fin de validar el enfoque propuesto, obtener los resultados de toma de tiempos y preparar 
+el procesamiento del registro de tiempos para obtener las medidas finales.
+ \item Especificación de un modelo. En este caso, no se utilizará un modelo matemático para aproximar los valores, 
+como ya se ha explicado anteriormente, debido a que el objetivo es optimizar la realización de consultas, en cuanto a 
+tiempo de ejecución, no a la predicción futura.
+ \item Esquematización de los pasos a seguir.
+ \item Determinación del tamaño muestral. Como ya se ha comentado anteriormente, en el apartado de factores cuantitativos, se utilizarán los datos generados durante el proceso de promoción 
+de datos a \linkeddata de los anuncios de licitación y de las clasificaciones de productos.
+ \item Revisión de las decisiones anteriores.
+\end{enumerate}
+
+\newpage
+\begin{longtable}[c]{|l|p{10cm}|} 
+\hline
+\textbf{ID} &  \textbf{Descripción}  \\\hline
+\endhead
+$F_1$ & Consulta simple: $1$ código CPV y $1$ código NUTS \\ \hline
+$F_2$ & $F_1$ con uso de la claúsula \texttt{LIMIT} de SPARQL \\ \hline
+$F_3$ & Consulta expandida: $n$ códigos CPV y $n$ código NUTS  \\ \hline
+$F_4$ & Reescritura de las consultas SPARQL: \texttt{FILTER}, etc.  \\ \hline
+$F_5$ & Uso de grafos nombrados en la consulta SPARQL: claúsula \texttt{FROM} \\ \hline
+$F_6$ & Separación de las consultas en SPARQL en simples ($F_1$) \\ \hline
+$F_7$ & Consultas simples distribuidas con $5$ hilos (1 por código CPV) \\ \hline
+\hline
+\caption{Características de las consultas en SPARQL.}\label{table:sparql-features}\\    
+\end{longtable}
+
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{3.5cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{0.8cm}|p{2cm}|}
+\hline
+  \textbf{Test}/ \textbf{Característica}& \textbf{$F_1$} & \textbf{$F_2$} & \textbf{$F_3$} & \textbf{$F_4$} & \textbf{$F_5$} & \textbf{$F_6$} &  \textbf{$F_7$} & \textbf{Nº consultas SPARQL} \\ \hline
+   $T_1$ & $\star$ & & & & & & &$1$\\ \hline 
+   $T_2$ & $\star$ & & $\star$ & & & & &$1$\\ \hline 
+   $T_3$ &  & $\star$ &  & & & & &$1$\\ \hline 
+   $T_4$ &  & $\star$ & $\star$ & & & & &$1$\\ \hline 
+   $T_5$ &  & $\star$ & $\star$ & $\star$ & & & &$1$\\ \hline 
+   $T^{1}_6$ ($n$ códigos CPV y $m$ códigos NUTS)&  & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & &$4$\\ \hline 
+   $T^{2}_6$ ($\equiv$)&  & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &$4$\\ \hline 
+   $T^{1}_7$ ($1$ código CPV y $m$ códigos NUTS) &  & $\star$ & $\star$ & $\star$ &  & $\star$ &  &$5$ \\ \hline 
+   $T^{2}_7$ ($\equiv$) & & $\star$ & $\star$ & $\star$ &  & $\star$ & $\star$ &$5$\\ \hline 
+   $T^{1}_8$ ($\equiv$)& & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &  &$20$\\ \hline 
+   $T^{2}_8$ ($\equiv$) & & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &  $\star$ &$20$\\ \hline 
+   $T^{1}_9$ ($1$ código CPV y $1$ código NUTS ) & & $\star$ & $\star$ & $\star$ &  & $\star$ & &$15$  \\ \hline 
+   $T^{2}_9$ ($\equiv$)& & $\star$ & $\star$ & $\star$ & & $\star$ &  $\star$ &$15$\\ \hline 
+   $T^{1}_{10}$ ($\equiv$) & & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & &$60$  \\ \hline 
+   $T^{2}_{10}$ ($\equiv$) & & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ &$60$ \\ \hline 
+  \hline
+  \end{tabular}
+  \caption{Descripción de cada uno de los tratamientos, características de optimización.}
+  \label{tabla:tests}
+  \end{center}
+\end{table} 
+
+La aplicación del plan previsto en la anterior sección arroja un conjunto de valores para cada uno de los tratamientos ($T_k$) y réplicas de los tiempos 
+de ejecución de las consultas, de acuerdo a las distintas características ($F_i$). En la Tabla~\ref{tabla:tests-agregado} se reflejan 
+las medias de tiempo y ganancia agregadas de cada uno de los tratamientos realizados. Por otra parte, se presentan igualmente 
+las medidas pormenorizadas de las observaciones realizadas y agregadas de las 3 réplicas ejecutadas, ver Tablas~\ref{tabla:results-1} y~\ref{tabla:results-2}. 
+El cálculo de la ganancia se realiza mediante la fórmula: $t_{old}/t_{new}-1*100$, tomando como referencia para $T_2$, el tiempo de $T_1$ y para 
+los tratamientos $T_{4..10}$, el tiempo de $T_3$. Finalmente, la ejecución de todos los tratamientos con las distintas observaciones y 
+réplicas ha implicado la realización de $5751$ consultas en SPARQL, más las de entrenamiento para cada una de las réplicas. 
+
+\begin{table}[!htb]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+  \textbf{Test}& \textbf{$\bar{X}$ Tiempo (seg.)} & \textbf{$\bar{X}$ Ganancia (\%)} \\ \hline
+   $T_1$ & $3.21$  & N/A\\ \hline 
+   $T_2$ & $3.25$  & $1.21$   \\ \hline 
+   $T_3$ & $20.548$ & N/A   \\ \hline 
+   $T_4$ & $20.552$ & $-0.02$ \\ \hline 
+   $T_5$ & $20.545$ & $-0.01$ \\ \hline 
+   $T^{1}_6$ & $20.52$  & $0.14$\\ \hline 
+   $T^{2}_6$ & $11.80$ & $74.37$\\ \hline 
+   $T^{1}_7$ & $15.81$ & $30.58$ \\ \hline 
+   \textbf{$T^{2}_7$} & \textbf{$10.51$} & \textbf{$96.54$} \\ \hline
+   $T^{1}_8$ & $32.33$ & $-36.11$ \\ \hline 
+   $T^{2}_8$ & $18.45$ & $11.21$ \\ \hline 
+   $T^{1}_9$ & $22.53$ & $-8.77$ \\ \hline 
+   $T^{2}_9$ & $12.61$ & $63.36$ \\ \hline 
+   \textbf{$T^{1}_{10}$} & \textbf{$71.01$} & $-70.97$ \\ \hline 
+   $T^{2}_{10}$ & $35.08$ & $-40.42$ \\ \hline 
+  \hline
+  \end{tabular}
+  \caption{Tiempo de ejecución (seg.) y ganancia (\%).}
+  \label{tabla:tests-agregado}
+  \end{center}
+\end{table} 
+
+
+
+\begin{table}[!h]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\textbf{ID Consulta/ Test} & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $T_5$ & $T^{1}_{6}$ & $T^{2}_{6}$ \\ \hline
+  $Q_1$ & $3.21$ (NA) & $3.13$ ($2.46$) & $19.35$ (NA) & $19.53$ ($-0.91$) & $19.45$ ($0.49$)  & $19.24$ ($0.58$) & $11.16$ ($73.49$)\\ \hline
+  $Q_2$ & $3.15$ (NA) & $3.14$ ($0.52$) & $23.56$ (NA)   & $23.68$ ($-0.52$)  & $23.68$ ($0.52$) & $24.06$ ($-2.10$) & $13.24$ ($77.95$) \\ \hline
+  $Q_3$ & $3.14$ (NA)  & $3.14$ ($0.11$) & $18.56$ (NA)  & $18.47$ ($0.46$)  & $18.44$ ($-0.60$)  & $18.69$ ($-0.71$)  & $10.08$ ($84.14$) \\ \hline
+  $Q_4$ & $3.16$ (NA)  & $3.13$ ($0.79$) & $18.52$ (NA)  & $18.32$ ($1.08$)  & $18.50$ ($-0.10$)  & $18.20$ ($1.77$)  & $10.19$ ($81.73$) \\ \hline
+  $Q_5$ & $3.29$ (NA)  & $3.17$ ($3.82$) & $22.69$ (NA)  & $22.85$ ($-0.72$)  & $22.69$ ($0.01$)  & $22.62$ ($0.31$)  & $14.61$ ($55.31$) \\ \hline
+  $Q_6$ & $3.21$ (NA)  & $3.17$ ($1.35$) & $18.55$ (NA)  & $18.45$ ($0.51$)  & $18.48$ ($-0.35$)  & $18.22$ ($1.78$)  & $10.00$ ($85.46$) \\ \hline
+  $Q_7$ & $3.39$ (NA)  & $3.39$ ($0.25$) & $19.01$ (NA)  & $19.19$ ($-0.93$)  & $19.12$ ($0.55$)  & $18.99$ ($0.09$)  & $11.08$ ($71.56$) \\ \hline
+  $Q_8$ & $3.94$ (NA)  & $3.98$ ($-0.95$)& $23.44$ (NA)  & $23.15$ ($1.26$)  & $23.24$ ($-0.82$)  & $23.50$ ($-0.29$)  & $14.72$ ($59.24$) \\ \hline
+  $Q_9$ & $3.17$ (NA)  & $3.09$ ($2.59$) & $22.23$ (NA)  & $22.32$ ($-0.40$)  & $22.27$ ($0.19$)  & $22.26$ ($-0.15$)  & $12.32$ ($80.45$) \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Tiempo de ejecución (seg.) y ganancia (\%). Parte 1.}
+  \label{tabla:results-1}
+  \end{center}
+\end{table} 
+
+
+\begin{sidewaystable}[ht!]
+\renewcommand{\arraystretch}{1.3}
+\begin{center}
+\begin{tabular}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\textbf{ID Consulta/ Test} & $T^{1}_{7}$ & $T^{2}_{7}$ & $T^{1}_{8}$ & $T^{2}_{8}$ & $T^{1}_{9}$ & $T^{2}_{9}$ & $T^{1}_{10}$ & $T^{2}_{10}$\\ \hline
+  $Q_1$ & $15.71$ ($23.18$)  & $10.62$ ($82.25$) & $33.27$ ($-41.84$) & $18.75$ ($3.24$) & $21.58$ ($-10.33$) & $12.38$ ($56.28$) & $69.13$ ($-72.00$) & $33.41$ ($-42.07$) \\ \hline
+  $Q_2$ & $15.64$ ($50.57$)  & $9.90$ ($137.84$) & $32.26$ ($-26.98$) & $17.96$ ($25.66$ ) & $26.27$ ($-10.34$) & $15.50$ ($51.97$) & $73.62$ ($-68.00$) & $37.50$ ($-29.49$) \\ \hline
+  $Q_3$ & $15.54$ ($19.44$)  & $9.66$ ($92.13$ ) & $32.04$ ($-42.09$) & $17.94$ ($3.29$) & $20.32$ ($-8.68$) & $10.44$ ($77.68$) & $68.95$ ($-73.09$ ) & $32.95$ ($-50.52$) \\ \hline
+  $Q_4$ & $15.87$ ($16.68$)  & $9.99$ ($85.45$) & $32.07$ ($-42.24$) & $18.43$ ($3.24$) & $20.48$ ($-9.54$) & $10.33$ ($79.23$) & $68.85$ ($-73.10$) & $34.27$ ($-43.79$) \\ \hline
+  $Q_5$ & $16.18$ ($40.22$)  & $11.92$ ($90.39$) & $32.46$ ($-30.10$) & $19.02$ ($23.12$) & $24.28$ ($-6.57$) & $14.40$ ($57.55$) & $74.02$ ($-69.35$ ) & $37.08$ ($-33.79$) \\ \hline
+  $Q_6$ & $15.76$ ($17.73$)  & $9.60$ ($93.21$) & $32.11$ ($-42.23$) & $18.24$ ($-2.48$) & $20.51$ ($-9.55$) & $10.77$ ($72.23$) & $72.28$ ($-74.34$ ) & $32.80$ ($-49.98$) \\ \hline
+  $Q_7$ & $15.93$ ($19.31$)  & $11.23$ ($69.35$ ) & $32.21$ ($-40.99$) & $18.51$ ($4.23$) & $21.12$ ($-10.01$) & $11.27$ ($68.67$) & $69.02$ ($-72.46$) & $33.55$ ($-42.04$) \\ \hline
+  $Q_8$ & $16.12$ ($45.43$)  & $12.11$ ($93.54$ ) & $32.55$ ($-28.01$) & $19.50$ ($26.61$) & $25.33$ ($-7.48$) & $16.16$ ($45.05$) & $72.72$ ($-67.77$) & $38.27$ ($-30.16$) \\ \hline
+  $Q_9$ & $15.58$ ($42.66$)  & $9.89$ ($124.71$) & $31.99$ ($-30.51$) & $17.74$ ($14.01$) & $23.76$ ($-6.46$) & $13.76$ ($61.57$) & $70.76$ ($-68.59$) & $36.40$ ($-41.92$) \\ \hline
+  \hline
+  \end{tabular}
+  \caption{Tiempo de ejecución (seg.) y ganancia (\%). Parte 2.}
+  \label{tabla:results-2}
+  \end{center}
+\end{sidewaystable} 
+
+
+Adicionalmente, los resultados agregados de este experimento, respecto a los tratamientos de referencia $T_1$ y $T_3$, 
+se visualizan en las siguientes gráficas, ver Figuras~\ref{fig:results-graph-1} y~\ref{fig:results-graph-2} 
+tomando como referencia el tiempo de ejecución y en la Figura~\ref{fig:results-graph-3} presentando la ganancia en porcentaje respecto a $T_3$.
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=12cm]{./images/phd/experimentation/t1-t2-tiempo}
+\caption{Gráfica de Tiempo de ejecución medio con referencia $T_1$.}
+\label{fig:results-graph-1}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=14cm]{./images/phd/experimentation/t3-t10-tiempo}
+\caption{Gráfica de Tiempo de ejecución medio con referencia $T_3$.}
+\label{fig:results-graph-2}
+\end{figure}
+
+\begin{figure}[!htb]
+\centering
+	\includegraphics[width=14cm]{./images/phd/experimentation/t3-t10-ganancia}
+\caption{Gráfica de Ganancia media con referencia $T_3$ en (\%).}
+\label{fig:results-graph-3}
+\end{figure}
+
+
+
+
+Finalmente se ha realizado un \textbf{tercer experimento} empírico~\cite{Alvarez:2011:QEM:2075561.2075618} para probar la generación de consultas en SPARQL 
+y el rendimiento del sistema MOLDEAS que han servido para optimizar las consultas tanto en su generación (reducción de claúsulas) como en modelo de ejecución (distribuido).
+
+
+\chapter{Conclusiones y Trabajo Futuro}
 La investigación, desarrollo e innovación realizado en este trabajo ha permitido en avanzar en la aplicación 
 de \linkeddata y tecnologías semánticas a un dominio estratégico para la economía con son los contratos públicos. A 
 continuación se listan las principales aportaciones realizadas:
@@ -757,7 +974,7 @@ las más relevantes que ya se están llevando a cabo y surgidas tras la realizac
  notificación de resultados a las instituciones públicas.
 \end{itemize}
 
-Actualmente se está desarrollando la plataforma MOLDEAS2\footnote{\url{http://purl.org/weso/moldeas-web/}} incluyendo capacidades de búsqueda e indexado en tiempo real.
+Actualmente se está desarrollando la plataforma MOLDEAS2 incluyendo capacidades de búsqueda e indexado en tiempo real.
 
 \section*{Agradecimientos}
 Este trabajo ha sido desarrollado en el contexto del proyecto \textit{10ders Information Services}, proyecto de investigación
@@ -765,10 +982,14 @@ cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan 
 liderado por Gateway S.C.S. y desarrollado en colaboración con la empresa Exis TI y el grupo de investigación WESO de la Universidad de Oviedo. 
 
 
-\chapter{Impacto y Difusión}
+\chapter{Principales Aportaciones: Impacto y Difusión}
 
 \section{Selección de artículos}
+%5 y explain
+%COMINDSO
 \section{Selección de conferencias}
+%5 y explain
+%COMINDSO
 \section{Participación en iniciativas internacionales}
 \section{Participación en iniciativas internacionales}
 
