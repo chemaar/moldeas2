@@ -1,0 +1,786 @@
+%\documentclass[b5paper,final,11pt,fleqn,twoside]{book}
+
+\documentclass[a4paper,final,11pt,fleqn,twoside]{book}  %% ATENCIÓN: draft|final
+\input{../cabeceras}
+\input{../utilidades}
+\input{../bibliografia-utils}
+
+
+\makeindex
+
+\makeglossaries
+\loadglsentries{glosario}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{\NombrePFC}
+\author{\AutorPFC}
+\date{\FechaEntregaPFC}
+%\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+\PortadaDocumentoPFC{1}{}
+
+%\input{todo.tex}
+
+\input{resumen.tex}
+
+\input{sobre.tex}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\textit{}
+\mainmatter
+
+\chapter{Introducción}
+Las Administraciones Públicas son uno de los mayores compradores de la Unión Europea (UE), ya que
+sus adquisiciones en conjunto representan un $17$\%~\cite{europeanStrategy} del Producto Interior Bruto (PIB). La tendencia se dirige a intentar 
+agilizar este gran mercado de oportunidades, que asciende a unos $2,155$ billones de euros, para 
+facilitar el acceso a las empresas, especialmente a las pequeñas y medianas empresas (PYMEs), posibilitando 
+el acceso a la información presente en los contratos públicos y permitiendo así la construcción de un entorno de mercado competitivo.
+
+Por otra parte, teniendo en cuenta que la información incluida en los anuncios de licitación
+tiene la consideración de Información del Sector Público (PSI), se deben proveer los mecanismos
+necesarios de acceso a esta información para facilitar la consulta de los datos contenidos
+en los anuncios de licitación. Actualmente la corriente \opendata dentro del seno de las organizaciones e individuos en general y de las entidades públicas en particular, ha generado un entorno
+de datos abiertos en el cual deben formar parte necesariamente los contratos públicos. Desde otro punto de vista, el creciente uso de Internet durante los últimos años ha puesto de manifiesto un
+nuevo entorno de ejecución para las aplicaciones, utilizando como nueva plataforma la Web, el gran sistema distribuido. En este sentido, iniciativas como la Web Semántica~\cite{Berners-Lee2001} dentro de la nueva ``Web de Datos'' o \wode a través de modelos y
+formatos de datos de conocimiento compartido unificados, intentan elevar el
+significado de los elementos y recursos que están disponibles en la web a través de un modelo y formato de datos 
+compartido utilizando estándares, con el objetivo de mejorar la integración e interoperabilidad entre aplicaciones. 
+Dentro de la iniciativa de Web Semántica hay que destacar principalmente dos esfuerzos: 
+\begin{enumerate}
+ \item La iniciativa \linkeddata~\cite{Berners-Lee-2006}, propone la publicación de datos
+enlazados siguiendo el modelo RDF~\cite{rdf-syntax} para facilitar la creación de una web de
+datos en la que éstos se puedan mostrar, intercambiar y conectar a través de
+URIs. Entre los casos de éxitose podrían destacar: administración electrónica (iniciativa de \textit{Open Government
+Data}~\cite{8-principles}-OGD), contratación pública electrónica de bienes y servicios (\textit{e-Procurement}), oferta
+formacional, contextualización de aplicaciones, etc. 
+
+\item El desarrollo de lenguajes y formalismos lógicos para representar el
+conocimiento sobre un universo de discurso que permita la inferencia de nuevos
+datos a partir de los datos ya publicados.
+\end{enumerate}
+
+La aplicación de las tecnologías semánticas e iniciativas como \opendata y
+\linkeddata, están de rigurosa actualidad, convirtiéndose en pieza clave
+para el desarrollo de nuevas aplicaciones y servicios de valor añadido,
+reutilizando datos provenientes de distintas fuentes: redes sociales, empresas,
+personas o instituciones públicas. En el caso objeto de estudio, la investigación
+realizada se centra en aplicar los principios de la Web Semántica y \linkeddata al dominio
+de la contratación pública electrónica, con el objetivo de facilitar el acceso a la información que estos
+documentos contienen. En resumen, la investigación realizada debe proveer los resultados y mecanismos
+adecuados para crear concienciación, tanto en la comunidad científica, como en la industrial, de la bondad
+de la aplicación de la semántica al dominio de la contratación pública electrónica. Teniendo en cuenta este objetivo y el entorno tecnológico predefinido, los siguientes
+problemas que atañen a la contratación pública deben ser abordados y resueltos con la
+aplicación de nuevos métodos.
+
+\begin{itemize}
+\item \textbf{Dispersión de la información.} Los anuncios de licitación se difunden en multitud de fuentes
+públicas de ámbito europeo, nacional, regional y local. Adicionalmente, las licitaciones de menor
+valor correspondientes a procedimientos con publicidad restringida y que suponen una larga
+serie de oportunidades comerciales, se publican en los perfiles del contratante de cada
+entidad, agencia o autoridad pública. 
+
+\item \textbf{Mismo anuncio en más de una fuente.} Dependiendo de la diferente normativa legal local,
+regional o nacional, el mismo anuncio de licitación se publica en más de una fuente al
+mismo tiempo sin que exista un método de identificación única.
+
+\item \textbf{Heterogeneidad de los formatos de los anuncios.} Aunque los datos deben ser públicos, no
+existe un formato de anuncio de licitación unificado, ni tan siquiera un número limitado de
+posibilidades.
+
+\item \textbf{Almacenamiento.} La cantidad de información que deberá procesar el sistema (solo el Diario
+Oficial de la Unión Europea-DOUE supone más de $20,000$ documentos cada día) hace que sea necesario resolver la forma en que
+deba almacenarse para que pueda explotarse de forma eficiente.
+
+\item \textbf{Diversidad de formatos de explotación.} Un almacén de información unificado con los
+anuncios de compras públicas ofrece múltiples posibilidades de explotación en diferentes
+productos. 
+
+\item \textbf{Multiling\"{u}ismo y multiculturalidad.} Como reto añadido se advierte que los documentos de
+licitación pueden publicarse en una o varias de las $23$ lenguas oficiales de la Unión Europea.
+Adicionalmente cada país, en ocasiones utiliza otras lenguas también oficiales en sus respectivos territorios. 
+\end{itemize}
+
+La cooperación de las iniciativas basadas en semántica como \linkeddata, unido al movimiento emergente
+de \opendata en el contexto de la licitación pública, presenta una serie de beneficios que permiten
+dar respuesta a estos problemas de gran calado que dificultan el despegue del mercado económico común y que se 
+pueden materializar en los siguientes objetivos científico-técnicos:
+
+\begin{enumerate}
+\item Estudiar, analizar y valorar las capacidades actuales del dominio de la contratación pública, 
+corrientes de \opendata y Web Semántica, más en concreto \linkeddata, para su aplicación en el dominio de la contratación pública.%2
+ \item Definir los métodos basados en semántica para producir, publicar, consumir y validar 
+la información de los anuncios de licitación siguiendo las directrices de \opendata y \linkeddata. %3
+ \item Definir e implementar los algoritmos y procesos para dar soporte a la aplicación de los métodos basados en semántica 
+a la información de los anuncios de licitación.
+\item Promover el uso de estándares y la reutilización de información y modelos de conocimiento compartido.%6
+\item Aplicar los métodos semánticos definidos al contexto de los anuncios de licitación pública.%7
+\item Establecer un conjunto de prueba y validación de los componentes implementados para verificar la corrección, 
+ validez y rendimiento de los métodos propuestos.%8
+\item Difundir, formar y transferir la tecnología y conocimiento enerado tanto a las comunidades científicas como industriales.%9
+\end{enumerate}
+
+
+\section{Formulación de la Hipotésis de Partida}
+La investigación se centra en un dominio en el cual la publicación de la información de forma accesible, multiformato, multicanal, multiling\"{u}e, etc., 
+resulta clave para facilitar las oportunidades de participación en los procesos de contratación pública y favorecer la publicidad
+de los anuncios de licitación mejorando la eficiencia de la propia Administración al generar un entorno
+competitivo. Por otra parte, la iniciativa de la Web Semántica y una parte de su realización como es el enfoque
+de \linkeddata, proporciona la base para el modelado de datos e información de forma estándar y consensuada. Finalmente, el tercer
+componente a considerar reside en la tendencia actual de apertura de datos por parte de las instituciones públicas, gracias
+a la sensibilización generada por el movimiento de \opendata. A partir de la conjugación de estos tres puntos clave se formula
+la siguiente hipótesis, vertebradora de nuestra investigación.
+
+
+\textbf{¿Es posible mejorar el acceso a la información contenida en los anuncios de licitación de 
+las distintas instituciones públicas europeas, tanto en términos cuantitativos como cualitativos, mediante métodos semánticos basados 
+en aplicar y cumplir los principios de la iniciativa \linkeddata y de la misma forma mantener y favorecer
+los principios de la corriente \opendata.?}
+
+Un sistema con estas características sería capaz de responder a la siguiente pregunta: \textit{¿Cuáles 
+son los anuncios de licitación relevantes para PYMES holandesas que quieren realizar contratos 
+públicos sobre ``Construcción de puentes y túneles'', por debajo de 170K \euro\mbox{ } en la región 
+de Flandes (Bélgica) en la que se habla holandés?}
+
+\chapter{Trabajo Relacionado}
+En el contexto particular de la contratación pública como proceso administrativo la Unión Europea se han fijado objetivos, 
+resultados necesarios e impacto actual~\cite{siemensEval,euEval} debido a la gran trascendencia de este proceso 
+entre los agentes económicos. De este modo la migración de los actuales sistemas de contratación pública a un entorno 
+electrónico ha supuesto la creación de un marco legal, transpuesto a los diferentes países como la 
+la Directiva \textit{Regulation (EC) No 2195/2002}~\cite{r2195} sobre el \textit{CPV} (``Common Procurement Vocabulary''), así como tecnología y 
+acciones para dar soporte a las distintas etapas de la contratación. Así, se encuentran proyectos 
+como \textit{e-Certis}, \textit{Fiscalis 2013}, \textit{ePRIOR}, \textit{TED} (``Tenders Electronic Daily''), \textit{PEPPOL} o \textit{STORK} que cubren 
+aspectos clave como la identificación, control fiscal, publicación de anuncios, gestión del proceso, etc. En realidad, muchas 
+de estas acciones se centran en conseguir integración e interoperabilidad entre los distintos sistemas, por ejemplo actualmente 
+existen numerosas plataformas de contratación nacionales y regionales que definen separadamente sus modelos de datos y acceso, 
+creando un maremégnum de posibilidades difícilmente interoperable.
+
+Como parte de la iniciativa de \lod~\cite{common-vocabularies} se han desarrollado proyectos en distintos 
+ámbitos como \textit{Linked Geo Data}, Geonames, \textit{Linked Open Drug Data} o la red 
+\textit{OpenLink Data Spaces}. En concreto, dentro del campo de \textit{Open Government Data} 
+existen proyectos tratando de explotar la información publicada en el diario TED de la Unión Europea como LOTED (\textit{Linked Open Tenders
+Electronic Daily}). Igualmente en el proyecto europeo LOD2 se está desarrollando un paquete 
+de trabajo específico para formalizar los anuncios de licitación mediante datos enlazados, 
+WP9a ``LOD2 for A Distributed Marketplace for Public Sector Contracts''. Finalmente el grupo 
+de investigación \textit{Media Lab research group} de la Universidad Técnica de Atenas provee 
+un sistema de visualización para controlar el gasto el público en Grecia, en esta línea existen también otros portales 
+como ``OpenSpending'', ``Public Contracts'', ``Compra Chile'', ``Compra Colombia'', etc., en los cuales se 
+puede observar y acceder a la información de anuncios de licitación. En relación con \lod en el sector público 
+los proyectos LATC (``LOD Around-The-Clock''), PlanetData y LAPSI (``The European Thematic Network on Legal Aspects of Public Sector Information'') 
+están haciendo un trabajo importante para impulsar esta iniciativa desde un punto de vista técnico como legal. 
+En el campo de la Web Semántica, existen diferentes vocabularios como GoodRelations o ProductOntology que se están utilizando para el etiquetado 
+de catálogo virtuales. Por ejemplo, Renaul UK utiliza estos vocabularios para su catálogo \textit{on-line} de productos. 
+Adicionalmente es necesario señalar que el popular diagrama ``Linked Data Cloud'' generado de los datos extraídos del repositorio \url{datahub.io} 
+contiene actualmente 337 conjuntos de datos (130 de ellos específicos sobre gasto público), con más de 25 billones 
+de tripletas RDF y 395 millones de enlaces entre recursos. 
+
+Por otra parte, existen diferentes y variadas iniciativas nacionales como la del Reino Unido, Estados 
+Unidos o Australia que se presentan como principales actores de los datos abiertos y, en consecuencia, 
+los anuncios de licitación de estas administraciones han sido liberados bajo distintos formatos y formas 
+de acceso. Por ejemplo, se han liberado datos en los campos de educación, finanzas, salud o geografía como 
+la clasificación NUTS (``Nomenclature of territorial units for statistics'') que tienen un gran valor a la ahora 
+de reutilizar conjuntos de datos existentes. En general, la mayoría de las Admnistraciones Públicas 
+se están uniendo a la iniciativa de \opendata y \linkeddata, en la medida de sus posibilidades, por ejemplo 
+en España, Francia, Ghana, etc. Desde un punto de vista de la investigación, se están generando nuevos vocabularios 
+para atender las necesidades de modelar el conocimiento y la información disponible 
+en distintos dominios como la ontología de organizaciones, los vocabulario para \textit{provenance} y 
+descripción de conjuntos de datos (voID) todos ellos bajo el auspicio del W3C. También se está desarrollando la tecnología necesaria 
+para dar soporte a esta iniciativa, en este sentido la especificación de SPARQL 1.1~\cite{Sparql11} implementada a través de distintas 
+repositorios de información como Virtuoso de OpenLink o Sesame así como los denominados 
+``Linked Data Front-ends'' (ELDA, Pubby o PoolParty) proveen el correcto acceso a los recursos mediante 
+consultas en un lenguaje formal como SPARQL y la ejecución de servicios REST. Actualmente y 
+debido al amplio crecimiento de los datos existen nuevas variantes como C-SPARQL~\cite{Barbieri:2010:QRS:1860702.1860705} o 
+EP-SPARQL~\cite{Anicic:2011:EUL:1963405.1963495} que permiten la creación de alertas sobre grandes conjuntos de datos de actualización continua.
+
+Finalmente y en relación con la promoción de datos a RDF, se han creado diferentes especificaciones, 
+libros, buenas prácticas~\cite{Berners-Lee-2006, okfn} y recetas como los libros ``Linked Data Design Considerations''~\cite{Heath_Bizer_2011}, 
+``Linked Data Cookbook''~\cite{linked-data-cookbook} o “Linked Data Patterns”~\cite{linked-data-patterns}, los documentos 
+del W3C ``Best Practices''~\cite{publishing-ogd}, ``Government Linked Data Lifecyle''~\cite{gld-group}, 
+``Best Practice Recipes for Publishing RDF Vocabularies''~\cite{Berr08}, ``Publishing Open  Government Data'', la especificación ``LOD2 Stack''~\cite{lod2-stack} 
+o el documento técnico de IBM ``Toward a Basic Profile for LinkedData''~\cite{basic-profile-ibm}  actualmente 
+\textit{W3C Member Submission} son los más destacados en este ámbito.
+
+\chapter{La plataforma MOLDEAS}
+En la sección anterior se ha realizado una introducción y un repaso a las principales iniciativas 
+de Web Semántica, \opendata, \linkeddata y \lod que atañen al dominio de la contratación pública, en los cuales se ha podido comprobar
+la diversidad de esfuerzos, enfoques y estrategias que se están desarrollando desde distintos ámbitos 
+con el objetivo de hacer realidad la \wod. Para ello en el contexto de este trabajo se ha definido 
+teóricamente siguiendo los conceptos presentados en~\cite{RDF,citeulike:1556975,RDFS,owl2-primer,SparqlSemantics}, 
+un ciclo de vida de datos enlazados, ver Figura~\ref{lld}, estableciendo una clara separación entre las responsibilidades y 
+las características de  cada entidad. A continuación, se resumen las definiciones genéricas de cada uno de estas entidades.
+\begin{itemize}
+ \item Se define un proceso $p$, como la aplicación de uno o varios métodos semánticos. 
+ \item Se define un método semántico $sm$, como la consecución de $n$ tareas para llevar a cabo
+una operación sobre un \dataset.  Este \dataset puede ser un conjunto de valores y datos $\mathcal{G}$, o bien
+un \dataset RDF $\mathcal{D}$, dependiendo del proceso concreto.
+\item  Es cada uno de los pasos que se han de llevar a cabo para realizar un método semántico, ver Figura~\ref{tareas}.
+\end{itemize}
+Como ejemplo, se adjunta la definición genérica del proceso y método semántico de ``Producción'' que dependiendo 
+del enfoque puede ser implementado mediante diferentes prácticas.
+
+Un \textbf{Método Semántico de Producción}-$SPM$ es una función que para un conjunto de tuplas de entrada o \dataset $\mathcal{G}$ y un conjunto de \textit{mapeos} $\mathcal{M}$  
+genera un \dataset RDF $\mathcal{D}$.
+
+\begin{center}
+    $SPM : \mathcal{G} \times \mathcal{M} \longrightarrow \mathcal{D}$
+\end{center}
+
+Las características que tiene esta definición de un $SPM$ son las siguientes: 1) para todo valor $g_{i}$ del conjunto de 
+entrada $\mathcal{G}$, existe al menos un \textit{mapeo} $m_{i}$ en el conjunto $\mathcal{M}$ y  2) existen valores $g_{i}$ del conjunto de entrada $\mathcal{G}$, para los que existen varios \textit{mapeos} $m_{i}$ 
+formando un conjunto $\mathcal{M}_{i}$ subconjunto de $\mathcal{M}$. Posteriormente dependiendo del método de 
+producción seleccionado ($SPM_1$-Transformación de datos a RDF, $SPM_2$-\textit{Mapeo} con Base de Datos o $SPM_3$-Consulta y transformación a RDF) 
+se especificarán las cuestiones particulares dentro de este modelo formal. Igualmente para cada uno de los procesos se han definido 
+e identificado sus posibles realizaciones, estableciendo tablas de decisión para cada uno de ellos.
+
+\begin{figure}[htb]
+\centering
+ %\includegraphics[width=8cm]{img/lld}
+\caption{Procesos del Ciclo de Vida de Datos Enlazados Abiertos.}\label{lld}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+ %\includegraphics[width=8cm]{img/lld}
+\caption{Flujo de tareas en el Ciclo de Vida de Datos Enlazados Abiertos.}\label{tareas}
+\end{figure}
+
+\section{Caso de Estudio: Las licitaciones públicas}
+En el caso objeto de estudio de este documento se ha planteado la aplicación de los principios 
+de \linkeddata, para el modelado y explotación de datos e información provenientes de los anuncios de 
+licitación públicos. Para ello, tal y como se ha presentado en los anteriores apartados, se ha definido 
+un ciclo de vida de datos enlazados que a través de procesos, métodos y tareas suministra una metodología 
+de actuación genérica para proceder en este sentido. Como ejemplo de su validez y aplicación se han utilizado 
+los datos de los contratos públicos para ejemplificar los procesos de producción, publicación, consumo, validación y 
+actualización, ver Figura~\ref{fig:com}. Aunque ciertas tareas se apoyan en el uso de aplicaciones de terceros como Google Refine o bien 
+en la parametrización de bibliotecas ya existentes como Apache Lucene, Mahout o Solr, es necesario suministrar un entorno 
+en el cual los resultados de aplicación de las tareas puedan ser procesados para implementar algunas de las ya 
+especificadas y así ejemplificar transversalmente el uso de datos enlazados en un determinado dominio. Por ello, y 
+de acuerdo al análisis y especificación realizado se plantea la necesidad de diseñar los componentes del sistema 
+MOLDEAS, ver Figuras~\ref{fig:com} y~\ref{moldeas}, como paso final para la cobertura en el uso de datos enlazados en el campo de la contratación pública 
+electrónica y teniendo presentes los siguientes objetivos: 1) facilitar y dar soporte a las tareas del ciclo de vida que no puedan ser desarrolladas completamente 
+por herramientas externas. 2)  Validar los datos generados por otras herramientas. 3) Enriquecer con procesos \textit{ad-hoc} la información y datos de los anuncios de licitación según el modelo 
+y especificación fijado en el ciclo de vida. 4) Implementar un demostrador público de consumo de datos enlazados. 
+5) Proveer un sistema de búsqueda/recomendación de anuncios de licitación de acuerdo a criterios predefinidos por el cliente. 6) Establecer un conjunto de prueba que realice la validación parcial de ciertos procesos apoyándose en tecnología 
+pre-existente y 7) diseñar un sistema extensible y escalable para su futura ampliación.
+
+\begin{figure}[htb]
+\centering
+% \includegraphics[width=8cm]{img/functional-overview}
+\caption{Visión funcional de la plataforma MOLDEAS.}\label{moldeas}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.5, transform shape]
+  \path[mindmap,concept color=gray,text=white]
+    node[concept] {MOLDEAS}
+    [clockwise from=0]
+    child[concept color=green!50!black] {
+      node[concept] {moldeas-api}   
+      [clockwise from=-90]
+      child [concept color=green!80] { node[concept] {\textbf{Consumo}} }   
+    }  
+    child[concept color=blue] {
+      node[concept] {moldeas-transformer}
+      [clockwise from=-90]
+      child [concept color=blue!50] { node[concept] {\textbf{Producción}} }
+      child [concept color=blue!50] { node[concept] {\textbf{Publicación}} }           
+    }
+    child[concept color=orange] { node[concept] {moldeas-test} 
+      [clockwise from=-90]
+      child  [concept color=orange!50] { node[concept] {\textbf{Validación}} }      
+    }
+    child[concept color=red] { node[concept] {moldeas-common} } ;
+   
+\end{tikzpicture}
+    \caption{Alineación inicial de componentes de MOLDEAS y procesos del Ciclo de Vida de \linkeddata.}
+ \label{fig:com}
+\end{figure}
+
+La aplicación del ciclo de vida de datos enlazados abiertos definido mediante la ejecución de los componentes 
+del sistema MOLDEAS se ha realizado sobre la información de los anuncios de licitación que contienen tres grandes 
+fuentes de información: 1) metainformación sobre el propio contrato, 2) clasificación del contrato de acuerdo a una 
+clasificación estándar de productos (algunos ejemplos de estas clasificaciones son el ``Common Procurement Vocabulary''-CPV, ``Combined Nomenclature''-CN, 
+FIXME) y 3) información geográfica y sobre las organizaciones o agentes implicados en el proceso. El resultado de esta transformación 
+se puede ver en la Tabla~\ref{resultado} obteniendo un nuevo conjunto de datos enlazados enriquecido conteniendo cerca de 10 millones 
+de tripletas RDF así como miles de enlaces a conjuntos de datos externos como los procedentes de NUTS, DBPedia o FAO. Esta transformación 
+ha cubierto anuncios de licitación publicados en toda Europa (ej. TED) a nivel \textbf{nacional} (ej: ``Boletín Oficial de España''-BOE, 
+\textbf{regional} (``Boletín Oficial del Principado de Asturias''-BOPA) y \textbf{local} (ej: ``Hospital Universitario Central de Asturias''). Una 
+vez transformada esta información y datos se hace disponible al público siguiendo las directrices de \lod para su explotación tanto 
+por usuarios finales como por máquinas, facilitando y potenciando su reutilización.
+
+\begin{table}[!t]
+  \centering
+  \caption{Estadísticas de promoción de datos a la iniciativa \textit{Linked Open Data}.}\label{resultado}   
+    \begin{tabular}{|p{2.5cm}|p{1.8cm}|p{3.5cm}|} 
+    \hline
+    \textbf{Tipo de Entidad} & \textbf{Nº de Elementos}  &  \textbf{Tripletas RDF}  \\\hline
+     \multicolumn{3}{|c|}{\textbf{Catálogo de Anuncios de Licitación}} \\ \hline     
+	PPN 2008 & $112843$  &   $677058$  \\ \hline
+	PPN 2009 & $399766$ &   $2398601$   \\ \hline
+	PPN 2010  & $431813$&  $2590880$  \\ \hline
+        PPN 2011 & $67044$&   $402264$   \\ \hline
+        \multicolumn{3}{|c|}{\textbf{Total}} \\ \hline
+        PPNs & $1011466$ &  $6068803$   \\ \hline     
+        \multicolumn{3}{|c|}{\textbf{Catálogo de Clasficaciones de Productos (PSCs)}} \\ \hline
+        CPV 2003 & $8323$  & $546135$  \\ \hline
+        CPV 2008 & $10357$ &  $803311$ \\ \hline
+        CN 2012  & $14552$&  $137484$ \\ \hline
+        CPC 2008 & $4408$&   $100819$\\ \hline
+        CPA 2008 & $5429$&  $92749$ \\ \hline
+        ISIC v4  & $766$&  $18986$  \\ \hline
+        NAICS 2007 & $2328$&  $36292$   \\ \hline
+      NAICS 2012 & $2212$&  $35390$    \\ \hline
+      SITC v4 & $4017$&  $70887$    \\ \hline
+      \multicolumn{3}{|c|}{\textbf{Total}} \\ \hline
+      PSCs & $52392$ &   $1842053$  con $40351$ enlaces  \\ \hline
+       \multicolumn{3}{|c|}{\textbf{Catálogo de organizaciones, personas y países}} \\ \hline
+      Organizaciones & $50000$   & $1150020$   \\ \hline
+      Personas & $50000$    & $900219$  \\ \hline
+      Países y regiones & $246$     & $1756$  \\ \hline
+           \multicolumn{3}{|c|}{\textbf{Total}} \\ \hline
+       & $100246$  & $2051995$   \\ \hline
+      \end{tabular}
+ \end{table}   
+ 
+Finalmente, la plataforma MOLDEAS mediante sus algoritmos de explotación de conocimiento es capaz de generar la consulta SPARQL 
+motivadora, ver Figura~\ref{figure:expanded}, de esta trabajo (en la parte concerniente a explotación de datos) ajustando los parámetros de la consulta (por ejemplo 
+la cuantía del contrato) al perfil definido por el usuario mediante el interfaz gráfico, ver Figura~\ref{fig:moldeas-web} .
+
+\begin{figure}[!htb]
+\centering
+%	\includegraphics[width=8cm]{./img/moldeas-web}
+\caption{Interfaz de Usuario de la plataforma MOLDEAS.}
+\label{fig:moldeas-web}
+\end{figure}
+
+
+
+ \begin{figure}[!ht] 
+\begin{center}
+\begin{lstlisting}[language=SPARQL]
+SELECT * WHERE{
+  ...
+  ?notice nuts:containedBy ?place .
+FILTER (  
+  ( (?cpvCode =  cpv:45221000) 
+  or (?cpvCode =  cpv:45221110) 
+  or (?cpvCode =  cpv:45221111)...)
+  ( (?place nuts:containedBy nuts:NL326) 
+  or (?place nuts:containedBy nuts:B3) 
+  or (?place nuts:containedBy nuts:BE2) 
+  or ...) 
+  and (?duration >= 2 and ?duration <= 4) 
+  and (?date >= 2008 and ?date <= 2011) 
+  and (?totalValue > 130,000^xsd:double 
+  and ?totalValue <= 200,000^xsd:double))}
+\end{lstlisting}
+\caption{Consulta SPARQL generada por la plataforma MOLDEAS.}
+\label{figure:expanded}
+\end{center}
+\end{figure}
+
+
+\chapter{Experimentación}
+Con el objetivo de validar el trabajo realizado mediante experimentos en los cuales se pueda cuantificar el 
+enfoque realizado la experimentación posible es muy variada, pero atendiendo  a la hipótesis de partida y a 
+los componentes implementados es posible identificar los siguientes experimentos: 1) experimento para la validación de los datos 
+transformados desde un punto de vista cuantitativo y cualitativo; 2) experimento para la verificación de la construcción de 
+un sistema de recuperación de información utilizando una fuente de datos basada en \linkeddata y tecnologías semánticas y 3) 
+experimento para la evaluación del rendimiento del sistema construido desde un punto de vista cuantitativo.
+
+El diseño de estos experimentos permite por una parte, la verificación de la hipótesis objeto de estudio en este trabajo y, por otra parte, 
+la validación de la construcción de sistemas basados en \linkeddata y tecnologías semánticas. Es preciso señalar que todos los experimentos llevados a cabo se realizan 
+bajo la ejecución de un plan detallado, las etapas a seguir han sido las siguientes:
+\begin{enumerate}
+ \item Definición de los objetivos del experimento. 
+\item Selección de una regla de asignación de las unidades experimentales a las condiciones de estudio. 
+\begin{itemize}
+ \item Cualitativos: tipo de entorno hardware y software, etc. En este caso, se pueden fijar las condiciones \textit{hardware} y \textit{software}:
+ \item Cuantitativos: tamaño de la muestra o de la memoria.
+\end{itemize}
+ \item Especificación de las medidas de trabajo en cuanto a la respuesta.
+ \item Ejecución de un experimento piloto. 
+ \item Especificación de un modelo.
+ \item Esquematización de los pasos a seguir. 
+ \item Determinación del tamaño muestral.
+ \item Revisión de las decisiones anteriores.
+\end{enumerate}
+
+Los detalles pormenorizados de cada uno de los experimentos siguiendo estos pasos se pueden encontrar 
+en el capítulo correpondiente en el documento de la tesis doctoral. A continuación, este trabajo 
+se centrará en el objetivo y resultado de los experimentos.
+
+\section{Experimento I}
+El diseño de este experimento se planifica desde dos puntos de vista:
+\begin{itemize}
+ \item Cuantitativo. La pregunta principal planteada en este caso se refiere a la posibilidad del uso de datos enlazados para 
+facilitar el acceso a un mayor número de recursos relacionados con los anuncios de licitación y, en consecuencia, a la información 
+y datos disponibles en los mismos.
+\item Cualitativo. La cuestión planteada en este caso se centra en valorar si el proceso de generación y transformación de datos 
+a la iniciativa de datos enlazados se puede valorar respecto a una serie de criterios y buenas prácticas.
+\end{itemize}
+
+La ejecución del experimento \textit{cuantiativo} requiere la expresión formal de los datos, para establecer desde un punto 
+de vista cuantitativo el porcentaje de ganancia en expresividad pasando de utilizar un vocabulario controlado para la realización 
+de consultas, a una serie de los mismos mediante datos enlazados. En este caso, la recuperación de información 
+entre la búsqueda habitual (texto libre) y un vocabulario controlado difiere en que el universo del discurso es, 
+en el primer caso infinito y en el segundo finito, determinado por el número de términos del vocabulario. En los anuncios 
+de licitación se parte de las siguientes premisas: 1) todo anuncio de licitación está etiquetado al menos 
+con un código/término perteneciente al CPV 2008. 2) El uso de los códigos CPV es obligatorio en todos los anuncios de licitación a nivel europeo y 
+3)la única información obligatoria, además del emisor del anuncio de licitación, son los códigos CPV 2008. Bajo estas circunstancias 
+la muestra sobre la que se realiza el experimento cuenta con las siguientes características:
+\begin{itemize}
+ \item Se cuenta con una base documental $\mathcal{D}$ constituida por $1$ millón de anuncios de licitación.
+ \item La clasificación de productos (vocabulario controlado $\mathcal{V}$ para contratos públicos) 
+del CPV 2008 está formado $\#\mathcal{V} = 10357$ códigos/términos distintos.
+ \item Cada uno de los documentos $d \in \mathcal{D}$ está etiquetado con al menos un código $v \in \mathcal{V}$.
+\end{itemize}
+
+Una vez caracterizado el entorno de pruebas, cabe formular cómo se calcula la ganancia de añadir un nuevo vocabulario 
+mediante \linkeddata.
+\begin{itemize}
+ \item El nuevo vocabulario controlado $\mathcal{V}_{psc}$ dispone $\#\mathcal{V}_{psc}$ términos.
+ \item El enlazado de datos que genera este vocabulario respecto a uno objetivo $\mathcal{V}$, presenta los siguientes
+casos:
+\begin{enumerate}
+ \item Enlace 1-1, es decir, existen términos $v^k_{psc} \in \mathcal{V}_{psc}$ que se enlazan con un sólo término $v^k \in \mathcal{V}$ 
+generando $K$ enlaces.
+ \item Enlace 1-n, es decir, existen términos $v^k_{psc} \in \mathcal{V}_{psc}$ que se enlazan con varios términos $v^k \in \mathcal{V}$ 
+generando $K_n$ enlaces.
+\end{enumerate}
+\item El resultado de esta operación es un conjunto de pares de enlaces $\{ (v^0_{psc},v^0), (v^k_{psc},v^k)..(v^n_{psc},v^n) \}$.
+\item Dada esta situación, el vocabulario inicial $\mathcal{V}$ ha sido incrementado en todos los elementos $v^k_{psc} \in \mathcal{V}_{psc}$, 
+para los cuales existe un enlace con algún elemento $v^k \in \mathcal{V}$ .
+\item El número de nuevos términos en los que el vocabulario $\mathcal{V}$ es incrementado, es igual al conjunto 
+de elementos $v^k_{psc}$, denominado  $\mathcal{V'}_{psc}$, con algún enlace a $\mathcal{V}$ (estrictamente sin repeticiones por definición de conjunto).
+\item El porcentaje de ganancia de expresividad, en el sentido de cuántos nuevos términos permiten pasar de $\mathcal{V}_{psc}$ a 
+$\mathcal{V}$, es el siguiente:
+
+\begin{align}
+\% =  \{ \langle (\#\mathcal{V'}_{psc}+\#\mathcal{V}) / \#\mathcal{V} \rangle - 1 \} * 100
+\end{align}
+
+\item Finalmente, y en el caso concreto de las clasificaciones de productos/taxonomías, existe la posibilidad de que elementos 
+$v^j_{psc} \in \mathcal{V}_{psc}$ no estén directamente relacionados con el conjunto $\mathcal{V}$ pero de acuerdo a la jerarquía 
+de términos en $\mathcal{V}_{psc}$ se puede deducir que si $v^j_{psc}$ está relacionado con $v^k_{psc}$ a través de una relación $r_k$, 
+entonces $v^j_{psc} \in \mathcal{V'}_{psc}$. Este tipo de enfoque es crítico debido a que provoca una situación recursiva e infinita, 
+uno de los problemas actuales de \linkeddata en la ejecución de consultas, pero debido a que el vocabulario $\mathcal{V}_{psc}$ es 
+finito y las relaciones entre sus términos es de jerarquía, se puede establecer un valor máximo para el porcentaje de 
+ganancia que ocurrirá cuando $\mathcal{V}_{psc} \equiv \mathcal{V'}_{psc}$.
+
+\end{itemize}
+
+Adicionalmente e introduciendo un nivel más de indirección mediante las PSCs con \textit{ProductOntology-PO} surge el siguiente caso:
+\begin{itemize}
+ \item Existe un conjunto $\mathcal{V''}_{psc}$ que representa la unión de todos los $\mathcal{V'}_{psc}$ correspondientes 
+a los enlaces entre una determinada PSC y \textit{PO}, estrictamente conteniendo el elemento de \textit{PO} de cada par.
+\item Existe un conjunto $\mathcal{V'}_{cpv}$ que representa el conjunto de pares de enlaces entre el CPV 2008 y \textit{PO}, 
+estrictamente conteniendo el elemento de \textit{PO} de cada par.
+\item La intersección entre $\mathcal{V''}_{psc} \sqcap \mathcal{V'}_{cpv}$ representa el conjunto de todos enlaces mediante 
+los cuales se puede realizar el salto entre una PSC al CPV 2008 a través de \textit{PO}. Los elementos 
+de cada PSC que permitan acceder al CPV 2008 de esta forma y no se encuentren en el conjunto $\mathcal{V'}_{psc}$ de cada PSC, señalado 
+en la Tabla~\ref{ganancia-terminos}, deben ser también considerados como nuevos términos para la realización de consultas generando 
+un nuevo conjunto $\mathcal{V''}_{psc}$.
+\end{itemize}
+
+De acuerdo a estas definiciones, en la Tabla~\ref{ganancia-terminos} y en la Figura~\ref{fig:eval-n-terminos} 
+se presentan los porcentajes reales y máximos obtenidos tras la realización del enlazado de las clasificaciones 
+de productos con el CPV 2008, conjunto $\mathcal{V}$ con $\#\mathcal{V} = 10357$. Bajo estas condiciones, 
+el paradigma basado en \linkeddata permite que, a través de una correcta aplicación de un ciclo de vida para la generación 
+de las clasificaciones de productos en RDF y su enlazado posterior, se suministre el soporte necesario para cumplir con 
+las premisas fijadas aumentando la capacidad expresiva del vocabulario de entrada (de $10357$ a $21715$ y con 
+un máximo de $39586$ a través de \textit{PO}) y para la recuperación de información de los anuncios de licitación pública, 
+aumentando así la capacidad expresiva para la realización de consultas o extracción de estadísticas. 
+
+\begin{table}[!t]
+  \centering
+  \caption{Porcentaje de Ganancia Real y Máxima al enlazar las Clasificaciones de Productos con el CPV 2008.}\label{ganancia-terminos}   
+%{|p{2.6cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|} 
+    \begin{tabular}{|p{1cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.9cm}|p{0.75cm}|} 
+     \hline
+    $\mathcal{V}_{psc}$ & $\#\mathcal{V}_{psc}$  & $\#\mathcal{V'}_{psc}$ &$\#\mathcal{V'''}_{psc}$ &  $\%$ real &  $\%$ real con PO  &  $\%$ máximo   \\\hline
+    CPV 2003 	& $8323$  	& $462$		& $8312$ 	& $4.46$ 	& $80.25$	& $80.36$  \\ \hline
+    CN 2012  	& $14552$	& $2390$	& $2390$ 	& $23.07$	& $23.07$	& $140.50$  \\ \hline
+    CPC 2008 	& $4408$	& $4402$   	& $4403$	& $42.50$	& $42.51$ 	& $42.56$  \\ \hline
+    CPA 2008 	& $5429$	& $5399$   	& $5410$	& $52.12$	& $52.23$	& $52.41$  \\ \hline
+    ISIC v4  	& $766$		& $765$   	& $765$ 	& $7.38$ 	& $7.38$	& $7.39$    \\ \hline
+    NAICS 2007 	& $2328$	& $2300$ 	& $2300$	& $22.20$	& $22.20$	& $22.47$  \\ \hline
+    NAICS 2012 	& $2212$	& $2186$ 	& $2186$	& $21.10$	& $21.10$	& $21.35$  \\ \hline
+    SITC v4 	& $4017$	& $3811$   	& $3820$	& $36.79$	& $36.88$	& $38.78$  \\ \hline
+    \multicolumn{7}{|c|}{\textbf{Total}} \\ \hline
+    $\star$ & $42035$ 		& $21715$   	& $29586$	& $209.66$ 	& $285.66$	& $405.86$ \\ \hline
+    \hline
+    \multicolumn{7}{|c|}{\textbf{Añadiendo enlaces entre CPV 2008 y \textit{Product Ontology}}} \\ \hline
+    \textit{PO}& $\infty$	& $10000$   	& N/A	& $96.55$	& $96.55$ 	& $\infty$  \\ \hline
+    \multicolumn{7}{|c|}{\textbf{Total con vocabulario de \textit{Product Ontology}}} \\ \hline
+    $\star$	 & $\infty$	& $31715$   	& $39586$	& $306.21$	& $382.21$	& $\infty$ \\ \hline
+    \hline
+  \end{tabular}
+
+\end{table}
+
+\begin{figure}[!htb]
+\centering
+%	\includegraphics[width=8cm]{./img/evo-n-terminos}
+\caption{Evolución Número de Términos.}
+\label{fig:eval-n-terminos}
+\end{figure}
+
+
+
+El experimento y evaluación \textbf{cualitativa} realizada permiten realizar una calificación y comparación entre los distintos enfoques 
+disponibles para la publicación y acceso a la información y datos referente a los anuncios de licitación, incluyendo
+el catálogo de clasificaciones de productos y las organizaciones. Para ello, se han definido una serie de tablas 
+con una serie de características en el ámbito de \linkeddata, \opendata y \lod que sirvan para verificar que
+la aplicación de los métodos semánticos es correcta y con ello obtener datos enlazados que aporten las ventajas conocidas sobre el uso
+de esta iniciativa. La elaboración de estas tablas, cubriendo un total de 196 criterios, surge de la agregación de varias fuentes: 1) Principios de \linkeddata~\cite{Berners-Lee-2006}. 2) Principios de \opendata~\cite{okfn}. 
+3) Especificaciones y documentos del W3C como~\cite{publishing-ogd,linked-data-cookbook,Berr08}. 4) \textit{Linked Data Design Considerations}~\cite{Heath_Bizer_2011}. 5) \textit{Linked Data Patterns}~\cite{linked-data-patterns}. 
+5)``\textit{Basic Profile Resources}''~\cite{basic-profile-ibm} de IBM. 6) Principios para incluir \datasets en la nube de datos 
+enlazados y añadir al registro de CKAN y 7) Documentación específica de iniciativas nacionales y experiencia adquirida. El 
+modelado de estas tablas es la de un cuestionario, de manera que la evaluación de una característica puede tener las siguientes 
+respuestas: 1) Positiva \si. La característica es aplicable y se ha realizado en el actual \dataset. 2) 
+Negativa \no. La característica es aplicable y no se ha realizado en el actual \dataset y 3) No aplicable \na. 
+La característica no es aplicable y no se ha realizado en el actual \dataset. Los resultados agregados se pueden observar en la 
+Tabla~\ref{tabla:agregado-sumatorio}, la tendencia que se observa  es que la información y datos relativa a los anuncios de licitación, 
+clasificaciones de productos y organizaciones tiene un carácter abierto, como confirman los resultados, e incluso disponen
+de buenos fundamentos para que la realización del esfuerzo de transformación a datos enlazados sea asumible tanto 
+por las Administraciones Públicas como por terceros, así lo demuestra el trabajo presentado en este documento 
+a través del enfoque realizado en MOLDEAS. La aplicación de los principios de \linkeddata y \opendata permite 
+asegurar ventajas y beneficios en el acceso a la información y manejo de los datos.
+
+\begin{table}[!t]
+  \centering
+  \caption{Tabla agregada de Validación Conjunta con Valores Totales.}\label{tabla:agregado-sumatorio}
+      \begin{tabular}{|p{2cm}|p{0.6cm}|p{0.6cm}|p{0.6cm}||p{0.6cm}||p{1cm}|} 
+           \hline
+       \textbf{Versión} & \si&\no&\na & \textbf{Total} & \textbf{\% \si entre aplicables} \\\hline
+          \textbf{Referencia} & 173 & 0 & 23 & 196& 100 \\ \hline \hline
+	\multicolumn{6}{|c|}{\textbf{Anuncios de Licitación}} \\ \hline   
+	    \textbf{TED} & 32 & 12 & 152 &$\equiv$ & $72.72$\\ \hline 
+	    \textbf{Plataforma de Contratación} & 35 & 9 & 152 &$\equiv$ & $79.54$\\ \hline 
+	    \textbf{BOE} & 30 & 12 & 154 &$\equiv$ & $71.42$\\ \hline 
+	    \textbf{Servicios Externos} & 25 & 14 & 157 &$\equiv$ & $64.10$\\ \hline 
+	    \textbf{LOTED} & 92 & 34 & 70 &$\equiv$ & $73.01$\\ \hline 
+	    \textbf{MOLDEAS} & 121 & 10 & 65 &$\equiv$ & $92.36$\\ \hline 
+	\multicolumn{6}{|c|}{\textbf{Catálogo de Clasificaciones de Productos}} \\ \hline
+	    \textbf{CSV/MSExcel} &  25 & 12 & 159 &$\equiv$ & $67.56$\\ \hline 
+	    \textbf{Servicios on-line} &  21 & 21 & 154 &$\equiv$ & $50$\\ \hline 
+	    \textbf{MOLDEAS} &  166 & 7 & 23 &$\equiv$ & $93.86$\\ \hline 
+	\multicolumn{6}{|c|}{\textbf{Organizaciones}} \\ \hline
+	    \textbf{TED} & 20 & 9 & 167 &$\equiv$ & $68.96$\\ \hline 
+	    \textbf{Plataforma de Contratación}  & 35 & 10 & 151 &$\equiv$ & $77.77$ \\ \hline 
+	    \textbf{BORME}  & 23 & 1 & 172 &$\equiv$ & $95.83$\\ \hline 
+	    \textbf{Servicios Externos}  & 20 & 20 & 156 &$\equiv$ & $50$\\ \hline   
+	    \textbf{BBDD externa}  & 12 & 9 & 175 &$\equiv$ & $57.14$\\ \hline 
+	    \textbf{OpenCorporates}  & 85 & 33 & 78  &$\equiv$ & $72.03$\\ \hline 
+	    \textbf{MOLDEAS}  & 121 & 10 & 65 &$\equiv$ & $92.36$\\ \hline 
+          \end{tabular}
+ \end{table} 
+ 
+\section{Experimento II}
+La especificación del experimento sobre la recuperación de información en anuncios de licitación se ha abordado 
+con los dos grandes objetivos de consumir los datos enlazados producidos e implementar un demostrador público que permita realizar 
+búsquedas avanzadas y contextuales sobre la información disponible.  En este caso y centrándose en el 
+tamaño de la muestra se han obtenido las consultas presentadas en la Tabla~\ref{table:queries-ir}, de las 
+cuales se tiene la siguiente información: consulta proporcionada por un cliente, $Q_{str}$, y códigos CPV seleccionados por los expertos 
+de dominio de ``Euroalert.net'', $Q_{cpv}$. Debido al gran número de códigos CPV tan sólo se muestra la cantidad de los mismos esquivando 
+el código y la descripción.  Sintetizando, el experimento que se realiza, evalúa los códigos CPV generados (o recuperados) mediante el sistema MOLDEAS, 
+ver Tabla~\ref{table:metodos-ir}, en contraposición con los suministrados por ``10ders Information Services'' y utilizando las medidas de evaluación Precisión (P), \textit{Recall} (R), \textit{Accuracy} (A) y 
+\textit{Especificidad} (S). 
+
+Según los resultados obtenidos, ver Tabla~\ref{table:queries-ir-results}, y de acuerdo al comportamiento de los expertos del dominio, queda patente que el 
+método $M^1$ es el más cercano a los resultados esperados. La explicación se debe principalmente al grado de implantación que 
+posee la búsqueda tradicional. No obstante, tan sólo se han utilizado $11$ consultas \linebreak preparadas (no se disponía de una muestra mayor) 
+por lo que los resultados bajo estas condiciones y sin un contraste de hipótesis estadístico, deben ser tomados como una guía, en la cual la valoración con una muestra 
+de la población relevante e informativa podrían variar. Este experimento sirve como prueba del consumo de datos enlazados en un 
+dominio y de la aplicación de técnicas tanto tradicionales como procedentes de otros ámbitos para la recuperación de códigos CPV. 
+La principal conclusión que se debe extraer, consiste en que el planteamiento de un sistema experto para la recuperación de anuncios de licitación 
+públicos tiene un gran interés debido a diversos factores: variables de información múltiples, correlaciones entre las mismas, 
+cantidad de datos a procesar, etc., que pueden ser optimizados a través de las pruebas con distintos algoritmos y técnicas.
+
+\begin{table}[!t]
+  \centering
+\caption{Métodos de generación de códigos CPV.}\label{table:metodos-ir}   
+\begin{tabular}[!t]{|l|p{4cm}|p{2cm}|} 
+\hline  
+\textbf{Método} &  \textbf{Descripción} &  \textbf{Tecnología} \\\hline
+$M^1$ & Indexa códigos CPV y búsqueda sintáctica. & Apache Lucene y Solr \\ \hline
+$M^2$ & Extrae códigos CPV candidatos ponderados, atendiendo a las relaciones semánticas. & $M^1$ + ponderación jerarquía \\ \hline
+$M^3$ & Extrae códigos CPV candidatos ponderados mediante \textit{Spreading Activation}. & $M^1$ + ONTOSPREAD \\ \hline
+$M^4$ & Extrae códigos CPV candidatos ponderados según el histórico del $1$ M con un motor de recomendación. & $M^1$ + Apache Mahout \\ \hline
+\hline
+ \end{tabular}
+   \end{table} 
+
+
+\begin{table}[!t]
+  \centering
+  \caption{Consultas suministradas en el proyecto ``10ders Information Services''.}\label{table:queries-ir}    
+\begin{tabular}[c]{|l|p{5.5cm}|p{1.5cm}|} 
+\hline
+\textbf{$Q_{i}$} &  \textbf{Consulta de Usuario-$Q_{str}$} &  \textbf{Nº de Códigos CPV relevantes-$\#Q^{i}_{cpv}$} \\\hline
+$Q_1$ & ``Comprehensive overview over all environmental technologies renewable energy products'' & $463$ \\ \hline
+$Q_2$ & ``Tendering of public works: housing, hospitals, roads, housing developments, station drinking water treatment, reforestation'' & $35$ \\ \hline
+$Q_3$ & ``Prefabricated buildings'' & $7$ \\ \hline
+$Q_4$ & ``Games for children (parks swings, slides, land of play equipment in the public sphere'' & $26$ \\ \hline
+$Q_5$ & ``Vital signs monitor'' &  $277$\\ \hline
+$Q_6$ & ``Museum and exhibition and product launch services'' & $1$ \\ \hline
+$Q_7$ & ``Voltmeters, instruments measuring electrical quantities, Ammeters, Instruments for checking physical characteristics, hygrometers, thermometers, measuring equipment and control, leak detector, Analyzers, 
+Cable Splicing insulated cable joints kits, screwdrivers, hand tools , screwdriver'' & $117$ \\ \hline
+$Q_8$ & ``Conservation Maintenance of pavements for roads, airfields, bridges, tunnels'' & $13$ \\ \hline
+$Q_9$ & ``Wood poles, Wooden sleepers , Lattice towers'' & $10$ \\ \hline
+$Q_{10}$ & ``Architectural, construction, engineering and inspection services'' &  $173$\\ \hline
+$Q_{11}$ & ``Medical practice and related services'' &  $13$\\ \hline
+\hline
+ \end{tabular}
+
+ \end{table} 
+
+
+\begin{sidewaystable}[!t]
+  \centering
+  \caption{Resultados PRAS de las consultas suministradas en el proyecto ``10ders Information Services''.}\label{table:queries-ir-results}
+\begin{tabular}{|c||c|c|c|c||c|c|c|c||c|c|c|c||c|c|c|c|}
+\hline
+ \textbf{$Q_i$}&\multicolumn{4}{|c||}{$M^{1}$} & \multicolumn{4}{|c||}{$M^{2}$}& \multicolumn{4}{|c||}{$M^{3}$} & \multicolumn{4}{|c|}{$M^{4}$} \\ \hline
+	  &\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S} &		\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S} &			\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S} &		\textbf{P} & \textbf{R} & \textbf{A} & \textbf{S}  \\ \hline \hline
+$Q_1$  	  &$0,15$ & $0,08$ & $0,94$ & $0,98$ &		$0,15$ & $0,15$ & $0,92$ & $0,96$ &	$0,12$ & $0,06$ & $0,94$ & $0,98$ &	$0,06$ & $0,06$ & $0,68$ & $0,81$ \\ \hline
+$Q_2$  	  &$0,09$ & $0,09$ & $0,99$ & $1,00$ & 		$0,06$ & $0,06$ & $0,99$ & $1,00$ & 	$0,03$ & $0,03$ & $0,99$ & $1,00$ & 	$0,03$ & $0,03$ & $0,99$ & $1,00$ \\ \hline
+$Q_3$  	  &$0,14$ & $0,14$ & $1,00$ & $1,00$ & 		$0,14$ & $0,14$ & $1,00$ & $1,00$ & 	$0,14$ & $0,14$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+$Q_4$  	  &$0,19$ & $0,19$ & $1,00$ & $1,00$ &		$0,00$ & $0,00$ & $0,99$ & $1,00$ & 	$0,12$ & $0,12$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $0,99$ & $1,00$ \\ \hline
+$Q_5$  	  &$0,12$ & $0,01$ & $0,97$ & $1,00$ & 		$0,01$ & $0,01$ & $0,95$ & $0,97$ & 	$0,08$ & $0,01$ & $0,97$ & $1,00$ & 	$0,03$ & $0,03$ & $0,95$ & $0,97$ \\ \hline
+$Q_6$  	  &$1,00$ & $1,00$ & $1,00$ & $1,00$ & 		$0,00$ & $0,00$ & $1,00$ & $1,00$ & 	$1,00$ & $1,00$ & $1,00$ & $1,00$ & 	$0,10$ & $0,67$ & $0,98$ & $0,98$ \\ \hline
+$Q_7$  	  &$0,20$ & $0,20$ & $0,98$ & $0,99$ & 		$0,09$ & $0,09$ & $0,98$ & $0,99$ & 	$0,15$ & $0,16$ & $0,98$ & $0,99$ & 	$0,03$ & $0,03$ & $0,98$ & $0,99$ \\ \hline
+$Q_8$  	  &$0,08$ & $0,08$ & $1,00$ & $1,00$ & 		$0,08$ & $0,08$ & $1,00$ & $1,00$ & 	$0,08$ & $0,08$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+$Q_9$  	  &$0,50$ & $0,50$ & $1,00$ & $1,00$ & 		$0,00$ & $0,00$ & $1,00$ & $1,00$ & 	$0,30$ & $0,38$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+$Q_{10}$  &$0,39$ & $0,39$ & $0,98$ & $0,99$ & 		$0,42$ & $0,42$ & $0,98$ & $0,99$ & 	$0,34$ & $0,35$ & $0,98$ & $0,99$ & 	$0,16$ & $0,16$ & $0,97$ & $0,99$ \\ \hline
+$Q_{11}$  &$0,23$ & $0,23$ & $1,00$ & $1,00$ & 		$0,23$ & $0,23$ & $1,00$ & $1,00$ & 	$0,15$ & $0,17$ & $1,00$ & $1,00$ & 	$0,00$ & $0,00$ & $1,00$ & $1,00$ \\ \hline
+\multicolumn{17}{|c|}{\textbf{Medias Totales de Métricas PRAS}} \\ \hline
+\textbf{Total}  &$0,28$ & $0,26$ & $0,99$ & $1,00$ & 	$0,11$ & $0,11$ & $0,98$ & $0,99$ & 	$0,23$ & $0,23$ & $0,99$ & $1,00$ & 	$0,03$ & $0,03$ & $0,96$ & $0,98$ \\ \hline
+\hline
+ \end{tabular}
+
+ \end{sidewaystable} 
+  
+Finalmente se ha realizado un \textbf{tercer experimento} empírico~\cite{Alvarez:2011:QEM:2075561.2075618} para probar la generación de consultas en SPARQL y el rendimiento 
+del sistema MOLDEAS cuyos resultados se han omitido por considerarse anexos a la tesis pero que han servido para optimizar las consultas tanto 
+en su generación (reducción de claúsulas) como en modelo de ejecución (distribuido).
+
+\chapter{Principales Aportaciones, Conclusiones y Trabajo Futuro}
+La investigación, desarrollo e innovación realizado en este trabajo ha permitido en avanzar en la aplicación 
+de \linkeddata y tecnologías semánticas a un dominio estratégico para la economía con son los contratos públicos. A 
+continuación se listan las principales aportaciones realizadas:
+\begin{itemize}
+ \item Definición y aplicación de un ciclo de vida de datos enlazados abiertos al dominio 
+ de la contratación pública para la mejora del proceso de publicación de información.
+ \item Diseño y evaluación de la calidad de los datos de distintos proveedores.
+ \item Diseño e implementación de la plataforma MOLDEAS para la agregación y enriquecimiento 
+ automática de la información y datos proveniente de los anuncios de licitación pública europea teniendo 
+ en cuenta la diversidad de las fuentes y cuestiones relacionadas con el multilinguismo y la multiculturalidad.
+ \item Diseño e implementación de algoritmos para automáticamente realizar la búsqueda de anuncios 
+ de licitación de acuerdo a un perfil de usuario.
+\item Transformación a \linkeddata de más de un millón de anuncios de licitación, 9 clasificaciones estándar de productos 
+y otros conjuntos de datos como organizaciones, personas y países reutilizando información y datos existentes.
+\item Diseño de experimentos para el contraste de la ganancia cualitativa y cuantiativa por el uso de \lod en el dominio 
+de contratación pública incluyendo el diseño de criterios de validación de los datos generados y evaluación semi-automática de los mismos.
+\item Adición a la nube de datos enlazados del \dataset de clasificaciones estándar de productos~\footnote{\url{http://datahub.io/dataset/pscs-catalogue}}. Actualmente este conjunto
+está siendo ampliado y reutilizado en diferentes proyectos a nivel internacional como el proyecto LOD2.
+\item Difusión y participación en actividades científicas y de carácter industrial como publicación 
+en revistas JCR y edición del Special Issue: ``New trends on e-Procurement applying Semantics'' en la revista JCR ``Computers in Industry''. 
+Actualmente esta tesis se está utilizando en el grupo de trabajo W3C ``Open Data Spain'' en su línea sobre Contratación Pública.
+\end{itemize}
+
+Transversalmente a los objetivos específicos constratados a través de las principales aportaciones, todo el trabajo 
+realizado en las definiciones teóricas, desarrollo de activos experimentales y diseño de experimentos, se ha enmarcado bajo una apuesta fiel y constante por la aplicación y uso de los estándares 
+dando así acogida a la meta de ``Promover el uso de estándares y la reutilización de  información y modelos de conocimiento compartido''.
+
+El estudio de los datos enlazados abiertos en el campo de las licitaciones públicas ha puesto de manifiesto las necesidades 
+de este entorno y la necesidad de realizar una investigación profunda para impulsar la contratación pública electrónica dada 
+su relevancia e impacto en la sociedad. Por ello, el enfoque basado en tecnologías semánticas y datos enlazados abiertos 
+permite la culminación práctica de ciertas necesidades como la mejora de acceso y la reutilización de la información. Sin embargo, 
+la conversión de un entorno tan amplio debe tomarse como una actividad iterativa, en la cual con la aplicación de buenas 
+prácticas se consiga dar respuesta y solución a los inconvenientes que presenta. A continuación se detallan las conclusiones 
+más relevantes.
+
+\begin{itemize}
+ \item Todos los procesos implicados en el tratamiento de datos enlazados deben asegurarse suministrando 
+mecanismos para su validación con el objetivo de facilitar su reutilización posterior en condiciones 
+de ausencia de incertidumbre.
+  \item El uso de estándares es clave para minimizar los problemas de integración e interoperabilidad.
+ \item El tratamiento de grandes cantidades de datos conlleva prestar especial atención a los algoritmos diseñados y 
+a la construcción de consultas sobre los mismos.
+ \item La necesidad de modelar la información y datos para su posterior reutilización en un dominio extenso debe realizarse 
+con el suficiente grado de especificidad, pero teniendo presente la posibilidad de extensibilidad, por lo que es conveniente 
+no realizar grandes modelos poco usables y que tan sólo el autor o autores pueden manejar. En este sentido la estrategia 
+a seguir debe basarse en la generación de un marco de trabajo común y la creación sostenible y escalable de conocimiento 
+con el objetivo de impulsar su reutilización.
+ \item Los principios de \linkeddata y \opendata verdaderamente ayudan a favorecer la reutilización de información si siguen 
+unas directrices de producción, publicación y consumo adecuadas.
+ \item El maremágnum de tecnología, enfoques, algoritmos, vocabularios, conjuntos de datos, etc., dentro de la iniciativa de 
+\linkeddata convierte la toma de ciertas decisiones y la adopción de soluciones en un trabajo tedioso en el cual la experiencia 
+cobra una especial relevancia. 
+ \item Existen tareas como la reconciliación de entidades que todavía se hayan en una etapa temprana de desarrollo.
+ \item El uso de datos enlazados permite mejorar el acceso a la información facilitando una mayor expresividad en la realización 
+de consultas sobre grandes conjuntos de datos.
+ \item Desde el punto de vista de la gestión de la información y datos, la Web Semántica se ha convertido en una pieza clave pero 
+la creación de algoritmos explotando las capacidades de un entorno mejor informado todavía no se ha impulsado convenientemente.
+\item Los procesos administrativos dentro de la administración electrónica deben necesariamente aprovechar las ventajas 
+de las tecnologías de información para ser más eficientes.
+\item Las primeras versiones de datos enlazados abiertos liberados tendían a basar su éxito en el número de tripletas RDF. El esfuerzo se 
+centra ahora en la calidad para asegurar su reutilización.
+\end{itemize}
+
+Las posibilidades de abrir nuevas líneas de investigación que tomen como semilla el trabajo realizado en este estudio son múltiples 
+y se pueden abordar desde distintos puntos de vista: 1) las concernientes a la Web Semántica y \linkeddata en general y 
+2) las referentes a la administración electrónica y en particular al proceso administrativo de contratación pública electrónica. Entre 
+las más relevantes que ya se están llevando a cabo y surgidas tras la realización de este trabajo se encuentran:
+\begin{itemize}
+ \item Realización de un sistema de catalogación de vocabularios y conjuntos de datos basado en diferentes métricas.
+ \item Mejora de los algoritmos de reconciliación de entidades.
+ \item Adaptación y mejora de las técnicas y algoritmos basados en semántica a entornos con características de tiempo real.
+ \item Realización de un sistema experto específico para la recuperación de información de anuncios de licitación teniendo en cuenta la mayor cantidad de descriptores posibles.
+ \item Mejora de la capitalización del conocimiento experto en el dominio de contratación pública electrónica.
+ \item Otras: procesamiento de consultas federadas de forma eficiente, búsqueda sobre fuentes de datos heterogéneas, 
+ descubrimiento automático de \datasets, gestión de \datasets dinámicos, calidad de los datos, usabilidad en la interacción con datos enlazados o 
+ notificación de resultados a las instituciones públicas.
+\end{itemize}
+
+Actualmente se está desarrollando la plataforma MOLDEAS2\footnote{\url{http://purl.org/weso/moldeas-web/}} incluyendo capacidades de búsqueda e indexado en tiempo real.
+
+\section*{Agradecimientos}
+Este trabajo ha sido desarrollado en el contexto del proyecto \textit{10ders Information Services}, proyecto de investigación
+cofinanciado por el Ministerio de Industria, Turismo y Comercio dentro del plan Avanza 2 con código TSI-020100-2010-919, 
+liderado por Gateway S.C.S. y desarrollado en colaboración con la empresa Exis TI y el grupo de investigación WESO de la Universidad de Oviedo. 
+
+
+\chapter{Impacto y Difusión}
+
+\section{Selección de artículos}
+\section{Selección de conferencias}
+\section{Participación en iniciativas internacionales}
+\section{Participación en iniciativas internacionales}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+
+\printindex
+\printglossaries
+
+
+% Bibliografía
+\insertbibliography
+\end{document}
