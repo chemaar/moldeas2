@@ -1,0 +1,1185 @@
+%
+% main.tex
+%
+
+% notes = hide | show | only
+\documentclass[xcolor=dvipsnames,dvip,notes=show,handout,table]{beamer}
+
+
+% Para crear una versión 'handout' (impresa)
+%\documentclass[xcolor=dvipsnames,dvip,handout,notes=show,table]{beamer}
+
+\input{headers}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Java]{Ejemplos básicos \\ Programación en Java}
+\author[Jose María Álvarez Rodríguez]{\textbf{Programación} \\ \vspace{0.3cm} Jose María Álvarez Rodríguez}
+\subtitle{}
+\institute{Departmento de Informática \\ Universidad Carlos III de Madrid}
+
+
+\date{Curso 2014/2015}
+
+\begin{document}
+
+\frame{
+\titlepage
+
+}
+% 
+\frame{
+\tableofcontents
+
+}
+% 
+% 
+\section{Ejemplos básicos}
+
+\frame{
+
+\frametitle{Metodología}
+\begin{exampleblock}{Pasos...}
+\begin{enumerate}
+ \item Analizar y entender el problema. ¿Existe algún modelo formal?
+ \item Diseñar una solución al problema.
+ \item Implementar el diseño propuesto.
+ \item Test: verificar y validar los resultados. Traza y depuración.
+ \item Documentar la solución.
+ \item Refinar, "refactor" del código fuente ("mejora").
+\end{enumerate}
+\end{exampleblock}
+
+}
+
+\frame{
+
+\frametitle{Notas}
+\begin{alertblock}{...}
+\begin{enumerate}
+ \item En todos los ejemplos se utiliza una clase auxiliar "MyConsole" para facilitar la lectura y escritura en la consola.
+ \item Todos los ejemplos están disponibles en el paquete ``examples''.
+ \item ...las directivas ``package'' e ``import'' han sido borradas en estos ejemplos para facilitar su lectura. 
+ \item Se presenta una solución al problema planteado pero no es única.
+\end{enumerate}
+
+ 
+\end{alertblock}
+
+}
+
+
+\frame{
+
+\frametitle{Ejercicio-1}
+\begin{block}{Enunciado...}
+ Diseña y codifica un programa que lea dos números enteros y muestre por pantalla su suma.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-1: examples/AddNumbers.java}
+\scriptsize
+\begin{lstlisting}
+public class AddNumbers {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int op1, op2, result;
+    op1 = mc.readInt();
+    op2 = mc.readInt();
+    result = op1 + op2;
+    mc.println("The result is: "+result);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-2}
+\begin{block}{Enunciado...}
+  Diseña y codifica un programa para intercambiar el valor de dos variables de tipo entero.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-2: examples/SwapVariables.java}
+\scriptsize
+\begin{lstlisting}
+public class SwapVariables {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int a,b;
+    int temp;
+    a = mc.readInt();
+    b = mc.readInt();
+    mc.println("The values (before swapping) are: "+a+", "+b);
+    temp = a;
+    a = b;
+    b = temp;
+    mc.println("The values (after swapping) are: "+a+", "+b);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\frametitle{Ejercicio-3}
+\begin{block}{Enunciado...}
+ Diseña y codifica un programa para calcular la media de dos números.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-3: examples/AverageTwoNumbers.java}
+\scriptsize
+\begin{lstlisting}
+public class AverageTwoNumbers {
+
+public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    float op1, op2;
+    float average;
+    op1 = mc.readFloat();
+    op2 = mc.readFloat();
+    average = (op1 + op2) / 2;
+    mc.println("The average is: "+average);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-4}
+\begin{block}{Enunciado...}
+  Diseña y codifica un programa que muestre por pantalla el valor más alto de dos números reales.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-4: examples/HighestValue.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestValue {
+
+public static void main(String []args){
+  MyConsole mc = new MyConsole();
+  float op1, op2;
+  op1 = mc.readFloat();
+  op2 = mc.readFloat();
+  //This is not a secure method to compare floats
+  //To compare only int...
+  if (op1 > op2){
+    mc.println("The highest value is: "+op1);	
+  }else{
+    mc.println("The highest value is: "+op2);
+  }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-4 (v2 utilizando el API de Java): examples/HighestValueAPI.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestValueAPI {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    float op1, op2;
+    op1 = mc.readFloat();
+    op2 = mc.readFloat();
+    int compare = Float.compare(op1, op2); 
+    if (compare == 0){
+      mc.println("Values are equals.");	
+    }else if(compare < 0){
+      mc.println("The highest value is: "+op2);
+    }else {
+      mc.println("The highest value is: "+op1);
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-5}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla el valor más alto de tres números enteros.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-5: examples/HighestThreeIntValue.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestThreeIntValue {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int op1, op2, op3;
+    op1 = mc.readInt();
+    op2 = mc.readInt();
+    op3 = mc.readInt();
+    if (op1 > op2 && op1 > op3){
+      mc.println("The highest value is: "+op1);
+     }else if (op2 > op1 && op2 > op3){
+      mc.println("The highest value is: "+op2);
+     }else{
+      mc.println("The highest value is: "+op3);
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-5 (v2 utilizando el API de Java): examples/HighestThreeValueAPI.java}
+\scriptsize
+\begin{lstlisting}
+public class HighestThreeValueAPI {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    float op1, op2, op3;
+    op1 = mc.readFloat();
+    op2 = mc.readFloat();
+    op3 = mc.readFloat();
+    if (Float.compare(op1, op2)>0 && 
+        Float.compare(op1, op3)>0){
+      mc.println("The highest value is: "+op1);
+     }else if (Float.compare(op2, op3)>0 && 
+               Float.compare(op2, op3)>0){
+      mc.println("The highest value is: "+op2);
+     }else{
+      mc.println("The highest value is: "+op3);
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-6}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla los primeros 20 números naturales (ascendente) utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-6: examples/ShowFirst20Numbers.java}
+\scriptsize
+\begin{lstlisting}
+public class ShowFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(i);
+      i = i + 1; //i++
+    }while(i<=top);
+
+    for(int j = 0; j<=top; j++){
+      mc.println(j);
+     }
+    
+    int k = 0;
+    while (k<=top){
+      mc.println(k);
+      k = k+1; //k++
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-6}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla los primeros 20 números naturales (descendente) utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-6: examples/ShowFirst20NumbersDesc.java}
+\scriptsize
+\begin{lstlisting}
+public class ShowFirst20NumbersDesc {
+  public static void main(String []args){		
+    MyConsole mc = new MyConsole();
+    int i = 20;
+    do{
+      mc.println(i);
+      i = i-1 ; //i--
+    }while(i>=0);
+
+    for(int j = 20; j>=0; j--){
+      mc.println(j);
+    }
+    int k = 20;
+    while (k>=0){
+      mc.println(k);
+      k = k-1; //k--
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-7}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla el resultado de la suma de los primeros 20 números naturales utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-7: examples/SumFirst20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class SumFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    int sum = 0;
+    MyConsole mc = new MyConsole();
+    sum = 0;
+    do{
+      sum = sum + i;
+      i = i + 1; //i++
+    }while(i<=top);		
+    mc.println("After the first loop..."+sum);
+    sum=0;
+    for(int j = 0; j<=top; j++){
+      sum = sum + j;
+    }
+    mc.println("After the second loop..."+sum);
+    int k = 0;
+    sum = 0;
+    while (k<=top){
+      sum = sum + k;
+      k = k+1; //k++
+    }
+  mc.println("After the third loop..."+sum);
+ }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-8}
+\begin{block}{Enunciado...}
+	Diseña y codifica un programa que muestre por pantalla los números pares presentes en los primeros 20 números naturales utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-8: examples/EvenIn20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class EvenIn20Numbers {
+  public static void main(String []args){
+  int top = 20;
+  int i = 0;
+  MyConsole mc = new MyConsole();
+  do{
+    if (i%2 == 0){
+      mc.println(i);
+    }
+  i = i + 1; //i++
+  }while(i<=top);		
+  for(int j = 0; j<=top; j++){
+    if (j%2 == 0){
+      mc.println(j);
+    }
+   }
+  int k = 0;
+  while (k<=top){
+    if (k%2 == 0){
+      mc.println(k);
+    }
+  k = k+1; //k++
+  }
+  while (k++<=top){
+  if (k%2 == 0){
+    mc.println(k);
+    }
+  }}}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\frametitle{Ejercicio-9}
+\begin{block}{Enunciado...}
+	Diseña y codifica un programa que cuente los números impares presentes en los primeros 20 números naturales utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-9: examples/CountOddIn20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class CountOddIn20Numbers {
+  public static void main(String []args){
+    int top = 20; int i = 0; int counter = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      if (i%2 != 0){
+       counter++;
+      }
+      i = i + 1; //i++
+     }while(i<=top);				
+    mc.println("Found "+counter+" odd numbers.");
+    counter = 0;
+    for(int j = 0; j<=top; j++){
+      if (j%2 != 0){
+      counter++;
+      }
+    }
+   mc.println("Found "+counter+" odd numbers.");
+   int k = 0;
+   counter = 0;
+   while (k<=top){
+     if (k%2 != 0){
+       counter++;
+     }
+     k = k+1; //k++
+    }
+   mc.println("Found "+counter+" odd numbers.");
+
+ }}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\frame{
+\frametitle{Ejercicio-10}
+\begin{block}{Enunciado...}
+	Diseña y codifica un programa que muestre el cuadrado de los primeros 20 números naturales utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-10: examples/SquareFirst20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class SquareFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(i*i);
+      i = i + 1; //i++
+    }while(i<=top);
+  
+  for(int j = 0; j<=top; j++){
+    mc.println(j*j);
+    }
+
+  int k = 0;
+  while (k<=top){
+    mc.println(k*k);
+    k = k+1; //k++
+  }
+ }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-11}
+\begin{block}{Enunciado...}
+	Diseña y codifica un programa que muestre el cubo de los primeros 20 números naturales utilizando diferentes tipos de bucles (\texttt{do-while}, \texttt{while} y \texttt{for}).
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-11: examples/CubeFirst20Numbers.java}
+\tiny
+\begin{lstlisting}
+public class CubeFirst20Numbers {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(i*i*i);
+      i = i + 1; //i++
+    }while(i<=top);
+
+    for(int j = 0; j<=top; j++){
+      mc.println(j*j*j);
+    }
+    int k = 0;
+    while (k<=top){
+      mc.println(k*k*k);
+      k = k+1; //k++
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\frame{
+\frametitle{Ejercicio-12}
+\begin{block}{Enunciado...}
+ ...ahora utilizando el API de Java Math.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-12: examples/CubeFirst20NumbersMathAPI.java}
+\tiny
+\begin{lstlisting}
+public class CubeFirst20NumbersMathAPI {
+  public static void main(String []args){
+    int top = 20;
+    int i = 0;
+    MyConsole mc = new MyConsole();
+    do{
+      mc.println(Math.pow(i, 3));
+      i = i + 1; //i++
+     }while(i<=top);
+    for(int j = 0; j<=top; j++){
+      mc.println(Math.pow(j, 3));
+    }
+    int k = 0;
+    while (k<=top){
+      mc.println(Math.pow(k, 3));
+      k = k+1; //k++
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\frame{
+\frametitle{Ejercicio-13}
+\begin{block}{Enunciado...}
+ Diseña y codifica un programa para calcular la potencia de cualquier número en la forma $a^b$.
+\end{block}
+
+}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-13: examples/CubeFirst20NumbersMathAPI.java}
+\tiny
+\begin{lstlisting}
+public class MyOwnPow {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    double base = 0;
+    int exponent = 0;
+    double value = 1;
+    base = mc.readDouble();
+    exponent = mc.readInt();
+    for (int i = 0; i<exponent;i++){
+      value = value  * base; 
+    }
+  mc.println("The pow of "+base+" raised to "+exponent+" is equals to "+value);
+  mc.println("Using the Java API: "+Math.pow(base, exponent));
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-14}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa para saber si un año es bisiesto ("leap") o no.
+\end{block}
+\begin{lstlisting}
+if year is divisible by 400 then
+   is_leap_year
+else if year is divisible by 100 then
+   not_leap_year
+else if year is divisible by 4 then
+   is_leap_year
+else
+   not_leap_year
+\end{lstlisting}
+
+Source: \url{http://en.wikipedia.org/wiki/Leap\_year}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-14: examples/LeapYear.java}
+\scriptsize
+\begin{lstlisting}
+public class LeapYear {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int year = 0;
+    year = mc.readInt();
+    boolean isLeapYear = (year % 4 == 0);
+    // divisible by 4 and not 100
+    isLeapYear = isLeapYear && (year % 100 != 0);
+    // divisible by 4 and not 100 unless divisible by 400
+    isLeapYear = isLeapYear || (year % 400 == 0);
+    mc.println(isLeapYear);	
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-15}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa para saber si un número es palíndromo.
+\end{block}
+
+\begin{exampleblock}{Palíndromo}
+  Un palíndromo es una palabra, número o frase que se lee igual hacia adelante que hacia atrás. Si se trata de un número, se llama capicúa.
+  \begin{itemize}
+   \item 121 es palíndromo.
+   \item 123 es palíndromo.
+  \end{itemize}
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-15: examples/PalindromeNumber.java}
+\scriptsize
+\begin{lstlisting}
+public class PalindromeNumber {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int number;
+    int palindrome, reverse;
+    number = mc.readInt();
+    palindrome = number;
+    reverse = 0;
+    while (palindrome != 0) {
+      int remainder = palindrome % 10;
+      reverse = reverse * 10 + remainder;
+      palindrome = palindrome / 10;
+    }
+    mc.println("The number "+number+"is palindrome "+ 
+      (number==reverse));
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-16}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla si un número es un número Armstrong.
+\end{block}
+
+\begin{exampleblock}{Armstrong number}
+\textit{ An Armstrong number of three digit is a number whose sum of cubes of its digit is equal to its number. }
+  \begin{itemize}
+   \item  153 = $1^3+5^3+3^3$ = $1+125+27$=153 \textit{is an Armstrong Number.}
+   \item  Ver \url{http://en.wikipedia.org/wiki/Narcissistic\_number}
+  \end{itemize}
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-16: examples/ArmstrongNumber.java}
+\scriptsize
+\begin{lstlisting}
+public class ArmstrongNumber {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int number = 0;
+    int result, source;
+    number = mc.readInt();
+    source = number;
+    result = 0;
+    while(number != 0){
+      int remainder = number%10;
+      result = result + remainder*remainder*remainder;
+      number = number/10;
+     }
+    mc.println("The number "+number+" is Armstrong number "+
+      (source==result));        
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-17}
+\begin{block}{Enunciado...}
+ Diseña y codifica un programa que muestre por pantalla la siguiente figura: "Wedge of Stars" (dado un número de estrellas determinado).
+\end{block}
+
+\begin{lstlisting}
+ *******
+ ******
+ *****
+ ****
+ ***
+ **
+ *
+\end{lstlisting}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-17: examples/WedgeOfStars.java}
+\scriptsize
+\begin{lstlisting}
+public class WedgeOfStars {
+  public static void main(String args[]){
+    MyConsole mc = new MyConsole();
+    int numberOfStars = 0;
+    numberOfStars = mc.readInt();
+    for (int i = numberOfStars; i>0; i--){
+      for(int j = 0; j<i; j++){
+	mc.print("*");
+      }
+      mc.println("");
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-18}
+\begin{block}{Enunciado...}
+ Diseña y codifica un programa que muestre por pantalla un árbol de navidad.
+\end{block}
+
+\begin{lstlisting}
+       *
+      ***
+     *****
+    *******
+   *********
+  ***********
+ *************
+***************
+      ***
+      ***
+      ***
+\end{lstlisting}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-18: examples/HolidayTree.java}
+\tiny
+\begin{lstlisting}
+public class HolidayTree {
+  public static void main(String []args) throws IOException{
+    MyConsole mc = new MyConsole();
+    int baseStars = 15;
+    int halfBlankSpaces = 0;
+    for (int i = 1; i<baseStars; i=i+2){
+      halfBlankSpaces = (baseStars-i)/2;
+      for(int j = 0; j<halfBlankSpaces;j++) {mc.print(" ");}
+      for(int k = 0; k<i;k++) {mc.print("*");}
+      for(int j = 0; j<halfBlankSpaces;j++) { mc.print(" ");}
+      mc.println("");
+    }
+    halfBlankSpaces = (baseStars/2)-1;
+    for(int i = 0; i<3;i++){
+      for(int j = 0; j<halfBlankSpaces;j++){mc.print(" ");}
+      for(int k = 0; k<3;k++){mc.print("*");}
+      for(int j = 0; j<halfBlankSpaces;j++){mc.print(" ");}
+    mc.println(" ");
+    }
+}
+}
+\end{lstlisting}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-19}
+\begin{block}{Enunciado...}
+  Otros ejemplos utilizando el API de Java Math.
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-19: examples/MathAPIExample.java}
+\tiny
+\begin{lstlisting}
+public class MathAPIExample {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    //Max
+    mc.println(Math.max(2, 3));
+    //Min
+    mc.println(Math.min(2, 3));
+    //Abs		
+    mc.println(Math.abs(-2));
+    //Pow
+    mc.println(Math.pow(2, 3));
+    //Sqrt
+    mc.println(Math.sqrt(144));
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-20}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla si un número es primo.
+\end{block}
+
+\begin{exampleblock}{Definition from Wikipedia}
+Un número primo es un número natural mayor que 1 que tiene únicamente dos divisores distintos: él mismo y el 1.
+\end{exampleblock}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-20: examples/PrimeNumber.java}
+\scriptsize
+\begin{lstlisting}
+public class PrimeNumber {
+  public static void main (String []args){
+    MyConsole mc = new MyConsole();
+    int number = 0;
+    boolean isPrime = true;
+    number = mc.readInt();
+    int i = 2;
+    while(isPrime && i!=number){
+      if(number%i ==  0){
+	isPrime = false;
+      }
+      i++;
+    }
+    mc.println("The number "+number+" is prime "+isPrime);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-21}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestre por pantalla los primeros 100 números primos.
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-21: examples/First100PrimeNumbers.java}
+\tiny
+\begin{lstlisting}
+public class First100PrimeNumbers {
+  public static void main (String []args){
+    MyConsole mc = new MyConsole();
+    int nprimes = 100;
+    int matches = 1; //1 is prime Print 1 and 2
+    int number = 2; //...we start in 2...
+    boolean isPrime = true;			
+    int i = 2;
+    while (matches<nprimes){
+      isPrime = true;
+      i = 2;
+      while(isPrime && i!=number){
+	if(number%i ==  0){
+	  isPrime = false;
+	}
+      i++;
+     }
+    if (isPrime){
+      mc.println(number);
+      matches++;
+    }
+    number++;
+   }
+ }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-22}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que sume los primeros $n$ números ($n$ se lee por pantalla).
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-22: examples/AddingUpIntegers.java}
+\scriptsize
+\begin{lstlisting}
+public class AddingUpIntegers {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int numberToRead = 0;
+    numberToRead = mc.readInt();
+    if(numberToRead>0){
+      int value = 0;
+      int sum = 0;
+      for(int i = 0; i<numberToRead;i++){
+	mc.println("Enter a number...");
+	value = mc.readInt();
+	sum = sum + value;
+      }
+      mc.println("The sum is "+sum);
+      }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-23}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que calcule el factorial de un número.
+\end{block}
+
+
+\begin{equation}
+n!=\prod_{k=1}^n k \!  
+\end{equation}
+
+
+\begin{equation}
+n! = \begin{cases}
+1 & \text{if } n = 0, \\
+(n-1)!\times n & \text{if } n > 0.
+\end{cases}
+\end{equation}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-23: examples/Factorial.java}
+\scriptsize
+\begin{lstlisting}
+public class Factorial {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int op1;
+    double fact;
+    op1 = mc.readInt();
+    //fact(n) = n * fact(n-1);
+    if (op1 == 0 || op1 == 1){
+      fact = 1;
+     }else{
+     fact = 1;
+     for (int i = op1; i>1; i--){
+      fact = fact * i; 
+      }
+    }
+    mc.println("The factorial of: "+op1+" is "+fact);
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-24}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa para generar la sucesión de Fibonacci para $n$ números.
+\end{block}
+% 
+\begin{exampleblock}{Definición en la Wikipedia}
+The Fibonacci sequence is the numbers in the following integer sequence:
+0,1,1,2,3,5,8,13,21...
+\end{exampleblock}
+
+
+\begin{equation}
+F_n = \begin{cases}
+0 & \text{if } n = 0, \\
+1 & \text{if } n = 1, \\
+F_{n-1} + F_{n-2} & n > 1.\\
+\end{cases}
+\end{equation}
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-24: examples/Fibonacci.java}
+\scriptsize
+\begin{lstlisting}
+public class Fibonacci {
+  public static void main(String []args){
+    MyConsole mc = new MyConsole();
+    int numbersToGenerate;
+    int fn1, fn2, fcurrent, temp;
+    numbersToGenerate = mc.readInt();
+    fn2 = 0;
+    fn1 = 1;
+    mc.println(fn2);
+    mc.println(fn1);
+    for (int i = 2; i < numbersToGenerate; i++){
+      fcurrent = fn1 + fn2;
+      temp = fn1;
+      fn1 = fcurrent;
+      fn2 = temp;
+      mc.println(fcurrent);
+    }
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-25}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa que muestra la tabla de multiplicar (de 1 a 10).
+\end{block}
+% 
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-25: examples/MultiplicationTable.java}
+\scriptsize
+\begin{lstlisting}
+public class MultiplicationTable {
+  public static void main(String[] args) {
+    MyConsole mc = new MyConsole();
+    for (int i = 1; i <= 10; i++) {
+      for (int j = 1; j <= 10; j++) {
+	  mc.print( i * j );
+	  mc.print("\t");
+	}
+      mc.println("");
+      }
+   }
+}
+\end{lstlisting}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Ejercicio-26}
+\begin{block}{Enunciado...}
+Diseña y codifica un programa para calcular el número combinatorio.
+\end{block}
+% 
+
+\begin{equation}
+C_{k} = \binom{n}{k} = \frac{n!}{k!(n-k)!} 
+\end{equation}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Siguiente...}
+\begin{exampleblock}{Comentarios...}
+\begin{itemize}
+ \item Intentar diseñar y codificar los algoritmos por uno mismo.
+ \item Si se encuentra algún error, por favor notificadlo.
+ \item Un mismo problema puede tener varias soluciones.
+ \item Es conveniente seguir la metodología propuesta (Análisis, Diseño, Implementación y Prueba)
+ \item ...si hay alguna duda...por favor: ¡PREGUNTEN!
+\end{itemize}
+
+\end{exampleblock}
+
+
+
+\end{frame}
+
+% 
+\frame{
+\titlepage
+
+}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
